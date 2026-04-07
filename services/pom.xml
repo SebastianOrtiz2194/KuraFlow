@@ -23,6 +23,11 @@
 
     <modules>
         <module>shared-lib</module>
+        <module>auth-service</module>
+        <module>user-service</module>
+        <module>content-service</module>
+        <module>progress-service</module>
+        <module>gamification-service</module>
     </modules>
 
     <dependencyManagement>
