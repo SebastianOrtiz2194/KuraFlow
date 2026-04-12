@@ -1,11 +1,11 @@
-package com.linguaquest.content;
+package com.kuraflow.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ContentServiceApplication {
+public class UserServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ContentServiceApplication.class, args);
+        SpringApplication.run(UserServiceApplication.class, args);
     }
 }

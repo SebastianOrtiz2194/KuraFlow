@@ -4,15 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     
     <parent>
-        <groupId>com.linguaquest</groupId>
-        <artifactId>linguaquest-parent</artifactId>
+        <groupId>com.kuraflow</groupId>
+        <artifactId>kuraflow-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     
     <artifactId>user-service</artifactId>
     <name>user-service</name>
-    <description>User Management Service for LinguaQuest</description>
+    <description>User Management Service for KuraFlow</description>
 
     <dependencies>
         <dependency>

@@ -1,11 +1,11 @@
-package com.linguaquest.user;
+package com.kuraflow.gamification;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UserServiceApplication {
+public class GamificationServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(UserServiceApplication.class, args);
+        SpringApplication.run(GamificationServiceApplication.class, args);
     }
 }

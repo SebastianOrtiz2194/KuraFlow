@@ -3,11 +3,11 @@ version: '3.8'
 services:
   postgres:
     image: postgres:16-alpine
-    container_name: linguaquest-postgres
+    container_name: KuraFlow-postgres
     environment:
-      POSTGRES_USER: linguaquest
+      POSTGRES_USER: KuraFlow
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: linguaquest
+      POSTGRES_DB: KuraFlow
     ports:
       - "5432:5432"
     volumes:
@@ -15,7 +15,7 @@ services:
 
   redis:
     image: redis:7-alpine
-    container_name: linguaquest-redis
+    container_name: KuraFlow-redis
     ports:
       - "6379:6379"
     volumes:
@@ -23,14 +23,14 @@ services:
 
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0
-    container_name: linguaquest-zookeeper
+    container_name: KuraFlow-zookeeper
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
 
   kafka:
     image: confluentinc/cp-kafka:7.5.0
-    container_name: linguaquest-kafka
+    container_name: KuraFlow-kafka
     depends_on:
       - zookeeper
     ports:
