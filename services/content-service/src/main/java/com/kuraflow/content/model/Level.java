@@ -1,4 +1,4 @@
-package com.linguaquest.content.model;
+package com.kuraflow.content.model;
 
 import jakarta.persistence.*;
 import lombok.*;

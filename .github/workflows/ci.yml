@@ -1,4 +1,4 @@
-name: LinguaQuest CI
+name: KuraFlow CI
 
 on:
   push:
