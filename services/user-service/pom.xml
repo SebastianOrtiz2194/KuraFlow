@@ -12,7 +12,7 @@
     
     <artifactId>user-service</artifactId>
     <name>user-service</name>
-    <description>User Management Service for KuraFlow</description>
+    <description>User Service for KuraFlow</description>
 
     <dependencies>
         <dependency>

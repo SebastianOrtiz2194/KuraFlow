@@ -27,7 +27,7 @@ public class Badge {
     @Column(nullable = false)
     private String name;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     @Column(name = "icon_url")
@@ -37,7 +37,7 @@ public class Badge {
     @Builder.Default
     private Integer xpReward = 0;
 
-    @Column
+    @Column(length = 30)
     private String category;
 
     @JdbcTypeCode(SqlTypes.JSON)

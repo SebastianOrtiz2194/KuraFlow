@@ -38,7 +38,8 @@ public class SrsCard {
     private Integer repetitions = 0;
 
     @Column(name = "next_review")
-    private OffsetDateTime nextReview;
+    @Builder.Default
+    private OffsetDateTime nextReview = OffsetDateTime.now();
 
     @Column(name = "last_reviewed")
     private OffsetDateTime lastReviewed;
