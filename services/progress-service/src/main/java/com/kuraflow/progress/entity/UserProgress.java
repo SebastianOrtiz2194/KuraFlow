@@ -28,15 +28,18 @@ public class UserProgress {
     private UUID lessonId;
 
     @Column(length = 20)
-    private String status;
+    @Builder.Default
+    private String status = "NOT_STARTED";
 
     @Column(precision = 5, scale = 2)
     private BigDecimal score;
 
-    private Integer attempts;
+    @Builder.Default
+    private Integer attempts = 0;
 
     @Column(name = "xp_earned")
-    private Integer xpEarned;
+    @Builder.Default
+    private Integer xpEarned = 0;
 
     @Column(name = "started_at")
     private OffsetDateTime startedAt;

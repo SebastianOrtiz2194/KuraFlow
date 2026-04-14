@@ -2,6 +2,8 @@
 -- GAMIFICATION SERVICE: Streaks & Badges
 -- =============================================
 
+-- Note: Reference user_id from User Service by UUID only.
+
 CREATE TABLE IF NOT EXISTS user_streaks (
     id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     user_id         UUID NOT NULL UNIQUE,
@@ -25,7 +27,7 @@ CREATE TABLE IF NOT EXISTS badges (
 
 CREATE TABLE IF NOT EXISTS user_badges (
     id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id     UUID NOT NULL,
+    user_id     UUID NOT NULL,                         -- Reference to User Service
     badge_id    UUID NOT NULL REFERENCES badges(id),
     earned_at   TIMESTAMPTZ DEFAULT NOW(),
     UNIQUE(user_id, badge_id)

@@ -2,6 +2,7 @@ package com.kuraflow.gamification.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -24,17 +25,21 @@ public class UserStreak {
     private UUID userId;
 
     @Column(name = "current_streak")
-    private Integer currentStreak;
+    @Builder.Default
+    private Integer currentStreak = 0;
 
     @Column(name = "longest_streak")
-    private Integer longest_streak;
+    @Builder.Default
+    private Integer longest_streak = 0;
 
     @Column(name = "last_activity")
     private LocalDate lastActivity;
 
     @Column(name = "streak_freezes")
-    private Integer streakFreezes;
+    @Builder.Default
+    private Integer streakFreezes = 0;
 
+    @UpdateTimestamp
     @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
 }
