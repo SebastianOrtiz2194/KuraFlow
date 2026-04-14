@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: progress-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/KuraFlow
+    username: KuraFlow
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    schemas: progress_schema
+    default-schema: progress_schema
+    create-schemas: true
+
+server:
+  port: 8084
