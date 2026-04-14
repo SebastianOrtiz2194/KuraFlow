@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/KuraFlow
+    username: KuraFlow
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none # Auth service uses users table from user_schema
+  flyway:
+    enabled: false # Auth service doesn't manage its own tables (shares with user-service for now)
+
+server:
+  port: 8081
