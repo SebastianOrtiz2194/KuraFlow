@@ -12,7 +12,7 @@
     
     <artifactId>user-service</artifactId>
     <name>user-service</name>
-    <description>User Management Service for KuraFlow</description>
+    <description>User Service for KuraFlow</description>
 
     <dependencies>
         <dependency>
@@ -40,6 +40,10 @@
         <dependency>
              <groupId>org.flywaydb</groupId>
              <artifactId>flyway-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
