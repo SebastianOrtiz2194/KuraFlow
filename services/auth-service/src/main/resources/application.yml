@@ -11,6 +11,24 @@ spring:
       ddl-auto: none # Auth service uses users table from user_schema
   flyway:
     enabled: false # Auth service doesn't manage its own tables (shares with user-service for now)
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID:dummy-id}
+            client-secret: ${GOOGLE_CLIENT_SECRET:dummy-secret}
+            scope: profile, email
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  session:
+    store-type: redis
 
 server:
   port: 8081
+
+jwt:
+  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  expiration: 3600 # 1 hour
