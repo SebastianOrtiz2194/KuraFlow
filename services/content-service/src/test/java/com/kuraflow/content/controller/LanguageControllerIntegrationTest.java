@@ -1,6 +1,7 @@
 package com.kuraflow.content.controller;
 
 import com.kuraflow.content.BaseIntegrationTest;
+import com.kuraflow.content.dto.LanguageResponse;
 import com.kuraflow.content.entity.Language;
 import com.kuraflow.content.repository.LanguageRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -32,8 +33,8 @@ public class LanguageControllerIntegrationTest extends BaseIntegrationTest {
 
     @Test
     void shouldReturnAllLanguages() {
-        ResponseEntity<Language[]> response = restTemplate.getForEntity("/api/content/languages", Language[].class);
-        
+        ResponseEntity<LanguageResponse[]> response = restTemplate.getForEntity("/api/content/languages", LanguageResponse[].class);
+
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(response.getBody()).hasSize(2);
     }
