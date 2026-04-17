@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.UUID;
 
 @Entity
-@Table(name = "lesson_content", schema = "content_schema")
+@Table(name = "lesson_content")
 @Getter
 @Setter
 @NoArgsConstructor
