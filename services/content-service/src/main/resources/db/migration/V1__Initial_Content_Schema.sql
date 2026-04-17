@@ -2,8 +2,6 @@
 -- CONTENT SERVICE: Languages -> Levels -> Modules -> Lessons
 -- =============================================
 
-CREATE SCHEMA IF NOT EXISTS content_schema;
-
 CREATE TABLE IF NOT EXISTS languages (
     id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     code        VARCHAR(5) NOT NULL UNIQUE,                -- 'en', 'ja'
