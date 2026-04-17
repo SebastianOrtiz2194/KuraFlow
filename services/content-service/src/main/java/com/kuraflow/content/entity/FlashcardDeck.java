@@ -8,7 +8,7 @@ import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name = "flashcard_decks", schema = "content_schema")
+@Table(name = "flashcard_decks")
 @Getter
 @Setter
 @NoArgsConstructor
