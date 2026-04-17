@@ -16,8 +16,6 @@ spring:
   flyway:
     enabled: true
     baseline-on-migrate: true
-    schemas: content_schema
-    default-schema: content_schema
     create-schemas: true
   data:
     redis:
