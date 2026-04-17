@@ -13,6 +13,8 @@ import java.util.UUID;
 public interface FlashcardRepository extends JpaRepository<Flashcard, UUID> {
     Page<Flashcard> findByDeckId(UUID deckId, Pageable pageable);
 
-    @Query(value = "SELECT * FROM content_schema.flashcards f WHERE :tag = ANY(f.tags)", nativeQuery = true)
+    @Query(value = "SELECT * FROM content_schema.flashcards f WHERE :tag = ANY(f.tags)", 
+           countQuery = "SELECT count(*) FROM content_schema.flashcards f WHERE :tag = ANY(f.tags)",
+           nativeQuery = true)
     Page<Flashcard> findByTag(String tag, Pageable pageable);
 }
