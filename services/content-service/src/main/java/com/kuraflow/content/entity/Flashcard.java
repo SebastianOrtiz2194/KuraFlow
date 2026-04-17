@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.UUID;
 
 @Entity
-@Table(name = "flashcards", schema = "content_schema")
+@Table(name = "flashcards")
 @Getter
 @Setter
 @NoArgsConstructor
