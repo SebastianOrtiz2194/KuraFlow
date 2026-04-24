@@ -9,8 +9,8 @@ export default function Home() {
     <MainLayout>
       <div className="py-10">
         <section className="mb-12">
-          <h1 className="text-4xl font-extrabold tracking-tight mb-2">Welcome back, Sebastian! 👋</h1>
-          <p className="text-muted-foreground text-lg">You've learned 15 new words this week. Keep it up!</p>
+          <h1 className="text-4xl font-extrabold tracking-tight mb-2">Welcome back, Sebastian!</h1>
+          <p className="text-muted-foreground text-lg">You&apos;ve learned 15 new words this week. Keep it up!</p>
         </section>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -36,8 +36,8 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-2xl">
-                  🇯🇵
+                <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-2xl font-bold">
+                  JP
                 </div>
                 <div>
                   <p className="font-bold">Japanese N5</p>
@@ -74,8 +74,8 @@ export default function Home() {
             <Card variant="default" className="card-interactive">
               <CardContent className="p-0">
                 <div className="flex">
-                  <div className="w-1/3 bg-indigo-500 h-32 flex items-center justify-center text-4xl">
-                    🍱
+                  <div className="w-1/3 bg-indigo-500 h-32 flex items-center justify-center text-2xl font-bold text-white">
+                    VOCAB
                   </div>
                   <div className="p-4 flex-1">
                     <div className="flex gap-2 mb-2">
@@ -92,8 +92,8 @@ export default function Home() {
             <Card variant="default" className="card-interactive">
               <CardContent className="p-0">
                 <div className="flex">
-                  <div className="w-1/3 bg-teal-500 h-32 flex items-center justify-center text-4xl">
-                    🚉
+                  <div className="w-1/3 bg-teal-500 h-32 flex items-center justify-center text-2xl font-bold text-white">
+                    GRAMMAR
                   </div>
                   <div className="p-4 flex-1">
                     <div className="flex gap-2 mb-2">

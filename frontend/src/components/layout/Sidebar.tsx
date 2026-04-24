@@ -6,12 +6,12 @@ import { usePathname } from 'next/navigation';
 import './Sidebar.css';
 
 const navItems = [
-  { label: 'Dashboard', href: '/dashboard', icon: '🏠' },
-  { label: 'Lessons', href: '/lessons', icon: '📚' },
-  { label: 'Flashcards', href: '/flashcards', icon: '🗂️' },
-  { label: 'Leaderboard', href: '/leaderboard', icon: '🏆' },
-  { label: 'Profile', href: '/profile', icon: '👤' },
-  { label: 'Settings', href: '/settings', icon: '⚙️' },
+  { label: 'Dashboard', href: '/dashboard', icon: 'D' },
+  { label: 'Lessons', href: '/lessons', icon: 'L' },
+  { label: 'Flashcards', href: '/flashcards', icon: 'F' },
+  { label: 'Leaderboard', href: '/leaderboard', icon: 'R' },
+  { label: 'Profile', href: '/profile', icon: 'P' },
+  { label: 'Settings', href: '/settings', icon: 'S' },
 ];
 
 export const Sidebar: React.FC = () => {
@@ -22,7 +22,7 @@ export const Sidebar: React.FC = () => {
     <aside className={`sidebar ${isCollapsed ? 'is-collapsed' : ''}`}>
       <div className="sidebar-header">
         <div className="logo">
-          <span className="logo-icon">🌊</span>
+          <span className="logo-icon">K</span>
           {!isCollapsed && <span className="logo-text">KuraFlow</span>}
         </div>
         <button 

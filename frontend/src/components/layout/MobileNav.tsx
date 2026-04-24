@@ -6,11 +6,11 @@ import { usePathname } from 'next/navigation';
 import './MobileNav.css';
 
 const navItems = [
-  { label: 'Home', href: '/dashboard', icon: '🏠' },
-  { label: 'Learn', href: '/lessons', icon: '📚' },
-  { label: 'Cards', href: '/flashcards', icon: '🗂️' },
-  { label: 'Rank', href: '/leaderboard', icon: '🏆' },
-  { label: 'Me', href: '/profile', icon: '👤' },
+  { label: 'Home', href: '/dashboard', icon: 'H' },
+  { label: 'Learn', href: '/lessons', icon: 'L' },
+  { label: 'Cards', href: '/flashcards', icon: 'C' },
+  { label: 'Rank', href: '/leaderboard', icon: 'R' },
+  { label: 'Me', href: '/profile', icon: 'M' },
 ];
 
 export const MobileNav: React.FC = () => {
