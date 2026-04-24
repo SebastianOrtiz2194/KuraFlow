@@ -9,11 +9,12 @@ export const Header: React.FC = () => {
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
     if (savedTheme) {
-      setTheme(savedTheme);
       document.documentElement.setAttribute('data-theme', savedTheme);
+      // Defer state update to avoid cascading renders warning
+      window.requestAnimationFrame(() => setTheme(savedTheme));
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme('dark');
       document.documentElement.setAttribute('data-theme', 'dark');
+      window.requestAnimationFrame(() => setTheme('dark'));
     }
   }, []);
 
@@ -27,13 +28,13 @@ export const Header: React.FC = () => {
   return (
     <header className="header glass">
       <div className="header-search">
-        <span className="search-icon">🔍</span>
+        <span className="search-icon">S</span>
         <input type="text" placeholder="Search lessons, flashcards..." className="search-input" />
       </div>
       
       <div className="header-actions">
         <button className="icon-btn" aria-label="Notifications">
-          <span className="icon">🔔</span>
+          <span className="icon">N</span>
           <span className="notification-badge" />
         </button>
         <button 
@@ -41,10 +42,10 @@ export const Header: React.FC = () => {
           onClick={toggleTheme}
           aria-label={theme === 'light' ? "Switch to dark mode" : "Switch to light mode"}
         >
-          <span className="icon">{theme === 'light' ? '🌙' : '☀️'}</span>
+          <span className="icon">{theme === 'light' ? 'D' : 'L'}</span>
         </button>
         <div className="streak-counter">
-          <span className="streak-icon">🔥</span>
+          <span className="streak-icon">S</span>
           <span className="streak-value">12</span>
         </div>
       </div>
