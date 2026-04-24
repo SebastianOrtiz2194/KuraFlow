@@ -1,0 +1,87 @@
+.header {
+  height: 70px;
+  padding: 0 var(--spacing-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  margin-bottom: var(--spacing-6);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  background-color: var(--muted);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-full);
+  width: 100%;
+  max-width: 400px;
+  gap: var(--spacing-2);
+}
+
+.search-input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: var(--foreground);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  padding: var(--spacing-2);
+  border-radius: var(--radius-md);
+  color: var(--muted-foreground);
+  transition: all 0.2s ease;
+  position: relative;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  background-color: var(--muted);
+  color: var(--foreground);
+}
+
+.notification-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--card);
+}
+
+.streak-counter {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-1) var(--spacing-3);
+  background-color: rgba(244, 63, 94, 0.1);
+  color: var(--accent);
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .header-search {
+    display: none;
+  }
+}
