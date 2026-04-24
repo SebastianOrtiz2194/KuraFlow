@@ -1,111 +1,220 @@
+'use client';
+
 import { MainLayout } from '@/components/layout/MainLayout';
 import { Button } from '@/components/ui/Button';
-import { Card, CardContent, CardHeader, CardFooter } from '@/components/ui/Card';
+import { Card, CardContent, CardFooter } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { ProgressBar } from '@/components/ui/ProgressBar';
+import './dashboard.css';
 
 export default function Home() {
   return (
     <MainLayout>
-      <div className="py-10">
-        <section className="mb-12">
-          <h1 className="text-4xl font-extrabold tracking-tight mb-2">Welcome back, Sebastian!</h1>
-          <p className="text-muted-foreground text-lg">You&apos;ve learned 15 new words this week. Keep it up!</p>
+      <div className="dashboard">
+        {/* Hero / Greeting Section */}
+        <section className="greeting-section">
+          <div className="greeting-content">
+            <span className="greeting-wave">👋</span>
+            <div>
+              <h1 className="greeting-title">
+                Welcome back, <span className="gradient-text">Sebastian</span>
+              </h1>
+              <p className="greeting-subtitle">
+                You&apos;ve learned 15 new words this week. Keep the momentum going!
+              </p>
+            </div>
+          </div>
+          <div className="quick-stats">
+            <div className="stat-pill">
+              <span className="stat-emoji">🔥</span>
+              <span className="stat-number">12</span>
+              <span className="stat-label">Day Streak</span>
+            </div>
+            <div className="stat-pill">
+              <span className="stat-emoji">⭐</span>
+              <span className="stat-number">1,240</span>
+              <span className="stat-label">Total XP</span>
+            </div>
+            <div className="stat-pill">
+              <span className="stat-emoji">📖</span>
+              <span className="stat-number">42</span>
+              <span className="stat-label">Words Learned</span>
+            </div>
+          </div>
         </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        {/* Main Cards Grid */}
+        <section className="cards-grid">
+          {/* Daily Goal Card */}
           <Card variant="premium">
-            <CardHeader>
-              <div className="flex justify-between items-center">
-                <h3 className="text-xl font-bold mb-0">Daily Goal</h3>
+            <CardContent>
+              <div className="card-icon-row">
+                <div className="card-icon-circle card-icon-primary">🎯</div>
                 <Badge variant="success">On Track</Badge>
               </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground mb-4">Complete 2 more lessons to hit your daily target.</p>
-              <ProgressBar value={60} showLabel variant="primary" />
-            </CardContent>
-            <CardFooter>
-              <Button variant="ghost" size="sm" className="w-full">View Details</Button>
-            </CardFooter>
-          </Card>
-
-          <Card variant="default" className="card-interactive">
-            <CardHeader>
-              <h3 className="text-xl font-bold mb-0">Current Level</h3>
-            </CardHeader>
-            <CardContent>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-2xl font-bold">
-                  JP
+              <h3 className="card-title">Daily Goal</h3>
+              <p className="card-description">Complete 2 more lessons to hit your daily target.</p>
+              <div className="progress-section">
+                <div className="progress-meta">
+                  <span>3 / 5 lessons</span>
+                  <span className="progress-percentage">60%</span>
                 </div>
-                <div>
-                  <p className="font-bold">Japanese N5</p>
-                  <p className="text-xs text-muted-foreground">Beginner Level</p>
-                </div>
-              </div>
-              <ProgressBar value={35} showLabel variant="secondary" size="sm" />
-            </CardContent>
-          </Card>
-
-          <Card variant="glass" className="card-interactive">
-            <CardHeader>
-              <h3 className="text-xl font-bold mb-0">SRS Review</h3>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-col items-center py-4">
-                <span className="text-4xl font-bold text-primary">24</span>
-                <span className="text-sm text-muted-foreground">Cards due for review</span>
+                <ProgressBar value={60} variant="primary" size="md" />
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="primary" className="w-full">Start Review</Button>
+              <Button variant="primary" className="card-action-btn">Continue Learning →</Button>
             </CardFooter>
           </Card>
-        </div>
 
-        <section>
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-bold mb-0">Continue Learning</h2>
-            <Button variant="outline" size="sm">Browse All</Button>
+          {/* Current Level Card */}
+          <Card variant="default" onClick={() => {}}>
+            <CardContent>
+              <div className="card-icon-row">
+                <div className="card-icon-circle card-icon-secondary">🇯🇵</div>
+                <Badge variant="primary">N5</Badge>
+              </div>
+              <h3 className="card-title">Japanese</h3>
+              <p className="card-description">Beginner Level &middot; JLPT N5</p>
+              <div className="level-details">
+                <div className="level-modules">
+                  <div className="module-tag">✅ Hiragana</div>
+                  <div className="module-tag">✅ Katakana</div>
+                  <div className="module-tag active">📝 Grammar</div>
+                  <div className="module-tag locked">🔒 Kanji</div>
+                </div>
+              </div>
+              <div className="progress-section">
+                <div className="progress-meta">
+                  <span>Level Progress</span>
+                  <span className="progress-percentage">35%</span>
+                </div>
+                <ProgressBar value={35} variant="secondary" size="sm" />
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* SRS Review Card */}
+          <Card variant="glass" onClick={() => {}}>
+            <CardContent>
+              <div className="card-icon-row">
+                <div className="card-icon-circle card-icon-accent">🧠</div>
+                <Badge variant="warning">Due Today</Badge>
+              </div>
+              <h3 className="card-title">SRS Review</h3>
+              <p className="card-description">Spaced repetition cards waiting for you.</p>
+              <div className="srs-stats">
+                <div className="srs-stat">
+                  <span className="srs-number">24</span>
+                  <span className="srs-label">Due</span>
+                </div>
+                <div className="srs-divider" />
+                <div className="srs-stat">
+                  <span className="srs-number">8</span>
+                  <span className="srs-label">New</span>
+                </div>
+                <div className="srs-divider" />
+                <div className="srs-stat">
+                  <span className="srs-number">156</span>
+                  <span className="srs-label">Total</span>
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Button variant="secondary" className="card-action-btn">Start Review 🗂️</Button>
+            </CardFooter>
+          </Card>
+        </section>
+
+        {/* Continue Learning Section */}
+        <section className="continue-section">
+          <div className="section-header">
+            <h2 className="section-title">Continue Learning</h2>
+            <Button variant="outline" size="sm">Browse All →</Button>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card variant="default" className="card-interactive">
-              <CardContent className="p-0">
-                <div className="flex">
-                  <div className="w-1/3 bg-indigo-500 h-32 flex items-center justify-center text-2xl font-bold text-white">
-                    VOCAB
+          <div className="lessons-grid">
+            <Card variant="default" onClick={() => {}}>
+              <CardContent className="lesson-card-content">
+                <div className="lesson-visual lesson-visual-vocab">
+                  <span className="lesson-emoji">🍱</span>
+                </div>
+                <div className="lesson-info">
+                  <div className="lesson-badges">
+                    <Badge variant="primary">Vocabulary</Badge>
+                    <Badge variant="outline">⏱ 10 min</Badge>
                   </div>
-                  <div className="p-4 flex-1">
-                    <div className="flex gap-2 mb-2">
-                      <Badge variant="primary">Vocabulary</Badge>
-                      <Badge variant="outline">10 min</Badge>
-                    </div>
-                    <h4 className="font-bold mb-1">Common Food Items</h4>
-                    <p className="text-xs text-muted-foreground">Learn how to order at a Japanese restaurant.</p>
-                  </div>
+                  <h4 className="lesson-title">Common Food Items</h4>
+                  <p className="lesson-desc">Learn how to order at a Japanese restaurant.</p>
+                  <ProgressBar value={40} variant="primary" size="sm" />
                 </div>
               </CardContent>
             </Card>
 
-            <Card variant="default" className="card-interactive">
-              <CardContent className="p-0">
-                <div className="flex">
-                  <div className="w-1/3 bg-teal-500 h-32 flex items-center justify-center text-2xl font-bold text-white">
-                    GRAMMAR
+            <Card variant="default" onClick={() => {}}>
+              <CardContent className="lesson-card-content">
+                <div className="lesson-visual lesson-visual-grammar">
+                  <span className="lesson-emoji">🚉</span>
+                </div>
+                <div className="lesson-info">
+                  <div className="lesson-badges">
+                    <Badge variant="secondary">Grammar</Badge>
+                    <Badge variant="outline">⏱ 15 min</Badge>
                   </div>
-                  <div className="p-4 flex-1">
-                    <div className="flex gap-2 mb-2">
-                      <Badge variant="secondary">Grammar</Badge>
-                      <Badge variant="outline">15 min</Badge>
-                    </div>
-                    <h4 className="font-bold mb-1">Particles: Ni and De</h4>
-                    <p className="text-xs text-muted-foreground">Understanding location and direction markers.</p>
-                  </div>
+                  <h4 className="lesson-title">Particles: Ni and De</h4>
+                  <p className="lesson-desc">Understanding location and direction markers.</p>
+                  <ProgressBar value={10} variant="secondary" size="sm" />
                 </div>
               </CardContent>
             </Card>
+
+            <Card variant="default" onClick={() => {}}>
+              <CardContent className="lesson-card-content">
+                <div className="lesson-visual lesson-visual-phrases">
+                  <span className="lesson-emoji">💬</span>
+                </div>
+                <div className="lesson-info">
+                  <div className="lesson-badges">
+                    <Badge variant="danger">Key Sentences</Badge>
+                    <Badge variant="outline">⏱ 12 min</Badge>
+                  </div>
+                  <h4 className="lesson-title">Self-Introduction</h4>
+                  <p className="lesson-desc">Practice introducing yourself in formal settings.</p>
+                  <ProgressBar value={0} variant="accent" size="sm" />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Recent Activity */}
+        <section className="activity-section">
+          <h2 className="section-title">Recent Activity</h2>
+          <div className="activity-timeline">
+            <div className="activity-item">
+              <div className="activity-dot dot-success" />
+              <div className="activity-content">
+                <span className="activity-text">Completed <strong>Basic Greetings</strong></span>
+                <span className="activity-time">2 hours ago</span>
+              </div>
+              <span className="activity-xp">+15 XP ⭐</span>
+            </div>
+            <div className="activity-item">
+              <div className="activity-dot dot-primary" />
+              <div className="activity-content">
+                <span className="activity-text">Reviewed <strong>12 flashcards</strong></span>
+                <span className="activity-time">5 hours ago</span>
+              </div>
+              <span className="activity-xp">+8 XP ⭐</span>
+            </div>
+            <div className="activity-item">
+              <div className="activity-dot dot-warning" />
+              <div className="activity-content">
+                <span className="activity-text">Unlocked badge <strong>First Week 🎖️</strong></span>
+                <span className="activity-time">Yesterday</span>
+              </div>
+              <span className="activity-xp">+50 XP ⭐</span>
+            </div>
           </div>
         </section>
       </div>
