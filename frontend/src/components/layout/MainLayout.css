@@ -1,0 +1,22 @@
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Prevent overflow issues */
+}
+
+.content-area {
+  flex: 1;
+  padding-bottom: 80px; /* Space for mobile nav */
+}
+
+@media (min-width: 769px) {
+  .content-area {
+    padding-bottom: var(--spacing-10);
+  }
+}
