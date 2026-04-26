@@ -4,7 +4,7 @@ import type { NextRequest } from 'next/server';
 // Add the paths that don't require authentication
 const publicPaths = ['/', '/login', '/register', '/forgot-password'];
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
   const isPublicPath = publicPaths.includes(pathname);

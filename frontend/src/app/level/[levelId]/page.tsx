@@ -56,7 +56,7 @@ export default function LevelOverviewPage({ params }: { params: { levelId: strin
               
               <div className="module-footer">
                 <div className="module-progress-wrapper">
-                  <ProgressBar value={100} variant="success" size="sm" />
+                  <ProgressBar value={100} variant="primary" size="sm" />
                 </div>
                 <Button variant="outline" size="sm">Review</Button>
               </div>
