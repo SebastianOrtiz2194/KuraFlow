@@ -1,0 +1,66 @@
+.furigana-text {
+  font-family: 'Noto Sans JP', 'Inter', sans-serif;
+  line-height: 2;
+  display: inline;
+}
+
+.furigana-reading {
+  font-size: 0.55em;
+  color: var(--muted-foreground);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+/* Size variants */
+.furigana-text--sm {
+  font-size: 1rem;
+}
+
+.furigana-text--md {
+  font-size: 1.25rem;
+}
+
+.furigana-text--lg {
+  font-size: 1.5rem;
+}
+
+.furigana-text--xl {
+  font-size: 2rem;
+}
+
+/* Ruby fallback styling */
+.furigana-text rp {
+  display: none;
+}
+
+.furigana-text rt {
+  font-feature-settings: normal;
+}
+
+.furigana-wrapper {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+.pitch-accent-badge {
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  font-size: 0.55em;
+  font-weight: 600;
+  color: var(--primary-600, #2563eb);
+  background-color: var(--primary-100, #dbeafe);
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  vertical-align: middle;
+  border: 1px solid var(--primary-200, #bfdbfe);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  transform: translateY(-0.1em);
+}
+
+:root[data-theme='dark'] .pitch-accent-badge {
+  color: var(--primary-300, #93c5fd);
+  background-color: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.3);
+}
