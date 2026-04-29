@@ -12,14 +12,13 @@ import org.testcontainers.utility.DockerImageName;
 @ActiveProfiles("test")
 public abstract class BaseIntegrationTest {
 
-    static final PostgreSQLContainer<?> postgres;
-    static final GenericContainer<?> redis;
+    @SuppressWarnings("resource")
+    static final PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16-alpine");
+    @SuppressWarnings("resource")
+    static final GenericContainer<?> redis = new GenericContainer<>(DockerImageName.parse("redis:7-alpine"))
+            .withExposedPorts(6379);
 
     static {
-        postgres = new PostgreSQLContainer<>("postgres:16-alpine");
-        redis = new GenericContainer<>(DockerImageName.parse("redis:7-alpine"))
-                .withExposedPorts(6379);
-        
         postgres.start();
         redis.start();
     }
