@@ -142,6 +142,22 @@
   min-width: 140px;
 }
 
+.lesson-nav-btn--next.locked {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
+
+.lesson-nav-btn--next.locked:active {
+  animation: shake 0.2s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
 /* Unsupported content fallback */
 .unsupported-content {
   padding: 2rem;
