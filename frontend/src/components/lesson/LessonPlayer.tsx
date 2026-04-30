@@ -1,9 +1,12 @@
 'use client';
 
 import React, { useState, useCallback } from 'react';
-import { LessonDetailResponse, ExplanationBody, ExampleBody } from '@/lib/types';
+import { LessonDetailResponse, ExplanationBody, ExampleBody, MCQBody, FillInTheBlankBody, ReorderBody } from '@/lib/types';
 import { ExplanationRenderer } from './ExplanationRenderer';
 import { ExampleRenderer } from './ExampleRenderer';
+import { MultipleChoiceQuiz } from '../quiz/MultipleChoiceQuiz';
+import { FillInTheBlankQuiz } from '../quiz/FillInTheBlankQuiz';
+import { SentenceReorderingQuiz } from '../quiz/SentenceReorderingQuiz';
 import { LessonComplete } from './LessonComplete';
 import { ProgressBar } from '@/components/ui/ProgressBar';
 import { Button } from '@/components/ui/Button';
@@ -26,6 +29,7 @@ interface LessonPlayerProps {
 export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
   const [currentStep, setCurrentStep] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
+  const [canGoNext, setCanGoNext] = useState(true);
 
   const totalSteps = lesson.contents.length;
   const progress = totalSteps > 0 ? ((currentStep + 1) / totalSteps) * 100 : 0;
@@ -34,6 +38,10 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
   const goNext = useCallback(() => {
     if (currentStep < totalSteps - 1) {
       setCurrentStep((prev) => prev + 1);
+      // Reset canGoNext for the next step. 
+      // Non-quiz steps are always "canGoNext: true" by default in our current logic
+      // But we'll handle this in a useEffect or during render
+      setCanGoNext(true); 
     } else {
       setIsComplete(true);
     }
@@ -42,12 +50,18 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
   const goPrev = useCallback(() => {
     if (currentStep > 0) {
       setCurrentStep((prev) => prev - 1);
+      setCanGoNext(true);
     }
   }, [currentStep]);
 
   const handleRestart = useCallback(() => {
     setCurrentStep(0);
     setIsComplete(false);
+    setCanGoNext(true);
+  }, []);
+
+  const handleQuizCorrect = useCallback(() => {
+    setCanGoNext(true);
   }, []);
 
   // Render the completion screen
@@ -106,7 +120,7 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
 
       {/* Content area */}
       <div className="lesson-content-area" key={currentStep}>
-        {renderContent(currentContent)}
+        {renderContent(currentContent, handleQuizCorrect, setCanGoNext)}
       </div>
 
       {/* Navigation controls */}
@@ -126,7 +140,8 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
         <Button
           variant="primary"
           onClick={goNext}
-          className="lesson-nav-btn lesson-nav-btn--next"
+          disabled={!canGoNext}
+          className={`lesson-nav-btn lesson-nav-btn--next ${!canGoNext ? 'locked' : ''}`}
         >
           {currentStep === totalSteps - 1 ? 'Complete' : 'Next'}
           {currentStep < totalSteps - 1 && (
@@ -148,7 +163,11 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
 /**
  * Routes each content item to its appropriate renderer based on contentType.
  */
-function renderContent(content: LessonDetailResponse['contents'][0]) {
+function renderContent(
+  content: LessonDetailResponse['contents'][0], 
+  onCorrect: () => void,
+  setCanGoNext: (can: boolean) => void
+) {
   switch (content.contentType) {
     case 'EXPLANATION':
       return (
@@ -162,6 +181,31 @@ function renderContent(content: LessonDetailResponse['contents'][0]) {
         <ExampleRenderer
           title={content.title}
           body={content.body as ExampleBody}
+        />
+      );
+    case 'QUIZ_MCQ':
+      // Quizzes start locked
+      setTimeout(() => setCanGoNext(false), 0);
+      return (
+        <MultipleChoiceQuiz
+          body={content.body as MCQBody}
+          onCorrect={onCorrect}
+        />
+      );
+    case 'QUIZ_FILLBLANK':
+      setTimeout(() => setCanGoNext(false), 0);
+      return (
+        <FillInTheBlankQuiz
+          body={content.body as FillInTheBlankBody}
+          onCorrect={onCorrect}
+        />
+      );
+    case 'QUIZ_REORDER':
+      setTimeout(() => setCanGoNext(false), 0);
+      return (
+        <SentenceReorderingQuiz
+          body={content.body as ReorderBody}
+          onCorrect={onCorrect}
         />
       );
     default:

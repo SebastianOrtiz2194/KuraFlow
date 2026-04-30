@@ -8,7 +8,29 @@ export interface LessonContentResponse {
   contentType: 'EXPLANATION' | 'EXAMPLE' | 'QUIZ_MCQ' | 'QUIZ_FILLBLANK' | 'QUIZ_REORDER' | 'AUDIO';
   sortOrder: number;
   title: string | null;
-  body: ExplanationBody | ExampleBody | Record<string, unknown>;
+  body: ExplanationBody | ExampleBody | MCQBody | FillInTheBlankBody | ReorderBody | Record<string, unknown>;
+}
+
+/** JSONB body shape for QUIZ_MCQ content type */
+export interface MCQBody {
+  question: string;
+  options: string[];
+  correctIndex: number;
+  explanation?: string;
+}
+
+/** JSONB body shape for QUIZ_FILLBLANK content type */
+export interface FillInTheBlankBody {
+  sentence: string; // e.g. "I ___ a student."
+  correctAnswer: string;
+  explanation?: string;
+}
+
+/** JSONB body shape for QUIZ_REORDER content type */
+export interface ReorderBody {
+  shuffledItems: string[];
+  correctItems: string[]; // The items in correct order
+  explanation?: string;
 }
 
 export interface LessonDetailResponse {
