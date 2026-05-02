@@ -2,11 +2,13 @@
 
 import React, { useState, useCallback } from 'react';
 import { LessonDetailResponse, ExplanationBody, ExampleBody, MCQBody, FillInTheBlankBody, ReorderBody } from '@/lib/types';
+import { useQuizScore } from '@/lib/useQuizScore';
 import { ExplanationRenderer } from './ExplanationRenderer';
 import { ExampleRenderer } from './ExampleRenderer';
 import { MultipleChoiceQuiz } from '../quiz/MultipleChoiceQuiz';
 import { FillInTheBlankQuiz } from '../quiz/FillInTheBlankQuiz';
 import { SentenceReorderingQuiz } from '../quiz/SentenceReorderingQuiz';
+import { XPToast, ConfettiBurst, ScoreBar, StreakIndicator } from '../quiz/ScoreFeedback';
 import { LessonComplete } from './LessonComplete';
 import { ProgressBar } from '@/components/ui/ProgressBar';
 import { Button } from '@/components/ui/Button';
@@ -24,12 +26,21 @@ interface LessonPlayerProps {
  * - Sequential content rendering based on contentType
  * - Step navigation (previous/next)
  * - Progress tracking
- * - Completion screen
+ * - Real-time quiz score calculation
+ * - Completion screen with actual score
  */
 export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
   const [currentStep, setCurrentStep] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
   const [canGoNext, setCanGoNext] = useState(true);
+
+  // Score tracking
+  const quizScore = useQuizScore(lesson.xpReward);
+  const [showXPToast, setShowXPToast] = useState(false);
+  const [xpToastKey, setXpToastKey] = useState(0);
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [confettiKey, setConfettiKey] = useState(0);
+  const [streak, setStreak] = useState(0);
 
   const totalSteps = lesson.contents.length;
   const progress = totalSteps > 0 ? ((currentStep + 1) / totalSteps) * 100 : 0;
@@ -38,9 +49,6 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
   const goNext = useCallback(() => {
     if (currentStep < totalSteps - 1) {
       setCurrentStep((prev) => prev + 1);
-      // Reset canGoNext for the next step. 
-      // Non-quiz steps are always "canGoNext: true" by default in our current logic
-      // But we'll handle this in a useEffect or during render
       setCanGoNext(true); 
     } else {
       setIsComplete(true);
@@ -58,19 +66,45 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
     setCurrentStep(0);
     setIsComplete(false);
     setCanGoNext(true);
-  }, []);
+    quizScore.reset();
+    setStreak(0);
+  }, [quizScore]);
 
   const handleQuizCorrect = useCallback(() => {
     setCanGoNext(true);
   }, []);
+
+  const handleQuizResult = useCallback((stepIndex: number, contentType: string, isCorrect: boolean) => {
+    quizScore.recordAttempt(stepIndex, contentType, isCorrect);
+
+    if (isCorrect) {
+      // Trigger XP toast
+      setXpToastKey((prev) => prev + 1);
+      setShowXPToast(true);
+      setTimeout(() => setShowXPToast(false), 2000);
+
+      // Trigger confetti
+      setConfettiKey((prev) => prev + 1);
+      setShowConfetti(true);
+      setTimeout(() => setShowConfetti(false), 2200);
+
+      // Update streak
+      setStreak((prev) => prev + 1);
+    } else {
+      setStreak(0);
+    }
+  }, [quizScore]);
 
   // Render the completion screen
   if (isComplete) {
     return (
       <LessonComplete
         lessonTitle={lesson.title}
-        xpEarned={lesson.xpReward}
+        xpEarned={quizScore.totalQuizSteps > 0 ? quizScore.earnedXP : lesson.xpReward}
         totalSteps={totalSteps}
+        score={quizScore.totalQuizSteps > 0 ? quizScore.score : 100}
+        perfectAnswers={quizScore.perfectAnswers}
+        totalQuizSteps={quizScore.totalQuizSteps}
         onRestart={handleRestart}
         onExit={onExit}
       />
@@ -79,6 +113,10 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
 
   return (
     <div className="lesson-player">
+      {/* Feedback overlays */}
+      <XPToast key={`xp-${xpToastKey}`} xpAmount={Math.round(lesson.xpReward / Math.max(quizScore.totalQuizSteps, 1))} visible={showXPToast} />
+      <ConfettiBurst key={`conf-${confettiKey}`} active={showConfetti} />
+
       {/* Top bar: progress + exit */}
       <header className="lesson-player-header">
         <button className="lesson-exit-btn" onClick={onExit} aria-label="Exit lesson">
@@ -101,10 +139,11 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
         </span>
       </header>
 
-      {/* Lesson metadata */}
+      {/* Lesson metadata + score */}
       <div className="lesson-meta-bar">
         <h1 className="lesson-player-title">{lesson.title}</h1>
         <div className="lesson-meta-pills">
+          <StreakIndicator streak={streak} />
           <span className="meta-pill">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
               <circle cx="7" cy="7" r="6" />
@@ -118,9 +157,20 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
         </div>
       </div>
 
+      {/* Score bar (only visible once quizzes start) */}
+      {quizScore.totalQuizSteps > 0 && (
+        <div className="lesson-score-bar-wrapper">
+          <ScoreBar
+            score={quizScore.score}
+            correctCount={quizScore.attempts.filter((a) => a.isCorrect).length}
+            totalQuizSteps={quizScore.totalQuizSteps}
+          />
+        </div>
+      )}
+
       {/* Content area */}
       <div className="lesson-content-area" key={currentStep}>
-        {renderContent(currentContent, handleQuizCorrect, setCanGoNext)}
+        {renderContent(currentContent, currentStep, handleQuizCorrect, setCanGoNext, handleQuizResult)}
       </div>
 
       {/* Navigation controls */}
@@ -165,8 +215,10 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
  */
 function renderContent(
   content: LessonDetailResponse['contents'][0], 
+  stepIndex: number,
   onCorrect: () => void,
-  setCanGoNext: (can: boolean) => void
+  setCanGoNext: (can: boolean) => void,
+  onResult: (stepIndex: number, contentType: string, isCorrect: boolean) => void
 ) {
   switch (content.contentType) {
     case 'EXPLANATION':
@@ -190,6 +242,7 @@ function renderContent(
         <MultipleChoiceQuiz
           body={content.body as MCQBody}
           onCorrect={onCorrect}
+          onResult={(isCorrect) => onResult(stepIndex, content.contentType, isCorrect)}
         />
       );
     case 'QUIZ_FILLBLANK':
@@ -198,6 +251,7 @@ function renderContent(
         <FillInTheBlankQuiz
           body={content.body as FillInTheBlankBody}
           onCorrect={onCorrect}
+          onResult={(isCorrect) => onResult(stepIndex, content.contentType, isCorrect)}
         />
       );
     case 'QUIZ_REORDER':
@@ -206,6 +260,7 @@ function renderContent(
         <SentenceReorderingQuiz
           body={content.body as ReorderBody}
           onCorrect={onCorrect}
+          onResult={(isCorrect) => onResult(stepIndex, content.contentType, isCorrect)}
         />
       );
     default:
