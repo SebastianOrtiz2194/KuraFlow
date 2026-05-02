@@ -1,20 +1,27 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { ReorderBody } from '@/lib/types';
 import './Quiz.css';
 
 interface SentenceReorderingQuizProps {
   body: ReorderBody;
   onCorrect: () => void;
+  onResult?: (isCorrect: boolean) => void;
 }
 
-export function SentenceReorderingQuiz({ body, onCorrect }: SentenceReorderingQuizProps) {
+export function SentenceReorderingQuiz({ body, onCorrect, onResult }: SentenceReorderingQuizProps) {
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
   const [availableItems, setAvailableItems] = useState<string[]>([...body.shuffledItems]);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [animClass, setAnimClass] = useState('');
 
   const isCorrect = JSON.stringify(selectedItems) === JSON.stringify(body.correctItems);
+
+  const triggerAnim = useCallback((correct: boolean) => {
+    setAnimClass(correct ? 'answer-correct' : 'answer-incorrect');
+    setTimeout(() => setAnimClass(''), 600);
+  }, []);
 
   const handleSelectItem = (item: string, index: number) => {
     if (isSubmitted) return;
@@ -35,7 +42,10 @@ export function SentenceReorderingQuiz({ body, onCorrect }: SentenceReorderingQu
   const handleSubmit = () => {
     if (selectedItems.length === 0) return;
     setIsSubmitted(true);
-    if (isCorrect) {
+    const correct = JSON.stringify(selectedItems) === JSON.stringify(body.correctItems);
+    triggerAnim(correct);
+    onResult?.(correct);
+    if (correct) {
       onCorrect();
     }
   };
@@ -47,7 +57,7 @@ export function SentenceReorderingQuiz({ body, onCorrect }: SentenceReorderingQu
   };
 
   return (
-    <div className="quiz-container reorder-quiz">
+    <div className={`quiz-container reorder-quiz ${animClass}`}>
       <h2 className="quiz-question">Reorder the sentence</h2>
       
       <div className="reorder-display-area">

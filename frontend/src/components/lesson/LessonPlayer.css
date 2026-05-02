@@ -95,6 +95,13 @@
   font-weight: 600;
 }
 
+/* Score bar */
+.lesson-score-bar-wrapper {
+  padding: 0.5rem 2rem;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
 /* Content area */
 .lesson-content-area {
   flex: 1;
