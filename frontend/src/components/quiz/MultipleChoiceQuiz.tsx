@@ -1,30 +1,40 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { MCQBody } from '@/lib/types';
 import './Quiz.css';
 
 interface MultipleChoiceQuizProps {
   body: MCQBody;
   onCorrect: () => void;
+  onResult?: (isCorrect: boolean) => void;
 }
 
-export function MultipleChoiceQuiz({ body, onCorrect }: MultipleChoiceQuizProps) {
+export function MultipleChoiceQuiz({ body, onCorrect, onResult }: MultipleChoiceQuizProps) {
   const [selected, setSelected] = useState<number | null>(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [animClass, setAnimClass] = useState('');
 
   const isCorrect = selected === body.correctIndex;
+
+  const triggerAnim = useCallback((correct: boolean) => {
+    setAnimClass(correct ? 'answer-correct' : 'answer-incorrect');
+    setTimeout(() => setAnimClass(''), 600);
+  }, []);
 
   const handleSubmit = () => {
     if (selected === null) return;
     setIsSubmitted(true);
-    if (selected === body.correctIndex) {
+    const correct = selected === body.correctIndex;
+    triggerAnim(correct);
+    onResult?.(correct);
+    if (correct) {
       onCorrect();
     }
   };
 
   return (
-    <div className="quiz-container mcq-quiz">
+    <div className={`quiz-container mcq-quiz ${animClass}`}>
       <h2 className="quiz-question">{body.question}</h2>
       
       <div className="quiz-options">

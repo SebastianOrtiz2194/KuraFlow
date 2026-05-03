@@ -1,25 +1,35 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { FillInTheBlankBody } from '@/lib/types';
 import './Quiz.css';
 
 interface FillInTheBlankQuizProps {
   body: FillInTheBlankBody;
   onCorrect: () => void;
+  onResult?: (isCorrect: boolean) => void;
 }
 
-export function FillInTheBlankQuiz({ body, onCorrect }: FillInTheBlankQuizProps) {
+export function FillInTheBlankQuiz({ body, onCorrect, onResult }: FillInTheBlankQuizProps) {
   const [value, setValue] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [animClass, setAnimClass] = useState('');
 
   const isCorrect = value.trim().toLowerCase() === body.correctAnswer.trim().toLowerCase();
+
+  const triggerAnim = useCallback((correct: boolean) => {
+    setAnimClass(correct ? 'answer-correct' : 'answer-incorrect');
+    setTimeout(() => setAnimClass(''), 600);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!value.trim()) return;
     setIsSubmitted(true);
-    if (isCorrect) {
+    const correct = value.trim().toLowerCase() === body.correctAnswer.trim().toLowerCase();
+    triggerAnim(correct);
+    onResult?.(correct);
+    if (correct) {
       onCorrect();
     }
   };
@@ -28,7 +38,7 @@ export function FillInTheBlankQuiz({ body, onCorrect }: FillInTheBlankQuizProps)
   const parts = body.sentence.split('___');
 
   return (
-    <div className="quiz-container fill-blank-quiz">
+    <div className={`quiz-container fill-blank-quiz ${animClass}`}>
       <h2 className="quiz-question">Fill in the blank</h2>
       
       <form className="quiz-sentence-area" onSubmit={handleSubmit}>
