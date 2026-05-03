@@ -24,51 +24,44 @@
   transform: scale(1);
 }
 
-/* Success icon */
-.complete-icon-wrapper {
+/* Score ring */
+.complete-score-ring-wrapper {
   position: relative;
-  width: 96px;
-  height: 96px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto 1.5rem;
 }
 
-.complete-icon-ring {
-  position: absolute;
-  inset: 0;
-  border-radius: var(--radius-full);
-  border: 3px solid transparent;
-  background: linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: ringPulse 2s ease-in-out infinite;
+.complete-score-ring {
+  display: block;
 }
 
-.complete-icon-check {
+.score-ring-fill {
+  transition: stroke-dashoffset 1.4s cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+  filter: drop-shadow(0 0 6px currentColor);
+}
+
+.score-ring-value {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary);
-  animation: checkPop 0.5s ease-out 0.3s both;
+  gap: 1px;
 }
 
-@keyframes ringPulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.08); opacity: 0.7; }
+.score-ring-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--foreground);
 }
 
-@keyframes checkPop {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+.score-ring-percent {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  align-self: flex-start;
+  margin-top: 0.5rem;
 }
 
 /* Typography */
