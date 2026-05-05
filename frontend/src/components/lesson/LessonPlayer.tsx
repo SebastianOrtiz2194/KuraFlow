@@ -12,6 +12,7 @@ import { XPToast, ConfettiBurst, ScoreBar, StreakIndicator } from '../quiz/Score
 import { LessonComplete } from './LessonComplete';
 import { ProgressBar } from '@/components/ui/ProgressBar';
 import { Button } from '@/components/ui/Button';
+import { saveLessonProgress } from '@/lib/api';
 import './LessonPlayer.css';
 
 interface LessonPlayerProps {
@@ -46,14 +47,22 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
   const progress = totalSteps > 0 ? ((currentStep + 1) / totalSteps) * 100 : 0;
   const currentContent = lesson.contents[currentStep];
 
-  const goNext = useCallback(() => {
+  const goNext = useCallback(async () => {
     if (currentStep < totalSteps - 1) {
       setCurrentStep((prev) => prev + 1);
       setCanGoNext(true); 
     } else {
       setIsComplete(true);
+      // Save progress to backend
+      const finalScore = quizScore.totalQuizSteps > 0 ? quizScore.score : 100;
+      const finalXP = quizScore.totalQuizSteps > 0 ? quizScore.earnedXP : lesson.xpReward;
+      
+      await saveLessonProgress(lesson.id, {
+        score: finalScore,
+        xpEarned: finalXP,
+      });
     }
-  }, [currentStep, totalSteps]);
+  }, [currentStep, totalSteps, lesson.id, lesson.xpReward, quizScore]);
 
   const goPrev = useCallback(() => {
     if (currentStep > 0) {
