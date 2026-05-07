@@ -2,6 +2,7 @@ package com.kuraflow.progress.service.impl;
 
 import com.kuraflow.progress.dto.SrsReviewRequest;
 import com.kuraflow.progress.entity.SrsCard;
+import com.kuraflow.progress.repository.SrsCardRepository;
 import com.kuraflow.progress.service.KafkaEventPublisher;
 import com.kuraflow.progress.service.SrsService;
 import com.kuraflow.shared.events.ReviewCompletedEvent;
