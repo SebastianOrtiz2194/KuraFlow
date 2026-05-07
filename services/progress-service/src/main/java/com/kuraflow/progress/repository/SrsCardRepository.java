@@ -11,4 +11,5 @@ import java.util.UUID;
 @Repository
 public interface SrsCardRepository extends JpaRepository<SrsCard, UUID> {
     List<SrsCard> findByUserIdAndNextReviewBeforeAndStatusNot(UUID userId, OffsetDateTime nextReview, String status);
+    java.util.Optional<SrsCard> findByUserIdAndFlashcardId(UUID userId, UUID flashcardId);
 }
