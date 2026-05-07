@@ -2,6 +2,7 @@ package com.kuraflow.progress.service.impl;
 
 import com.kuraflow.progress.dto.SaveProgressRequest;
 import com.kuraflow.progress.entity.UserProgress;
+import com.kuraflow.progress.repository.UserProgressRepository;
 import com.kuraflow.progress.service.KafkaEventPublisher;
 import com.kuraflow.progress.service.ProgressService;
 import com.kuraflow.shared.events.LessonCompletedEvent;
@@ -43,7 +44,7 @@ public class ProgressServiceImpl implements ProgressService {
         kafkaEventPublisher.publishLessonCompleted(LessonCompletedEvent.builder()
                 .userId(userId)
                 .lessonId(lessonId)
-                .score(request.getScore())
+                .score(request.getScore().doubleValue())
                 .timestamp(savedProgress.getCompletedAt().toInstant())
                 .build());
 
