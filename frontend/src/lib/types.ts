@@ -102,3 +102,35 @@ export interface LanguageResponse {
   framework: string;
   isActive: boolean;
 }
+
+export interface FlashcardFront {
+  text: string;
+  reading?: string;
+  audioUrl?: string;
+}
+
+export interface FlashcardBack {
+  text: string;
+  example?: string;
+  notes?: string;
+}
+
+export interface FlashcardResponse {
+  id: string;
+  deckId: string;
+  front: FlashcardFront;
+  back: FlashcardBack;
+  tags: string[];
+}
+
+export interface SrsCard {
+  id: string;
+  userId: string;
+  flashcardId: string;
+  easeFactor: number;
+  intervalDays: number;
+  repetitions: number;
+  nextReview: string;
+  lastReviewed: string | null;
+  status: string;
+}
