@@ -16,5 +16,22 @@ spring:
     default-schema: progress_schema
     create-schemas: true
 
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      retries: 3
+    properties:
+      spring.json.type.mapping: lessonCompleted:com.kuraflow.shared.events.LessonCompletedEvent,reviewCompleted:com.kuraflow.shared.events.ReviewCompletedEvent
+
 server:
   port: 8084
+
+# Kafka Topics
+app:
+  kafka:
+    topics:
+      lesson-completed: lesson.completed
+      review-completed: review.completed

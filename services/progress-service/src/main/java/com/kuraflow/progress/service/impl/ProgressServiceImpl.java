@@ -2,8 +2,9 @@ package com.kuraflow.progress.service.impl;
 
 import com.kuraflow.progress.dto.SaveProgressRequest;
 import com.kuraflow.progress.entity.UserProgress;
-import com.kuraflow.progress.repository.UserProgressRepository;
+import com.kuraflow.progress.service.KafkaEventPublisher;
 import com.kuraflow.progress.service.ProgressService;
+import com.kuraflow.shared.events.LessonCompletedEvent;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,6 +17,7 @@ import java.util.UUID;
 public class ProgressServiceImpl implements ProgressService {
 
     private final UserProgressRepository userProgressRepository;
+    private final KafkaEventPublisher kafkaEventPublisher;
 
     @Override
     @Transactional
@@ -35,7 +37,17 @@ public class ProgressServiceImpl implements ProgressService {
         progress.setCompletedAt(OffsetDateTime.now());
         progress.setLastAccessed(OffsetDateTime.now());
 
-        return userProgressRepository.save(progress);
+        UserProgress savedProgress = userProgressRepository.save(progress);
+
+        // Publish event
+        kafkaEventPublisher.publishLessonCompleted(LessonCompletedEvent.builder()
+                .userId(userId)
+                .lessonId(lessonId)
+                .score(request.getScore())
+                .timestamp(savedProgress.getCompletedAt().toInstant())
+                .build());
+
+        return savedProgress;
     }
 
     @Override
