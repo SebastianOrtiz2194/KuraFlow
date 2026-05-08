@@ -39,6 +39,10 @@ public class UserStreak {
     @Builder.Default
     private Integer streakFreezes = 0;
 
+    @Column(name = "total_xp")
+    @Builder.Default
+    private Integer totalXp = 0;
+
     @UpdateTimestamp
     @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
