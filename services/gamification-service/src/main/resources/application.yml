@@ -16,5 +16,23 @@ spring:
     default-schema: gamification_schema
     create-schemas: true
 
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: gamification-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "com.kuraflow.shared.events"
+        spring.json.type.mapping: lessonCompleted:com.kuraflow.shared.events.LessonCompletedEvent,reviewCompleted:com.kuraflow.shared.events.ReviewCompletedEvent
+
 server:
   port: 8085
+
+# Kafka Topics
+app:
+  kafka:
+    topics:
+      lesson-completed: lesson.completed
+      review-completed: review.completed
