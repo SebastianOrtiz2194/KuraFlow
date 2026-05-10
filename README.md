@@ -4,7 +4,7 @@ KuraFlow is a microservices-based language learning platform designed for Englis
 
 ## Project Status
 
-The project is currently in Phase 3 of its development roadmap.
+The project is currently in Phase 5 of its development roadmap.
 
 ### Completed Sprints
 
@@ -18,6 +18,16 @@ The project is currently in Phase 3 of its development roadmap.
 
 #### Phase 3: Frontend Shell
 - **Sprint 5**: Design system implementation, premium UI components, and responsive application layout.
+- **Sprint 6**: Auth pages (Login, Register), Dashboard, and Next.js middleware routing.
+
+#### Phase 4: Learning Engine
+- **Sprint 7**: Lesson player with rich text, Japanese furigana, and audio support.
+- **Sprint 8**: Interactive Quiz Engine (MCQ, Fill-in-the-blank, Reordering) with score tracking.
+- **Sprint 9**: Spaced Repetition System (SRS) using SM-2 algorithm.
+- **Sprint 10**: Kafka integration for event streaming (`lesson.completed`, `review.completed`).
+
+#### Phase 5: Gamification
+- **Sprint 11** (In Progress): XP and streak logic (timezone-aware resets, freezes).
 
 ## Architecture
 
