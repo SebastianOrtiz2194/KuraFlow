@@ -2,20 +2,21 @@
 
 The modern, responsive frontend for the KuraFlow language learning platform, built with Next.js 16 and a custom design system.
 
-## Sprint 5: Design System and Layout
+## Recent Sprints & Features
 
-This sprint established the foundational UI/UX for KuraFlow:
-
+### Sprint 5 & 6: Design System, Layout & Auth
 - **Custom Design Tokens**: A premium color palette with full dark mode support, modern typography (Inter and Noto Sans JP), and a consistent spacing scale.
 - **Component Library**:
   - `Button`: Versatile variants, sizes, and loading states.
   - `Card`: Premium shadows, glassmorphism effects, and interactive hover animations.
   - `Badge`: Semantic statuses and clean tag styling.
   - `ProgressBar`: Animated gradients for tracking learning progress.
-- **Responsive Layout**:
-  - `Sidebar`: Collapsible desktop navigation with active state indicators.
-  - `Header`: Glassmorphism header with theme toggling and search integration.
-  - `MobileNav`: Bottom navigation bar for an app-like experience on mobile.
+- **Auth & Dashboard**: Full login/register flows with Next.js middleware and a dynamic dashboard overview.
+
+### Sprint 7, 8 & 9: Learning Engine
+- **Lesson Player**: Multi-step content renderer for explanations and examples, with Japanese Furigana and Audio playback.
+- **Interactive Quiz Engine**: Multiple Choice, Fill-in-the-blank, and Sentence Reordering with real-time score calculation and animations (Confetti, XP toasts, Score Ring).
+- **Spaced Repetition System (SRS)**: Flashcard UI with flip animations and quality rating interface (Again, Hard, Good, Easy).
 
 ## Tech Stack
 
