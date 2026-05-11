@@ -30,7 +30,7 @@ public class UserStreak {
 
     @Column(name = "longest_streak")
     @Builder.Default
-    private Integer longest_streak = 0;
+    private Integer longestStreak = 0;
 
     @Column(name = "last_activity")
     private LocalDate lastActivity;
@@ -42,6 +42,14 @@ public class UserStreak {
     @Column(name = "total_xp")
     @Builder.Default
     private Integer totalXp = 0;
+
+    @Column(name = "total_lessons_completed")
+    @Builder.Default
+    private Integer totalLessonsCompleted = 0;
+
+    @Column(name = "total_perfect_scores")
+    @Builder.Default
+    private Integer totalPerfectScores = 0;
 
     @UpdateTimestamp
     @Column(name = "updated_at")

@@ -31,7 +31,7 @@ public class KafkaEventConsumer {
         
         // Update XP: Base 10 XP + extra based on score (simplified for now)
         int xpEarned = 10 + (int) (event.getScore() / 10);
-        streakService.processActivity(event.getUserId(), event.getTimestamp(), xpEarned);
+        streakService.processActivity(event.getUserId(), event.getTimestamp(), xpEarned, true, event.getScore());
     }
 
     @RetryableTopic(
@@ -47,6 +47,6 @@ public class KafkaEventConsumer {
         
         // Update XP: 5 XP for a review
         int xpEarned = 5;
-        streakService.processActivity(event.getUserId(), event.getTimestamp(), xpEarned);
+        streakService.processActivity(event.getUserId(), event.getTimestamp(), xpEarned, false, 0.0);
     }
 }
