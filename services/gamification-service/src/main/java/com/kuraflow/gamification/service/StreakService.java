@@ -85,9 +85,9 @@ public class StreakService {
         log.info("Updated streak for user {}: current={}, totalXp={}", userId, streak.getCurrentStreak(), streak.getTotalXp());
     }
 
-    @Transactional
-    public void addFreeze(UUID userId, int freezesToAdd) {
-        UserStreak streak = userStreakRepository.findByUserId(userId)
+    @Transactional(readOnly = true)
+    public UserStreak getUserStreakEntity(UUID userId) {
+        return userStreakRepository.findByUserId(userId)
                 .orElse(UserStreak.builder()
                         .userId(userId)
                         .currentStreak(0)
@@ -95,8 +95,55 @@ public class StreakService {
                         .streakFreezes(0)
                         .totalXp(0)
                         .build());
-        streak.setStreakFreezes(streak.getStreakFreezes() + freezesToAdd);
+    }
+
+    public com.kuraflow.gamification.dto.UserStreakDto getUserStreak(UUID userId) {
+        return convertToDto(getUserStreakEntity(userId));
+    }
+
+    @Transactional
+    public void purchaseFreeze(UUID userId) {
+        UserStreak streak = getUserStreakEntity(userId);
+        int cost = 100; // Hardcoded cost for now
+        
+        if (streak.getTotalXp() < cost) {
+            throw new IllegalStateException("Not enough XP to purchase a streak freeze. Need " + cost + " XP.");
+        }
+        
+        streak.setTotalXp(streak.getTotalXp() - cost);
+        streak.setStreakFreezes(streak.getStreakFreezes() + 1);
         userStreakRepository.save(streak);
-        log.info("Added {} freezes to user {}. Total freezes: {}", freezesToAdd, userId, streak.getStreakFreezes());
+        log.info("User {} purchased a streak freeze for {} XP", userId, cost);
+    }
+
+    @Transactional
+    public void cleanupExpiredStreaks() {
+        LocalDate yesterday = LocalDate.now(ZoneId.of("UTC")).minusDays(1);
+        // This is a simplified proactive cleanup. 
+        // Real implementation would handle per-user timezones.
+        log.info("Cleaning up streaks that expired before {}", yesterday);
+        
+        // Fetch users who haven't been active since before yesterday
+        // For brevity in this sprint, we are using a simple list all and filter.
+        // In production, use a custom repository query.
+        userStreakRepository.findAll().stream()
+            .filter(s -> s.getLastActivity() != null && s.getLastActivity().isBefore(yesterday))
+            .filter(s -> s.getCurrentStreak() > 0)
+            .forEach(s -> {
+                log.info("Proactively resetting streak for user {} (last active: {})", s.getUserId(), s.getLastActivity());
+                s.setCurrentStreak(0);
+                userStreakRepository.save(s);
+            });
+    }
+
+    private com.kuraflow.gamification.dto.UserStreakDto convertToDto(UserStreak streak) {
+        return com.kuraflow.gamification.dto.UserStreakDto.builder()
+                .userId(streak.getUserId())
+                .currentStreak(streak.getCurrentStreak())
+                .longestStreak(streak.getLongest_streak())
+                .lastActivity(streak.getLastActivity())
+                .streakFreezes(streak.getStreakFreezes())
+                .totalXp(streak.getTotalXp())
+                .build();
     }
 }
