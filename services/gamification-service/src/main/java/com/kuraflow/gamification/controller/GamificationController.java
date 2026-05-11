@@ -1,13 +1,10 @@
 package com.kuraflow.gamification.controller;
 
-import com.kuraflow.gamification.entity.UserStreak;
-import com.kuraflow.gamification.repository.UserStreakRepository;
+import com.kuraflow.gamification.dto.UserStreakDto;
+import com.kuraflow.gamification.service.StreakService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
@@ -16,12 +13,20 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class GamificationController {
 
-    private final UserStreakRepository userStreakRepository;
+    private final StreakService streakService;
 
     @GetMapping("/streak/{userId}")
-    public ResponseEntity<UserStreak> getUserStreak(@PathVariable UUID userId) {
-        return userStreakRepository.findByUserId(userId)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<UserStreakDto> getUserStreak(@PathVariable UUID userId) {
+        return ResponseEntity.ok(streakService.getUserStreak(userId));
+    }
+
+    @PostMapping("/streak/{userId}/freeze")
+    public ResponseEntity<Void> purchaseFreeze(@PathVariable UUID userId) {
+        try {
+            streakService.purchaseFreeze(userId);
+            return ResponseEntity.ok().build();
+        } catch (IllegalStateException e) {
+            return ResponseEntity.badRequest().build();
+        }
     }
 }
