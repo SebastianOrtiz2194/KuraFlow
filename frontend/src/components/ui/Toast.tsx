@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, createContext, useContext } from 'react';
+import Image from 'next/image';
 import './Toast.css';
 
 interface ToastMessage {
@@ -43,7 +44,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
           <div key={toast.id} className={`toast ${toast.type}`}>
             <div className="toast-icon">
               {toast.iconUrl ? (
-                <img src={toast.iconUrl} alt="Badge" />
+                <Image src={toast.iconUrl} alt="Badge" width={32} height={32} />
               ) : (
                 <span style={{ fontSize: '1.5rem' }}>🏆</span>
               )}
