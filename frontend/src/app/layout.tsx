@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   description: "Experience a smarter way to learn languages with KuraFlow's adaptive SRS and gamified learning engine.",
 };
 
+import { ToastProvider } from "@/components/ui/Toast";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${notoSansJP.variable} antialiased`}>
-        {children}
+        <ToastProvider>
+          {children}
+        </ToastProvider>
       </body>
     </html>
   );

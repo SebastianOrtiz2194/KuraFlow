@@ -18,6 +18,7 @@ import java.util.UUID;
 public class StreakService {
 
     private final UserStreakRepository userStreakRepository;
+    private final BadgeService badgeService;
     
     // In a real app, this would fetch from user-service
     // For now, we assume UTC
@@ -26,24 +27,34 @@ public class StreakService {
     }
 
     @Transactional
-    public void processActivity(UUID userId, Instant activityTimestamp, int xpEarned) {
+    public void processActivity(UUID userId, Instant activityTimestamp, int xpEarned, 
+                               boolean isLessonCompletion, double score) {
         UserStreak streak = userStreakRepository.findByUserId(userId)
                 .orElse(UserStreak.builder()
                         .userId(userId)
                         .currentStreak(0)
-                        .longest_streak(0)
+                        .longestStreak(0)
                         .streakFreezes(0)
                         .totalXp(0)
+                        .totalLessonsCompleted(0)
+                        .totalPerfectScores(0)
                         .build());
 
         streak.setTotalXp(streak.getTotalXp() + xpEarned);
+        
+        if (isLessonCompletion) {
+            streak.setTotalLessonsCompleted(streak.getTotalLessonsCompleted() + 1);
+            if (score >= 100.0) {
+                streak.setTotalPerfectScores(streak.getTotalPerfectScores() + 1);
+            }
+        }
 
         ZoneId userZone = getUserZoneId(userId);
         LocalDate activityDate = activityTimestamp.atZone(userZone).toLocalDate();
 
         if (streak.getLastActivity() == null) {
             streak.setCurrentStreak(1);
-            streak.setLongest_streak(1);
+            streak.setLongestStreak(1);
             streak.setLastActivity(activityDate);
         } else {
             LocalDate lastActivityDate = streak.getLastActivity();
@@ -54,8 +65,8 @@ public class StreakService {
             } else if (activityDate.isEqual(lastActivityDate.plusDays(1))) {
                 // Active on consecutive day
                 streak.setCurrentStreak(streak.getCurrentStreak() + 1);
-                if (streak.getCurrentStreak() > streak.getLongest_streak()) {
-                    streak.setLongest_streak(streak.getCurrentStreak());
+                if (streak.getCurrentStreak() > streak.getLongestStreak()) {
+                    streak.setLongestStreak(streak.getCurrentStreak());
                 }
                 streak.setLastActivity(activityDate);
             } else if (activityDate.isAfter(lastActivityDate.plusDays(1))) {
@@ -66,8 +77,8 @@ public class StreakService {
                     log.info("Streak rescued by {} freezes for user {}", daysMissed, userId);
                     streak.setStreakFreezes((int) (streak.getStreakFreezes() - daysMissed));
                     streak.setCurrentStreak(streak.getCurrentStreak() + 1);
-                    if (streak.getCurrentStreak() > streak.getLongest_streak()) {
-                        streak.setLongest_streak(streak.getCurrentStreak());
+                    if (streak.getCurrentStreak() > streak.getLongestStreak()) {
+                        streak.setLongestStreak(streak.getCurrentStreak());
                     }
                 } else {
                     log.info("Streak reset for user {}", userId);
@@ -83,6 +94,12 @@ public class StreakService {
 
         userStreakRepository.save(streak);
         log.info("Updated streak for user {}: current={}, totalXp={}", userId, streak.getCurrentStreak(), streak.getTotalXp());
+        
+        // Evaluate badges
+        String eventType = isLessonCompletion ? "LESSON_COMPLETED" : "ACTIVITY";
+        java.util.Map<String, Object> eventData = new java.util.HashMap<>();
+        eventData.put("score", score);
+        badgeService.evaluateBadges(userId, eventType, eventData);
     }
 
     @Transactional(readOnly = true)
@@ -91,9 +108,11 @@ public class StreakService {
                 .orElse(UserStreak.builder()
                         .userId(userId)
                         .currentStreak(0)
-                        .longest_streak(0)
+                        .longestStreak(0)
                         .streakFreezes(0)
                         .totalXp(0)
+                        .totalLessonsCompleted(0)
+                        .totalPerfectScores(0)
                         .build());
     }
 
@@ -140,7 +159,7 @@ public class StreakService {
         return com.kuraflow.gamification.dto.UserStreakDto.builder()
                 .userId(streak.getUserId())
                 .currentStreak(streak.getCurrentStreak())
-                .longestStreak(streak.getLongest_streak())
+                .longestStreak(streak.getLongestStreak())
                 .lastActivity(streak.getLastActivity())
                 .streakFreezes(streak.getStreakFreezes())
                 .totalXp(streak.getTotalXp())
