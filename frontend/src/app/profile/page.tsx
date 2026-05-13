@@ -113,7 +113,7 @@ export default function ProfilePage() {
                   <span className="badge-name">{userBadge.name}</span>
                   <span className="badge-desc">{userBadge.description}</span>
                   <div style={{ marginTop: 'var(--spacing-2)' }}>
-                    <Badge variant="outline" size="sm">
+                    <Badge variant="outline">
                       {new Date(userBadge.earnedAt).toLocaleDateString()}
                     </Badge>
                   </div>
