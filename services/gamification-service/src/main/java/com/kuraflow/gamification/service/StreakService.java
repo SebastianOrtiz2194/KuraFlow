@@ -19,6 +19,7 @@ public class StreakService {
 
     private final UserStreakRepository userStreakRepository;
     private final BadgeService badgeService;
+    private final LeaderboardService leaderboardService;
     
     // In a real app, this would fetch from user-service
     // For now, we assume UTC
@@ -94,6 +95,9 @@ public class StreakService {
 
         userStreakRepository.save(streak);
         log.info("Updated streak for user {}: current={}, totalXp={}", userId, streak.getCurrentStreak(), streak.getTotalXp());
+        
+        // Update leaderboard
+        leaderboardService.addXp(userId, xpEarned);
         
         // Evaluate badges
         String eventType = isLessonCompletion ? "LESSON_COMPLETED" : "ACTIVITY";

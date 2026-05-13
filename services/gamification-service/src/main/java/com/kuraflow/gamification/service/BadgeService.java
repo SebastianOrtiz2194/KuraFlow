@@ -6,6 +6,7 @@ import com.kuraflow.gamification.entity.UserStreak;
 import com.kuraflow.gamification.repository.BadgeRepository;
 import com.kuraflow.gamification.repository.UserBadgeRepository;
 import com.kuraflow.gamification.repository.UserStreakRepository;
+import com.kuraflow.gamification.service.LeaderboardService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -23,6 +24,7 @@ public class BadgeService {
     private final BadgeRepository badgeRepository;
     private final UserBadgeRepository userBadgeRepository;
     private final UserStreakRepository userStreakRepository;
+    private final LeaderboardService leaderboardService;
 
     @Transactional
     public void evaluateBadges(UUID userId, String eventType, Map<String, Object> eventData) {
@@ -93,6 +95,10 @@ public class BadgeService {
         if (badge.getXpReward() > 0) {
             streak.setTotalXp(streak.getTotalXp() + badge.getXpReward());
             userStreakRepository.save(streak);
+            
+            // Sync with leaderboard
+            leaderboardService.syncTotalXp(userId, streak.getTotalXp());
+            
             log.info("Awarded {} bonus XP to user {} for badge {}", badge.getXpReward(), userId, badge.getCode());
         }
     }
