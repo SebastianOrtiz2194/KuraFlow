@@ -134,3 +134,43 @@ export interface SrsCard {
   lastReviewed: string | null;
   status: string;
 }
+
+export interface LeaderboardEntry {
+  rank: number;
+  userId: string;
+  displayName: string;
+  avatarUrl: string | null;
+  score: number;
+}
+
+export interface LeaderboardResponse {
+  type: 'weekly' | 'alltime';
+  entries: LeaderboardEntry[];
+  currentUser: LeaderboardEntry | null;
+  totalParticipants: number;
+}
+
+export interface UserBadge {
+  badgeId: string;
+  code: string;
+  name: string;
+  description: string;
+  iconUrl: string;
+  category: string;
+  xpReward: number;
+  earnedAt: string;
+}
+
+export interface UserProfile {
+  userId: string;
+  currentStreak: number;
+  longestStreak: number;
+  totalXp: number;
+  totalLessonsCompleted: number;
+  totalPerfectScores: number;
+  streakFreezes: number;
+  lastActivity: string | null;
+  globalRank: number | null;
+  weeklyRank: number | null;
+  badges: UserBadge[];
+}
