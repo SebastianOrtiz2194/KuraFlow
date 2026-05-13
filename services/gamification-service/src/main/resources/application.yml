@@ -27,6 +27,11 @@ spring:
         spring.json.trusted.packages: "com.kuraflow.shared.events"
         spring.json.type.mapping: lessonCompleted:com.kuraflow.shared.events.LessonCompletedEvent,reviewCompleted:com.kuraflow.shared.events.ReviewCompletedEvent
 
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
 server:
   port: 8085
 
@@ -36,3 +41,7 @@ app:
     topics:
       lesson-completed: lesson.completed
       review-completed: review.completed
+  leaderboard:
+    weekly-key: "leaderboard:weekly"
+    alltime-key: "leaderboard:alltime"
+    page-size: 50
