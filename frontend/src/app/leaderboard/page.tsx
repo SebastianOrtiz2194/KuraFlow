@@ -132,7 +132,7 @@ export default function LeaderboardPage() {
                     <span className="xp-label">XP</span>
                   </div>
                 </div>
-              )}
+              ))}
               
               {/* If current user is not in top 50, show them at the bottom */}
               {data.currentUser && data.currentUser.rank > data.entries.length && (

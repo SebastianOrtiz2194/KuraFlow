@@ -134,7 +134,7 @@ export default function ProfilePage() {
             <div className="history-item">
               <div className="history-icon">📚</div>
               <div className="history-info">
-                <span className="history-text">Completed "Basic Greetings"</span>
+                <span className="history-text">Completed &quot;Basic Greetings&quot;</span>
                 <span className="history-date">Today at 10:24 AM</span>
               </div>
               <span className="history-xp">+15 XP</span>
