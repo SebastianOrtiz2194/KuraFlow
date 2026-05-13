@@ -1,0 +1,228 @@
+.leaderboard-page {
+  padding: var(--spacing-8) 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.leaderboard-header {
+  margin-bottom: var(--spacing-8);
+  text-align: center;
+}
+
+.leaderboard-title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-2);
+}
+
+.leaderboard-tabs {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-8);
+}
+
+.tab-btn {
+  padding: var(--spacing-2) var(--spacing-6);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--muted-foreground);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.tab-btn.is-active {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+/* Podium Styles */
+.podium-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-12);
+  height: 300px;
+}
+
+.podium-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.podium-item:hover {
+  transform: translateY(-5px);
+}
+
+.podium-rank {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-2);
+}
+
+.podium-avatar-wrapper {
+  position: relative;
+  margin-bottom: var(--spacing-4);
+}
+
+.podium-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  border: 4px solid var(--background);
+  box-shadow: var(--shadow-lg);
+}
+
+.podium-crown {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+}
+
+.podium-info {
+  text-align: center;
+  width: 100%;
+}
+
+.podium-name {
+  font-weight: 700;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.podium-score {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.podium-bar {
+  width: 100%;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.first .podium-bar {
+  height: 180px;
+  background: linear-gradient(to bottom, #fbbf24, #d97706);
+}
+
+.second .podium-bar {
+  height: 140px;
+  background: linear-gradient(to bottom, #94a3b8, #475569);
+}
+
+.third .podium-bar {
+  height: 100px;
+  background: linear-gradient(to bottom, #b45309, #78350f);
+}
+
+/* List Styles */
+.leaderboard-list {
+  background: var(--card);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-4) var(--spacing-6);
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.2s ease;
+}
+
+.leaderboard-row:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-row:hover {
+  background-color: var(--muted);
+}
+
+.leaderboard-row.is-current-user {
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+.rank-cell {
+  width: 40px;
+  font-weight: 800;
+  color: var(--muted-foreground);
+}
+
+.user-cell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.user-avatar-sm {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--muted-foreground);
+}
+
+.user-name-cell {
+  font-weight: 600;
+}
+
+.score-cell {
+  text-align: right;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.xp-label {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  margin-left: var(--spacing-1);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-12);
+  color: var(--muted-foreground);
+}
+
+@media (max-width: 640px) {
+  .podium-container {
+    height: 250px;
+  }
+  
+  .podium-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .first .podium-bar { height: 140px; }
+  .second .podium-bar { height: 100px; }
+  .third .podium-bar { height: 70px; }
+}
