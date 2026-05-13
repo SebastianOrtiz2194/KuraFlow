@@ -2,10 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { MainLayout } from '@/components/layout/MainLayout';
-import { Card, CardContent } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
 import { getLeaderboard } from '@/lib/api';
-import { LeaderboardResponse, LeaderboardEntry } from '@/lib/types';
+import { LeaderboardResponse } from '@/lib/types';
 import './leaderboard.css';
 
 export default function LeaderboardPage() {
