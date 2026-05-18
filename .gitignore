@@ -46,9 +46,4 @@ logs
 # OS
 .DS_Store
 Thumbs.db
-
-# Project Specific
-implementation_plan.md
-
-# Agents
-.Agents
+

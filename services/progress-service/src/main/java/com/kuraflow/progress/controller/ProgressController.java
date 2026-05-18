@@ -17,8 +17,8 @@ public class ProgressController {
 
     private final ProgressService progressService;
 
-    // TODO: In a real scenario, extract userId from JWT SecurityContext.
-    // For now, we will pass it as a header or assume a fixed user for testing.
+    // TODO (Sprint 13): Extract userId from JWT SecurityContext once global security is implemented.
+    // For now, we are using the 'X-User-Id' header for service-to-service and testing purposes.
     @PostMapping("/lessons/{lessonId}")
     public ResponseEntity<UserProgress> saveLessonProgress(
             @RequestHeader("X-User-Id") UUID userId,
