@@ -6,7 +6,6 @@ import com.kuraflow.gamification.entity.UserStreak;
 import com.kuraflow.gamification.repository.BadgeRepository;
 import com.kuraflow.gamification.repository.UserBadgeRepository;
 import com.kuraflow.gamification.repository.UserStreakRepository;
-import com.kuraflow.gamification.service.LeaderboardService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
