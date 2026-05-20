@@ -13,6 +13,7 @@ import { LessonComplete } from './LessonComplete';
 import { ProgressBar } from '@/components/ui/ProgressBar';
 import { Button } from '@/components/ui/Button';
 import { saveLessonProgress } from '@/lib/api';
+import { useToast } from '@/components/ui/Toast';
 import './LessonPlayer.css';
 
 interface LessonPlayerProps {
@@ -34,6 +35,7 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
   const [currentStep, setCurrentStep] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
   const [canGoNext, setCanGoNext] = useState(true);
+  const { checkNewBadges } = useToast();
 
   // Score tracking
   const quizScore = useQuizScore(lesson.xpReward);
@@ -61,8 +63,13 @@ export function LessonPlayer({ lesson, onExit }: LessonPlayerProps) {
         score: finalScore,
         xpEarned: finalXP,
       });
+
+      // Fetch newly earned badges with a 1-second delay for backend Kafka consumer sync
+      setTimeout(() => {
+        checkNewBadges();
+      }, 1000);
     }
-  }, [currentStep, totalSteps, lesson.id, lesson.xpReward, quizScore]);
+  }, [currentStep, totalSteps, lesson.id, lesson.xpReward, quizScore, checkNewBadges]);
 
   const goPrev = useCallback(() => {
     if (currentStep > 0) {
