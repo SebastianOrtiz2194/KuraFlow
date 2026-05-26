@@ -21,20 +21,20 @@ public class ProgressController {
     // For now, we are using the 'X-User-Id' header for service-to-service and testing purposes.
     @PostMapping("/lessons/{lessonId}")
     public ResponseEntity<UserProgress> saveLessonProgress(
-            @RequestHeader("X-User-Id") UUID userId,
+            @org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails,
             @PathVariable UUID lessonId,
             @Valid @RequestBody SaveProgressRequest request) {
         
-        UserProgress progress = progressService.saveLessonProgress(userId, lessonId, request);
+        UserProgress progress = progressService.saveLessonProgress(userDetails.getId(), lessonId, request);
         return ResponseEntity.ok(progress);
     }
 
     @GetMapping("/lessons/{lessonId}")
     public ResponseEntity<UserProgress> getLessonProgress(
-            @RequestHeader("X-User-Id") UUID userId,
+            @org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails,
             @PathVariable UUID lessonId) {
         
-        UserProgress progress = progressService.getLessonProgress(userId, lessonId);
+        UserProgress progress = progressService.getLessonProgress(userDetails.getId(), lessonId);
         return ResponseEntity.ok(progress);
     }
 }

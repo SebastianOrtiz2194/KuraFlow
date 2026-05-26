@@ -58,6 +58,10 @@ public class JwtUtils {
 
     public String generateToken(UserDetails userDetails) {
         Map<String, Object> claims = new HashMap<>();
+        if (userDetails instanceof com.kuraflow.shared.security.CustomUserDetails) {
+            com.kuraflow.shared.security.CustomUserDetails customDetails = (com.kuraflow.shared.security.CustomUserDetails) userDetails;
+            claims.put("userId", customDetails.getId().toString());
+        }
         return createToken(claims, userDetails.getUsername(), expiration);
     }
 

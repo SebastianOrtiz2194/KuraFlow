@@ -25,11 +25,33 @@ export default function LoginPage() {
 
     setIsLoading(true);
     
-    // Mock login logic
-    setTimeout(() => {
-      document.cookie = 'accessToken=mock_jwt_token; path=/; max-age=86400';
-      router.push('/dashboard');
-    }, 800);
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api/v1'}/auth/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.token) {
+          localStorage.setItem('token', data.token);
+          // Set a basic cookie for middleware if needed
+          document.cookie = `accessToken=${data.token}; path=/; max-age=86400`;
+          router.push('/dashboard');
+        } else {
+          setError('Login successful but no token received');
+        }
+      } else {
+        const errorText = await response.text();
+        setError(`Login failed: ${errorText}`);
+      }
+    } catch (err) {
+      console.error(err);
+      setError('An error occurred during login');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (

@@ -26,11 +26,33 @@ export default function RegisterPage() {
 
     setIsLoading(true);
     
-    // Mock register logic
-    setTimeout(() => {
-      document.cookie = 'accessToken=mock_jwt_token; path=/; max-age=86400';
-      router.push('/dashboard');
-    }, 800);
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api/v1'}/auth/register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, password }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.token) {
+          localStorage.setItem('token', data.token);
+          // Set a basic cookie for middleware if needed
+          document.cookie = `accessToken=${data.token}; path=/; max-age=86400`;
+          router.push('/dashboard');
+        } else {
+          setError('Registration successful but no token received');
+        }
+      } else {
+        const errorText = await response.text();
+        setError(`Registration failed: ${errorText}`);
+      }
+    } catch (err) {
+      console.error(err);
+      setError('An error occurred during registration');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (

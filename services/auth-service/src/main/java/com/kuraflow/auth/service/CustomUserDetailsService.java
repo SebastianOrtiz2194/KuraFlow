@@ -3,7 +3,7 @@ package com.kuraflow.auth.service;
 import com.kuraflow.auth.entity.UserCredential;
 import com.kuraflow.auth.repository.UserCredentialRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.core.userdetails.User;
+import com.kuraflow.shared.security.CustomUserDetails;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -22,10 +22,10 @@ public class CustomUserDetailsService implements UserDetailsService {
         UserCredential credential = userCredentialRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
 
-        return new User(
+        return new CustomUserDetails(
+                credential.getId(),
                 credential.getEmail(),
-                credential.getPasswordHash() != null ? credential.getPasswordHash() : "",
-                Collections.emptyList()
+                credential.getPasswordHash() != null ? credential.getPasswordHash() : ""
         );
     }
 }

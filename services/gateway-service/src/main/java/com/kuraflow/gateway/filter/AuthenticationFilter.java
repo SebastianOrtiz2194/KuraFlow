@@ -39,9 +39,11 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                     
                     // Optionally string the username and pass it along in a custom header
                     String username = jwtUtil.extractUsername(authHeader);
-                    exchange.getRequest().mutate()
+                    org.springframework.http.server.reactive.ServerHttpRequest mutatedRequest = exchange.getRequest().mutate()
                             .header("X-Auth-User", username)
                             .build();
+                    
+                    exchange = exchange.mutate().request(mutatedRequest).build();
 
                 } catch (Exception e) {
                     return onError(exchange, "Unauthorized access", HttpStatus.UNAUTHORIZED);

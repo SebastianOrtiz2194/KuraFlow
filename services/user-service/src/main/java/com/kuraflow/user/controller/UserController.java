@@ -26,6 +26,12 @@ public class UserController {
         return ResponseEntity.ok(userService.getProfile(id));
     }
 
+    @GetMapping("/me")
+    @Operation(summary = "Get current authenticated user's profile")
+    public ResponseEntity<UserProfileResponse> getMyProfile(@org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        return ResponseEntity.ok(userService.getProfile(userDetails.getId()));
+    }
+
     @GetMapping("/email/{email}")
     @Operation(summary = "Get user profile by email")
     public ResponseEntity<UserProfileResponse> getProfileByEmail(@PathVariable String email) {
@@ -38,6 +44,14 @@ public class UserController {
             @PathVariable UUID id,
             @Valid @RequestBody UpdateProfileRequest request) {
         return ResponseEntity.ok(userService.updateProfile(id, request));
+    }
+
+    @PatchMapping("/me")
+    @Operation(summary = "Update current authenticated user's profile")
+    public ResponseEntity<UserProfileResponse> updateMyProfile(
+            @org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails,
+            @Valid @RequestBody UpdateProfileRequest request) {
+        return ResponseEntity.ok(userService.updateProfile(userDetails.getId(), request));
     }
 
     @GetMapping("/health")
