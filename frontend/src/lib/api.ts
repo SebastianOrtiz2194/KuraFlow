@@ -5,8 +5,19 @@ export interface SaveProgressRequest {
   xpEarned: number;
 }
 
-const MOCK_USER_ID = '123e4567-e89b-12d3-a456-426614174000';
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api/v1';
+
+export function getAuthToken(): string | null {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem('token');
+  }
+  return null;
+}
+
+export function getAuthHeaders(): Record<string, string> {
+  const token = getAuthToken();
+  return token ? { 'Authorization': `Bearer ${token}` } : {};
+}
 
 export async function saveLessonProgress(lessonId: string, data: SaveProgressRequest): Promise<void> {
   try {
@@ -14,7 +25,7 @@ export async function saveLessonProgress(lessonId: string, data: SaveProgressReq
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-User-Id': MOCK_USER_ID,
+        ...getAuthHeaders(),
       },
       body: JSON.stringify(data),
     });
@@ -30,15 +41,19 @@ export async function saveLessonProgress(lessonId: string, data: SaveProgressReq
 export async function getLeaderboard(type: 'weekly' | 'alltime'): Promise<LeaderboardResponse> {
   const response = await fetch(`${BASE_URL}/gamification/leaderboard/${type}`, {
     headers: {
-      'X-User-Id': MOCK_USER_ID,
+      ...getAuthHeaders(),
     },
   });
   if (!response.ok) throw new Error('Failed to fetch leaderboard');
   return response.json();
 }
 
-export async function getUserProfile(userId: string = MOCK_USER_ID): Promise<UserProfile> {
-  const response = await fetch(`${BASE_URL}/gamification/profile/${userId}`);
+export async function getUserProfile(): Promise<UserProfile> {
+  const response = await fetch(`${BASE_URL}/gamification/profile/me`, {
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
   if (!response.ok) throw new Error('Failed to fetch user profile');
   return response.json();
 }

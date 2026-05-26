@@ -29,10 +29,15 @@ public class GamificationController {
         return ResponseEntity.ok(streakService.getUserStreak(userId));
     }
 
-    @PostMapping("/streak/{userId}/freeze")
-    public ResponseEntity<Void> purchaseFreeze(@PathVariable UUID userId) {
+    @GetMapping("/streak/me")
+    public ResponseEntity<UserStreakDto> getMyStreak(@org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        return ResponseEntity.ok(streakService.getUserStreak(userDetails.getId()));
+    }
+
+    @PostMapping("/streak/me/freeze")
+    public ResponseEntity<Void> purchaseFreeze(@org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
         try {
-            streakService.purchaseFreeze(userId);
+            streakService.purchaseFreeze(userDetails.getId());
             return ResponseEntity.ok().build();
         } catch (IllegalStateException e) {
             return ResponseEntity.badRequest().build();
@@ -43,13 +48,15 @@ public class GamificationController {
 
     @GetMapping("/leaderboard/alltime")
     public ResponseEntity<LeaderboardResponse> getAllTimeLeaderboard(
-            @RequestHeader(value = "X-User-Id", required = false) UUID userId) {
+            @org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        UUID userId = userDetails != null ? userDetails.getId() : null;
         return ResponseEntity.ok(leaderboardService.getAllTimeLeaderboard(userId));
     }
 
     @GetMapping("/leaderboard/weekly")
     public ResponseEntity<LeaderboardResponse> getWeeklyLeaderboard(
-            @RequestHeader(value = "X-User-Id", required = false) UUID userId) {
+            @org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        UUID userId = userDetails != null ? userDetails.getId() : null;
         return ResponseEntity.ok(leaderboardService.getWeeklyLeaderboard(userId));
     }
 
@@ -58,5 +65,10 @@ public class GamificationController {
     @GetMapping("/profile/{userId}")
     public ResponseEntity<UserProfileDto> getUserProfile(@PathVariable UUID userId) {
         return ResponseEntity.ok(profileService.getUserProfile(userId));
+    }
+
+    @GetMapping("/profile/me")
+    public ResponseEntity<UserProfileDto> getMyProfile(@org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        return ResponseEntity.ok(profileService.getUserProfile(userDetails.getId()));
     }
 }
