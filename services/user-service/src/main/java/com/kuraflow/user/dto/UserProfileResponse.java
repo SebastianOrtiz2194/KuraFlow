@@ -23,4 +23,6 @@ public class UserProfileResponse {
     private String timezone;
     private Boolean isPremium;
     private OffsetDateTime createdAt;
+    private Long followersCount;
+    private Long followingCount;
 }
