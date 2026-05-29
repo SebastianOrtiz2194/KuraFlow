@@ -1,4 +1,4 @@
-import { LeaderboardResponse, UserProfile } from './types';
+import { LeaderboardResponse, UserProfile, ActivityItem } from './types';
 
 export interface SaveProgressRequest {
   score: number;
@@ -55,5 +55,15 @@ export async function getUserProfile(): Promise<UserProfile> {
     }
   });
   if (!response.ok) throw new Error('Failed to fetch user profile');
+  return response.json();
+}
+
+export async function getActivityHistory(): Promise<ActivityItem[]> {
+  const response = await fetch(`${BASE_URL}/gamification/profile/me/history`, {
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
+  if (!response.ok) throw new Error('Failed to fetch activity history');
   return response.json();
 }

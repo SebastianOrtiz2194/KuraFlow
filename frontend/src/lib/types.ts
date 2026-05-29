@@ -163,6 +163,8 @@ export interface UserBadge {
 
 export interface UserProfile {
   userId: string;
+  displayName: string | null;
+  avatarUrl: string | null;
   currentStreak: number;
   longestStreak: number;
   totalXp: number;
@@ -173,4 +175,11 @@ export interface UserProfile {
   globalRank: number | null;
   weeklyRank: number | null;
   badges: UserBadge[];
+}
+
+export interface ActivityItem {
+  type: string;
+  description: string;
+  xpEarned: number;
+  timestamp: string;
 }
