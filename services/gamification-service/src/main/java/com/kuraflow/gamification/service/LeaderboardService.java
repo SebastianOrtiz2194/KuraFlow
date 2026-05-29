@@ -83,6 +83,72 @@ public class LeaderboardService {
     }
 
     /**
+     * Gets the friends leaderboard for the requesting user.
+     */
+    public LeaderboardResponse getFriendsLeaderboard(UUID requestingUserId, String timeframe) {
+        if (requestingUserId == null) {
+            return LeaderboardResponse.builder()
+                    .type("friends")
+                    .entries(List.of())
+                    .currentUser(null)
+                    .totalParticipants(0L)
+                    .build();
+        }
+
+        List<UUID> followingIds = userServiceClient.getFollowingIds(requestingUserId);
+        Set<UUID> targetIds = new HashSet<>(followingIds);
+        targetIds.add(requestingUserId);
+
+        String key = timeframe.equals("alltime") ? alltimeKey : getCurrentWeeklyKey();
+
+        List<LeaderboardEntryDto> entries = new ArrayList<>();
+        for (UUID id : targetIds) {
+            String userIdStr = id.toString();
+            Double score = redisTemplate.opsForZSet().score(key, userIdStr);
+            if (score != null) {
+                entries.add(LeaderboardEntryDto.builder()
+                        .userId(id)
+                        .score(score.longValue())
+                        .build());
+            } else {
+                entries.add(LeaderboardEntryDto.builder()
+                        .userId(id)
+                        .score(0L)
+                        .build());
+            }
+        }
+
+        // Sort descending by score
+        entries.sort((a, b) -> Long.compare(b.getScore(), a.getScore()));
+
+        // Assign ranks
+        int rank = 1;
+        for (LeaderboardEntryDto entry : entries) {
+            entry.setRank(rank++);
+        }
+
+        // Batch fetch profiles
+        userServiceClient.batchFetchProfiles(targetIds);
+
+        // Populate display names and avatars, and find current user
+        LeaderboardEntryDto currentUser = null;
+        for (LeaderboardEntryDto entry : entries) {
+            entry.setDisplayName(userServiceClient.getDisplayName(entry.getUserId()));
+            entry.setAvatarUrl(userServiceClient.getAvatarUrl(entry.getUserId()));
+            if (entry.getUserId().equals(requestingUserId)) {
+                currentUser = entry;
+            }
+        }
+
+        return LeaderboardResponse.builder()
+                .type("friends")
+                .entries(entries)
+                .currentUser(currentUser)
+                .totalParticipants((long) entries.size())
+                .build();
+    }
+
+    /**
      * Gets the rank of a specific user in the all-time leaderboard.
      * Returns null if the user is not on the board.
      */

@@ -87,4 +87,22 @@ public class UserServiceClient {
             log.warn("Failed to fetch user profiles from user-service: {}", e.getMessage());
         }
     }
+
+    public List<UUID> getFollowingIds(UUID userId) {
+        try {
+            String url = userServiceBaseUrl + "/api/system/users/" + userId + "/following";
+            ResponseEntity<List<UUID>> response = restTemplate.exchange(
+                    url,
+                    HttpMethod.GET,
+                    null,
+                    new ParameterizedTypeReference<>() {}
+            );
+            if (response.getBody() != null) {
+                return response.getBody();
+            }
+        } catch (Exception e) {
+            log.warn("Failed to fetch following IDs for user {}: {}", userId, e.getMessage());
+        }
+        return Collections.emptyList();
+    }
 }

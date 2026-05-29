@@ -64,6 +64,14 @@ public class GamificationController {
         return ResponseEntity.ok(leaderboardService.getWeeklyLeaderboard(userId));
     }
 
+    @GetMapping("/leaderboard/friends")
+    public ResponseEntity<LeaderboardResponse> getFriendsLeaderboard(
+            @org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails,
+            @RequestParam(defaultValue = "weekly") String timeframe) {
+        UUID userId = userDetails != null ? userDetails.getId() : null;
+        return ResponseEntity.ok(leaderboardService.getFriendsLeaderboard(userId, timeframe));
+    }
+
     // ==================== Profile Endpoints ====================
 
     @GetMapping("/profile/{userId}")
