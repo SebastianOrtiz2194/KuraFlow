@@ -4,24 +4,27 @@ import React, { useState, useEffect } from 'react';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { Card, CardContent } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
-import { getUserProfile, getActivityHistory } from '@/lib/api';
-import { UserProfile, ActivityItem } from '@/lib/types';
+import { getUserProfile, getActivityHistory, getUserInfo } from '@/lib/api';
+import { UserProfile, ActivityItem, UserInfo } from '@/lib/types';
 import './profile.css';
 
 export default function ProfilePage() {
   const [profile, setProfile] = useState<UserProfile | null>(null);
+  const [userInfo, setUserInfo] = useState<UserInfo | null>(null);
   const [activities, setActivities] = useState<ActivityItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const [profileData, historyData] = await Promise.all([
+        const [profileData, historyData, infoData] = await Promise.all([
           getUserProfile(),
           getActivityHistory(),
+          getUserInfo(),
         ]);
         setProfile(profileData);
         setActivities(historyData);
+        setUserInfo(infoData);
       } catch (error) {
         console.error('Error fetching profile:', error);
       } finally {
@@ -62,9 +65,13 @@ export default function ProfilePage() {
               : '??'}
           </div>
           <div className="profile-info">
-            <h1>{profile.displayName || 'Learner'}</h1>
+            <h1>{userInfo?.displayName || profile.displayName || 'Learner'}</h1>
             <div className="profile-meta">
               <span>{profile.totalXp.toLocaleString()} Total XP</span>
+              <span className="meta-divider">•</span>
+              <span>{userInfo?.followersCount || 0} Followers</span>
+              <span className="meta-divider">•</span>
+              <span>{userInfo?.followingCount || 0} Following</span>
             </div>
             <div style={{ marginTop: 'var(--spacing-4)' }}>
               <Badge variant="secondary">Pro Learner</Badge>

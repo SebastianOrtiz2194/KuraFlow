@@ -13,14 +13,9 @@ export default function LeaderboardPage() {
 
   useEffect(() => {
     async function fetchData() {
-      if (type === 'friends') {
-        setIsLoading(false);
-        setData(null);
-        return;
-      }
       setIsLoading(true);
       try {
-        const result = await getLeaderboard(type as 'weekly' | 'alltime');
+        const result = await getLeaderboard(type as 'weekly' | 'alltime' | 'friends');
         setData(result);
       } catch (error) {
         console.error('Error fetching leaderboard:', error);
@@ -63,15 +58,7 @@ export default function LeaderboardPage() {
           </button>
         </div>
 
-        {type === 'friends' ? (
-          <div className="empty-state">
-            <p style={{ fontSize: '1.2rem', marginBottom: 'var(--spacing-4)' }}>👥</p>
-            <p>Compete with your friends!</p>
-            <p style={{ fontSize: '0.9rem', marginTop: 'var(--spacing-2)', opacity: 0.7 }}>
-              The friends feature is coming soon. Start adding friends to see how you rank against them.
-            </p>
-          </div>
-        ) : isLoading ? (
+        {isLoading ? (
           <div className="empty-state">Loading rankings...</div>
         ) : data && data.entries.length > 0 ? (
           <>

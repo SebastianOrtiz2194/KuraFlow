@@ -5,7 +5,9 @@ export interface SaveProgressRequest {
   xpEarned: number;
 }
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api/v1';
+const API_V1_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api/v1';
+const GAMIFICATION_URL = process.env.NEXT_PUBLIC_GAMIFICATION_URL || 'http://localhost:8080/api/gamification';
+const USERS_URL = process.env.NEXT_PUBLIC_USERS_URL || 'http://localhost:8080/api/users';
 
 export function getAuthToken(): string | null {
   if (typeof window !== 'undefined') {
@@ -21,7 +23,7 @@ export function getAuthHeaders(): Record<string, string> {
 
 export async function saveLessonProgress(lessonId: string, data: SaveProgressRequest): Promise<void> {
   try {
-    const response = await fetch(`${BASE_URL}/progress/lessons/${lessonId}`, {
+    const response = await fetch(`${API_V1_URL}/progress/lessons/${lessonId}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -38,8 +40,8 @@ export async function saveLessonProgress(lessonId: string, data: SaveProgressReq
   }
 }
 
-export async function getLeaderboard(type: 'weekly' | 'alltime'): Promise<LeaderboardResponse> {
-  const response = await fetch(`${BASE_URL}/gamification/leaderboard/${type}`, {
+export async function getLeaderboard(type: 'weekly' | 'alltime' | 'friends'): Promise<LeaderboardResponse> {
+  const response = await fetch(`${GAMIFICATION_URL}/leaderboard/${type}`, {
     headers: {
       ...getAuthHeaders(),
     },
@@ -49,7 +51,7 @@ export async function getLeaderboard(type: 'weekly' | 'alltime'): Promise<Leader
 }
 
 export async function getUserProfile(): Promise<UserProfile> {
-  const response = await fetch(`${BASE_URL}/gamification/profile/me`, {
+  const response = await fetch(`${GAMIFICATION_URL}/profile/me`, {
     headers: {
       ...getAuthHeaders(),
     }
@@ -59,11 +61,41 @@ export async function getUserProfile(): Promise<UserProfile> {
 }
 
 export async function getActivityHistory(): Promise<ActivityItem[]> {
-  const response = await fetch(`${BASE_URL}/gamification/profile/me/history`, {
+  const response = await fetch(`${GAMIFICATION_URL}/profile/me/history`, {
     headers: {
       ...getAuthHeaders(),
     }
   });
   if (!response.ok) throw new Error('Failed to fetch activity history');
   return response.json();
+}
+
+export async function getUserInfo(): Promise<import('./types').UserInfo> {
+  const response = await fetch(`${USERS_URL}/me`, {
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
+  if (!response.ok) throw new Error('Failed to fetch user info');
+  return response.json();
+}
+
+export async function followUser(targetId: string): Promise<void> {
+  const response = await fetch(`${USERS_URL}/me/following/${targetId}`, {
+    method: 'POST',
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
+  if (!response.ok) throw new Error('Failed to follow user');
+}
+
+export async function unfollowUser(targetId: string): Promise<void> {
+  const response = await fetch(`${USERS_URL}/me/following/${targetId}`, {
+    method: 'DELETE',
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
+  if (!response.ok) throw new Error('Failed to unfollow user');
 }

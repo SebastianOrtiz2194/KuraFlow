@@ -183,3 +183,18 @@ export interface ActivityItem {
   xpEarned: number;
   timestamp: string;
 }
+
+export interface UserInfo {
+  id: string;
+  email: string;
+  displayName: string | null;
+  avatarUrl: string | null;
+  authProvider: string;
+  preferredLanguageId: string | null;
+  currentLevelId: string | null;
+  timezone: string;
+  isPremium: boolean;
+  createdAt: string;
+  followersCount?: number;
+  followingCount?: number;
+}
