@@ -15,6 +15,8 @@ import java.util.UUID;
 @AllArgsConstructor
 public class UserProfileDto {
     private UUID userId;
+    private String displayName;
+    private String avatarUrl;
     private Integer currentStreak;
     private Integer longestStreak;
     private Integer totalXp;
