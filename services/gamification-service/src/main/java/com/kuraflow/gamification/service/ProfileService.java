@@ -21,6 +21,7 @@ public class ProfileService {
     private final StreakService streakService;
     private final LeaderboardService leaderboardService;
     private final UserBadgeRepository userBadgeRepository;
+    private final UserServiceClient userServiceClient;
 
     @Transactional(readOnly = true)
     public UserProfileDto getUserProfile(UUID userId) {
@@ -31,6 +32,8 @@ public class ProfileService {
 
         return UserProfileDto.builder()
                 .userId(userId)
+                .displayName(userServiceClient.getDisplayName(userId))
+                .avatarUrl(userServiceClient.getAvatarUrl(userId))
                 .currentStreak(streak.getCurrentStreak())
                 .longestStreak(streak.getLongestStreak())
                 .totalXp(streak.getTotalXp())
