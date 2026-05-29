@@ -1,8 +1,10 @@
 package com.kuraflow.gamification.controller;
 
+import com.kuraflow.gamification.dto.ActivityItemDto;
 import com.kuraflow.gamification.dto.LeaderboardResponse;
 import com.kuraflow.gamification.dto.UserProfileDto;
 import com.kuraflow.gamification.dto.UserStreakDto;
+import com.kuraflow.gamification.service.ActivityHistoryService;
 import com.kuraflow.gamification.service.LeaderboardService;
 import com.kuraflow.gamification.service.ProfileService;
 import com.kuraflow.gamification.service.StreakService;
@@ -10,6 +12,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -21,6 +24,7 @@ public class GamificationController {
     private final StreakService streakService;
     private final LeaderboardService leaderboardService;
     private final ProfileService profileService;
+    private final ActivityHistoryService activityHistoryService;
 
     // ==================== Streak Endpoints ====================
 
@@ -70,5 +74,12 @@ public class GamificationController {
     @GetMapping("/profile/me")
     public ResponseEntity<UserProfileDto> getMyProfile(@org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
         return ResponseEntity.ok(profileService.getUserProfile(userDetails.getId()));
+    }
+
+    // ==================== Activity History Endpoints ====================
+
+    @GetMapping("/profile/me/history")
+    public ResponseEntity<List<ActivityItemDto>> getMyActivityHistory(@org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        return ResponseEntity.ok(activityHistoryService.getRecentActivities(userDetails.getId()));
     }
 }
