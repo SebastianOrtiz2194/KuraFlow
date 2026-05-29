@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 public class InternalUserController {
 
     private final UserRepository userRepository;
+    private final com.kuraflow.user.service.UserService userService;
 
     @PostMapping("/profiles")
     public ResponseEntity<Map<UUID, UserBriefResponse>> getBatchProfiles(@RequestBody List<UUID> userIds) {
@@ -36,5 +37,10 @@ public class InternalUserController {
                 ));
 
         return ResponseEntity.ok(result);
+    }
+
+    @GetMapping("/{id}/following")
+    public ResponseEntity<List<UUID>> getFollowingIds(@PathVariable UUID id) {
+        return ResponseEntity.ok(userService.getFollowingIds(id));
     }
 }
