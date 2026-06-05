@@ -11,7 +11,7 @@ import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name = "user_follows")
+@Table(name = "user_follows", schema = "user_schema")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
