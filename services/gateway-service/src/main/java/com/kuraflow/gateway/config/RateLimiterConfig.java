@@ -11,8 +11,12 @@ public class RateLimiterConfig {
 
     @Bean
     public KeyResolver userKeyResolver() {
-        // Rate limit based on the Authorization header (JWT) or IP address if missing
         return exchange -> Mono.justOrEmpty(exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION))
-                .defaultIfEmpty(exchange.getRequest().getRemoteAddress().getAddress().getHostAddress());
+                .switchIfEmpty(Mono.defer(() -> {
+                    if (exchange.getRequest().getRemoteAddress() != null && exchange.getRequest().getRemoteAddress().getAddress() != null) {
+                        return Mono.just(exchange.getRequest().getRemoteAddress().getAddress().getHostAddress());
+                    }
+                    return Mono.just("anonymous");
+                }));
     }
 }
