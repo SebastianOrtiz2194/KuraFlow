@@ -34,10 +34,10 @@ export default function LoginPage() {
 
       if (response.ok) {
         const data = await response.json();
-        if (data.token) {
-          localStorage.setItem('token', data.token);
-          // Set a basic cookie for middleware if needed
-          document.cookie = `accessToken=${data.token}; path=/; max-age=86400`;
+        if (data.accessToken) {
+          localStorage.setItem('token', data.accessToken);
+          if (data.refreshToken) localStorage.setItem('refreshToken', data.refreshToken);
+          document.cookie = `accessToken=${data.accessToken}; path=/; max-age=86400`;
           router.push('/dashboard');
         } else {
           setError('Login successful but no token received');

@@ -43,6 +43,8 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const checkNewBadges = useCallback(async () => {
     try {
       if (typeof window === 'undefined') return;
+      const token = localStorage.getItem('token');
+      if (!token) return;
       const profile = await getUserProfile();
       const badges = profile.badges || [];
       const seenBadgesKey = `kuraflow_seen_badges_${profile.userId || 'default'}`;
