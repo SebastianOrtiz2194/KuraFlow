@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { use } from 'react';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { Card, CardContent } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
@@ -8,9 +8,10 @@ import { ProgressBar } from '@/components/ui/ProgressBar';
 import { Button } from '@/components/ui/Button';
 import './level.css';
 
-export default function LevelOverviewPage({ params }: { params: { levelId: string } }) {
+export default function LevelOverviewPage({ params }: { params: Promise<{ levelId: string }> }) {
+  const resolvedParams = use(params);
   // In a real app, this would be fetched based on levelId
-  const levelTitle = params.levelId.toUpperCase();
+  const levelTitle = resolvedParams.levelId.toUpperCase();
   
   return (
     <MainLayout>
