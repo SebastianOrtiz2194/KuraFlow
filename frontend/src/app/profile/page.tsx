@@ -4,8 +4,10 @@ import React, { useState, useEffect } from 'react';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { Card, CardContent } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
+import { Button } from '@/components/ui/Button';
 import { getUserProfile, getActivityHistory, getUserInfo } from '@/lib/api';
 import { UserProfile, ActivityItem, UserInfo } from '@/lib/types';
+import { subscribeToPushNotifications } from '@/lib/push';
 import './profile.css';
 
 export default function ProfilePage() {
@@ -13,7 +15,22 @@ export default function ProfilePage() {
   const [userInfo, setUserInfo] = useState<UserInfo | null>(null);
   const [activities, setActivities] = useState<ActivityItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isSubscribing, setIsSubscribing] = useState(false);
+  const [subscriptionStatus, setSubscriptionStatus] = useState<string | null>(null);
 
+  const handleSubscribe = async () => {
+    setIsSubscribing(true);
+    setSubscriptionStatus(null);
+    try {
+      await subscribeToPushNotifications();
+      setSubscriptionStatus('Subscribed successfully!');
+    } catch (error: any) {
+      console.error('Subscription error:', error);
+      setSubscriptionStatus('Failed to subscribe.');
+    } finally {
+      setIsSubscribing(false);
+    }
+  };
   useEffect(() => {
     async function fetchData() {
       try {
@@ -73,8 +90,21 @@ export default function ProfilePage() {
               <span className="meta-divider">•</span>
               <span>{userInfo?.followingCount || 0} Following</span>
             </div>
-            <div style={{ marginTop: 'var(--spacing-4)' }}>
+            <div style={{ marginTop: 'var(--spacing-4)', display: 'flex', gap: '1rem', alignItems: 'center' }}>
               <Badge variant="secondary">Pro Learner</Badge>
+              <Button 
+                onClick={handleSubscribe} 
+                disabled={isSubscribing}
+                variant="outline"
+                size="sm"
+              >
+                {isSubscribing ? 'Enabling...' : 'Enable Notifications 🔔'}
+              </Button>
+              {subscriptionStatus && (
+                <span style={{ fontSize: '0.8rem', color: subscriptionStatus.includes('success') ? 'var(--success-text, #10b981)' : 'var(--danger-text, #ef4444)' }}>
+                  {subscriptionStatus}
+                </span>
+              )}
             </div>
           </div>
         </section>
