@@ -27,3 +27,19 @@ server:
 
 jwt:
   secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+
+vapid:
+  public.key: BMUJc_4W1HEsPz8B2sSi9aiUNRTldCouh9SK22WPx8FTG0YnU8YqwZ0lOJczJ940kvnPPSbc_GkPmH0X7Yyq4fU
+  private.key: EhdAUv8SyHst0T3wYUUvfRl9V22LN5aHd_vRm2op3dI
+  subject: mailto:admin@kuraflow.com
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: user-service-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
