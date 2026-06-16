@@ -34,3 +34,58 @@ const serwist = new Serwist({
 });
 
 serwist.addEventListeners();
+
+self.addEventListener("push", (event) => {
+  if (event.data) {
+    try {
+      const payload = event.data.json();
+      
+      // Basic client-side localization
+      const lang = self.navigator?.language || "en";
+      const isJapanese = lang.startsWith("ja");
+      
+      let title = payload.title || "KuraFlow";
+      let body = payload.body || "You have a new notification!";
+      
+      if (isJapanese && payload.type === "badge") {
+        title = "新しいバッジを獲得しました！ 🏆";
+      } else if (isJapanese && payload.type === "streak") {
+        title = "ストリーク継続！ 🔥";
+      }
+
+      event.waitUntil(
+        self.registration.showNotification(title, {
+          body: body,
+          icon: payload.icon || "/icons/icon-192x192.png",
+          badge: "/icons/icon-192x192.png",
+          vibrate: [100, 50, 100],
+          data: { url: payload.url || "/profile" }
+        })
+      );
+    } catch (e) {
+      console.error("Error parsing push payload", e);
+    }
+  }
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const urlToOpen = event.notification.data?.url || "/";
+  
+  event.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((windowClients) => {
+      // Check if there is already a window/tab open with the target URL
+      for (let i = 0; i < windowClients.length; i++) {
+        const client = windowClients[i];
+        // If so, just focus it.
+        if (client.url.includes(urlToOpen) && "focus" in client) {
+          return client.focus();
+        }
+      }
+      // If not, then open the target URL in a new window/tab.
+      if (self.clients.openWindow) {
+        return self.clients.openWindow(urlToOpen);
+      }
+    })
+  );
+});
