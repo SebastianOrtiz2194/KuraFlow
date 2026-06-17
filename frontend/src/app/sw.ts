@@ -45,7 +45,7 @@ self.addEventListener("push", (event) => {
       const isJapanese = lang.startsWith("ja");
       
       let title = payload.title || "KuraFlow";
-      let body = payload.body || "You have a new notification!";
+      const body = payload.body || "You have a new notification!";
       
       if (isJapanese && payload.type === "badge") {
         title = "新しいバッジを獲得しました！ 🏆";

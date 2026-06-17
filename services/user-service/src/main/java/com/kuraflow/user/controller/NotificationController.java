@@ -1,6 +1,5 @@
 package com.kuraflow.user.controller;
 
-import com.kuraflow.shared.security.SecurityContextUtils;
 import com.kuraflow.user.dto.PushSubscriptionRequest;
 import com.kuraflow.user.entity.PushSubscription;
 import com.kuraflow.user.entity.User;
@@ -22,8 +21,10 @@ public class NotificationController {
     private final UserRepository userRepository;
 
     @PostMapping("/subscribe")
-    public ResponseEntity<Void> subscribe(@Valid @RequestBody PushSubscriptionRequest request) {
-        UUID userId = SecurityContextUtils.getCurrentUserId();
+    public ResponseEntity<Void> subscribe(
+            @org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails,
+            @Valid @RequestBody PushSubscriptionRequest request) {
+        UUID userId = userDetails.getId();
         if (userId == null) {
             return ResponseEntity.status(401).build();
         }
