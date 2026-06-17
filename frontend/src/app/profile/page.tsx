@@ -24,7 +24,7 @@ export default function ProfilePage() {
     try {
       await subscribeToPushNotifications();
       setSubscriptionStatus('Subscribed successfully!');
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Subscription error:', error);
       setSubscriptionStatus('Failed to subscribe.');
     } finally {
