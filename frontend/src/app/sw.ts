@@ -1,7 +1,7 @@
 /// <reference lib="webworker" />
 import { defaultCache } from "@serwist/next/worker";
 import type { PrecacheEntry, SerwistGlobalConfig } from "serwist";
-import { Serwist, NetworkFirst, ExpirationPlugin } from "serwist";
+import { Serwist, NetworkFirst, CacheFirst, ExpirationPlugin } from "serwist";
 
 declare global {
   interface WorkerGlobalScope extends SerwistGlobalConfig {
@@ -17,6 +17,30 @@ const serwist = new Serwist({
   clientsClaim: true,
   navigationPreload: true,
   runtimeCaching: [
+    {
+      matcher: ({ request, url }) => request.destination === 'image' || url.pathname.match(/\.(png|jpg|jpeg|svg|webp|gif)$/),
+      handler: new CacheFirst({
+        cacheName: 'images',
+        plugins: [
+          new ExpirationPlugin({
+            maxEntries: 100,
+            maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+          }),
+        ],
+      }),
+    },
+    {
+      matcher: ({ url }) => url.pathname.startsWith('/api/content/lessons'),
+      handler: new NetworkFirst({
+        cacheName: 'lesson-cache',
+        plugins: [
+          new ExpirationPlugin({
+            maxEntries: 50,
+            maxAgeSeconds: 60 * 60 * 24 * 7, // 7 days
+          }),
+        ],
+      }),
+    },
     {
       matcher: ({ url }) => url.pathname.startsWith('/api/'),
       handler: new NetworkFirst({
