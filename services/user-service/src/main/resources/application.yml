@@ -21,6 +21,17 @@ spring:
     schemas: user_schema
     default-schema: user_schema
     create-schemas: true
+  mail:
+    host: localhost
+    port: 1025
+    username: test
+    password: password
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
 
 server:
   port: 8082
