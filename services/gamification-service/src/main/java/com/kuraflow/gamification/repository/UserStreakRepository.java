@@ -10,4 +10,5 @@ import java.util.UUID;
 @Repository
 public interface UserStreakRepository extends JpaRepository<UserStreak, UUID> {
     Optional<UserStreak> findByUserId(UUID userId);
+    java.util.List<UserStreak> findAllByUserIdIn(java.util.Collection<UUID> userIds);
 }

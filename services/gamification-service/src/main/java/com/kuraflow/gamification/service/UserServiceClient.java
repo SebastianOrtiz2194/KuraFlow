@@ -105,4 +105,22 @@ public class UserServiceClient {
         }
         return Collections.emptyList();
     }
+
+    public List<UUID> getUsersAtLocalHour(int hour) {
+        try {
+            String url = userServiceBaseUrl + "/api/system/users/timezone/" + hour;
+            ResponseEntity<List<UUID>> response = restTemplate.exchange(
+                    url,
+                    HttpMethod.GET,
+                    null,
+                    new ParameterizedTypeReference<>() {}
+            );
+            if (response.getBody() != null) {
+                return response.getBody();
+            }
+        } catch (Exception e) {
+            log.warn("Failed to fetch users at local hour {}: {}", hour, e.getMessage());
+        }
+        return Collections.emptyList();
+    }
 }
