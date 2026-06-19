@@ -43,4 +43,17 @@ public class InternalUserController {
     public ResponseEntity<List<UUID>> getFollowingIds(@PathVariable UUID id) {
         return ResponseEntity.ok(userService.getFollowingIds(id));
     }
+
+    @GetMapping("/timezone/{hour}")
+    public ResponseEntity<List<UUID>> getUsersAtLocalHour(@PathVariable int hour) {
+        Set<String> targetZones = java.time.ZoneId.getAvailableZoneIds().stream()
+                .filter(z -> java.time.ZonedDateTime.now(java.time.ZoneId.of(z)).getHour() == hour)
+                .collect(Collectors.toSet());
+        
+        if (targetZones.isEmpty()) {
+            return ResponseEntity.ok(List.of());
+        }
+        
+        return ResponseEntity.ok(userRepository.findIdsByTimezoneIn(targetZones));
+    }
 }
