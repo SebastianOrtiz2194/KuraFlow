@@ -1,5 +1,12 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
 
 export default function LandingPage() {
   return (
@@ -16,7 +23,7 @@ export default function LandingPage() {
         </div>
       </header>
       
-      <main style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '0 2rem' }}>
+      <main role="main" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '0 2rem' }}>
         <h1 style={{ fontSize: '4rem', fontWeight: 800, maxWidth: '800px', lineHeight: 1.1, marginBottom: '1.5rem' }}>
           Master Japanese & English with <span style={{ color: 'var(--primary-color)' }}>KuraFlow</span>
         </h1>

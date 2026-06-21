@@ -17,6 +17,30 @@ export const metadata: Metadata = {
   title: "KuraFlow | Master Japanese & English",
   description: "Experience a smarter way to learn languages with KuraFlow's adaptive SRS and gamified learning engine.",
   manifest: "/manifest.json",
+  keywords: ["language learning", "japanese", "english", "spaced repetition", "srs", "gamified learning"],
+  authors: [{ name: "KuraFlow Team" }],
+  openGraph: {
+    title: "KuraFlow | Master Japanese & English",
+    description: "Experience a smarter way to learn languages with KuraFlow's adaptive SRS and gamified learning engine.",
+    url: "https://kuraflow.com",
+    siteName: "KuraFlow",
+    images: [
+      {
+        url: "https://kuraflow.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "KuraFlow Cover Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KuraFlow | Master Japanese & English",
+    description: "Experience a smarter way to learn languages with KuraFlow's adaptive SRS and gamified learning engine.",
+    images: ["https://kuraflow.com/og-image.jpg"],
+  },
 };
 
 export const viewport: Viewport = {
