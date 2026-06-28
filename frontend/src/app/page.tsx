@@ -11,6 +11,24 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--bg-color)' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "KuraFlow",
+            url: "https://kuraflow.com",
+            description: "Experience a smarter way to learn languages with KuraFlow's adaptive SRS and gamified learning engine.",
+            applicationCategory: "EducationalApplication",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+            },
+          }),
+        }}
+      />
       <header style={{ padding: '1.5rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ fontSize: '1.5rem', fontWeight: 800 }}>🏔️ KuraFlow</div>
         <div style={{ display: 'flex', gap: '1rem' }}>
