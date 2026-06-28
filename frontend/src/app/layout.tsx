@@ -16,6 +16,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://kuraflow.com'),
   title: "KuraFlow | Master Japanese & English",
   description: "Experience a smarter way to learn languages with KuraFlow's adaptive SRS and gamified learning engine.",
   manifest: "/manifest.json",
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "KuraFlow",
     images: [
       {
-        url: "https://kuraflow.com/og-image.jpg",
+        url: "/opengraph-image", // Uses our dynamic og image route
         width: 1200,
         height: 630,
         alt: "KuraFlow Cover Image",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "KuraFlow | Master Japanese & English",
     description: "Experience a smarter way to learn languages with KuraFlow's adaptive SRS and gamified learning engine.",
-    images: ["https://kuraflow.com/og-image.jpg"],
+    images: ["/opengraph-image"],
   },
 };
 
