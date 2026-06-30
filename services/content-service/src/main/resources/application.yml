@@ -34,3 +34,7 @@ springdoc:
     path: /api-docs
   swagger-ui:
     path: /swagger-ui.html
+
+kuraflow:
+  seed:
+    enabled: true

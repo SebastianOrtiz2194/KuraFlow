@@ -1,0 +1,138 @@
+{
+  "languageCode": "en",
+  "levelCode": "A1",
+  "modules": [
+    {
+      "type": "GRAMMAR",
+      "title": "Present Simple Basics",
+      "description": "Learn the fundamentals of present simple verbs.",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "title": "I, You, We, They",
+          "description": "How to use regular verbs in present simple with plural pronouns.",
+          "sortOrder": 1,
+          "estimatedMinutes": 5,
+          "xpReward": 10,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Present Simple Tense",
+              "body": {
+                "html": "<p>We use the present simple for habits and facts. For <b>I</b>, <b>you</b>, <b>we</b>, and <b>they</b>, use the base form of the verb.</p>",
+                "tips": ["I eat apples.", "They drink water."]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Knowledge Check",
+              "body": {
+                "question": "They ___ coffee every morning.",
+                "options": ["drinks", "drink", "drinking"],
+                "correct": 1,
+                "explanation": "Use 'drink' with 'They'."
+              }
+            }
+          ]
+        },
+        {
+          "title": "He, She, It",
+          "description": "How to use regular verbs in present simple with singular pronouns.",
+          "sortOrder": 2,
+          "estimatedMinutes": 5,
+          "xpReward": 10,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Adding -s or -es",
+              "body": {
+                "html": "<p>For <b>he</b>, <b>she</b>, and <b>it</b>, add <b>-s</b> or <b>-es</b> to the verb.</p>",
+                "tips": ["He eats apples.", "She watches TV."]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Knowledge Check",
+              "body": {
+                "question": "She ___ a book.",
+                "options": ["read", "reading", "reads"],
+                "correct": 2,
+                "explanation": "Add -s to the verb for 'She'."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "Present Simple Verbs",
+          "description": "Common verbs in present simple",
+          "flashcards": [
+            {
+              "front": { "text": "to eat", "pronunciation": "/iːt/" },
+              "back": { "text": "comer (Spanish), manger (French), 食べる (Japanese)", "example": "I eat apples.", "notes": "regular verb" },
+              "tags": ["verb", "A1"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "to drink", "pronunciation": "/drɪŋk/" },
+              "back": { "text": "beber (Spanish), boire (French), 飲む (Japanese)", "example": "They drink water.", "notes": "irregular past" },
+              "tags": ["verb", "A1"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "to read", "pronunciation": "/riːd/" },
+              "back": { "text": "leer (Spanish), lire (French), 読む (Japanese)", "example": "She reads a book.", "notes": "irregular past" },
+              "tags": ["verb", "A1"],
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VOCABULARY",
+      "title": "Basic Greetings",
+      "description": "Learn how to say hello and goodbye.",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "title": "Saying Hello",
+          "description": "Common ways to greet people.",
+          "sortOrder": 1,
+          "estimatedMinutes": 5,
+          "xpReward": 10,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Formal vs Informal",
+              "body": {
+                "html": "<p>Use <b>Hello</b> or <b>Good morning</b> in formal situations. Use <b>Hi</b> or <b>Hey</b> with friends.</p>",
+                "tips": ["Hello, Mr. Smith.", "Hi, Sarah!"]
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "Greetings",
+          "description": "Hello and Goodbye",
+          "flashcards": [
+            {
+              "front": { "text": "Hello", "pronunciation": "/həˈləʊ/" },
+              "back": { "text": "Hola (Spanish), Bonjour (French), こんにちは (Japanese)", "example": "Hello, how are you?", "notes": "formal" },
+              "tags": ["greeting", "A1"],
+              "sortOrder": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
