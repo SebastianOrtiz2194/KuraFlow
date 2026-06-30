@@ -11,4 +11,5 @@ import java.util.UUID;
 @Repository
 public interface LevelRepository extends JpaRepository<Level, UUID> {
     Page<Level> findByLanguageId(UUID languageId, Pageable pageable);
+    java.util.Optional<Level> findByLanguageIdAndCode(UUID languageId, String code);
 }

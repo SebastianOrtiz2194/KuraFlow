@@ -2,3 +2,7 @@ spring:
   flyway:
     baseline-on-migrate: false
     clean-disabled: false
+
+kuraflow:
+  seed:
+    enabled: false
