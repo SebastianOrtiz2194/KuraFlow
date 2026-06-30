@@ -56,4 +56,4 @@ spring:
       port: 6379
 
 jwt:
-  secret: REDACTED
+  secret: ${JWT_SECRET}
