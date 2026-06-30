@@ -23,9 +23,11 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           id={inputId}
           ref={ref}
           className={`input-field ${error ? 'input-error' : ''}`}
+          aria-invalid={!!error}
+          aria-describedby={error ? `${inputId}-error` : undefined}
           {...props}
         />
-        {error && <span className="error-message">{error}</span>}
+        {error && <span id={`${inputId}-error`} className="error-message" role="alert">{error}</span>}
       </div>
     );
   }

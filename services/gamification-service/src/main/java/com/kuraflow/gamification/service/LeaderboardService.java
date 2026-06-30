@@ -14,6 +14,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.UUID;
@@ -23,16 +24,19 @@ import java.util.UUID;
 public class LeaderboardService {
 
     private final StringRedisTemplate redisTemplate;
+    private final UserServiceClient userServiceClient;
     private final String weeklyKeyPrefix;
     private final String alltimeKey;
     private final int pageSize;
 
     public LeaderboardService(
             StringRedisTemplate redisTemplate,
+            UserServiceClient userServiceClient,
             @Value("${app.leaderboard.weekly-key}") String weeklyKeyPrefix,
             @Value("${app.leaderboard.alltime-key}") String alltimeKey,
             @Value("${app.leaderboard.page-size}") int pageSize) {
         this.redisTemplate = redisTemplate;
+        this.userServiceClient = userServiceClient;
         this.weeklyKeyPrefix = weeklyKeyPrefix;
         this.alltimeKey = alltimeKey;
         this.pageSize = pageSize;
@@ -79,6 +83,72 @@ public class LeaderboardService {
     }
 
     /**
+     * Gets the friends leaderboard for the requesting user.
+     */
+    public LeaderboardResponse getFriendsLeaderboard(UUID requestingUserId, String timeframe) {
+        if (requestingUserId == null) {
+            return LeaderboardResponse.builder()
+                    .type("friends")
+                    .entries(List.of())
+                    .currentUser(null)
+                    .totalParticipants(0L)
+                    .build();
+        }
+
+        List<UUID> followingIds = userServiceClient.getFollowingIds(requestingUserId);
+        Set<UUID> targetIds = new HashSet<>(followingIds);
+        targetIds.add(requestingUserId);
+
+        String key = timeframe.equals("alltime") ? alltimeKey : getCurrentWeeklyKey();
+
+        List<LeaderboardEntryDto> entries = new ArrayList<>();
+        for (UUID id : targetIds) {
+            String userIdStr = id.toString();
+            Double score = redisTemplate.opsForZSet().score(key, userIdStr);
+            if (score != null) {
+                entries.add(LeaderboardEntryDto.builder()
+                        .userId(id)
+                        .score(score.longValue())
+                        .build());
+            } else {
+                entries.add(LeaderboardEntryDto.builder()
+                        .userId(id)
+                        .score(0L)
+                        .build());
+            }
+        }
+
+        // Sort descending by score
+        entries.sort((a, b) -> Long.compare(b.getScore(), a.getScore()));
+
+        // Assign ranks
+        int rank = 1;
+        for (LeaderboardEntryDto entry : entries) {
+            entry.setRank(rank++);
+        }
+
+        // Batch fetch profiles
+        userServiceClient.batchFetchProfiles(targetIds);
+
+        // Populate display names and avatars, and find current user
+        LeaderboardEntryDto currentUser = null;
+        for (LeaderboardEntryDto entry : entries) {
+            entry.setDisplayName(userServiceClient.getDisplayName(entry.getUserId()));
+            entry.setAvatarUrl(userServiceClient.getAvatarUrl(entry.getUserId()));
+            if (entry.getUserId().equals(requestingUserId)) {
+                currentUser = entry;
+            }
+        }
+
+        return LeaderboardResponse.builder()
+                .type("friends")
+                .entries(entries)
+                .currentUser(currentUser)
+                .totalParticipants((long) entries.size())
+                .build();
+    }
+
+    /**
      * Gets the rank of a specific user in the all-time leaderboard.
      * Returns null if the user is not on the board.
      */
@@ -100,19 +170,37 @@ public class LeaderboardService {
         Set<ZSetOperations.TypedTuple<String>> topEntries = 
                 redisTemplate.opsForZSet().reverseRangeWithScores(key, 0, pageSize - 1);
 
+        // Collect all user IDs for batch profile fetch
+        Set<UUID> userIdsToFetch = new HashSet<>();
+
         List<LeaderboardEntryDto> entries = new ArrayList<>();
         int rank = 1;
 
         if (topEntries != null) {
             for (ZSetOperations.TypedTuple<String> entry : topEntries) {
                 UUID userId = UUID.fromString(entry.getValue());
+                userIdsToFetch.add(userId);
                 entries.add(LeaderboardEntryDto.builder()
                         .rank(rank++)
                         .userId(userId)
-                        .displayName(generateDisplayName(userId))
+                        .displayName(null) // will be filled after batch fetch
                         .score(entry.getScore() != null ? entry.getScore().longValue() : 0L)
                         .build());
             }
+        }
+
+        // Get requesting user's entry
+        if (requestingUserId != null) {
+            userIdsToFetch.add(requestingUserId);
+        }
+
+        // Batch fetch all display names and avatars
+        userServiceClient.batchFetchProfiles(userIdsToFetch);
+
+        // Populate display names and avatars
+        for (LeaderboardEntryDto entry : entries) {
+            entry.setDisplayName(userServiceClient.getDisplayName(entry.getUserId()));
+            entry.setAvatarUrl(userServiceClient.getAvatarUrl(entry.getUserId()));
         }
 
         // Get requesting user's entry
@@ -126,7 +214,8 @@ public class LeaderboardService {
                 currentUser = LeaderboardEntryDto.builder()
                         .rank(userRank.intValue() + 1)
                         .userId(requestingUserId)
-                        .displayName(generateDisplayName(requestingUserId))
+                        .displayName(userServiceClient.getDisplayName(requestingUserId))
+                        .avatarUrl(userServiceClient.getAvatarUrl(requestingUserId))
                         .score(userScore.longValue())
                         .build();
             }
@@ -150,17 +239,6 @@ public class LeaderboardService {
         LocalDate monday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
         String weekId = monday.format(DateTimeFormatter.ISO_LOCAL_DATE);
         return weeklyKeyPrefix + ":" + weekId;
-    }
-
-    /**
-     * Placeholder display name generator.
-     * In production, this would call user-service or use a Redis/local cache of display names.
-     */
-    private String generateDisplayName(UUID userId) {
-        // In a real application, this would look up the user's display name
-        // from a local cache or user-service. For MVP, we generate a placeholder.
-        String shortId = userId.toString().substring(0, 8);
-        return "User-" + shortId;
     }
 
     /**

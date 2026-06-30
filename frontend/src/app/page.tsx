@@ -1,9 +1,34 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
 
 export default function LandingPage() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--bg-color)' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "KuraFlow",
+            url: "https://kuraflow.com",
+            description: "Experience a smarter way to learn languages with KuraFlow's adaptive SRS and gamified learning engine.",
+            applicationCategory: "EducationalApplication",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+            },
+          }),
+        }}
+      />
       <header style={{ padding: '1.5rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ fontSize: '1.5rem', fontWeight: 800 }}>🏔️ KuraFlow</div>
         <div style={{ display: 'flex', gap: '1rem' }}>
@@ -16,7 +41,7 @@ export default function LandingPage() {
         </div>
       </header>
       
-      <main style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '0 2rem' }}>
+      <main role="main" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '0 2rem' }}>
         <h1 style={{ fontSize: '4rem', fontWeight: 800, maxWidth: '800px', lineHeight: 1.1, marginBottom: '1.5rem' }}>
           Master Japanese & English with <span style={{ color: 'var(--primary-color)' }}>KuraFlow</span>
         </h1>

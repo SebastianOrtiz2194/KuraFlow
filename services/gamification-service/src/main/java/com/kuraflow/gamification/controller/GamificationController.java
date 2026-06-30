@@ -1,8 +1,10 @@
 package com.kuraflow.gamification.controller;
 
+import com.kuraflow.gamification.dto.ActivityItemDto;
 import com.kuraflow.gamification.dto.LeaderboardResponse;
 import com.kuraflow.gamification.dto.UserProfileDto;
 import com.kuraflow.gamification.dto.UserStreakDto;
+import com.kuraflow.gamification.service.ActivityHistoryService;
 import com.kuraflow.gamification.service.LeaderboardService;
 import com.kuraflow.gamification.service.ProfileService;
 import com.kuraflow.gamification.service.StreakService;
@@ -10,6 +12,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -21,6 +24,7 @@ public class GamificationController {
     private final StreakService streakService;
     private final LeaderboardService leaderboardService;
     private final ProfileService profileService;
+    private final ActivityHistoryService activityHistoryService;
 
     // ==================== Streak Endpoints ====================
 
@@ -29,10 +33,15 @@ public class GamificationController {
         return ResponseEntity.ok(streakService.getUserStreak(userId));
     }
 
-    @PostMapping("/streak/{userId}/freeze")
-    public ResponseEntity<Void> purchaseFreeze(@PathVariable UUID userId) {
+    @GetMapping("/streak/me")
+    public ResponseEntity<UserStreakDto> getMyStreak(@org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        return ResponseEntity.ok(streakService.getUserStreak(userDetails.getId()));
+    }
+
+    @PostMapping("/streak/me/freeze")
+    public ResponseEntity<Void> purchaseFreeze(@org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
         try {
-            streakService.purchaseFreeze(userId);
+            streakService.purchaseFreeze(userDetails.getId());
             return ResponseEntity.ok().build();
         } catch (IllegalStateException e) {
             return ResponseEntity.badRequest().build();
@@ -43,14 +52,24 @@ public class GamificationController {
 
     @GetMapping("/leaderboard/alltime")
     public ResponseEntity<LeaderboardResponse> getAllTimeLeaderboard(
-            @RequestHeader(value = "X-User-Id", required = false) UUID userId) {
+            @org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        UUID userId = userDetails != null ? userDetails.getId() : null;
         return ResponseEntity.ok(leaderboardService.getAllTimeLeaderboard(userId));
     }
 
     @GetMapping("/leaderboard/weekly")
     public ResponseEntity<LeaderboardResponse> getWeeklyLeaderboard(
-            @RequestHeader(value = "X-User-Id", required = false) UUID userId) {
+            @org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        UUID userId = userDetails != null ? userDetails.getId() : null;
         return ResponseEntity.ok(leaderboardService.getWeeklyLeaderboard(userId));
+    }
+
+    @GetMapping("/leaderboard/friends")
+    public ResponseEntity<LeaderboardResponse> getFriendsLeaderboard(
+            @org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails,
+            @RequestParam(defaultValue = "weekly") String timeframe) {
+        UUID userId = userDetails != null ? userDetails.getId() : null;
+        return ResponseEntity.ok(leaderboardService.getFriendsLeaderboard(userId, timeframe));
     }
 
     // ==================== Profile Endpoints ====================
@@ -58,5 +77,17 @@ public class GamificationController {
     @GetMapping("/profile/{userId}")
     public ResponseEntity<UserProfileDto> getUserProfile(@PathVariable UUID userId) {
         return ResponseEntity.ok(profileService.getUserProfile(userId));
+    }
+
+    @GetMapping("/profile/me")
+    public ResponseEntity<UserProfileDto> getMyProfile(@org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        return ResponseEntity.ok(profileService.getUserProfile(userDetails.getId()));
+    }
+
+    // ==================== Activity History Endpoints ====================
+
+    @GetMapping("/profile/me/history")
+    public ResponseEntity<List<ActivityItemDto>> getMyActivityHistory(@org.springframework.security.core.annotation.AuthenticationPrincipal com.kuraflow.shared.security.CustomUserDetails userDetails) {
+        return ResponseEntity.ok(activityHistoryService.getRecentActivities(userDetails.getId()));
     }
 }

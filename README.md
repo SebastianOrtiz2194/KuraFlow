@@ -56,7 +56,55 @@ The system follows a microservices architecture:
 
 ## Getting Started
 
-1. Clone the repository.
-2. Navigate to the root directory.
-3. Start infrastructure: `docker-compose -f docker/docker-compose.yml up -d`.
-4. Follow service-specific READMEs for local development.
+Follow these step-by-step instructions to run the KuraFlow project locally on your machine.
+
+### 1. Start Infrastructure Dependencies
+The project requires PostgreSQL, Redis, Kafka, and Zookeeper. You must have Docker running.
+Open a terminal in the root directory and run:
+```powershell
+cd infra
+docker-compose up -d
+```
+
+### 2. Start Backend Microservices
+You need to build and run all 6 Spring Boot microservices. You will need multiple terminal windows or tabs (one for each service).
+First, build the shared library and all services from the `services` directory:
+```powershell
+cd services
+mvn clean install -DskipTests
+```
+Then, open a separate terminal for each of the following commands (from inside the `services` folder):
+```powershell
+# Terminal 1: Auth Service
+cd auth-service; mvn spring-boot:run
+
+# Terminal 2: User Service
+cd user-service; mvn spring-boot:run
+
+# Terminal 3: Content Service
+cd content-service; mvn spring-boot:run
+
+# Terminal 4: Progress Service
+cd progress-service; mvn spring-boot:run
+
+# Terminal 5: Gamification Service
+cd gamification-service; mvn spring-boot:run
+
+# Terminal 6: API Gateway (Run this last as it routes traffic)
+cd gateway-service; mvn spring-boot:run
+```
+*Note: The API Gateway runs on port `8080` by default. Wait until all services show `Started [ServiceName]Application` in the logs before proceeding.*
+
+### 3. Start Frontend Web App
+The Next.js frontend connects to the API Gateway. Open a new terminal from the root directory:
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+### 4. Try it out!
+Once the frontend compiles successfully, open your browser and go to:
+[http://localhost:3000](http://localhost:3000)
+
+You can now register a new account, browse lessons, and test the platform!

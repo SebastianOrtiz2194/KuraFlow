@@ -21,6 +21,36 @@ spring:
     schemas: user_schema
     default-schema: user_schema
     create-schemas: true
+  mail:
+    host: localhost
+    port: 1025
+    username: test
+    password: password
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
 
 server:
   port: 8082
+
+jwt:
+  secret: REDACTED
+
+vapid:
+  public.key: BMUJc_4W1HEsPz8B2sSi9aiUNRTldCouh9SK22WPx8FTG0YnU8YqwZ0lOJczJ940kvnPPSbc_GkPmH0X7Yyq4fU
+  private.key: REDACTED
+  subject: mailto:admin@kuraflow.com
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: user-service-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"

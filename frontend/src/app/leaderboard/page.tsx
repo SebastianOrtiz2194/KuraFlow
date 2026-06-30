@@ -7,7 +7,7 @@ import { LeaderboardResponse } from '@/lib/types';
 import './leaderboard.css';
 
 export default function LeaderboardPage() {
-  const [type, setType] = useState<'weekly' | 'alltime'>('weekly');
+  const [type, setType] = useState<'weekly' | 'alltime' | 'friends'>('weekly');
   const [data, setData] = useState<LeaderboardResponse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -15,7 +15,7 @@ export default function LeaderboardPage() {
     async function fetchData() {
       setIsLoading(true);
       try {
-        const result = await getLeaderboard(type);
+        const result = await getLeaderboard(type as 'weekly' | 'alltime' | 'friends');
         setData(result);
       } catch (error) {
         console.error('Error fetching leaderboard:', error);
@@ -49,6 +49,12 @@ export default function LeaderboardPage() {
             onClick={() => setType('alltime')}
           >
             All Time
+          </button>
+          <button 
+            className={`tab-btn ${type === 'friends' ? 'is-active' : ''}`}
+            onClick={() => setType('friends')}
+          >
+            Friends
           </button>
         </div>
 

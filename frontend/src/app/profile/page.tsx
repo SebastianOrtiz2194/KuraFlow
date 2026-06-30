@@ -4,19 +4,44 @@ import React, { useState, useEffect } from 'react';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { Card, CardContent } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
-import { getUserProfile } from '@/lib/api';
-import { UserProfile } from '@/lib/types';
+import { Button } from '@/components/ui/Button';
+import { getUserProfile, getActivityHistory, getUserInfo } from '@/lib/api';
+import { UserProfile, ActivityItem, UserInfo } from '@/lib/types';
+import { subscribeToPushNotifications } from '@/lib/push';
 import './profile.css';
 
 export default function ProfilePage() {
   const [profile, setProfile] = useState<UserProfile | null>(null);
+  const [userInfo, setUserInfo] = useState<UserInfo | null>(null);
+  const [activities, setActivities] = useState<ActivityItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isSubscribing, setIsSubscribing] = useState(false);
+  const [subscriptionStatus, setSubscriptionStatus] = useState<string | null>(null);
 
+  const handleSubscribe = async () => {
+    setIsSubscribing(true);
+    setSubscriptionStatus(null);
+    try {
+      await subscribeToPushNotifications();
+      setSubscriptionStatus('Subscribed successfully!');
+    } catch (error: unknown) {
+      console.error('Subscription error:', error);
+      setSubscriptionStatus('Failed to subscribe.');
+    } finally {
+      setIsSubscribing(false);
+    }
+  };
   useEffect(() => {
     async function fetchData() {
       try {
-        const data = await getUserProfile();
-        setProfile(data);
+        const [profileData, historyData, infoData] = await Promise.all([
+          getUserProfile(),
+          getActivityHistory(),
+          getUserInfo(),
+        ]);
+        setProfile(profileData);
+        setActivities(historyData);
+        setUserInfo(infoData);
       } catch (error) {
         console.error('Error fetching profile:', error);
       } finally {
@@ -52,17 +77,34 @@ export default function ProfilePage() {
         {/* Header Section */}
         <section className="profile-header-card">
           <div className="profile-avatar-large">
-            SE
+            {profile.displayName
+              ? profile.displayName.substring(0, 2).toUpperCase()
+              : '??'}
           </div>
           <div className="profile-info">
-            <h1>Sebastian Ortiz</h1>
+            <h1>{userInfo?.displayName || profile.displayName || 'Learner'}</h1>
             <div className="profile-meta">
-              <span>Member since May 2026</span>
-              <span>&bull;</span>
               <span>{profile.totalXp.toLocaleString()} Total XP</span>
+              <span className="meta-divider">•</span>
+              <span>{userInfo?.followersCount || 0} Followers</span>
+              <span className="meta-divider">•</span>
+              <span>{userInfo?.followingCount || 0} Following</span>
             </div>
-            <div style={{ marginTop: 'var(--spacing-4)' }}>
+            <div style={{ marginTop: 'var(--spacing-4)', display: 'flex', gap: '1rem', alignItems: 'center' }}>
               <Badge variant="secondary">Pro Learner</Badge>
+              <Button 
+                onClick={handleSubscribe} 
+                disabled={isSubscribing}
+                variant="outline"
+                size="sm"
+              >
+                {isSubscribing ? 'Enabling...' : 'Enable Notifications 🔔'}
+              </Button>
+              {subscriptionStatus && (
+                <span style={{ fontSize: '0.8rem', color: subscriptionStatus.includes('success') ? 'var(--success-text, #10b981)' : 'var(--danger-text, #ef4444)' }}>
+                  {subscriptionStatus}
+                </span>
+              )}
             </div>
           </div>
         </section>
@@ -127,34 +169,30 @@ export default function ProfilePage() {
           </div>
         </section>
 
-        {/* Learning History (Mock for now, but wired to stats) */}
+        {/* Learning History */}
         <section className="history-section">
           <h2 className="section-title">Recent Learning History 📝</h2>
           <div className="history-list">
-            <div className="history-item">
-              <div className="history-icon">📚</div>
-              <div className="history-info">
-                <span className="history-text">Completed &quot;Basic Greetings&quot;</span>
-                <span className="history-date">Today at 10:24 AM</span>
+            {activities.length > 0 ? (
+              activities.map((activity, index) => (
+                <div key={index} className="history-item">
+                  <div className="history-icon">
+                    {activity.type === 'LESSON_COMPLETED' ? '📚' : '🧠'}
+                  </div>
+                  <div className="history-info">
+                    <span className="history-text">{activity.description}</span>
+                    <span className="history-date">
+                      {new Date(activity.timestamp).toLocaleDateString()} at {new Date(activity.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                    </span>
+                  </div>
+                  <span className="history-xp">+{activity.xpEarned} XP</span>
+                </div>
+              ))
+            ) : (
+              <div className="empty-state">
+                No recent activity yet. Start learning to build your history!
               </div>
-              <span className="history-xp">+15 XP</span>
-            </div>
-            <div className="history-item">
-              <div className="history-icon">🧠</div>
-              <div className="history-info">
-                <span className="history-text">SRS Review: 12 cards</span>
-                <span className="history-date">Yesterday at 4:15 PM</span>
-              </div>
-              <span className="history-xp">+8 XP</span>
-            </div>
-            <div className="history-item">
-              <div className="history-icon">🔥</div>
-              <div className="history-info">
-                <span className="history-text">Maintained 12-day streak!</span>
-                <span className="history-date">Yesterday at 4:15 PM</span>
-              </div>
-              <span className="history-xp">BONUS</span>
-            </div>
+            )}
           </div>
         </section>
       </div>

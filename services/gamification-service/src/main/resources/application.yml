@@ -26,6 +26,9 @@ spring:
       properties:
         spring.json.trusted.packages: "com.kuraflow.shared.events"
         spring.json.type.mapping: lessonCompleted:com.kuraflow.shared.events.LessonCompletedEvent,reviewCompleted:com.kuraflow.shared.events.ReviewCompletedEvent
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
   data:
     redis:
@@ -45,3 +48,8 @@ app:
     weekly-key: "leaderboard:weekly"
     alltime-key: "leaderboard:alltime"
     page-size: 50
+  user-service:
+    base-url: "http://localhost:8082"
+
+jwt:
+  secret: REDACTED

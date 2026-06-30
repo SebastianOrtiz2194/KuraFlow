@@ -6,6 +6,13 @@ spring:
     name: gateway-service
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:3000"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+            allowCredentials: true
       routes:
         - id: auth-service
           uri: http://localhost:8081
@@ -21,6 +28,18 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=/api/users/**
+          filters:
+            - AuthenticationFilter
+        - id: content-service
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/content/**
+          filters:
+            - AuthenticationFilter
+        - id: progress-service
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/progress/**
           filters:
             - AuthenticationFilter
         - id: gamification-service

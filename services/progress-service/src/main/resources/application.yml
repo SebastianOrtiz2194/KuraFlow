@@ -35,3 +35,6 @@ app:
     topics:
       lesson-completed: lesson.completed
       review-completed: review.completed
+
+jwt:
+  secret: REDACTED
