@@ -1,0 +1,1009 @@
+{
+  "languageCode": "en",
+  "levelCode": "B1",
+  "modules": [
+    {
+      "type": "GRAMMAR",
+      "title": "Conditionals & Modal Verbs",
+      "description": "Master first and second conditionals along with modal verbs for expressing ability, permission, obligation, and advice.",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "title": "First Conditional",
+          "description": "Learn to express real and possible future situations using if + present simple, will + infinitive.",
+          "sortOrder": 1,
+          "estimatedMinutes": 12,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "First Conditional: Real Future Possibilities",
+              "body": {
+                "html": "<p>The <strong>first conditional</strong> describes situations that are <em>real and possible</em> in the future.</p><p><strong>Structure:</strong> If + present simple, will + infinitive</p><ul><li><em>If it rains, I will take an umbrella.</em></li><li><em>If you study hard, you will pass the exam.</em></li><li><em>If she calls me, I will answer.</em></li></ul><p>The <strong>if-clause</strong> states the condition (present simple). The <strong>main clause</strong> states the result (will + infinitive).</p><p>You can reverse the order: <em>I will take an umbrella if it rains.</em> (No comma when the main clause comes first.)</p><p>Common variations: You can replace <em>will</em> with <em>may</em>, <em>might</em>, or <em>can</em> to express different degrees of certainty.</p>",
+                "tips": [
+                  "Never use 'will' in the if-clause: 'If it will rain' is WRONG.",
+                  "Use a comma after the if-clause when it comes first.",
+                  "The first conditional is about things you believe are genuinely possible."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Choose the Correct First Conditional",
+              "body": {
+                "question": "Complete the sentence: If you ___ late, you will miss the bus.",
+                "options": [
+                  "are",
+                  "will be",
+                  "would be",
+                  "were"
+                ],
+                "correct": 0,
+                "explanation": "In the first conditional, the if-clause uses the present simple ('are'), not 'will be' or past tense forms."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete the First Conditional",
+              "body": {
+                "sentence": "If she ___ her homework, her teacher will be happy.",
+                "answer": "finishes",
+                "alternatives": ["completes", "does"],
+                "explanation": "The if-clause requires the present simple. 'Finishes' is the third-person singular form of 'finish'."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Second Conditional",
+          "description": "Express hypothetical or unlikely situations using if + past simple, would + infinitive.",
+          "sortOrder": 2,
+          "estimatedMinutes": 12,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Second Conditional: Hypothetical Situations",
+              "body": {
+                "html": "<p>The <strong>second conditional</strong> describes situations that are <em>hypothetical, unlikely, or imaginary</em>.</p><p><strong>Structure:</strong> If + past simple, would + infinitive</p><ul><li><em>If I won the lottery, I would buy a house.</em></li><li><em>If she spoke French, she would work in Paris.</em></li><li><em>If we had more time, we would visit the museum.</em></li></ul><p>Even though we use the past simple, the meaning is about the <strong>present or future</strong>, not the past.</p><p><strong>Special note:</strong> With the verb 'be', formal English uses <em>were</em> for all subjects: <em>If I <strong>were</strong> you, I would accept the offer.</em></p>",
+                "tips": [
+                  "The past simple in the if-clause does NOT refer to past time — it signals unreality.",
+                  "'If I were you...' is the standard form, even though 'If I was you' is common in speech.",
+                  "Use 'could' or 'might' instead of 'would' to soften the certainty of the result."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "First or Second Conditional?",
+              "body": {
+                "question": "Which sentence expresses a hypothetical/unlikely situation?",
+                "options": [
+                  "If it rains tomorrow, I will stay home.",
+                  "If I were a millionaire, I would travel the world.",
+                  "If you finish early, you can leave.",
+                  "If he calls, tell him I'm busy."
+                ],
+                "correct": 1,
+                "explanation": "'If I were a millionaire, I would travel the world' is the second conditional — it describes an imaginary situation, not a real possibility."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build a Second Conditional Sentence",
+              "body": {
+                "words": ["If", "I", "had", "a car,", "I", "would", "drive", "to work."],
+                "correct": ["If", "I", "had", "a car,", "I", "would", "drive", "to work."],
+                "translation": "If I had a car, I would drive to work."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Modal Verbs: Ability & Permission",
+          "description": "Use can, could, and may to express ability and ask for or give permission.",
+          "sortOrder": 3,
+          "estimatedMinutes": 10,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Can, Could & May",
+              "body": {
+                "html": "<p>Modal verbs modify the meaning of the main verb. They express ability, permission, obligation, and more.</p><h3>Ability</h3><ul><li><strong>can</strong> — present ability: <em>She can speak three languages.</em></li><li><strong>could</strong> — past ability: <em>He could swim when he was five.</em></li><li><strong>be able to</strong> — used for tenses where can/could don't work: <em>I will be able to help you tomorrow.</em></li></ul><h3>Permission</h3><ul><li><strong>can</strong> — informal: <em>Can I use your phone?</em></li><li><strong>could</strong> — more polite: <em>Could I borrow your pen?</em></li><li><strong>may</strong> — formal: <em>May I leave early today?</em></li></ul>",
+                "tips": [
+                  "Modal verbs are followed by the base form (infinitive without 'to'): 'She can swim', NOT 'She can to swim'.",
+                  "'Could' for ability refers to the past. 'Could' for permission refers to the present (polite form).",
+                  "'May' for permission is more formal than 'can'. In everyday speech, 'can' is more common."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Ability or Permission?",
+              "body": {
+                "question": "Choose the most polite way to ask for permission: '___ I sit here?'",
+                "options": [
+                  "Can",
+                  "Could",
+                  "May",
+                  "Will"
+                ],
+                "correct": 2,
+                "explanation": "'May' is the most formal and polite way to ask for permission. 'Could' is also polite, and 'Can' is informal."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Express Past Ability",
+              "body": {
+                "sentence": "When I was a child, I ___ ride a bicycle without training wheels.",
+                "answer": "could",
+                "alternatives": ["was able to"],
+                "explanation": "'Could' expresses general past ability. 'Was able to' is also correct and is preferred for a specific achievement on one occasion."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Modal Verbs: Obligation & Advice",
+          "description": "Use must, have to, and should to express obligation, necessity, and recommendations.",
+          "sortOrder": 4,
+          "estimatedMinutes": 10,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Must, Have To & Should",
+              "body": {
+                "html": "<p>These modals express different levels of obligation and advice.</p><h3>Obligation & Necessity</h3><ul><li><strong>must</strong> — strong obligation (often internal/personal): <em>I must finish this report today.</em></li><li><strong>have to</strong> — external obligation or rules: <em>You have to wear a uniform at this school.</em></li><li><strong>mustn't</strong> — prohibition: <em>You mustn't park here.</em></li><li><strong>don't have to</strong> — no obligation (it's optional): <em>You don't have to come if you don't want to.</em></li></ul><h3>Advice</h3><ul><li><strong>should</strong> — recommendation: <em>You should see a doctor.</em></li><li><strong>shouldn't</strong> — advising against: <em>You shouldn't eat so much sugar.</em></li></ul>",
+                "tips": [
+                  "CRITICAL: 'mustn't' (prohibition) ≠ 'don't have to' (no obligation). They have completely different meanings.",
+                  "'Must' and 'have to' are often interchangeable, but 'must' feels more personal/internal, while 'have to' implies an external rule.",
+                  "'Should' is weaker than 'must' — it's advice, not a command."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Prohibition vs. No Obligation",
+              "body": {
+                "question": "You ___ smoke in the hospital. (It is forbidden.)",
+                "options": [
+                  "don't have to",
+                  "mustn't",
+                  "shouldn't",
+                  "can't have to"
+                ],
+                "correct": 1,
+                "explanation": "'Mustn't' expresses prohibition — it is forbidden. 'Don't have to' means it's not necessary (optional), which is a completely different meaning."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build an Advice Sentence",
+              "body": {
+                "words": ["You", "should", "get", "more", "sleep."],
+                "correct": ["You", "should", "get", "more", "sleep."],
+                "translation": "You should get more sleep."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "Conditionals & Modals — Key Terms",
+          "description": "25 essential grammar terms and example sentences for conditionals and modal verbs at B1 level.",
+          "flashcards": [
+            {
+              "front": { "text": "first conditional", "pronunciation": "/fɜːrst kənˈdɪʃənl/" },
+              "back": { "text": "A structure for real/possible future situations: If + present simple, will + infinitive.", "example": "If it rains, I will take an umbrella.", "notes": "The if-clause uses present simple, NOT 'will'." },
+              "tags": ["grammar", "conditionals"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "second conditional", "pronunciation": "/ˈsekənd kənˈdɪʃənl/" },
+              "back": { "text": "A structure for hypothetical/unlikely situations: If + past simple, would + infinitive.", "example": "If I won the lottery, I would buy a house.", "notes": "The past simple does not refer to the past — it signals unreality." },
+              "tags": ["grammar", "conditionals"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "if-clause", "pronunciation": "/ɪf klɔːz/" },
+              "back": { "text": "The part of a conditional sentence that states the condition.", "example": "'If you study hard' is the if-clause in 'If you study hard, you will pass.'", "notes": "Also called the 'conditional clause'." },
+              "tags": ["grammar", "conditionals"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "main clause", "pronunciation": "/meɪn klɔːz/" },
+              "back": { "text": "The part of a conditional sentence that states the result.", "example": "'you will pass' is the main clause in 'If you study hard, you will pass.'", "notes": "Also called the 'result clause'." },
+              "tags": ["grammar", "conditionals"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "hypothetical", "pronunciation": "/ˌhaɪpəˈθetɪkl/" },
+              "back": { "text": "Imagined or not real; based on a possible situation rather than a real one.", "example": "The second conditional describes hypothetical situations.", "notes": "Adjective. Key concept for understanding the second conditional." },
+              "tags": ["grammar", "conditionals"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "can (ability)", "pronunciation": "/kæn/" },
+              "back": { "text": "Modal verb expressing present ability — being able to do something.", "example": "She can speak three languages.", "notes": "Followed by base form (infinitive without 'to')." },
+              "tags": ["grammar", "modals", "ability"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "could (past ability)", "pronunciation": "/kʊd/" },
+              "back": { "text": "Modal verb expressing past general ability.", "example": "He could swim when he was five.", "notes": "For a specific past achievement, prefer 'was able to'." },
+              "tags": ["grammar", "modals", "ability"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "could (polite request)", "pronunciation": "/kʊd/" },
+              "back": { "text": "Modal verb used to ask for permission politely (more formal than 'can').", "example": "Could I borrow your pen?", "notes": "Present meaning, not past — context determines whether 'could' is about ability or politeness." },
+              "tags": ["grammar", "modals", "permission"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "may (permission)", "pronunciation": "/meɪ/" },
+              "back": { "text": "Modal verb used to ask for or give permission (formal).", "example": "May I leave early today?", "notes": "The most formal way to ask permission. More polite than 'can' or 'could'." },
+              "tags": ["grammar", "modals", "permission"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "be able to", "pronunciation": "/biː ˈeɪbl tuː/" },
+              "back": { "text": "Alternative to 'can' for expressing ability, used in tenses where 'can' is not possible.", "example": "I will be able to help you tomorrow.", "notes": "Use for future ('will be able to'), present perfect ('have been able to'), etc." },
+              "tags": ["grammar", "modals", "ability"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "must (obligation)", "pronunciation": "/mʌst/" },
+              "back": { "text": "Modal verb expressing strong obligation, often internal or personal.", "example": "I must finish this report today.", "notes": "Stronger than 'should'. No past form — use 'had to' for past." },
+              "tags": ["grammar", "modals", "obligation"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "have to", "pronunciation": "/hæv tuː/" },
+              "back": { "text": "Express obligation or necessity, especially from external rules or requirements.", "example": "You have to wear a uniform at this school.", "notes": "Unlike 'must', it has all tenses: 'had to' (past), 'will have to' (future)." },
+              "tags": ["grammar", "modals", "obligation"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "mustn't", "pronunciation": "/ˈmʌsnt/" },
+              "back": { "text": "Expresses prohibition — something is forbidden or not allowed.", "example": "You mustn't park here.", "notes": "DIFFERENT from 'don't have to'. Mustn't = forbidden. Don't have to = not necessary." },
+              "tags": ["grammar", "modals", "prohibition"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "don't have to", "pronunciation": "/doʊnt hæv tuː/" },
+              "back": { "text": "Expresses lack of obligation — it is not necessary, but you can if you want.", "example": "You don't have to come if you don't want to.", "notes": "DIFFERENT from 'mustn't'. Don't have to = optional. Mustn't = forbidden." },
+              "tags": ["grammar", "modals", "obligation"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "should (advice)", "pronunciation": "/ʃʊd/" },
+              "back": { "text": "Modal verb used to give advice or make recommendations.", "example": "You should see a doctor about that cough.", "notes": "Weaker than 'must'. It's a suggestion, not a command." },
+              "tags": ["grammar", "modals", "advice"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "shouldn't", "pronunciation": "/ˈʃʊdnt/" },
+              "back": { "text": "Used to advise against doing something.", "example": "You shouldn't eat so much sugar.", "notes": "Advice, not prohibition. Compare: 'You mustn't' (forbidden) vs 'You shouldn't' (not recommended)." },
+              "tags": ["grammar", "modals", "advice"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "will (future)", "pronunciation": "/wɪl/" },
+              "back": { "text": "Modal verb used in the main clause of first conditional sentences to express a future result.", "example": "If you study, you will pass.", "notes": "Never used in the if-clause of conditionals." },
+              "tags": ["grammar", "conditionals", "modals"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "would (conditional)", "pronunciation": "/wʊd/" },
+              "back": { "text": "Modal verb used in the main clause of second conditional sentences to express a hypothetical result.", "example": "If I had more time, I would learn Japanese.", "notes": "Can be replaced by 'could' or 'might' for less certainty." },
+              "tags": ["grammar", "conditionals", "modals"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "might", "pronunciation": "/maɪt/" },
+              "back": { "text": "Modal verb expressing possibility (less certain than 'may').", "example": "If you ask her, she might agree.", "notes": "Can replace 'will' in first conditional or 'would' in second conditional to express uncertainty." },
+              "tags": ["grammar", "modals", "possibility"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "base form", "pronunciation": "/beɪs fɔːrm/" },
+              "back": { "text": "The infinitive form of a verb without 'to'. Used after all modal verbs.", "example": "She can swim. (NOT 'She can to swim.')", "notes": "Also called the 'bare infinitive'." },
+              "tags": ["grammar", "modals"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "condition", "pronunciation": "/kənˈdɪʃən/" },
+              "back": { "text": "A situation that must be true for something else to happen.", "example": "In 'If it rains, I'll stay home', the rain is the condition.", "notes": "Conditional sentences always have a condition and a result." },
+              "tags": ["grammar", "conditionals"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "result clause", "pronunciation": "/rɪˈzʌlt klɔːz/" },
+              "back": { "text": "The part of a conditional sentence that describes what happens if the condition is met.", "example": "'I will stay home' is the result clause in 'If it rains, I will stay home.'", "notes": "Contains 'will' (1st conditional) or 'would' (2nd conditional)." },
+              "tags": ["grammar", "conditionals"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "obligation", "pronunciation": "/ˌɒblɪˈɡeɪʃən/" },
+              "back": { "text": "Something you are required to do, either by rules or personal duty.", "example": "Wearing a seatbelt is a legal obligation.", "notes": "Expressed by 'must' (internal) or 'have to' (external)." },
+              "tags": ["grammar", "modals"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "prohibition", "pronunciation": "/ˌprəʊɪˈbɪʃən/" },
+              "back": { "text": "An order that forbids something; something that is not allowed.", "example": "There is a prohibition on smoking in the building.", "notes": "Expressed by 'mustn't' or 'can't' in English." },
+              "tags": ["grammar", "modals"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "unless", "pronunciation": "/ənˈles/" },
+              "back": { "text": "Means 'if not'. Used as an alternative to negative if-clauses.", "example": "Unless you hurry, you will be late. (= If you don't hurry, you will be late.)", "notes": "Do not use 'not' with 'unless' — it already contains a negative meaning." },
+              "tags": ["grammar", "conditionals"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VOCABULARY",
+      "title": "Work & Education",
+      "description": "Build essential vocabulary for talking about jobs, workplaces, applications, education, and technology in professional settings.",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "title": "Job Titles & Workplaces",
+          "description": "Learn common job titles and words related to workplaces and work environments.",
+          "sortOrder": 1,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Jobs & Where People Work",
+              "body": {
+                "html": "<p>At B1 level, you should be able to describe jobs and workplaces clearly.</p><h3>Common Job Titles</h3><ul><li><strong>manager</strong> — a person responsible for a team or department</li><li><strong>employee</strong> — a person who works for a company</li><li><strong>colleague</strong> — a person you work with</li><li><strong>receptionist</strong> — a person who greets visitors and answers calls</li><li><strong>accountant</strong> — a person who manages financial records</li></ul><h3>Workplaces</h3><ul><li><strong>office</strong> — a room or building for business work</li><li><strong>factory</strong> — a building where products are manufactured</li><li><strong>warehouse</strong> — a large building for storing goods</li><li><strong>headquarters</strong> — the main office of a company</li></ul><h3>Work Activities</h3><ul><li><strong>meeting</strong> — a gathering to discuss work matters</li><li><strong>shift</strong> — a set period of work (e.g., night shift)</li><li><strong>overtime</strong> — extra hours worked beyond the normal schedule</li></ul>",
+                "tips": [
+                  "'Colleague' and 'coworker' mean the same thing. 'Colleague' is slightly more formal.",
+                  "'Headquarters' is often shortened to 'HQ' in everyday language.",
+                  "'Staff' is an uncountable noun in British English: 'The staff are friendly', NOT 'staffs'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Match the Workplace",
+              "body": {
+                "question": "Products are manufactured in a ___.",
+                "options": [
+                  "headquarters",
+                  "warehouse",
+                  "factory",
+                  "office"
+                ],
+                "correct": 2,
+                "explanation": "A factory is a building where products are manufactured. A warehouse is for storage, not production."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete the Sentence",
+              "body": {
+                "sentence": "My ___ and I are working on the same project this month.",
+                "answer": "colleague",
+                "alternatives": ["coworker"],
+                "explanation": "A 'colleague' (or 'coworker') is a person you work with."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Job Applications",
+          "description": "Learn vocabulary related to applying for jobs: CVs, interviews, and employment terms.",
+          "sortOrder": 2,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Applying for a Job",
+              "body": {
+                "html": "<p>Understanding job application vocabulary is essential for professional life.</p><h3>Application Process</h3><ul><li><strong>CV / résumé</strong> — a document listing your education, skills, and work experience</li><li><strong>cover letter</strong> — a letter explaining why you want the job</li><li><strong>application form</strong> — a form you fill in to apply for a position</li><li><strong>interview</strong> — a formal meeting where the employer asks you questions</li><li><strong>candidate</strong> — a person applying for a job</li></ul><h3>Employment Terms</h3><ul><li><strong>salary</strong> — the money you earn regularly (usually monthly or annually)</li><li><strong>experience</strong> — knowledge or skill gained from doing something over time</li><li><strong>qualifications</strong> — certificates, degrees, or skills that make you suitable for a job</li><li><strong>reference</strong> — a person who can recommend you to an employer</li><li><strong>contract</strong> — a legal agreement about your job terms</li></ul>",
+                "tips": [
+                  "'CV' (curriculum vitae) is used in British English. 'Résumé' is more common in American English.",
+                  "'Salary' is for regular (monthly/annual) pay. 'Wage' is usually for hourly or weekly pay.",
+                  "A 'reference' is both the person AND the letter they write about you."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Job Application Vocabulary",
+              "body": {
+                "question": "A document that lists your education, skills, and work history is called a ___.",
+                "options": [
+                  "cover letter",
+                  "contract",
+                  "CV",
+                  "reference"
+                ],
+                "correct": 2,
+                "explanation": "A CV (curriculum vitae) or résumé lists your education, skills, and work experience. A cover letter explains your motivation."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Order the Application Steps",
+              "body": {
+                "words": ["I", "submitted", "my", "application", "and", "got", "an", "interview."],
+                "correct": ["I", "submitted", "my", "application", "and", "got", "an", "interview."],
+                "translation": "I submitted my application and got an interview."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Education",
+          "description": "Learn vocabulary for academic settings: degrees, courses, exams, and student life.",
+          "sortOrder": 3,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Education Vocabulary",
+              "body": {
+                "html": "<p>Whether you are talking about your own studies or someone else's, these words are essential.</p><h3>Academic Terms</h3><ul><li><strong>degree</strong> — an academic qualification from a university (e.g., Bachelor's, Master's)</li><li><strong>course</strong> — a series of lessons or lectures on a subject</li><li><strong>lecture</strong> — a talk given to a group of students at university</li><li><strong>seminar</strong> — a smaller, discussion-based class</li><li><strong>assignment</strong> — a piece of work given to students</li></ul><h3>Assessment</h3><ul><li><strong>exam / examination</strong> — a formal test of knowledge</li><li><strong>grade</strong> — a mark showing how well you did</li><li><strong>pass</strong> — to achieve the minimum required grade</li><li><strong>fail</strong> — to not reach the minimum required grade</li><li><strong>scholarship</strong> — money given to a student to pay for their studies</li></ul>",
+                "tips": [
+                  "'Course' in British English = 'program' in American English (for a full degree program).",
+                  "You 'take' or 'sit' an exam. You 'pass' or 'fail' an exam. You don't 'make' an exam.",
+                  "'Tuition' means teaching (British) OR the fees paid for education (American)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Education Terms",
+              "body": {
+                "sentence": "She received a ___ to study at Oxford, so she didn't have to pay tuition fees.",
+                "answer": "scholarship",
+                "alternatives": ["grant"],
+                "explanation": "A 'scholarship' is money awarded to a student to help pay for their studies, often based on academic achievement."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "What Is It?",
+              "body": {
+                "question": "A piece of work that a teacher gives students to complete is called a(n) ___.",
+                "options": [
+                  "lecture",
+                  "seminar",
+                  "assignment",
+                  "degree"
+                ],
+                "correct": 2,
+                "explanation": "An 'assignment' is a task or piece of work given to students. A 'lecture' is a talk given by a teacher to a class."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Technology at Work",
+          "description": "Learn vocabulary related to technology, communication, and project management in the workplace.",
+          "sortOrder": 4,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Tech & Project Vocabulary",
+              "body": {
+                "html": "<p>Modern workplaces rely heavily on technology. These words will help you discuss work tasks and tools.</p><h3>Communication Tools</h3><ul><li><strong>email</strong> — electronic messages sent over the internet</li><li><strong>attachment</strong> — a file sent along with an email</li><li><strong>inbox</strong> — the place where received emails are stored</li><li><strong>video call</strong> — a call where participants can see each other</li></ul><h3>Project Management</h3><ul><li><strong>deadline</strong> — the latest date by which something must be completed</li><li><strong>project</strong> — a planned piece of work with specific goals</li><li><strong>task</strong> — a specific piece of work to be done</li><li><strong>feedback</strong> — comments about the quality of someone's work</li></ul><h3>Software & Systems</h3><ul><li><strong>software</strong> — programs and applications used on computers</li><li><strong>database</strong> — an organized collection of digital information</li><li><strong>update</strong> — a new version or improvement to software</li></ul>",
+                "tips": [
+                  "'Deadline' literally means 'the line of death' — there is no flexibility implied!",
+                  "'Software' is uncountable: 'a piece of software', NOT 'a software'.",
+                  "'Feedback' is also uncountable: 'some feedback', NOT 'feedbacks'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Workplace Technology",
+              "body": {
+                "sentence": "The ___ for this project is next Friday, so we need to finish by then.",
+                "answer": "deadline",
+                "alternatives": ["due date"],
+                "explanation": "A 'deadline' is the latest time or date by which something must be completed."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Email Vocabulary",
+              "body": {
+                "question": "A file sent along with an email is called a(n) ___.",
+                "options": [
+                  "inbox",
+                  "update",
+                  "attachment",
+                  "database"
+                ],
+                "correct": 2,
+                "explanation": "An 'attachment' is a file (document, image, etc.) that is sent together with an email."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "Work & Education Vocabulary",
+          "description": "25 essential words for talking about jobs, workplaces, applications, education, and workplace technology.",
+          "flashcards": [
+            {
+              "front": { "text": "manager", "pronunciation": "/ˈmænɪdʒər/" },
+              "back": { "text": "A person responsible for controlling or organizing a team, department, or company.", "example": "She's the manager of the marketing department.", "notes": "Can also be a verb: 'to manage'." },
+              "tags": ["vocabulary", "jobs"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "employee", "pronunciation": "/ɪmˈplɔɪiː/" },
+              "back": { "text": "A person who is paid to work for a company or organization.", "example": "The company has over 500 employees.", "notes": "Opposite: 'employer' (the person/company that hires)." },
+              "tags": ["vocabulary", "jobs"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "colleague", "pronunciation": "/ˈkɒliːɡ/" },
+              "back": { "text": "A person you work with, especially in a professional setting.", "example": "I'm having lunch with a colleague today.", "notes": "Synonym: 'coworker'. 'Colleague' is slightly more formal." },
+              "tags": ["vocabulary", "jobs"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "factory", "pronunciation": "/ˈfæktəri/" },
+              "back": { "text": "A building or group of buildings where products are manufactured.", "example": "He works in a car factory outside the city.", "notes": "Plural: 'factories'." },
+              "tags": ["vocabulary", "workplaces"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "headquarters", "pronunciation": "/ˌhedˈkwɔːrtərz/" },
+              "back": { "text": "The main offices of an organization, where central management operates.", "example": "The company's headquarters are in London.", "notes": "Often shortened to 'HQ'. Always plural in form." },
+              "tags": ["vocabulary", "workplaces"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "overtime", "pronunciation": "/ˈoʊvərtaɪm/" },
+              "back": { "text": "Extra time worked beyond normal working hours, often paid at a higher rate.", "example": "I worked overtime last week to finish the project.", "notes": "Uncountable noun. 'Do/work overtime', NOT 'make overtime'." },
+              "tags": ["vocabulary", "work"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "CV / résumé", "pronunciation": "/ˌsiːˈviː/ or /ˈrezjʊmeɪ/" },
+              "back": { "text": "A document that lists your education, work experience, skills, and qualifications.", "example": "Please send your CV with your application.", "notes": "'CV' = British English. 'Résumé' = American English." },
+              "tags": ["vocabulary", "applications"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "interview", "pronunciation": "/ˈɪntərvjuː/" },
+              "back": { "text": "A formal meeting in which an employer asks a candidate questions about their suitability for a job.", "example": "I have a job interview on Monday morning.", "notes": "Also a verb: 'to interview someone'." },
+              "tags": ["vocabulary", "applications"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "salary", "pronunciation": "/ˈsæləri/" },
+              "back": { "text": "A fixed regular payment for work, usually expressed monthly or annually.", "example": "Her annual salary is £35,000.", "notes": "'Salary' = regular pay (monthly/annually). 'Wage' = hourly/weekly pay." },
+              "tags": ["vocabulary", "applications"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "experience", "pronunciation": "/ɪkˈspɪəriəns/" },
+              "back": { "text": "Knowledge or skill gained from doing a job or activity over time.", "example": "You need at least two years of experience for this role.", "notes": "Uncountable when meaning general experience. Countable when meaning specific events." },
+              "tags": ["vocabulary", "applications"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "qualifications", "pronunciation": "/ˌkwɒlɪfɪˈkeɪʃənz/" },
+              "back": { "text": "Official records of education, training, or skills that make you suitable for a job.", "example": "What qualifications do you need to become a nurse?", "notes": "Usually plural. 'Qualified' is the adjective." },
+              "tags": ["vocabulary", "applications"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "contract", "pronunciation": "/ˈkɒntrækt/" },
+              "back": { "text": "A written legal agreement between an employer and employee about job terms.", "example": "I signed a two-year contract with the company.", "notes": "Stress on first syllable as noun. Stress on second syllable as verb." },
+              "tags": ["vocabulary", "applications"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "degree", "pronunciation": "/dɪˈɡriː/" },
+              "back": { "text": "An academic qualification awarded by a university after completing a course of study.", "example": "She has a degree in Computer Science.", "notes": "Types: Bachelor's degree, Master's degree, PhD/Doctorate." },
+              "tags": ["vocabulary", "education"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "course", "pronunciation": "/kɔːrs/" },
+              "back": { "text": "A series of lessons or lectures on a particular subject.", "example": "I'm taking an online course in digital marketing.", "notes": "British: 'course' can mean a full degree program. American: 'course' = single class." },
+              "tags": ["vocabulary", "education"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "exam", "pronunciation": "/ɪɡˈzæm/" },
+              "back": { "text": "A formal test of knowledge or ability in a subject.", "example": "The final exams are in June.", "notes": "You 'take' or 'sit' an exam. You 'pass' or 'fail' an exam." },
+              "tags": ["vocabulary", "education"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "assignment", "pronunciation": "/əˈsaɪnmənt/" },
+              "back": { "text": "A task or piece of work given to someone as part of their studies or job.", "example": "The assignment is due next Wednesday.", "notes": "Common collocations: 'hand in / submit an assignment'." },
+              "tags": ["vocabulary", "education"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "scholarship", "pronunciation": "/ˈskɒlərʃɪp/" },
+              "back": { "text": "An amount of money given to a student to help pay for their education, usually based on merit.", "example": "He won a scholarship to study abroad.", "notes": "Different from a 'loan' — a scholarship does not need to be repaid." },
+              "tags": ["vocabulary", "education"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "lecture", "pronunciation": "/ˈlektʃər/" },
+              "back": { "text": "A formal talk given to a group of students at a university.", "example": "I have a lecture on economics at 10 a.m.", "notes": "'Lecturer' = the person who gives the lecture." },
+              "tags": ["vocabulary", "education"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "deadline", "pronunciation": "/ˈdedlaɪn/" },
+              "back": { "text": "The latest time or date by which something must be completed.", "example": "We need to meet the deadline for this project.", "notes": "Collocations: 'meet a deadline', 'miss a deadline', 'extend a deadline'." },
+              "tags": ["vocabulary", "technology"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "project", "pronunciation": "/ˈprɒdʒekt/" },
+              "back": { "text": "A planned piece of work that has a specific purpose and goals.", "example": "We're starting a new project next month.", "notes": "Noun stress: first syllable. Verb stress: second syllable (to project)." },
+              "tags": ["vocabulary", "technology"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "software", "pronunciation": "/ˈsɒftwɛər/" },
+              "back": { "text": "Programs and applications used on computers and electronic devices.", "example": "We use accounting software to manage our finances.", "notes": "Uncountable: 'a piece of software', NOT 'a software'." },
+              "tags": ["vocabulary", "technology"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "feedback", "pronunciation": "/ˈfiːdbæk/" },
+              "back": { "text": "Information or comments about the quality of someone's work, used for improvement.", "example": "The manager gave me positive feedback on my presentation.", "notes": "Uncountable: 'some feedback', NOT 'feedbacks'." },
+              "tags": ["vocabulary", "technology"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "attachment", "pronunciation": "/əˈtætʃmənt/" },
+              "back": { "text": "A file (document, image, etc.) sent along with an email.", "example": "Please find the report in the attachment.", "notes": "Verb: 'to attach'. 'Please see attached' is a common email phrase." },
+              "tags": ["vocabulary", "technology"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "shift", "pronunciation": "/ʃɪft/" },
+              "back": { "text": "A set period of work time, especially for workers who work at different times of day.", "example": "She works the night shift at the hospital.", "notes": "Types: day shift, night shift, morning shift." },
+              "tags": ["vocabulary", "work"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "reference", "pronunciation": "/ˈrefərəns/" },
+              "back": { "text": "A person who provides a recommendation about you, or the letter/statement they provide.", "example": "Can I use you as a reference for my job application?", "notes": "Also called a 'referee' (the person). Employers often ask for two references." },
+              "tags": ["vocabulary", "applications"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "PHRASAL_VERBS",
+      "title": "Professional Phrasal Verbs",
+      "description": "Learn and practice phrasal verbs commonly used in workplaces, meetings, and professional communication.",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "title": "Carry Out & Set Up",
+          "description": "Learn phrasal verbs used for completing tasks and organizing things at work.",
+          "sortOrder": 1,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Task-Related Phrasal Verbs",
+              "body": {
+                "html": "<p>Phrasal verbs are very common in professional English. Here are some used for work tasks.</p><ul><li><strong>carry out</strong> — to perform or complete a task: <em>We need to carry out a full review of the process.</em></li><li><strong>set up</strong> — to arrange or establish something: <em>Can you set up a meeting for Friday?</em></li><li><strong>take on</strong> — to accept or begin to handle a responsibility: <em>She took on more work after the promotion.</em></li><li><strong>hand in</strong> — to submit or give something to someone in authority: <em>Please hand in your reports by Monday.</em></li><li><strong>follow up</strong> — to take further action after an initial step: <em>I'll follow up with the client tomorrow.</em></li><li><strong>wrap up</strong> — to finish or complete something: <em>Let's wrap up this meeting.</em></li></ul>",
+                "tips": [
+                  "'Carry out' is separable: 'carry out a plan' or 'carry a plan out'.",
+                  "'Set up' is very versatile: set up a meeting, a business, a system, equipment.",
+                  "'Follow up' is often used with 'on' or 'with': 'follow up on a complaint', 'follow up with a customer'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Choose the Right Phrasal Verb",
+              "body": {
+                "question": "We need to ___ a full investigation into the problem.",
+                "options": [
+                  "set up",
+                  "carry out",
+                  "wrap up",
+                  "hand in"
+                ],
+                "correct": 1,
+                "explanation": "'Carry out' means to perform or conduct. You 'carry out' an investigation, research, a plan, or a task."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete with a Phrasal Verb",
+              "body": {
+                "sentence": "Can you ___ a video call with the Tokyo office for tomorrow morning?",
+                "answer": "set up",
+                "alternatives": ["arrange", "organize"],
+                "explanation": "'Set up' means to arrange or organize something so it is ready to use. It's commonly used for meetings, equipment, and systems."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Deal With & Figure Out",
+          "description": "Learn phrasal verbs for solving problems and handling challenges at work.",
+          "sortOrder": 2,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Problem-Solving Phrasal Verbs",
+              "body": {
+                "html": "<p>These phrasal verbs are essential when talking about problems and solutions in the workplace.</p><ul><li><strong>deal with</strong> — to handle or manage a situation or problem: <em>She deals with customer complaints every day.</em></li><li><strong>figure out</strong> — to find the answer or solution through thinking: <em>We need to figure out why sales dropped last month.</em></li><li><strong>sort out</strong> — to resolve or organize something that is confused or problematic: <em>Can you sort out the issue with the printer?</em></li><li><strong>come up with</strong> — to think of an idea, plan, or solution: <em>He came up with a brilliant marketing strategy.</em></li><li><strong>look into</strong> — to investigate or examine: <em>I'll look into the matter and get back to you.</em></li><li><strong>run into</strong> — to encounter an unexpected problem: <em>We ran into some technical issues during the launch.</em></li></ul>",
+                "tips": [
+                  "'Deal with' is inseparable: 'deal with a problem', NOT 'deal a problem with'.",
+                  "'Figure out' is separable: 'figure out the answer' or 'figure the answer out'.",
+                  "'Run into' can also mean to meet someone by chance: 'I ran into my old boss at the café.'"
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 2,
+              "title": "Build a Sentence",
+              "body": {
+                "words": ["We", "need", "to", "figure", "out", "a", "solution."],
+                "correct": ["We", "need", "to", "figure", "out", "a", "solution."],
+                "translation": "We need to figure out a solution."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Problem-Solving Phrasal Verbs",
+              "body": {
+                "question": "He ___ a great idea for the new advertising campaign.",
+                "options": [
+                  "looked into",
+                  "ran into",
+                  "came up with",
+                  "dealt with"
+                ],
+                "correct": 2,
+                "explanation": "'Come up with' means to think of or produce an idea, plan, or solution. 'Look into' means to investigate."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Bring Up & Point Out",
+          "description": "Learn phrasal verbs for communication, discussions, and meetings in professional settings.",
+          "sortOrder": 3,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Communication Phrasal Verbs",
+              "body": {
+                "html": "<p>In meetings and professional discussions, these phrasal verbs are used constantly.</p><ul><li><strong>bring up</strong> — to introduce a topic into a conversation: <em>She brought up the budget issue at the meeting.</em></li><li><strong>point out</strong> — to draw attention to something; to highlight a fact: <em>He pointed out several errors in the report.</em></li><li><strong>go over</strong> — to review or examine something carefully: <em>Let's go over the agenda before we start.</em></li><li><strong>put forward</strong> — to suggest or propose an idea: <em>She put forward a plan to reduce costs.</em></li><li><strong>turn down</strong> — to reject or refuse an offer or proposal: <em>They turned down our proposal.</em></li><li><strong>come across</strong> — to give a particular impression; to seem: <em>He comes across as very confident in meetings.</em></li><li><strong>fill in</strong> — to give someone the information they need: <em>Can you fill me in on what happened at the meeting?</em></li></ul>",
+                "tips": [
+                  "'Bring up' is separable: 'bring up a topic' or 'bring a topic up'.",
+                  "'Go over' is inseparable and means to review. Don't confuse with 'get over' (to recover from).",
+                  "'Come across' has two meanings: (1) to seem/appear, (2) to find by chance."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Meeting Communication",
+              "body": {
+                "sentence": "She ___ several important issues during yesterday's meeting.",
+                "answer": "brought up",
+                "alternatives": ["raised", "mentioned"],
+                "explanation": "'Brought up' (past tense of 'bring up') means to introduce a topic into a discussion."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Choose the Right Phrasal Verb",
+              "body": {
+                "question": "The auditor ___ three mistakes in the financial report.",
+                "options": [
+                  "brought up",
+                  "pointed out",
+                  "turned down",
+                  "went over"
+                ],
+                "correct": 1,
+                "explanation": "'Pointed out' means to draw attention to something specific, like errors or facts. 'Brought up' means to introduce a topic, not to highlight specific details."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "Professional Phrasal Verbs",
+          "description": "20 essential phrasal verbs for the workplace, covering tasks, problem-solving, and communication.",
+          "flashcards": [
+            {
+              "front": { "text": "carry out", "pronunciation": "/ˈkæri aʊt/" },
+              "back": { "text": "To perform or complete a task, duty, or plan.", "example": "The team carried out a thorough investigation.", "notes": "Separable. Formal synonym: 'conduct', 'execute'." },
+              "tags": ["phrasal-verbs", "tasks"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "set up", "pronunciation": "/set ʌp/" },
+              "back": { "text": "To arrange, organize, or establish something.", "example": "Can you set up the projector before the presentation?", "notes": "Separable. Very versatile: set up a meeting, a business, equipment." },
+              "tags": ["phrasal-verbs", "tasks"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "take on", "pronunciation": "/teɪk ɒn/" },
+              "back": { "text": "To accept or begin to handle a task, responsibility, or challenge.", "example": "She took on the role of project manager.", "notes": "Separable. Can also mean 'to hire': 'We're taking on new staff.'" },
+              "tags": ["phrasal-verbs", "tasks"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "hand in", "pronunciation": "/hænd ɪn/" },
+              "back": { "text": "To submit something to a person in authority.", "example": "Please hand in your reports by the end of the day.", "notes": "Separable. Synonym: 'submit', 'turn in' (American English)." },
+              "tags": ["phrasal-verbs", "tasks"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "follow up", "pronunciation": "/ˈfɒloʊ ʌp/" },
+              "back": { "text": "To take further action or check on progress after an initial step.", "example": "I'll follow up with the supplier about the delivery.", "notes": "Often used with 'on' or 'with'. Noun form: 'a follow-up'." },
+              "tags": ["phrasal-verbs", "tasks"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "wrap up", "pronunciation": "/ræp ʌp/" },
+              "back": { "text": "To finish or conclude something.", "example": "Let's wrap up this discussion and move to the next item.", "notes": "Separable. Very common at the end of meetings." },
+              "tags": ["phrasal-verbs", "tasks"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "deal with", "pronunciation": "/diːl wɪð/" },
+              "back": { "text": "To handle, manage, or take action on a problem or situation.", "example": "She deals with customer complaints every day.", "notes": "Inseparable. Synonym: 'handle', 'address'." },
+              "tags": ["phrasal-verbs", "problem-solving"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "figure out", "pronunciation": "/ˈfɪɡjər aʊt/" },
+              "back": { "text": "To understand or solve something by thinking about it.", "example": "I can't figure out why the system keeps crashing.", "notes": "Separable. Synonym: 'work out' (British English)." },
+              "tags": ["phrasal-verbs", "problem-solving"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "sort out", "pronunciation": "/sɔːrt aʊt/" },
+              "back": { "text": "To resolve, organize, or fix something that is confused or problematic.", "example": "We need to sort out the scheduling conflict.", "notes": "Separable. More common in British English." },
+              "tags": ["phrasal-verbs", "problem-solving"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "come up with", "pronunciation": "/kʌm ʌp wɪð/" },
+              "back": { "text": "To think of or produce an idea, plan, or solution.", "example": "She came up with a creative solution to the problem.", "notes": "Inseparable (3-word phrasal verb). Synonym: 'think up', 'devise'." },
+              "tags": ["phrasal-verbs", "problem-solving"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "look into", "pronunciation": "/lʊk ˈɪntuː/" },
+              "back": { "text": "To investigate or examine something to learn more about it.", "example": "The HR department is looking into the complaint.", "notes": "Inseparable. Synonym: 'investigate', 'examine'." },
+              "tags": ["phrasal-verbs", "problem-solving"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "run into", "pronunciation": "/rʌn ˈɪntuː/" },
+              "back": { "text": "To encounter an unexpected problem or difficulty.", "example": "We ran into some difficulties with the new software.", "notes": "Inseparable. Also means 'to meet someone by chance'." },
+              "tags": ["phrasal-verbs", "problem-solving"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "bring up", "pronunciation": "/brɪŋ ʌp/" },
+              "back": { "text": "To introduce a topic into a conversation or discussion.", "example": "He brought up the issue of overtime pay at the meeting.", "notes": "Separable. Also means 'to raise a child'." },
+              "tags": ["phrasal-verbs", "communication"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "point out", "pronunciation": "/pɔɪnt aʊt/" },
+              "back": { "text": "To draw attention to something; to highlight a fact, error, or detail.", "example": "She pointed out that the figures were incorrect.", "notes": "Separable. Often followed by 'that' + clause." },
+              "tags": ["phrasal-verbs", "communication"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "go over", "pronunciation": "/ɡoʊ ˈoʊvər/" },
+              "back": { "text": "To review or examine something carefully.", "example": "Let's go over the contract one more time before signing.", "notes": "Inseparable. Synonym: 'review', 'examine'." },
+              "tags": ["phrasal-verbs", "communication"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "put forward", "pronunciation": "/pʊt ˈfɔːrwərd/" },
+              "back": { "text": "To suggest or propose an idea, plan, or candidate.", "example": "He put forward a proposal to restructure the department.", "notes": "Separable. Synonym: 'propose', 'suggest'." },
+              "tags": ["phrasal-verbs", "communication"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "turn down", "pronunciation": "/tɜːrn daʊn/" },
+              "back": { "text": "To reject or refuse an offer, proposal, or request.", "example": "They turned down our request for extra funding.", "notes": "Separable. Opposite: 'accept', 'take up'." },
+              "tags": ["phrasal-verbs", "communication"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "come across", "pronunciation": "/kʌm əˈkrɒs/" },
+              "back": { "text": "To give a particular impression or to seem a certain way.", "example": "She comes across as very professional in interviews.", "notes": "Inseparable. Also means 'to find something by chance'." },
+              "tags": ["phrasal-verbs", "communication"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "fill in", "pronunciation": "/fɪl ɪn/" },
+              "back": { "text": "To give someone the information they have missed; to inform.", "example": "Can you fill me in on what was discussed at the meeting?", "notes": "Separable. Also: 'fill in a form' = complete a form." },
+              "tags": ["phrasal-verbs", "communication"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "put off", "pronunciation": "/pʊt ɒf/" },
+              "back": { "text": "To postpone or delay something to a later time.", "example": "We had to put off the meeting until next week.", "notes": "Separable. Synonym: 'postpone', 'delay'. Can also mean 'to discourage'." },
+              "tags": ["phrasal-verbs", "tasks"],
+              "sortOrder": 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

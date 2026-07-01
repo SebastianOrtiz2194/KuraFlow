@@ -1,0 +1,1015 @@
+{
+  "languageCode": "ja",
+  "levelCode": "N3",
+  "modules": [
+    {
+      "type": "GRAMMAR",
+      "title": "Complex Structures",
+      "description": "Master intermediate grammar patterns including passive voice, causative form, conditionals, and expressions of change and effort.",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "title": "Passive Voice (受身)",
+          "description": "Learn to form and use the passive voice with ～られる and ～あれる constructions.",
+          "sortOrder": 1,
+          "estimatedMinutes": 15,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "How to Form the Passive Voice",
+              "body": {
+                "html": "<p>The passive voice in Japanese is formed by changing the verb ending:</p><ul><li><b>Group 1 (五段):</b> Change the final <i>-u</i> to <i>-areru</i>. 書く → 書かれる, 読む → 読まれる, 飲む → 飲まれる</li><li><b>Group 2 (一段):</b> Drop <i>-ru</i> and add <i>-rareru</i>. 食べる → 食べられる, 見る → 見られる</li><li><b>Irregular:</b> する → される, 来る → 来られる</li></ul><p>The passive is used for: (1) actions received from others, (2) suffering or inconvenience (迷惑の受身), and (3) neutral/formal descriptions of events.</p><p>Structure: <b>（受け手）は（動作主）に（動詞の受身形）</b></p><p>Example: 私は先生に褒められた。(I was praised by the teacher.)</p>",
+                "tips": [
+                  "The particle に marks the agent (doer) in passive sentences.",
+                  "The 'suffering passive' (迷惑の受身) expresses that the action negatively affected the subject: 雨に降られた (I got rained on).",
+                  "Group 2 passive ～られる is identical to the potential form — context tells them apart."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Passive Voice Recognition",
+              "body": {
+                "question": "Choose the correct passive form of 「母が私を起こした」 (My mother woke me up) rewritten from my perspective.",
+                "options": [
+                  "私は母に起こされた。",
+                  "私は母を起こされた。",
+                  "私は母に起こした。",
+                  "私は母で起こされた。"
+                ],
+                "correct": 0,
+                "explanation": "In passive voice, the agent (母) takes the particle に, and the verb 起こす becomes 起こされる. The subject (私) takes は."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build a Passive Sentence",
+              "body": {
+                "words": ["弟", "に", "ケーキ", "を", "食べられた"],
+                "correct": ["弟", "に", "ケーキ", "を", "食べられた"],
+                "translation": "My cake was eaten by my younger brother. (suffering passive)"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Causative Form (使役)",
+          "description": "Learn to express making or letting someone do something using ～させる and ～あせる.",
+          "sortOrder": 2,
+          "estimatedMinutes": 15,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "How to Form the Causative",
+              "body": {
+                "html": "<p>The causative form expresses 'make someone do' or 'let someone do' something:</p><ul><li><b>Group 1 (五段):</b> Change the final <i>-u</i> to <i>-aseru</i>. 書く → 書かせる, 読む → 読ませる, 行く → 行かせる</li><li><b>Group 2 (一段):</b> Drop <i>-ru</i> and add <i>-saseru</i>. 食べる → 食べさせる, 見る → 見させる</li><li><b>Irregular:</b> する → させる, 来る → 来させる</li></ul><p><b>Key particle patterns:</b></p><ul><li>Transitive verbs: AはBにCを（causative）— 先生は学生にレポートを書かせた。</li><li>Intransitive verbs: AはBを（causative）— 母は子供を外で遊ばせた。</li></ul><p>Whether it means 'make' or 'let' depends on context. Adding ～てあげる or ～てください often signals 'let'.</p>",
+                "tips": [
+                  "～させてください means 'please let me do ~': やらせてください (Please let me do it).",
+                  "With intransitive verbs, the 'causee' is marked with を, not に.",
+                  "The causative-passive (～させられる) means 'was made to do' — very common in N3."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Causative Conjugation",
+              "body": {
+                "sentence": "先生は学生に本を＿＿＿。(The teacher made the students read the book.)",
+                "answer": "読ませた",
+                "alternatives": ["よませた"],
+                "explanation": "読む (yomu, Group 1) → 読ませる (yomaseru). Past tense: 読ませた. The teacher (先生) causes the students (学生) to read (読む) the book (本)."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Causative Meaning",
+              "body": {
+                "question": "What does 「子供を寝させた」 mean?",
+                "options": [
+                  "I made the child sleep.",
+                  "The child slept.",
+                  "I slept with the child.",
+                  "The child made me sleep."
+                ],
+                "correct": 0,
+                "explanation": "寝る → 寝させる (causative). 子供を寝させた = (I) made the child sleep. The particle を marks the causee with intransitive verbs."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Conditional: ば and たら",
+          "description": "Master two essential conditional patterns for expressing 'if' in Japanese.",
+          "sortOrder": 3,
+          "estimatedMinutes": 15,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "ば vs たら — Two Ways to Say 'If'",
+              "body": {
+                "html": "<p>Japanese has multiple conditional forms. The two most important at N3 are <b>～ば</b> and <b>～たら</b>.</p><h4>～ば (Hypothetical condition)</h4><ul><li><b>Verbs:</b> Change final <i>-u</i> to <i>-eba</i>. 行く → 行けば, 食べる → 食べれば</li><li><b>i-adjectives:</b> Drop final い, add ければ. 高い → 高ければ</li><li><b>na-adj/nouns:</b> + であれば / ならば</li></ul><p>Used for general/logical conditions: 勉強すれば、受かる。(If you study, you'll pass.)</p><h4>～たら (Realized condition)</h4><ul><li>Take the past form (た) and add ら. 行った → 行ったら, 食べた → 食べたら</li></ul><p>Used when the 'if' is more concrete or temporal: 家に帰ったら、電話してください。(When/if you get home, please call me.)</p><h4>Key Difference</h4><p>～ば is more hypothetical and general; ～たら is more concrete and often implies temporal sequence ('when' or 'after').</p>",
+                "tips": [
+                  "～ば cannot be used when the main clause is a request, invitation, or volitional action (use ～たら instead).",
+                  "～たら is the safest, most versatile conditional — when in doubt, use ～たら.",
+                  "ば is preferred for proverbs and universal truths: 塵も積もれば山となる。"
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Choosing the Right Conditional",
+              "body": {
+                "question": "Fill in the blank: 「もっと早く＿＿、間に合ったのに。」 (If I had left earlier, I would have made it in time.)",
+                "options": [
+                  "出れば",
+                  "出たら",
+                  "出ると",
+                  "出るなら"
+                ],
+                "correct": 1,
+                "explanation": "This sentence describes a specific past situation that didn't happen (counterfactual). ～たら is used for concrete, realized (or hypothetically realized) conditions. 出たら = 'if (I) had left'."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "ば-Form Conjugation",
+              "body": {
+                "sentence": "天気が＿＿＿、ピクニックに行きましょう。(If the weather is good, let's go on a picnic.)",
+                "answer": "よければ",
+                "alternatives": ["良ければ"],
+                "explanation": "良い (いい/よい) → よければ. For the ば conditional of い-adjectives, drop い and add ければ."
+              }
+            }
+          ]
+        },
+        {
+          "title": "ようにする / ようになる",
+          "description": "Express making an effort to do something and describing natural changes in ability or habit.",
+          "sortOrder": 4,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Effort vs. Natural Change",
+              "body": {
+                "html": "<p>These two patterns look similar but express very different ideas:</p><h4>～ようにする (Make an effort to ~)</h4><p>Expresses a conscious effort or decision to do/not do something regularly.</p><ul><li>毎日運動する<b>ようにしている</b>。(I make an effort to exercise every day.)</li><li>甘いものを食べない<b>ようにしている</b>。(I try not to eat sweets.)</li></ul><h4>～ようになる (Come to ~ / Become able to ~)</h4><p>Expresses a natural, gradual change in state, ability, or habit.</p><ul><li>日本語が話せる<b>ようになった</b>。(I became able to speak Japanese.)</li><li>最近、早く起きる<b>ようになった</b>。(Lately I've started waking up early.)</li></ul><p>Key: ようにする = <b>deliberate action</b>; ようになる = <b>natural/gradual change</b>.</p>",
+                "tips": [
+                  "ようにしている (progressive) emphasizes an ongoing habit/effort.",
+                  "ようになる often pairs with potential forms: 読めるようになった (became able to read).",
+                  "Negative form: ～ないようにする (try not to ~) / ～なくなる (stop doing ~, naturally)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "ようにする vs ようになる",
+              "body": {
+                "question": "Which sentence means 'I became able to understand Japanese news'?",
+                "options": [
+                  "日本語のニュースがわかるようにしている。",
+                  "日本語のニュースがわかるようになった。",
+                  "日本語のニュースがわかるようにした。",
+                  "日本語のニュースがわかるようにする。"
+                ],
+                "correct": 1,
+                "explanation": "～ようになった expresses a gradual, natural change — 'came to be able to ~'. The other options involve deliberate effort (ようにする)."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build a ようにする Sentence",
+              "body": {
+                "words": ["遅刻", "しない", "ように", "している"],
+                "correct": ["遅刻", "しない", "ように", "している"],
+                "translation": "I make an effort not to be late."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "N3 Grammar Patterns",
+          "description": "25 essential N3-level grammar patterns covering passive, causative, conditionals, and complex expressions.",
+          "flashcards": [
+            {
+              "front": { "text": "～られる（受身）", "reading": "～られる（うけみ）" },
+              "back": { "text": "Passive voice — indicates receiving an action", "example": "私は先生に褒められた。(I was praised by the teacher.)", "notes": "Group 1: -u → -areru; Group 2: -ru → -rareru; する → される" },
+              "tags": ["passive", "verb-form"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "～させる（使役）", "reading": "～させる（しえき）" },
+              "back": { "text": "Causative — make/let someone do something", "example": "母は子供に野菜を食べさせた。(The mother made the child eat vegetables.)", "notes": "Group 1: -u → -aseru; Group 2: -ru → -saseru; する → させる" },
+              "tags": ["causative", "verb-form"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "～させられる", "reading": "～させられる" },
+              "back": { "text": "Causative-passive — be made to do something (often unwillingly)", "example": "無理やり歌わせられた。(I was forced to sing.)", "notes": "Causative + passive combined. Very common in conversation." },
+              "tags": ["causative-passive", "verb-form"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "～ば", "reading": "～ば" },
+              "back": { "text": "Conditional 'if' — hypothetical/general condition", "example": "安ければ買います。(If it's cheap, I'll buy it.)", "notes": "Verbs: -u → -eba; い-adj: drop い + ければ" },
+              "tags": ["conditional"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "～たら", "reading": "～たら" },
+              "back": { "text": "Conditional 'if/when' — concrete or realized condition", "example": "駅に着いたら電話してください。(When you arrive at the station, please call.)", "notes": "Past form (た) + ら. Most versatile conditional." },
+              "tags": ["conditional"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "～ようにする", "reading": "～ようにする" },
+              "back": { "text": "Make an effort to ~; try to ~ (deliberate)", "example": "毎日野菜を食べるようにしている。(I make an effort to eat vegetables every day.)", "notes": "Dict-form/ない-form + ようにする" },
+              "tags": ["expression", "effort"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "～ようになる", "reading": "～ようになる" },
+              "back": { "text": "Come to ~; become able to ~ (natural change)", "example": "漢字が読めるようになった。(I became able to read kanji.)", "notes": "Dict-form/potential + ようになる. Gradual change." },
+              "tags": ["expression", "change"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "～ことにする", "reading": "～ことにする" },
+              "back": { "text": "Decide to do ~ (personal decision)", "example": "来月から日本語を勉強することにした。(I decided to study Japanese from next month.)", "notes": "Dict-form/ない-form + ことにする" },
+              "tags": ["expression", "decision"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "～ことになる", "reading": "～ことになる" },
+              "back": { "text": "It has been decided that ~ (external/group decision)", "example": "来年、東京に転勤することになった。(It's been decided I'll transfer to Tokyo next year.)", "notes": "The decision is presented as beyond one's control." },
+              "tags": ["expression", "decision"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "～てしまう", "reading": "～てしまう" },
+              "back": { "text": "End up doing ~; do ~ completely (often with regret)", "example": "財布を忘れてしまった。(I ended up forgetting my wallet.)", "notes": "Casual: ～ちゃう/～じゃう. Can express completion or regret." },
+              "tags": ["expression", "completion"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "～はずだ", "reading": "～はずだ" },
+              "back": { "text": "Should be ~; is expected to ~ (based on reason/evidence)", "example": "彼はもう来ているはずだ。(He should be here already.)", "notes": "Dict-form/ない/noun の/na-adj な + はずだ" },
+              "tags": ["expression", "expectation"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "～わけだ", "reading": "～わけだ" },
+              "back": { "text": "That's why ~; no wonder ~ (logical conclusion)", "example": "毎日練習したわけだから、上手になったわけだ。(Since you practiced every day, no wonder you got good.)", "notes": "わけがない = there's no way ~; わけにはいかない = can't possibly ~" },
+              "tags": ["expression", "reasoning"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "～とおりに", "reading": "～とおりに" },
+              "back": { "text": "Just as ~; in the way that ~", "example": "言われたとおりにやりました。(I did it just as I was told.)", "notes": "Noun の / Dict-form/た-form + とおりに" },
+              "tags": ["expression", "manner"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "～ために", "reading": "～ために" },
+              "back": { "text": "In order to ~ (purpose); because of ~ (cause)", "example": "試験に受かるために勉強する。(I study in order to pass the exam.)", "notes": "Dict-form + ために (purpose); た-form/noun の + ために (cause)" },
+              "tags": ["expression", "purpose"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "～ように", "reading": "～ように" },
+              "back": { "text": "So that ~; in order to ~ (with non-volitional verbs)", "example": "聞こえるように大きい声で話した。(I spoke loudly so that it could be heard.)", "notes": "Used when the goal verb is non-volitional. Cf. ～ために for volitional." },
+              "tags": ["expression", "purpose"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "～てある", "reading": "～てある" },
+              "back": { "text": "Something has been done (resultant state, with purpose)", "example": "窓が開けてある。(The window has been opened [on purpose].)", "notes": "Transitive verb て-form + ある. Object takes が." },
+              "tags": ["expression", "state"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "～ておく", "reading": "～ておく" },
+              "back": { "text": "Do ~ in advance; leave ~ as is (preparation)", "example": "ホテルを予約しておいた。(I reserved a hotel in advance.)", "notes": "Casual: ～とく. Implies doing something for future benefit." },
+              "tags": ["expression", "preparation"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "～ばよかった", "reading": "～ばよかった" },
+              "back": { "text": "I should have ~ (past regret)", "example": "もっと勉強すればよかった。(I should have studied more.)", "notes": "ば conditional + よかった. Expresses regret about the past." },
+              "tags": ["conditional", "regret"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "～ても", "reading": "～ても" },
+              "back": { "text": "Even if ~; even though ~", "example": "雨が降っても行きます。(Even if it rains, I'll go.)", "notes": "て-form + も. い-adj: くても; な-adj/noun: でも" },
+              "tags": ["conditional", "concession"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "～のに", "reading": "～のに" },
+              "back": { "text": "Although ~; despite ~ (with nuance of complaint/disappointment)", "example": "約束したのに、来なかった。(Although (he) promised, (he) didn't come.)", "notes": "Plain form + のに. Carries an emotional nuance — frustration, surprise." },
+              "tags": ["conjunction", "contrast"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "～てくる / ～ていく", "reading": "～てくる / ～ていく" },
+              "back": { "text": "Change approaching the present (くる) / moving away from the present (いく)", "example": "だんだん寒くなってきた。(It has gradually gotten cold.)", "notes": "～てくる = change up to now; ～ていく = change from now on." },
+              "tags": ["expression", "change"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "～ことがある", "reading": "～ことがある" },
+              "back": { "text": "Sometimes ~; there are times when ~ (occasional occurrence)", "example": "朝ごはんを食べないことがある。(There are times I don't eat breakfast.)", "notes": "Dict-form + ことがある. Cf. た-form + ことがある = 'have experienced ~'." },
+              "tags": ["expression", "frequency"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "～かどうか", "reading": "～かどうか" },
+              "back": { "text": "Whether or not ~", "example": "行くかどうかまだ決めていない。(I haven't decided whether or not to go.)", "notes": "Plain form + かどうか. Used for embedded yes/no questions." },
+              "tags": ["expression", "question"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "～てほしい", "reading": "～てほしい" },
+              "back": { "text": "I want (someone) to do ~", "example": "もっと早く来てほしい。(I want (you) to come earlier.)", "notes": "（person に）て-form + ほしい. ないでほしい = I want (you) not to ~." },
+              "tags": ["expression", "desire"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "～ところだ", "reading": "～ところだ" },
+              "back": { "text": "About to ~ / in the middle of ~ / just finished ~", "example": "今から出かけるところだ。(I'm about to go out now.)", "notes": "Dict-form + ところ (about to); ている + ところ (in the middle); た + ところ (just did)" },
+              "tags": ["expression", "aspect"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VOCABULARY",
+      "title": "Society & Culture",
+      "description": "Build vocabulary related to news, environment, feelings, and abstract concepts commonly tested at N3 level.",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "title": "News & Media",
+          "description": "Learn vocabulary used in news reports, media, and journalism.",
+          "sortOrder": 1,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "News & Media Vocabulary",
+              "body": {
+                "html": "<p>At the N3 level, you're expected to understand news headlines and simple articles. Key vocabulary includes:</p><ul><li><b>ニュース</b> — news</li><li><b>新聞</b>（しんぶん）— newspaper</li><li><b>放送</b>（ほうそう）— broadcast</li><li><b>記事</b>（きじ）— article</li><li><b>報道</b>（ほうどう）— news report</li><li><b>番組</b>（ばんぐみ）— (TV/radio) program</li><li><b>情報</b>（じょうほう）— information</li><li><b>事件</b>（じけん）— incident, case</li></ul><p>Example: <i>今朝のニュースで大きな事件が報道された。</i><br/>(A major incident was reported on this morning's news.)</p>",
+                "tips": [
+                  "報道 is more formal than ニュース — used in official reporting contexts.",
+                  "番組 is specific to TV/radio programs, while 記事 is for written articles.",
+                  "情報 is a very versatile word: 個人情報 (personal information), 情報社会 (information society)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Media Vocabulary Check",
+              "body": {
+                "question": "テレビの＿＿＿で料理の作り方を見ました。(I watched how to cook on a TV _____.)",
+                "options": [
+                  "記事",
+                  "番組",
+                  "新聞",
+                  "報道"
+                ],
+                "correct": 1,
+                "explanation": "番組（ばんぐみ）means TV/radio program. 記事 is a written article, 新聞 is a newspaper, and 報道 is a formal news report."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Fill in the Media Word",
+              "body": {
+                "sentence": "インターネットで最新の＿＿＿を調べた。(I looked up the latest ___ on the internet.)",
+                "answer": "情報",
+                "alternatives": ["じょうほう"],
+                "explanation": "情報（じょうほう）means 'information'. It's commonly paired with 最新 (latest) in everyday usage."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Environment",
+          "description": "Vocabulary for discussing nature, environmental issues, and their effects.",
+          "sortOrder": 2,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Environment Vocabulary",
+              "body": {
+                "html": "<p>Environmental topics appear frequently in N3 reading passages. Master these core words:</p><ul><li><b>自然</b>（しぜん）— nature</li><li><b>環境</b>（かんきょう）— environment</li><li><b>問題</b>（もんだい）— problem, issue</li><li><b>影響</b>（えいきょう）— influence, effect</li><li><b>温暖化</b>（おんだんか）— global warming</li><li><b>汚染</b>（おせん）— pollution</li><li><b>資源</b>（しげん）— resources</li><li><b>エネルギー</b> — energy</li></ul><p>Example: <i>環境問題は私たちの生活に大きな影響を与えている。</i><br/>(Environmental issues are having a major impact on our lives.)</p>",
+                "tips": [
+                  "影響を与える (to give influence = to have an effect) and 影響を受ける (to receive influence = to be affected) are key collocations.",
+                  "環境問題 is a compound: 環境 (environment) + 問題 (problem).",
+                  "自然 can be a noun ('nature') or a な-adjective ('natural'): 自然な笑顔 (a natural smile)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 2,
+              "title": "Build an Environment Sentence",
+              "body": {
+                "words": ["環境", "問題", "について", "考える", "べきだ"],
+                "correct": ["環境", "問題", "について", "考える", "べきだ"],
+                "translation": "We should think about environmental issues."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Environment Word Match",
+              "body": {
+                "question": "「温暖化」の意味は何ですか。(What does 温暖化 mean?)",
+                "options": [
+                  "Air pollution",
+                  "Natural disaster",
+                  "Global warming",
+                  "Energy conservation"
+                ],
+                "correct": 2,
+                "explanation": "温暖化（おんだんか）means 'warming' — specifically global warming (地球温暖化). 温暖 = warm, 化 = -ification/change."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Feelings & Character",
+          "description": "Express emotions, personality traits, and psychological states.",
+          "sortOrder": 3,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Feelings & Character Vocabulary",
+              "body": {
+                "html": "<p>Describing emotions and personality requires a rich vocabulary at N3 level:</p><ul><li><b>気持ち</b>（きもち）— feeling, mood</li><li><b>性格</b>（せいかく）— personality, character</li><li><b>心配</b>（しんぱい）— worry, concern</li><li><b>安心</b>（あんしん）— relief, peace of mind</li><li><b>感動</b>（かんどう）— being deeply moved/impressed</li><li><b>我慢</b>（がまん）— patience, endurance</li><li><b>自信</b>（じしん）— self-confidence</li><li><b>緊張</b>（きんちょう）— nervousness, tension</li></ul><p>Many of these function as both nouns and する-verbs:</p><p><i>試験の前に緊張した。</i> (I got nervous before the exam.)<br/><i>結果を聞いて安心した。</i> (I felt relieved after hearing the result.)</p>",
+                "tips": [
+                  "心配する = to worry (about); 心配をかける = to cause someone worry.",
+                  "我慢する is 'to endure/put up with' — 我慢できない = I can't stand it.",
+                  "感動する = to be moved/touched; 感動的 = moving/touching (adjective)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Feelings Vocabulary Practice",
+              "body": {
+                "sentence": "彼女は明るい＿＿＿で、みんなに好かれている。(She has a bright _____ and is liked by everyone.)",
+                "answer": "性格",
+                "alternatives": ["せいかく"],
+                "explanation": "性格（せいかく）means personality/character. 明るい性格 = bright/cheerful personality."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Emotion Recognition",
+              "body": {
+                "question": "「感動した」とはどういう意味ですか。(What does 感動した mean?)",
+                "options": [
+                  "I was angry.",
+                  "I was deeply moved/impressed.",
+                  "I was relieved.",
+                  "I was worried."
+                ],
+                "correct": 1,
+                "explanation": "感動する（かんどうする）means to be deeply moved or impressed. 感 = feeling, 動 = move."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Abstract Concepts",
+          "description": "Learn words for discussing opportunities, goals, experiences, and outcomes.",
+          "sortOrder": 4,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Abstract Concepts Vocabulary",
+              "body": {
+                "html": "<p>At N3, you need words to discuss abstract ideas in essays, conversations, and reading passages:</p><ul><li><b>機会</b>（きかい）— opportunity, chance</li><li><b>目的</b>（もくてき）— purpose, objective</li><li><b>経験</b>（けいけん）— experience</li><li><b>結果</b>（けっか）— result, outcome</li><li><b>原因</b>（げんいん）— cause, reason</li><li><b>関係</b>（かんけい）— relationship, connection</li><li><b>状況</b>（じょうきょう）— situation, circumstances</li><li><b>条件</b>（じょうけん）— condition, requirement</li></ul><p>Example: <i>失敗の原因を調べて、結果を報告してください。</i><br/>(Please investigate the cause of the failure and report the results.)</p>",
+                "tips": [
+                  "機会 vs チャンス: 機会 is more formal. 機会があれば (if I have the chance).",
+                  "原因 (cause) and 結果 (result) often appear together: 原因と結果の関係 (cause-and-effect relationship).",
+                  "経験する = to experience (する-verb). いい経験になった = It was a good experience."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Abstract Concept Check",
+              "body": {
+                "question": "日本に留学した＿＿＿は、とても良かったです。(The _____ of studying abroad in Japan was very good.)",
+                "options": [
+                  "結果",
+                  "目的",
+                  "経験",
+                  "条件"
+                ],
+                "correct": 2,
+                "explanation": "経験（けいけん）means 'experience'. The sentence describes the experience of studying abroad. 結果 = result, 目的 = purpose, 条件 = condition."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build an Abstract Concept Sentence",
+              "body": {
+                "words": ["事故", "の", "原因", "を", "調べている"],
+                "correct": ["事故", "の", "原因", "を", "調べている"],
+                "translation": "We are investigating the cause of the accident."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "N3 Vocabulary: Society & Culture",
+          "description": "25 essential N3-level vocabulary words covering news, environment, feelings, and abstract concepts.",
+          "flashcards": [
+            {
+              "front": { "text": "ニュース", "reading": "ニュース" },
+              "back": { "text": "news", "example": "毎朝ニュースを見ている。(I watch the news every morning.)", "notes": "Noun (katakana loanword from English)" },
+              "tags": ["media"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "新聞", "reading": "しんぶん" },
+              "back": { "text": "newspaper", "example": "父は毎朝新聞を読む。(My father reads the newspaper every morning.)", "notes": "Noun" },
+              "tags": ["media"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "放送", "reading": "ほうそう" },
+              "back": { "text": "broadcast", "example": "その番組は生放送だった。(That program was a live broadcast.)", "notes": "Noun / する-verb. 生放送 = live broadcast" },
+              "tags": ["media"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "記事", "reading": "きじ" },
+              "back": { "text": "article (newspaper/magazine)", "example": "この記事は面白い。(This article is interesting.)", "notes": "Noun" },
+              "tags": ["media"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "報道", "reading": "ほうどう" },
+              "back": { "text": "news report; reporting", "example": "テレビで事故の報道を見た。(I saw a news report about the accident on TV.)", "notes": "Noun / する-verb. More formal than ニュース." },
+              "tags": ["media"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "番組", "reading": "ばんぐみ" },
+              "back": { "text": "TV/radio program", "example": "好きな番組は何ですか。(What's your favorite program?)", "notes": "Noun" },
+              "tags": ["media"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "情報", "reading": "じょうほう" },
+              "back": { "text": "information", "example": "正確な情報が必要だ。(Accurate information is needed.)", "notes": "Noun. 個人情報 = personal information" },
+              "tags": ["media"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "自然", "reading": "しぜん" },
+              "back": { "text": "nature; natural", "example": "この町は自然が豊かだ。(This town is rich in nature.)", "notes": "Noun / な-adjective. 自然な = natural (adj)" },
+              "tags": ["environment"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "環境", "reading": "かんきょう" },
+              "back": { "text": "environment", "example": "環境を守ることが大切だ。(It's important to protect the environment.)", "notes": "Noun. 環境問題 = environmental issue" },
+              "tags": ["environment"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "影響", "reading": "えいきょう" },
+              "back": { "text": "influence; effect", "example": "睡眠不足は健康に影響を与える。(Lack of sleep has an effect on health.)", "notes": "Noun / する-verb. 影響を与える = to affect; 影響を受ける = to be affected" },
+              "tags": ["environment"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "温暖化", "reading": "おんだんか" },
+              "back": { "text": "global warming", "example": "地球温暖化が心配されている。(Global warming is a concern.)", "notes": "Noun. 温暖 = warm + 化 = -ification" },
+              "tags": ["environment"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "汚染", "reading": "おせん" },
+              "back": { "text": "pollution; contamination", "example": "大気汚染が深刻だ。(Air pollution is serious.)", "notes": "Noun / する-verb. 大気汚染 = air pollution; 水質汚染 = water pollution" },
+              "tags": ["environment"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "資源", "reading": "しげん" },
+              "back": { "text": "resources", "example": "資源を大切に使おう。(Let's use resources carefully.)", "notes": "Noun. 天然資源 = natural resources" },
+              "tags": ["environment"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "気持ち", "reading": "きもち" },
+              "back": { "text": "feeling; mood", "example": "あなたの気持ちはわかります。(I understand your feelings.)", "notes": "Noun. 気持ちがいい = feels good; 気持ちが悪い = feels bad/unpleasant" },
+              "tags": ["feelings"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "性格", "reading": "せいかく" },
+              "back": { "text": "personality; character", "example": "彼はやさしい性格だ。(He has a gentle personality.)", "notes": "Noun" },
+              "tags": ["feelings"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "心配", "reading": "しんぱい" },
+              "back": { "text": "worry; concern", "example": "心配しないでください。(Please don't worry.)", "notes": "Noun / する-verb / な-adjective. 心配をかける = to cause worry" },
+              "tags": ["feelings"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "安心", "reading": "あんしん" },
+              "back": { "text": "relief; peace of mind", "example": "無事と聞いて安心した。(I was relieved to hear (you're) safe.)", "notes": "Noun / する-verb. Opposite of 心配." },
+              "tags": ["feelings"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "感動", "reading": "かんどう" },
+              "back": { "text": "being deeply moved/impressed", "example": "映画に感動して泣いた。(I was moved by the movie and cried.)", "notes": "Noun / する-verb. 感動的な = moving, touching" },
+              "tags": ["feelings"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "我慢", "reading": "がまん" },
+              "back": { "text": "patience; endurance; to endure", "example": "痛いけど我慢した。(It hurt but I endured it.)", "notes": "Noun / する-verb. 我慢できない = I can't stand it" },
+              "tags": ["feelings"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "機会", "reading": "きかい" },
+              "back": { "text": "opportunity; chance", "example": "機会があれば、ぜひ参加したい。(If there's an opportunity, I'd definitely like to participate.)", "notes": "Noun. More formal than チャンス." },
+              "tags": ["abstract"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "目的", "reading": "もくてき" },
+              "back": { "text": "purpose; objective", "example": "旅行の目的は何ですか。(What is the purpose of the trip?)", "notes": "Noun. 目的地 = destination" },
+              "tags": ["abstract"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "経験", "reading": "けいけん" },
+              "back": { "text": "experience", "example": "いい経験になった。(It was a good experience.)", "notes": "Noun / する-verb. 経験者 = experienced person" },
+              "tags": ["abstract"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "結果", "reading": "けっか" },
+              "back": { "text": "result; outcome", "example": "試験の結果を待っている。(I'm waiting for the exam results.)", "notes": "Noun. その結果 = as a result" },
+              "tags": ["abstract"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "原因", "reading": "げんいん" },
+              "back": { "text": "cause; reason", "example": "事故の原因はまだわからない。(The cause of the accident is still unknown.)", "notes": "Noun. Often paired with 結果: 原因と結果" },
+              "tags": ["abstract"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "関係", "reading": "かんけい" },
+              "back": { "text": "relationship; connection", "example": "二人の関係はとてもいい。(Their relationship is very good.)", "notes": "Noun / する-verb. 関係がある = to be related; 関係ない = unrelated" },
+              "tags": ["abstract"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "KEY_SENTENCES",
+      "title": "Nuanced Communication",
+      "description": "Master sentence patterns for formal requests, expressing uncertainty, and connecting ideas smoothly in conversation.",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "title": "Formal Requests",
+          "description": "Learn polite and formal ways to make requests in Japanese.",
+          "sortOrder": 1,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Polite Request Patterns",
+              "body": {
+                "html": "<p>N3-level requests go beyond basic ～てください. Here are patterns ranked from polite to very polite:</p><h4>～くださいませんか (Would you please ~?)</h4><p>More polite than ～てください. Uses negative question form for softness.</p><p><i>少々お待ちくださいませんか。</i> (Would you please wait a moment?)</p><h4>～いただけませんか (Could I have you ~?)</h4><p>Very polite. Uses the humble form いただく + potential + negative question.</p><p><i>この書類を確認していただけませんか。</i> (Could you check this document?)</p><h4>お願いします (Please / I ask of you)</h4><p>Versatile polite request. Can stand alone or follow a noun.</p><p><i>コーヒーをお願いします。</i> (Coffee, please.)</p><h4>～ていただきたいのですが (I would like you to ~)</h4><p>Indirect and very polite. The のですが softens the request further.</p><p><i>少し手伝っていただきたいのですが。</i> (I'd like you to help me a little, if you could...)</p>",
+                "tips": [
+                  "Negative questions (～ませんか) are softer than positive ones — they give the listener room to decline.",
+                  "いただく is the humble form of もらう; using it elevates the listener.",
+                  "～のですが leaves the sentence trailing, making it even more indirect and polite."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Politeness Level",
+              "body": {
+                "question": "Which is the MOST polite way to ask someone to explain?",
+                "options": [
+                  "説明してください。",
+                  "説明してくださいませんか。",
+                  "説明していただけませんか。",
+                  "説明して。"
+                ],
+                "correct": 2,
+                "explanation": "～していただけませんか uses the humble いただく in potential negative-question form, making it the most polite. して is casual, してください is standard polite, and してくださいませんか is polite."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Formal Request Practice",
+              "body": {
+                "sentence": "すみません、写真を撮って＿＿＿＿＿＿。(Excuse me, could you take a photo?)",
+                "answer": "いただけませんか",
+                "alternatives": ["くださいませんか"],
+                "explanation": "Both いただけませんか and くださいませんか are polite request forms. いただけませんか is slightly more polite as it uses the humble verb いただく."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Expressing Uncertainty",
+          "description": "Use らしい, よう, みたい, and っぽい to express conjecture and hearsay.",
+          "sortOrder": 2,
+          "estimatedMinutes": 15,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Four Ways to Express Uncertainty",
+              "body": {
+                "html": "<p>Japanese has several expressions for uncertainty, each with a different nuance:</p><h4>～らしい (Hearsay / seems like, based on information)</h4><p>Based on information heard or read. Not firsthand observation.</p><p><i>田中さんは来週結婚するらしい。</i> (Apparently Tanaka-san is getting married next week.)</p><h4>～ようだ (Appears to be ~, based on observation)</h4><p>Based on the speaker's own observation or judgment. More formal.</p><p><i>彼は疲れているようだ。</i> (He appears to be tired.)</p><h4>～みたいだ (Seems like ~, casual version of ようだ)</h4><p>Same meaning as ようだ but more casual and conversational.</p><p><i>外は寒いみたいだ。</i> (It seems cold outside.)</p><h4>～っぽい (Looks like ~; -ish; tends to be ~)</h4><p>Casual suffix. Can also express tendency or characteristic.</p><p><i>この色は子供っぽい。</i> (This color is childish.)</p>",
+                "tips": [
+                  "らしい attaches to plain form (verbs, adjectives, nouns — no だ for nouns/na-adj).",
+                  "ようだ is preceded by noun の / na-adj な, but みたいだ follows nouns directly.",
+                  "っぽい conjugates like an い-adjective: 子供っぽくない (not childish).",
+                  "～らしい after a noun can also mean 'typical of': 男らしい (manly), 学生らしい (student-like)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Choosing the Right Uncertainty Expression",
+              "body": {
+                "question": "友達から聞いたんだけど、あの店は来月閉まる＿＿＿。(I heard from a friend that that shop is apparently closing next month.)",
+                "options": [
+                  "ようだ",
+                  "らしい",
+                  "っぽい",
+                  "はずだ"
+                ],
+                "correct": 1,
+                "explanation": "らしい is used for information obtained from others (hearsay). The key clue is 友達から聞いた (heard from a friend) — the information is secondhand."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "っぽい Usage",
+              "body": {
+                "question": "Which sentence correctly uses っぽい?",
+                "options": [
+                  "彼女は大人っぽい服を着ている。",
+                  "明日は雨っぽいです。",
+                  "このスープは辛いっぽい。",
+                  "彼は先生っぽいだ。"
+                ],
+                "correct": 0,
+                "explanation": "大人っぽい = adult-like, mature (in appearance). っぽい is most naturally used to express a quality or tendency (忘れっぽい, 怒りっぽい, 子供っぽい). It conjugates as an い-adjective, so っぽいだ is incorrect."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Connecting Ideas",
+          "description": "Use conjunctions and transitional phrases to build coherent, flowing sentences.",
+          "sortOrder": 3,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Conjunctions & Transitional Phrases",
+              "body": {
+                "html": "<p>Smooth, connected speech and writing requires mastering transitional expressions. Here are key N3-level conjunctions:</p><h4>Contrast</h4><ul><li><b>しかし</b> — However (formal)</li><li><b>でも</b> — But (casual)</li><li><b>ところが</b> — However / And yet (unexpected result)</li></ul><h4>Cause & Result</h4><ul><li><b>そのため</b> — For that reason (formal)</li><li><b>それで</b> — So; and then; therefore</li><li><b>したがって</b> — Therefore; consequently (very formal)</li></ul><h4>Rephrasing & Addition</h4><ul><li><b>つまり</b> — In other words; that is to say</li><li><b>しかも</b> — Moreover; what's more</li><li><b>ついでに</b> — While (you're) at it; incidentally</li></ul><p>Example: <i>雨が降った。しかし、試合は中止にならなかった。</i><br/>(It rained. However, the game was not cancelled.)</p>",
+                "tips": [
+                  "しかし is written/formal; でも is spoken/casual. Don't use でも in essays.",
+                  "ところが emphasizes that the result was unexpected: 練習した。ところが、負けた。(I practiced. And yet, I lost.)",
+                  "ついでに is practical: 買い物のついでに郵便局に寄った。(While shopping, I stopped by the post office.)"
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Conjunction Practice",
+              "body": {
+                "sentence": "彼は日本語が上手だ。＿＿＿、中国語も話せる。(He's good at Japanese. Moreover, he can also speak Chinese.)",
+                "answer": "しかも",
+                "alternatives": [],
+                "explanation": "しかも means 'moreover' or 'what's more' — used to add surprising or impressive additional information."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Choosing the Right Conjunction",
+              "body": {
+                "question": "説明が長すぎた。＿＿＿、誰も理解できなかった。(The explanation was too long. _____, no one could understand.)",
+                "options": [
+                  "つまり",
+                  "それで",
+                  "しかも",
+                  "ついでに"
+                ],
+                "correct": 1,
+                "explanation": "それで means 'so; therefore' — connecting a cause (too long) with its result (no one understood). つまり = in other words; しかも = moreover; ついでに = while at it."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "N3 Key Sentence Patterns",
+          "description": "20 key sentence patterns for formal requests, expressing uncertainty, and connecting ideas at the N3 level.",
+          "flashcards": [
+            {
+              "front": { "text": "～いただけませんか", "reading": "～いただけませんか" },
+              "back": { "text": "Could you please ~? (very polite request)", "example": "ちょっと教えていただけませんか。(Could you please teach me a bit?)", "notes": "Humble いただく + potential + negative question. Very polite." },
+              "tags": ["request", "polite"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "～くださいませんか", "reading": "～くださいませんか" },
+              "back": { "text": "Would you please ~? (polite request)", "example": "もう少し待ってくださいませんか。(Would you please wait a little longer?)", "notes": "More polite than ～てください. Negative question softens the request." },
+              "tags": ["request", "polite"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "お願いします", "reading": "おねがいします" },
+              "back": { "text": "Please. / I request. (versatile polite expression)", "example": "お会計をお願いします。(The check, please.)", "notes": "Can follow nouns directly. Universal polite request form." },
+              "tags": ["request", "polite"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "～ていただきたいのですが", "reading": "～ていただきたいのですが" },
+              "back": { "text": "I would like you to ~ (indirect, very polite)", "example": "確認していただきたいのですが。(I'd like you to check this, if you could...)", "notes": "The trailing のですが makes it very soft and indirect." },
+              "tags": ["request", "polite"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "～らしい", "reading": "～らしい" },
+              "back": { "text": "Apparently ~; I heard that ~ (hearsay)", "example": "明日は雨が降るらしい。(Apparently it will rain tomorrow.)", "notes": "Based on secondhand information. Plain form + らしい (no だ for nouns)." },
+              "tags": ["uncertainty", "hearsay"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "～ようだ", "reading": "～ようだ" },
+              "back": { "text": "It appears that ~; it seems ~ (based on observation)", "example": "道が濡れているようだ。(The road appears to be wet.)", "notes": "More formal than みたいだ. Based on speaker's own observation." },
+              "tags": ["uncertainty", "observation"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "～みたいだ", "reading": "～みたいだ" },
+              "back": { "text": "It seems like ~ (casual, same as ようだ)", "example": "彼は忙しいみたいだ。(He seems busy.)", "notes": "Casual version of ようだ. Follows plain form / nouns directly." },
+              "tags": ["uncertainty", "casual"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "～っぽい", "reading": "～っぽい" },
+              "back": { "text": "-ish; -like; tends to be ~ (casual suffix)", "example": "最近忘れっぽくなった。(I've become forgetful lately.)", "notes": "Conjugates like い-adjective. 子供っぽい = childish; 怒りっぽい = quick to anger." },
+              "tags": ["uncertainty", "tendency"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "しかし", "reading": "しかし" },
+              "back": { "text": "However; but (formal conjunction)", "example": "努力した。しかし、合格できなかった。(I worked hard. However, I couldn't pass.)", "notes": "Written/formal. Use でも in casual speech." },
+              "tags": ["conjunction", "contrast"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "ところが", "reading": "ところが" },
+              "back": { "text": "However; and yet (unexpected result)", "example": "晴れると思った。ところが、大雨になった。(I thought it would be sunny. And yet, it poured.)", "notes": "Emphasizes that the result was contrary to expectation." },
+              "tags": ["conjunction", "contrast"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "それで", "reading": "それで" },
+              "back": { "text": "So; therefore; and then", "example": "電車が止まった。それで、タクシーに乗った。(The train stopped. So I took a taxi.)", "notes": "Connects cause to result. Neutral register." },
+              "tags": ["conjunction", "cause-result"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "そのため", "reading": "そのため" },
+              "back": { "text": "For that reason; therefore (formal)", "example": "人口が増えている。そのため、住宅が不足している。(The population is growing. For that reason, there's a housing shortage.)", "notes": "More formal than それで. Common in essays and reports." },
+              "tags": ["conjunction", "cause-result"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "つまり", "reading": "つまり" },
+              "back": { "text": "In other words; that is to say", "example": "彼は私の母の兄だ。つまり、おじだ。(He's my mother's older brother. In other words, my uncle.)", "notes": "Used to rephrase or summarize what was just said." },
+              "tags": ["conjunction", "rephrasing"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "しかも", "reading": "しかも" },
+              "back": { "text": "Moreover; what's more", "example": "この店は安い。しかも、おいしい。(This shop is cheap. What's more, it's delicious.)", "notes": "Adds surprising or noteworthy additional information." },
+              "tags": ["conjunction", "addition"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "ついでに", "reading": "ついでに" },
+              "back": { "text": "While (you're) at it; incidentally; on the way", "example": "銀行に行くついでに、薬局にも寄った。(While going to the bank, I also stopped by the pharmacy.)", "notes": "Doing something extra along the way or while doing something else." },
+              "tags": ["conjunction", "addition"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "～かもしれない", "reading": "～かもしれない" },
+              "back": { "text": "Might ~; maybe ~ (possibility)", "example": "明日は雪が降るかもしれない。(It might snow tomorrow.)", "notes": "Plain form + かもしれない. Casual: かも." },
+              "tags": ["uncertainty", "possibility"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "～にちがいない", "reading": "～にちがいない" },
+              "back": { "text": "Must be ~; no doubt ~ (strong certainty)", "example": "彼は知っているに違いない。(He must know.)", "notes": "Plain form + にちがいない. Strong conviction, like 'must be'." },
+              "tags": ["uncertainty", "certainty"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "したがって", "reading": "したがって" },
+              "back": { "text": "Therefore; consequently (very formal)", "example": "予算が不足している。したがって、計画を変更する必要がある。(The budget is insufficient. Therefore, we need to change the plan.)", "notes": "Very formal. Used in academic writing and official documents." },
+              "tags": ["conjunction", "cause-result"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "一方（で）", "reading": "いっぽう（で）" },
+              "back": { "text": "On the other hand; while; meanwhile", "example": "都市は便利だ。一方、自然が少ない。(Cities are convenient. On the other hand, there's little nature.)", "notes": "Used to present a contrasting viewpoint or simultaneous situation." },
+              "tags": ["conjunction", "contrast"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "その上", "reading": "そのうえ" },
+              "back": { "text": "Furthermore; on top of that", "example": "彼は頭がいい。その上、スポーツも得意だ。(He's smart. On top of that, he's good at sports.)", "notes": "Similar to しかも but slightly more formal." },
+              "tags": ["conjunction", "addition"],
+              "sortOrder": 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

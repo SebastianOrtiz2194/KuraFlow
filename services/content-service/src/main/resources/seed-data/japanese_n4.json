@@ -1,0 +1,979 @@
+{
+  "languageCode": "ja",
+  "levelCode": "N4",
+  "modules": [
+    {
+      "type": "GRAMMAR",
+      "title": "Te-form & Connections",
+      "description": "Master the versatile te-form and learn to connect actions, describe ongoing states, and express sequences of events using essential N4 grammar patterns.",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "title": "て form (te-form) conjugation",
+          "description": "Learn how to conjugate godan and ichidan verbs into the te-form, one of the most important verb forms in Japanese.",
+          "sortOrder": 1,
+          "estimatedMinutes": 15,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "How to form the て form",
+              "body": {
+                "html": "<p>The <b>て form</b> is one of the most versatile verb forms in Japanese. It's used to connect sentences, make requests, describe ongoing actions, and much more.</p><h3>Ichidan (る) verbs</h3><p>Drop る and add て:</p><ul><li>食べ<b>る</b> → 食べ<b>て</b> (taberu → tabete)</li><li>見<b>る</b> → 見<b>て</b> (miru → mite)</li></ul><h3>Godan (う) verbs — the song pattern</h3><p>The ending changes based on the final kana:</p><ul><li><b>う・つ・る</b> → って: 買う → 買<b>って</b>、待つ → 待<b>って</b>、取る → 取<b>って</b></li><li><b>む・ぶ・ぬ</b> → んで: 読む → 読<b>んで</b>、遊ぶ → 遊<b>んで</b>、死ぬ → 死<b>んで</b></li><li><b>く</b> → いて: 書く → 書<b>いて</b> (exception: 行く → 行<b>って</b>)</li><li><b>ぐ</b> → いで: 泳ぐ → 泳<b>いで</b></li><li><b>す</b> → して: 話す → 話<b>して</b></li></ul><h3>Irregular verbs</h3><ul><li>する → <b>して</b></li><li>来る（くる）→ <b>来て（きて）</b></li></ul>",
+                "tips": [
+                  "Remember the て form song: って・んで・いて・いで・して — this covers all godan endings.",
+                  "行く (iku) is the only く-ending verb that becomes 行って instead of 行いて.",
+                  "The て form by itself can be used as a casual request: 待って！(Wait!)"
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Te-form of 読む",
+              "body": {
+                "question": "What is the て form of 読む (よむ - to read)?",
+                "options": ["読みて", "読んで", "読って", "読いて"],
+                "correct": 1,
+                "explanation": "読む ends in む, so it follows the む・ぶ・ぬ → んで pattern: 読む → 読んで (yonde)."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Te-form of 書く",
+              "body": {
+                "sentence": "手紙を ___ ください。(Please write a letter.)",
+                "answer": "書いて",
+                "alternatives": ["かいて"],
+                "explanation": "書く ends in く, so it follows the く → いて pattern: 書く → 書いて (kaite)."
+              }
+            }
+          ]
+        },
+        {
+          "title": "ている (te-iru)",
+          "description": "Learn to express ongoing actions (progressive) and resultant states using the ている construction.",
+          "sortOrder": 2,
+          "estimatedMinutes": 15,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Progressive and resultant states with ている",
+              "body": {
+                "html": "<p><b>て form + いる</b> has two main uses:</p><h3>1. Ongoing action (progressive)</h3><p>Describes something happening right now, like English '-ing':</p><ul><li>本を<b>読んでいる</b>。— I am reading a book.</li><li>友達と<b>話している</b>。— I am talking with a friend.</li></ul><h3>2. Resultant state</h3><p>Describes a state that resulted from a past action:</p><ul><li>結婚<b>している</b>。— I am married. (result of getting married)</li><li>窓が<b>開いている</b>。— The window is open. (result of being opened)</li><li>東京に<b>住んでいる</b>。— I live in Tokyo. (state of residing)</li></ul><h3>Casual speech</h3><p>In casual speech, ている is often shortened to てる:</p><ul><li>何してる？— What are you doing?</li><li>知ってる？— Do you know?</li></ul>",
+                "tips": [
+                  "Whether ている means 'is doing' or 'is in a state of' depends on the verb type. Movement and change-of-state verbs (結婚する, 死ぬ, 座る) tend to express resultant states.",
+                  "知っている (shitte iru) means 'I know' — it's a resultant state, not 'I am knowing'.",
+                  "The negative is ていない: 食べていない (I haven't eaten / I'm not eating)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Meaning of ている",
+              "body": {
+                "question": "What does 田中さんは結婚している mean?",
+                "options": ["Tanaka is getting married.", "Tanaka is married.", "Tanaka was married.", "Tanaka wants to get married."],
+                "correct": 1,
+                "explanation": "結婚している expresses a resultant state — the result of having gotten married. It means 'is married', not 'is getting married'."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build: I am reading a book",
+              "body": {
+                "words": ["を", "本", "読んで", "います"],
+                "correct": ["本", "を", "読んで", "います"],
+                "translation": "I am reading a book."
+              }
+            }
+          ]
+        },
+        {
+          "title": "てから (te kara)",
+          "description": "Express the sequence 'after doing X, do Y' using the てから grammar pattern.",
+          "sortOrder": 3,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "After doing X with てから",
+              "body": {
+                "html": "<p><b>Verb て form + から</b> means 'after doing (verb)'. It clearly marks the order of two actions.</p><h3>Structure</h3><p>Action A てから、Action B。</p><ul><li>ご飯を<b>食べてから</b>、宿題をします。— After eating, I'll do homework.</li><li>シャワーを<b>浴びてから</b>、寝ます。— After taking a shower, I'll sleep.</li><li>日本に<b>来てから</b>、三年になります。— It's been three years since I came to Japan.</li></ul><h3>てから vs. あとで</h3><p>Both mean 'after', but てから emphasizes the direct sequence — B happens because A was done first. あとで is more flexible about timing.</p><ul><li>手を<b>洗ってから</b>、食べてください。— Wash your hands <em>and then</em> eat. (strict order)</li><li>あとで電話します。— I'll call later. (vague timing)</li></ul>",
+                "tips": [
+                  "てから emphasizes that action A must be completed before action B starts.",
+                  "You can also express duration since an event: 日本に来てから、もう五年です (It's been 5 years since I came to Japan).",
+                  "Don't confuse てから (after doing) with plain から (because)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "After eating",
+              "body": {
+                "sentence": "ご飯を ___ 、薬を飲みます。(After eating, I take medicine.)",
+                "answer": "食べてから",
+                "alternatives": ["たべてから"],
+                "explanation": "食べる → 食べて + から = 食べてから (after eating). The てから pattern expresses that the first action must be completed before the second."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build: After studying, I watch TV",
+              "body": {
+                "words": ["テレビを", "勉強して", "から", "見ます"],
+                "correct": ["勉強して", "から", "テレビを", "見ます"],
+                "translation": "After studying, I watch TV."
+              }
+            }
+          ]
+        },
+        {
+          "title": "たり...たり (tari...tari)",
+          "description": "Learn to list multiple actions or states as non-exhaustive examples using the たり pattern.",
+          "sortOrder": 4,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Listing actions with たり...たりする",
+              "body": {
+                "html": "<p><b>Verb た form + り ... Verb た form + り + する</b> is used to list actions as examples, implying 'things like X and Y (among others)'.</p><h3>Structure</h3><p>Verb1 たり、Verb2 たり + します/する。</p><h3>How to form たり</h3><p>Take the た form (past tense) and add り:</p><ul><li>食べた → 食べた<b>り</b></li><li>読んだ → 読んだ<b>り</b></li><li>行った → 行った<b>り</b></li></ul><h3>Examples</h3><ul><li>週末は映画を<b>見たり</b>、本を<b>読んだり</b>します。— On weekends I do things like watch movies and read books.</li><li>天気が<b>良かったり</b>、<b>悪かったり</b>します。— The weather is sometimes good and sometimes bad.</li><li>日本で寿司を<b>食べたり</b>、神社に<b>行ったり</b>しました。— In Japan I did things like eat sushi and go to shrines.</li></ul>",
+                "tips": [
+                  "The たり form is made from the た (past) form + り. If you know the past tense, just add り.",
+                  "Always end the sentence with する (or its conjugation like します, した, etc.).",
+                  "たり...たり implies the list is not exhaustive — there are other things too.",
+                  "You can use it with adjectives too: 暑かったり寒かったりする (it's sometimes hot, sometimes cold)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Correct たり sentence",
+              "body": {
+                "question": "Which sentence correctly uses たり...たり?",
+                "options": [
+                  "週末は音楽を聞いたり、料理をしたりします。",
+                  "週末は音楽を聞いてり、料理をしてりします。",
+                  "週末は音楽を聞くたり、料理をするたりします。",
+                  "週末は音楽を聞いたり、料理をしたりする。です。"
+                ],
+                "correct": 0,
+                "explanation": "聞く → 聞いた → 聞いたり, する → した → したり. The たり form is based on the past tense (た form), and the sentence ends with します."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Listing weekend activities",
+              "body": {
+                "sentence": "休みの日は、散歩 ___ 、買い物をしたりします。(On days off, I do things like take walks and go shopping.)",
+                "answer": "したり",
+                "alternatives": [],
+                "explanation": "散歩する → 散歩した → 散歩したり. The たり form is the た (past) form + り."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "N4 Grammar Patterns",
+          "description": "25 essential grammar patterns for JLPT N4, covering te-form connections, conditionals, giving/receiving, and more.",
+          "flashcards": [
+            {
+              "front": { "text": "〜ている", "reading": "〜ている" },
+              "back": { "text": "Progressive / resultant state (am doing / is in state of)", "example": "今、本を読んでいます。(I am reading a book now.)", "notes": "te-form + いる" },
+              "tags": ["grammar", "te-form", "n4"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "〜てから", "reading": "〜てから" },
+              "back": { "text": "After doing ~", "example": "ご飯を食べてから、出かけます。(After eating, I go out.)", "notes": "te-form + から" },
+              "tags": ["grammar", "te-form", "n4"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "〜たり〜たりする", "reading": "〜たり〜たりする" },
+              "back": { "text": "Do things like ~ and ~ (non-exhaustive list)", "example": "映画を見たり、音楽を聞いたりします。(I do things like watch movies and listen to music.)", "notes": "ta-form + り" },
+              "tags": ["grammar", "te-form", "n4"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "〜てもいい", "reading": "〜てもいい" },
+              "back": { "text": "It's okay to ~ / May I ~?", "example": "ここに座ってもいいですか。(May I sit here?)", "notes": "te-form + もいい" },
+              "tags": ["grammar", "permission", "n4"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "〜てはいけない", "reading": "〜てはいけない" },
+              "back": { "text": "Must not ~ / Not allowed to ~", "example": "ここで写真を撮ってはいけません。(You must not take photos here.)", "notes": "te-form + はいけない" },
+              "tags": ["grammar", "prohibition", "n4"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "〜なければならない", "reading": "〜なければならない" },
+              "back": { "text": "Must ~ / Have to ~", "example": "宿題をしなければならない。(I have to do homework.)", "notes": "nai-form stem + ければならない" },
+              "tags": ["grammar", "obligation", "n4"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "〜なくてもいい", "reading": "〜なくてもいい" },
+              "back": { "text": "Don't have to ~ / It's okay not to ~", "example": "明日は来なくてもいいです。(You don't have to come tomorrow.)", "notes": "nai-form stem + くてもいい" },
+              "tags": ["grammar", "permission", "n4"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "〜てあげる", "reading": "〜てあげる" },
+              "back": { "text": "Do ~ for someone (as a favor)", "example": "友達に本を読んであげた。(I read a book for my friend.)", "notes": "te-form + あげる (giving direction: speaker → other)" },
+              "tags": ["grammar", "giving-receiving", "n4"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "〜てもらう", "reading": "〜てもらう" },
+              "back": { "text": "Have someone do ~ for me / Receive the favor of ~", "example": "先生に説明してもらった。(I had the teacher explain it for me.)", "notes": "te-form + もらう (receiving direction: other → speaker)" },
+              "tags": ["grammar", "giving-receiving", "n4"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "〜てくれる", "reading": "〜てくれる" },
+              "back": { "text": "Someone does ~ for me (grateful nuance)", "example": "母が料理を作ってくれた。(My mother made food for me.)", "notes": "te-form + くれる (other → speaker, speaker grateful)" },
+              "tags": ["grammar", "giving-receiving", "n4"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "〜たことがある", "reading": "〜たことがある" },
+              "back": { "text": "Have experienced ~ / Have done ~ before", "example": "日本に行ったことがあります。(I have been to Japan before.)", "notes": "ta-form + ことがある" },
+              "tags": ["grammar", "experience", "n4"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "〜たほうがいい", "reading": "〜たほうがいい" },
+              "back": { "text": "Had better ~ / Should ~", "example": "薬を飲んだほうがいいですよ。(You should take medicine.)", "notes": "ta-form + ほうがいい (affirmative advice)" },
+              "tags": ["grammar", "advice", "n4"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "〜ないほうがいい", "reading": "〜ないほうがいい" },
+              "back": { "text": "Had better not ~ / Shouldn't ~", "example": "夜遅く食べないほうがいい。(You shouldn't eat late at night.)", "notes": "nai-form + ほうがいい (negative advice)" },
+              "tags": ["grammar", "advice", "n4"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "〜と思う", "reading": "〜とおもう" },
+              "back": { "text": "I think that ~", "example": "明日は雨だと思います。(I think it will rain tomorrow.)", "notes": "plain form + と思う" },
+              "tags": ["grammar", "opinion", "n4"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "〜と言う", "reading": "〜という" },
+              "back": { "text": "Say that ~ / Called ~", "example": "先生は明日テストがあると言いました。(The teacher said there's a test tomorrow.)", "notes": "plain form + と言う" },
+              "tags": ["grammar", "quotation", "n4"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "〜かもしれない", "reading": "〜かもしれない" },
+              "back": { "text": "Might ~ / Maybe ~", "example": "明日は雪が降るかもしれない。(It might snow tomorrow.)", "notes": "plain form + かもしれない" },
+              "tags": ["grammar", "possibility", "n4"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "〜ので", "reading": "〜ので" },
+              "back": { "text": "Because ~ (polite/objective reason)", "example": "病気なので、学校を休みます。(Because I'm sick, I'll be absent from school.)", "notes": "plain form + ので (na-adj/noun + なので)" },
+              "tags": ["grammar", "reason", "n4"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "〜のに", "reading": "〜のに" },
+              "back": { "text": "Even though ~ / Despite ~", "example": "勉強したのに、テストに落ちた。(Even though I studied, I failed the test.)", "notes": "plain form + のに" },
+              "tags": ["grammar", "contrast", "n4"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "〜ために", "reading": "〜ために" },
+              "back": { "text": "In order to ~ / For the sake of ~", "example": "日本語を勉強するために、日本に来ました。(I came to Japan to study Japanese.)", "notes": "dictionary form + ために (purpose); noun + のために" },
+              "tags": ["grammar", "purpose", "n4"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "〜てみる", "reading": "〜てみる" },
+              "back": { "text": "Try doing ~", "example": "この料理を食べてみてください。(Please try eating this dish.)", "notes": "te-form + みる" },
+              "tags": ["grammar", "te-form", "n4"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "〜てしまう", "reading": "〜てしまう" },
+              "back": { "text": "End up doing ~ / Do ~ completely (often with regret)", "example": "ケーキを全部食べてしまった。(I ended up eating all the cake.)", "notes": "te-form + しまう; casual: ちゃう/じゃう" },
+              "tags": ["grammar", "te-form", "n4"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "〜ておく", "reading": "〜ておく" },
+              "back": { "text": "Do ~ in advance / Leave ~ as is", "example": "パーティーの前に、部屋を掃除しておきます。(I'll clean the room before the party.)", "notes": "te-form + おく; casual: とく" },
+              "tags": ["grammar", "te-form", "n4"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "〜ば〜ほど", "reading": "〜ば〜ほど" },
+              "back": { "text": "The more ~, the more ~", "example": "練習すればするほど、上手になる。(The more you practice, the better you get.)", "notes": "ba-form + dictionary form + ほど" },
+              "tags": ["grammar", "conditional", "n4"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "〜ようにする", "reading": "〜ようにする" },
+              "back": { "text": "Try to ~ / Make sure to ~", "example": "毎日運動するようにしています。(I try to exercise every day.)", "notes": "dictionary form + ようにする" },
+              "tags": ["grammar", "effort", "n4"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "〜ようになる", "reading": "〜ようになる" },
+              "back": { "text": "Come to ~ / Become able to ~", "example": "日本語が話せるようになりました。(I became able to speak Japanese.)", "notes": "dictionary/potential form + ようになる" },
+              "tags": ["grammar", "change", "n4"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VOCABULARY",
+      "title": "Expanding Your World",
+      "description": "Build your N4 vocabulary across practical topics: weather, transportation, health, and hobbies. These words appear frequently in daily life and JLPT N4.",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "title": "Weather & Seasons",
+          "description": "Learn vocabulary for weather conditions and the four seasons — essential for daily small talk in Japanese.",
+          "sortOrder": 1,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Weather & Season Words",
+              "body": {
+                "html": "<p>Weather is one of the most common conversation topics in Japanese. Here are the key N4 weather and season words:</p><h3>Weather (天気・てんき)</h3><ul><li><b>天気</b>（てんき）— weather</li><li><b>雨</b>（あめ）— rain</li><li><b>晴れ</b>（はれ）— clear/sunny</li><li><b>曇り</b>（くもり）— cloudy</li><li><b>雪</b>（ゆき）— snow</li><li><b>風</b>（かぜ）— wind</li><li><b>台風</b>（たいふう）— typhoon</li></ul><h3>Seasons (季節・きせつ)</h3><ul><li><b>春</b>（はる）— spring</li><li><b>夏</b>（なつ）— summer</li><li><b>秋</b>（あき）— autumn</li><li><b>冬</b>（ふゆ）— winter</li></ul><h3>Useful expressions</h3><ul><li>今日の天気はどうですか。— How's the weather today?</li><li>明日は雨が降るそうです。— I heard it will rain tomorrow.</li><li>夏は暑いです。— Summer is hot.</li></ul>",
+                "tips": [
+                  "風 (かぜ) means both 'wind' and 'cold (illness)' — context tells you which.",
+                  "Japanese has a rainy season called 梅雨 (つゆ/ばいう) in June–July.",
+                  "Use 降る (ふる) with rain and snow: 雨が降る (it rains), 雪が降る (it snows)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Seasons quiz",
+              "body": {
+                "question": "Which kanji means 'autumn'?",
+                "options": ["春", "夏", "秋", "冬"],
+                "correct": 2,
+                "explanation": "秋（あき）means autumn/fall. 春 = spring, 夏 = summer, 冬 = winter."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Weather fill-in",
+              "body": {
+                "sentence": "明日は ___ が降るそうです。(I heard it will rain tomorrow.)",
+                "answer": "雨",
+                "alternatives": ["あめ"],
+                "explanation": "雨（あめ）means rain. 雨が降る (あめがふる) is the standard expression for 'it rains'."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Transportation",
+          "description": "Learn vocabulary for getting around — trains, buses, stations, and directions in Japanese.",
+          "sortOrder": 2,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Transportation Words",
+              "body": {
+                "html": "<p>Japan's transportation system is world-famous. Here are the essential words you'll need:</p><h3>Vehicles</h3><ul><li><b>電車</b>（でんしゃ）— train</li><li><b>バス</b>（ばす）— bus</li><li><b>飛行機</b>（ひこうき）— airplane</li><li><b>自転車</b>（じてんしゃ）— bicycle</li><li><b>車</b>（くるま）— car</li><li><b>タクシー</b>（たくしー）— taxi</li><li><b>船</b>（ふね）— ship/boat</li></ul><h3>Places & things</h3><ul><li><b>駅</b>（えき）— station</li><li><b>空港</b>（くうこう）— airport</li><li><b>切符</b>（きっぷ）— ticket</li><li><b>乗り場</b>（のりば）— boarding area/platform</li></ul><h3>Verbs</h3><ul><li><b>乗る</b>（のる）— to ride/get on</li><li><b>降りる</b>（おりる）— to get off</li><li><b>乗り換える</b>（のりかえる）— to transfer</li></ul>",
+                "tips": [
+                  "Use に乗る (ni noru) to say 'ride/get on': 電車に乗る (ride a train).",
+                  "Use を降りる (o oriru) to say 'get off': バスを降りる (get off the bus).",
+                  "切符 (きっぷ) is a paper ticket, while IC cards like Suica are called ICカード."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Getting off",
+              "body": {
+                "question": "Which verb means 'to get off (a vehicle)'?",
+                "options": ["乗る", "降りる", "乗り換える", "走る"],
+                "correct": 1,
+                "explanation": "降りる（おりる）means 'to get off/descend'. 乗る = get on, 乗り換える = transfer, 走る = run."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build: I ride the train to school",
+              "body": {
+                "words": ["学校", "電車", "に", "で", "行きます"],
+                "correct": ["学校", "に", "電車", "で", "行きます"],
+                "translation": "I go to school by train."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Health & Body",
+          "description": "Learn vocabulary for body parts, illnesses, and visiting the doctor — important for real-life situations.",
+          "sortOrder": 3,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Health & Body Words",
+              "body": {
+                "html": "<p>Knowing health vocabulary is essential, especially if you ever need to visit a doctor in Japan.</p><h3>Body parts</h3><ul><li><b>頭</b>（あたま）— head</li><li><b>お腹</b>（おなか）— stomach</li><li><b>目</b>（め）— eye</li><li><b>耳</b>（みみ）— ear</li><li><b>歯</b>（は）— tooth</li><li><b>足</b>（あし）— foot/leg</li><li><b>背中</b>（せなか）— back</li></ul><h3>Health & illness</h3><ul><li><b>病気</b>（びょうき）— illness/disease</li><li><b>薬</b>（くすり）— medicine</li><li><b>熱</b>（ねつ）— fever</li><li><b>風邪</b>（かぜ）— cold (illness)</li><li><b>病院</b>（びょういん）— hospital</li></ul><h3>Useful expressions</h3><ul><li>頭が痛いです。— I have a headache.</li><li>お腹が痛いです。— I have a stomachache.</li><li>熱があります。— I have a fever.</li></ul>",
+                "tips": [
+                  "Use 〜が痛い (〜ga itai) to say something hurts: 歯が痛い (my tooth hurts).",
+                  "風邪を引く (かぜをひく) means 'to catch a cold'.",
+                  "病院 (hospital) and 医者 (いしゃ, doctor) are related but different words."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Describing symptoms",
+              "body": {
+                "sentence": "___ が痛いので、病院に行きます。(My head hurts, so I'm going to the hospital.)",
+                "answer": "頭",
+                "alternatives": ["あたま"],
+                "explanation": "頭（あたま）means head. 頭が痛い is the standard expression for 'I have a headache'."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Medicine vocabulary",
+              "body": {
+                "question": "What does 薬（くすり）mean?",
+                "options": ["hospital", "doctor", "medicine", "fever"],
+                "correct": 2,
+                "explanation": "薬（くすり）means medicine/drug. Hospital = 病院, doctor = 医者, fever = 熱."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Hobbies & Sports",
+          "description": "Talk about your hobbies and favorite activities using common N4 vocabulary.",
+          "sortOrder": 4,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Hobbies & Sports Words",
+              "body": {
+                "html": "<p>Being able to talk about hobbies is essential for making friends and conversation in Japanese.</p><h3>General</h3><ul><li><b>趣味</b>（しゅみ）— hobby</li><li><b>運動</b>（うんどう）— exercise/sports</li><li><b>練習</b>（れんしゅう）— practice</li><li><b>試合</b>（しあい）— game/match</li></ul><h3>Entertainment</h3><ul><li><b>映画</b>（えいが）— movie</li><li><b>音楽</b>（おんがく）— music</li><li><b>写真</b>（しゃしん）— photograph</li><li><b>旅行</b>（りょこう）— travel</li><li><b>料理</b>（りょうり）— cooking</li></ul><h3>Sports</h3><ul><li><b>サッカー</b> — soccer</li><li><b>野球</b>（やきゅう）— baseball</li><li><b>水泳</b>（すいえい）— swimming</li><li><b>テニス</b> — tennis</li></ul><h3>Key phrase</h3><ul><li>趣味は何ですか。— What are your hobbies?</li><li>趣味は映画を見ることです。— My hobby is watching movies.</li></ul>",
+                "tips": [
+                  "趣味は〜ことです uses the nominalizer こと to turn a verb into a noun: 読むこと (reading).",
+                  "運動する means 'to exercise', while スポーツ is used for 'sports' in general.",
+                  "Japanese people often ask しゅみはなんですか as an icebreaker."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Hobby question",
+              "body": {
+                "question": "How do you say 'My hobby is cooking' in Japanese?",
+                "options": [
+                  "趣味は料理をすることです。",
+                  "趣味で料理します。",
+                  "料理は趣味をします。",
+                  "趣味が料理をすることです。"
+                ],
+                "correct": 0,
+                "explanation": "趣味は〜ことです is the standard pattern. 料理をすること (the act of cooking) is the noun phrase that fills the topic."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build: What are your hobbies?",
+              "body": {
+                "words": ["は", "です", "趣味", "何", "か"],
+                "correct": ["趣味", "は", "何", "です", "か"],
+                "translation": "What are your hobbies?"
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "N4 Vocabulary Essentials",
+          "description": "25 high-frequency N4 vocabulary words covering weather, transportation, health, and hobbies.",
+          "flashcards": [
+            {
+              "front": { "text": "天気", "reading": "てんき" },
+              "back": { "text": "weather", "example": "今日の天気はいいですね。(The weather is nice today.)", "notes": "noun" },
+              "tags": ["vocabulary", "weather", "n4"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "雨", "reading": "あめ" },
+              "back": { "text": "rain", "example": "雨が降っています。(It is raining.)", "notes": "noun" },
+              "tags": ["vocabulary", "weather", "n4"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "晴れ", "reading": "はれ" },
+              "back": { "text": "clear weather; sunny", "example": "明日は晴れるでしょう。(It will probably be sunny tomorrow.)", "notes": "noun; verb form 晴れる" },
+              "tags": ["vocabulary", "weather", "n4"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "雪", "reading": "ゆき" },
+              "back": { "text": "snow", "example": "北海道は雪がたくさん降ります。(It snows a lot in Hokkaido.)", "notes": "noun" },
+              "tags": ["vocabulary", "weather", "n4"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "風", "reading": "かぜ" },
+              "back": { "text": "wind", "example": "今日は風が強いです。(The wind is strong today.)", "notes": "noun; also means 'cold (illness)' as 風邪" },
+              "tags": ["vocabulary", "weather", "n4"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "春", "reading": "はる" },
+              "back": { "text": "spring", "example": "春は桜がきれいです。(Cherry blossoms are beautiful in spring.)", "notes": "noun; season" },
+              "tags": ["vocabulary", "seasons", "n4"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "冬", "reading": "ふゆ" },
+              "back": { "text": "winter", "example": "冬は寒いです。(Winter is cold.)", "notes": "noun; season" },
+              "tags": ["vocabulary", "seasons", "n4"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "電車", "reading": "でんしゃ" },
+              "back": { "text": "train (electric)", "example": "電車で会社に行きます。(I go to work by train.)", "notes": "noun" },
+              "tags": ["vocabulary", "transportation", "n4"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "飛行機", "reading": "ひこうき" },
+              "back": { "text": "airplane", "example": "飛行機で三時間かかります。(It takes three hours by plane.)", "notes": "noun" },
+              "tags": ["vocabulary", "transportation", "n4"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "駅", "reading": "えき" },
+              "back": { "text": "station", "example": "駅まで歩いて十分です。(It's a 10-minute walk to the station.)", "notes": "noun" },
+              "tags": ["vocabulary", "transportation", "n4"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "空港", "reading": "くうこう" },
+              "back": { "text": "airport", "example": "空港までバスで行きます。(I go to the airport by bus.)", "notes": "noun" },
+              "tags": ["vocabulary", "transportation", "n4"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "自転車", "reading": "じてんしゃ" },
+              "back": { "text": "bicycle", "example": "自転車で学校に通っています。(I commute to school by bicycle.)", "notes": "noun" },
+              "tags": ["vocabulary", "transportation", "n4"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "乗る", "reading": "のる" },
+              "back": { "text": "to ride; to get on", "example": "バスに乗ってください。(Please get on the bus.)", "notes": "godan verb; に乗る" },
+              "tags": ["vocabulary", "transportation", "n4"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "頭", "reading": "あたま" },
+              "back": { "text": "head", "example": "頭が痛いです。(I have a headache.)", "notes": "noun; body part" },
+              "tags": ["vocabulary", "health", "n4"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "お腹", "reading": "おなか" },
+              "back": { "text": "stomach; belly", "example": "お腹がすきました。(I'm hungry.)", "notes": "noun; body part" },
+              "tags": ["vocabulary", "health", "n4"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "病気", "reading": "びょうき" },
+              "back": { "text": "illness; disease", "example": "病気で学校を休みました。(I was absent from school due to illness.)", "notes": "noun; na-adjective" },
+              "tags": ["vocabulary", "health", "n4"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "薬", "reading": "くすり" },
+              "back": { "text": "medicine; drug", "example": "薬を飲んでください。(Please take your medicine.)", "notes": "noun" },
+              "tags": ["vocabulary", "health", "n4"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "熱", "reading": "ねつ" },
+              "back": { "text": "fever; heat", "example": "熱がありますか。(Do you have a fever?)", "notes": "noun" },
+              "tags": ["vocabulary", "health", "n4"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "病院", "reading": "びょういん" },
+              "back": { "text": "hospital", "example": "病院に行ったほうがいいですよ。(You should go to the hospital.)", "notes": "noun" },
+              "tags": ["vocabulary", "health", "n4"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "趣味", "reading": "しゅみ" },
+              "back": { "text": "hobby", "example": "趣味は何ですか。(What are your hobbies?)", "notes": "noun" },
+              "tags": ["vocabulary", "hobbies", "n4"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "運動", "reading": "うんどう" },
+              "back": { "text": "exercise; sports", "example": "毎日運動しています。(I exercise every day.)", "notes": "noun; suru-verb" },
+              "tags": ["vocabulary", "hobbies", "n4"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "映画", "reading": "えいが" },
+              "back": { "text": "movie; film", "example": "週末に映画を見ました。(I watched a movie on the weekend.)", "notes": "noun" },
+              "tags": ["vocabulary", "hobbies", "n4"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "音楽", "reading": "おんがく" },
+              "back": { "text": "music", "example": "音楽を聞くのが好きです。(I like listening to music.)", "notes": "noun" },
+              "tags": ["vocabulary", "hobbies", "n4"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "旅行", "reading": "りょこう" },
+              "back": { "text": "travel; trip", "example": "来月、京都に旅行します。(I'm traveling to Kyoto next month.)", "notes": "noun; suru-verb" },
+              "tags": ["vocabulary", "hobbies", "n4"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "写真", "reading": "しゃしん" },
+              "back": { "text": "photograph; picture", "example": "写真を撮ってもいいですか。(May I take a photo?)", "notes": "noun" },
+              "tags": ["vocabulary", "hobbies", "n4"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "KEY_SENTENCES",
+      "title": "Practical Conversations",
+      "description": "Master practical sentence patterns for making plans, giving reasons, and expressing opinions — skills you need for real Japanese conversations at the N4 level.",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "title": "Making Plans",
+          "description": "Learn how to invite people, discuss schedules, and make plans using key N4 expressions.",
+          "sortOrder": 1,
+          "estimatedMinutes": 15,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Invitations and Scheduling",
+              "body": {
+                "html": "<p>Making plans is a core social skill. Here are the essential patterns:</p><h3>Inviting someone</h3><ul><li><b>一緒に</b>（いっしょに）— together</li><li><b>〜ませんか</b> — Won't you ~? (polite invitation)</li><li><b>〜ましょう</b> — Let's ~ (suggesting together)</li></ul><p>Examples:</p><ul><li>一緒に映画を<b>見ませんか</b>。— Won't you watch a movie together (with me)?</li><li>昼ご飯を<b>食べましょう</b>。— Let's eat lunch.</li></ul><h3>Asking about availability</h3><ul><li><b>暇</b>（ひま）— free time</li><li><b>予定</b>（よてい）— plan/schedule</li><li><b>都合</b>（つごう）— convenience</li></ul><p>Examples:</p><ul><li>土曜日は<b>暇</b>ですか。— Are you free on Saturday?</li><li>明日の<b>予定</b>はありますか。— Do you have plans for tomorrow?</li><li><b>都合</b>はどうですか。— How is your availability?</li></ul><h3>Responding</h3><ul><li>いいですね。行きましょう。— That sounds good. Let's go.</li><li>すみません、ちょっと用事があります。— Sorry, I have something to do.</li></ul>",
+                "tips": [
+                  "〜ませんか is more polite and tentative than 〜ましょう. Use it when you're not sure the other person will say yes.",
+                  "〜ましょうか can also mean 'Shall I ~?' as an offer: 手伝いましょうか (Shall I help?).",
+                  "どうですか is a versatile question — 'How about ~?' / 'How is ~?'"
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Polite invitation",
+              "body": {
+                "question": "Which is the most polite way to invite someone to eat lunch together?",
+                "options": [
+                  "昼ご飯を食べましょう。",
+                  "一緒に昼ご飯を食べませんか。",
+                  "昼ご飯を食べて。",
+                  "昼ご飯を食べたい。"
+                ],
+                "correct": 1,
+                "explanation": "〜ませんか is the most polite invitation form. It literally asks 'Won't you ~?' and gives the listener room to decline. 一緒に adds 'together', making it a warm invitation."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build: Are you free on Saturday?",
+              "body": {
+                "words": ["ですか", "暇", "土曜日", "は"],
+                "correct": ["土曜日", "は", "暇", "ですか"],
+                "translation": "Are you free on Saturday?"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Giving Reasons",
+          "description": "Learn to explain why using から, ので, and ために — three essential reason-giving patterns.",
+          "sortOrder": 2,
+          "estimatedMinutes": 15,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "から, ので, and ために",
+              "body": {
+                "html": "<p>Japanese has several ways to express reasons. Each has a different nuance:</p><h3>から — because (subjective/casual)</h3><p>Used after plain or polite form. Sounds more personal and direct.</p><ul><li>お腹がすいた<b>から</b>、何か食べたい。— Because I'm hungry, I want to eat something.</li><li>暑い<b>から</b>、窓を開けてください。— Because it's hot, please open the window.</li></ul><h3>ので — because (objective/polite)</h3><p>Softer and more polite than から. Preferred in formal situations.</p><ul><li>病気な<b>ので</b>、今日は休みます。— Because I'm sick, I'll rest today.</li><li>電車が遅れた<b>ので</b>、遅刻しました。— Because the train was delayed, I was late.</li></ul><h3>ために — in order to / for the sake of</h3><p>Expresses purpose or goal (not just reason).</p><ul><li>試験に受かる<b>ために</b>、毎日勉強しています。— In order to pass the exam, I study every day.</li><li>健康の<b>ために</b>、運動しています。— For the sake of my health, I exercise.</li></ul>",
+                "tips": [
+                  "から sounds more assertive; ので sounds gentler. In job interviews or formal settings, prefer ので.",
+                  "With na-adjectives and nouns, ので requires な: 静かなので (because it's quiet), 学生なので (because I'm a student).",
+                  "ために with dictionary form = purpose. ために with past form = cause/reason (more advanced usage)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "から vs ので",
+              "body": {
+                "question": "Which is more appropriate for a formal email explaining your absence?",
+                "options": [
+                  "風邪を引いたから、休みます。",
+                  "風邪を引いたので、休みます。",
+                  "風邪を引いたために、休みます。",
+                  "風邪を引いたのに、休みます。"
+                ],
+                "correct": 1,
+                "explanation": "ので is softer and more polite than から, making it appropriate for formal situations like emails to a boss. のに means 'despite', which is the wrong meaning here."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Purpose expression",
+              "body": {
+                "sentence": "日本語を勉強する ___ 、日本に来ました。(I came to Japan in order to study Japanese.)",
+                "answer": "ために",
+                "alternatives": [],
+                "explanation": "ために expresses purpose — 'in order to'. The structure is: dictionary form + ために (for verb-based purposes) or noun + のために."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Expressing Opinions",
+          "description": "Learn to share thoughts, report speech, and express uncertainty using と思う, と言う, and かもしれない.",
+          "sortOrder": 3,
+          "estimatedMinutes": 15,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Opinions, Quotes, and Possibility",
+              "body": {
+                "html": "<p>Expressing what you think, what others say, and what might happen are essential conversational skills.</p><h3>と思う — I think that ~</h3><p>Used after plain form to express your opinion.</p><ul><li>明日は晴れる<b>と思います</b>。— I think it will be sunny tomorrow.</li><li>この映画はおもしろい<b>と思う</b>。— I think this movie is interesting.</li><li>あの人は学生だ<b>と思います</b>。— I think that person is a student.</li></ul><h3>と言う — to say that ~ / called ~</h3><p>Used to quote or report speech.</p><ul><li>田中さんは「行かない」<b>と言いました</b>。— Tanaka said \"I'm not going.\"</li><li>これは「桜」<b>と言います</b>。— This is called \"sakura.\"</li></ul><h3>かもしれない — might / maybe</h3><p>Expresses possibility or uncertainty. Softer than と思う.</p><ul><li>明日は雨が降る<b>かもしれません</b>。— It might rain tomorrow.</li><li>あの店は閉まっている<b>かもしれない</b>。— That store might be closed.</li><li>彼は来ない<b>かもしれません</b>。— He might not come.</li></ul>",
+                "tips": [
+                  "と思う uses plain form before と, even in polite speech: ×おいしいですと思います → ○おいしいと思います.",
+                  "と思っている means 'has been thinking' or 'holds the opinion' — a continuous belief, not a momentary thought.",
+                  "かもしれない is less certain than と思う. Use it when you're about 30-50% sure."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "I think it will rain",
+              "body": {
+                "sentence": "明日は雨が降る ___ 。(I think it will rain tomorrow.)",
+                "answer": "と思います",
+                "alternatives": ["とおもいます"],
+                "explanation": "と思います expresses the speaker's opinion. The plain form 降る comes before と."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Expressing uncertainty",
+              "body": {
+                "question": "How do you say 'He might not come' in Japanese?",
+                "options": [
+                  "彼は来ないと思います。",
+                  "彼は来ないかもしれません。",
+                  "彼は来ないので。",
+                  "彼は来ないのに。"
+                ],
+                "correct": 1,
+                "explanation": "かもしれません expresses 'might/maybe'. 来ない (won't come) + かもしれません = might not come. と思います would be 'I think he won't come', which is more certain."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "N4 Key Sentence Patterns",
+          "description": "20 practical sentence patterns for everyday conversations at the N4 level, covering plans, reasons, opinions, and common social phrases.",
+          "flashcards": [
+            {
+              "front": { "text": "一緒に〜ませんか", "reading": "いっしょに〜ませんか" },
+              "back": { "text": "Won't you ~ together? (polite invitation)", "example": "一緒に食事しませんか。(Won't you have a meal together?)", "notes": "invitation pattern" },
+              "tags": ["sentence", "plans", "n4"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "〜ましょう", "reading": "〜ましょう" },
+              "back": { "text": "Let's ~ / Shall we ~?", "example": "帰りましょう。(Let's go home.)", "notes": "suggestion pattern" },
+              "tags": ["sentence", "plans", "n4"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "暇ですか", "reading": "ひまですか" },
+              "back": { "text": "Are you free?", "example": "明日、暇ですか。(Are you free tomorrow?)", "notes": "checking availability" },
+              "tags": ["sentence", "plans", "n4"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "予定があります", "reading": "よていがあります" },
+              "back": { "text": "I have plans", "example": "土曜日は予定があります。(I have plans on Saturday.)", "notes": "declining invitations" },
+              "tags": ["sentence", "plans", "n4"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "〜はどうですか", "reading": "〜はどうですか" },
+              "back": { "text": "How about ~? / How is ~?", "example": "日曜日はどうですか。(How about Sunday?)", "notes": "suggestion / asking opinion" },
+              "tags": ["sentence", "plans", "n4"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "〜から（理由）", "reading": "〜から（りゆう）" },
+              "back": { "text": "Because ~ (subjective/casual reason)", "example": "疲れたから、休みたい。(Because I'm tired, I want to rest.)", "notes": "casual reason; after plain or polite form" },
+              "tags": ["sentence", "reason", "n4"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "〜ので", "reading": "〜ので" },
+              "back": { "text": "Because ~ (polite/objective reason)", "example": "用事があるので、先に帰ります。(Because I have an errand, I'll go home first.)", "notes": "formal reason; softer than から" },
+              "tags": ["sentence", "reason", "n4"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "〜ために", "reading": "〜ために" },
+              "back": { "text": "In order to ~ / For the sake of ~", "example": "健康のために、野菜を食べています。(For my health, I eat vegetables.)", "notes": "purpose expression" },
+              "tags": ["sentence", "reason", "n4"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "〜と思います", "reading": "〜とおもいます" },
+              "back": { "text": "I think that ~", "example": "日本語は難しいと思います。(I think Japanese is difficult.)", "notes": "opinion; plain form + と思う" },
+              "tags": ["sentence", "opinion", "n4"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "〜と言いました", "reading": "〜といいました" },
+              "back": { "text": "(Someone) said that ~", "example": "先生は宿題があると言いました。(The teacher said there is homework.)", "notes": "reported speech" },
+              "tags": ["sentence", "opinion", "n4"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "〜かもしれません", "reading": "〜かもしれません" },
+              "back": { "text": "~ might / maybe ~", "example": "遅れるかもしれません。(I might be late.)", "notes": "possibility; less certain than と思う" },
+              "tags": ["sentence", "opinion", "n4"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "〜てもいいですか", "reading": "〜てもいいですか" },
+              "back": { "text": "May I ~? / Is it okay to ~?", "example": "窓を開けてもいいですか。(May I open the window?)", "notes": "asking permission" },
+              "tags": ["sentence", "permission", "n4"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "〜ないでください", "reading": "〜ないでください" },
+              "back": { "text": "Please don't ~", "example": "ここでタバコを吸わないでください。(Please don't smoke here.)", "notes": "polite prohibition" },
+              "tags": ["sentence", "request", "n4"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "〜たほうがいいですよ", "reading": "〜たほうがいいですよ" },
+              "back": { "text": "You should ~ / You'd better ~", "example": "早く寝たほうがいいですよ。(You should go to bed early.)", "notes": "advice; ta-form + ほうがいい" },
+              "tags": ["sentence", "advice", "n4"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "〜つもりです", "reading": "〜つもりです" },
+              "back": { "text": "I intend to ~ / I plan to ~", "example": "来年、日本に行くつもりです。(I intend to go to Japan next year.)", "notes": "intention; dictionary form + つもり" },
+              "tags": ["sentence", "plans", "n4"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "〜ことがあります", "reading": "〜ことがあります" },
+              "back": { "text": "I have experienced ~ / There are times when ~", "example": "日本に行ったことがあります。(I have been to Japan before.)", "notes": "experience; ta-form + ことがある" },
+              "tags": ["sentence", "experience", "n4"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "〜そうです（伝聞）", "reading": "〜そうです（でんぶん）" },
+              "back": { "text": "I heard that ~ (hearsay)", "example": "明日は雨だそうです。(I heard it will rain tomorrow.)", "notes": "hearsay; plain form + そうです" },
+              "tags": ["sentence", "hearsay", "n4"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "〜そうです（様態）", "reading": "〜そうです（ようたい）" },
+              "back": { "text": "It looks like ~ / It seems ~", "example": "このケーキはおいしそうです。(This cake looks delicious.)", "notes": "appearance; i-adj stem / na-adj + そう" },
+              "tags": ["sentence", "appearance", "n4"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "すみません、ちょっと…", "reading": "すみません、ちょっと…" },
+              "back": { "text": "Sorry, it's a bit... (polite refusal)", "example": "今日はちょっと… (Today is a bit... [I can't])", "notes": "indirect refusal; very common in Japanese" },
+              "tags": ["sentence", "social", "n4"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "〜のに", "reading": "〜のに" },
+              "back": { "text": "Even though ~ / Despite ~", "example": "たくさん勉強したのに、テストに落ちた。(Even though I studied a lot, I failed the test.)", "notes": "contrast; expresses frustration or surprise" },
+              "tags": ["sentence", "contrast", "n4"],
+              "sortOrder": 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

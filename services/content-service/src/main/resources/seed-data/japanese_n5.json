@@ -1,0 +1,953 @@
+{
+  "languageCode": "ja",
+  "levelCode": "N5",
+  "modules": [
+    {
+      "type": "GRAMMAR",
+      "title": "Basic Sentence Structure",
+      "description": "Learn the fundamental particles and verb forms that form the backbone of every Japanese sentence.",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "title": "は (wa) Particle",
+          "description": "Master the topic marker particle は and the basic AはBです pattern.",
+          "sortOrder": 1,
+          "estimatedMinutes": 10,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "The Topic Marker は",
+              "body": {
+                "html": "<p>The particle <strong>は</strong> (pronounced <em>wa</em>, not <em>ha</em>) marks the <strong>topic</strong> of a sentence — the thing you are talking about.</p><p>The most basic Japanese sentence pattern is:</p><p><strong>A は B です。</strong><br/>A <em>wa</em> B <em>desu</em>.<br/>\"A is B.\"</p><p>Examples:</p><ul><li>わたし<strong>は</strong> がくせい です。 — I am a student.</li><li>これ<strong>は</strong> ほん です。 — This is a book.</li><li>たなかさん<strong>は</strong> にほんじん です。 — Tanaka-san is Japanese.</li></ul><p>To make it negative, replace です with <strong>じゃないです</strong> (or the more formal ではありません):</p><ul><li>わたしは がくせい <strong>じゃないです</strong>。 — I am not a student.</li></ul>",
+                "tips": [
+                  "は is written with the hiragana は (ha) but pronounced 'wa' when used as a particle.",
+                  "です (desu) makes the sentence polite. In casual speech it can be dropped.",
+                  "The topic is often omitted when it is obvious from context."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Choose the Correct Particle",
+              "body": {
+                "question": "わたし ＿ がくせい です。 (I am a student.)",
+                "options": ["を", "は", "が", "に"],
+                "correct": 1,
+                "explanation": "は (wa) is the topic marker. It marks わたし (I) as the topic of the sentence: 'As for me, (I) am a student.'"
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build the Sentence",
+              "body": {
+                "words": ["です", "は", "せんせい", "たなかさん"],
+                "correct": ["たなかさん", "は", "せんせい", "です"],
+                "translation": "Tanaka-san is a teacher."
+              }
+            }
+          ]
+        },
+        {
+          "title": "が (ga) Particle",
+          "description": "Learn the subject marker particle が and how it differs from は, including its use with existence verbs.",
+          "sortOrder": 2,
+          "estimatedMinutes": 12,
+          "xpReward": 25,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "The Subject Marker が",
+              "body": {
+                "html": "<p>The particle <strong>が</strong> (<em>ga</em>) marks the <strong>subject</strong> of a sentence. While は marks what you're talking <em>about</em>, が identifies <em>who or what</em> performs the action or exists.</p><p><strong>Key uses of が:</strong></p><ol><li><strong>New information / answering \"who/what\":</strong><br/>だれ<strong>が</strong> きましたか。 — Who came?<br/>たなかさん<strong>が</strong> きました。 — Tanaka-san came.</li><li><strong>Existence verbs (いる / ある):</strong><br/>ねこ<strong>が</strong> います。 — There is a cat.<br/>つくえの うえに ほん<strong>が</strong> あります。 — There is a book on the desk.</li><li><strong>Likes / abilities (すき / できる):</strong><br/>わたしは すし<strong>が</strong> すきです。 — I like sushi.</li></ol><p><strong>は vs が:</strong> は sets the scene (\"as for X...\"), while が spotlights the subject (\"X is the one that...\").</p>",
+                "tips": [
+                  "Use います (imasu) for living things (people, animals) and あります (arimasu) for non-living things.",
+                  "が often answers questions with だれ (who) or なに (what).",
+                  "With adjectives like すき (like) and じょうず (good at), the object of the feeling takes が, not を."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "いる or ある?",
+              "body": {
+                "question": "へやに ねこ が ＿。 (There is a cat in the room.)",
+                "options": ["あります", "います", "です", "します"],
+                "correct": 1,
+                "explanation": "います (imasu) is used for living things. Since a cat (ねこ) is a living creature, we use います."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Fill in the Particle",
+              "body": {
+                "sentence": "つくえの うえに ほん ___ あります。",
+                "answer": "が",
+                "alternatives": [],
+                "explanation": "が marks the subject of the existence verb あります. 'There is a book on the desk.'"
+              }
+            }
+          ]
+        },
+        {
+          "title": "を (wo) Particle",
+          "description": "Learn the direct object marker を and how to use it with transitive verbs.",
+          "sortOrder": 3,
+          "estimatedMinutes": 10,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "The Object Marker を",
+              "body": {
+                "html": "<p>The particle <strong>を</strong> (pronounced <em>o</em>) marks the <strong>direct object</strong> — the thing that receives the action of a verb.</p><p><strong>Pattern: Subject は Object を Verb。</strong></p><p>Examples:</p><ul><li>わたしは みず<strong>を</strong> のみます。 — I drink water.</li><li>ほん<strong>を</strong> よみます。 — (I) read a book.</li><li>にほんご<strong>を</strong> べんきょうします。 — (I) study Japanese.</li><li>テレビ<strong>を</strong> みます。 — (I) watch TV.</li></ul><p>を is only used with <strong>transitive verbs</strong> — verbs that take a direct object (eat, drink, read, buy, etc.).</p>",
+                "tips": [
+                  "を is written with the hiragana を (wo) but pronounced 'o' in modern Japanese.",
+                  "Intransitive verbs (go, come, sleep) do NOT take を.",
+                  "を also marks a place you move through: こうえんを あるきます (I walk through the park)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 2,
+              "title": "Build the Sentence",
+              "body": {
+                "words": ["のみます", "を", "コーヒー", "わたしは"],
+                "correct": ["わたしは", "コーヒー", "を", "のみます"],
+                "translation": "I drink coffee."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Fill in the Particle",
+              "body": {
+                "sentence": "まいにち しんぶん ___ よみます。",
+                "answer": "を",
+                "alternatives": [],
+                "explanation": "を marks しんぶん (newspaper) as the direct object of よみます (read). 'I read the newspaper every day.'"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Verb Conjugation: ます Form",
+          "description": "Learn the polite present/future verb form used in everyday conversation.",
+          "sortOrder": 4,
+          "estimatedMinutes": 15,
+          "xpReward": 30,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "The Polite ます Form",
+              "body": {
+                "html": "<p>The <strong>ます form</strong> (masu-form) is the polite way to conjugate verbs in Japanese. It is the standard form used in daily conversation with people you are not very close to.</p><p><strong>Conjugation patterns:</strong></p><table><tr><th>Form</th><th>Suffix</th><th>Example (たべる → eat)</th></tr><tr><td>Present affirmative</td><td>〜ます</td><td>たべ<strong>ます</strong> (I eat / I will eat)</td></tr><tr><td>Present negative</td><td>〜ません</td><td>たべ<strong>ません</strong> (I don't eat)</td></tr><tr><td>Past affirmative</td><td>〜ました</td><td>たべ<strong>ました</strong> (I ate)</td></tr><tr><td>Past negative</td><td>〜ませんでした</td><td>たべ<strong>ませんでした</strong> (I didn't eat)</td></tr></table><p><strong>Common ます-form verbs:</strong></p><ul><li>いきます (go) / きます (come) / かえります (return)</li><li>たべます (eat) / のみます (drink) / みます (see, watch)</li><li>よみます (read) / かきます (write) / ききます (listen)</li><li>はなします (speak) / べんきょうします (study)</li></ul>",
+                "tips": [
+                  "ます form does not distinguish between present and future — context decides.",
+                  "Japanese verbs do not change for person or number: たべます means I/you/he/she/we/they eat.",
+                  "To say 'let's do X', change ます to ましょう: たべましょう (let's eat)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Past Negative",
+              "body": {
+                "question": "きのう テレビを ＿。 (I did not watch TV yesterday.)",
+                "options": ["みます", "みません", "みました", "みませんでした"],
+                "correct": 3,
+                "explanation": "みませんでした is the past negative form of みます. きのう (yesterday) tells us it is past tense, and the English indicates it is negative."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Let's Do It",
+              "body": {
+                "question": "いっしょに ひるごはんを ＿。 (Let's eat lunch together.)",
+                "options": ["たべます", "たべません", "たべました", "たべましょう"],
+                "correct": 3,
+                "explanation": "たべましょう is the volitional form ('let's eat'). Change ます to ましょう to suggest doing something together."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "Essential N5 Grammar Points",
+          "description": "25 fundamental grammar points every N5 learner must know, covering particles, verb forms, and basic sentence patterns.",
+          "flashcards": [
+            {
+              "front": { "text": "は", "reading": "わ" },
+              "back": { "text": "Topic marker particle", "example": "わたしは がくせいです。(I am a student.)", "notes": "Written は but pronounced 'wa' as a particle." },
+              "tags": ["particle", "N5"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "が", "reading": "が" },
+              "back": { "text": "Subject marker particle", "example": "ねこが います。(There is a cat.)", "notes": "Marks the grammatical subject; used with existence verbs and adjectives like すき." },
+              "tags": ["particle", "N5"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "を", "reading": "お" },
+              "back": { "text": "Direct object marker particle", "example": "みずを のみます。(I drink water.)", "notes": "Written を but pronounced 'o'. Marks what receives the verb's action." },
+              "tags": ["particle", "N5"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "に", "reading": "に" },
+              "back": { "text": "Target / time / location particle", "example": "がっこうに いきます。(I go to school.)", "notes": "Indicates direction, specific time, or location of existence." },
+              "tags": ["particle", "N5"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "で", "reading": "で" },
+              "back": { "text": "Location of action / means particle", "example": "としょかんで べんきょうします。(I study at the library.)", "notes": "Marks where an action takes place or the means/tool used." },
+              "tags": ["particle", "N5"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "へ", "reading": "え" },
+              "back": { "text": "Direction particle", "example": "にほんへ いきます。(I go to Japan.)", "notes": "Written へ but pronounced 'e'. Indicates direction of movement, interchangeable with に for destinations." },
+              "tags": ["particle", "N5"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "と", "reading": "と" },
+              "back": { "text": "'And' (nouns) / 'with' particle", "example": "ともだちと いきます。(I go with a friend.)", "notes": "Connects nouns exhaustively ('A and B') or marks a companion." },
+              "tags": ["particle", "N5"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "も", "reading": "も" },
+              "back": { "text": "'Also / too' particle", "example": "わたしも がくせいです。(I am also a student.)", "notes": "Replaces は, が, or を to mean 'also'." },
+              "tags": ["particle", "N5"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "か", "reading": "か" },
+              "back": { "text": "Question particle", "example": "これは なんですか。(What is this?)", "notes": "Added to the end of a sentence to form a question. Replaces the period." },
+              "tags": ["particle", "N5"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "の", "reading": "の" },
+              "back": { "text": "Possessive / modifier particle", "example": "わたしの ほん。(My book.)", "notes": "Connects two nouns: the first modifies the second." },
+              "tags": ["particle", "N5"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "〜です", "reading": "です" },
+              "back": { "text": "Polite copula ('is / am / are')", "example": "がくせいです。(I am a student.)", "notes": "Makes a statement polite. Negative: じゃないです / ではありません." },
+              "tags": ["copula", "N5"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "〜ます", "reading": "ます" },
+              "back": { "text": "Polite verb ending (present/future)", "example": "たべます。(I eat. / I will eat.)", "notes": "Negative: ません. Past: ました. Past negative: ませんでした." },
+              "tags": ["verb-form", "N5"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "〜ません", "reading": "ません" },
+              "back": { "text": "Polite negative verb ending", "example": "のみません。(I don't drink.)", "notes": "Present negative of ます-form verbs." },
+              "tags": ["verb-form", "N5"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "〜ました", "reading": "ました" },
+              "back": { "text": "Polite past verb ending", "example": "いきました。(I went.)", "notes": "Past affirmative of ます-form verbs." },
+              "tags": ["verb-form", "N5"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "〜ましょう", "reading": "ましょう" },
+              "back": { "text": "'Let's ~' (volitional)", "example": "たべましょう。(Let's eat.)", "notes": "Used to suggest doing something together." },
+              "tags": ["verb-form", "N5"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "〜たい", "reading": "たい" },
+              "back": { "text": "'Want to ~'", "example": "すしを たべたいです。(I want to eat sushi.)", "notes": "Attach to the ます-stem. Conjugates like an い-adjective." },
+              "tags": ["verb-form", "N5"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "〜ている", "reading": "ている" },
+              "back": { "text": "Progressive / state ('is ~ing')", "example": "ほんを よんでいます。(I am reading a book.)", "notes": "Polite form: ています. Shows ongoing action or resulting state." },
+              "tags": ["verb-form", "N5"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "〜てください", "reading": "てください" },
+              "back": { "text": "'Please do ~'", "example": "みてください。(Please look.)", "notes": "て-form + ください. Polite request." },
+              "tags": ["request", "N5"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "〜ないでください", "reading": "ないでください" },
+              "back": { "text": "'Please don't ~'", "example": "たばこを すわないでください。(Please don't smoke.)", "notes": "ない-form + でください. Polite negative request." },
+              "tags": ["request", "N5"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "〜てもいいです", "reading": "てもいいです" },
+              "back": { "text": "'May I ~ / It's okay to ~'", "example": "ここに すわってもいいですか。(May I sit here?)", "notes": "て-form + もいいです. Asks or grants permission." },
+              "tags": ["permission", "N5"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "〜てはいけません", "reading": "てはいけません" },
+              "back": { "text": "'Must not ~ / Not allowed to ~'", "example": "ここで たべてはいけません。(You must not eat here.)", "notes": "て-form + はいけません. States a prohibition." },
+              "tags": ["prohibition", "N5"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "AはBより〜", "reading": "より" },
+              "back": { "text": "Comparison: 'A is more ~ than B'", "example": "にほんは フランスより ちいさいです。(Japan is smaller than France.)", "notes": "より marks the thing being compared against." },
+              "tags": ["comparison", "N5"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "〜から / 〜まで", "reading": "から / まで" },
+              "back": { "text": "'From ~ / Until ~'", "example": "くじから ごじまで はたらきます。(I work from 9 to 5.)", "notes": "Can indicate time or place. Often used together." },
+              "tags": ["time", "N5"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "〜がすきです", "reading": "がすきです" },
+              "back": { "text": "'Like ~'", "example": "おんがくが すきです。(I like music.)", "notes": "The object of liking takes が, not を. Negative: すきじゃないです." },
+              "tags": ["adjective", "N5"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "〜がほしいです", "reading": "がほしいです" },
+              "back": { "text": "'Want ~ (noun)'", "example": "あたらしい くるまが ほしいです。(I want a new car.)", "notes": "Used for wanting things (nouns). For wanting to do actions, use 〜たい." },
+              "tags": ["desire", "N5"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VOCABULARY",
+      "title": "First Words",
+      "description": "Build your first Japanese vocabulary with essential words for everyday life.",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "title": "Self-Introduction",
+          "description": "Learn the key words you need to introduce yourself in Japanese.",
+          "sortOrder": 1,
+          "estimatedMinutes": 10,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Introducing Yourself",
+              "body": {
+                "html": "<p>Self-introduction (<strong>じこしょうかい</strong>) is one of the first things you will do in Japanese. Here are the key words:</p><ul><li><strong>わたし</strong> — I, me</li><li><strong>なまえ</strong> (名前) — name</li><li><strong>くに</strong> (国) — country</li><li><strong>ねんれい</strong> (年齢) — age</li><li><strong>しごと</strong> (仕事) — job, work</li><li><strong>がくせい</strong> (学生) — student</li></ul><p><strong>Example self-introduction:</strong></p><p>はじめまして。わたしの なまえは マリアです。アメリカから きました。にじゅうさんさいです。だいがくせいです。どうぞ よろしく おねがいします。</p><p><em>Nice to meet you. My name is Maria. I came from America. I am 23 years old. I am a university student. Pleased to meet you.</em></p>",
+                "tips": [
+                  "わたし is gender-neutral. Men sometimes use ぼく (boku) in casual speech.",
+                  "〜から きました means 'I came from ~' — a standard way to state your country.",
+                  "どうぞ よろしく おねがいします is a set phrase with no direct English equivalent."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "What Does なまえ Mean?",
+              "body": {
+                "question": "What does なまえ (名前) mean?",
+                "options": ["country", "age", "name", "job"],
+                "correct": 2,
+                "explanation": "なまえ (名前) means 'name'. わたしの なまえ = my name."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete the Introduction",
+              "body": {
+                "sentence": "わたしの ___ は たなかです。",
+                "answer": "なまえ",
+                "alternatives": ["名前"],
+                "explanation": "なまえ (名前) means 'name'. わたしの なまえは たなかです = My name is Tanaka."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Family Members",
+          "description": "Learn how to talk about your family and ask about others' families.",
+          "sortOrder": 2,
+          "estimatedMinutes": 12,
+          "xpReward": 25,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Family Words",
+              "body": {
+                "html": "<p>Japanese has <strong>two sets</strong> of family words: humble forms (for your own family) and honorific forms (for someone else's family).</p><table><tr><th>Relation</th><th>Own family</th><th>Someone else's</th></tr><tr><td>Mother</td><td>はは (haha)</td><td>おかあさん (okaasan)</td></tr><tr><td>Father</td><td>ちち (chichi)</td><td>おとうさん (otousan)</td></tr><tr><td>Older sister</td><td>あね (ane)</td><td>おねえさん (oneesan)</td></tr><tr><td>Older brother</td><td>あに (ani)</td><td>おにいさん (oniisan)</td></tr><tr><td>Younger sister</td><td>いもうと (imouto)</td><td>いもうとさん (imoutosan)</td></tr><tr><td>Younger brother</td><td>おとうと (otouto)</td><td>おとうとさん (otoutosan)</td></tr><tr><td>Siblings</td><td colspan='2'>きょうだい (kyoudai)</td></tr></table><p><strong>Example:</strong></p><ul><li>わたしの ははは いしゃです。 — My mother is a doctor.</li><li>おかあさんは おげんきですか。 — Is your mother well?</li></ul>",
+                "tips": [
+                  "Use humble forms (はは, ちち) when talking about YOUR family to others.",
+                  "Use honorific forms (おかあさん, おとうさん) when referring to SOMEONE ELSE's family or when addressing your own parents directly.",
+                  "かぞく (家族) is the general word for 'family'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Whose Mother?",
+              "body": {
+                "question": "When talking about your own mother to someone else, which word should you use?",
+                "options": ["おかあさん", "はは", "ママ", "おばあさん"],
+                "correct": 1,
+                "explanation": "はは (haha) is the humble form used when referring to your own mother in conversation with others. おかあさん is for someone else's mother or when addressing your own mother directly."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build the Sentence",
+              "body": {
+                "words": ["います", "が", "さんにん", "きょうだい"],
+                "correct": ["きょうだい", "が", "さんにん", "います"],
+                "translation": "I have three siblings."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Food & Drink",
+          "description": "Learn essential food and drink vocabulary for restaurants and daily meals.",
+          "sortOrder": 3,
+          "estimatedMinutes": 10,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Food & Drink Words",
+              "body": {
+                "html": "<p>Here are essential words for food and drink at the N5 level:</p><p><strong>Staples & Meals:</strong></p><ul><li><strong>ごはん</strong> (御飯) — rice / meal</li><li><strong>パン</strong> — bread</li><li><strong>たまご</strong> (卵) — egg</li></ul><p><strong>Ingredients:</strong></p><ul><li><strong>にく</strong> (肉) — meat</li><li><strong>さかな</strong> (魚) — fish</li><li><strong>やさい</strong> (野菜) — vegetables</li><li><strong>くだもの</strong> (果物) — fruit</li></ul><p><strong>Drinks:</strong></p><ul><li><strong>みず</strong> (水) — water</li><li><strong>おちゃ</strong> (お茶) — tea</li><li><strong>コーヒー</strong> — coffee</li><li><strong>ぎゅうにゅう</strong> (牛乳) — milk</li></ul><p><strong>Example sentences:</strong></p><ul><li>あさごはんに たまごを たべます。 — I eat eggs for breakfast.</li><li>おちゃを のみませんか。 — Won't you have some tea?</li></ul>",
+                "tips": [
+                  "ごはん can mean both 'cooked rice' and 'meal' depending on context.",
+                  "あさごはん = breakfast, ひるごはん = lunch, ばんごはん = dinner.",
+                  "Many food loanwords use katakana: コーヒー, パン, サラダ, etc."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "What's on the Menu?",
+              "body": {
+                "question": "Which word means 'vegetables'?",
+                "options": ["くだもの", "さかな", "にく", "やさい"],
+                "correct": 3,
+                "explanation": "やさい (野菜) means 'vegetables'. くだもの = fruit, さかな = fish, にく = meat."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete the Sentence",
+              "body": {
+                "sentence": "まいあさ ___ を のみます。",
+                "answer": "みず",
+                "alternatives": ["おちゃ", "コーヒー", "水"],
+                "explanation": "Many answers are possible. みず (水) means 'water'. まいあさ みずを のみます = I drink water every morning."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Daily Objects",
+          "description": "Learn the names of everyday objects you see and use constantly.",
+          "sortOrder": 4,
+          "estimatedMinutes": 10,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Everyday Objects",
+              "body": {
+                "html": "<p>Here are common everyday objects you will encounter:</p><ul><li><strong>ほん</strong> (本) — book</li><li><strong>かばん</strong> (鞄) — bag</li><li><strong>でんわ</strong> (電話) — telephone</li><li><strong>とけい</strong> (時計) — clock, watch</li><li><strong>かさ</strong> (傘) — umbrella</li><li><strong>かぎ</strong> (鍵) — key</li><li><strong>さいふ</strong> (財布) — wallet</li><li><strong>めがね</strong> (眼鏡) — glasses</li><li><strong>ノート</strong> — notebook</li><li><strong>えんぴつ</strong> (鉛筆) — pencil</li><li><strong>ペン</strong> — pen</li></ul><p><strong>Useful pattern:</strong></p><p>これは ＿ です。 — This is a ＿.</p><ul><li>これは わたしの かばんです。 — This is my bag.</li><li>あれは たなかさんの とけいです。 — That (over there) is Tanaka-san's watch.</li></ul>",
+                "tips": [
+                  "でんわ originally means 'telephone' but けいたいでんわ or スマホ is used for mobile phones.",
+                  "とけい can be a wall clock or a wristwatch — context clarifies.",
+                  "Use これ (this), それ (that near you), あれ (that over there) to point at objects."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Identify the Object",
+              "body": {
+                "question": "とけい (時計) means:",
+                "options": ["telephone", "umbrella", "clock / watch", "key"],
+                "correct": 2,
+                "explanation": "とけい (時計) means 'clock' or 'watch'. でんわ = telephone, かさ = umbrella, かぎ = key."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build the Sentence",
+              "body": {
+                "words": ["です", "は", "の", "わたし", "これ", "かばん"],
+                "correct": ["これ", "は", "わたし", "の", "かばん", "です"],
+                "translation": "This is my bag."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "N5 Core Vocabulary",
+          "description": "25 essential N5 vocabulary words covering self-introduction, family, food, and daily objects.",
+          "flashcards": [
+            {
+              "front": { "text": "わたし", "reading": "わたし" },
+              "back": { "text": "I, me", "example": "わたしは がくせいです。", "notes": "pronoun — gender-neutral" },
+              "tags": ["pronoun", "self-introduction"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "名前", "reading": "なまえ" },
+              "back": { "text": "name", "example": "おなまえは なんですか。(What is your name?)", "notes": "noun — お prefix for politeness" },
+              "tags": ["noun", "self-introduction"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "国", "reading": "くに" },
+              "back": { "text": "country", "example": "くには どちらですか。(What country are you from?)", "notes": "noun" },
+              "tags": ["noun", "self-introduction"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "年齢", "reading": "ねんれい" },
+              "back": { "text": "age", "example": "ねんれいは いくつですか。(How old are you?)", "notes": "noun — formal; casual: なんさい" },
+              "tags": ["noun", "self-introduction"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "仕事", "reading": "しごと" },
+              "back": { "text": "job, work", "example": "しごとは なんですか。(What is your job?)", "notes": "noun" },
+              "tags": ["noun", "self-introduction"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "お母さん", "reading": "おかあさん" },
+              "back": { "text": "mother (someone else's / address)", "example": "おかあさんは おげんきですか。", "notes": "noun — use はは for your own mother when speaking to others" },
+              "tags": ["noun", "family"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "お父さん", "reading": "おとうさん" },
+              "back": { "text": "father (someone else's / address)", "example": "おとうさんは なにを していますか。", "notes": "noun — use ちち for your own father when speaking to others" },
+              "tags": ["noun", "family"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "兄弟", "reading": "きょうだい" },
+              "back": { "text": "siblings", "example": "きょうだいは いますか。(Do you have siblings?)", "notes": "noun" },
+              "tags": ["noun", "family"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "姉", "reading": "あね" },
+              "back": { "text": "older sister (own)", "example": "あねは とうきょうに すんでいます。", "notes": "noun — humble form; honorific: おねえさん" },
+              "tags": ["noun", "family"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "弟", "reading": "おとうと" },
+              "back": { "text": "younger brother (own)", "example": "おとうとは こうこうせいです。", "notes": "noun — add さん for someone else's younger brother" },
+              "tags": ["noun", "family"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "御飯", "reading": "ごはん" },
+              "back": { "text": "rice / meal", "example": "ごはんを たべましょう。(Let's eat.)", "notes": "noun — means cooked rice or a meal in general" },
+              "tags": ["noun", "food"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "水", "reading": "みず" },
+              "back": { "text": "water", "example": "みずを ください。(Water, please.)", "notes": "noun — おみず with polite お prefix" },
+              "tags": ["noun", "food"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "肉", "reading": "にく" },
+              "back": { "text": "meat", "example": "にくを やきます。(I grill meat.)", "notes": "noun" },
+              "tags": ["noun", "food"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "野菜", "reading": "やさい" },
+              "back": { "text": "vegetables", "example": "やさいを たくさん たべます。(I eat a lot of vegetables.)", "notes": "noun" },
+              "tags": ["noun", "food"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "魚", "reading": "さかな" },
+              "back": { "text": "fish", "example": "にほんじんは さかなを よく たべます。", "notes": "noun" },
+              "tags": ["noun", "food"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "お茶", "reading": "おちゃ" },
+              "back": { "text": "tea", "example": "おちゃを のみませんか。(Won't you have tea?)", "notes": "noun — usually refers to green tea" },
+              "tags": ["noun", "food"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "卵", "reading": "たまご" },
+              "back": { "text": "egg", "example": "あさごはんに たまごを たべます。", "notes": "noun" },
+              "tags": ["noun", "food"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "果物", "reading": "くだもの" },
+              "back": { "text": "fruit", "example": "くだものが すきです。(I like fruit.)", "notes": "noun" },
+              "tags": ["noun", "food"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "本", "reading": "ほん" },
+              "back": { "text": "book", "example": "ほんを よみます。(I read a book.)", "notes": "noun — also a counter for cylindrical objects" },
+              "tags": ["noun", "objects"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "鞄", "reading": "かばん" },
+              "back": { "text": "bag", "example": "かばんの なかに なにが ありますか。", "notes": "noun — usually written in kana" },
+              "tags": ["noun", "objects"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "電話", "reading": "でんわ" },
+              "back": { "text": "telephone", "example": "でんわばんごうを おしえてください。", "notes": "noun — でんわを かけます = make a phone call" },
+              "tags": ["noun", "objects"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "時計", "reading": "とけい" },
+              "back": { "text": "clock, watch", "example": "あの とけいは たかいです。(That watch is expensive.)", "notes": "noun" },
+              "tags": ["noun", "objects"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "傘", "reading": "かさ" },
+              "back": { "text": "umbrella", "example": "かさを もっていきます。(I'll take an umbrella.)", "notes": "noun" },
+              "tags": ["noun", "objects"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "鍵", "reading": "かぎ" },
+              "back": { "text": "key", "example": "かぎを わすれました。(I forgot the key.)", "notes": "noun — usually written in kana" },
+              "tags": ["noun", "objects"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "財布", "reading": "さいふ" },
+              "back": { "text": "wallet", "example": "さいふは どこですか。(Where is the wallet?)", "notes": "noun" },
+              "tags": ["noun", "objects"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "KEY_SENTENCES",
+      "title": "Essential Expressions",
+      "description": "Learn the key phrases and expressions you need for basic communication in Japanese.",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "title": "Greetings",
+          "description": "Master the essential Japanese greetings for every time of day and situation.",
+          "sortOrder": 1,
+          "estimatedMinutes": 8,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Japanese Greetings",
+              "body": {
+                "html": "<p>Japanese greetings change depending on the time of day and the level of formality.</p><p><strong>Time-based greetings:</strong></p><ul><li><strong>おはようございます</strong> — Good morning (polite)<br/>Casual: おはよう</li><li><strong>こんにちは</strong> — Good afternoon / Hello</li><li><strong>こんばんは</strong> — Good evening</li></ul><p><strong>Parting expressions:</strong></p><ul><li><strong>さようなら</strong> — Goodbye (somewhat formal)</li><li><strong>じゃあね</strong> / <strong>またね</strong> — See you (casual)</li><li><strong>おやすみなさい</strong> — Good night (polite)<br/>Casual: おやすみ</li></ul><p><strong>Other essentials:</strong></p><ul><li><strong>ありがとうございます</strong> — Thank you (polite)</li><li><strong>すみません</strong> — Excuse me / I'm sorry</li><li><strong>おねがいします</strong> — Please (when requesting)</li></ul>",
+                "tips": [
+                  "こんにちは and こんばんは end with は (wa particle), not わ.",
+                  "おはよう is very casual — use おはようございます with teachers, bosses, strangers.",
+                  "すみません works as both 'excuse me' (to get attention) and 'I'm sorry' (for minor apologies)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Right Greeting, Right Time",
+              "body": {
+                "question": "It's 8:00 AM and you meet your teacher. What do you say?",
+                "options": ["こんにちは", "こんばんは", "おはようございます", "さようなら"],
+                "correct": 2,
+                "explanation": "おはようございます is the polite morning greeting. Use it with teachers, colleagues, and people you are not close to."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete the Expression",
+              "body": {
+                "sentence": "ありがとう ___。",
+                "answer": "ございます",
+                "alternatives": [],
+                "explanation": "ありがとうございます is the polite form of 'thank you'. ございます adds politeness."
+              }
+            }
+          ]
+        },
+        {
+          "title": "At a Shop",
+          "description": "Learn essential expressions for shopping and buying things in Japan.",
+          "sortOrder": 2,
+          "estimatedMinutes": 10,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Shopping Expressions",
+              "body": {
+                "html": "<p>These phrases will help you navigate shops and restaurants in Japan.</p><p><strong>Pointing at things:</strong></p><ul><li><strong>これ</strong> — this (near me)</li><li><strong>それ</strong> — that (near you)</li><li><strong>あれ</strong> — that (over there)</li><li><strong>どれ</strong> — which one?</li></ul><p><strong>Key expressions:</strong></p><ul><li><strong>いくらですか。</strong> — How much is it?</li><li><strong>これを ください。</strong> — This one, please. / I'll take this.</li><li><strong>〜を みせてください。</strong> — Please show me ~.</li><li><strong>カードで いいですか。</strong> — Is card (payment) okay?</li></ul><p><strong>Sample dialogue:</strong></p><p>You: すみません、これは いくらですか。<br/>Shop: さんびゃくえんです。<br/>You: じゃ、これを ください。</p><p><em>You: Excuse me, how much is this?<br/>Shop: It's 300 yen.<br/>You: Then, I'll take this please.</em></p>",
+                "tips": [
+                  "ください literally means 'please give me' — it's the standard way to order or buy.",
+                  "これ/それ/あれ are pronouns (this one). この/その/あの are adjectives (this ~, that ~).",
+                  "いくら (how much) should not be confused with イクラ (salmon roe)!"
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 2,
+              "title": "Ask the Price",
+              "body": {
+                "words": ["いくら", "は", "です", "これ", "か"],
+                "correct": ["これ", "は", "いくら", "です", "か"],
+                "translation": "How much is this?"
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Pointing Words",
+              "body": {
+                "question": "You want to point at something far away from both you and the listener. Which word do you use?",
+                "options": ["これ", "それ", "あれ", "どれ"],
+                "correct": 2,
+                "explanation": "あれ (are) refers to something far from both the speaker and the listener. これ = near speaker, それ = near listener, どれ = which one."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Asking Questions",
+          "description": "Learn the essential question words to ask about people, places, things, and time.",
+          "sortOrder": 3,
+          "estimatedMinutes": 12,
+          "xpReward": 25,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Question Words",
+              "body": {
+                "html": "<p>Japanese question words (interrogatives) are essential for gathering information. Unlike English, <strong>word order does not change</strong> in questions — you simply place the question word where the answer would go and add <strong>か</strong> at the end.</p><p><strong>Key question words:</strong></p><ul><li><strong>なに / なん</strong> (何) — what<br/>これは <strong>なん</strong>ですか。 — What is this?</li><li><strong>だれ</strong> (誰) — who<br/><strong>だれ</strong>が きましたか。 — Who came?</li><li><strong>どこ</strong> — where<br/>トイレは <strong>どこ</strong>ですか。 — Where is the restroom?</li><li><strong>いつ</strong> — when<br/><strong>いつ</strong> いきますか。 — When will you go?</li><li><strong>どう</strong> — how<br/>にほんは <strong>どう</strong>ですか。 — How is Japan?</li><li><strong>なぜ / どうして</strong> — why<br/><strong>どうして</strong> にほんごを べんきょうしますか。 — Why do you study Japanese?</li><li><strong>いくつ</strong> — how many / how old<br/>りんごは <strong>いくつ</strong> ありますか。 — How many apples are there?</li></ul>",
+                "tips": [
+                  "なに becomes なん before です, で, and counters: なんですか, なんにん.",
+                  "Japanese questions keep the same word order as statements — just swap the unknown with the question word.",
+                  "In polite speech, always end questions with か. In casual speech, か can be replaced by rising intonation."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Ask the Right Question",
+              "body": {
+                "sentence": "トイレは ___ ですか。",
+                "answer": "どこ",
+                "alternatives": [],
+                "explanation": "どこ means 'where'. トイレは どこですか = Where is the restroom? — one of the most useful questions in Japan."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Which Question Word?",
+              "body": {
+                "question": "You want to ask 'Who is that person?' — あのひとは ＿ ですか。 Which word fills the blank?",
+                "options": ["なに", "どこ", "いつ", "だれ"],
+                "correct": 3,
+                "explanation": "だれ (dare) means 'who'. あのひとは だれですか = Who is that person?"
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "Key Japanese Expressions",
+          "description": "20 essential everyday expressions for greetings, shopping, and asking questions.",
+          "flashcards": [
+            {
+              "front": { "text": "おはようございます", "reading": "おはようございます" },
+              "back": { "text": "Good morning (polite)", "example": "Meeting a colleague in the morning", "notes": "Casual form: おはよう" },
+              "tags": ["greeting", "polite"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "こんにちは", "reading": "こんにちは" },
+              "back": { "text": "Good afternoon / Hello", "example": "General daytime greeting", "notes": "Spelled with は (wa particle), not わ" },
+              "tags": ["greeting"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "こんばんは", "reading": "こんばんは" },
+              "back": { "text": "Good evening", "example": "Greeting someone in the evening", "notes": "Spelled with は (wa particle), not わ" },
+              "tags": ["greeting"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "さようなら", "reading": "さようなら" },
+              "back": { "text": "Goodbye", "example": "Leaving school or a formal setting", "notes": "Somewhat formal; casual: じゃあね, またね" },
+              "tags": ["greeting", "parting"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "おやすみなさい", "reading": "おやすみなさい" },
+              "back": { "text": "Good night (polite)", "example": "Saying good night before bed", "notes": "Casual: おやすみ" },
+              "tags": ["greeting", "polite"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "ありがとうございます", "reading": "ありがとうございます" },
+              "back": { "text": "Thank you (polite)", "example": "Thanking a shop clerk or teacher", "notes": "Casual: ありがとう" },
+              "tags": ["gratitude", "polite"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "すみません", "reading": "すみません" },
+              "back": { "text": "Excuse me / I'm sorry", "example": "すみません、えきは どこですか。(Excuse me, where is the station?)", "notes": "Used to get attention AND for light apologies" },
+              "tags": ["apology", "attention"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "おねがいします", "reading": "おねがいします" },
+              "back": { "text": "Please (when requesting)", "example": "コーヒーを おねがいします。(Coffee, please.)", "notes": "More polite than ください in some contexts" },
+              "tags": ["request", "polite"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "はじめまして", "reading": "はじめまして" },
+              "back": { "text": "Nice to meet you (first meeting)", "example": "はじめまして。たなかです。(Nice to meet you. I'm Tanaka.)", "notes": "Used only at the FIRST meeting" },
+              "tags": ["greeting", "introduction"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "どうぞ よろしく おねがいします", "reading": "どうぞ よろしく おねがいします" },
+              "back": { "text": "Pleased to meet you / Please treat me well", "example": "End of a self-introduction", "notes": "No direct English equivalent; a standard closing for introductions" },
+              "tags": ["greeting", "introduction"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "いくらですか", "reading": "いくらですか" },
+              "back": { "text": "How much is it?", "example": "これは いくらですか。(How much is this?)", "notes": "Essential shopping phrase" },
+              "tags": ["shopping", "question"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "〜を ください", "reading": "をください" },
+              "back": { "text": "~ please / I'll have ~", "example": "これを ください。(This one, please.)", "notes": "Used for ordering, buying, or requesting something" },
+              "tags": ["shopping", "request"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "これ / それ / あれ", "reading": "これ / それ / あれ" },
+              "back": { "text": "this / that (near you) / that (over there)", "example": "これは なんですか。(What is this?)", "notes": "こ = near speaker, そ = near listener, あ = far from both" },
+              "tags": ["demonstrative", "pronoun"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "なんですか", "reading": "なんですか" },
+              "back": { "text": "What is it?", "example": "これは なんですか。(What is this?)", "notes": "なに → なん before です" },
+              "tags": ["question"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "だれですか", "reading": "だれですか" },
+              "back": { "text": "Who is it?", "example": "あのひとは だれですか。(Who is that person?)", "notes": "More polite: どなたですか" },
+              "tags": ["question"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "どこですか", "reading": "どこですか" },
+              "back": { "text": "Where is it?", "example": "トイレは どこですか。(Where is the restroom?)", "notes": "One of the most useful travel phrases" },
+              "tags": ["question"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "いつですか", "reading": "いつですか" },
+              "back": { "text": "When is it?", "example": "しけんは いつですか。(When is the exam?)", "notes": "いつ does not need a particle" },
+              "tags": ["question"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "わかりました", "reading": "わかりました" },
+              "back": { "text": "I understood / Got it", "example": "はい、わかりました。(Yes, I understand.)", "notes": "Past form used to confirm understanding. Negative: わかりません (I don't understand)" },
+              "tags": ["response"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "もういちど おねがいします", "reading": "もういちど おねがいします" },
+              "back": { "text": "One more time, please", "example": "Asking someone to repeat what they said", "notes": "Very useful for language learners" },
+              "tags": ["request", "classroom"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "だいじょうぶです", "reading": "だいじょうぶです" },
+              "back": { "text": "It's okay / I'm fine / No thank you", "example": "レシートは? — だいじょうぶです。(Receipt? — No, thank you.)", "notes": "Context-dependent: can mean 'I'm fine', 'it's okay', or politely decline" },
+              "tags": ["response"],
+              "sortOrder": 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

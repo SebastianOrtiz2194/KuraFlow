@@ -1,0 +1,987 @@
+{
+  "languageCode": "en",
+  "levelCode": "A2",
+  "modules": [
+    {
+      "type": "GRAMMAR",
+      "title": "Past Simple & Continuous",
+      "description": "Learn to talk about completed actions and ongoing events in the past using the Past Simple and Past Continuous tenses.",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "title": "Past Simple: Regular Verbs",
+          "description": "Form the Past Simple with regular verbs by adding -ed, and learn the three pronunciation rules for the ending.",
+          "sortOrder": 1,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "How to Form the Past Simple with Regular Verbs",
+              "body": {
+                "html": "<p>To make the <strong>Past Simple</strong> of a regular verb, add <strong>-ed</strong> to the base form.</p><ul><li><em>work</em> → <strong>worked</strong></li><li><em>play</em> → <strong>played</strong></li><li><em>live</em> → <strong>lived</strong> (the verb already ends in <em>e</em>, so just add <em>-d</em>)</li><li><em>stop</em> → <strong>stopped</strong> (short vowel + single consonant → double the consonant)</li><li><em>study</em> → <strong>studied</strong> (consonant + <em>y</em> → change <em>y</em> to <em>i</em> and add <em>-ed</em>)</li></ul><h4>Pronunciation of -ed</h4><p>The <em>-ed</em> ending has <strong>three sounds</strong>:</p><ol><li><strong>/t/</strong> — after voiceless sounds (<em>k, p, f, s, ʃ, tʃ</em>): <em>walked, stopped, laughed</em></li><li><strong>/d/</strong> — after voiced sounds and vowels: <em>played, opened, called</em></li><li><strong>/ɪd/</strong> — after <em>t</em> or <em>d</em>: <em>wanted, needed, started</em></li></ol>",
+                "tips": [
+                  "The -ed spelling rule for 'y' only applies when there is a consonant before 'y'. If there is a vowel before 'y', just add -ed: play → played.",
+                  "The /ɪd/ pronunciation adds an extra syllable: 'want' is one syllable, but 'wanted' is two."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Choose the Correct Past Simple Form",
+              "body": {
+                "question": "Which is the correct Past Simple form of the verb 'study'?",
+                "options": [
+                  "studyed",
+                  "studied",
+                  "studed",
+                  "studid"
+                ],
+                "correct": 1,
+                "explanation": "When a verb ends in consonant + y, change the 'y' to 'i' and add -ed: study → studied."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete the Sentence",
+              "body": {
+                "sentence": "She ___ (walk) to the park yesterday.",
+                "answer": "walked",
+                "alternatives": [],
+                "explanation": "'Walk' is a regular verb. Add -ed to form the Past Simple: walked."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Past Simple: Irregular Verbs",
+          "description": "Learn the most common irregular Past Simple forms — verbs that don't follow the -ed rule.",
+          "sortOrder": 2,
+          "estimatedMinutes": 12,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "What Are Irregular Verbs?",
+              "body": {
+                "html": "<p><strong>Irregular verbs</strong> do not add <em>-ed</em> in the Past Simple. Each verb has its own special past form that you need to memorise.</p><h4>Common Irregular Verbs</h4><table><tr><th>Base Form</th><th>Past Simple</th></tr><tr><td>go</td><td><strong>went</strong></td></tr><tr><td>see</td><td><strong>saw</strong></td></tr><tr><td>eat</td><td><strong>ate</strong></td></tr><tr><td>have</td><td><strong>had</strong></td></tr><tr><td>come</td><td><strong>came</strong></td></tr><tr><td>take</td><td><strong>took</strong></td></tr><tr><td>make</td><td><strong>made</strong></td></tr><tr><td>buy</td><td><strong>bought</strong></td></tr><tr><td>get</td><td><strong>got</strong></td></tr><tr><td>give</td><td><strong>gave</strong></td></tr></table><p>The past form is the <strong>same for all subjects</strong>: I went, you went, she went, they went.</p>",
+                "tips": [
+                  "There is no shortcut — you have to memorise irregular forms. Flashcards and lots of reading help!",
+                  "Some verbs don't change at all: put → put, cut → cut, read → read (but the pronunciation changes: /riːd/ → /rɛd/)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Pick the Correct Past Form",
+              "body": {
+                "question": "What is the Past Simple of 'buy'?",
+                "options": [
+                  "buyed",
+                  "buyd",
+                  "bought",
+                  "boughted"
+                ],
+                "correct": 2,
+                "explanation": "'Buy' is irregular. Its Past Simple form is 'bought'."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Put the Words in Order",
+              "body": {
+                "words": ["yesterday", "I", "a", "saw", "movie"],
+                "correct": ["I", "saw", "a", "movie", "yesterday"],
+                "translation": "I saw a movie yesterday."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Past Simple: Negatives & Questions",
+          "description": "Use 'didn't' to make negatives and 'did' to form questions in the Past Simple.",
+          "sortOrder": 3,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Negatives and Questions with 'Did'",
+              "body": {
+                "html": "<p>In the Past Simple, we use the auxiliary verb <strong>did</strong> to make negatives and questions. The main verb goes back to the <strong>base form</strong> (no -ed, no irregular change).</p><h4>Negatives</h4><p><strong>Subject + didn't + base form</strong></p><ul><li>I <strong>didn't go</strong> to school. (NOT: <s>I didn't went</s>)</li><li>She <strong>didn't eat</strong> breakfast.</li><li>They <strong>didn't play</strong> football.</li></ul><h4>Questions</h4><p><strong>Did + subject + base form?</strong></p><ul><li><strong>Did</strong> you <strong>see</strong> the film? (NOT: <s>Did you saw?</s>)</li><li><strong>Did</strong> he <strong>come</strong> to the party?</li></ul><h4>Short Answers</h4><ul><li>Yes, I <strong>did</strong>. / No, I <strong>didn't</strong>.</li></ul>",
+                "tips": [
+                  "The most common mistake is using the past form after 'did/didn't'. Always use the BASE form: Did you GO? (not 'Did you went?').",
+                  "'Was/were' follow their own pattern — they don't use 'did'. We say 'Were you tired?' not 'Did you were tired?'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Make It Negative",
+              "body": {
+                "sentence": "He ___ (not/like) the food.",
+                "answer": "didn't like",
+                "alternatives": ["did not like"],
+                "explanation": "To make a Past Simple negative, use 'didn't' + base form: didn't like."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Form a Question",
+              "body": {
+                "words": ["did", "where", "go", "you", "?"],
+                "correct": ["where", "did", "you", "go", "?"],
+                "translation": "Where did you go?"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Past Continuous",
+          "description": "Describe actions that were in progress at a specific time in the past using was/were + -ing.",
+          "sortOrder": 4,
+          "estimatedMinutes": 12,
+          "xpReward": 20,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "How to Form the Past Continuous",
+              "body": {
+                "html": "<p>The <strong>Past Continuous</strong> describes an action that was <em>in progress</em> at a particular time in the past.</p><h4>Form</h4><p><strong>Subject + was/were + verb-ing</strong></p><ul><li>I / He / She / It + <strong>was</strong> + verb-ing</li><li>You / We / They + <strong>were</strong> + verb-ing</li></ul><h4>Examples</h4><ul><li>At 8 p.m., I <strong>was watching</strong> TV.</li><li>They <strong>were playing</strong> football when it started to rain.</li><li><strong>Was</strong> she <strong>sleeping</strong> when you called?</li></ul><h4>Past Simple vs Past Continuous</h4><p>We often use them <strong>together</strong>: the Past Continuous sets the background scene, and the Past Simple describes the interrupting event.</p><ul><li>I <strong>was walking</strong> home when I <strong>saw</strong> an old friend.</li></ul>",
+                "tips": [
+                  "Use 'was' with I/he/she/it and 'were' with you/we/they.",
+                  "The Past Continuous is NOT used for completed actions. Say 'I watched a film' (finished), not 'I was watching a film' (unless you want to stress that it was in progress)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Choose the Best Sentence",
+              "body": {
+                "question": "Which sentence correctly uses the Past Continuous?",
+                "options": [
+                  "They was eating dinner at 7 p.m.",
+                  "They were eating dinner at 7 p.m.",
+                  "They eating dinner at 7 p.m.",
+                  "They were eat dinner at 7 p.m."
+                ],
+                "correct": 1,
+                "explanation": "'They' takes 'were' (not 'was'), and the main verb needs the -ing form: were eating."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete with Past Continuous",
+              "body": {
+                "sentence": "I ___ (read) a book when the phone rang.",
+                "answer": "was reading",
+                "alternatives": [],
+                "explanation": "The subject is 'I', so we use 'was' + the -ing form: was reading."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "25 Essential Irregular Past Tense Verbs",
+          "description": "Master the most common irregular verbs in English at the A2 level. Each card shows the base form on the front and the past simple form on the back.",
+          "flashcards": [
+            {
+              "front": { "text": "go", "pronunciation": "/ɡoʊ/" },
+              "back": { "text": "went", "example": "I went to the cinema last night.", "notes": "One of the most common irregular verbs." },
+              "tags": ["irregular-verb", "movement"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "see", "pronunciation": "/siː/" },
+              "back": { "text": "saw", "example": "She saw a beautiful sunset.", "notes": "Past participle: seen." },
+              "tags": ["irregular-verb", "senses"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "eat", "pronunciation": "/iːt/" },
+              "back": { "text": "ate", "example": "We ate pizza for dinner.", "notes": "Pronounced /eɪt/." },
+              "tags": ["irregular-verb", "food"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "have", "pronunciation": "/hæv/" },
+              "back": { "text": "had", "example": "They had a great time at the party.", "notes": "Also used as an auxiliary: 'I had finished.'" },
+              "tags": ["irregular-verb", "essential"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "come", "pronunciation": "/kʌm/" },
+              "back": { "text": "came", "example": "He came home early yesterday.", "notes": "" },
+              "tags": ["irregular-verb", "movement"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "take", "pronunciation": "/teɪk/" },
+              "back": { "text": "took", "example": "I took the bus to work.", "notes": "" },
+              "tags": ["irregular-verb", "action"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "make", "pronunciation": "/meɪk/" },
+              "back": { "text": "made", "example": "She made a cake for the party.", "notes": "" },
+              "tags": ["irregular-verb", "action"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "buy", "pronunciation": "/baɪ/" },
+              "back": { "text": "bought", "example": "We bought new shoes at the mall.", "notes": "Pronounced /bɔːt/." },
+              "tags": ["irregular-verb", "shopping"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "get", "pronunciation": "/ɡɛt/" },
+              "back": { "text": "got", "example": "I got a new phone for my birthday.", "notes": "Very versatile verb with many meanings." },
+              "tags": ["irregular-verb", "essential"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "give", "pronunciation": "/ɡɪv/" },
+              "back": { "text": "gave", "example": "She gave me a present.", "notes": "" },
+              "tags": ["irregular-verb", "action"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "think", "pronunciation": "/θɪŋk/" },
+              "back": { "text": "thought", "example": "I thought the film was great.", "notes": "Pronounced /θɔːt/." },
+              "tags": ["irregular-verb", "mental"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "say", "pronunciation": "/seɪ/" },
+              "back": { "text": "said", "example": "He said he was tired.", "notes": "Pronounced /sɛd/." },
+              "tags": ["irregular-verb", "communication"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "tell", "pronunciation": "/tɛl/" },
+              "back": { "text": "told", "example": "She told me the news.", "notes": "'Tell' takes an object: tell someone something." },
+              "tags": ["irregular-verb", "communication"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "know", "pronunciation": "/noʊ/" },
+              "back": { "text": "knew", "example": "I knew the answer.", "notes": "Pronounced /njuː/." },
+              "tags": ["irregular-verb", "mental"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "write", "pronunciation": "/raɪt/" },
+              "back": { "text": "wrote", "example": "He wrote a letter to his friend.", "notes": "" },
+              "tags": ["irregular-verb", "communication"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "read", "pronunciation": "/riːd/" },
+              "back": { "text": "read", "example": "I read a good book last week.", "notes": "Same spelling but different pronunciation: /rɛd/." },
+              "tags": ["irregular-verb", "education"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "drink", "pronunciation": "/drɪŋk/" },
+              "back": { "text": "drank", "example": "She drank a cup of coffee.", "notes": "" },
+              "tags": ["irregular-verb", "food"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "run", "pronunciation": "/rʌn/" },
+              "back": { "text": "ran", "example": "They ran to catch the bus.", "notes": "" },
+              "tags": ["irregular-verb", "movement"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "speak", "pronunciation": "/spiːk/" },
+              "back": { "text": "spoke", "example": "We spoke to the teacher after class.", "notes": "" },
+              "tags": ["irregular-verb", "communication"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "drive", "pronunciation": "/draɪv/" },
+              "back": { "text": "drove", "example": "He drove to the airport.", "notes": "" },
+              "tags": ["irregular-verb", "transport"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "begin", "pronunciation": "/bɪˈɡɪn/" },
+              "back": { "text": "began", "example": "The meeting began at nine o'clock.", "notes": "" },
+              "tags": ["irregular-verb", "time"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "feel", "pronunciation": "/fiːl/" },
+              "back": { "text": "felt", "example": "I felt happy after the good news.", "notes": "" },
+              "tags": ["irregular-verb", "emotion"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "find", "pronunciation": "/faɪnd/" },
+              "back": { "text": "found", "example": "She found her keys under the sofa.", "notes": "" },
+              "tags": ["irregular-verb", "action"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "leave", "pronunciation": "/liːv/" },
+              "back": { "text": "left", "example": "We left the restaurant at ten.", "notes": "" },
+              "tags": ["irregular-verb", "movement"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "lose", "pronunciation": "/luːz/" },
+              "back": { "text": "lost", "example": "He lost his wallet on the train.", "notes": "Don't confuse 'lose' /luːz/ with 'loose' /luːs/ (adjective)." },
+              "tags": ["irregular-verb", "action"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VOCABULARY",
+      "title": "Around Town",
+      "description": "Build practical vocabulary for navigating a town, asking for directions, shopping, and ordering at a restaurant.",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "title": "Places in Town",
+          "description": "Learn the names of common places you can find in a town or city.",
+          "sortOrder": 1,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Common Places in Town",
+              "body": {
+                "html": "<p>Here are some important places you will find in most towns:</p><ul><li><strong>post office</strong> — you go here to send letters and parcels</li><li><strong>bank</strong> — you go here to manage your money</li><li><strong>hospital</strong> — you go here when you are very sick or injured</li><li><strong>pharmacy</strong> (also: <em>chemist's</em> in British English) — you buy medicine here</li><li><strong>supermarket</strong> — a large shop where you buy food and household items</li><li><strong>library</strong> — you borrow books here (it's free!)</li><li><strong>police station</strong> — where the police work</li><li><strong>bus station</strong> — where you catch buses to other towns</li><li><strong>train station</strong> (also: <em>railway station</em>) — where you catch trains</li><li><strong>town hall</strong> — the main government building in a town</li></ul><h4>Useful Patterns</h4><ul><li>Is there a bank <strong>near here</strong>?</li><li>Where is the <strong>nearest</strong> supermarket?</li><li>I need to go to the <strong>post office</strong>.</li></ul>",
+                "tips": [
+                  "'Library' means a place to borrow books — it is NOT a bookshop.",
+                  "In British English, 'chemist's' is more common than 'pharmacy'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Where Do You Go?",
+              "body": {
+                "question": "You need to send a parcel. Where do you go?",
+                "options": [
+                  "The library",
+                  "The post office",
+                  "The bank",
+                  "The police station"
+                ],
+                "correct": 1,
+                "explanation": "You send letters and parcels at the post office."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete the Question",
+              "body": {
+                "sentence": "Excuse me, is there a ___ near here? I need to buy some medicine.",
+                "answer": "pharmacy",
+                "alternatives": ["chemist's"],
+                "explanation": "You buy medicine at a pharmacy (or chemist's in British English)."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Asking for Directions",
+          "description": "Learn how to ask for and give simple directions using key phrases.",
+          "sortOrder": 2,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Key Phrases for Directions",
+              "body": {
+                "html": "<h4>Asking for Directions</h4><ul><li>Excuse me, <strong>how do I get to</strong> the train station?</li><li>Excuse me, <strong>where is</strong> the nearest bank?</li><li><strong>Is it far</strong> from here?</li></ul><h4>Giving Directions</h4><ul><li><strong>Go straight</strong> (on / ahead).</li><li><strong>Turn left</strong> at the traffic lights.</li><li><strong>Turn right</strong> at the corner.</li><li>It's <strong>on your left / on your right</strong>.</li><li>It's <strong>next to</strong> the supermarket.</li><li>It's <strong>opposite</strong> the bank.</li><li>It's <strong>between</strong> the post office and the café.</li><li><strong>Take the first / second street</strong> on the left.</li></ul><h4>Prepositions of Place</h4><ul><li><strong>next to</strong> = beside</li><li><strong>opposite</strong> = on the other side of the street</li><li><strong>between</strong> = in the middle of two things</li><li><strong>on the corner of</strong> = where two streets meet</li></ul>",
+                "tips": [
+                  "Always start with 'Excuse me' — it's polite and gets the person's attention.",
+                  "'Go straight on' (British) and 'Go straight ahead' (American) mean the same thing."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 2,
+              "title": "Give Directions",
+              "body": {
+                "words": ["left", "turn", "at", "the", "traffic lights"],
+                "correct": ["turn", "left", "at", "the", "traffic lights"],
+                "translation": "Turn left at the traffic lights."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Choose the Correct Preposition",
+              "body": {
+                "question": "The bank is ___ the supermarket and the post office.",
+                "options": [
+                  "next to",
+                  "opposite",
+                  "between",
+                  "on"
+                ],
+                "correct": 2,
+                "explanation": "'Between' means in the middle of two things. The bank is between the supermarket and the post office."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Shopping",
+          "description": "Learn essential vocabulary and phrases for buying things in shops.",
+          "sortOrder": 3,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Shopping Vocabulary & Phrases",
+              "body": {
+                "html": "<h4>Key Vocabulary</h4><ul><li><strong>receipt</strong> — the piece of paper that shows what you bought and how much you paid</li><li><strong>change</strong> — the money you get back when you pay more than the price</li><li><strong>cash</strong> — coins and banknotes</li><li><strong>card</strong> — a credit or debit card</li><li><strong>price</strong> — how much something costs</li><li><strong>sale</strong> — when things are cheaper than normal</li><li><strong>size</strong> — small (S), medium (M), large (L)</li><li><strong>fitting room</strong> (also: <em>changing room</em>) — where you try on clothes</li></ul><h4>Useful Phrases</h4><ul><li><strong>How much is this?</strong> / How much does this cost?</li><li><strong>I'd like</strong> a large coffee, please.</li><li>Can I <strong>pay by card</strong>?</li><li>Do you have this <strong>in a different size</strong>?</li><li>Can I <strong>try this on</strong>?</li><li>Can I have a <strong>receipt</strong>, please?</li></ul>",
+                "tips": [
+                  "'I'd like' is short for 'I would like' — it's more polite than 'I want'.",
+                  "'How much is this?' (singular) vs 'How much are these?' (plural)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "At the Shop",
+              "body": {
+                "sentence": "Can I have a ___, please? I need it for returning the item.",
+                "answer": "receipt",
+                "alternatives": [],
+                "explanation": "A receipt is the paper that proves you bought something. You usually need it to return or exchange items."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Choose the Polite Request",
+              "body": {
+                "question": "Which is the most polite way to order a coffee?",
+                "options": [
+                  "Give me a coffee.",
+                  "I want a coffee.",
+                  "I'd like a coffee, please.",
+                  "Coffee."
+                ],
+                "correct": 2,
+                "explanation": "'I'd like … please' is the standard polite way to order something."
+              }
+            }
+          ]
+        },
+        {
+          "title": "At the Restaurant",
+          "description": "Learn how to order food, understand a menu, and interact with waitstaff.",
+          "sortOrder": 4,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Restaurant Vocabulary & Phrases",
+              "body": {
+                "html": "<h4>Menu Sections</h4><ul><li><strong>starter</strong> (British) / <strong>appetiser</strong> (American) — a small dish before the main meal</li><li><strong>main course</strong> — the biggest dish</li><li><strong>dessert</strong> — sweet food at the end (cake, ice cream)</li><li><strong>drinks</strong> / <strong>beverages</strong></li></ul><h4>Useful Phrases — Ordering</h4><ul><li>Could I <strong>see the menu</strong>, please?</li><li>I'd like the <strong>chicken salad</strong>, please.</li><li><strong>For my starter</strong>, I'll have the soup.</li><li>Can I have the <strong>bill</strong>, please? (British) / Can I have the <strong>check</strong>, please? (American)</li></ul><h4>Useful Phrases — Asking Questions</h4><ul><li>What do you <strong>recommend</strong>?</li><li>Does this dish <strong>contain</strong> nuts?</li><li>Is this <strong>vegetarian</strong>?</li></ul>",
+                "tips": [
+                  "'Bill' (British English) = 'Check' (American English). Both mean the paper that shows how much you need to pay.",
+                  "In many English-speaking countries, you usually wait to be seated — don't just sit at any table."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 2,
+              "title": "Order at a Restaurant",
+              "body": {
+                "words": ["I'd", "the", "like", "please", "chicken salad,"],
+                "correct": ["I'd", "like", "the", "chicken salad,", "please"],
+                "translation": "I'd like the chicken salad, please."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Ask for the Bill",
+              "body": {
+                "sentence": "Could I have the ___, please? We're ready to pay.",
+                "answer": "bill",
+                "alternatives": ["check"],
+                "explanation": "In British English we say 'bill'; in American English we say 'check'."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "25 Town & Shopping Vocabulary Words",
+          "description": "Essential vocabulary for navigating a town, asking for directions, shopping, and eating out at the A2 level.",
+          "flashcards": [
+            {
+              "front": { "text": "post office", "pronunciation": "/poʊst ˈɒfɪs/" },
+              "back": { "text": "a place where you send letters and parcels", "example": "I need to go to the post office to send this package.", "notes": "" },
+              "tags": ["places", "town"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "bank", "pronunciation": "/bæŋk/" },
+              "back": { "text": "a place where you keep and manage your money", "example": "Is there a bank near here?", "notes": "" },
+              "tags": ["places", "town"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "hospital", "pronunciation": "/ˈhɒspɪtl/" },
+              "back": { "text": "a place where sick or injured people receive medical treatment", "example": "She was taken to the hospital after the accident.", "notes": "" },
+              "tags": ["places", "town"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "pharmacy", "pronunciation": "/ˈfɑːrməsi/" },
+              "back": { "text": "a shop where you buy medicine", "example": "I bought some aspirin at the pharmacy.", "notes": "Also called 'chemist's' in British English." },
+              "tags": ["places", "town", "shopping"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "supermarket", "pronunciation": "/ˈsuːpərˌmɑːrkɪt/" },
+              "back": { "text": "a large shop that sells food and household products", "example": "We do our weekly shopping at the supermarket.", "notes": "" },
+              "tags": ["places", "town", "shopping"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "library", "pronunciation": "/ˈlaɪbrəri/" },
+              "back": { "text": "a place where you can borrow books for free", "example": "I returned my books to the library.", "notes": "Not a bookshop! A library lends books; a bookshop sells them." },
+              "tags": ["places", "town"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "turn left", "pronunciation": "/tɜːrn lɛft/" },
+              "back": { "text": "change direction to the left", "example": "Turn left at the traffic lights.", "notes": "" },
+              "tags": ["directions"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "turn right", "pronunciation": "/tɜːrn raɪt/" },
+              "back": { "text": "change direction to the right", "example": "Turn right at the corner and the bank is on your left.", "notes": "" },
+              "tags": ["directions"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "go straight", "pronunciation": "/ɡoʊ streɪt/" },
+              "back": { "text": "continue forward without turning", "example": "Go straight for two blocks, then turn left.", "notes": "Also: 'go straight on' (British) or 'go straight ahead' (American)." },
+              "tags": ["directions"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "next to", "pronunciation": "/nɛkst tuː/" },
+              "back": { "text": "beside; at the side of", "example": "The café is next to the bookshop.", "notes": "Synonym: beside." },
+              "tags": ["directions", "prepositions"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "opposite", "pronunciation": "/ˈɒpəzɪt/" },
+              "back": { "text": "on the other side (of the street)", "example": "The bank is opposite the park.", "notes": "" },
+              "tags": ["directions", "prepositions"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "between", "pronunciation": "/bɪˈtwiːn/" },
+              "back": { "text": "in the middle of two things", "example": "The shop is between the café and the pharmacy.", "notes": "" },
+              "tags": ["directions", "prepositions"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "traffic lights", "pronunciation": "/ˈtræfɪk laɪts/" },
+              "back": { "text": "red, yellow and green lights that control traffic at a crossing", "example": "Turn right at the traffic lights.", "notes": "" },
+              "tags": ["directions", "town"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "receipt", "pronunciation": "/rɪˈsiːt/" },
+              "back": { "text": "a piece of paper that shows what you paid", "example": "Can I have a receipt, please?", "notes": "The 'p' is silent." },
+              "tags": ["shopping"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "change", "pronunciation": "/tʃeɪndʒ/" },
+              "back": { "text": "the money returned when you pay more than the price", "example": "Here's your change — two pounds fifty.", "notes": "Can also mean 'to become different'." },
+              "tags": ["shopping"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "cash", "pronunciation": "/kæʃ/" },
+              "back": { "text": "money in the form of coins and banknotes", "example": "I don't have any cash. Can I pay by card?", "notes": "" },
+              "tags": ["shopping"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "sale", "pronunciation": "/seɪl/" },
+              "back": { "text": "a period when shops sell things at lower prices", "example": "These shoes were half price in the sale.", "notes": "" },
+              "tags": ["shopping"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "fitting room", "pronunciation": "/ˈfɪtɪŋ ruːm/" },
+              "back": { "text": "a small room in a shop where you try on clothes", "example": "Can I use the fitting room to try these jeans on?", "notes": "Also called 'changing room' in British English." },
+              "tags": ["shopping"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "How much is this?", "pronunciation": "/haʊ mʌtʃ ɪz ðɪs/" },
+              "back": { "text": "a question to ask the price of something", "example": "Excuse me, how much is this scarf?", "notes": "Use 'are these' for plural items." },
+              "tags": ["shopping", "phrase"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "I'd like", "pronunciation": "/aɪd laɪk/" },
+              "back": { "text": "a polite way to say 'I want'", "example": "I'd like a large coffee, please.", "notes": "Short for 'I would like'." },
+              "tags": ["shopping", "restaurant", "phrase"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "starter", "pronunciation": "/ˈstɑːrtər/" },
+              "back": { "text": "a small dish served before the main course", "example": "For my starter, I'll have the soup.", "notes": "American English: appetiser." },
+              "tags": ["restaurant", "food"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "main course", "pronunciation": "/meɪn kɔːrs/" },
+              "back": { "text": "the biggest and most important dish in a meal", "example": "The main course was grilled fish with vegetables.", "notes": "" },
+              "tags": ["restaurant", "food"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "dessert", "pronunciation": "/dɪˈzɜːrt/" },
+              "back": { "text": "a sweet dish served at the end of a meal", "example": "Would you like a dessert? We have chocolate cake.", "notes": "Don't confuse with 'desert' (a hot, sandy place) — dessert has two s's." },
+              "tags": ["restaurant", "food"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "bill", "pronunciation": "/bɪl/" },
+              "back": { "text": "a paper showing how much you have to pay at a restaurant", "example": "Could I have the bill, please?", "notes": "American English: check." },
+              "tags": ["restaurant"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "recommend", "pronunciation": "/ˌrɛkəˈmɛnd/" },
+              "back": { "text": "to suggest something because you think it is good", "example": "What do you recommend from the menu?", "notes": "" },
+              "tags": ["restaurant", "phrase"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "PHRASAL_VERBS",
+      "title": "Daily Life Phrasal Verbs",
+      "description": "Learn essential phrasal verbs used in everyday situations — searching, transport, errands, and movement.",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "title": "Look For & Find Out",
+          "description": "Learn phrasal verbs related to searching for things and discovering information.",
+          "sortOrder": 1,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Searching and Discovering",
+              "body": {
+                "html": "<h4>look for</h4><p><strong>Meaning:</strong> to try to find something or someone.</p><ul><li>I'm <strong>looking for</strong> my keys. Have you seen them?</li><li>She's <strong>looking for</strong> a new job.</li></ul><p><em>'Look for'</em> is <strong>not</strong> the same as <em>'look at'</em> (= direct your eyes at something).</p><h4>find out</h4><p><strong>Meaning:</strong> to discover or learn new information.</p><ul><li>I need to <strong>find out</strong> what time the train leaves.</li><li>She <strong>found out</strong> that the shop was closed on Sundays.</li></ul><p><em>'Find out'</em> is about <strong>information</strong>. <em>'Find'</em> alone is about <strong>objects</strong>: I found my keys (= I have them now).</p><h4>look up</h4><p><strong>Meaning:</strong> to search for information in a book, dictionary, or online.</p><ul><li>I <strong>looked up</strong> the word in a dictionary.</li><li>Can you <strong>look up</strong> the opening hours on their website?</li></ul>",
+                "tips": [
+                  "'Look for' = search. 'Look at' = see/watch. 'Look after' = take care of. Don't mix them up!",
+                  "With 'find out' and 'look up', a pronoun goes in the middle: 'look it up', 'find it out'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Choose the Right Phrasal Verb",
+              "body": {
+                "sentence": "I don't know the answer. Let me ___ it ___ online.",
+                "answer": "look ... up",
+                "alternatives": ["look up"],
+                "explanation": "'Look up' means to search for information in a reference source. When using a pronoun, it goes in the middle: look it up."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "What Does It Mean?",
+              "body": {
+                "question": "She found out that her flight was cancelled. What does 'found out' mean?",
+                "options": [
+                  "She searched for the flight.",
+                  "She discovered the information.",
+                  "She looked at the flight.",
+                  "She lost the flight."
+                ],
+                "correct": 1,
+                "explanation": "'Find out' means to discover or learn new information. She discovered that her flight was cancelled."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Pick Up & Drop Off",
+          "description": "Learn phrasal verbs related to transport, collecting things, and running errands.",
+          "sortOrder": 2,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Transport and Errands",
+              "body": {
+                "html": "<h4>pick up</h4><p><strong>Meaning 1:</strong> to lift something from a surface.</p><ul><li>He <strong>picked up</strong> the book from the floor.</li></ul><p><strong>Meaning 2:</strong> to collect someone (usually in a car).</p><ul><li>I'll <strong>pick you up</strong> at the station at 6 p.m.</li></ul><h4>drop off</h4><p><strong>Meaning:</strong> to take someone or something to a place and leave them there.</p><ul><li>Can you <strong>drop me off</strong> at the supermarket?</li><li>I need to <strong>drop off</strong> this parcel at the post office.</li></ul><h4>get on / get off</h4><p><strong>get on</strong> — to board (a bus, train, plane).</p><ul><li>We <strong>got on</strong> the bus at Park Street.</li></ul><p><strong>get off</strong> — to leave (a bus, train, plane).</p><ul><li><strong>Get off</strong> at the next stop.</li></ul><p><em>Note:</em> For cars and taxis, we use <strong>get in</strong> and <strong>get out (of)</strong>.</p>",
+                "tips": [
+                  "Use 'get on/off' for large vehicles (bus, train, plane) and 'get in/out of' for small vehicles (car, taxi).",
+                  "With pronouns, the object goes in the middle: 'pick her up', 'drop him off'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Pick the Right Phrasal Verb",
+              "body": {
+                "question": "I need to ___ my sister ___ at the airport. Her flight arrives at 3 p.m.",
+                "options": [
+                  "drop ... off",
+                  "get ... on",
+                  "pick ... up",
+                  "get ... off"
+                ],
+                "correct": 2,
+                "explanation": "'Pick up' means to collect someone, usually in a car. You pick someone up when they arrive."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Put the Words in Order",
+              "body": {
+                "words": ["the", "get", "at", "off", "next stop"],
+                "correct": ["get", "off", "at", "the", "next stop"],
+                "translation": "Get off at the next stop."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Come Back & Go Out",
+          "description": "Learn phrasal verbs about movement — leaving, returning, and going places.",
+          "sortOrder": 3,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Movement Phrasal Verbs",
+              "body": {
+                "html": "<h4>come back</h4><p><strong>Meaning:</strong> to return to a place.</p><ul><li>What time will you <strong>come back</strong>?</li><li>She <strong>came back</strong> from holiday last week.</li></ul><h4>go out</h4><p><strong>Meaning:</strong> to leave your home for entertainment or social activities.</p><ul><li>Do you want to <strong>go out</strong> for dinner tonight?</li><li>They <strong>go out</strong> every Saturday night.</li></ul><h4>get back</h4><p><strong>Meaning:</strong> to return (similar to 'come back' but more informal).</p><ul><li>I <strong>got back</strong> home at midnight.</li><li>When did you <strong>get back</strong> from your trip?</li></ul><h4>set off</h4><p><strong>Meaning:</strong> to start a journey.</p><ul><li>We need to <strong>set off</strong> early to avoid traffic.</li><li>They <strong>set off</strong> at 6 a.m.</li></ul>",
+                "tips": [
+                  "'Come back' and 'get back' are very similar. 'Come back' is slightly more formal.",
+                  "'Go out' can also mean to have a romantic relationship: 'Are they going out?' = 'Are they dating?'"
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Complete the Conversation",
+              "body": {
+                "sentence": "A: What time did you ___ ___ from work? B: About 7 p.m.",
+                "answer": "get back",
+                "alternatives": ["come back"],
+                "explanation": "'Get back' or 'come back' both mean to return. 'Get back' is slightly more informal and natural here."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Choose the Meaning",
+              "body": {
+                "question": "We need to set off early tomorrow. What does 'set off' mean?",
+                "options": [
+                  "go to sleep",
+                  "start a journey",
+                  "come back home",
+                  "go out for dinner"
+                ],
+                "correct": 1,
+                "explanation": "'Set off' means to start a journey or leave for a destination."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "20 Daily Life Phrasal Verbs",
+          "description": "Common phrasal verbs used in everyday English at the A2 level — covering searching, transport, errands, and movement.",
+          "flashcards": [
+            {
+              "front": { "text": "look for", "pronunciation": "/lʊk fɔːr/" },
+              "back": { "text": "to try to find something or someone", "example": "I'm looking for my phone. Have you seen it?", "notes": "Different from 'look at' (= direct your eyes at)." },
+              "tags": ["searching", "daily-life"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "find out", "pronunciation": "/faɪnd aʊt/" },
+              "back": { "text": "to discover information", "example": "I found out that the shop closes at 6.", "notes": "About information, not objects." },
+              "tags": ["searching", "daily-life"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "look up", "pronunciation": "/lʊk ʌp/" },
+              "back": { "text": "to search for information in a dictionary, book, or online", "example": "I looked up the word in the dictionary.", "notes": "Separable: look it up." },
+              "tags": ["searching", "daily-life"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "pick up", "pronunciation": "/pɪk ʌp/" },
+              "back": { "text": "to lift something; to collect someone (in a car)", "example": "I'll pick you up at the station.", "notes": "Separable: pick her up." },
+              "tags": ["transport", "errands"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "drop off", "pronunciation": "/drɒp ɒf/" },
+              "back": { "text": "to take someone/something to a place and leave them there", "example": "Can you drop me off at the supermarket?", "notes": "Separable: drop him off." },
+              "tags": ["transport", "errands"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "get on", "pronunciation": "/ɡɛt ɒn/" },
+              "back": { "text": "to board a bus, train, or plane", "example": "We got on the train just in time.", "notes": "For cars/taxis use 'get in'." },
+              "tags": ["transport"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "get off", "pronunciation": "/ɡɛt ɒf/" },
+              "back": { "text": "to leave a bus, train, or plane", "example": "Get off at the next stop.", "notes": "For cars/taxis use 'get out of'." },
+              "tags": ["transport"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "come back", "pronunciation": "/kʌm bæk/" },
+              "back": { "text": "to return to a place", "example": "She came back from holiday last week.", "notes": "" },
+              "tags": ["movement"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "go out", "pronunciation": "/ɡoʊ aʊt/" },
+              "back": { "text": "to leave home for entertainment or social activities", "example": "Do you want to go out for dinner tonight?", "notes": "Can also mean 'to date someone'." },
+              "tags": ["movement", "social"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "get back", "pronunciation": "/ɡɛt bæk/" },
+              "back": { "text": "to return (informal)", "example": "I got back home at midnight.", "notes": "Similar to 'come back' but more informal." },
+              "tags": ["movement"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "set off", "pronunciation": "/sɛt ɒf/" },
+              "back": { "text": "to start a journey", "example": "We set off early to avoid traffic.", "notes": "Inseparable." },
+              "tags": ["movement", "travel"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "wake up", "pronunciation": "/weɪk ʌp/" },
+              "back": { "text": "to stop sleeping", "example": "I wake up at 7 a.m. every day.", "notes": "Separable: the alarm woke me up." },
+              "tags": ["daily-routine"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "get up", "pronunciation": "/ɡɛt ʌp/" },
+              "back": { "text": "to get out of bed; to stand up", "example": "I got up late this morning.", "notes": "Different from 'wake up' — you can wake up but stay in bed." },
+              "tags": ["daily-routine"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "turn on", "pronunciation": "/tɜːrn ɒn/" },
+              "back": { "text": "to start a device or machine", "example": "Can you turn on the TV?", "notes": "Separable: turn it on. Opposite: turn off." },
+              "tags": ["daily-life"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "turn off", "pronunciation": "/tɜːrn ɒf/" },
+              "back": { "text": "to stop a device or machine", "example": "Please turn off your phone during the lesson.", "notes": "Separable: turn it off. Opposite: turn on." },
+              "tags": ["daily-life"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "put on", "pronunciation": "/pʊt ɒn/" },
+              "back": { "text": "to place clothing on your body", "example": "Put on your coat — it's cold outside.", "notes": "Separable: put it on. Opposite: take off." },
+              "tags": ["daily-routine", "clothing"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "take off", "pronunciation": "/teɪk ɒf/" },
+              "back": { "text": "to remove clothing; (of a plane) to leave the ground", "example": "Please take off your shoes at the door.", "notes": "Separable for clothing: take them off." },
+              "tags": ["daily-routine", "clothing", "transport"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "throw away", "pronunciation": "/θroʊ əˈweɪ/" },
+              "back": { "text": "to put something in the rubbish; to discard", "example": "Don't throw away that box — I need it.", "notes": "Separable: throw it away." },
+              "tags": ["daily-life"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "look after", "pronunciation": "/lʊk ˈɑːftər/" },
+              "back": { "text": "to take care of someone or something", "example": "Can you look after my cat while I'm away?", "notes": "Inseparable: look after him (NOT: look him after)." },
+              "tags": ["daily-life", "caring"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "give back", "pronunciation": "/ɡɪv bæk/" },
+              "back": { "text": "to return something to its owner", "example": "Can you give back my pen, please?", "notes": "Separable: give it back." },
+              "tags": ["daily-life"],
+              "sortOrder": 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
