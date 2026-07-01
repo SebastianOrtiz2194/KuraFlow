@@ -10,11 +10,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.InputStream;
-import java.util.List;
 
 @Slf4j
 @Component
@@ -33,9 +33,6 @@ public class DataSeeder implements CommandLineRunner {
     @Value("${kuraflow.seed.enabled:false}")
     private boolean seedEnabled;
 
-    @Value("classpath:seed-data/english_a1.json")
-    private Resource englishA1SeedFile;
-
     @Override
     @Transactional
     public void run(String... args) throws Exception {
@@ -46,23 +43,53 @@ public class DataSeeder implements CommandLineRunner {
 
         log.info("Starting DataSeeder...");
 
-        if (englishA1SeedFile.exists()) {
-            try (InputStream is = englishA1SeedFile.getInputStream()) {
-                SeedDataDto seedData = objectMapper.readValue(is, SeedDataDto.class);
-                processSeedData(seedData);
-            }
-        } else {
-            log.warn("Seed file not found: seed-data/english_a1.json");
+        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+        Resource[] seedFiles = resolver.getResources("classpath:seed-data/*.json");
+
+        if (seedFiles.length == 0) {
+            log.warn("No seed files found in classpath:seed-data/");
+            return;
         }
-        
+
+        log.info("Found {} seed file(s) to process.", seedFiles.length);
+
+        for (Resource seedFile : seedFiles) {
+            String filename = seedFile.getFilename();
+            log.info("Processing seed file: {}", filename);
+
+            try (InputStream is = seedFile.getInputStream()) {
+                SeedDataDto seedData = objectMapper.readValue(is, SeedDataDto.class);
+
+                if (isAlreadySeeded(seedData)) {
+                    log.info("Skipping {} — data already exists for {}/{}", filename, seedData.getLanguageCode(), seedData.getLevelCode());
+                    continue;
+                }
+
+                processSeedData(seedData);
+                log.info("Successfully seeded data from: {}", filename);
+            } catch (Exception e) {
+                log.error("Failed to process seed file: {}", filename, e);
+            }
+        }
+
         log.info("DataSeeder finished.");
+    }
+
+    private boolean isAlreadySeeded(SeedDataDto dto) {
+        Language language = languageRepository.findByCode(dto.getLanguageCode()).orElse(null);
+        if (language == null) return false;
+
+        Level level = levelRepository.findByLanguageIdAndCode(language.getId(), dto.getLevelCode()).orElse(null);
+        if (level == null) return false;
+
+        return moduleRepository.existsByLevelId(level.getId());
     }
 
     private void processSeedData(SeedDataDto dto) {
         log.info("Processing seed data for Language: {}, Level: {}", dto.getLanguageCode(), dto.getLevelCode());
         Language language = languageRepository.findByCode(dto.getLanguageCode())
                 .orElseThrow(() -> new RuntimeException("Language not found: " + dto.getLanguageCode()));
-                
+
         Level level = levelRepository.findByLanguageIdAndCode(language.getId(), dto.getLevelCode())
                 .orElseThrow(() -> new RuntimeException("Level not found: " + dto.getLevelCode() + " for language: " + language.getCode()));
 

@@ -11,4 +11,5 @@ import java.util.UUID;
 @Repository
 public interface ModuleRepository extends JpaRepository<Module, UUID> {
     Page<Module> findByLevelId(UUID levelId, Pageable pageable);
+    boolean existsByLevelId(UUID levelId);
 }
