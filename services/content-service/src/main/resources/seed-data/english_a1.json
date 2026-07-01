@@ -5,63 +5,174 @@
     {
       "type": "GRAMMAR",
       "title": "Present Simple Basics",
-      "description": "Learn the fundamentals of present simple verbs.",
+      "description": "Learn to make sentences in the present simple tense — the most common tense in English. Cover subject-verb agreement, negatives, and questions.",
       "sortOrder": 1,
       "lessons": [
         {
           "title": "I, You, We, They",
-          "description": "How to use regular verbs in present simple with plural pronouns.",
+          "description": "Learn how to use the base form of verbs with plural pronouns and 'I'.",
           "sortOrder": 1,
-          "estimatedMinutes": 5,
-          "xpReward": 10,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
           "content": [
             {
               "contentType": "EXPLANATION",
               "sortOrder": 1,
-              "title": "Present Simple Tense",
+              "title": "Subject-Verb Agreement: Plural Subjects",
               "body": {
-                "html": "<p>We use the present simple for habits and facts. For <b>I</b>, <b>you</b>, <b>we</b>, and <b>they</b>, use the base form of the verb.</p>",
-                "tips": ["I eat apples.", "They drink water."]
+                "html": "<p>With the pronouns <b>I</b>, <b>you</b>, <b>we</b>, and <b>they</b>, we use the <b>base form</b> of the verb — no changes needed.</p><ul><li>I <b>eat</b> breakfast at 8 o'clock.</li><li>You <b>live</b> near the park.</li><li>We <b>work</b> in an office.</li><li>They <b>play</b> football on Saturdays.</li></ul><p>The base form is the simplest version of the verb: eat, live, work, play.</p>",
+                "tips": [
+                  "Think: I/you/we/they + verb (no change).",
+                  "'You' is the same for one person and many people in English."
+                ]
               }
             },
             {
               "contentType": "QUIZ_MCQ",
               "sortOrder": 2,
-              "title": "Knowledge Check",
+              "title": "Choose the correct verb form",
               "body": {
-                "question": "They ___ coffee every morning.",
-                "options": ["drinks", "drink", "drinking"],
+                "question": "We ___ English every day.",
+                "options": ["studies", "study", "studys", "studying"],
                 "correct": 1,
-                "explanation": "Use 'drink' with 'They'."
+                "explanation": "'We' takes the base form of the verb. The correct form is 'study'."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build the sentence",
+              "body": {
+                "words": ["They", "coffee", "in the morning", "drink"],
+                "correct": ["They", "drink", "coffee", "in the morning"],
+                "translation": "They drink coffee in the morning."
               }
             }
           ]
         },
         {
           "title": "He, She, It",
-          "description": "How to use regular verbs in present simple with singular pronouns.",
+          "description": "Learn the third-person singular rule: adding -s or -es to verbs.",
           "sortOrder": 2,
-          "estimatedMinutes": 5,
-          "xpReward": 10,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
           "content": [
             {
               "contentType": "EXPLANATION",
               "sortOrder": 1,
-              "title": "Adding -s or -es",
+              "title": "Third-Person Singular: Adding -s / -es",
               "body": {
-                "html": "<p>For <b>he</b>, <b>she</b>, and <b>it</b>, add <b>-s</b> or <b>-es</b> to the verb.</p>",
-                "tips": ["He eats apples.", "She watches TV."]
+                "html": "<p>With <b>he</b>, <b>she</b>, and <b>it</b>, we add <b>-s</b> or <b>-es</b> to the verb.</p><h4>General rule: add -s</h4><ul><li>She <b>reads</b> books.</li><li>He <b>works</b> at a hospital.</li></ul><h4>Verbs ending in -s, -sh, -ch, -x, -o: add -es</h4><ul><li>He <b>watches</b> TV.</li><li>She <b>goes</b> to school.</li></ul><h4>Verbs ending in consonant + y: change y → ies</h4><ul><li>He stud<b>ies</b> (study → studies).</li><li>She carr<b>ies</b> (carry → carries).</li></ul>",
+                "tips": [
+                  "Remember: he/she/it = verb + s (or -es).",
+                  "'Have' is special: he/she/it HAS (not 'haves')."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Fill in the blank",
+              "body": {
+                "sentence": "She ___ to work by bus.",
+                "answer": "goes",
+                "alternatives": [],
+                "explanation": "'Go' ends in -o, so we add -es for he/she/it: 'goes'."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Pick the right form",
+              "body": {
+                "question": "He ___ three languages.",
+                "options": ["speak", "speaks", "speakes", "speaking"],
+                "correct": 1,
+                "explanation": "'He' requires the -s form. 'Speak' becomes 'speaks'."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Negative Sentences",
+          "description": "Learn to make negative sentences with don't and doesn't.",
+          "sortOrder": 3,
+          "estimatedMinutes": 10,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Making Negatives: Don't & Doesn't",
+              "body": {
+                "html": "<p>To make a negative sentence in the present simple, use <b>don't</b> or <b>doesn't</b> + the <b>base form</b> of the verb.</p><h4>I / you / we / they + don't + verb</h4><ul><li>I <b>don't like</b> spicy food.</li><li>They <b>don't live</b> in London.</li></ul><h4>He / she / it + doesn't + verb</h4><ul><li>She <b>doesn't work</b> on Sundays.</li><li>He <b>doesn't eat</b> meat.</li></ul><p><b>Important:</b> After 'doesn't', the verb returns to the base form — no -s!</p>",
+                "tips": [
+                  "don't = do not, doesn't = does not.",
+                  "Common mistake: 'He doesn't likes' ✗ → 'He doesn't like' ✓"
+                ]
               }
             },
             {
               "contentType": "QUIZ_MCQ",
               "sortOrder": 2,
-              "title": "Knowledge Check",
+              "title": "Choose the correct negative",
               "body": {
-                "question": "She ___ a book.",
-                "options": ["read", "reading", "reads"],
+                "question": "She ___ coffee.",
+                "options": ["don't drink", "doesn't drinks", "doesn't drink", "not drinks"],
                 "correct": 2,
-                "explanation": "Add -s to the verb for 'She'."
+                "explanation": "'She' uses 'doesn't' + base form. 'Doesn't drink' is correct."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build the negative sentence",
+              "body": {
+                "words": ["We", "don't", "on Mondays", "work"],
+                "correct": ["We", "don't", "work", "on Mondays"],
+                "translation": "We don't work on Mondays."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Questions",
+          "description": "Learn to ask yes/no questions with Do and Does.",
+          "sortOrder": 4,
+          "estimatedMinutes": 12,
+          "xpReward": 15,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Asking Questions: Do & Does",
+              "body": {
+                "html": "<p>To ask a yes/no question in the present simple, put <b>Do</b> or <b>Does</b> at the start of the sentence.</p><h4>Do + I/you/we/they + verb?</h4><ul><li><b>Do</b> you <b>like</b> pizza?</li><li><b>Do</b> they <b>live</b> here?</li></ul><h4>Does + he/she/it + verb?</h4><ul><li><b>Does</b> she <b>speak</b> French?</li><li><b>Does</b> he <b>work</b> here?</li></ul><p><b>Important:</b> After 'Does', use the base form — no -s on the verb!</p><h4>Short answers</h4><ul><li>Yes, I do. / No, I don't.</li><li>Yes, she does. / No, she doesn't.</li></ul>",
+                "tips": [
+                  "Question word order: Do/Does + subject + base verb + ...?",
+                  "Never say 'Does she speaks?' — always base form after does."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Complete the question",
+              "body": {
+                "sentence": "___ he play tennis?",
+                "answer": "Does",
+                "alternatives": [],
+                "explanation": "'He' is third-person singular, so we use 'Does' to start the question."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Build the question",
+              "body": {
+                "words": ["Do", "like", "you", "chocolate", "?"],
+                "correct": ["Do", "you", "like", "chocolate", "?"],
+                "translation": "Do you like chocolate?"
               }
             }
           ]
@@ -69,26 +180,158 @@
       ],
       "flashcardDecks": [
         {
-          "title": "Present Simple Verbs",
-          "description": "Common verbs in present simple",
+          "title": "25 Common A1 Verbs",
+          "description": "Master the 25 most useful everyday verbs at the A1 level. Each card shows the verb and a simple example sentence.",
           "flashcards": [
             {
-              "front": { "text": "to eat", "pronunciation": "/iːt/" },
-              "back": { "text": "comer (Spanish), manger (French), 食べる (Japanese)", "example": "I eat apples.", "notes": "regular verb" },
-              "tags": ["verb", "A1"],
+              "front": { "text": "eat", "pronunciation": "/iːt/" },
+              "back": { "text": "to put food in your mouth and swallow it", "example": "I eat breakfast at 7 o'clock.", "notes": "he/she/it eats" },
+              "tags": ["verb", "daily-routine", "food"],
               "sortOrder": 1
             },
             {
-              "front": { "text": "to drink", "pronunciation": "/drɪŋk/" },
-              "back": { "text": "beber (Spanish), boire (French), 飲む (Japanese)", "example": "They drink water.", "notes": "irregular past" },
-              "tags": ["verb", "A1"],
+              "front": { "text": "drink", "pronunciation": "/drɪŋk/" },
+              "back": { "text": "to take liquid into your mouth and swallow it", "example": "She drinks water every morning.", "notes": "he/she/it drinks" },
+              "tags": ["verb", "daily-routine", "food"],
               "sortOrder": 2
             },
             {
-              "front": { "text": "to read", "pronunciation": "/riːd/" },
-              "back": { "text": "leer (Spanish), lire (French), 読む (Japanese)", "example": "She reads a book.", "notes": "irregular past" },
-              "tags": ["verb", "A1"],
+              "front": { "text": "read", "pronunciation": "/riːd/" },
+              "back": { "text": "to look at and understand written words", "example": "They read the newspaper.", "notes": "he/she/it reads; past tense: read /rɛd/" },
+              "tags": ["verb", "hobby"],
               "sortOrder": 3
+            },
+            {
+              "front": { "text": "write", "pronunciation": "/raɪt/" },
+              "back": { "text": "to make words on paper or a screen", "example": "I write emails at work.", "notes": "he/she/it writes" },
+              "tags": ["verb", "work"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "go", "pronunciation": "/ɡoʊ/" },
+              "back": { "text": "to move to a different place", "example": "We go to school by bus.", "notes": "he/she/it goes (irregular -es)" },
+              "tags": ["verb", "movement"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "come", "pronunciation": "/kʌm/" },
+              "back": { "text": "to move towards the speaker or a place", "example": "Come here, please!", "notes": "he/she/it comes" },
+              "tags": ["verb", "movement"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "work", "pronunciation": "/wɜːrk/" },
+              "back": { "text": "to do a job or activity", "example": "He works in a hospital.", "notes": "he/she/it works" },
+              "tags": ["verb", "work"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "play", "pronunciation": "/pleɪ/" },
+              "back": { "text": "to do a sport or game for fun", "example": "The children play in the park.", "notes": "he/she/it plays" },
+              "tags": ["verb", "hobby", "sport"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "live", "pronunciation": "/lɪv/" },
+              "back": { "text": "to have your home in a place", "example": "I live in a small apartment.", "notes": "he/she/it lives" },
+              "tags": ["verb", "home"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "like", "pronunciation": "/laɪk/" },
+              "back": { "text": "to enjoy something or think it is nice", "example": "Do you like chocolate?", "notes": "he/she/it likes" },
+              "tags": ["verb", "opinion"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "want", "pronunciation": "/wɑːnt/" },
+              "back": { "text": "to wish for something or desire it", "example": "I want a glass of water.", "notes": "he/she/it wants" },
+              "tags": ["verb", "desire"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "have", "pronunciation": "/hæv/" },
+              "back": { "text": "to own or possess something", "example": "She has two cats.", "notes": "he/she/it HAS (irregular)" },
+              "tags": ["verb", "possession"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "make", "pronunciation": "/meɪk/" },
+              "back": { "text": "to create or produce something", "example": "I make dinner every evening.", "notes": "he/she/it makes" },
+              "tags": ["verb", "daily-routine"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "take", "pronunciation": "/teɪk/" },
+              "back": { "text": "to get or carry something", "example": "Take your umbrella — it's raining.", "notes": "he/she/it takes" },
+              "tags": ["verb", "action"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "give", "pronunciation": "/ɡɪv/" },
+              "back": { "text": "to hand something to someone", "example": "Please give me the book.", "notes": "he/she/it gives" },
+              "tags": ["verb", "action"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "see", "pronunciation": "/siː/" },
+              "back": { "text": "to use your eyes to look at something", "example": "I see a bird in the tree.", "notes": "he/she/it sees" },
+              "tags": ["verb", "senses"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "know", "pronunciation": "/noʊ/" },
+              "back": { "text": "to have information or understanding about something", "example": "I know the answer.", "notes": "he/she/it knows" },
+              "tags": ["verb", "thinking"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "think", "pronunciation": "/θɪŋk/" },
+              "back": { "text": "to use your mind to consider something", "example": "I think this is a good idea.", "notes": "he/she/it thinks" },
+              "tags": ["verb", "thinking"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "say", "pronunciation": "/seɪ/" },
+              "back": { "text": "to speak words", "example": "She says 'hello' every morning.", "notes": "he/she/it says /sɛz/" },
+              "tags": ["verb", "communication"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "tell", "pronunciation": "/tɛl/" },
+              "back": { "text": "to give information to someone", "example": "Tell me your name, please.", "notes": "he/she/it tells" },
+              "tags": ["verb", "communication"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "run", "pronunciation": "/rʌn/" },
+              "back": { "text": "to move quickly on your feet", "example": "They run in the park every morning.", "notes": "he/she/it runs" },
+              "tags": ["verb", "movement", "sport"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "walk", "pronunciation": "/wɔːk/" },
+              "back": { "text": "to move on foot at a normal speed", "example": "We walk to school.", "notes": "he/she/it walks" },
+              "tags": ["verb", "movement"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "sleep", "pronunciation": "/sliːp/" },
+              "back": { "text": "to rest with your eyes closed at night", "example": "I sleep eight hours every night.", "notes": "he/she/it sleeps" },
+              "tags": ["verb", "daily-routine"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "cook", "pronunciation": "/kʊk/" },
+              "back": { "text": "to prepare food using heat", "example": "He cooks pasta for dinner.", "notes": "he/she/it cooks" },
+              "tags": ["verb", "food", "daily-routine"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "open", "pronunciation": "/ˈoʊ.pən/" },
+              "back": { "text": "to make something not closed", "example": "Please open the window.", "notes": "he/she/it opens" },
+              "tags": ["verb", "action"],
+              "sortOrder": 25
             }
           ]
         }
@@ -96,24 +339,177 @@
     },
     {
       "type": "VOCABULARY",
-      "title": "Basic Greetings",
-      "description": "Learn how to say hello and goodbye.",
+      "title": "Everyday Essentials",
+      "description": "Build your basic English vocabulary — greetings, numbers, days, months, colors, and shapes you need for everyday life.",
       "sortOrder": 2,
       "lessons": [
         {
-          "title": "Saying Hello",
-          "description": "Common ways to greet people.",
+          "title": "Greetings & Introductions",
+          "description": "Learn how to say hello, goodbye, and introduce yourself in English.",
           "sortOrder": 1,
-          "estimatedMinutes": 5,
+          "estimatedMinutes": 8,
           "xpReward": 10,
           "content": [
             {
               "contentType": "EXPLANATION",
               "sortOrder": 1,
-              "title": "Formal vs Informal",
+              "title": "Saying Hello & Goodbye",
               "body": {
-                "html": "<p>Use <b>Hello</b> or <b>Good morning</b> in formal situations. Use <b>Hi</b> or <b>Hey</b> with friends.</p>",
-                "tips": ["Hello, Mr. Smith.", "Hi, Sarah!"]
+                "html": "<p>English has different greetings for different times of day and levels of formality.</p><h4>Saying hello</h4><ul><li><b>Hello</b> / <b>Hi</b> — any time, any situation</li><li><b>Good morning</b> — before 12:00 PM</li><li><b>Good afternoon</b> — 12:00 PM to ~6:00 PM</li><li><b>Good evening</b> — after ~6:00 PM</li></ul><h4>Introducing yourself</h4><ul><li><b>My name is</b> Maria. / <b>I'm</b> Maria.</li><li><b>Nice to meet you.</b></li><li><b>How are you?</b> — I'm fine, thank you.</li></ul><h4>Saying goodbye</h4><ul><li><b>Goodbye</b> / <b>Bye</b></li><li><b>See you later</b> / <b>See you tomorrow</b></li><li><b>Good night</b> — only when leaving at night or going to sleep</li></ul>",
+                "tips": [
+                  "'Good night' is a goodbye, NOT a greeting. Don't use it to say hello.",
+                  "'How are you?' is often just a greeting — people expect a short answer like 'Fine, thanks.'"
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Choose the right greeting",
+              "body": {
+                "question": "It's 9:00 AM. You meet your teacher. What do you say?",
+                "options": ["Good night!", "Good evening!", "Good morning!", "See you later!"],
+                "correct": 2,
+                "explanation": "Before 12:00 PM, we say 'Good morning'."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete the introduction",
+              "body": {
+                "sentence": "Hi! My ___ is Anna. Nice to meet you!",
+                "answer": "name",
+                "alternatives": [],
+                "explanation": "The standard introduction phrase is 'My name is [name]'."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Numbers 1–20",
+          "description": "Learn to count from 1 to 20 and use numbers for ages and phone numbers.",
+          "sortOrder": 2,
+          "estimatedMinutes": 10,
+          "xpReward": 10,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Counting 1–20",
+              "body": {
+                "html": "<p>Here are the English numbers from 1 to 20:</p><table><tr><td>1 — one</td><td>6 — six</td><td>11 — eleven</td><td>16 — sixteen</td></tr><tr><td>2 — two</td><td>7 — seven</td><td>12 — twelve</td><td>17 — seventeen</td></tr><tr><td>3 — three</td><td>8 — eight</td><td>13 — thirteen</td><td>18 — eighteen</td></tr><tr><td>4 — four</td><td>9 — nine</td><td>14 — fourteen</td><td>19 — nineteen</td></tr><tr><td>5 — five</td><td>10 — ten</td><td>15 — fifteen</td><td>20 — twenty</td></tr></table><h4>Using numbers</h4><ul><li><b>Age:</b> I am <b>twelve</b> years old.</li><li><b>Phone numbers:</b> say each digit: 0-7-9-3-5-1-2-8-4-6</li><li><b>Quantity:</b> I have <b>three</b> brothers.</li></ul>",
+                "tips": [
+                  "11 and 12 are unique words (eleven, twelve) — not 'oneteen' or 'twoteen'.",
+                  "13–19 end in '-teen'. The stress is on '-teen': thirTEEN, fourTEEN."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "What number is this?",
+              "body": {
+                "question": "Which number is 'fifteen'?",
+                "options": ["5", "14", "15", "50"],
+                "correct": 2,
+                "explanation": "Fifteen = 15. Five = 5, fourteen = 14, fifty = 50."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Write the number word",
+              "body": {
+                "sentence": "I have ___ sisters. (2)",
+                "answer": "two",
+                "alternatives": [],
+                "explanation": "The word for the number 2 is 'two'. Be careful: 'two', 'too', and 'to' sound the same!"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Days & Months",
+          "description": "Learn the days of the week and months of the year in English.",
+          "sortOrder": 3,
+          "estimatedMinutes": 10,
+          "xpReward": 10,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Days of the Week & Months of the Year",
+              "body": {
+                "html": "<h4>Days of the week</h4><ol><li><b>Monday</b></li><li><b>Tuesday</b></li><li><b>Wednesday</b> (silent 'd': /ˈwɛnz.deɪ/)</li><li><b>Thursday</b></li><li><b>Friday</b></li><li><b>Saturday</b></li><li><b>Sunday</b></li></ol><h4>Months of the year</h4><p><b>January, February, March, April, May, June, July, August, September, October, November, December</b></p><h4>Key rules</h4><ul><li>Days and months always start with a <b>capital letter</b>.</li><li>Use <b>on</b> with days: <i>on Monday</i>, <i>on Friday</i>.</li><li>Use <b>in</b> with months: <i>in January</i>, <i>in March</i>.</li></ul>",
+                "tips": [
+                  "The 'd' in 'Wednesday' is silent. Say: WENZ-day.",
+                  "In English, the week often starts on Monday (business) or Sunday (calendars)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Preposition practice",
+              "body": {
+                "question": "My birthday is ___ July.",
+                "options": ["on", "at", "in", "to"],
+                "correct": 2,
+                "explanation": "We use 'in' with months: in July, in March, in December."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Order the days",
+              "body": {
+                "words": ["Wednesday", "Monday", "Friday", "Tuesday", "Thursday"],
+                "correct": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "translation": "The five weekdays in order."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Colors & Shapes",
+          "description": "Learn the names of basic colors and common shapes.",
+          "sortOrder": 4,
+          "estimatedMinutes": 8,
+          "xpReward": 10,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Basic Colors & Shapes",
+              "body": {
+                "html": "<h4>Colors</h4><ul><li>🔴 <b>red</b></li><li>🔵 <b>blue</b></li><li>🟢 <b>green</b></li><li>🟡 <b>yellow</b></li><li>🟠 <b>orange</b></li><li>🟣 <b>purple</b></li><li>⚫ <b>black</b></li><li>⚪ <b>white</b></li><li>🟤 <b>brown</b></li><li>🩷 <b>pink</b></li></ul><h4>Shapes</h4><ul><li>⬜ <b>square</b> — 4 equal sides</li><li>▶ <b>triangle</b> — 3 sides</li><li>⬤ <b>circle</b> — round, no sides</li><li>▬ <b>rectangle</b> — 4 sides, 2 long and 2 short</li><li>⭐ <b>star</b> — has points</li></ul><p>Colors go <b>before</b> the noun: a <b>red</b> car, a <b>blue</b> circle.</p>",
+                "tips": [
+                  "In English, colors are adjectives and go BEFORE the noun: 'a blue sky' (not 'a sky blue').",
+                  "'Orange' is both a color and a fruit!"
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Identify the shape",
+              "body": {
+                "question": "A shape with three sides is called a ___.",
+                "options": ["square", "circle", "triangle", "rectangle"],
+                "correct": 2,
+                "explanation": "A triangle has exactly 3 sides. 'Tri' means three."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Name the color",
+              "body": {
+                "sentence": "The sky is ___ on a sunny day.",
+                "answer": "blue",
+                "alternatives": [],
+                "explanation": "The sky is typically blue on a clear, sunny day."
               }
             }
           ]
@@ -121,14 +517,422 @@
       ],
       "flashcardDecks": [
         {
-          "title": "Greetings",
-          "description": "Hello and Goodbye",
+          "title": "Essential A1 Vocabulary",
+          "description": "25 essential words covering greetings, numbers, days, colors, and shapes for everyday English.",
           "flashcards": [
             {
-              "front": { "text": "Hello", "pronunciation": "/həˈləʊ/" },
-              "back": { "text": "Hola (Spanish), Bonjour (French), こんにちは (Japanese)", "example": "Hello, how are you?", "notes": "formal" },
-              "tags": ["greeting", "A1"],
+              "front": { "text": "hello", "pronunciation": "/həˈloʊ/" },
+              "back": { "text": "a word used to greet someone", "example": "Hello! How are you?", "notes": "Informal: Hi" },
+              "tags": ["greeting"],
               "sortOrder": 1
+            },
+            {
+              "front": { "text": "goodbye", "pronunciation": "/ɡʊdˈbaɪ/" },
+              "back": { "text": "a word used when you leave or someone leaves", "example": "Goodbye! See you tomorrow.", "notes": "Informal: Bye" },
+              "tags": ["greeting"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "please", "pronunciation": "/pliːz/" },
+              "back": { "text": "a polite word used when asking for something", "example": "Can I have some water, please?", "notes": "Always use 'please' when making requests." },
+              "tags": ["politeness"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "thank you", "pronunciation": "/θæŋk juː/" },
+              "back": { "text": "words used to show you are grateful", "example": "Thank you for your help!", "notes": "Informal: Thanks" },
+              "tags": ["politeness"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "sorry", "pronunciation": "/ˈsɑːr.i/" },
+              "back": { "text": "a word used to apologize or show sympathy", "example": "Sorry, I'm late!", "notes": "Also used to get attention: 'Sorry, where is the station?'" },
+              "tags": ["politeness"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "Monday", "pronunciation": "/ˈmʌn.deɪ/" },
+              "back": { "text": "the first day of the work week", "example": "I start work on Monday.", "notes": "Always capitalized. Use 'on': on Monday." },
+              "tags": ["days"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "Friday", "pronunciation": "/ˈfraɪ.deɪ/" },
+              "back": { "text": "the fifth day of the week; last workday", "example": "We have a meeting on Friday.", "notes": "TGIF = Thank God It's Friday" },
+              "tags": ["days"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "January", "pronunciation": "/ˈdʒæn.ju.ɛr.i/" },
+              "back": { "text": "the first month of the year", "example": "My birthday is in January.", "notes": "Always capitalized. Use 'in': in January." },
+              "tags": ["months"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "December", "pronunciation": "/dɪˈsɛm.bər/" },
+              "back": { "text": "the twelfth and last month of the year", "example": "Christmas is in December.", "notes": "Winter month in the Northern Hemisphere." },
+              "tags": ["months"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "red", "pronunciation": "/rɛd/" },
+              "back": { "text": "the color of blood or a stop sign", "example": "She has a red dress.", "notes": "Color adjective — goes before the noun." },
+              "tags": ["color"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "blue", "pronunciation": "/bluː/" },
+              "back": { "text": "the color of the sky on a clear day", "example": "The ocean is blue.", "notes": "'Feeling blue' = feeling sad." },
+              "tags": ["color"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "green", "pronunciation": "/ɡriːn/" },
+              "back": { "text": "the color of grass and leaves", "example": "I like the green shirt.", "notes": "Also means environmentally friendly." },
+              "tags": ["color"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "yellow", "pronunciation": "/ˈjɛl.oʊ/" },
+              "back": { "text": "the color of the sun or a banana", "example": "The taxi is yellow.", "notes": "" },
+              "tags": ["color"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "black", "pronunciation": "/blæk/" },
+              "back": { "text": "the darkest color; the color of night", "example": "He wears a black jacket.", "notes": "" },
+              "tags": ["color"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "white", "pronunciation": "/waɪt/" },
+              "back": { "text": "the lightest color; the color of snow", "example": "The walls are white.", "notes": "" },
+              "tags": ["color"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "circle", "pronunciation": "/ˈsɜːr.kəl/" },
+              "back": { "text": "a round shape with no corners", "example": "Draw a circle on the paper.", "notes": "A clock face is a circle." },
+              "tags": ["shape"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "square", "pronunciation": "/skwɛr/" },
+              "back": { "text": "a shape with 4 equal sides and 4 right angles", "example": "The window is a square.", "notes": "Also a public open area in a city: 'Times Square'." },
+              "tags": ["shape"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "triangle", "pronunciation": "/ˈtraɪ.æŋ.ɡəl/" },
+              "back": { "text": "a shape with 3 sides", "example": "A pizza slice looks like a triangle.", "notes": "'Tri' = three" },
+              "tags": ["shape"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "one", "pronunciation": "/wʌn/" },
+              "back": { "text": "the number 1", "example": "I have one brother.", "notes": "Sounds like 'won'." },
+              "tags": ["number"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "ten", "pronunciation": "/tɛn/" },
+              "back": { "text": "the number 10", "example": "There are ten students in the class.", "notes": "" },
+              "tags": ["number"],
+              "sortOrder": 20
+            },
+            {
+              "front": { "text": "twenty", "pronunciation": "/ˈtwɛn.ti/" },
+              "back": { "text": "the number 20", "example": "She is twenty years old.", "notes": "" },
+              "tags": ["number"],
+              "sortOrder": 21
+            },
+            {
+              "front": { "text": "yes", "pronunciation": "/jɛs/" },
+              "back": { "text": "a word used to agree or give a positive answer", "example": "Yes, I like coffee.", "notes": "Informal: Yeah, Yep" },
+              "tags": ["basic"],
+              "sortOrder": 22
+            },
+            {
+              "front": { "text": "no", "pronunciation": "/noʊ/" },
+              "back": { "text": "a word used to disagree or give a negative answer", "example": "No, I don't have a car.", "notes": "Informal: Nope" },
+              "tags": ["basic"],
+              "sortOrder": 23
+            },
+            {
+              "front": { "text": "name", "pronunciation": "/neɪm/" },
+              "back": { "text": "the word that identifies a person or thing", "example": "My name is David.", "notes": "First name = given name; last name = family name." },
+              "tags": ["introduction"],
+              "sortOrder": 24
+            },
+            {
+              "front": { "text": "friend", "pronunciation": "/frɛnd/" },
+              "back": { "text": "a person you know well and like", "example": "She is my best friend.", "notes": "Plural: friends" },
+              "tags": ["people"],
+              "sortOrder": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "PHRASAL_VERBS",
+      "title": "First Phrasal Verbs",
+      "description": "Phrasal verbs are very common in everyday English. Start with the easiest and most useful ones for daily routines, electronics, and clothing.",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "title": "Wake Up & Get Up",
+          "description": "Learn phrasal verbs for your morning routine.",
+          "sortOrder": 1,
+          "estimatedMinutes": 8,
+          "xpReward": 10,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Morning Routine Phrasal Verbs",
+              "body": {
+                "html": "<p>A <b>phrasal verb</b> is a verb + a small word (particle) that together have a special meaning.</p><h4>wake up</h4><p>= to stop sleeping</p><ul><li>I <b>wake up</b> at 7 o'clock.</li><li>She <b>wakes up</b> early on weekdays.</li></ul><h4>get up</h4><p>= to get out of bed and stand</p><ul><li>I <b>get up</b> and take a shower.</li><li>He doesn't <b>get up</b> until 9 on Sundays.</li></ul><h4>What's the difference?</h4><p>You can <b>wake up</b> (open your eyes) but stay in bed. When you <b>get up</b>, you leave the bed.</p>",
+                "tips": [
+                  "wake up = eyes open; get up = out of bed.",
+                  "These are separable: 'Wake me up at 7' or 'Wake up at 7'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Wake up vs. Get up",
+              "body": {
+                "question": "My alarm rings at 6:00, but I ___ at 6:30. (= I leave my bed at 6:30)",
+                "options": ["wake up", "get up", "go up", "stand up"],
+                "correct": 1,
+                "explanation": "'Get up' means to leave your bed. You wake up when the alarm rings, but you get up later."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Complete the sentence",
+              "body": {
+                "sentence": "I always ___ up early on Monday mornings.",
+                "answer": "wake",
+                "alternatives": ["get"],
+                "explanation": "Both 'wake up' and 'get up' work here. 'Wake up' = stop sleeping; 'get up' = leave bed."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Turn On & Turn Off",
+          "description": "Learn phrasal verbs for electronics, lights, and appliances.",
+          "sortOrder": 2,
+          "estimatedMinutes": 8,
+          "xpReward": 10,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Turn On & Turn Off",
+              "body": {
+                "html": "<h4>turn on</h4><p>= to start a machine, light, or device</p><ul><li><b>Turn on</b> the TV, please.</li><li>She <b>turns on</b> the computer every morning.</li></ul><h4>turn off</h4><p>= to stop a machine, light, or device</p><ul><li>Please <b>turn off</b> the lights.</li><li>He <b>turns off</b> his phone at night.</li></ul><h4>Separable phrasal verbs</h4><p>You can put the object between the verb and the particle:</p><ul><li>Turn <b>the light</b> on. = Turn on <b>the light</b>.</li><li>Turn <b>it</b> off. (with pronouns, you MUST separate: <b>not</b> 'turn off it')</li></ul>",
+                "tips": [
+                  "With pronouns (it, them), always separate: 'Turn it on' ✓ / 'Turn on it' ✗",
+                  "Similar: switch on / switch off (more British English)."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 2,
+              "title": "Build the sentence",
+              "body": {
+                "words": ["Please", "the", "turn", "off", "light"],
+                "correct": ["Please", "turn", "off", "the", "light"],
+                "translation": "Please turn off the light."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Pronoun placement",
+              "body": {
+                "question": "The radio is too loud. Please turn ___.",
+                "options": ["off it", "it off", "it on", "on it"],
+                "correct": 1,
+                "explanation": "With pronouns, you must separate: 'turn it off'. 'Turn off it' is incorrect."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Put On & Take Off",
+          "description": "Learn phrasal verbs for getting dressed and undressed.",
+          "sortOrder": 3,
+          "estimatedMinutes": 8,
+          "xpReward": 10,
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Put On & Take Off (Clothing)",
+              "body": {
+                "html": "<h4>put on</h4><p>= to place clothing on your body</p><ul><li><b>Put on</b> your jacket — it's cold!</li><li>She <b>puts on</b> her shoes before leaving.</li></ul><h4>take off</h4><p>= to remove clothing from your body</p><ul><li><b>Take off</b> your coat when you come inside.</li><li>He <b>takes off</b> his tie after work.</li></ul><h4>Separable</h4><p>Like 'turn on/off', these are separable:</p><ul><li>Put <b>your hat</b> on. = Put on <b>your hat</b>.</li><li>Take <b>it</b> off. (pronoun must go in the middle)</li></ul>",
+                "tips": [
+                  "put on ≠ wear. 'Put on' = the action of dressing. 'Wear' = having clothes on your body.",
+                  "'Take off' also means an airplane leaves the ground: 'The plane takes off at 3 PM.'"
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Complete the sentence",
+              "body": {
+                "sentence": "It's raining! ___ on your raincoat.",
+                "answer": "Put",
+                "alternatives": [],
+                "explanation": "'Put on' means to place clothing on your body. 'Put on your raincoat' = wear your raincoat because of the rain."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Put on vs. Take off",
+              "body": {
+                "question": "You arrive home and it's warm inside. You ___ your coat.",
+                "options": ["put on", "take off", "turn on", "get up"],
+                "correct": 1,
+                "explanation": "When it's warm and you don't need your coat, you 'take off' your coat (remove it)."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "20 Basic Phrasal Verbs",
+          "description": "The 20 most useful phrasal verbs for beginners. Each card shows the phrasal verb with a clear definition and example.",
+          "flashcards": [
+            {
+              "front": { "text": "wake up", "pronunciation": "/weɪk ʌp/" },
+              "back": { "text": "to stop sleeping", "example": "I wake up at 6:30 every morning.", "notes": "Separable: 'Wake me up at 7.'" },
+              "tags": ["phrasal-verb", "morning-routine"],
+              "sortOrder": 1
+            },
+            {
+              "front": { "text": "get up", "pronunciation": "/ɡɛt ʌp/" },
+              "back": { "text": "to get out of bed; to stand from a sitting position", "example": "I get up and take a shower.", "notes": "wake up = eyes open; get up = out of bed" },
+              "tags": ["phrasal-verb", "morning-routine"],
+              "sortOrder": 2
+            },
+            {
+              "front": { "text": "turn on", "pronunciation": "/tɜːrn ɒn/" },
+              "back": { "text": "to start a machine, light, or device", "example": "Turn on the TV — the movie starts now.", "notes": "Separable: 'Turn the TV on.' / 'Turn it on.'" },
+              "tags": ["phrasal-verb", "electronics"],
+              "sortOrder": 3
+            },
+            {
+              "front": { "text": "turn off", "pronunciation": "/tɜːrn ɒf/" },
+              "back": { "text": "to stop a machine, light, or device", "example": "Please turn off the lights before you leave.", "notes": "Separable: 'Turn it off.'" },
+              "tags": ["phrasal-verb", "electronics"],
+              "sortOrder": 4
+            },
+            {
+              "front": { "text": "put on", "pronunciation": "/pʊt ɒn/" },
+              "back": { "text": "to place clothing on your body", "example": "Put on your jacket — it's cold outside!", "notes": "put on = action of dressing ≠ wear = state" },
+              "tags": ["phrasal-verb", "clothing"],
+              "sortOrder": 5
+            },
+            {
+              "front": { "text": "take off", "pronunciation": "/teɪk ɒf/" },
+              "back": { "text": "to remove clothing; (airplane) to leave the ground", "example": "Take off your shoes at the door.", "notes": "Separable: 'Take your shoes off.' / 'Take them off.'" },
+              "tags": ["phrasal-verb", "clothing"],
+              "sortOrder": 6
+            },
+            {
+              "front": { "text": "sit down", "pronunciation": "/sɪt daʊn/" },
+              "back": { "text": "to move from standing to sitting", "example": "Please sit down and wait.", "notes": "Opposite: stand up" },
+              "tags": ["phrasal-verb", "movement"],
+              "sortOrder": 7
+            },
+            {
+              "front": { "text": "stand up", "pronunciation": "/stænd ʌp/" },
+              "back": { "text": "to move from sitting to standing", "example": "Stand up when the teacher comes in.", "notes": "Opposite: sit down" },
+              "tags": ["phrasal-verb", "movement"],
+              "sortOrder": 8
+            },
+            {
+              "front": { "text": "come in", "pronunciation": "/kʌm ɪn/" },
+              "back": { "text": "to enter a room or building", "example": "Come in! The door is open.", "notes": "Opposite: go out" },
+              "tags": ["phrasal-verb", "movement"],
+              "sortOrder": 9
+            },
+            {
+              "front": { "text": "go out", "pronunciation": "/ɡoʊ aʊt/" },
+              "back": { "text": "to leave a room, building, or your home", "example": "Let's go out for dinner tonight.", "notes": "Also means to socialize: 'go out with friends'" },
+              "tags": ["phrasal-verb", "movement"],
+              "sortOrder": 10
+            },
+            {
+              "front": { "text": "pick up", "pronunciation": "/pɪk ʌp/" },
+              "back": { "text": "to lift something from a surface with your hand", "example": "Pick up your bag from the floor.", "notes": "Separable: 'Pick it up.'" },
+              "tags": ["phrasal-verb", "action"],
+              "sortOrder": 11
+            },
+            {
+              "front": { "text": "put down", "pronunciation": "/pʊt daʊn/" },
+              "back": { "text": "to place something on a surface", "example": "Put down the book and listen.", "notes": "Opposite: pick up" },
+              "tags": ["phrasal-verb", "action"],
+              "sortOrder": 12
+            },
+            {
+              "front": { "text": "look at", "pronunciation": "/lʊk æt/" },
+              "back": { "text": "to direct your eyes toward something", "example": "Look at this picture!", "notes": "Inseparable: always 'look at' + object" },
+              "tags": ["phrasal-verb", "senses"],
+              "sortOrder": 13
+            },
+            {
+              "front": { "text": "listen to", "pronunciation": "/ˈlɪs.ən tuː/" },
+              "back": { "text": "to pay attention to sounds or someone speaking", "example": "Listen to the teacher, please.", "notes": "Inseparable: always 'listen to' + object" },
+              "tags": ["phrasal-verb", "senses"],
+              "sortOrder": 14
+            },
+            {
+              "front": { "text": "write down", "pronunciation": "/raɪt daʊn/" },
+              "back": { "text": "to write something on paper so you remember it", "example": "Write down your homework.", "notes": "Separable: 'Write it down.'" },
+              "tags": ["phrasal-verb", "school"],
+              "sortOrder": 15
+            },
+            {
+              "front": { "text": "come back", "pronunciation": "/kʌm bæk/" },
+              "back": { "text": "to return to a place", "example": "I'll come back at 5 o'clock.", "notes": "Inseparable" },
+              "tags": ["phrasal-verb", "movement"],
+              "sortOrder": 16
+            },
+            {
+              "front": { "text": "go back", "pronunciation": "/ɡoʊ bæk/" },
+              "back": { "text": "to return to a place you were before", "example": "We go back to school in September.", "notes": "Similar to 'come back' but direction is away from the speaker" },
+              "tags": ["phrasal-verb", "movement"],
+              "sortOrder": 17
+            },
+            {
+              "front": { "text": "throw away", "pronunciation": "/θroʊ əˈweɪ/" },
+              "back": { "text": "to put something in the trash; to discard", "example": "Throw away the old newspapers.", "notes": "Separable: 'Throw them away.'" },
+              "tags": ["phrasal-verb", "action"],
+              "sortOrder": 18
+            },
+            {
+              "front": { "text": "try on", "pronunciation": "/traɪ ɒn/" },
+              "back": { "text": "to put on clothing to see if it fits or looks good", "example": "Can I try on this shirt?", "notes": "Separable: 'Try it on.' Common in shops." },
+              "tags": ["phrasal-verb", "clothing", "shopping"],
+              "sortOrder": 19
+            },
+            {
+              "front": { "text": "look for", "pronunciation": "/lʊk fɔːr/" },
+              "back": { "text": "to try to find something", "example": "I'm looking for my keys.", "notes": "Inseparable: always 'look for' + object" },
+              "tags": ["phrasal-verb", "action"],
+              "sortOrder": 20
             }
           ]
         }
