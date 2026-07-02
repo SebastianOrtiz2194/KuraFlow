@@ -96,8 +96,20 @@
               "sortOrder": 3,
               "title": "Put the Words in Order",
               "body": {
-                "words": ["yesterday", "I", "a", "saw", "movie"],
-                "correct": ["I", "saw", "a", "movie", "yesterday"],
+                "words": [
+                  "yesterday",
+                  "I",
+                  "a",
+                  "saw",
+                  "movie"
+                ],
+                "correct": [
+                  "I",
+                  "saw",
+                  "a",
+                  "movie",
+                  "yesterday"
+                ],
                 "translation": "I saw a movie yesterday."
               }
             }
@@ -129,7 +141,9 @@
               "body": {
                 "sentence": "He ___ (not/like) the food.",
                 "answer": "didn't like",
-                "alternatives": ["did not like"],
+                "alternatives": [
+                  "did not like"
+                ],
                 "explanation": "To make a Past Simple negative, use 'didn't' + base form: didn't like."
               }
             },
@@ -138,8 +152,20 @@
               "sortOrder": 3,
               "title": "Form a Question",
               "body": {
-                "words": ["did", "where", "go", "you", "?"],
-                "correct": ["where", "did", "you", "go", "?"],
+                "words": [
+                  "did",
+                  "where",
+                  "go",
+                  "you",
+                  "?"
+                ],
+                "correct": [
+                  "where",
+                  "did",
+                  "you",
+                  "go",
+                  "?"
+                ],
                 "translation": "Where did you go?"
               }
             }
@@ -200,154 +226,1220 @@
           "description": "Master the most common irregular verbs in English at the A2 level. Each card shows the base form on the front and the past simple form on the back.",
           "flashcards": [
             {
-              "front": { "text": "go", "pronunciation": "/ɡoʊ/" },
-              "back": { "text": "went", "example": "I went to the cinema last night.", "notes": "One of the most common irregular verbs." },
-              "tags": ["irregular-verb", "movement"],
+              "front": {
+                "text": "go",
+                "pronunciation": "/ɡoʊ/"
+              },
+              "back": {
+                "text": "went",
+                "example": "I went to the cinema last night.",
+                "notes": "One of the most common irregular verbs."
+              },
+              "tags": [
+                "irregular-verb",
+                "movement"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "see", "pronunciation": "/siː/" },
-              "back": { "text": "saw", "example": "She saw a beautiful sunset.", "notes": "Past participle: seen." },
-              "tags": ["irregular-verb", "senses"],
+              "front": {
+                "text": "see",
+                "pronunciation": "/siː/"
+              },
+              "back": {
+                "text": "saw",
+                "example": "She saw a beautiful sunset.",
+                "notes": "Past participle: seen."
+              },
+              "tags": [
+                "irregular-verb",
+                "senses"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "eat", "pronunciation": "/iːt/" },
-              "back": { "text": "ate", "example": "We ate pizza for dinner.", "notes": "Pronounced /eɪt/." },
-              "tags": ["irregular-verb", "food"],
+              "front": {
+                "text": "eat",
+                "pronunciation": "/iːt/"
+              },
+              "back": {
+                "text": "ate",
+                "example": "We ate pizza for dinner.",
+                "notes": "Pronounced /eɪt/."
+              },
+              "tags": [
+                "irregular-verb",
+                "food"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "have", "pronunciation": "/hæv/" },
-              "back": { "text": "had", "example": "They had a great time at the party.", "notes": "Also used as an auxiliary: 'I had finished.'" },
-              "tags": ["irregular-verb", "essential"],
+              "front": {
+                "text": "have",
+                "pronunciation": "/hæv/"
+              },
+              "back": {
+                "text": "had",
+                "example": "They had a great time at the party.",
+                "notes": "Also used as an auxiliary: 'I had finished.'"
+              },
+              "tags": [
+                "irregular-verb",
+                "essential"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "come", "pronunciation": "/kʌm/" },
-              "back": { "text": "came", "example": "He came home early yesterday.", "notes": "" },
-              "tags": ["irregular-verb", "movement"],
+              "front": {
+                "text": "come",
+                "pronunciation": "/kʌm/"
+              },
+              "back": {
+                "text": "came",
+                "example": "He came home early yesterday.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "movement"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "take", "pronunciation": "/teɪk/" },
-              "back": { "text": "took", "example": "I took the bus to work.", "notes": "" },
-              "tags": ["irregular-verb", "action"],
+              "front": {
+                "text": "take",
+                "pronunciation": "/teɪk/"
+              },
+              "back": {
+                "text": "took",
+                "example": "I took the bus to work.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "action"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "make", "pronunciation": "/meɪk/" },
-              "back": { "text": "made", "example": "She made a cake for the party.", "notes": "" },
-              "tags": ["irregular-verb", "action"],
+              "front": {
+                "text": "make",
+                "pronunciation": "/meɪk/"
+              },
+              "back": {
+                "text": "made",
+                "example": "She made a cake for the party.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "action"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "buy", "pronunciation": "/baɪ/" },
-              "back": { "text": "bought", "example": "We bought new shoes at the mall.", "notes": "Pronounced /bɔːt/." },
-              "tags": ["irregular-verb", "shopping"],
+              "front": {
+                "text": "buy",
+                "pronunciation": "/baɪ/"
+              },
+              "back": {
+                "text": "bought",
+                "example": "We bought new shoes at the mall.",
+                "notes": "Pronounced /bɔːt/."
+              },
+              "tags": [
+                "irregular-verb",
+                "shopping"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "get", "pronunciation": "/ɡɛt/" },
-              "back": { "text": "got", "example": "I got a new phone for my birthday.", "notes": "Very versatile verb with many meanings." },
-              "tags": ["irregular-verb", "essential"],
+              "front": {
+                "text": "get",
+                "pronunciation": "/ɡɛt/"
+              },
+              "back": {
+                "text": "got",
+                "example": "I got a new phone for my birthday.",
+                "notes": "Very versatile verb with many meanings."
+              },
+              "tags": [
+                "irregular-verb",
+                "essential"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "give", "pronunciation": "/ɡɪv/" },
-              "back": { "text": "gave", "example": "She gave me a present.", "notes": "" },
-              "tags": ["irregular-verb", "action"],
+              "front": {
+                "text": "give",
+                "pronunciation": "/ɡɪv/"
+              },
+              "back": {
+                "text": "gave",
+                "example": "She gave me a present.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "action"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "think", "pronunciation": "/θɪŋk/" },
-              "back": { "text": "thought", "example": "I thought the film was great.", "notes": "Pronounced /θɔːt/." },
-              "tags": ["irregular-verb", "mental"],
+              "front": {
+                "text": "think",
+                "pronunciation": "/θɪŋk/"
+              },
+              "back": {
+                "text": "thought",
+                "example": "I thought the film was great.",
+                "notes": "Pronounced /θɔːt/."
+              },
+              "tags": [
+                "irregular-verb",
+                "mental"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "say", "pronunciation": "/seɪ/" },
-              "back": { "text": "said", "example": "He said he was tired.", "notes": "Pronounced /sɛd/." },
-              "tags": ["irregular-verb", "communication"],
+              "front": {
+                "text": "say",
+                "pronunciation": "/seɪ/"
+              },
+              "back": {
+                "text": "said",
+                "example": "He said he was tired.",
+                "notes": "Pronounced /sɛd/."
+              },
+              "tags": [
+                "irregular-verb",
+                "communication"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "tell", "pronunciation": "/tɛl/" },
-              "back": { "text": "told", "example": "She told me the news.", "notes": "'Tell' takes an object: tell someone something." },
-              "tags": ["irregular-verb", "communication"],
+              "front": {
+                "text": "tell",
+                "pronunciation": "/tɛl/"
+              },
+              "back": {
+                "text": "told",
+                "example": "She told me the news.",
+                "notes": "'Tell' takes an object: tell someone something."
+              },
+              "tags": [
+                "irregular-verb",
+                "communication"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "know", "pronunciation": "/noʊ/" },
-              "back": { "text": "knew", "example": "I knew the answer.", "notes": "Pronounced /njuː/." },
-              "tags": ["irregular-verb", "mental"],
+              "front": {
+                "text": "know",
+                "pronunciation": "/noʊ/"
+              },
+              "back": {
+                "text": "knew",
+                "example": "I knew the answer.",
+                "notes": "Pronounced /njuː/."
+              },
+              "tags": [
+                "irregular-verb",
+                "mental"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "write", "pronunciation": "/raɪt/" },
-              "back": { "text": "wrote", "example": "He wrote a letter to his friend.", "notes": "" },
-              "tags": ["irregular-verb", "communication"],
+              "front": {
+                "text": "write",
+                "pronunciation": "/raɪt/"
+              },
+              "back": {
+                "text": "wrote",
+                "example": "He wrote a letter to his friend.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "communication"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "read", "pronunciation": "/riːd/" },
-              "back": { "text": "read", "example": "I read a good book last week.", "notes": "Same spelling but different pronunciation: /rɛd/." },
-              "tags": ["irregular-verb", "education"],
+              "front": {
+                "text": "read",
+                "pronunciation": "/riːd/"
+              },
+              "back": {
+                "text": "read",
+                "example": "I read a good book last week.",
+                "notes": "Same spelling but different pronunciation: /rɛd/."
+              },
+              "tags": [
+                "irregular-verb",
+                "education"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "drink", "pronunciation": "/drɪŋk/" },
-              "back": { "text": "drank", "example": "She drank a cup of coffee.", "notes": "" },
-              "tags": ["irregular-verb", "food"],
+              "front": {
+                "text": "drink",
+                "pronunciation": "/drɪŋk/"
+              },
+              "back": {
+                "text": "drank",
+                "example": "She drank a cup of coffee.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "food"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "run", "pronunciation": "/rʌn/" },
-              "back": { "text": "ran", "example": "They ran to catch the bus.", "notes": "" },
-              "tags": ["irregular-verb", "movement"],
+              "front": {
+                "text": "run",
+                "pronunciation": "/rʌn/"
+              },
+              "back": {
+                "text": "ran",
+                "example": "They ran to catch the bus.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "movement"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "speak", "pronunciation": "/spiːk/" },
-              "back": { "text": "spoke", "example": "We spoke to the teacher after class.", "notes": "" },
-              "tags": ["irregular-verb", "communication"],
+              "front": {
+                "text": "speak",
+                "pronunciation": "/spiːk/"
+              },
+              "back": {
+                "text": "spoke",
+                "example": "We spoke to the teacher after class.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "communication"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "drive", "pronunciation": "/draɪv/" },
-              "back": { "text": "drove", "example": "He drove to the airport.", "notes": "" },
-              "tags": ["irregular-verb", "transport"],
+              "front": {
+                "text": "drive",
+                "pronunciation": "/draɪv/"
+              },
+              "back": {
+                "text": "drove",
+                "example": "He drove to the airport.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "transport"
+              ],
               "sortOrder": 20
             },
             {
-              "front": { "text": "begin", "pronunciation": "/bɪˈɡɪn/" },
-              "back": { "text": "began", "example": "The meeting began at nine o'clock.", "notes": "" },
-              "tags": ["irregular-verb", "time"],
+              "front": {
+                "text": "begin",
+                "pronunciation": "/bɪˈɡɪn/"
+              },
+              "back": {
+                "text": "began",
+                "example": "The meeting began at nine o'clock.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "time"
+              ],
               "sortOrder": 21
             },
             {
-              "front": { "text": "feel", "pronunciation": "/fiːl/" },
-              "back": { "text": "felt", "example": "I felt happy after the good news.", "notes": "" },
-              "tags": ["irregular-verb", "emotion"],
+              "front": {
+                "text": "feel",
+                "pronunciation": "/fiːl/"
+              },
+              "back": {
+                "text": "felt",
+                "example": "I felt happy after the good news.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "emotion"
+              ],
               "sortOrder": 22
             },
             {
-              "front": { "text": "find", "pronunciation": "/faɪnd/" },
-              "back": { "text": "found", "example": "She found her keys under the sofa.", "notes": "" },
-              "tags": ["irregular-verb", "action"],
+              "front": {
+                "text": "find",
+                "pronunciation": "/faɪnd/"
+              },
+              "back": {
+                "text": "found",
+                "example": "She found her keys under the sofa.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "action"
+              ],
               "sortOrder": 23
             },
             {
-              "front": { "text": "leave", "pronunciation": "/liːv/" },
-              "back": { "text": "left", "example": "We left the restaurant at ten.", "notes": "" },
-              "tags": ["irregular-verb", "movement"],
+              "front": {
+                "text": "leave",
+                "pronunciation": "/liːv/"
+              },
+              "back": {
+                "text": "left",
+                "example": "We left the restaurant at ten.",
+                "notes": ""
+              },
+              "tags": [
+                "irregular-verb",
+                "movement"
+              ],
               "sortOrder": 24
             },
             {
-              "front": { "text": "lose", "pronunciation": "/luːz/" },
-              "back": { "text": "lost", "example": "He lost his wallet on the train.", "notes": "Don't confuse 'lose' /luːz/ with 'loose' /luːs/ (adjective)." },
-              "tags": ["irregular-verb", "action"],
+              "front": {
+                "text": "lose",
+                "pronunciation": "/luːz/"
+              },
+              "back": {
+                "text": "lost",
+                "example": "He lost his wallet on the train.",
+                "notes": "Don't confuse 'lose' /luːz/ with 'loose' /luːs/ (adjective)."
+              },
+              "tags": [
+                "irregular-verb",
+                "action"
+              ],
               "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "Past Tense Practice Sentences",
+          "description": "45 sentences covering regular & irregular past simple, negatives, questions, and past continuous.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "Yesterday I walked to the park.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple: regular verb 'walk' -> 'walked'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "She cooked dinner last night.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple: regular verb 'cook' -> 'cooked'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "They visited London two years ago.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple: regular verb 'visit' -> 'visited'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "I didn't go to school yesterday.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple negative: didn't + base form 'go'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "She didn't eat breakfast.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple negative: didn't + 'eat'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "We didn't watch the film.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple negative: didn't + 'watch'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "Did you see the news?",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple question: Did + subject + base form",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "Did she call you back?",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple question with 'call'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "Did they arrive on time?",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple question with 'arrive'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "I was sleeping when you called.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past continuous: was + verb-ing",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "She was reading while he cooked.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past continuous + past simple: simultaneous actions",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "They were playing football at 3 PM.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past continuous: were + playing",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "He worked late last Friday.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple: worked",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "We studied all weekend.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple: studied (y -> ied)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "She stopped at the red light.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past simple: stopped (double consonant)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "I bought a new phone.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: buy -> bought",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "She saw a beautiful sunset.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: see -> saw",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "He went to Paris last month.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: go -> went",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "We made a cake for her birthday.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: make -> made",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "She took the wrong bus.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: take -> took",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "He came home very tired.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: come -> came",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "I thought about the problem.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: think -> thought",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "She told me the good news.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: tell -> told",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "He knew about the surprise.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: know -> knew",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "We left the party early.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: leave -> left",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "She felt much better.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: feel -> felt",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "He found his lost keys.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: find -> found",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "I wrote a long email.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: write -> wrote",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "She drank a glass of milk.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: drink -> drank",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "He began a new project.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: begin -> began",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "We spoke to the manager.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: speak -> spoke",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "She drove to the airport.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: drive -> drove",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "He ran five kilometers.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: run -> ran",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "I gave her a present.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: give -> gave",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "She read the whole book.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: read -> read (/rɛd/)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "He said something important.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: say -> said (/sɛd/)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "We had a wonderful time.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: have -> had",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "She got a promotion.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: get -> got",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "He lost his passport.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: lose -> lost",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "I paid the bill.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: pay -> paid",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "She sent a postcard.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: send -> sent",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "He stood near the door.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: stand -> stood",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "We understood the lesson.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: understand -> understood",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "She became a doctor.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: become -> became",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "He threw the ball.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Irregular past: throw -> threw",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "past-simple",
+                "irregular-verbs",
+                "grammar",
+                "A2"
+              ],
+              "sortOrder": 45
             }
           ]
         }
@@ -401,7 +1493,9 @@
               "body": {
                 "sentence": "Excuse me, is there a ___ near here? I need to buy some medicine.",
                 "answer": "pharmacy",
-                "alternatives": ["chemist's"],
+                "alternatives": [
+                  "chemist's"
+                ],
                 "explanation": "You buy medicine at a pharmacy (or chemist's in British English)."
               }
             }
@@ -431,8 +1525,20 @@
               "sortOrder": 2,
               "title": "Give Directions",
               "body": {
-                "words": ["left", "turn", "at", "the", "traffic lights"],
-                "correct": ["turn", "left", "at", "the", "traffic lights"],
+                "words": [
+                  "left",
+                  "turn",
+                  "at",
+                  "the",
+                  "traffic lights"
+                ],
+                "correct": [
+                  "turn",
+                  "left",
+                  "at",
+                  "the",
+                  "traffic lights"
+                ],
                 "translation": "Turn left at the traffic lights."
               }
             },
@@ -526,8 +1632,20 @@
               "sortOrder": 2,
               "title": "Order at a Restaurant",
               "body": {
-                "words": ["I'd", "the", "like", "please", "chicken salad,"],
-                "correct": ["I'd", "like", "the", "chicken salad,", "please"],
+                "words": [
+                  "I'd",
+                  "the",
+                  "like",
+                  "please",
+                  "chicken salad,"
+                ],
+                "correct": [
+                  "I'd",
+                  "like",
+                  "the",
+                  "chicken salad,",
+                  "please"
+                ],
                 "translation": "I'd like the chicken salad, please."
               }
             },
@@ -538,7 +1656,9 @@
               "body": {
                 "sentence": "Could I have the ___, please? We're ready to pay.",
                 "answer": "bill",
-                "alternatives": ["check"],
+                "alternatives": [
+                  "check"
+                ],
                 "explanation": "In British English we say 'bill'; in American English we say 'check'."
               }
             }
@@ -551,154 +1671,1214 @@
           "description": "Essential vocabulary for navigating a town, asking for directions, shopping, and eating out at the A2 level.",
           "flashcards": [
             {
-              "front": { "text": "post office", "pronunciation": "/poʊst ˈɒfɪs/" },
-              "back": { "text": "a place where you send letters and parcels", "example": "I need to go to the post office to send this package.", "notes": "" },
-              "tags": ["places", "town"],
+              "front": {
+                "text": "post office",
+                "pronunciation": "/poʊst ˈɒfɪs/"
+              },
+              "back": {
+                "text": "a place where you send letters and parcels",
+                "example": "I need to go to the post office to send this package.",
+                "notes": ""
+              },
+              "tags": [
+                "places",
+                "town"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "bank", "pronunciation": "/bæŋk/" },
-              "back": { "text": "a place where you keep and manage your money", "example": "Is there a bank near here?", "notes": "" },
-              "tags": ["places", "town"],
+              "front": {
+                "text": "bank",
+                "pronunciation": "/bæŋk/"
+              },
+              "back": {
+                "text": "a place where you keep and manage your money",
+                "example": "Is there a bank near here?",
+                "notes": ""
+              },
+              "tags": [
+                "places",
+                "town"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "hospital", "pronunciation": "/ˈhɒspɪtl/" },
-              "back": { "text": "a place where sick or injured people receive medical treatment", "example": "She was taken to the hospital after the accident.", "notes": "" },
-              "tags": ["places", "town"],
+              "front": {
+                "text": "hospital",
+                "pronunciation": "/ˈhɒspɪtl/"
+              },
+              "back": {
+                "text": "a place where sick or injured people receive medical treatment",
+                "example": "She was taken to the hospital after the accident.",
+                "notes": ""
+              },
+              "tags": [
+                "places",
+                "town"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "pharmacy", "pronunciation": "/ˈfɑːrməsi/" },
-              "back": { "text": "a shop where you buy medicine", "example": "I bought some aspirin at the pharmacy.", "notes": "Also called 'chemist's' in British English." },
-              "tags": ["places", "town", "shopping"],
+              "front": {
+                "text": "pharmacy",
+                "pronunciation": "/ˈfɑːrməsi/"
+              },
+              "back": {
+                "text": "a shop where you buy medicine",
+                "example": "I bought some aspirin at the pharmacy.",
+                "notes": "Also called 'chemist's' in British English."
+              },
+              "tags": [
+                "places",
+                "town",
+                "shopping"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "supermarket", "pronunciation": "/ˈsuːpərˌmɑːrkɪt/" },
-              "back": { "text": "a large shop that sells food and household products", "example": "We do our weekly shopping at the supermarket.", "notes": "" },
-              "tags": ["places", "town", "shopping"],
+              "front": {
+                "text": "supermarket",
+                "pronunciation": "/ˈsuːpərˌmɑːrkɪt/"
+              },
+              "back": {
+                "text": "a large shop that sells food and household products",
+                "example": "We do our weekly shopping at the supermarket.",
+                "notes": ""
+              },
+              "tags": [
+                "places",
+                "town",
+                "shopping"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "library", "pronunciation": "/ˈlaɪbrəri/" },
-              "back": { "text": "a place where you can borrow books for free", "example": "I returned my books to the library.", "notes": "Not a bookshop! A library lends books; a bookshop sells them." },
-              "tags": ["places", "town"],
+              "front": {
+                "text": "library",
+                "pronunciation": "/ˈlaɪbrəri/"
+              },
+              "back": {
+                "text": "a place where you can borrow books for free",
+                "example": "I returned my books to the library.",
+                "notes": "Not a bookshop! A library lends books; a bookshop sells them."
+              },
+              "tags": [
+                "places",
+                "town"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "turn left", "pronunciation": "/tɜːrn lɛft/" },
-              "back": { "text": "change direction to the left", "example": "Turn left at the traffic lights.", "notes": "" },
-              "tags": ["directions"],
+              "front": {
+                "text": "turn left",
+                "pronunciation": "/tɜːrn lɛft/"
+              },
+              "back": {
+                "text": "change direction to the left",
+                "example": "Turn left at the traffic lights.",
+                "notes": ""
+              },
+              "tags": [
+                "directions"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "turn right", "pronunciation": "/tɜːrn raɪt/" },
-              "back": { "text": "change direction to the right", "example": "Turn right at the corner and the bank is on your left.", "notes": "" },
-              "tags": ["directions"],
+              "front": {
+                "text": "turn right",
+                "pronunciation": "/tɜːrn raɪt/"
+              },
+              "back": {
+                "text": "change direction to the right",
+                "example": "Turn right at the corner and the bank is on your left.",
+                "notes": ""
+              },
+              "tags": [
+                "directions"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "go straight", "pronunciation": "/ɡoʊ streɪt/" },
-              "back": { "text": "continue forward without turning", "example": "Go straight for two blocks, then turn left.", "notes": "Also: 'go straight on' (British) or 'go straight ahead' (American)." },
-              "tags": ["directions"],
+              "front": {
+                "text": "go straight",
+                "pronunciation": "/ɡoʊ streɪt/"
+              },
+              "back": {
+                "text": "continue forward without turning",
+                "example": "Go straight for two blocks, then turn left.",
+                "notes": "Also: 'go straight on' (British) or 'go straight ahead' (American)."
+              },
+              "tags": [
+                "directions"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "next to", "pronunciation": "/nɛkst tuː/" },
-              "back": { "text": "beside; at the side of", "example": "The café is next to the bookshop.", "notes": "Synonym: beside." },
-              "tags": ["directions", "prepositions"],
+              "front": {
+                "text": "next to",
+                "pronunciation": "/nɛkst tuː/"
+              },
+              "back": {
+                "text": "beside; at the side of",
+                "example": "The café is next to the bookshop.",
+                "notes": "Synonym: beside."
+              },
+              "tags": [
+                "directions",
+                "prepositions"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "opposite", "pronunciation": "/ˈɒpəzɪt/" },
-              "back": { "text": "on the other side (of the street)", "example": "The bank is opposite the park.", "notes": "" },
-              "tags": ["directions", "prepositions"],
+              "front": {
+                "text": "opposite",
+                "pronunciation": "/ˈɒpəzɪt/"
+              },
+              "back": {
+                "text": "on the other side (of the street)",
+                "example": "The bank is opposite the park.",
+                "notes": ""
+              },
+              "tags": [
+                "directions",
+                "prepositions"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "between", "pronunciation": "/bɪˈtwiːn/" },
-              "back": { "text": "in the middle of two things", "example": "The shop is between the café and the pharmacy.", "notes": "" },
-              "tags": ["directions", "prepositions"],
+              "front": {
+                "text": "between",
+                "pronunciation": "/bɪˈtwiːn/"
+              },
+              "back": {
+                "text": "in the middle of two things",
+                "example": "The shop is between the café and the pharmacy.",
+                "notes": ""
+              },
+              "tags": [
+                "directions",
+                "prepositions"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "traffic lights", "pronunciation": "/ˈtræfɪk laɪts/" },
-              "back": { "text": "red, yellow and green lights that control traffic at a crossing", "example": "Turn right at the traffic lights.", "notes": "" },
-              "tags": ["directions", "town"],
+              "front": {
+                "text": "traffic lights",
+                "pronunciation": "/ˈtræfɪk laɪts/"
+              },
+              "back": {
+                "text": "red, yellow and green lights that control traffic at a crossing",
+                "example": "Turn right at the traffic lights.",
+                "notes": ""
+              },
+              "tags": [
+                "directions",
+                "town"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "receipt", "pronunciation": "/rɪˈsiːt/" },
-              "back": { "text": "a piece of paper that shows what you paid", "example": "Can I have a receipt, please?", "notes": "The 'p' is silent." },
-              "tags": ["shopping"],
+              "front": {
+                "text": "receipt",
+                "pronunciation": "/rɪˈsiːt/"
+              },
+              "back": {
+                "text": "a piece of paper that shows what you paid",
+                "example": "Can I have a receipt, please?",
+                "notes": "The 'p' is silent."
+              },
+              "tags": [
+                "shopping"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "change", "pronunciation": "/tʃeɪndʒ/" },
-              "back": { "text": "the money returned when you pay more than the price", "example": "Here's your change — two pounds fifty.", "notes": "Can also mean 'to become different'." },
-              "tags": ["shopping"],
+              "front": {
+                "text": "change",
+                "pronunciation": "/tʃeɪndʒ/"
+              },
+              "back": {
+                "text": "the money returned when you pay more than the price",
+                "example": "Here's your change — two pounds fifty.",
+                "notes": "Can also mean 'to become different'."
+              },
+              "tags": [
+                "shopping"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "cash", "pronunciation": "/kæʃ/" },
-              "back": { "text": "money in the form of coins and banknotes", "example": "I don't have any cash. Can I pay by card?", "notes": "" },
-              "tags": ["shopping"],
+              "front": {
+                "text": "cash",
+                "pronunciation": "/kæʃ/"
+              },
+              "back": {
+                "text": "money in the form of coins and banknotes",
+                "example": "I don't have any cash. Can I pay by card?",
+                "notes": ""
+              },
+              "tags": [
+                "shopping"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "sale", "pronunciation": "/seɪl/" },
-              "back": { "text": "a period when shops sell things at lower prices", "example": "These shoes were half price in the sale.", "notes": "" },
-              "tags": ["shopping"],
+              "front": {
+                "text": "sale",
+                "pronunciation": "/seɪl/"
+              },
+              "back": {
+                "text": "a period when shops sell things at lower prices",
+                "example": "These shoes were half price in the sale.",
+                "notes": ""
+              },
+              "tags": [
+                "shopping"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "fitting room", "pronunciation": "/ˈfɪtɪŋ ruːm/" },
-              "back": { "text": "a small room in a shop where you try on clothes", "example": "Can I use the fitting room to try these jeans on?", "notes": "Also called 'changing room' in British English." },
-              "tags": ["shopping"],
+              "front": {
+                "text": "fitting room",
+                "pronunciation": "/ˈfɪtɪŋ ruːm/"
+              },
+              "back": {
+                "text": "a small room in a shop where you try on clothes",
+                "example": "Can I use the fitting room to try these jeans on?",
+                "notes": "Also called 'changing room' in British English."
+              },
+              "tags": [
+                "shopping"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "How much is this?", "pronunciation": "/haʊ mʌtʃ ɪz ðɪs/" },
-              "back": { "text": "a question to ask the price of something", "example": "Excuse me, how much is this scarf?", "notes": "Use 'are these' for plural items." },
-              "tags": ["shopping", "phrase"],
+              "front": {
+                "text": "How much is this?",
+                "pronunciation": "/haʊ mʌtʃ ɪz ðɪs/"
+              },
+              "back": {
+                "text": "a question to ask the price of something",
+                "example": "Excuse me, how much is this scarf?",
+                "notes": "Use 'are these' for plural items."
+              },
+              "tags": [
+                "shopping",
+                "phrase"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "I'd like", "pronunciation": "/aɪd laɪk/" },
-              "back": { "text": "a polite way to say 'I want'", "example": "I'd like a large coffee, please.", "notes": "Short for 'I would like'." },
-              "tags": ["shopping", "restaurant", "phrase"],
+              "front": {
+                "text": "I'd like",
+                "pronunciation": "/aɪd laɪk/"
+              },
+              "back": {
+                "text": "a polite way to say 'I want'",
+                "example": "I'd like a large coffee, please.",
+                "notes": "Short for 'I would like'."
+              },
+              "tags": [
+                "shopping",
+                "restaurant",
+                "phrase"
+              ],
               "sortOrder": 20
             },
             {
-              "front": { "text": "starter", "pronunciation": "/ˈstɑːrtər/" },
-              "back": { "text": "a small dish served before the main course", "example": "For my starter, I'll have the soup.", "notes": "American English: appetiser." },
-              "tags": ["restaurant", "food"],
+              "front": {
+                "text": "starter",
+                "pronunciation": "/ˈstɑːrtər/"
+              },
+              "back": {
+                "text": "a small dish served before the main course",
+                "example": "For my starter, I'll have the soup.",
+                "notes": "American English: appetiser."
+              },
+              "tags": [
+                "restaurant",
+                "food"
+              ],
               "sortOrder": 21
             },
             {
-              "front": { "text": "main course", "pronunciation": "/meɪn kɔːrs/" },
-              "back": { "text": "the biggest and most important dish in a meal", "example": "The main course was grilled fish with vegetables.", "notes": "" },
-              "tags": ["restaurant", "food"],
+              "front": {
+                "text": "main course",
+                "pronunciation": "/meɪn kɔːrs/"
+              },
+              "back": {
+                "text": "the biggest and most important dish in a meal",
+                "example": "The main course was grilled fish with vegetables.",
+                "notes": ""
+              },
+              "tags": [
+                "restaurant",
+                "food"
+              ],
               "sortOrder": 22
             },
             {
-              "front": { "text": "dessert", "pronunciation": "/dɪˈzɜːrt/" },
-              "back": { "text": "a sweet dish served at the end of a meal", "example": "Would you like a dessert? We have chocolate cake.", "notes": "Don't confuse with 'desert' (a hot, sandy place) — dessert has two s's." },
-              "tags": ["restaurant", "food"],
+              "front": {
+                "text": "dessert",
+                "pronunciation": "/dɪˈzɜːrt/"
+              },
+              "back": {
+                "text": "a sweet dish served at the end of a meal",
+                "example": "Would you like a dessert? We have chocolate cake.",
+                "notes": "Don't confuse with 'desert' (a hot, sandy place) — dessert has two s's."
+              },
+              "tags": [
+                "restaurant",
+                "food"
+              ],
               "sortOrder": 23
             },
             {
-              "front": { "text": "bill", "pronunciation": "/bɪl/" },
-              "back": { "text": "a paper showing how much you have to pay at a restaurant", "example": "Could I have the bill, please?", "notes": "American English: check." },
-              "tags": ["restaurant"],
+              "front": {
+                "text": "bill",
+                "pronunciation": "/bɪl/"
+              },
+              "back": {
+                "text": "a paper showing how much you have to pay at a restaurant",
+                "example": "Could I have the bill, please?",
+                "notes": "American English: check."
+              },
+              "tags": [
+                "restaurant"
+              ],
               "sortOrder": 24
             },
             {
-              "front": { "text": "recommend", "pronunciation": "/ˌrɛkəˈmɛnd/" },
-              "back": { "text": "to suggest something because you think it is good", "example": "What do you recommend from the menu?", "notes": "" },
-              "tags": ["restaurant", "phrase"],
+              "front": {
+                "text": "recommend",
+                "pronunciation": "/ˌrɛkəˈmɛnd/"
+              },
+              "back": {
+                "text": "to suggest something because you think it is good",
+                "example": "What do you recommend from the menu?",
+                "notes": ""
+              },
+              "tags": [
+                "restaurant",
+                "phrase"
+              ],
               "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "A2 Travel & Daily Life Vocabulary",
+          "description": "45 essential words for travel, shopping, transport, and dining out.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "airport",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A place where planes take off and land",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "passport",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "An official document for international travel",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "luggage",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Bags you take when traveling",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "suitcase",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A case with a handle for clothes",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "hotel",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A place where you pay to sleep",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "restaurant",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A place where you buy and eat meals",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "menu",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A list of food you can order",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "order",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To ask for food or goods",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "breakfast",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "The first meal of the day",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "lunch",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "The midday meal",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "dinner",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "The evening meal",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "snack",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A small amount of food between meals",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "vegetarian",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A person who does not eat meat",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "dessert",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Sweet food eaten at the end of a meal",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "receipt",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A paper showing what you bought and paid",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "customer",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A person who buys goods or services",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "cashier",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A person who takes payments in a shop",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "bargain",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Something bought for a low price",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "price",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "The amount of money something costs",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "cheap",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Not costing much money",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "expensive",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Costing a lot of money",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "size",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "How big something is (S, M, L)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "large",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Bigger than medium",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "medium",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "In the middle size",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "small",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Not big; little",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "address",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Where someone lives or works",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "map",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A drawing of an area showing routes",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "bridge",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A structure over a river or road",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "corner",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "The point where two roads meet",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "roundabout",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A circular junction",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "crosswalk",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A place for crossing the street",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "sidewalk",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A path for walking beside a road",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "driver",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A person who operates a vehicle",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "passenger",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A person traveling in a vehicle",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "seatbelt",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A strap that holds you in a car seat",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "speed limit",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "The maximum speed allowed by law",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "engine",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "The motor of a vehicle",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "flat tire",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A deflated tire",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "fuel",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Petrol or diesel for vehicles",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "garage",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A building for parking or repairing cars",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "mechanic",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A person who repairs machines",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "sign",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A board with information or symbols",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "schedule",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A timetable or plan",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "delay",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Something that makes you late",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "announcement",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A public statement or broadcast message",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A2",
+                "travel",
+                "shopping"
+              ],
+              "sortOrder": 45
             }
           ]
         }
@@ -736,7 +2916,9 @@
               "body": {
                 "sentence": "I don't know the answer. Let me ___ it ___ online.",
                 "answer": "look ... up",
-                "alternatives": ["look up"],
+                "alternatives": [
+                  "look up"
+                ],
                 "explanation": "'Look up' means to search for information in a reference source. When using a pronoun, it goes in the middle: look it up."
               }
             },
@@ -798,8 +2980,20 @@
               "sortOrder": 3,
               "title": "Put the Words in Order",
               "body": {
-                "words": ["the", "get", "at", "off", "next stop"],
-                "correct": ["get", "off", "at", "the", "next stop"],
+                "words": [
+                  "the",
+                  "get",
+                  "at",
+                  "off",
+                  "next stop"
+                ],
+                "correct": [
+                  "get",
+                  "off",
+                  "at",
+                  "the",
+                  "next stop"
+                ],
                 "translation": "Get off at the next stop."
               }
             }
@@ -831,7 +3025,9 @@
               "body": {
                 "sentence": "A: What time did you ___ ___ from work? B: About 7 p.m.",
                 "answer": "get back",
-                "alternatives": ["come back"],
+                "alternatives": [
+                  "come back"
+                ],
                 "explanation": "'Get back' or 'come back' both mean to return. 'Get back' is slightly more informal and natural here."
               }
             },
@@ -860,124 +3056,1001 @@
           "description": "Common phrasal verbs used in everyday English at the A2 level — covering searching, transport, errands, and movement.",
           "flashcards": [
             {
-              "front": { "text": "look for", "pronunciation": "/lʊk fɔːr/" },
-              "back": { "text": "to try to find something or someone", "example": "I'm looking for my phone. Have you seen it?", "notes": "Different from 'look at' (= direct your eyes at)." },
-              "tags": ["searching", "daily-life"],
+              "front": {
+                "text": "look for",
+                "pronunciation": "/lʊk fɔːr/"
+              },
+              "back": {
+                "text": "to try to find something or someone",
+                "example": "I'm looking for my phone. Have you seen it?",
+                "notes": "Different from 'look at' (= direct your eyes at)."
+              },
+              "tags": [
+                "searching",
+                "daily-life"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "find out", "pronunciation": "/faɪnd aʊt/" },
-              "back": { "text": "to discover information", "example": "I found out that the shop closes at 6.", "notes": "About information, not objects." },
-              "tags": ["searching", "daily-life"],
+              "front": {
+                "text": "find out",
+                "pronunciation": "/faɪnd aʊt/"
+              },
+              "back": {
+                "text": "to discover information",
+                "example": "I found out that the shop closes at 6.",
+                "notes": "About information, not objects."
+              },
+              "tags": [
+                "searching",
+                "daily-life"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "look up", "pronunciation": "/lʊk ʌp/" },
-              "back": { "text": "to search for information in a dictionary, book, or online", "example": "I looked up the word in the dictionary.", "notes": "Separable: look it up." },
-              "tags": ["searching", "daily-life"],
+              "front": {
+                "text": "look up",
+                "pronunciation": "/lʊk ʌp/"
+              },
+              "back": {
+                "text": "to search for information in a dictionary, book, or online",
+                "example": "I looked up the word in the dictionary.",
+                "notes": "Separable: look it up."
+              },
+              "tags": [
+                "searching",
+                "daily-life"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "pick up", "pronunciation": "/pɪk ʌp/" },
-              "back": { "text": "to lift something; to collect someone (in a car)", "example": "I'll pick you up at the station.", "notes": "Separable: pick her up." },
-              "tags": ["transport", "errands"],
+              "front": {
+                "text": "pick up",
+                "pronunciation": "/pɪk ʌp/"
+              },
+              "back": {
+                "text": "to lift something; to collect someone (in a car)",
+                "example": "I'll pick you up at the station.",
+                "notes": "Separable: pick her up."
+              },
+              "tags": [
+                "transport",
+                "errands"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "drop off", "pronunciation": "/drɒp ɒf/" },
-              "back": { "text": "to take someone/something to a place and leave them there", "example": "Can you drop me off at the supermarket?", "notes": "Separable: drop him off." },
-              "tags": ["transport", "errands"],
+              "front": {
+                "text": "drop off",
+                "pronunciation": "/drɒp ɒf/"
+              },
+              "back": {
+                "text": "to take someone/something to a place and leave them there",
+                "example": "Can you drop me off at the supermarket?",
+                "notes": "Separable: drop him off."
+              },
+              "tags": [
+                "transport",
+                "errands"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "get on", "pronunciation": "/ɡɛt ɒn/" },
-              "back": { "text": "to board a bus, train, or plane", "example": "We got on the train just in time.", "notes": "For cars/taxis use 'get in'." },
-              "tags": ["transport"],
+              "front": {
+                "text": "get on",
+                "pronunciation": "/ɡɛt ɒn/"
+              },
+              "back": {
+                "text": "to board a bus, train, or plane",
+                "example": "We got on the train just in time.",
+                "notes": "For cars/taxis use 'get in'."
+              },
+              "tags": [
+                "transport"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "get off", "pronunciation": "/ɡɛt ɒf/" },
-              "back": { "text": "to leave a bus, train, or plane", "example": "Get off at the next stop.", "notes": "For cars/taxis use 'get out of'." },
-              "tags": ["transport"],
+              "front": {
+                "text": "get off",
+                "pronunciation": "/ɡɛt ɒf/"
+              },
+              "back": {
+                "text": "to leave a bus, train, or plane",
+                "example": "Get off at the next stop.",
+                "notes": "For cars/taxis use 'get out of'."
+              },
+              "tags": [
+                "transport"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "come back", "pronunciation": "/kʌm bæk/" },
-              "back": { "text": "to return to a place", "example": "She came back from holiday last week.", "notes": "" },
-              "tags": ["movement"],
+              "front": {
+                "text": "come back",
+                "pronunciation": "/kʌm bæk/"
+              },
+              "back": {
+                "text": "to return to a place",
+                "example": "She came back from holiday last week.",
+                "notes": ""
+              },
+              "tags": [
+                "movement"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "go out", "pronunciation": "/ɡoʊ aʊt/" },
-              "back": { "text": "to leave home for entertainment or social activities", "example": "Do you want to go out for dinner tonight?", "notes": "Can also mean 'to date someone'." },
-              "tags": ["movement", "social"],
+              "front": {
+                "text": "go out",
+                "pronunciation": "/ɡoʊ aʊt/"
+              },
+              "back": {
+                "text": "to leave home for entertainment or social activities",
+                "example": "Do you want to go out for dinner tonight?",
+                "notes": "Can also mean 'to date someone'."
+              },
+              "tags": [
+                "movement",
+                "social"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "get back", "pronunciation": "/ɡɛt bæk/" },
-              "back": { "text": "to return (informal)", "example": "I got back home at midnight.", "notes": "Similar to 'come back' but more informal." },
-              "tags": ["movement"],
+              "front": {
+                "text": "get back",
+                "pronunciation": "/ɡɛt bæk/"
+              },
+              "back": {
+                "text": "to return (informal)",
+                "example": "I got back home at midnight.",
+                "notes": "Similar to 'come back' but more informal."
+              },
+              "tags": [
+                "movement"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "set off", "pronunciation": "/sɛt ɒf/" },
-              "back": { "text": "to start a journey", "example": "We set off early to avoid traffic.", "notes": "Inseparable." },
-              "tags": ["movement", "travel"],
+              "front": {
+                "text": "set off",
+                "pronunciation": "/sɛt ɒf/"
+              },
+              "back": {
+                "text": "to start a journey",
+                "example": "We set off early to avoid traffic.",
+                "notes": "Inseparable."
+              },
+              "tags": [
+                "movement",
+                "travel"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "wake up", "pronunciation": "/weɪk ʌp/" },
-              "back": { "text": "to stop sleeping", "example": "I wake up at 7 a.m. every day.", "notes": "Separable: the alarm woke me up." },
-              "tags": ["daily-routine"],
+              "front": {
+                "text": "wake up",
+                "pronunciation": "/weɪk ʌp/"
+              },
+              "back": {
+                "text": "to stop sleeping",
+                "example": "I wake up at 7 a.m. every day.",
+                "notes": "Separable: the alarm woke me up."
+              },
+              "tags": [
+                "daily-routine"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "get up", "pronunciation": "/ɡɛt ʌp/" },
-              "back": { "text": "to get out of bed; to stand up", "example": "I got up late this morning.", "notes": "Different from 'wake up' — you can wake up but stay in bed." },
-              "tags": ["daily-routine"],
+              "front": {
+                "text": "get up",
+                "pronunciation": "/ɡɛt ʌp/"
+              },
+              "back": {
+                "text": "to get out of bed; to stand up",
+                "example": "I got up late this morning.",
+                "notes": "Different from 'wake up' — you can wake up but stay in bed."
+              },
+              "tags": [
+                "daily-routine"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "turn on", "pronunciation": "/tɜːrn ɒn/" },
-              "back": { "text": "to start a device or machine", "example": "Can you turn on the TV?", "notes": "Separable: turn it on. Opposite: turn off." },
-              "tags": ["daily-life"],
+              "front": {
+                "text": "turn on",
+                "pronunciation": "/tɜːrn ɒn/"
+              },
+              "back": {
+                "text": "to start a device or machine",
+                "example": "Can you turn on the TV?",
+                "notes": "Separable: turn it on. Opposite: turn off."
+              },
+              "tags": [
+                "daily-life"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "turn off", "pronunciation": "/tɜːrn ɒf/" },
-              "back": { "text": "to stop a device or machine", "example": "Please turn off your phone during the lesson.", "notes": "Separable: turn it off. Opposite: turn on." },
-              "tags": ["daily-life"],
+              "front": {
+                "text": "turn off",
+                "pronunciation": "/tɜːrn ɒf/"
+              },
+              "back": {
+                "text": "to stop a device or machine",
+                "example": "Please turn off your phone during the lesson.",
+                "notes": "Separable: turn it off. Opposite: turn on."
+              },
+              "tags": [
+                "daily-life"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "put on", "pronunciation": "/pʊt ɒn/" },
-              "back": { "text": "to place clothing on your body", "example": "Put on your coat — it's cold outside.", "notes": "Separable: put it on. Opposite: take off." },
-              "tags": ["daily-routine", "clothing"],
+              "front": {
+                "text": "put on",
+                "pronunciation": "/pʊt ɒn/"
+              },
+              "back": {
+                "text": "to place clothing on your body",
+                "example": "Put on your coat — it's cold outside.",
+                "notes": "Separable: put it on. Opposite: take off."
+              },
+              "tags": [
+                "daily-routine",
+                "clothing"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "take off", "pronunciation": "/teɪk ɒf/" },
-              "back": { "text": "to remove clothing; (of a plane) to leave the ground", "example": "Please take off your shoes at the door.", "notes": "Separable for clothing: take them off." },
-              "tags": ["daily-routine", "clothing", "transport"],
+              "front": {
+                "text": "take off",
+                "pronunciation": "/teɪk ɒf/"
+              },
+              "back": {
+                "text": "to remove clothing; (of a plane) to leave the ground",
+                "example": "Please take off your shoes at the door.",
+                "notes": "Separable for clothing: take them off."
+              },
+              "tags": [
+                "daily-routine",
+                "clothing",
+                "transport"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "throw away", "pronunciation": "/θroʊ əˈweɪ/" },
-              "back": { "text": "to put something in the rubbish; to discard", "example": "Don't throw away that box — I need it.", "notes": "Separable: throw it away." },
-              "tags": ["daily-life"],
+              "front": {
+                "text": "throw away",
+                "pronunciation": "/θroʊ əˈweɪ/"
+              },
+              "back": {
+                "text": "to put something in the rubbish; to discard",
+                "example": "Don't throw away that box — I need it.",
+                "notes": "Separable: throw it away."
+              },
+              "tags": [
+                "daily-life"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "look after", "pronunciation": "/lʊk ˈɑːftər/" },
-              "back": { "text": "to take care of someone or something", "example": "Can you look after my cat while I'm away?", "notes": "Inseparable: look after him (NOT: look him after)." },
-              "tags": ["daily-life", "caring"],
+              "front": {
+                "text": "look after",
+                "pronunciation": "/lʊk ˈɑːftər/"
+              },
+              "back": {
+                "text": "to take care of someone or something",
+                "example": "Can you look after my cat while I'm away?",
+                "notes": "Inseparable: look after him (NOT: look him after)."
+              },
+              "tags": [
+                "daily-life",
+                "caring"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "give back", "pronunciation": "/ɡɪv bæk/" },
-              "back": { "text": "to return something to its owner", "example": "Can you give back my pen, please?", "notes": "Separable: give it back." },
-              "tags": ["daily-life"],
+              "front": {
+                "text": "give back",
+                "pronunciation": "/ɡɪv bæk/"
+              },
+              "back": {
+                "text": "to return something to its owner",
+                "example": "Can you give back my pen, please?",
+                "notes": "Separable: give it back."
+              },
+              "tags": [
+                "daily-life"
+              ],
               "sortOrder": 20
+            }
+          ]
+        },
+        {
+          "title": "More A2 Phrasal Verbs",
+          "description": "40 phrasal verbs for relationships, communication, searching, and everyday movement.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "break up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To end a relationship",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "make up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To become friends again; to invent a story",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "get along",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To have a good relationship",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "catch up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To reach the same level as others",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "keep up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To continue at the same speed",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "fall behind",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To fail to keep up with others",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "work out",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To exercise; to find a solution",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "pass out",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To lose consciousness",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "show off",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To boast or display proudly",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "put up with",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To tolerate something unpleasant",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "run out of",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To have none left; to exhaust the supply",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "look forward to",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To feel excited about a future event",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "get rid of",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To dispose of or remove something unwanted",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "cut down on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To reduce consumption of something",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "get through",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To succeed in contacting by phone",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "put through",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To connect a phone call",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "hang out",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To spend time relaxing with friends",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "get together",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To meet socially",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "sleep over",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To stay overnight at someone's home",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "drop in",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To visit informally",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "look down on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To regard with contempt or as inferior",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "stand up for",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To defend or support someone",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "talk back to",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To answer rudely or disrespectfully",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "walk out on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To abandon or leave suddenly",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "run over",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To hit with a vehicle; to exceed time",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "blow up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To explode; to inflate; to enlarge",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "tear up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To rip into pieces",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "burn down",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To destroy by fire",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "break into",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To enter illegally by force",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "pass away",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To die (euphemism)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "bring about",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To cause a change or result",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "go through",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To experience or examine thoroughly",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "live on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To survive on limited resources",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "hold back",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To restrain or suppress",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "let down",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To disappoint",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "mix up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To confuse one thing with another",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "show up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To arrive or appear, often unexpectedly",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "shut down",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To stop operations permanently",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "take over",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To gain control or replace",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "break out",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To start suddenly (war, fire, fight)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A2",
+                "daily-life"
+              ],
+              "sortOrder": 40
             }
           ]
         }

@@ -33,7 +33,12 @@
               "title": "Choose the correct verb form",
               "body": {
                 "question": "We ___ English every day.",
-                "options": ["studies", "study", "studys", "studying"],
+                "options": [
+                  "studies",
+                  "study",
+                  "studys",
+                  "studying"
+                ],
                 "correct": 1,
                 "explanation": "'We' takes the base form of the verb. The correct form is 'study'."
               }
@@ -43,8 +48,18 @@
               "sortOrder": 3,
               "title": "Build the sentence",
               "body": {
-                "words": ["They", "coffee", "in the morning", "drink"],
-                "correct": ["They", "drink", "coffee", "in the morning"],
+                "words": [
+                  "They",
+                  "coffee",
+                  "in the morning",
+                  "drink"
+                ],
+                "correct": [
+                  "They",
+                  "drink",
+                  "coffee",
+                  "in the morning"
+                ],
                 "translation": "They drink coffee in the morning."
               }
             }
@@ -86,7 +101,12 @@
               "title": "Pick the right form",
               "body": {
                 "question": "He ___ three languages.",
-                "options": ["speak", "speaks", "speakes", "speaking"],
+                "options": [
+                  "speak",
+                  "speaks",
+                  "speakes",
+                  "speaking"
+                ],
                 "correct": 1,
                 "explanation": "'He' requires the -s form. 'Speak' becomes 'speaks'."
               }
@@ -118,7 +138,12 @@
               "title": "Choose the correct negative",
               "body": {
                 "question": "She ___ coffee.",
-                "options": ["don't drink", "doesn't drinks", "doesn't drink", "not drinks"],
+                "options": [
+                  "don't drink",
+                  "doesn't drinks",
+                  "doesn't drink",
+                  "not drinks"
+                ],
                 "correct": 2,
                 "explanation": "'She' uses 'doesn't' + base form. 'Doesn't drink' is correct."
               }
@@ -128,8 +153,18 @@
               "sortOrder": 3,
               "title": "Build the negative sentence",
               "body": {
-                "words": ["We", "don't", "on Mondays", "work"],
-                "correct": ["We", "don't", "work", "on Mondays"],
+                "words": [
+                  "We",
+                  "don't",
+                  "on Mondays",
+                  "work"
+                ],
+                "correct": [
+                  "We",
+                  "don't",
+                  "work",
+                  "on Mondays"
+                ],
                 "translation": "We don't work on Mondays."
               }
             }
@@ -170,8 +205,20 @@
               "sortOrder": 3,
               "title": "Build the question",
               "body": {
-                "words": ["Do", "like", "you", "chocolate", "?"],
-                "correct": ["Do", "you", "like", "chocolate", "?"],
+                "words": [
+                  "Do",
+                  "like",
+                  "you",
+                  "chocolate",
+                  "?"
+                ],
+                "correct": [
+                  "Do",
+                  "you",
+                  "like",
+                  "chocolate",
+                  "?"
+                ],
                 "translation": "Do you like chocolate?"
               }
             }
@@ -184,154 +231,1180 @@
           "description": "Master the 25 most useful everyday verbs at the A1 level. Each card shows the verb and a simple example sentence.",
           "flashcards": [
             {
-              "front": { "text": "eat", "pronunciation": "/iːt/" },
-              "back": { "text": "to put food in your mouth and swallow it", "example": "I eat breakfast at 7 o'clock.", "notes": "he/she/it eats" },
-              "tags": ["verb", "daily-routine", "food"],
+              "front": {
+                "text": "eat",
+                "pronunciation": "/iːt/"
+              },
+              "back": {
+                "text": "to put food in your mouth and swallow it",
+                "example": "I eat breakfast at 7 o'clock.",
+                "notes": "he/she/it eats"
+              },
+              "tags": [
+                "verb",
+                "daily-routine",
+                "food"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "drink", "pronunciation": "/drɪŋk/" },
-              "back": { "text": "to take liquid into your mouth and swallow it", "example": "She drinks water every morning.", "notes": "he/she/it drinks" },
-              "tags": ["verb", "daily-routine", "food"],
+              "front": {
+                "text": "drink",
+                "pronunciation": "/drɪŋk/"
+              },
+              "back": {
+                "text": "to take liquid into your mouth and swallow it",
+                "example": "She drinks water every morning.",
+                "notes": "he/she/it drinks"
+              },
+              "tags": [
+                "verb",
+                "daily-routine",
+                "food"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "read", "pronunciation": "/riːd/" },
-              "back": { "text": "to look at and understand written words", "example": "They read the newspaper.", "notes": "he/she/it reads; past tense: read /rɛd/" },
-              "tags": ["verb", "hobby"],
+              "front": {
+                "text": "read",
+                "pronunciation": "/riːd/"
+              },
+              "back": {
+                "text": "to look at and understand written words",
+                "example": "They read the newspaper.",
+                "notes": "he/she/it reads; past tense: read /rɛd/"
+              },
+              "tags": [
+                "verb",
+                "hobby"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "write", "pronunciation": "/raɪt/" },
-              "back": { "text": "to make words on paper or a screen", "example": "I write emails at work.", "notes": "he/she/it writes" },
-              "tags": ["verb", "work"],
+              "front": {
+                "text": "write",
+                "pronunciation": "/raɪt/"
+              },
+              "back": {
+                "text": "to make words on paper or a screen",
+                "example": "I write emails at work.",
+                "notes": "he/she/it writes"
+              },
+              "tags": [
+                "verb",
+                "work"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "go", "pronunciation": "/ɡoʊ/" },
-              "back": { "text": "to move to a different place", "example": "We go to school by bus.", "notes": "he/she/it goes (irregular -es)" },
-              "tags": ["verb", "movement"],
+              "front": {
+                "text": "go",
+                "pronunciation": "/ɡoʊ/"
+              },
+              "back": {
+                "text": "to move to a different place",
+                "example": "We go to school by bus.",
+                "notes": "he/she/it goes (irregular -es)"
+              },
+              "tags": [
+                "verb",
+                "movement"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "come", "pronunciation": "/kʌm/" },
-              "back": { "text": "to move towards the speaker or a place", "example": "Come here, please!", "notes": "he/she/it comes" },
-              "tags": ["verb", "movement"],
+              "front": {
+                "text": "come",
+                "pronunciation": "/kʌm/"
+              },
+              "back": {
+                "text": "to move towards the speaker or a place",
+                "example": "Come here, please!",
+                "notes": "he/she/it comes"
+              },
+              "tags": [
+                "verb",
+                "movement"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "work", "pronunciation": "/wɜːrk/" },
-              "back": { "text": "to do a job or activity", "example": "He works in a hospital.", "notes": "he/she/it works" },
-              "tags": ["verb", "work"],
+              "front": {
+                "text": "work",
+                "pronunciation": "/wɜːrk/"
+              },
+              "back": {
+                "text": "to do a job or activity",
+                "example": "He works in a hospital.",
+                "notes": "he/she/it works"
+              },
+              "tags": [
+                "verb",
+                "work"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "play", "pronunciation": "/pleɪ/" },
-              "back": { "text": "to do a sport or game for fun", "example": "The children play in the park.", "notes": "he/she/it plays" },
-              "tags": ["verb", "hobby", "sport"],
+              "front": {
+                "text": "play",
+                "pronunciation": "/pleɪ/"
+              },
+              "back": {
+                "text": "to do a sport or game for fun",
+                "example": "The children play in the park.",
+                "notes": "he/she/it plays"
+              },
+              "tags": [
+                "verb",
+                "hobby",
+                "sport"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "live", "pronunciation": "/lɪv/" },
-              "back": { "text": "to have your home in a place", "example": "I live in a small apartment.", "notes": "he/she/it lives" },
-              "tags": ["verb", "home"],
+              "front": {
+                "text": "live",
+                "pronunciation": "/lɪv/"
+              },
+              "back": {
+                "text": "to have your home in a place",
+                "example": "I live in a small apartment.",
+                "notes": "he/she/it lives"
+              },
+              "tags": [
+                "verb",
+                "home"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "like", "pronunciation": "/laɪk/" },
-              "back": { "text": "to enjoy something or think it is nice", "example": "Do you like chocolate?", "notes": "he/she/it likes" },
-              "tags": ["verb", "opinion"],
+              "front": {
+                "text": "like",
+                "pronunciation": "/laɪk/"
+              },
+              "back": {
+                "text": "to enjoy something or think it is nice",
+                "example": "Do you like chocolate?",
+                "notes": "he/she/it likes"
+              },
+              "tags": [
+                "verb",
+                "opinion"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "want", "pronunciation": "/wɑːnt/" },
-              "back": { "text": "to wish for something or desire it", "example": "I want a glass of water.", "notes": "he/she/it wants" },
-              "tags": ["verb", "desire"],
+              "front": {
+                "text": "want",
+                "pronunciation": "/wɑːnt/"
+              },
+              "back": {
+                "text": "to wish for something or desire it",
+                "example": "I want a glass of water.",
+                "notes": "he/she/it wants"
+              },
+              "tags": [
+                "verb",
+                "desire"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "have", "pronunciation": "/hæv/" },
-              "back": { "text": "to own or possess something", "example": "She has two cats.", "notes": "he/she/it HAS (irregular)" },
-              "tags": ["verb", "possession"],
+              "front": {
+                "text": "have",
+                "pronunciation": "/hæv/"
+              },
+              "back": {
+                "text": "to own or possess something",
+                "example": "She has two cats.",
+                "notes": "he/she/it HAS (irregular)"
+              },
+              "tags": [
+                "verb",
+                "possession"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "make", "pronunciation": "/meɪk/" },
-              "back": { "text": "to create or produce something", "example": "I make dinner every evening.", "notes": "he/she/it makes" },
-              "tags": ["verb", "daily-routine"],
+              "front": {
+                "text": "make",
+                "pronunciation": "/meɪk/"
+              },
+              "back": {
+                "text": "to create or produce something",
+                "example": "I make dinner every evening.",
+                "notes": "he/she/it makes"
+              },
+              "tags": [
+                "verb",
+                "daily-routine"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "take", "pronunciation": "/teɪk/" },
-              "back": { "text": "to get or carry something", "example": "Take your umbrella — it's raining.", "notes": "he/she/it takes" },
-              "tags": ["verb", "action"],
+              "front": {
+                "text": "take",
+                "pronunciation": "/teɪk/"
+              },
+              "back": {
+                "text": "to get or carry something",
+                "example": "Take your umbrella — it's raining.",
+                "notes": "he/she/it takes"
+              },
+              "tags": [
+                "verb",
+                "action"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "give", "pronunciation": "/ɡɪv/" },
-              "back": { "text": "to hand something to someone", "example": "Please give me the book.", "notes": "he/she/it gives" },
-              "tags": ["verb", "action"],
+              "front": {
+                "text": "give",
+                "pronunciation": "/ɡɪv/"
+              },
+              "back": {
+                "text": "to hand something to someone",
+                "example": "Please give me the book.",
+                "notes": "he/she/it gives"
+              },
+              "tags": [
+                "verb",
+                "action"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "see", "pronunciation": "/siː/" },
-              "back": { "text": "to use your eyes to look at something", "example": "I see a bird in the tree.", "notes": "he/she/it sees" },
-              "tags": ["verb", "senses"],
+              "front": {
+                "text": "see",
+                "pronunciation": "/siː/"
+              },
+              "back": {
+                "text": "to use your eyes to look at something",
+                "example": "I see a bird in the tree.",
+                "notes": "he/she/it sees"
+              },
+              "tags": [
+                "verb",
+                "senses"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "know", "pronunciation": "/noʊ/" },
-              "back": { "text": "to have information or understanding about something", "example": "I know the answer.", "notes": "he/she/it knows" },
-              "tags": ["verb", "thinking"],
+              "front": {
+                "text": "know",
+                "pronunciation": "/noʊ/"
+              },
+              "back": {
+                "text": "to have information or understanding about something",
+                "example": "I know the answer.",
+                "notes": "he/she/it knows"
+              },
+              "tags": [
+                "verb",
+                "thinking"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "think", "pronunciation": "/θɪŋk/" },
-              "back": { "text": "to use your mind to consider something", "example": "I think this is a good idea.", "notes": "he/she/it thinks" },
-              "tags": ["verb", "thinking"],
+              "front": {
+                "text": "think",
+                "pronunciation": "/θɪŋk/"
+              },
+              "back": {
+                "text": "to use your mind to consider something",
+                "example": "I think this is a good idea.",
+                "notes": "he/she/it thinks"
+              },
+              "tags": [
+                "verb",
+                "thinking"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "say", "pronunciation": "/seɪ/" },
-              "back": { "text": "to speak words", "example": "She says 'hello' every morning.", "notes": "he/she/it says /sɛz/" },
-              "tags": ["verb", "communication"],
+              "front": {
+                "text": "say",
+                "pronunciation": "/seɪ/"
+              },
+              "back": {
+                "text": "to speak words",
+                "example": "She says 'hello' every morning.",
+                "notes": "he/she/it says /sɛz/"
+              },
+              "tags": [
+                "verb",
+                "communication"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "tell", "pronunciation": "/tɛl/" },
-              "back": { "text": "to give information to someone", "example": "Tell me your name, please.", "notes": "he/she/it tells" },
-              "tags": ["verb", "communication"],
+              "front": {
+                "text": "tell",
+                "pronunciation": "/tɛl/"
+              },
+              "back": {
+                "text": "to give information to someone",
+                "example": "Tell me your name, please.",
+                "notes": "he/she/it tells"
+              },
+              "tags": [
+                "verb",
+                "communication"
+              ],
               "sortOrder": 20
             },
             {
-              "front": { "text": "run", "pronunciation": "/rʌn/" },
-              "back": { "text": "to move quickly on your feet", "example": "They run in the park every morning.", "notes": "he/she/it runs" },
-              "tags": ["verb", "movement", "sport"],
+              "front": {
+                "text": "run",
+                "pronunciation": "/rʌn/"
+              },
+              "back": {
+                "text": "to move quickly on your feet",
+                "example": "They run in the park every morning.",
+                "notes": "he/she/it runs"
+              },
+              "tags": [
+                "verb",
+                "movement",
+                "sport"
+              ],
               "sortOrder": 21
             },
             {
-              "front": { "text": "walk", "pronunciation": "/wɔːk/" },
-              "back": { "text": "to move on foot at a normal speed", "example": "We walk to school.", "notes": "he/she/it walks" },
-              "tags": ["verb", "movement"],
+              "front": {
+                "text": "walk",
+                "pronunciation": "/wɔːk/"
+              },
+              "back": {
+                "text": "to move on foot at a normal speed",
+                "example": "We walk to school.",
+                "notes": "he/she/it walks"
+              },
+              "tags": [
+                "verb",
+                "movement"
+              ],
               "sortOrder": 22
             },
             {
-              "front": { "text": "sleep", "pronunciation": "/sliːp/" },
-              "back": { "text": "to rest with your eyes closed at night", "example": "I sleep eight hours every night.", "notes": "he/she/it sleeps" },
-              "tags": ["verb", "daily-routine"],
+              "front": {
+                "text": "sleep",
+                "pronunciation": "/sliːp/"
+              },
+              "back": {
+                "text": "to rest with your eyes closed at night",
+                "example": "I sleep eight hours every night.",
+                "notes": "he/she/it sleeps"
+              },
+              "tags": [
+                "verb",
+                "daily-routine"
+              ],
               "sortOrder": 23
             },
             {
-              "front": { "text": "cook", "pronunciation": "/kʊk/" },
-              "back": { "text": "to prepare food using heat", "example": "He cooks pasta for dinner.", "notes": "he/she/it cooks" },
-              "tags": ["verb", "food", "daily-routine"],
+              "front": {
+                "text": "cook",
+                "pronunciation": "/kʊk/"
+              },
+              "back": {
+                "text": "to prepare food using heat",
+                "example": "He cooks pasta for dinner.",
+                "notes": "he/she/it cooks"
+              },
+              "tags": [
+                "verb",
+                "food",
+                "daily-routine"
+              ],
               "sortOrder": 24
             },
             {
-              "front": { "text": "open", "pronunciation": "/ˈoʊ.pən/" },
-              "back": { "text": "to make something not closed", "example": "Please open the window.", "notes": "he/she/it opens" },
-              "tags": ["verb", "action"],
+              "front": {
+                "text": "open",
+                "pronunciation": "/ˈoʊ.pən/"
+              },
+              "back": {
+                "text": "to make something not closed",
+                "example": "Please open the window.",
+                "notes": "he/she/it opens"
+              },
+              "tags": [
+                "verb",
+                "action"
+              ],
               "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "Present Simple in Action",
+          "description": "45 sentences demonstrating present simple subject-verb agreement, regular habits, and stative verbs at A1 level.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "He runs in the park.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Basic sentence: verb in base form (he) but he/she adds -s/-es",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "She reads every night.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: description of a regular habit",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "They live in a big city.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Adverb of place: in a big city",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "I like tea.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: stative verb 'like'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "We play tennis on Sunday.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: regular activity on Sunday",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "She goes to work by car.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: -es after 'go'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "He teaches English.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: third person singular",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "They swim in the sea.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "I need a pen.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: stative verb 'need'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "She helps her mother.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person: helps (base form + s)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "He watches TV after dinner.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: habitual action",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "We listen to music.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: regular activity",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "She draws beautiful pictures.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: draws",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "They travel every summer.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "I rest on weekends.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: first person singular",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "He fixes his bike.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person: fixes (verb ending -x → -es)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "She cleans the kitchen.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person: cleans",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "We visit our grandparents.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: regular habit",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "They dance at parties.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "I walk to school.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: first person singular",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "He studies Japanese.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: studies (y→ies)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "She bakes bread.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person: bakes",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "They climb mountains.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "I feed the cat.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: first person singular",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "She sings in a choir.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: sings",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "He paints his room.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: paints",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "We laugh a lot.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "They cry at sad movies.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "I call my mother.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: first person singular",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "She mixes the ingredients.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person: mixes (verb ending -x → -es)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "He pushes the door.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: pushes",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "We pull the rope.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "They jump over the fence.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "I talk to my friend.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: first person singular",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "She answers the phone.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: answers",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "He asks a question.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: asks",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "We finish our homework.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "They start the project.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "I accept the offer.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: first person singular",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "She uses a computer.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: uses",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "He misses the bus.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: misses",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "We count to ten.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "They change their plans.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: plural subject",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "I pass the exam.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present simple: first person singular",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "She washes her hands.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Third person singular: washes (-sh → -es)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "present-simple",
+                "grammar",
+                "A1"
+              ],
+              "sortOrder": 45
             }
           ]
         }
@@ -368,7 +1441,12 @@
               "title": "Choose the right greeting",
               "body": {
                 "question": "It's 9:00 AM. You meet your teacher. What do you say?",
-                "options": ["Good night!", "Good evening!", "Good morning!", "See you later!"],
+                "options": [
+                  "Good night!",
+                  "Good evening!",
+                  "Good morning!",
+                  "See you later!"
+                ],
                 "correct": 2,
                 "explanation": "Before 12:00 PM, we say 'Good morning'."
               }
@@ -411,7 +1489,12 @@
               "title": "What number is this?",
               "body": {
                 "question": "Which number is 'fifteen'?",
-                "options": ["5", "14", "15", "50"],
+                "options": [
+                  "5",
+                  "14",
+                  "15",
+                  "50"
+                ],
                 "correct": 2,
                 "explanation": "Fifteen = 15. Five = 5, fourteen = 14, fifty = 50."
               }
@@ -454,7 +1537,12 @@
               "title": "Preposition practice",
               "body": {
                 "question": "My birthday is ___ July.",
-                "options": ["on", "at", "in", "to"],
+                "options": [
+                  "on",
+                  "at",
+                  "in",
+                  "to"
+                ],
                 "correct": 2,
                 "explanation": "We use 'in' with months: in July, in March, in December."
               }
@@ -464,8 +1552,20 @@
               "sortOrder": 3,
               "title": "Order the days",
               "body": {
-                "words": ["Wednesday", "Monday", "Friday", "Tuesday", "Thursday"],
-                "correct": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "words": [
+                  "Wednesday",
+                  "Monday",
+                  "Friday",
+                  "Tuesday",
+                  "Thursday"
+                ],
+                "correct": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
                 "translation": "The five weekdays in order."
               }
             }
@@ -496,7 +1596,12 @@
               "title": "Identify the shape",
               "body": {
                 "question": "A shape with three sides is called a ___.",
-                "options": ["square", "circle", "triangle", "rectangle"],
+                "options": [
+                  "square",
+                  "circle",
+                  "triangle",
+                  "rectangle"
+                ],
                 "correct": 2,
                 "explanation": "A triangle has exactly 3 sides. 'Tri' means three."
               }
@@ -521,154 +1626,1150 @@
           "description": "25 essential words covering greetings, numbers, days, colors, and shapes for everyday English.",
           "flashcards": [
             {
-              "front": { "text": "hello", "pronunciation": "/həˈloʊ/" },
-              "back": { "text": "a word used to greet someone", "example": "Hello! How are you?", "notes": "Informal: Hi" },
-              "tags": ["greeting"],
+              "front": {
+                "text": "hello",
+                "pronunciation": "/həˈloʊ/"
+              },
+              "back": {
+                "text": "a word used to greet someone",
+                "example": "Hello! How are you?",
+                "notes": "Informal: Hi"
+              },
+              "tags": [
+                "greeting"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "goodbye", "pronunciation": "/ɡʊdˈbaɪ/" },
-              "back": { "text": "a word used when you leave or someone leaves", "example": "Goodbye! See you tomorrow.", "notes": "Informal: Bye" },
-              "tags": ["greeting"],
+              "front": {
+                "text": "goodbye",
+                "pronunciation": "/ɡʊdˈbaɪ/"
+              },
+              "back": {
+                "text": "a word used when you leave or someone leaves",
+                "example": "Goodbye! See you tomorrow.",
+                "notes": "Informal: Bye"
+              },
+              "tags": [
+                "greeting"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "please", "pronunciation": "/pliːz/" },
-              "back": { "text": "a polite word used when asking for something", "example": "Can I have some water, please?", "notes": "Always use 'please' when making requests." },
-              "tags": ["politeness"],
+              "front": {
+                "text": "please",
+                "pronunciation": "/pliːz/"
+              },
+              "back": {
+                "text": "a polite word used when asking for something",
+                "example": "Can I have some water, please?",
+                "notes": "Always use 'please' when making requests."
+              },
+              "tags": [
+                "politeness"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "thank you", "pronunciation": "/θæŋk juː/" },
-              "back": { "text": "words used to show you are grateful", "example": "Thank you for your help!", "notes": "Informal: Thanks" },
-              "tags": ["politeness"],
+              "front": {
+                "text": "thank you",
+                "pronunciation": "/θæŋk juː/"
+              },
+              "back": {
+                "text": "words used to show you are grateful",
+                "example": "Thank you for your help!",
+                "notes": "Informal: Thanks"
+              },
+              "tags": [
+                "politeness"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "sorry", "pronunciation": "/ˈsɑːr.i/" },
-              "back": { "text": "a word used to apologize or show sympathy", "example": "Sorry, I'm late!", "notes": "Also used to get attention: 'Sorry, where is the station?'" },
-              "tags": ["politeness"],
+              "front": {
+                "text": "sorry",
+                "pronunciation": "/ˈsɑːr.i/"
+              },
+              "back": {
+                "text": "a word used to apologize or show sympathy",
+                "example": "Sorry, I'm late!",
+                "notes": "Also used to get attention: 'Sorry, where is the station?'"
+              },
+              "tags": [
+                "politeness"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "Monday", "pronunciation": "/ˈmʌn.deɪ/" },
-              "back": { "text": "the first day of the work week", "example": "I start work on Monday.", "notes": "Always capitalized. Use 'on': on Monday." },
-              "tags": ["days"],
+              "front": {
+                "text": "Monday",
+                "pronunciation": "/ˈmʌn.deɪ/"
+              },
+              "back": {
+                "text": "the first day of the work week",
+                "example": "I start work on Monday.",
+                "notes": "Always capitalized. Use 'on': on Monday."
+              },
+              "tags": [
+                "days"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "Friday", "pronunciation": "/ˈfraɪ.deɪ/" },
-              "back": { "text": "the fifth day of the week; last workday", "example": "We have a meeting on Friday.", "notes": "TGIF = Thank God It's Friday" },
-              "tags": ["days"],
+              "front": {
+                "text": "Friday",
+                "pronunciation": "/ˈfraɪ.deɪ/"
+              },
+              "back": {
+                "text": "the fifth day of the week; last workday",
+                "example": "We have a meeting on Friday.",
+                "notes": "TGIF = Thank God It's Friday"
+              },
+              "tags": [
+                "days"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "January", "pronunciation": "/ˈdʒæn.ju.ɛr.i/" },
-              "back": { "text": "the first month of the year", "example": "My birthday is in January.", "notes": "Always capitalized. Use 'in': in January." },
-              "tags": ["months"],
+              "front": {
+                "text": "January",
+                "pronunciation": "/ˈdʒæn.ju.ɛr.i/"
+              },
+              "back": {
+                "text": "the first month of the year",
+                "example": "My birthday is in January.",
+                "notes": "Always capitalized. Use 'in': in January."
+              },
+              "tags": [
+                "months"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "December", "pronunciation": "/dɪˈsɛm.bər/" },
-              "back": { "text": "the twelfth and last month of the year", "example": "Christmas is in December.", "notes": "Winter month in the Northern Hemisphere." },
-              "tags": ["months"],
+              "front": {
+                "text": "December",
+                "pronunciation": "/dɪˈsɛm.bər/"
+              },
+              "back": {
+                "text": "the twelfth and last month of the year",
+                "example": "Christmas is in December.",
+                "notes": "Winter month in the Northern Hemisphere."
+              },
+              "tags": [
+                "months"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "red", "pronunciation": "/rɛd/" },
-              "back": { "text": "the color of blood or a stop sign", "example": "She has a red dress.", "notes": "Color adjective — goes before the noun." },
-              "tags": ["color"],
+              "front": {
+                "text": "red",
+                "pronunciation": "/rɛd/"
+              },
+              "back": {
+                "text": "the color of blood or a stop sign",
+                "example": "She has a red dress.",
+                "notes": "Color adjective — goes before the noun."
+              },
+              "tags": [
+                "color"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "blue", "pronunciation": "/bluː/" },
-              "back": { "text": "the color of the sky on a clear day", "example": "The ocean is blue.", "notes": "'Feeling blue' = feeling sad." },
-              "tags": ["color"],
+              "front": {
+                "text": "blue",
+                "pronunciation": "/bluː/"
+              },
+              "back": {
+                "text": "the color of the sky on a clear day",
+                "example": "The ocean is blue.",
+                "notes": "'Feeling blue' = feeling sad."
+              },
+              "tags": [
+                "color"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "green", "pronunciation": "/ɡriːn/" },
-              "back": { "text": "the color of grass and leaves", "example": "I like the green shirt.", "notes": "Also means environmentally friendly." },
-              "tags": ["color"],
+              "front": {
+                "text": "green",
+                "pronunciation": "/ɡriːn/"
+              },
+              "back": {
+                "text": "the color of grass and leaves",
+                "example": "I like the green shirt.",
+                "notes": "Also means environmentally friendly."
+              },
+              "tags": [
+                "color"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "yellow", "pronunciation": "/ˈjɛl.oʊ/" },
-              "back": { "text": "the color of the sun or a banana", "example": "The taxi is yellow.", "notes": "" },
-              "tags": ["color"],
+              "front": {
+                "text": "yellow",
+                "pronunciation": "/ˈjɛl.oʊ/"
+              },
+              "back": {
+                "text": "the color of the sun or a banana",
+                "example": "The taxi is yellow.",
+                "notes": ""
+              },
+              "tags": [
+                "color"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "black", "pronunciation": "/blæk/" },
-              "back": { "text": "the darkest color; the color of night", "example": "He wears a black jacket.", "notes": "" },
-              "tags": ["color"],
+              "front": {
+                "text": "black",
+                "pronunciation": "/blæk/"
+              },
+              "back": {
+                "text": "the darkest color; the color of night",
+                "example": "He wears a black jacket.",
+                "notes": ""
+              },
+              "tags": [
+                "color"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "white", "pronunciation": "/waɪt/" },
-              "back": { "text": "the lightest color; the color of snow", "example": "The walls are white.", "notes": "" },
-              "tags": ["color"],
+              "front": {
+                "text": "white",
+                "pronunciation": "/waɪt/"
+              },
+              "back": {
+                "text": "the lightest color; the color of snow",
+                "example": "The walls are white.",
+                "notes": ""
+              },
+              "tags": [
+                "color"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "circle", "pronunciation": "/ˈsɜːr.kəl/" },
-              "back": { "text": "a round shape with no corners", "example": "Draw a circle on the paper.", "notes": "A clock face is a circle." },
-              "tags": ["shape"],
+              "front": {
+                "text": "circle",
+                "pronunciation": "/ˈsɜːr.kəl/"
+              },
+              "back": {
+                "text": "a round shape with no corners",
+                "example": "Draw a circle on the paper.",
+                "notes": "A clock face is a circle."
+              },
+              "tags": [
+                "shape"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "square", "pronunciation": "/skwɛr/" },
-              "back": { "text": "a shape with 4 equal sides and 4 right angles", "example": "The window is a square.", "notes": "Also a public open area in a city: 'Times Square'." },
-              "tags": ["shape"],
+              "front": {
+                "text": "square",
+                "pronunciation": "/skwɛr/"
+              },
+              "back": {
+                "text": "a shape with 4 equal sides and 4 right angles",
+                "example": "The window is a square.",
+                "notes": "Also a public open area in a city: 'Times Square'."
+              },
+              "tags": [
+                "shape"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "triangle", "pronunciation": "/ˈtraɪ.æŋ.ɡəl/" },
-              "back": { "text": "a shape with 3 sides", "example": "A pizza slice looks like a triangle.", "notes": "'Tri' = three" },
-              "tags": ["shape"],
+              "front": {
+                "text": "triangle",
+                "pronunciation": "/ˈtraɪ.æŋ.ɡəl/"
+              },
+              "back": {
+                "text": "a shape with 3 sides",
+                "example": "A pizza slice looks like a triangle.",
+                "notes": "'Tri' = three"
+              },
+              "tags": [
+                "shape"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "one", "pronunciation": "/wʌn/" },
-              "back": { "text": "the number 1", "example": "I have one brother.", "notes": "Sounds like 'won'." },
-              "tags": ["number"],
+              "front": {
+                "text": "one",
+                "pronunciation": "/wʌn/"
+              },
+              "back": {
+                "text": "the number 1",
+                "example": "I have one brother.",
+                "notes": "Sounds like 'won'."
+              },
+              "tags": [
+                "number"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "ten", "pronunciation": "/tɛn/" },
-              "back": { "text": "the number 10", "example": "There are ten students in the class.", "notes": "" },
-              "tags": ["number"],
+              "front": {
+                "text": "ten",
+                "pronunciation": "/tɛn/"
+              },
+              "back": {
+                "text": "the number 10",
+                "example": "There are ten students in the class.",
+                "notes": ""
+              },
+              "tags": [
+                "number"
+              ],
               "sortOrder": 20
             },
             {
-              "front": { "text": "twenty", "pronunciation": "/ˈtwɛn.ti/" },
-              "back": { "text": "the number 20", "example": "She is twenty years old.", "notes": "" },
-              "tags": ["number"],
+              "front": {
+                "text": "twenty",
+                "pronunciation": "/ˈtwɛn.ti/"
+              },
+              "back": {
+                "text": "the number 20",
+                "example": "She is twenty years old.",
+                "notes": ""
+              },
+              "tags": [
+                "number"
+              ],
               "sortOrder": 21
             },
             {
-              "front": { "text": "yes", "pronunciation": "/jɛs/" },
-              "back": { "text": "a word used to agree or give a positive answer", "example": "Yes, I like coffee.", "notes": "Informal: Yeah, Yep" },
-              "tags": ["basic"],
+              "front": {
+                "text": "yes",
+                "pronunciation": "/jɛs/"
+              },
+              "back": {
+                "text": "a word used to agree or give a positive answer",
+                "example": "Yes, I like coffee.",
+                "notes": "Informal: Yeah, Yep"
+              },
+              "tags": [
+                "basic"
+              ],
               "sortOrder": 22
             },
             {
-              "front": { "text": "no", "pronunciation": "/noʊ/" },
-              "back": { "text": "a word used to disagree or give a negative answer", "example": "No, I don't have a car.", "notes": "Informal: Nope" },
-              "tags": ["basic"],
+              "front": {
+                "text": "no",
+                "pronunciation": "/noʊ/"
+              },
+              "back": {
+                "text": "a word used to disagree or give a negative answer",
+                "example": "No, I don't have a car.",
+                "notes": "Informal: Nope"
+              },
+              "tags": [
+                "basic"
+              ],
               "sortOrder": 23
             },
             {
-              "front": { "text": "name", "pronunciation": "/neɪm/" },
-              "back": { "text": "the word that identifies a person or thing", "example": "My name is David.", "notes": "First name = given name; last name = family name." },
-              "tags": ["introduction"],
+              "front": {
+                "text": "name",
+                "pronunciation": "/neɪm/"
+              },
+              "back": {
+                "text": "the word that identifies a person or thing",
+                "example": "My name is David.",
+                "notes": "First name = given name; last name = family name."
+              },
+              "tags": [
+                "introduction"
+              ],
               "sortOrder": 24
             },
             {
-              "front": { "text": "friend", "pronunciation": "/frɛnd/" },
-              "back": { "text": "a person you know well and like", "example": "She is my best friend.", "notes": "Plural: friends" },
-              "tags": ["people"],
+              "front": {
+                "text": "friend",
+                "pronunciation": "/frɛnd/"
+              },
+              "back": {
+                "text": "a person you know well and like",
+                "example": "She is my best friend.",
+                "notes": "Plural: friends"
+              },
+              "tags": [
+                "people"
+              ],
               "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "More A1 Essential Words",
+          "description": "45 additional everyday words covering family, home, school, food, and clothing.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "mother",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Your female parent",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "father",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Your male parent",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "brother",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A male sibling",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "sister",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A female sibling",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "family",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A group of related people",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "house",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A building where people live",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "room",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A space within a building",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "door",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "An entrance-way or barrier",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "window",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "An opening in a wall for light/air",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "table",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A flat surface with legs",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "chair",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A seat with a back support",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "bed",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A piece of furniture for sleeping",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "kitchen",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A room for cooking",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "bathroom",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A room with a toilet and sink",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "garden",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "An outdoor area with plants",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "car",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A vehicle with four wheels",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "bus",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A large vehicle that carries passengers",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "train",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A vehicle that runs on tracks",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "bike",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A two-wheeled vehicle",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "street",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A public road in a town",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "school",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A place for learning",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "teacher",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A person who teaches",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "student",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A person who studies",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "book",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Bound pages for reading",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "pen",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A writing tool with ink",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "paper",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Material for writing or printing",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "bag",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A container for carrying things",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "shoes",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Coverings for your feet",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "shirt",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Clothing for the upper body",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "dress",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A one-piece garment for women",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "hat",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A covering for the head",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "watch",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A device for telling time",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "phone",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A device for voice communication",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "computer",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A machine for processing data",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "money",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Coins and banknotes",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "food",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Something you eat for energy",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "water",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Clear liquid essential for life",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "milk",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A white liquid from cows",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "bread",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A baked food made from flour",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "rice",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A staple grain food",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "fruit",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Sweet products from plants",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "apple",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A round red or green fruit",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "banana",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A long yellow fruit",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "orange",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A round orange citrus fruit",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "tomato",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A round red vegetable/fruit",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "vocabulary",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 45
             }
           ]
         }
@@ -705,7 +2806,12 @@
               "title": "Wake up vs. Get up",
               "body": {
                 "question": "My alarm rings at 6:00, but I ___ at 6:30. (= I leave my bed at 6:30)",
-                "options": ["wake up", "get up", "go up", "stand up"],
+                "options": [
+                  "wake up",
+                  "get up",
+                  "go up",
+                  "stand up"
+                ],
                 "correct": 1,
                 "explanation": "'Get up' means to leave your bed. You wake up when the alarm rings, but you get up later."
               }
@@ -717,7 +2823,9 @@
               "body": {
                 "sentence": "I always ___ up early on Monday mornings.",
                 "answer": "wake",
-                "alternatives": ["get"],
+                "alternatives": [
+                  "get"
+                ],
                 "explanation": "Both 'wake up' and 'get up' work here. 'Wake up' = stop sleeping; 'get up' = leave bed."
               }
             }
@@ -747,8 +2855,20 @@
               "sortOrder": 2,
               "title": "Build the sentence",
               "body": {
-                "words": ["Please", "the", "turn", "off", "light"],
-                "correct": ["Please", "turn", "off", "the", "light"],
+                "words": [
+                  "Please",
+                  "the",
+                  "turn",
+                  "off",
+                  "light"
+                ],
+                "correct": [
+                  "Please",
+                  "turn",
+                  "off",
+                  "the",
+                  "light"
+                ],
                 "translation": "Please turn off the light."
               }
             },
@@ -758,7 +2878,12 @@
               "title": "Pronoun placement",
               "body": {
                 "question": "The radio is too loud. Please turn ___.",
-                "options": ["off it", "it off", "it on", "on it"],
+                "options": [
+                  "off it",
+                  "it off",
+                  "it on",
+                  "on it"
+                ],
                 "correct": 1,
                 "explanation": "With pronouns, you must separate: 'turn it off'. 'Turn off it' is incorrect."
               }
@@ -801,7 +2926,12 @@
               "title": "Put on vs. Take off",
               "body": {
                 "question": "You arrive home and it's warm inside. You ___ your coat.",
-                "options": ["put on", "take off", "turn on", "get up"],
+                "options": [
+                  "put on",
+                  "take off",
+                  "turn on",
+                  "get up"
+                ],
                 "correct": 1,
                 "explanation": "When it's warm and you don't need your coat, you 'take off' your coat (remove it)."
               }
@@ -815,124 +2945,1011 @@
           "description": "The 20 most useful phrasal verbs for beginners. Each card shows the phrasal verb with a clear definition and example.",
           "flashcards": [
             {
-              "front": { "text": "wake up", "pronunciation": "/weɪk ʌp/" },
-              "back": { "text": "to stop sleeping", "example": "I wake up at 6:30 every morning.", "notes": "Separable: 'Wake me up at 7.'" },
-              "tags": ["phrasal-verb", "morning-routine"],
+              "front": {
+                "text": "wake up",
+                "pronunciation": "/weɪk ʌp/"
+              },
+              "back": {
+                "text": "to stop sleeping",
+                "example": "I wake up at 6:30 every morning.",
+                "notes": "Separable: 'Wake me up at 7.'"
+              },
+              "tags": [
+                "phrasal-verb",
+                "morning-routine"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "get up", "pronunciation": "/ɡɛt ʌp/" },
-              "back": { "text": "to get out of bed; to stand from a sitting position", "example": "I get up and take a shower.", "notes": "wake up = eyes open; get up = out of bed" },
-              "tags": ["phrasal-verb", "morning-routine"],
+              "front": {
+                "text": "get up",
+                "pronunciation": "/ɡɛt ʌp/"
+              },
+              "back": {
+                "text": "to get out of bed; to stand from a sitting position",
+                "example": "I get up and take a shower.",
+                "notes": "wake up = eyes open; get up = out of bed"
+              },
+              "tags": [
+                "phrasal-verb",
+                "morning-routine"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "turn on", "pronunciation": "/tɜːrn ɒn/" },
-              "back": { "text": "to start a machine, light, or device", "example": "Turn on the TV — the movie starts now.", "notes": "Separable: 'Turn the TV on.' / 'Turn it on.'" },
-              "tags": ["phrasal-verb", "electronics"],
+              "front": {
+                "text": "turn on",
+                "pronunciation": "/tɜːrn ɒn/"
+              },
+              "back": {
+                "text": "to start a machine, light, or device",
+                "example": "Turn on the TV — the movie starts now.",
+                "notes": "Separable: 'Turn the TV on.' / 'Turn it on.'"
+              },
+              "tags": [
+                "phrasal-verb",
+                "electronics"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "turn off", "pronunciation": "/tɜːrn ɒf/" },
-              "back": { "text": "to stop a machine, light, or device", "example": "Please turn off the lights before you leave.", "notes": "Separable: 'Turn it off.'" },
-              "tags": ["phrasal-verb", "electronics"],
+              "front": {
+                "text": "turn off",
+                "pronunciation": "/tɜːrn ɒf/"
+              },
+              "back": {
+                "text": "to stop a machine, light, or device",
+                "example": "Please turn off the lights before you leave.",
+                "notes": "Separable: 'Turn it off.'"
+              },
+              "tags": [
+                "phrasal-verb",
+                "electronics"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "put on", "pronunciation": "/pʊt ɒn/" },
-              "back": { "text": "to place clothing on your body", "example": "Put on your jacket — it's cold outside!", "notes": "put on = action of dressing ≠ wear = state" },
-              "tags": ["phrasal-verb", "clothing"],
+              "front": {
+                "text": "put on",
+                "pronunciation": "/pʊt ɒn/"
+              },
+              "back": {
+                "text": "to place clothing on your body",
+                "example": "Put on your jacket — it's cold outside!",
+                "notes": "put on = action of dressing ≠ wear = state"
+              },
+              "tags": [
+                "phrasal-verb",
+                "clothing"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "take off", "pronunciation": "/teɪk ɒf/" },
-              "back": { "text": "to remove clothing; (airplane) to leave the ground", "example": "Take off your shoes at the door.", "notes": "Separable: 'Take your shoes off.' / 'Take them off.'" },
-              "tags": ["phrasal-verb", "clothing"],
+              "front": {
+                "text": "take off",
+                "pronunciation": "/teɪk ɒf/"
+              },
+              "back": {
+                "text": "to remove clothing; (airplane) to leave the ground",
+                "example": "Take off your shoes at the door.",
+                "notes": "Separable: 'Take your shoes off.' / 'Take them off.'"
+              },
+              "tags": [
+                "phrasal-verb",
+                "clothing"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "sit down", "pronunciation": "/sɪt daʊn/" },
-              "back": { "text": "to move from standing to sitting", "example": "Please sit down and wait.", "notes": "Opposite: stand up" },
-              "tags": ["phrasal-verb", "movement"],
+              "front": {
+                "text": "sit down",
+                "pronunciation": "/sɪt daʊn/"
+              },
+              "back": {
+                "text": "to move from standing to sitting",
+                "example": "Please sit down and wait.",
+                "notes": "Opposite: stand up"
+              },
+              "tags": [
+                "phrasal-verb",
+                "movement"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "stand up", "pronunciation": "/stænd ʌp/" },
-              "back": { "text": "to move from sitting to standing", "example": "Stand up when the teacher comes in.", "notes": "Opposite: sit down" },
-              "tags": ["phrasal-verb", "movement"],
+              "front": {
+                "text": "stand up",
+                "pronunciation": "/stænd ʌp/"
+              },
+              "back": {
+                "text": "to move from sitting to standing",
+                "example": "Stand up when the teacher comes in.",
+                "notes": "Opposite: sit down"
+              },
+              "tags": [
+                "phrasal-verb",
+                "movement"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "come in", "pronunciation": "/kʌm ɪn/" },
-              "back": { "text": "to enter a room or building", "example": "Come in! The door is open.", "notes": "Opposite: go out" },
-              "tags": ["phrasal-verb", "movement"],
+              "front": {
+                "text": "come in",
+                "pronunciation": "/kʌm ɪn/"
+              },
+              "back": {
+                "text": "to enter a room or building",
+                "example": "Come in! The door is open.",
+                "notes": "Opposite: go out"
+              },
+              "tags": [
+                "phrasal-verb",
+                "movement"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "go out", "pronunciation": "/ɡoʊ aʊt/" },
-              "back": { "text": "to leave a room, building, or your home", "example": "Let's go out for dinner tonight.", "notes": "Also means to socialize: 'go out with friends'" },
-              "tags": ["phrasal-verb", "movement"],
+              "front": {
+                "text": "go out",
+                "pronunciation": "/ɡoʊ aʊt/"
+              },
+              "back": {
+                "text": "to leave a room, building, or your home",
+                "example": "Let's go out for dinner tonight.",
+                "notes": "Also means to socialize: 'go out with friends'"
+              },
+              "tags": [
+                "phrasal-verb",
+                "movement"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "pick up", "pronunciation": "/pɪk ʌp/" },
-              "back": { "text": "to lift something from a surface with your hand", "example": "Pick up your bag from the floor.", "notes": "Separable: 'Pick it up.'" },
-              "tags": ["phrasal-verb", "action"],
+              "front": {
+                "text": "pick up",
+                "pronunciation": "/pɪk ʌp/"
+              },
+              "back": {
+                "text": "to lift something from a surface with your hand",
+                "example": "Pick up your bag from the floor.",
+                "notes": "Separable: 'Pick it up.'"
+              },
+              "tags": [
+                "phrasal-verb",
+                "action"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "put down", "pronunciation": "/pʊt daʊn/" },
-              "back": { "text": "to place something on a surface", "example": "Put down the book and listen.", "notes": "Opposite: pick up" },
-              "tags": ["phrasal-verb", "action"],
+              "front": {
+                "text": "put down",
+                "pronunciation": "/pʊt daʊn/"
+              },
+              "back": {
+                "text": "to place something on a surface",
+                "example": "Put down the book and listen.",
+                "notes": "Opposite: pick up"
+              },
+              "tags": [
+                "phrasal-verb",
+                "action"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "look at", "pronunciation": "/lʊk æt/" },
-              "back": { "text": "to direct your eyes toward something", "example": "Look at this picture!", "notes": "Inseparable: always 'look at' + object" },
-              "tags": ["phrasal-verb", "senses"],
+              "front": {
+                "text": "look at",
+                "pronunciation": "/lʊk æt/"
+              },
+              "back": {
+                "text": "to direct your eyes toward something",
+                "example": "Look at this picture!",
+                "notes": "Inseparable: always 'look at' + object"
+              },
+              "tags": [
+                "phrasal-verb",
+                "senses"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "listen to", "pronunciation": "/ˈlɪs.ən tuː/" },
-              "back": { "text": "to pay attention to sounds or someone speaking", "example": "Listen to the teacher, please.", "notes": "Inseparable: always 'listen to' + object" },
-              "tags": ["phrasal-verb", "senses"],
+              "front": {
+                "text": "listen to",
+                "pronunciation": "/ˈlɪs.ən tuː/"
+              },
+              "back": {
+                "text": "to pay attention to sounds or someone speaking",
+                "example": "Listen to the teacher, please.",
+                "notes": "Inseparable: always 'listen to' + object"
+              },
+              "tags": [
+                "phrasal-verb",
+                "senses"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "write down", "pronunciation": "/raɪt daʊn/" },
-              "back": { "text": "to write something on paper so you remember it", "example": "Write down your homework.", "notes": "Separable: 'Write it down.'" },
-              "tags": ["phrasal-verb", "school"],
+              "front": {
+                "text": "write down",
+                "pronunciation": "/raɪt daʊn/"
+              },
+              "back": {
+                "text": "to write something on paper so you remember it",
+                "example": "Write down your homework.",
+                "notes": "Separable: 'Write it down.'"
+              },
+              "tags": [
+                "phrasal-verb",
+                "school"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "come back", "pronunciation": "/kʌm bæk/" },
-              "back": { "text": "to return to a place", "example": "I'll come back at 5 o'clock.", "notes": "Inseparable" },
-              "tags": ["phrasal-verb", "movement"],
+              "front": {
+                "text": "come back",
+                "pronunciation": "/kʌm bæk/"
+              },
+              "back": {
+                "text": "to return to a place",
+                "example": "I'll come back at 5 o'clock.",
+                "notes": "Inseparable"
+              },
+              "tags": [
+                "phrasal-verb",
+                "movement"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "go back", "pronunciation": "/ɡoʊ bæk/" },
-              "back": { "text": "to return to a place you were before", "example": "We go back to school in September.", "notes": "Similar to 'come back' but direction is away from the speaker" },
-              "tags": ["phrasal-verb", "movement"],
+              "front": {
+                "text": "go back",
+                "pronunciation": "/ɡoʊ bæk/"
+              },
+              "back": {
+                "text": "to return to a place you were before",
+                "example": "We go back to school in September.",
+                "notes": "Similar to 'come back' but direction is away from the speaker"
+              },
+              "tags": [
+                "phrasal-verb",
+                "movement"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "throw away", "pronunciation": "/θroʊ əˈweɪ/" },
-              "back": { "text": "to put something in the trash; to discard", "example": "Throw away the old newspapers.", "notes": "Separable: 'Throw them away.'" },
-              "tags": ["phrasal-verb", "action"],
+              "front": {
+                "text": "throw away",
+                "pronunciation": "/θroʊ əˈweɪ/"
+              },
+              "back": {
+                "text": "to put something in the trash; to discard",
+                "example": "Throw away the old newspapers.",
+                "notes": "Separable: 'Throw them away.'"
+              },
+              "tags": [
+                "phrasal-verb",
+                "action"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "try on", "pronunciation": "/traɪ ɒn/" },
-              "back": { "text": "to put on clothing to see if it fits or looks good", "example": "Can I try on this shirt?", "notes": "Separable: 'Try it on.' Common in shops." },
-              "tags": ["phrasal-verb", "clothing", "shopping"],
+              "front": {
+                "text": "try on",
+                "pronunciation": "/traɪ ɒn/"
+              },
+              "back": {
+                "text": "to put on clothing to see if it fits or looks good",
+                "example": "Can I try on this shirt?",
+                "notes": "Separable: 'Try it on.' Common in shops."
+              },
+              "tags": [
+                "phrasal-verb",
+                "clothing",
+                "shopping"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "look for", "pronunciation": "/lʊk fɔːr/" },
-              "back": { "text": "to try to find something", "example": "I'm looking for my keys.", "notes": "Inseparable: always 'look for' + object" },
-              "tags": ["phrasal-verb", "action"],
+              "front": {
+                "text": "look for",
+                "pronunciation": "/lʊk fɔːr/"
+              },
+              "back": {
+                "text": "to try to find something",
+                "example": "I'm looking for my keys.",
+                "notes": "Inseparable: always 'look for' + object"
+              },
+              "tags": [
+                "phrasal-verb",
+                "action"
+              ],
               "sortOrder": 20
+            }
+          ]
+        },
+        {
+          "title": "More Common Phrasal Verbs",
+          "description": "40 additional everyday phrasal verbs for routines, actions, and simple communication.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "cheer up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To make someone happier",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "grow up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To become an adult",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "hurry up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To do something more quickly",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "give up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To stop trying or surrender",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "clean up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To make a place tidy",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "dress up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To put on nice clothes",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "wash up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To clean the dishes",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "turn around",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To face the opposite direction",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "come over",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To visit someone's home",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "go away",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To leave a place",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "run away",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To escape by running",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "get in",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To enter a car or taxi",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "get out",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To leave a car or taxi",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "sit back",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To relax; lean back",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "stand by",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To wait; be ready",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "hold on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To wait (especially on the phone)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "carry on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To continue doing something",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "calm down",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To become relaxed",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "slow down",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To reduce speed",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "shut up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To stop talking (rude)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "break down",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To stop working (machines); to cry emotionally",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "fall down",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To drop to the ground",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "lie down",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To rest flat on a surface",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "go on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To continue; to happen",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "come on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "An expression of encouragement",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "start over",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To begin again from the beginning",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "check in",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To register at a hotel or airport",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "check out",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To leave a hotel; to investigate",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "fill up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To make completely full",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "heat up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To make food warm",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "cool down",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To become less hot",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "warm up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To prepare your body for exercise",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "dry off",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To remove moisture with a towel",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "hang up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To end a phone call; to suspend clothing",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "pay back",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To return money you borrowed",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "call back",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To phone someone again",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "sign up",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To register or join",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "log in",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To enter a computer system",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "log out",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To exit a computer system",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "print out",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To produce on paper from a computer",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "A1",
+                "everyday"
+              ],
+              "sortOrder": 40
             }
           ]
         }

@@ -34,7 +34,12 @@
               "title": "Te-form of 読む",
               "body": {
                 "question": "What is the て form of 読む (よむ - to read)?",
-                "options": ["読みて", "読んで", "読って", "読いて"],
+                "options": [
+                  "読みて",
+                  "読んで",
+                  "読って",
+                  "読いて"
+                ],
                 "correct": 1,
                 "explanation": "読む ends in む, so it follows the む・ぶ・ぬ → んで pattern: 読む → 読んで (yonde)."
               }
@@ -46,7 +51,9 @@
               "body": {
                 "sentence": "手紙を ___ ください。(Please write a letter.)",
                 "answer": "書いて",
-                "alternatives": ["かいて"],
+                "alternatives": [
+                  "かいて"
+                ],
                 "explanation": "書く ends in く, so it follows the く → いて pattern: 書く → 書いて (kaite)."
               }
             }
@@ -78,7 +85,12 @@
               "title": "Meaning of ている",
               "body": {
                 "question": "What does 田中さんは結婚している mean?",
-                "options": ["Tanaka is getting married.", "Tanaka is married.", "Tanaka was married.", "Tanaka wants to get married."],
+                "options": [
+                  "Tanaka is getting married.",
+                  "Tanaka is married.",
+                  "Tanaka was married.",
+                  "Tanaka wants to get married."
+                ],
                 "correct": 1,
                 "explanation": "結婚している expresses a resultant state — the result of having gotten married. It means 'is married', not 'is getting married'."
               }
@@ -88,8 +100,18 @@
               "sortOrder": 3,
               "title": "Build: I am reading a book",
               "body": {
-                "words": ["を", "本", "読んで", "います"],
-                "correct": ["本", "を", "読んで", "います"],
+                "words": [
+                  "を",
+                  "本",
+                  "読んで",
+                  "います"
+                ],
+                "correct": [
+                  "本",
+                  "を",
+                  "読んで",
+                  "います"
+                ],
                 "translation": "I am reading a book."
               }
             }
@@ -122,7 +144,9 @@
               "body": {
                 "sentence": "ご飯を ___ 、薬を飲みます。(After eating, I take medicine.)",
                 "answer": "食べてから",
-                "alternatives": ["たべてから"],
+                "alternatives": [
+                  "たべてから"
+                ],
                 "explanation": "食べる → 食べて + から = 食べてから (after eating). The てから pattern expresses that the first action must be completed before the second."
               }
             },
@@ -131,8 +155,18 @@
               "sortOrder": 3,
               "title": "Build: After studying, I watch TV",
               "body": {
-                "words": ["テレビを", "勉強して", "から", "見ます"],
-                "correct": ["勉強して", "から", "テレビを", "見ます"],
+                "words": [
+                  "テレビを",
+                  "勉強して",
+                  "から",
+                  "見ます"
+                ],
+                "correct": [
+                  "勉強して",
+                  "から",
+                  "テレビを",
+                  "見ます"
+                ],
                 "translation": "After studying, I watch TV."
               }
             }
@@ -195,154 +229,1200 @@
           "description": "25 essential grammar patterns for JLPT N4, covering te-form connections, conditionals, giving/receiving, and more.",
           "flashcards": [
             {
-              "front": { "text": "〜ている", "reading": "〜ている" },
-              "back": { "text": "Progressive / resultant state (am doing / is in state of)", "example": "今、本を読んでいます。(I am reading a book now.)", "notes": "te-form + いる" },
-              "tags": ["grammar", "te-form", "n4"],
+              "front": {
+                "text": "〜ている",
+                "reading": "〜ている"
+              },
+              "back": {
+                "text": "Progressive / resultant state (am doing / is in state of)",
+                "example": "今、本を読んでいます。(I am reading a book now.)",
+                "notes": "te-form + いる"
+              },
+              "tags": [
+                "grammar",
+                "te-form",
+                "n4"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "〜てから", "reading": "〜てから" },
-              "back": { "text": "After doing ~", "example": "ご飯を食べてから、出かけます。(After eating, I go out.)", "notes": "te-form + から" },
-              "tags": ["grammar", "te-form", "n4"],
+              "front": {
+                "text": "〜てから",
+                "reading": "〜てから"
+              },
+              "back": {
+                "text": "After doing ~",
+                "example": "ご飯を食べてから、出かけます。(After eating, I go out.)",
+                "notes": "te-form + から"
+              },
+              "tags": [
+                "grammar",
+                "te-form",
+                "n4"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "〜たり〜たりする", "reading": "〜たり〜たりする" },
-              "back": { "text": "Do things like ~ and ~ (non-exhaustive list)", "example": "映画を見たり、音楽を聞いたりします。(I do things like watch movies and listen to music.)", "notes": "ta-form + り" },
-              "tags": ["grammar", "te-form", "n4"],
+              "front": {
+                "text": "〜たり〜たりする",
+                "reading": "〜たり〜たりする"
+              },
+              "back": {
+                "text": "Do things like ~ and ~ (non-exhaustive list)",
+                "example": "映画を見たり、音楽を聞いたりします。(I do things like watch movies and listen to music.)",
+                "notes": "ta-form + り"
+              },
+              "tags": [
+                "grammar",
+                "te-form",
+                "n4"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "〜てもいい", "reading": "〜てもいい" },
-              "back": { "text": "It's okay to ~ / May I ~?", "example": "ここに座ってもいいですか。(May I sit here?)", "notes": "te-form + もいい" },
-              "tags": ["grammar", "permission", "n4"],
+              "front": {
+                "text": "〜てもいい",
+                "reading": "〜てもいい"
+              },
+              "back": {
+                "text": "It's okay to ~ / May I ~?",
+                "example": "ここに座ってもいいですか。(May I sit here?)",
+                "notes": "te-form + もいい"
+              },
+              "tags": [
+                "grammar",
+                "permission",
+                "n4"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "〜てはいけない", "reading": "〜てはいけない" },
-              "back": { "text": "Must not ~ / Not allowed to ~", "example": "ここで写真を撮ってはいけません。(You must not take photos here.)", "notes": "te-form + はいけない" },
-              "tags": ["grammar", "prohibition", "n4"],
+              "front": {
+                "text": "〜てはいけない",
+                "reading": "〜てはいけない"
+              },
+              "back": {
+                "text": "Must not ~ / Not allowed to ~",
+                "example": "ここで写真を撮ってはいけません。(You must not take photos here.)",
+                "notes": "te-form + はいけない"
+              },
+              "tags": [
+                "grammar",
+                "prohibition",
+                "n4"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "〜なければならない", "reading": "〜なければならない" },
-              "back": { "text": "Must ~ / Have to ~", "example": "宿題をしなければならない。(I have to do homework.)", "notes": "nai-form stem + ければならない" },
-              "tags": ["grammar", "obligation", "n4"],
+              "front": {
+                "text": "〜なければならない",
+                "reading": "〜なければならない"
+              },
+              "back": {
+                "text": "Must ~ / Have to ~",
+                "example": "宿題をしなければならない。(I have to do homework.)",
+                "notes": "nai-form stem + ければならない"
+              },
+              "tags": [
+                "grammar",
+                "obligation",
+                "n4"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "〜なくてもいい", "reading": "〜なくてもいい" },
-              "back": { "text": "Don't have to ~ / It's okay not to ~", "example": "明日は来なくてもいいです。(You don't have to come tomorrow.)", "notes": "nai-form stem + くてもいい" },
-              "tags": ["grammar", "permission", "n4"],
+              "front": {
+                "text": "〜なくてもいい",
+                "reading": "〜なくてもいい"
+              },
+              "back": {
+                "text": "Don't have to ~ / It's okay not to ~",
+                "example": "明日は来なくてもいいです。(You don't have to come tomorrow.)",
+                "notes": "nai-form stem + くてもいい"
+              },
+              "tags": [
+                "grammar",
+                "permission",
+                "n4"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "〜てあげる", "reading": "〜てあげる" },
-              "back": { "text": "Do ~ for someone (as a favor)", "example": "友達に本を読んであげた。(I read a book for my friend.)", "notes": "te-form + あげる (giving direction: speaker → other)" },
-              "tags": ["grammar", "giving-receiving", "n4"],
+              "front": {
+                "text": "〜てあげる",
+                "reading": "〜てあげる"
+              },
+              "back": {
+                "text": "Do ~ for someone (as a favor)",
+                "example": "友達に本を読んであげた。(I read a book for my friend.)",
+                "notes": "te-form + あげる (giving direction: speaker → other)"
+              },
+              "tags": [
+                "grammar",
+                "giving-receiving",
+                "n4"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "〜てもらう", "reading": "〜てもらう" },
-              "back": { "text": "Have someone do ~ for me / Receive the favor of ~", "example": "先生に説明してもらった。(I had the teacher explain it for me.)", "notes": "te-form + もらう (receiving direction: other → speaker)" },
-              "tags": ["grammar", "giving-receiving", "n4"],
+              "front": {
+                "text": "〜てもらう",
+                "reading": "〜てもらう"
+              },
+              "back": {
+                "text": "Have someone do ~ for me / Receive the favor of ~",
+                "example": "先生に説明してもらった。(I had the teacher explain it for me.)",
+                "notes": "te-form + もらう (receiving direction: other → speaker)"
+              },
+              "tags": [
+                "grammar",
+                "giving-receiving",
+                "n4"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "〜てくれる", "reading": "〜てくれる" },
-              "back": { "text": "Someone does ~ for me (grateful nuance)", "example": "母が料理を作ってくれた。(My mother made food for me.)", "notes": "te-form + くれる (other → speaker, speaker grateful)" },
-              "tags": ["grammar", "giving-receiving", "n4"],
+              "front": {
+                "text": "〜てくれる",
+                "reading": "〜てくれる"
+              },
+              "back": {
+                "text": "Someone does ~ for me (grateful nuance)",
+                "example": "母が料理を作ってくれた。(My mother made food for me.)",
+                "notes": "te-form + くれる (other → speaker, speaker grateful)"
+              },
+              "tags": [
+                "grammar",
+                "giving-receiving",
+                "n4"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "〜たことがある", "reading": "〜たことがある" },
-              "back": { "text": "Have experienced ~ / Have done ~ before", "example": "日本に行ったことがあります。(I have been to Japan before.)", "notes": "ta-form + ことがある" },
-              "tags": ["grammar", "experience", "n4"],
+              "front": {
+                "text": "〜たことがある",
+                "reading": "〜たことがある"
+              },
+              "back": {
+                "text": "Have experienced ~ / Have done ~ before",
+                "example": "日本に行ったことがあります。(I have been to Japan before.)",
+                "notes": "ta-form + ことがある"
+              },
+              "tags": [
+                "grammar",
+                "experience",
+                "n4"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "〜たほうがいい", "reading": "〜たほうがいい" },
-              "back": { "text": "Had better ~ / Should ~", "example": "薬を飲んだほうがいいですよ。(You should take medicine.)", "notes": "ta-form + ほうがいい (affirmative advice)" },
-              "tags": ["grammar", "advice", "n4"],
+              "front": {
+                "text": "〜たほうがいい",
+                "reading": "〜たほうがいい"
+              },
+              "back": {
+                "text": "Had better ~ / Should ~",
+                "example": "薬を飲んだほうがいいですよ。(You should take medicine.)",
+                "notes": "ta-form + ほうがいい (affirmative advice)"
+              },
+              "tags": [
+                "grammar",
+                "advice",
+                "n4"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "〜ないほうがいい", "reading": "〜ないほうがいい" },
-              "back": { "text": "Had better not ~ / Shouldn't ~", "example": "夜遅く食べないほうがいい。(You shouldn't eat late at night.)", "notes": "nai-form + ほうがいい (negative advice)" },
-              "tags": ["grammar", "advice", "n4"],
+              "front": {
+                "text": "〜ないほうがいい",
+                "reading": "〜ないほうがいい"
+              },
+              "back": {
+                "text": "Had better not ~ / Shouldn't ~",
+                "example": "夜遅く食べないほうがいい。(You shouldn't eat late at night.)",
+                "notes": "nai-form + ほうがいい (negative advice)"
+              },
+              "tags": [
+                "grammar",
+                "advice",
+                "n4"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "〜と思う", "reading": "〜とおもう" },
-              "back": { "text": "I think that ~", "example": "明日は雨だと思います。(I think it will rain tomorrow.)", "notes": "plain form + と思う" },
-              "tags": ["grammar", "opinion", "n4"],
+              "front": {
+                "text": "〜と思う",
+                "reading": "〜とおもう"
+              },
+              "back": {
+                "text": "I think that ~",
+                "example": "明日は雨だと思います。(I think it will rain tomorrow.)",
+                "notes": "plain form + と思う"
+              },
+              "tags": [
+                "grammar",
+                "opinion",
+                "n4"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "〜と言う", "reading": "〜という" },
-              "back": { "text": "Say that ~ / Called ~", "example": "先生は明日テストがあると言いました。(The teacher said there's a test tomorrow.)", "notes": "plain form + と言う" },
-              "tags": ["grammar", "quotation", "n4"],
+              "front": {
+                "text": "〜と言う",
+                "reading": "〜という"
+              },
+              "back": {
+                "text": "Say that ~ / Called ~",
+                "example": "先生は明日テストがあると言いました。(The teacher said there's a test tomorrow.)",
+                "notes": "plain form + と言う"
+              },
+              "tags": [
+                "grammar",
+                "quotation",
+                "n4"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "〜かもしれない", "reading": "〜かもしれない" },
-              "back": { "text": "Might ~ / Maybe ~", "example": "明日は雪が降るかもしれない。(It might snow tomorrow.)", "notes": "plain form + かもしれない" },
-              "tags": ["grammar", "possibility", "n4"],
+              "front": {
+                "text": "〜かもしれない",
+                "reading": "〜かもしれない"
+              },
+              "back": {
+                "text": "Might ~ / Maybe ~",
+                "example": "明日は雪が降るかもしれない。(It might snow tomorrow.)",
+                "notes": "plain form + かもしれない"
+              },
+              "tags": [
+                "grammar",
+                "possibility",
+                "n4"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "〜ので", "reading": "〜ので" },
-              "back": { "text": "Because ~ (polite/objective reason)", "example": "病気なので、学校を休みます。(Because I'm sick, I'll be absent from school.)", "notes": "plain form + ので (na-adj/noun + なので)" },
-              "tags": ["grammar", "reason", "n4"],
+              "front": {
+                "text": "〜ので",
+                "reading": "〜ので"
+              },
+              "back": {
+                "text": "Because ~ (polite/objective reason)",
+                "example": "病気なので、学校を休みます。(Because I'm sick, I'll be absent from school.)",
+                "notes": "plain form + ので (na-adj/noun + なので)"
+              },
+              "tags": [
+                "grammar",
+                "reason",
+                "n4"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "〜のに", "reading": "〜のに" },
-              "back": { "text": "Even though ~ / Despite ~", "example": "勉強したのに、テストに落ちた。(Even though I studied, I failed the test.)", "notes": "plain form + のに" },
-              "tags": ["grammar", "contrast", "n4"],
+              "front": {
+                "text": "〜のに",
+                "reading": "〜のに"
+              },
+              "back": {
+                "text": "Even though ~ / Despite ~",
+                "example": "勉強したのに、テストに落ちた。(Even though I studied, I failed the test.)",
+                "notes": "plain form + のに"
+              },
+              "tags": [
+                "grammar",
+                "contrast",
+                "n4"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "〜ために", "reading": "〜ために" },
-              "back": { "text": "In order to ~ / For the sake of ~", "example": "日本語を勉強するために、日本に来ました。(I came to Japan to study Japanese.)", "notes": "dictionary form + ために (purpose); noun + のために" },
-              "tags": ["grammar", "purpose", "n4"],
+              "front": {
+                "text": "〜ために",
+                "reading": "〜ために"
+              },
+              "back": {
+                "text": "In order to ~ / For the sake of ~",
+                "example": "日本語を勉強するために、日本に来ました。(I came to Japan to study Japanese.)",
+                "notes": "dictionary form + ために (purpose); noun + のために"
+              },
+              "tags": [
+                "grammar",
+                "purpose",
+                "n4"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "〜てみる", "reading": "〜てみる" },
-              "back": { "text": "Try doing ~", "example": "この料理を食べてみてください。(Please try eating this dish.)", "notes": "te-form + みる" },
-              "tags": ["grammar", "te-form", "n4"],
+              "front": {
+                "text": "〜てみる",
+                "reading": "〜てみる"
+              },
+              "back": {
+                "text": "Try doing ~",
+                "example": "この料理を食べてみてください。(Please try eating this dish.)",
+                "notes": "te-form + みる"
+              },
+              "tags": [
+                "grammar",
+                "te-form",
+                "n4"
+              ],
               "sortOrder": 20
             },
             {
-              "front": { "text": "〜てしまう", "reading": "〜てしまう" },
-              "back": { "text": "End up doing ~ / Do ~ completely (often with regret)", "example": "ケーキを全部食べてしまった。(I ended up eating all the cake.)", "notes": "te-form + しまう; casual: ちゃう/じゃう" },
-              "tags": ["grammar", "te-form", "n4"],
+              "front": {
+                "text": "〜てしまう",
+                "reading": "〜てしまう"
+              },
+              "back": {
+                "text": "End up doing ~ / Do ~ completely (often with regret)",
+                "example": "ケーキを全部食べてしまった。(I ended up eating all the cake.)",
+                "notes": "te-form + しまう; casual: ちゃう/じゃう"
+              },
+              "tags": [
+                "grammar",
+                "te-form",
+                "n4"
+              ],
               "sortOrder": 21
             },
             {
-              "front": { "text": "〜ておく", "reading": "〜ておく" },
-              "back": { "text": "Do ~ in advance / Leave ~ as is", "example": "パーティーの前に、部屋を掃除しておきます。(I'll clean the room before the party.)", "notes": "te-form + おく; casual: とく" },
-              "tags": ["grammar", "te-form", "n4"],
+              "front": {
+                "text": "〜ておく",
+                "reading": "〜ておく"
+              },
+              "back": {
+                "text": "Do ~ in advance / Leave ~ as is",
+                "example": "パーティーの前に、部屋を掃除しておきます。(I'll clean the room before the party.)",
+                "notes": "te-form + おく; casual: とく"
+              },
+              "tags": [
+                "grammar",
+                "te-form",
+                "n4"
+              ],
               "sortOrder": 22
             },
             {
-              "front": { "text": "〜ば〜ほど", "reading": "〜ば〜ほど" },
-              "back": { "text": "The more ~, the more ~", "example": "練習すればするほど、上手になる。(The more you practice, the better you get.)", "notes": "ba-form + dictionary form + ほど" },
-              "tags": ["grammar", "conditional", "n4"],
+              "front": {
+                "text": "〜ば〜ほど",
+                "reading": "〜ば〜ほど"
+              },
+              "back": {
+                "text": "The more ~, the more ~",
+                "example": "練習すればするほど、上手になる。(The more you practice, the better you get.)",
+                "notes": "ba-form + dictionary form + ほど"
+              },
+              "tags": [
+                "grammar",
+                "conditional",
+                "n4"
+              ],
               "sortOrder": 23
             },
             {
-              "front": { "text": "〜ようにする", "reading": "〜ようにする" },
-              "back": { "text": "Try to ~ / Make sure to ~", "example": "毎日運動するようにしています。(I try to exercise every day.)", "notes": "dictionary form + ようにする" },
-              "tags": ["grammar", "effort", "n4"],
+              "front": {
+                "text": "〜ようにする",
+                "reading": "〜ようにする"
+              },
+              "back": {
+                "text": "Try to ~ / Make sure to ~",
+                "example": "毎日運動するようにしています。(I try to exercise every day.)",
+                "notes": "dictionary form + ようにする"
+              },
+              "tags": [
+                "grammar",
+                "effort",
+                "n4"
+              ],
               "sortOrder": 24
             },
             {
-              "front": { "text": "〜ようになる", "reading": "〜ようになる" },
-              "back": { "text": "Come to ~ / Become able to ~", "example": "日本語が話せるようになりました。(I became able to speak Japanese.)", "notes": "dictionary/potential form + ようになる" },
-              "tags": ["grammar", "change", "n4"],
+              "front": {
+                "text": "〜ようになる",
+                "reading": "〜ようになる"
+              },
+              "back": {
+                "text": "Come to ~ / Become able to ~",
+                "example": "日本語が話せるようになりました。(I became able to speak Japanese.)",
+                "notes": "dictionary/potential form + ようになる"
+              },
+              "tags": [
+                "grammar",
+                "change",
+                "n4"
+              ],
               "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "N4 Grammar in Context",
+          "description": "45 full sentences demonstrating key N4 grammar patterns in practical situations.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "北海道は寒いので、コートを着ました",
+                "reading": "ほっかいどうはさむいので、コートをきました"
+              },
+              "back": {
+                "text": "Because Hokkaido is cold, I wore a coat. (ので)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "結婚しています",
+                "reading": "けっこんしています"
+              },
+              "back": {
+                "text": "I am married. (ている = resultant state)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "宿題をしなければなりません",
+                "reading": "しゅくだいをしなければなりません"
+              },
+              "back": {
+                "text": "I must do my homework. (なければならない)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "漢字が読めるようになりました",
+                "reading": "かんじがよめるようになりました"
+              },
+              "back": {
+                "text": "I became able to read kanji. (ようになる)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "毎朝ジョギングをしています",
+                "reading": "まいあさジョギングをしています"
+              },
+              "back": {
+                "text": "I jog every morning. (ている = ongoing habit)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "日本に行ったことがありますか",
+                "reading": "にほんにいったことがありますか"
+              },
+              "back": {
+                "text": "Have you been to Japan? (たことがある)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "明日は来なくてもいいです",
+                "reading": "あしたはこなくてもいいです"
+              },
+              "back": {
+                "text": "You don't have to come tomorrow. (なくてもいい)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "手を洗ってから食べてください",
+                "reading": "てをあらってからたべてください"
+              },
+              "back": {
+                "text": "After washing hands, please eat. (てから)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "薬を飲んだほうがいいですよ",
+                "reading": "くすりをのんだほうがいいですよ"
+              },
+              "back": {
+                "text": "You should take medicine. (たほうがいい)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "ここで写真を撮ってはいけません",
+                "reading": "ここでしゃしんをとってはいけません"
+              },
+              "back": {
+                "text": "You must not take photos here. (てはいけない = prohibition)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "友達に英語を教えてあげました",
+                "reading": "ともだちにえいごをおしえてあげました"
+              },
+              "back": {
+                "text": "I taught English to a friend. (てあげる = giving)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "先生に作文を直してもらいました",
+                "reading": "せんせいにさくぶんをなおしてもらいました"
+              },
+              "back": {
+                "text": "I had the teacher correct my essay. (てもらう = receiving)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "田中さんはおもしろい人だと思います",
+                "reading": "たなかさんはおもしろいひとだとおもいます"
+              },
+              "back": {
+                "text": "I think Tanaka is an interesting person. (と思う)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "天気予報によると明日は雨だそうです",
+                "reading": "てんきよほうによるとあしたはあめだそうです"
+              },
+              "back": {
+                "text": "According to the forecast, it will rain. (そうだ = hearsay)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "このケーキはおいしそうです",
+                "reading": "このケーキはおいしそうです"
+              },
+              "back": {
+                "text": "This cake looks delicious. (そうだ = appearance)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "映画を見たり買い物をしたりしました",
+                "reading": "えいがをみたりかいものをしたりしました"
+              },
+              "back": {
+                "text": "I watched movies and went shopping. (たり...たり)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "日本語の勉強を続けるつもりです",
+                "reading": "にほんごのべんきょうをつづけるつもりです"
+              },
+              "back": {
+                "text": "I intend to continue studying Japanese. (つもり)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "ドアが開いています",
+                "reading": "ドアがあいています"
+              },
+              "back": {
+                "text": "The door is open. (ている = resultant state)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "字をもう大きく書いてください",
+                "reading": "じをもうおおきくかいてください"
+              },
+              "back": {
+                "text": "Please write the letters bigger. (adverb form)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "練習すればするほど上手になります",
+                "reading": "れんしゅうすればするほどじょうずになります"
+              },
+              "back": {
+                "text": "The more you practice, the better. (ば〜ほど)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "今日は早く帰ってもいいですか",
+                "reading": "きょうははやくかえってもいいですか"
+              },
+              "back": {
+                "text": "May I go home early today? (てもいい)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "母が送ってくれました",
+                "reading": "ははがおくってくれました"
+              },
+              "back": {
+                "text": "My mother sent it to me. (てくれる)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "レポートを書かなくてもよかった",
+                "reading": "レポートをかかなくてもよかった"
+              },
+              "back": {
+                "text": "I didn't have to write the report. (なくてよかった)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "ちょっと手伝ってくれませんか",
+                "reading": "ちょっとてつだってくれませんか"
+              },
+              "back": {
+                "text": "Could you help me? (てくれませんか)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "駅まで迎えに来てもらえますか",
+                "reading": "えきまでむかえにきてもらえますか"
+              },
+              "back": {
+                "text": "Can you come pick me up at the station? (てもらえますか)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "電気をつけておきました",
+                "reading": "でんきをつけておきました"
+              },
+              "back": {
+                "text": "I left the light on. (ておく)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "来月、引っ越しすることにしました",
+                "reading": "らいげつ、ひっこしすることにしました"
+              },
+              "back": {
+                "text": "I decided to move next month. (ことにする)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "雨に降られてびしょぬれになった",
+                "reading": "あめにふられてびしょぬれになった"
+              },
+              "back": {
+                "text": "I got rained on and soaked. (passive of suffering)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "ちょっと見せていただけますか",
+                "reading": "ちょっとみせていただけますか"
+              },
+              "back": {
+                "text": "Could you show it to me? (いただけますか)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "彼は頭がいいし、やさしいし、人気がある",
+                "reading": "かれはあたまがいいし、やさしいし、にんきがある"
+              },
+              "back": {
+                "text": "He's smart, kind, and popular. (し = listing)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "この本は読めば読むほど面白い",
+                "reading": "このほんはよめばよむほどおもしろい"
+              },
+              "back": {
+                "text": "The more I read this book, the more interesting.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "熱があるなら、早く帰ったほうがいい",
+                "reading": "ねつがあるなら、はやくかえったほうがいい"
+              },
+              "back": {
+                "text": "If fever, you should go home early. (なら + ほうがいい)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "日本語が上手になったね",
+                "reading": "にほんごがじょうずになったね"
+              },
+              "back": {
+                "text": "Your Japanese has improved! (ようになった)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "すみませんが、ここで待たせていただきます",
+                "reading": "すみませんが、ここでまたせていただきます"
+              },
+              "back": {
+                "text": "Excuse me, let me wait here. (させていただく)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "まだ昼ごはんを食べていません",
+                "reading": "まだひるごはんをたべていません"
+              },
+              "back": {
+                "text": "I haven't eaten lunch yet. (まだ + ていない)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "先生に教えていただきました",
+                "reading": "せんせいにおしえていただきました"
+              },
+              "back": {
+                "text": "I was taught by the teacher. (ていただく)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "友達に忘れ物を届けてもらう",
+                "reading": "ともだちにわすれものをとどけてもらう"
+              },
+              "back": {
+                "text": "Have a friend deliver the forgotten item. (てもらう)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "日曜日はうちでゆっくりするつもりです",
+                "reading": "にちようびはうちでゆっくりするつもりです"
+              },
+              "back": {
+                "text": "I plan to relax at home on Sunday. (つもり)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "見てみて！花がさいてるよ！",
+                "reading": "みてみて！はながさいてるよ！"
+              },
+              "back": {
+                "text": "Look! The flowers are blooming! (てる casual)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "子供のとき、毎年海に行ったものだ",
+                "reading": "こどものとき、まいとしうみにいったものだ"
+              },
+              "back": {
+                "text": "When I was a child, I used to go to the sea yearly.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "すみません、駅に行きたいんですが",
+                "reading": "すみません、えきにいきたいんですが"
+              },
+              "back": {
+                "text": "Excuse me, I want to go to the station... (んです)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "パスポートを忘れてしまいました",
+                "reading": "パスポートをわすれてしまいました"
+              },
+              "back": {
+                "text": "I forgot my passport! (てしまった = regrettably)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "食べすぎてお腹が痛くなった",
+                "reading": "たべすぎておなかがいたくなった"
+              },
+              "back": {
+                "text": "I ate too much and my stomach hurts. (すぎ)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "ちゃんと説明したのに、わかってくれなかった",
+                "reading": "ちゃんとせつめいしたのに、わかってくれなかった"
+              },
+              "back": {
+                "text": "Even though I explained properly, he didn't get it. (のに)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "来週までにこの仕事を終わらせなければなりません",
+                "reading": "らいしゅうまでにこのしごとをおわらせなければなりません"
+              },
+              "back": {
+                "text": "I must finish this work by next week. (なければならない)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 45
             }
           ]
         }
@@ -380,7 +1460,12 @@
               "title": "Seasons quiz",
               "body": {
                 "question": "Which kanji means 'autumn'?",
-                "options": ["春", "夏", "秋", "冬"],
+                "options": [
+                  "春",
+                  "夏",
+                  "秋",
+                  "冬"
+                ],
                 "correct": 2,
                 "explanation": "秋（あき）means autumn/fall. 春 = spring, 夏 = summer, 冬 = winter."
               }
@@ -392,7 +1477,9 @@
               "body": {
                 "sentence": "明日は ___ が降るそうです。(I heard it will rain tomorrow.)",
                 "answer": "雨",
-                "alternatives": ["あめ"],
+                "alternatives": [
+                  "あめ"
+                ],
                 "explanation": "雨（あめ）means rain. 雨が降る (あめがふる) is the standard expression for 'it rains'."
               }
             }
@@ -424,7 +1511,12 @@
               "title": "Getting off",
               "body": {
                 "question": "Which verb means 'to get off (a vehicle)'?",
-                "options": ["乗る", "降りる", "乗り換える", "走る"],
+                "options": [
+                  "乗る",
+                  "降りる",
+                  "乗り換える",
+                  "走る"
+                ],
                 "correct": 1,
                 "explanation": "降りる（おりる）means 'to get off/descend'. 乗る = get on, 乗り換える = transfer, 走る = run."
               }
@@ -434,8 +1526,20 @@
               "sortOrder": 3,
               "title": "Build: I ride the train to school",
               "body": {
-                "words": ["学校", "電車", "に", "で", "行きます"],
-                "correct": ["学校", "に", "電車", "で", "行きます"],
+                "words": [
+                  "学校",
+                  "電車",
+                  "に",
+                  "で",
+                  "行きます"
+                ],
+                "correct": [
+                  "学校",
+                  "に",
+                  "電車",
+                  "で",
+                  "行きます"
+                ],
                 "translation": "I go to school by train."
               }
             }
@@ -468,7 +1572,9 @@
               "body": {
                 "sentence": "___ が痛いので、病院に行きます。(My head hurts, so I'm going to the hospital.)",
                 "answer": "頭",
-                "alternatives": ["あたま"],
+                "alternatives": [
+                  "あたま"
+                ],
                 "explanation": "頭（あたま）means head. 頭が痛い is the standard expression for 'I have a headache'."
               }
             },
@@ -478,7 +1584,12 @@
               "title": "Medicine vocabulary",
               "body": {
                 "question": "What does 薬（くすり）mean?",
-                "options": ["hospital", "doctor", "medicine", "fever"],
+                "options": [
+                  "hospital",
+                  "doctor",
+                  "medicine",
+                  "fever"
+                ],
                 "correct": 2,
                 "explanation": "薬（くすり）means medicine/drug. Hospital = 病院, doctor = 医者, fever = 熱."
               }
@@ -526,8 +1637,20 @@
               "sortOrder": 3,
               "title": "Build: What are your hobbies?",
               "body": {
-                "words": ["は", "です", "趣味", "何", "か"],
-                "correct": ["趣味", "は", "何", "です", "か"],
+                "words": [
+                  "は",
+                  "です",
+                  "趣味",
+                  "何",
+                  "か"
+                ],
+                "correct": [
+                  "趣味",
+                  "は",
+                  "何",
+                  "です",
+                  "か"
+                ],
                 "translation": "What are your hobbies?"
               }
             }
@@ -540,154 +1663,1290 @@
           "description": "25 high-frequency N4 vocabulary words covering weather, transportation, health, and hobbies.",
           "flashcards": [
             {
-              "front": { "text": "天気", "reading": "てんき" },
-              "back": { "text": "weather", "example": "今日の天気はいいですね。(The weather is nice today.)", "notes": "noun" },
-              "tags": ["vocabulary", "weather", "n4"],
+              "front": {
+                "text": "天気",
+                "reading": "てんき"
+              },
+              "back": {
+                "text": "weather",
+                "example": "今日の天気はいいですね。(The weather is nice today.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "weather",
+                "n4"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "雨", "reading": "あめ" },
-              "back": { "text": "rain", "example": "雨が降っています。(It is raining.)", "notes": "noun" },
-              "tags": ["vocabulary", "weather", "n4"],
+              "front": {
+                "text": "雨",
+                "reading": "あめ"
+              },
+              "back": {
+                "text": "rain",
+                "example": "雨が降っています。(It is raining.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "weather",
+                "n4"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "晴れ", "reading": "はれ" },
-              "back": { "text": "clear weather; sunny", "example": "明日は晴れるでしょう。(It will probably be sunny tomorrow.)", "notes": "noun; verb form 晴れる" },
-              "tags": ["vocabulary", "weather", "n4"],
+              "front": {
+                "text": "晴れ",
+                "reading": "はれ"
+              },
+              "back": {
+                "text": "clear weather; sunny",
+                "example": "明日は晴れるでしょう。(It will probably be sunny tomorrow.)",
+                "notes": "noun; verb form 晴れる"
+              },
+              "tags": [
+                "vocabulary",
+                "weather",
+                "n4"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "雪", "reading": "ゆき" },
-              "back": { "text": "snow", "example": "北海道は雪がたくさん降ります。(It snows a lot in Hokkaido.)", "notes": "noun" },
-              "tags": ["vocabulary", "weather", "n4"],
+              "front": {
+                "text": "雪",
+                "reading": "ゆき"
+              },
+              "back": {
+                "text": "snow",
+                "example": "北海道は雪がたくさん降ります。(It snows a lot in Hokkaido.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "weather",
+                "n4"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "風", "reading": "かぜ" },
-              "back": { "text": "wind", "example": "今日は風が強いです。(The wind is strong today.)", "notes": "noun; also means 'cold (illness)' as 風邪" },
-              "tags": ["vocabulary", "weather", "n4"],
+              "front": {
+                "text": "風",
+                "reading": "かぜ"
+              },
+              "back": {
+                "text": "wind",
+                "example": "今日は風が強いです。(The wind is strong today.)",
+                "notes": "noun; also means 'cold (illness)' as 風邪"
+              },
+              "tags": [
+                "vocabulary",
+                "weather",
+                "n4"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "春", "reading": "はる" },
-              "back": { "text": "spring", "example": "春は桜がきれいです。(Cherry blossoms are beautiful in spring.)", "notes": "noun; season" },
-              "tags": ["vocabulary", "seasons", "n4"],
+              "front": {
+                "text": "春",
+                "reading": "はる"
+              },
+              "back": {
+                "text": "spring",
+                "example": "春は桜がきれいです。(Cherry blossoms are beautiful in spring.)",
+                "notes": "noun; season"
+              },
+              "tags": [
+                "vocabulary",
+                "seasons",
+                "n4"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "冬", "reading": "ふゆ" },
-              "back": { "text": "winter", "example": "冬は寒いです。(Winter is cold.)", "notes": "noun; season" },
-              "tags": ["vocabulary", "seasons", "n4"],
+              "front": {
+                "text": "冬",
+                "reading": "ふゆ"
+              },
+              "back": {
+                "text": "winter",
+                "example": "冬は寒いです。(Winter is cold.)",
+                "notes": "noun; season"
+              },
+              "tags": [
+                "vocabulary",
+                "seasons",
+                "n4"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "電車", "reading": "でんしゃ" },
-              "back": { "text": "train (electric)", "example": "電車で会社に行きます。(I go to work by train.)", "notes": "noun" },
-              "tags": ["vocabulary", "transportation", "n4"],
+              "front": {
+                "text": "電車",
+                "reading": "でんしゃ"
+              },
+              "back": {
+                "text": "train (electric)",
+                "example": "電車で会社に行きます。(I go to work by train.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "transportation",
+                "n4"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "飛行機", "reading": "ひこうき" },
-              "back": { "text": "airplane", "example": "飛行機で三時間かかります。(It takes three hours by plane.)", "notes": "noun" },
-              "tags": ["vocabulary", "transportation", "n4"],
+              "front": {
+                "text": "飛行機",
+                "reading": "ひこうき"
+              },
+              "back": {
+                "text": "airplane",
+                "example": "飛行機で三時間かかります。(It takes three hours by plane.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "transportation",
+                "n4"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "駅", "reading": "えき" },
-              "back": { "text": "station", "example": "駅まで歩いて十分です。(It's a 10-minute walk to the station.)", "notes": "noun" },
-              "tags": ["vocabulary", "transportation", "n4"],
+              "front": {
+                "text": "駅",
+                "reading": "えき"
+              },
+              "back": {
+                "text": "station",
+                "example": "駅まで歩いて十分です。(It's a 10-minute walk to the station.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "transportation",
+                "n4"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "空港", "reading": "くうこう" },
-              "back": { "text": "airport", "example": "空港までバスで行きます。(I go to the airport by bus.)", "notes": "noun" },
-              "tags": ["vocabulary", "transportation", "n4"],
+              "front": {
+                "text": "空港",
+                "reading": "くうこう"
+              },
+              "back": {
+                "text": "airport",
+                "example": "空港までバスで行きます。(I go to the airport by bus.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "transportation",
+                "n4"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "自転車", "reading": "じてんしゃ" },
-              "back": { "text": "bicycle", "example": "自転車で学校に通っています。(I commute to school by bicycle.)", "notes": "noun" },
-              "tags": ["vocabulary", "transportation", "n4"],
+              "front": {
+                "text": "自転車",
+                "reading": "じてんしゃ"
+              },
+              "back": {
+                "text": "bicycle",
+                "example": "自転車で学校に通っています。(I commute to school by bicycle.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "transportation",
+                "n4"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "乗る", "reading": "のる" },
-              "back": { "text": "to ride; to get on", "example": "バスに乗ってください。(Please get on the bus.)", "notes": "godan verb; に乗る" },
-              "tags": ["vocabulary", "transportation", "n4"],
+              "front": {
+                "text": "乗る",
+                "reading": "のる"
+              },
+              "back": {
+                "text": "to ride; to get on",
+                "example": "バスに乗ってください。(Please get on the bus.)",
+                "notes": "godan verb; に乗る"
+              },
+              "tags": [
+                "vocabulary",
+                "transportation",
+                "n4"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "頭", "reading": "あたま" },
-              "back": { "text": "head", "example": "頭が痛いです。(I have a headache.)", "notes": "noun; body part" },
-              "tags": ["vocabulary", "health", "n4"],
+              "front": {
+                "text": "頭",
+                "reading": "あたま"
+              },
+              "back": {
+                "text": "head",
+                "example": "頭が痛いです。(I have a headache.)",
+                "notes": "noun; body part"
+              },
+              "tags": [
+                "vocabulary",
+                "health",
+                "n4"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "お腹", "reading": "おなか" },
-              "back": { "text": "stomach; belly", "example": "お腹がすきました。(I'm hungry.)", "notes": "noun; body part" },
-              "tags": ["vocabulary", "health", "n4"],
+              "front": {
+                "text": "お腹",
+                "reading": "おなか"
+              },
+              "back": {
+                "text": "stomach; belly",
+                "example": "お腹がすきました。(I'm hungry.)",
+                "notes": "noun; body part"
+              },
+              "tags": [
+                "vocabulary",
+                "health",
+                "n4"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "病気", "reading": "びょうき" },
-              "back": { "text": "illness; disease", "example": "病気で学校を休みました。(I was absent from school due to illness.)", "notes": "noun; na-adjective" },
-              "tags": ["vocabulary", "health", "n4"],
+              "front": {
+                "text": "病気",
+                "reading": "びょうき"
+              },
+              "back": {
+                "text": "illness; disease",
+                "example": "病気で学校を休みました。(I was absent from school due to illness.)",
+                "notes": "noun; na-adjective"
+              },
+              "tags": [
+                "vocabulary",
+                "health",
+                "n4"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "薬", "reading": "くすり" },
-              "back": { "text": "medicine; drug", "example": "薬を飲んでください。(Please take your medicine.)", "notes": "noun" },
-              "tags": ["vocabulary", "health", "n4"],
+              "front": {
+                "text": "薬",
+                "reading": "くすり"
+              },
+              "back": {
+                "text": "medicine; drug",
+                "example": "薬を飲んでください。(Please take your medicine.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "health",
+                "n4"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "熱", "reading": "ねつ" },
-              "back": { "text": "fever; heat", "example": "熱がありますか。(Do you have a fever?)", "notes": "noun" },
-              "tags": ["vocabulary", "health", "n4"],
+              "front": {
+                "text": "熱",
+                "reading": "ねつ"
+              },
+              "back": {
+                "text": "fever; heat",
+                "example": "熱がありますか。(Do you have a fever?)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "health",
+                "n4"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "病院", "reading": "びょういん" },
-              "back": { "text": "hospital", "example": "病院に行ったほうがいいですよ。(You should go to the hospital.)", "notes": "noun" },
-              "tags": ["vocabulary", "health", "n4"],
+              "front": {
+                "text": "病院",
+                "reading": "びょういん"
+              },
+              "back": {
+                "text": "hospital",
+                "example": "病院に行ったほうがいいですよ。(You should go to the hospital.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "health",
+                "n4"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "趣味", "reading": "しゅみ" },
-              "back": { "text": "hobby", "example": "趣味は何ですか。(What are your hobbies?)", "notes": "noun" },
-              "tags": ["vocabulary", "hobbies", "n4"],
+              "front": {
+                "text": "趣味",
+                "reading": "しゅみ"
+              },
+              "back": {
+                "text": "hobby",
+                "example": "趣味は何ですか。(What are your hobbies?)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "hobbies",
+                "n4"
+              ],
               "sortOrder": 20
             },
             {
-              "front": { "text": "運動", "reading": "うんどう" },
-              "back": { "text": "exercise; sports", "example": "毎日運動しています。(I exercise every day.)", "notes": "noun; suru-verb" },
-              "tags": ["vocabulary", "hobbies", "n4"],
+              "front": {
+                "text": "運動",
+                "reading": "うんどう"
+              },
+              "back": {
+                "text": "exercise; sports",
+                "example": "毎日運動しています。(I exercise every day.)",
+                "notes": "noun; suru-verb"
+              },
+              "tags": [
+                "vocabulary",
+                "hobbies",
+                "n4"
+              ],
               "sortOrder": 21
             },
             {
-              "front": { "text": "映画", "reading": "えいが" },
-              "back": { "text": "movie; film", "example": "週末に映画を見ました。(I watched a movie on the weekend.)", "notes": "noun" },
-              "tags": ["vocabulary", "hobbies", "n4"],
+              "front": {
+                "text": "映画",
+                "reading": "えいが"
+              },
+              "back": {
+                "text": "movie; film",
+                "example": "週末に映画を見ました。(I watched a movie on the weekend.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "hobbies",
+                "n4"
+              ],
               "sortOrder": 22
             },
             {
-              "front": { "text": "音楽", "reading": "おんがく" },
-              "back": { "text": "music", "example": "音楽を聞くのが好きです。(I like listening to music.)", "notes": "noun" },
-              "tags": ["vocabulary", "hobbies", "n4"],
+              "front": {
+                "text": "音楽",
+                "reading": "おんがく"
+              },
+              "back": {
+                "text": "music",
+                "example": "音楽を聞くのが好きです。(I like listening to music.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "hobbies",
+                "n4"
+              ],
               "sortOrder": 23
             },
             {
-              "front": { "text": "旅行", "reading": "りょこう" },
-              "back": { "text": "travel; trip", "example": "来月、京都に旅行します。(I'm traveling to Kyoto next month.)", "notes": "noun; suru-verb" },
-              "tags": ["vocabulary", "hobbies", "n4"],
+              "front": {
+                "text": "旅行",
+                "reading": "りょこう"
+              },
+              "back": {
+                "text": "travel; trip",
+                "example": "来月、京都に旅行します。(I'm traveling to Kyoto next month.)",
+                "notes": "noun; suru-verb"
+              },
+              "tags": [
+                "vocabulary",
+                "hobbies",
+                "n4"
+              ],
               "sortOrder": 24
             },
             {
-              "front": { "text": "写真", "reading": "しゃしん" },
-              "back": { "text": "photograph; picture", "example": "写真を撮ってもいいですか。(May I take a photo?)", "notes": "noun" },
-              "tags": ["vocabulary", "hobbies", "n4"],
+              "front": {
+                "text": "写真",
+                "reading": "しゃしん"
+              },
+              "back": {
+                "text": "photograph; picture",
+                "example": "写真を撮ってもいいですか。(May I take a photo?)",
+                "notes": "noun"
+              },
+              "tags": [
+                "vocabulary",
+                "hobbies",
+                "n4"
+              ],
               "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "N4 Vocabulary Expansion",
+          "description": "45 additional N4 words: daily life, body parts, travel destinations, and home items.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "案内",
+                "reading": "あんない"
+              },
+              "back": {
+                "text": "Guidance; showing the way (案内する = to guide)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "世話",
+                "reading": "せわ"
+              },
+              "back": {
+                "text": "Care; looking after (世話をする = to take care of)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "返事",
+                "reading": "へんじ"
+              },
+              "back": {
+                "text": "Reply; response (返事する = to reply)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "約束",
+                "reading": "やくそく"
+              },
+              "back": {
+                "text": "Promise; appointment (約束する = to promise)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "連絡",
+                "reading": "れんらく"
+              },
+              "back": {
+                "text": "Contact; communication (連絡する = to contact)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "準備",
+                "reading": "じゅんび"
+              },
+              "back": {
+                "text": "Preparation (準備する = to prepare)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "説明",
+                "reading": "せつめい"
+              },
+              "back": {
+                "text": "Explanation (説明する = to explain)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "予約",
+                "reading": "よやく"
+              },
+              "back": {
+                "text": "Reservation (予約する = to reserve)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "駐車場",
+                "reading": "ちゅうしゃじょう"
+              },
+              "back": {
+                "text": "Parking lot",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "交差点",
+                "reading": "こうさてん"
+              },
+              "back": {
+                "text": "Intersection; crossing",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "信号",
+                "reading": "しんごう"
+              },
+              "back": {
+                "text": "Traffic signal",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "歩道",
+                "reading": "ほどう"
+              },
+              "back": {
+                "text": "Sidewalk; footpath",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "階段",
+                "reading": "かいだん"
+              },
+              "back": {
+                "text": "Stairs; staircase",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "廊下",
+                "reading": "ろうか"
+              },
+              "back": {
+                "text": "Corridor; hallway",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "天井",
+                "reading": "てんじょう"
+              },
+              "back": {
+                "text": "Ceiling",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "冷蔵庫",
+                "reading": "れいぞうこ"
+              },
+              "back": {
+                "text": "Refrigerator",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "洗濯機",
+                "reading": "せんたくき"
+              },
+              "back": {
+                "text": "Washing machine",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "電子レンジ",
+                "reading": "でんしレンジ"
+              },
+              "back": {
+                "text": "Microwave oven",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "掃除機",
+                "reading": "そうじき"
+              },
+              "back": {
+                "text": "Vacuum cleaner",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "家具",
+                "reading": "かぐ"
+              },
+              "back": {
+                "text": "Furniture",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "指",
+                "reading": "ゆび"
+              },
+              "back": {
+                "text": "Finger",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "肩",
+                "reading": "かた"
+              },
+              "back": {
+                "text": "Shoulder",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "腰",
+                "reading": "こし"
+              },
+              "back": {
+                "text": "Lower back; waist",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "ひざ",
+                "reading": "ひざ"
+              },
+              "back": {
+                "text": "Knee",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "血",
+                "reading": "ち"
+              },
+              "back": {
+                "text": "Blood",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "骨",
+                "reading": "ほね"
+              },
+              "back": {
+                "text": "Bone",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "息",
+                "reading": "いき"
+              },
+              "back": {
+                "text": "Breath",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "性格",
+                "reading": "せいかく"
+              },
+              "back": {
+                "text": "Personality; character",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "印象",
+                "reading": "いんしょう"
+              },
+              "back": {
+                "text": "Impression",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "表情",
+                "reading": "ひょうじょう"
+              },
+              "back": {
+                "text": "Facial expression",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "汗",
+                "reading": "あせ"
+              },
+              "back": {
+                "text": "Sweat",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "涙",
+                "reading": "なみだ"
+              },
+              "back": {
+                "text": "Tears",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "笑顔",
+                "reading": "えがお"
+              },
+              "back": {
+                "text": "Smile",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "富士山",
+                "reading": "ふじさん"
+              },
+              "back": {
+                "text": "Mt. Fuji",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "温泉",
+                "reading": "おんせん"
+              },
+              "back": {
+                "text": "Hot spring; spa",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "旅館",
+                "reading": "りょかん"
+              },
+              "back": {
+                "text": "Japanese-style inn",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "お土産",
+                "reading": "おみやげ"
+              },
+              "back": {
+                "text": "Souvenir",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "観光",
+                "reading": "かんこう"
+              },
+              "back": {
+                "text": "Sightseeing",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "空気",
+                "reading": "くうき"
+              },
+              "back": {
+                "text": "Air; atmosphere",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "景色",
+                "reading": "けしき"
+              },
+              "back": {
+                "text": "Scenery; view",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "星",
+                "reading": "ほし"
+              },
+              "back": {
+                "text": "Star",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "湖",
+                "reading": "みずうみ"
+              },
+              "back": {
+                "text": "Lake",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "森",
+                "reading": "もり"
+              },
+              "back": {
+                "text": "Forest",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "島",
+                "reading": "しま"
+              },
+              "back": {
+                "text": "Island",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "港",
+                "reading": "みなと"
+              },
+              "back": {
+                "text": "Port; harbor",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "vocabulary",
+                "daily-life",
+                "body",
+                "travel"
+              ],
+              "sortOrder": 45
             }
           ]
         }
@@ -740,8 +2999,18 @@
               "sortOrder": 3,
               "title": "Build: Are you free on Saturday?",
               "body": {
-                "words": ["ですか", "暇", "土曜日", "は"],
-                "correct": ["土曜日", "は", "暇", "ですか"],
+                "words": [
+                  "ですか",
+                  "暇",
+                  "土曜日",
+                  "は"
+                ],
+                "correct": [
+                  "土曜日",
+                  "は",
+                  "暇",
+                  "ですか"
+                ],
                 "translation": "Are you free on Saturday?"
               }
             }
@@ -823,7 +3092,9 @@
               "body": {
                 "sentence": "明日は雨が降る ___ 。(I think it will rain tomorrow.)",
                 "answer": "と思います",
-                "alternatives": ["とおもいます"],
+                "alternatives": [
+                  "とおもいます"
+                ],
                 "explanation": "と思います expresses the speaker's opinion. The plain form 降る comes before と."
               }
             },
@@ -852,124 +3123,1070 @@
           "description": "20 practical sentence patterns for everyday conversations at the N4 level, covering plans, reasons, opinions, and common social phrases.",
           "flashcards": [
             {
-              "front": { "text": "一緒に〜ませんか", "reading": "いっしょに〜ませんか" },
-              "back": { "text": "Won't you ~ together? (polite invitation)", "example": "一緒に食事しませんか。(Won't you have a meal together?)", "notes": "invitation pattern" },
-              "tags": ["sentence", "plans", "n4"],
+              "front": {
+                "text": "一緒に〜ませんか",
+                "reading": "いっしょに〜ませんか"
+              },
+              "back": {
+                "text": "Won't you ~ together? (polite invitation)",
+                "example": "一緒に食事しませんか。(Won't you have a meal together?)",
+                "notes": "invitation pattern"
+              },
+              "tags": [
+                "sentence",
+                "plans",
+                "n4"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "〜ましょう", "reading": "〜ましょう" },
-              "back": { "text": "Let's ~ / Shall we ~?", "example": "帰りましょう。(Let's go home.)", "notes": "suggestion pattern" },
-              "tags": ["sentence", "plans", "n4"],
+              "front": {
+                "text": "〜ましょう",
+                "reading": "〜ましょう"
+              },
+              "back": {
+                "text": "Let's ~ / Shall we ~?",
+                "example": "帰りましょう。(Let's go home.)",
+                "notes": "suggestion pattern"
+              },
+              "tags": [
+                "sentence",
+                "plans",
+                "n4"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "暇ですか", "reading": "ひまですか" },
-              "back": { "text": "Are you free?", "example": "明日、暇ですか。(Are you free tomorrow?)", "notes": "checking availability" },
-              "tags": ["sentence", "plans", "n4"],
+              "front": {
+                "text": "暇ですか",
+                "reading": "ひまですか"
+              },
+              "back": {
+                "text": "Are you free?",
+                "example": "明日、暇ですか。(Are you free tomorrow?)",
+                "notes": "checking availability"
+              },
+              "tags": [
+                "sentence",
+                "plans",
+                "n4"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "予定があります", "reading": "よていがあります" },
-              "back": { "text": "I have plans", "example": "土曜日は予定があります。(I have plans on Saturday.)", "notes": "declining invitations" },
-              "tags": ["sentence", "plans", "n4"],
+              "front": {
+                "text": "予定があります",
+                "reading": "よていがあります"
+              },
+              "back": {
+                "text": "I have plans",
+                "example": "土曜日は予定があります。(I have plans on Saturday.)",
+                "notes": "declining invitations"
+              },
+              "tags": [
+                "sentence",
+                "plans",
+                "n4"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "〜はどうですか", "reading": "〜はどうですか" },
-              "back": { "text": "How about ~? / How is ~?", "example": "日曜日はどうですか。(How about Sunday?)", "notes": "suggestion / asking opinion" },
-              "tags": ["sentence", "plans", "n4"],
+              "front": {
+                "text": "〜はどうですか",
+                "reading": "〜はどうですか"
+              },
+              "back": {
+                "text": "How about ~? / How is ~?",
+                "example": "日曜日はどうですか。(How about Sunday?)",
+                "notes": "suggestion / asking opinion"
+              },
+              "tags": [
+                "sentence",
+                "plans",
+                "n4"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "〜から（理由）", "reading": "〜から（りゆう）" },
-              "back": { "text": "Because ~ (subjective/casual reason)", "example": "疲れたから、休みたい。(Because I'm tired, I want to rest.)", "notes": "casual reason; after plain or polite form" },
-              "tags": ["sentence", "reason", "n4"],
+              "front": {
+                "text": "〜から（理由）",
+                "reading": "〜から（りゆう）"
+              },
+              "back": {
+                "text": "Because ~ (subjective/casual reason)",
+                "example": "疲れたから、休みたい。(Because I'm tired, I want to rest.)",
+                "notes": "casual reason; after plain or polite form"
+              },
+              "tags": [
+                "sentence",
+                "reason",
+                "n4"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "〜ので", "reading": "〜ので" },
-              "back": { "text": "Because ~ (polite/objective reason)", "example": "用事があるので、先に帰ります。(Because I have an errand, I'll go home first.)", "notes": "formal reason; softer than から" },
-              "tags": ["sentence", "reason", "n4"],
+              "front": {
+                "text": "〜ので",
+                "reading": "〜ので"
+              },
+              "back": {
+                "text": "Because ~ (polite/objective reason)",
+                "example": "用事があるので、先に帰ります。(Because I have an errand, I'll go home first.)",
+                "notes": "formal reason; softer than から"
+              },
+              "tags": [
+                "sentence",
+                "reason",
+                "n4"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "〜ために", "reading": "〜ために" },
-              "back": { "text": "In order to ~ / For the sake of ~", "example": "健康のために、野菜を食べています。(For my health, I eat vegetables.)", "notes": "purpose expression" },
-              "tags": ["sentence", "reason", "n4"],
+              "front": {
+                "text": "〜ために",
+                "reading": "〜ために"
+              },
+              "back": {
+                "text": "In order to ~ / For the sake of ~",
+                "example": "健康のために、野菜を食べています。(For my health, I eat vegetables.)",
+                "notes": "purpose expression"
+              },
+              "tags": [
+                "sentence",
+                "reason",
+                "n4"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "〜と思います", "reading": "〜とおもいます" },
-              "back": { "text": "I think that ~", "example": "日本語は難しいと思います。(I think Japanese is difficult.)", "notes": "opinion; plain form + と思う" },
-              "tags": ["sentence", "opinion", "n4"],
+              "front": {
+                "text": "〜と思います",
+                "reading": "〜とおもいます"
+              },
+              "back": {
+                "text": "I think that ~",
+                "example": "日本語は難しいと思います。(I think Japanese is difficult.)",
+                "notes": "opinion; plain form + と思う"
+              },
+              "tags": [
+                "sentence",
+                "opinion",
+                "n4"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "〜と言いました", "reading": "〜といいました" },
-              "back": { "text": "(Someone) said that ~", "example": "先生は宿題があると言いました。(The teacher said there is homework.)", "notes": "reported speech" },
-              "tags": ["sentence", "opinion", "n4"],
+              "front": {
+                "text": "〜と言いました",
+                "reading": "〜といいました"
+              },
+              "back": {
+                "text": "(Someone) said that ~",
+                "example": "先生は宿題があると言いました。(The teacher said there is homework.)",
+                "notes": "reported speech"
+              },
+              "tags": [
+                "sentence",
+                "opinion",
+                "n4"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "〜かもしれません", "reading": "〜かもしれません" },
-              "back": { "text": "~ might / maybe ~", "example": "遅れるかもしれません。(I might be late.)", "notes": "possibility; less certain than と思う" },
-              "tags": ["sentence", "opinion", "n4"],
+              "front": {
+                "text": "〜かもしれません",
+                "reading": "〜かもしれません"
+              },
+              "back": {
+                "text": "~ might / maybe ~",
+                "example": "遅れるかもしれません。(I might be late.)",
+                "notes": "possibility; less certain than と思う"
+              },
+              "tags": [
+                "sentence",
+                "opinion",
+                "n4"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "〜てもいいですか", "reading": "〜てもいいですか" },
-              "back": { "text": "May I ~? / Is it okay to ~?", "example": "窓を開けてもいいですか。(May I open the window?)", "notes": "asking permission" },
-              "tags": ["sentence", "permission", "n4"],
+              "front": {
+                "text": "〜てもいいですか",
+                "reading": "〜てもいいですか"
+              },
+              "back": {
+                "text": "May I ~? / Is it okay to ~?",
+                "example": "窓を開けてもいいですか。(May I open the window?)",
+                "notes": "asking permission"
+              },
+              "tags": [
+                "sentence",
+                "permission",
+                "n4"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "〜ないでください", "reading": "〜ないでください" },
-              "back": { "text": "Please don't ~", "example": "ここでタバコを吸わないでください。(Please don't smoke here.)", "notes": "polite prohibition" },
-              "tags": ["sentence", "request", "n4"],
+              "front": {
+                "text": "〜ないでください",
+                "reading": "〜ないでください"
+              },
+              "back": {
+                "text": "Please don't ~",
+                "example": "ここでタバコを吸わないでください。(Please don't smoke here.)",
+                "notes": "polite prohibition"
+              },
+              "tags": [
+                "sentence",
+                "request",
+                "n4"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "〜たほうがいいですよ", "reading": "〜たほうがいいですよ" },
-              "back": { "text": "You should ~ / You'd better ~", "example": "早く寝たほうがいいですよ。(You should go to bed early.)", "notes": "advice; ta-form + ほうがいい" },
-              "tags": ["sentence", "advice", "n4"],
+              "front": {
+                "text": "〜たほうがいいですよ",
+                "reading": "〜たほうがいいですよ"
+              },
+              "back": {
+                "text": "You should ~ / You'd better ~",
+                "example": "早く寝たほうがいいですよ。(You should go to bed early.)",
+                "notes": "advice; ta-form + ほうがいい"
+              },
+              "tags": [
+                "sentence",
+                "advice",
+                "n4"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "〜つもりです", "reading": "〜つもりです" },
-              "back": { "text": "I intend to ~ / I plan to ~", "example": "来年、日本に行くつもりです。(I intend to go to Japan next year.)", "notes": "intention; dictionary form + つもり" },
-              "tags": ["sentence", "plans", "n4"],
+              "front": {
+                "text": "〜つもりです",
+                "reading": "〜つもりです"
+              },
+              "back": {
+                "text": "I intend to ~ / I plan to ~",
+                "example": "来年、日本に行くつもりです。(I intend to go to Japan next year.)",
+                "notes": "intention; dictionary form + つもり"
+              },
+              "tags": [
+                "sentence",
+                "plans",
+                "n4"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "〜ことがあります", "reading": "〜ことがあります" },
-              "back": { "text": "I have experienced ~ / There are times when ~", "example": "日本に行ったことがあります。(I have been to Japan before.)", "notes": "experience; ta-form + ことがある" },
-              "tags": ["sentence", "experience", "n4"],
+              "front": {
+                "text": "〜ことがあります",
+                "reading": "〜ことがあります"
+              },
+              "back": {
+                "text": "I have experienced ~ / There are times when ~",
+                "example": "日本に行ったことがあります。(I have been to Japan before.)",
+                "notes": "experience; ta-form + ことがある"
+              },
+              "tags": [
+                "sentence",
+                "experience",
+                "n4"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "〜そうです（伝聞）", "reading": "〜そうです（でんぶん）" },
-              "back": { "text": "I heard that ~ (hearsay)", "example": "明日は雨だそうです。(I heard it will rain tomorrow.)", "notes": "hearsay; plain form + そうです" },
-              "tags": ["sentence", "hearsay", "n4"],
+              "front": {
+                "text": "〜そうです（伝聞）",
+                "reading": "〜そうです（でんぶん）"
+              },
+              "back": {
+                "text": "I heard that ~ (hearsay)",
+                "example": "明日は雨だそうです。(I heard it will rain tomorrow.)",
+                "notes": "hearsay; plain form + そうです"
+              },
+              "tags": [
+                "sentence",
+                "hearsay",
+                "n4"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "〜そうです（様態）", "reading": "〜そうです（ようたい）" },
-              "back": { "text": "It looks like ~ / It seems ~", "example": "このケーキはおいしそうです。(This cake looks delicious.)", "notes": "appearance; i-adj stem / na-adj + そう" },
-              "tags": ["sentence", "appearance", "n4"],
+              "front": {
+                "text": "〜そうです（様態）",
+                "reading": "〜そうです（ようたい）"
+              },
+              "back": {
+                "text": "It looks like ~ / It seems ~",
+                "example": "このケーキはおいしそうです。(This cake looks delicious.)",
+                "notes": "appearance; i-adj stem / na-adj + そう"
+              },
+              "tags": [
+                "sentence",
+                "appearance",
+                "n4"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "すみません、ちょっと…", "reading": "すみません、ちょっと…" },
-              "back": { "text": "Sorry, it's a bit... (polite refusal)", "example": "今日はちょっと… (Today is a bit... [I can't])", "notes": "indirect refusal; very common in Japanese" },
-              "tags": ["sentence", "social", "n4"],
+              "front": {
+                "text": "すみません、ちょっと…",
+                "reading": "すみません、ちょっと…"
+              },
+              "back": {
+                "text": "Sorry, it's a bit... (polite refusal)",
+                "example": "今日はちょっと… (Today is a bit... [I can't])",
+                "notes": "indirect refusal; very common in Japanese"
+              },
+              "tags": [
+                "sentence",
+                "social",
+                "n4"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "〜のに", "reading": "〜のに" },
-              "back": { "text": "Even though ~ / Despite ~", "example": "たくさん勉強したのに、テストに落ちた。(Even though I studied a lot, I failed the test.)", "notes": "contrast; expresses frustration or surprise" },
-              "tags": ["sentence", "contrast", "n4"],
+              "front": {
+                "text": "〜のに",
+                "reading": "〜のに"
+              },
+              "back": {
+                "text": "Even though ~ / Despite ~",
+                "example": "たくさん勉強したのに、テストに落ちた。(Even though I studied a lot, I failed the test.)",
+                "notes": "contrast; expresses frustration or surprise"
+              },
+              "tags": [
+                "sentence",
+                "contrast",
+                "n4"
+              ],
               "sortOrder": 20
+            }
+          ]
+        },
+        {
+          "title": "N4 Conversation Practice",
+          "description": "40 practical polite phrases for requests, refusals, opinions, and social situations.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "ちょっとお聞きしたいんですが",
+                "reading": "ちょっとおききしたいんですが"
+              },
+              "back": {
+                "text": "I'd like to ask you something... (polite)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "駅へ行く道を教えていただけませんか",
+                "reading": "えきへいくみちをおしえていただけませんか"
+              },
+              "back": {
+                "text": "Could you tell me the way to the station?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "この近くに交番はありますか",
+                "reading": "このちかくにこうばんはありますか"
+              },
+              "back": {
+                "text": "Is there a police box nearby?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "タクシーを呼んでいただけますか",
+                "reading": "タクシーをよんでいただけますか"
+              },
+              "back": {
+                "text": "Could you call a taxi for me?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "今、お時間よろしいでしょうか",
+                "reading": "いま、おじかんよろしいでしょうか"
+              },
+              "back": {
+                "text": "Do you have a moment now?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "ご迷惑をおかけしてすみません",
+                "reading": "ごめいわくをおかけしてすみません"
+              },
+              "back": {
+                "text": "I'm sorry for causing you trouble.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "何かお手伝いしましょうか",
+                "reading": "なにかおてつだいしましょうか"
+              },
+              "back": {
+                "text": "Shall I help you with something?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "念のために確認させてください",
+                "reading": "ねんのためにかくにんさせてください"
+              },
+              "back": {
+                "text": "Let me double-check, just to be safe.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "よかったら一緒にどうですか",
+                "reading": "よかったらいっしょにどうですか"
+              },
+              "back": {
+                "text": "If you'd like, how about joining us?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "今回は遠慮させていただきます",
+                "reading": "こんかいはえんりょさせていただきます"
+              },
+              "back": {
+                "text": "I'll pass this time (polite refusal).",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "次回はぜひ参加したいです",
+                "reading": "じかいはぜひさんかしたいです"
+              },
+              "back": {
+                "text": "I'd definitely like to join next time.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "もう少し考えてみます",
+                "reading": "もうすこしかんがえてみます"
+              },
+              "back": {
+                "text": "Let me think about it a bit more.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "一度やってみます",
+                "reading": "いちどやってみます"
+              },
+              "back": {
+                "text": "I'll give it a try.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "いい経験になりました",
+                "reading": "いいけいけんになりました"
+              },
+              "back": {
+                "text": "It was a good experience.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "せっかくですが、今日はちょっと",
+                "reading": "せっかくですが、きょうはちょっと"
+              },
+              "back": {
+                "text": "Thank you, but today is a bit...",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "あまり無理をしないでくださいね",
+                "reading": "あまりむりをしないでくださいね"
+              },
+              "back": {
+                "text": "Please don't push yourself too hard.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "いつもお世話になっております",
+                "reading": "いつもおせわになっております"
+              },
+              "back": {
+                "text": "Thank you for your continued support.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "先日はありがとうございました",
+                "reading": "せんじつはありがとうございました"
+              },
+              "back": {
+                "text": "Thank you for the other day.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "これからもよろしくお願いします",
+                "reading": "これからもよろしくおねがいします"
+              },
+              "back": {
+                "text": "I look forward to your continued support.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "何かあったら連絡してください",
+                "reading": "なにかあったられんらくしてください"
+              },
+              "back": {
+                "text": "Contact me if anything comes up.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "今日は会社を休ませていただきます",
+                "reading": "きょうはかいしゃをやすませていただきます"
+              },
+              "back": {
+                "text": "I'll take the day off today.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "ちょっと体調が悪くて",
+                "reading": "ちょっとたいちょうがわるくて"
+              },
+              "back": {
+                "text": "I'm feeling a bit unwell...",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "念のため病院に行ってきます",
+                "reading": "ねんのためびょういんにいってきます"
+              },
+              "back": {
+                "text": "I'll go to the hospital just to be safe.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "あまり心配しないでください",
+                "reading": "あまりしんぱいしないでください"
+              },
+              "back": {
+                "text": "Please don't worry too much.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "なるほど、そういうことだったんですね",
+                "reading": "なるほど、そういうことだったんですね"
+              },
+              "back": {
+                "text": "I see, so that's what it was!",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "わかりやすく説明してくれてありがとう",
+                "reading": "わかりやすくせつめいしてくれてありがとう"
+              },
+              "back": {
+                "text": "Thank you for explaining clearly.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "正直なところ、よくわかりません",
+                "reading": "しょうじきなところ、よくわかりません"
+              },
+              "back": {
+                "text": "To be honest, I don't really understand.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "遠慮なく言ってください",
+                "reading": "えんりょなくいってください"
+              },
+              "back": {
+                "text": "Please feel free to say what you think.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "それについてどう思いますか",
+                "reading": "それについてどうおもいますか"
+              },
+              "back": {
+                "text": "What do you think about that?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "私もそう思います",
+                "reading": "わたしもそうおもいます"
+              },
+              "back": {
+                "text": "I think so too.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "それはちょっと違うと思います",
+                "reading": "それはちょっとちがうとおもいます"
+              },
+              "back": {
+                "text": "I think that's a little different.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "もっと詳しく聞かせてください",
+                "reading": "もっとくわしくきかせてください"
+              },
+              "back": {
+                "text": "Please tell me more about it.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "今はまだ決められません",
+                "reading": "いまはまだきめられません"
+              },
+              "back": {
+                "text": "I can't decide yet.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "その件は後で話しましょう",
+                "reading": "そのけんはあとではなしましょう"
+              },
+              "back": {
+                "text": "Let's talk about that later.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "おかげさまで、うまくいきました",
+                "reading": "おかげさまで、うまくいきました"
+              },
+              "back": {
+                "text": "Thanks to you, it went well.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "それはよかったですね",
+                "reading": "それはよかったですね"
+              },
+              "back": {
+                "text": "That's great to hear!",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "残念ながら、今回は見送ります",
+                "reading": "ざんねんながら、こんかいはみおくります"
+              },
+              "back": {
+                "text": "Unfortunately, we'll pass this time.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "良い結果になるといいですね",
+                "reading": "よいけっかになるといいですね"
+              },
+              "back": {
+                "text": "I hope the results will be good.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "ご成功を祈っています",
+                "reading": "ごせいこうをいのっています"
+              },
+              "back": {
+                "text": "I wish you success.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "これで終わりにしましょう",
+                "reading": "これでおわりにしましょう"
+              },
+              "back": {
+                "text": "Let's finish here.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N4",
+                "key-sentences",
+                "conversation",
+                "polite"
+              ],
+              "sortOrder": 40
             }
           ]
         }
