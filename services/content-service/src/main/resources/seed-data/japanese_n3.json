@@ -49,8 +49,20 @@
               "sortOrder": 3,
               "title": "Build a Passive Sentence",
               "body": {
-                "words": ["弟", "に", "ケーキ", "を", "食べられた"],
-                "correct": ["弟", "に", "ケーキ", "を", "食べられた"],
+                "words": [
+                  "弟",
+                  "に",
+                  "ケーキ",
+                  "を",
+                  "食べられた"
+                ],
+                "correct": [
+                  "弟",
+                  "に",
+                  "ケーキ",
+                  "を",
+                  "食べられた"
+                ],
                 "translation": "My cake was eaten by my younger brother. (suffering passive)"
               }
             }
@@ -83,7 +95,9 @@
               "body": {
                 "sentence": "先生は学生に本を＿＿＿。(The teacher made the students read the book.)",
                 "answer": "読ませた",
-                "alternatives": ["よませた"],
+                "alternatives": [
+                  "よませた"
+                ],
                 "explanation": "読む (yomu, Group 1) → 読ませる (yomaseru). Past tense: 読ませた. The teacher (先生) causes the students (学生) to read (読む) the book (本)."
               }
             },
@@ -148,7 +162,9 @@
               "body": {
                 "sentence": "天気が＿＿＿、ピクニックに行きましょう。(If the weather is good, let's go on a picnic.)",
                 "answer": "よければ",
-                "alternatives": ["良ければ"],
+                "alternatives": [
+                  "良ければ"
+                ],
                 "explanation": "良い (いい/よい) → よければ. For the ば conditional of い-adjectives, drop い and add ければ."
               }
             }
@@ -195,8 +211,18 @@
               "sortOrder": 3,
               "title": "Build a ようにする Sentence",
               "body": {
-                "words": ["遅刻", "しない", "ように", "している"],
-                "correct": ["遅刻", "しない", "ように", "している"],
+                "words": [
+                  "遅刻",
+                  "しない",
+                  "ように",
+                  "している"
+                ],
+                "correct": [
+                  "遅刻",
+                  "しない",
+                  "ように",
+                  "している"
+                ],
                 "translation": "I make an effort not to be late."
               }
             }
@@ -209,154 +235,1173 @@
           "description": "25 essential N3-level grammar patterns covering passive, causative, conditionals, and complex expressions.",
           "flashcards": [
             {
-              "front": { "text": "～られる（受身）", "reading": "～られる（うけみ）" },
-              "back": { "text": "Passive voice — indicates receiving an action", "example": "私は先生に褒められた。(I was praised by the teacher.)", "notes": "Group 1: -u → -areru; Group 2: -ru → -rareru; する → される" },
-              "tags": ["passive", "verb-form"],
+              "front": {
+                "text": "～られる（受身）",
+                "reading": "～られる（うけみ）"
+              },
+              "back": {
+                "text": "Passive voice — indicates receiving an action",
+                "example": "私は先生に褒められた。(I was praised by the teacher.)",
+                "notes": "Group 1: -u → -areru; Group 2: -ru → -rareru; する → される"
+              },
+              "tags": [
+                "passive",
+                "verb-form"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "～させる（使役）", "reading": "～させる（しえき）" },
-              "back": { "text": "Causative — make/let someone do something", "example": "母は子供に野菜を食べさせた。(The mother made the child eat vegetables.)", "notes": "Group 1: -u → -aseru; Group 2: -ru → -saseru; する → させる" },
-              "tags": ["causative", "verb-form"],
+              "front": {
+                "text": "～させる（使役）",
+                "reading": "～させる（しえき）"
+              },
+              "back": {
+                "text": "Causative — make/let someone do something",
+                "example": "母は子供に野菜を食べさせた。(The mother made the child eat vegetables.)",
+                "notes": "Group 1: -u → -aseru; Group 2: -ru → -saseru; する → させる"
+              },
+              "tags": [
+                "causative",
+                "verb-form"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "～させられる", "reading": "～させられる" },
-              "back": { "text": "Causative-passive — be made to do something (often unwillingly)", "example": "無理やり歌わせられた。(I was forced to sing.)", "notes": "Causative + passive combined. Very common in conversation." },
-              "tags": ["causative-passive", "verb-form"],
+              "front": {
+                "text": "～させられる",
+                "reading": "～させられる"
+              },
+              "back": {
+                "text": "Causative-passive — be made to do something (often unwillingly)",
+                "example": "無理やり歌わせられた。(I was forced to sing.)",
+                "notes": "Causative + passive combined. Very common in conversation."
+              },
+              "tags": [
+                "causative-passive",
+                "verb-form"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "～ば", "reading": "～ば" },
-              "back": { "text": "Conditional 'if' — hypothetical/general condition", "example": "安ければ買います。(If it's cheap, I'll buy it.)", "notes": "Verbs: -u → -eba; い-adj: drop い + ければ" },
-              "tags": ["conditional"],
+              "front": {
+                "text": "～ば",
+                "reading": "～ば"
+              },
+              "back": {
+                "text": "Conditional 'if' — hypothetical/general condition",
+                "example": "安ければ買います。(If it's cheap, I'll buy it.)",
+                "notes": "Verbs: -u → -eba; い-adj: drop い + ければ"
+              },
+              "tags": [
+                "conditional"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "～たら", "reading": "～たら" },
-              "back": { "text": "Conditional 'if/when' — concrete or realized condition", "example": "駅に着いたら電話してください。(When you arrive at the station, please call.)", "notes": "Past form (た) + ら. Most versatile conditional." },
-              "tags": ["conditional"],
+              "front": {
+                "text": "～たら",
+                "reading": "～たら"
+              },
+              "back": {
+                "text": "Conditional 'if/when' — concrete or realized condition",
+                "example": "駅に着いたら電話してください。(When you arrive at the station, please call.)",
+                "notes": "Past form (た) + ら. Most versatile conditional."
+              },
+              "tags": [
+                "conditional"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "～ようにする", "reading": "～ようにする" },
-              "back": { "text": "Make an effort to ~; try to ~ (deliberate)", "example": "毎日野菜を食べるようにしている。(I make an effort to eat vegetables every day.)", "notes": "Dict-form/ない-form + ようにする" },
-              "tags": ["expression", "effort"],
+              "front": {
+                "text": "～ようにする",
+                "reading": "～ようにする"
+              },
+              "back": {
+                "text": "Make an effort to ~; try to ~ (deliberate)",
+                "example": "毎日野菜を食べるようにしている。(I make an effort to eat vegetables every day.)",
+                "notes": "Dict-form/ない-form + ようにする"
+              },
+              "tags": [
+                "expression",
+                "effort"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "～ようになる", "reading": "～ようになる" },
-              "back": { "text": "Come to ~; become able to ~ (natural change)", "example": "漢字が読めるようになった。(I became able to read kanji.)", "notes": "Dict-form/potential + ようになる. Gradual change." },
-              "tags": ["expression", "change"],
+              "front": {
+                "text": "～ようになる",
+                "reading": "～ようになる"
+              },
+              "back": {
+                "text": "Come to ~; become able to ~ (natural change)",
+                "example": "漢字が読めるようになった。(I became able to read kanji.)",
+                "notes": "Dict-form/potential + ようになる. Gradual change."
+              },
+              "tags": [
+                "expression",
+                "change"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "～ことにする", "reading": "～ことにする" },
-              "back": { "text": "Decide to do ~ (personal decision)", "example": "来月から日本語を勉強することにした。(I decided to study Japanese from next month.)", "notes": "Dict-form/ない-form + ことにする" },
-              "tags": ["expression", "decision"],
+              "front": {
+                "text": "～ことにする",
+                "reading": "～ことにする"
+              },
+              "back": {
+                "text": "Decide to do ~ (personal decision)",
+                "example": "来月から日本語を勉強することにした。(I decided to study Japanese from next month.)",
+                "notes": "Dict-form/ない-form + ことにする"
+              },
+              "tags": [
+                "expression",
+                "decision"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "～ことになる", "reading": "～ことになる" },
-              "back": { "text": "It has been decided that ~ (external/group decision)", "example": "来年、東京に転勤することになった。(It's been decided I'll transfer to Tokyo next year.)", "notes": "The decision is presented as beyond one's control." },
-              "tags": ["expression", "decision"],
+              "front": {
+                "text": "～ことになる",
+                "reading": "～ことになる"
+              },
+              "back": {
+                "text": "It has been decided that ~ (external/group decision)",
+                "example": "来年、東京に転勤することになった。(It's been decided I'll transfer to Tokyo next year.)",
+                "notes": "The decision is presented as beyond one's control."
+              },
+              "tags": [
+                "expression",
+                "decision"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "～てしまう", "reading": "～てしまう" },
-              "back": { "text": "End up doing ~; do ~ completely (often with regret)", "example": "財布を忘れてしまった。(I ended up forgetting my wallet.)", "notes": "Casual: ～ちゃう/～じゃう. Can express completion or regret." },
-              "tags": ["expression", "completion"],
+              "front": {
+                "text": "～てしまう",
+                "reading": "～てしまう"
+              },
+              "back": {
+                "text": "End up doing ~; do ~ completely (often with regret)",
+                "example": "財布を忘れてしまった。(I ended up forgetting my wallet.)",
+                "notes": "Casual: ～ちゃう/～じゃう. Can express completion or regret."
+              },
+              "tags": [
+                "expression",
+                "completion"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "～はずだ", "reading": "～はずだ" },
-              "back": { "text": "Should be ~; is expected to ~ (based on reason/evidence)", "example": "彼はもう来ているはずだ。(He should be here already.)", "notes": "Dict-form/ない/noun の/na-adj な + はずだ" },
-              "tags": ["expression", "expectation"],
+              "front": {
+                "text": "～はずだ",
+                "reading": "～はずだ"
+              },
+              "back": {
+                "text": "Should be ~; is expected to ~ (based on reason/evidence)",
+                "example": "彼はもう来ているはずだ。(He should be here already.)",
+                "notes": "Dict-form/ない/noun の/na-adj な + はずだ"
+              },
+              "tags": [
+                "expression",
+                "expectation"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "～わけだ", "reading": "～わけだ" },
-              "back": { "text": "That's why ~; no wonder ~ (logical conclusion)", "example": "毎日練習したわけだから、上手になったわけだ。(Since you practiced every day, no wonder you got good.)", "notes": "わけがない = there's no way ~; わけにはいかない = can't possibly ~" },
-              "tags": ["expression", "reasoning"],
+              "front": {
+                "text": "～わけだ",
+                "reading": "～わけだ"
+              },
+              "back": {
+                "text": "That's why ~; no wonder ~ (logical conclusion)",
+                "example": "毎日練習したわけだから、上手になったわけだ。(Since you practiced every day, no wonder you got good.)",
+                "notes": "わけがない = there's no way ~; わけにはいかない = can't possibly ~"
+              },
+              "tags": [
+                "expression",
+                "reasoning"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "～とおりに", "reading": "～とおりに" },
-              "back": { "text": "Just as ~; in the way that ~", "example": "言われたとおりにやりました。(I did it just as I was told.)", "notes": "Noun の / Dict-form/た-form + とおりに" },
-              "tags": ["expression", "manner"],
+              "front": {
+                "text": "～とおりに",
+                "reading": "～とおりに"
+              },
+              "back": {
+                "text": "Just as ~; in the way that ~",
+                "example": "言われたとおりにやりました。(I did it just as I was told.)",
+                "notes": "Noun の / Dict-form/た-form + とおりに"
+              },
+              "tags": [
+                "expression",
+                "manner"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "～ために", "reading": "～ために" },
-              "back": { "text": "In order to ~ (purpose); because of ~ (cause)", "example": "試験に受かるために勉強する。(I study in order to pass the exam.)", "notes": "Dict-form + ために (purpose); た-form/noun の + ために (cause)" },
-              "tags": ["expression", "purpose"],
+              "front": {
+                "text": "～ために",
+                "reading": "～ために"
+              },
+              "back": {
+                "text": "In order to ~ (purpose); because of ~ (cause)",
+                "example": "試験に受かるために勉強する。(I study in order to pass the exam.)",
+                "notes": "Dict-form + ために (purpose); た-form/noun の + ために (cause)"
+              },
+              "tags": [
+                "expression",
+                "purpose"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "～ように", "reading": "～ように" },
-              "back": { "text": "So that ~; in order to ~ (with non-volitional verbs)", "example": "聞こえるように大きい声で話した。(I spoke loudly so that it could be heard.)", "notes": "Used when the goal verb is non-volitional. Cf. ～ために for volitional." },
-              "tags": ["expression", "purpose"],
+              "front": {
+                "text": "～ように",
+                "reading": "～ように"
+              },
+              "back": {
+                "text": "So that ~; in order to ~ (with non-volitional verbs)",
+                "example": "聞こえるように大きい声で話した。(I spoke loudly so that it could be heard.)",
+                "notes": "Used when the goal verb is non-volitional. Cf. ～ために for volitional."
+              },
+              "tags": [
+                "expression",
+                "purpose"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "～てある", "reading": "～てある" },
-              "back": { "text": "Something has been done (resultant state, with purpose)", "example": "窓が開けてある。(The window has been opened [on purpose].)", "notes": "Transitive verb て-form + ある. Object takes が." },
-              "tags": ["expression", "state"],
+              "front": {
+                "text": "～てある",
+                "reading": "～てある"
+              },
+              "back": {
+                "text": "Something has been done (resultant state, with purpose)",
+                "example": "窓が開けてある。(The window has been opened [on purpose].)",
+                "notes": "Transitive verb て-form + ある. Object takes が."
+              },
+              "tags": [
+                "expression",
+                "state"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "～ておく", "reading": "～ておく" },
-              "back": { "text": "Do ~ in advance; leave ~ as is (preparation)", "example": "ホテルを予約しておいた。(I reserved a hotel in advance.)", "notes": "Casual: ～とく. Implies doing something for future benefit." },
-              "tags": ["expression", "preparation"],
+              "front": {
+                "text": "～ておく",
+                "reading": "～ておく"
+              },
+              "back": {
+                "text": "Do ~ in advance; leave ~ as is (preparation)",
+                "example": "ホテルを予約しておいた。(I reserved a hotel in advance.)",
+                "notes": "Casual: ～とく. Implies doing something for future benefit."
+              },
+              "tags": [
+                "expression",
+                "preparation"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "～ばよかった", "reading": "～ばよかった" },
-              "back": { "text": "I should have ~ (past regret)", "example": "もっと勉強すればよかった。(I should have studied more.)", "notes": "ば conditional + よかった. Expresses regret about the past." },
-              "tags": ["conditional", "regret"],
+              "front": {
+                "text": "～ばよかった",
+                "reading": "～ばよかった"
+              },
+              "back": {
+                "text": "I should have ~ (past regret)",
+                "example": "もっと勉強すればよかった。(I should have studied more.)",
+                "notes": "ば conditional + よかった. Expresses regret about the past."
+              },
+              "tags": [
+                "conditional",
+                "regret"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "～ても", "reading": "～ても" },
-              "back": { "text": "Even if ~; even though ~", "example": "雨が降っても行きます。(Even if it rains, I'll go.)", "notes": "て-form + も. い-adj: くても; な-adj/noun: でも" },
-              "tags": ["conditional", "concession"],
+              "front": {
+                "text": "～ても",
+                "reading": "～ても"
+              },
+              "back": {
+                "text": "Even if ~; even though ~",
+                "example": "雨が降っても行きます。(Even if it rains, I'll go.)",
+                "notes": "て-form + も. い-adj: くても; な-adj/noun: でも"
+              },
+              "tags": [
+                "conditional",
+                "concession"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "～のに", "reading": "～のに" },
-              "back": { "text": "Although ~; despite ~ (with nuance of complaint/disappointment)", "example": "約束したのに、来なかった。(Although (he) promised, (he) didn't come.)", "notes": "Plain form + のに. Carries an emotional nuance — frustration, surprise." },
-              "tags": ["conjunction", "contrast"],
+              "front": {
+                "text": "～のに",
+                "reading": "～のに"
+              },
+              "back": {
+                "text": "Although ~; despite ~ (with nuance of complaint/disappointment)",
+                "example": "約束したのに、来なかった。(Although (he) promised, (he) didn't come.)",
+                "notes": "Plain form + のに. Carries an emotional nuance — frustration, surprise."
+              },
+              "tags": [
+                "conjunction",
+                "contrast"
+              ],
               "sortOrder": 20
             },
             {
-              "front": { "text": "～てくる / ～ていく", "reading": "～てくる / ～ていく" },
-              "back": { "text": "Change approaching the present (くる) / moving away from the present (いく)", "example": "だんだん寒くなってきた。(It has gradually gotten cold.)", "notes": "～てくる = change up to now; ～ていく = change from now on." },
-              "tags": ["expression", "change"],
+              "front": {
+                "text": "～てくる / ～ていく",
+                "reading": "～てくる / ～ていく"
+              },
+              "back": {
+                "text": "Change approaching the present (くる) / moving away from the present (いく)",
+                "example": "だんだん寒くなってきた。(It has gradually gotten cold.)",
+                "notes": "～てくる = change up to now; ～ていく = change from now on."
+              },
+              "tags": [
+                "expression",
+                "change"
+              ],
               "sortOrder": 21
             },
             {
-              "front": { "text": "～ことがある", "reading": "～ことがある" },
-              "back": { "text": "Sometimes ~; there are times when ~ (occasional occurrence)", "example": "朝ごはんを食べないことがある。(There are times I don't eat breakfast.)", "notes": "Dict-form + ことがある. Cf. た-form + ことがある = 'have experienced ~'." },
-              "tags": ["expression", "frequency"],
+              "front": {
+                "text": "～ことがある",
+                "reading": "～ことがある"
+              },
+              "back": {
+                "text": "Sometimes ~; there are times when ~ (occasional occurrence)",
+                "example": "朝ごはんを食べないことがある。(There are times I don't eat breakfast.)",
+                "notes": "Dict-form + ことがある. Cf. た-form + ことがある = 'have experienced ~'."
+              },
+              "tags": [
+                "expression",
+                "frequency"
+              ],
               "sortOrder": 22
             },
             {
-              "front": { "text": "～かどうか", "reading": "～かどうか" },
-              "back": { "text": "Whether or not ~", "example": "行くかどうかまだ決めていない。(I haven't decided whether or not to go.)", "notes": "Plain form + かどうか. Used for embedded yes/no questions." },
-              "tags": ["expression", "question"],
+              "front": {
+                "text": "～かどうか",
+                "reading": "～かどうか"
+              },
+              "back": {
+                "text": "Whether or not ~",
+                "example": "行くかどうかまだ決めていない。(I haven't decided whether or not to go.)",
+                "notes": "Plain form + かどうか. Used for embedded yes/no questions."
+              },
+              "tags": [
+                "expression",
+                "question"
+              ],
               "sortOrder": 23
             },
             {
-              "front": { "text": "～てほしい", "reading": "～てほしい" },
-              "back": { "text": "I want (someone) to do ~", "example": "もっと早く来てほしい。(I want (you) to come earlier.)", "notes": "（person に）て-form + ほしい. ないでほしい = I want (you) not to ~." },
-              "tags": ["expression", "desire"],
+              "front": {
+                "text": "～てほしい",
+                "reading": "～てほしい"
+              },
+              "back": {
+                "text": "I want (someone) to do ~",
+                "example": "もっと早く来てほしい。(I want (you) to come earlier.)",
+                "notes": "（person に）て-form + ほしい. ないでほしい = I want (you) not to ~."
+              },
+              "tags": [
+                "expression",
+                "desire"
+              ],
               "sortOrder": 24
             },
             {
-              "front": { "text": "～ところだ", "reading": "～ところだ" },
-              "back": { "text": "About to ~ / in the middle of ~ / just finished ~", "example": "今から出かけるところだ。(I'm about to go out now.)", "notes": "Dict-form + ところ (about to); ている + ところ (in the middle); た + ところ (just did)" },
-              "tags": ["expression", "aspect"],
+              "front": {
+                "text": "～ところだ",
+                "reading": "～ところだ"
+              },
+              "back": {
+                "text": "About to ~ / in the middle of ~ / just finished ~",
+                "example": "今から出かけるところだ。(I'm about to go out now.)",
+                "notes": "Dict-form + ところ (about to); ている + ところ (in the middle); た + ところ (just did)"
+              },
+              "tags": [
+                "expression",
+                "aspect"
+              ],
               "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "N3 Grammar in Context",
+          "description": "45 complex sentences demonstrating N3 grammar: passive, causative, conditionals, and nuanced expressions.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "この小説は多くの人に読まれている",
+                "reading": "このしょうせつはおおくのひとによまれている"
+              },
+              "back": {
+                "text": "This novel is read by many people. (passive)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "両親を心配させるのはよくない",
+                "reading": "りょうしんをしんぱいさせるのはよくない"
+              },
+              "back": {
+                "text": "Making parents worry is not good. (causative させる)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "もっと早く出発すればよかった",
+                "reading": "もっとはやくしゅっぱつすればよかった"
+              },
+              "back": {
+                "text": "I should have left earlier. (ばよかった = regret)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "天気がよければ、散歩に行きませんか",
+                "reading": "てんきがよければ、さんぽにいきませんか"
+              },
+              "back": {
+                "text": "If weather is good, shall we walk? (ば)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "駅に着いたら連絡してください",
+                "reading": "えきについたられんらくしてください"
+              },
+              "back": {
+                "text": "Please contact me at the station. (たら = concrete)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "日本語がもっと上手になるように毎日練習している",
+                "reading": "にほんごがもっとじょうずになるようにまいにちれんしゅうしている"
+              },
+              "back": {
+                "text": "I practice daily so my Japanese will improve. (ように)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "仕事で無理やり残業させられた",
+                "reading": "しごとでむりやりざんぎょうさせられた"
+              },
+              "back": {
+                "text": "I was forced to do overtime. (causative-passive)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "毎朝、朝ごはんを食べることにしている",
+                "reading": "まいあさ、あさごはんをたべることにしている"
+              },
+              "back": {
+                "text": "I make a rule of eating breakfast. (ことにしている)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "来月から東京支社に転勤することになった",
+                "reading": "らいげつからとうきょうししゃにてんきんすることになった"
+              },
+              "back": {
+                "text": "It's been decided I'll transfer to Tokyo. (ことになる)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "遅刻しないように早く家を出た",
+                "reading": "ちこくしないようにはやくいえをでた"
+              },
+              "back": {
+                "text": "I left home early so I wouldn't be late. (ように + negative)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "ここで待っていてください。すぐ戻ってくるから",
+                "reading": "ここでまっていてください。すぐもどってくるから"
+              },
+              "back": {
+                "text": "Please wait here. I'll be right back. (てくる)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "あの店は悪いし高いし、もう行かない",
+                "reading": "あのみせはわるいしたかいし、もういかない"
+              },
+              "back": {
+                "text": "That shop is bad and expensive, I won't go. (し...し)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "お忙しいところ恐れ入りますが、ご確認いただけますか",
+                "reading": "おいそがしいところおそれいりますが、ごかくにんいただけますか"
+              },
+              "back": {
+                "text": "Sorry to bother, but could you check? (formal request)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "彼の説明は納得できるわけがない",
+                "reading": "かれのせつめいはなっとくできるわけがない"
+              },
+              "back": {
+                "text": "There's no way his explanation is convincing. (わけがない)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "どんなにがんばっても、あの人には勝てないと思う",
+                "reading": "どんなにがんばっても、あのひとにはかてないとおもう"
+              },
+              "back": {
+                "text": "No matter how hard, I can't beat that person. (ても)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "今日中に返事を出さなければならない",
+                "reading": "きょうじゅうにへんじをださなければならない"
+              },
+              "back": {
+                "text": "I must reply by today. (なければならない)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "最近、新しいシステムにだんだん慣れてきた",
+                "reading": "さいきん、あたらしいシステムにだんだんなれてきた"
+              },
+              "back": {
+                "text": "Recently I've gradually gotten used to the new system. (てくる)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "こんなに難しい問題は、私にはとても解けそうにない",
+                "reading": "こんなにむずかしいもんだいは、わたしにはとてもとけそうにない"
+              },
+              "back": {
+                "text": "This problem seems unsolvable to me. (そうにない)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "日本に留学することに決めた",
+                "reading": "にほんにりゅうがくすることにきめた"
+              },
+              "back": {
+                "text": "I decided to study abroad in Japan. (ことにする)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "卒業後はどうするつもりですか",
+                "reading": "そつぎょうごはどうするつもりですか"
+              },
+              "back": {
+                "text": "What do you plan after graduation? (つもり)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "先輩に注意されたとおりにやってみた",
+                "reading": "せんぱいにちゅういされたとおりにやってみた"
+              },
+              "back": {
+                "text": "I tried doing it just as my senior advised. (とおりに)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "指示どおりに機械を操作してください",
+                "reading": "しじどおりにきかいをそうさしてください"
+              },
+              "back": {
+                "text": "Please operate machine per instructions. (どおりに)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "健康のために、たばこをやめることにした",
+                "reading": "けんこうのために、たばこをやめることにした"
+              },
+              "back": {
+                "text": "For health, I decided to quit smoking. (ことにした)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "彼がそんなことをするはずがない",
+                "reading": "かれがそんなことをするはずがない"
+              },
+              "back": {
+                "text": "He can't possibly do such a thing. (はずがない)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "明日はたぶん雨だろうと思う",
+                "reading": "あしたはたぶんあめだろうとおもう"
+              },
+              "back": {
+                "text": "I think it'll probably rain tomorrow. (だろう)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "体の調子が悪いので、早退させていただけませんか",
+                "reading": "からだのちょうしがわるいので、そうたいさせていただけませんか"
+              },
+              "back": {
+                "text": "I'm unwell; could I leave early? (させていただけませんか)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "最近物忘れがひどくて、困っている",
+                "reading": "さいきんものわすれがひどくて、こまっている"
+              },
+              "back": {
+                "text": "My forgetfulness is terrible lately. (て困っている)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "半年も練習したから、ある程度上手になったわけだ",
+                "reading": "はんとしもれんしゅうしたから、あるていどじょうずになったわけだ"
+              },
+              "back": {
+                "text": "Practiced 6 months, no wonder I improved. (わけだ)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "頑張っているにもかかわらず、結果が出ない",
+                "reading": "がんばっているにもかかわらず、けっかがでない"
+              },
+              "back": {
+                "text": "Despite hard work, results aren't coming. (にもかかわらず)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "この仕事は今日中に終わらせなければならない",
+                "reading": "このしごとはきょうじゅうにおわらせなければならない"
+              },
+              "back": {
+                "text": "I must finish this work today.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "私の代わりに会議に出てもらえませんか",
+                "reading": "わたしのかわりにかいぎにでてもらえませんか"
+              },
+              "back": {
+                "text": "Could you attend the meeting in my place? (てもらえませんか)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "彼の話によると、来年新しい支店ができるらしい",
+                "reading": "かれのはなしによると、らいねんあたらしいしてんができるらしい"
+              },
+              "back": {
+                "text": "New branch next year, apparently. (らしい = hearsay)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "データを見る限りでは、売り上げは増加している",
+                "reading": "データをみるかぎりでは、うりあげはぞうかしている"
+              },
+              "back": {
+                "text": "From the data, sales are increasing. (限りでは)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "準備は整った。あとは実行するのみだ",
+                "reading": "じゅんびはととのった。あとはじっこうするのみだ"
+              },
+              "back": {
+                "text": "Preparations done. Now just execute. (のみだ)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "彼の発言に対して、みんなが反対した",
+                "reading": "かれのはつげんにたいして、みんながはんたいした"
+              },
+              "back": {
+                "text": "Everyone opposed his statement. (に対して)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "どうしても英語をマスターしたい",
+                "reading": "どうしてもえいごをマスターしたい"
+              },
+              "back": {
+                "text": "I absolutely want to master English. (どうしても)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "ここ数年、独身の人が増える一方だ",
+                "reading": "ここすうねん、どくしんのひとがふえるいっぽうだ"
+              },
+              "back": {
+                "text": "Single people have been increasing for years. (一方だ)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "今はまだ決められない。よく考えてから返事する",
+                "reading": "いまはまだきめられない。よくかんがえてからへんじする"
+              },
+              "back": {
+                "text": "Can't decide yet. Reply after thinking. (てから)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "こんな時に限って、電車が遅れるんだよね",
+                "reading": "こんなときにかぎって、でんしゃがおくれるんだよね"
+              },
+              "back": {
+                "text": "Of all times, the train is late now! (に限って)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "今夜は飲みに行こうじゃないか",
+                "reading": "こんやはのみにいこうじゃないか"
+              },
+              "back": {
+                "text": "How about going for a drink tonight? (じゃないか)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "たとえ雨でも、試合は予定どおり行われる",
+                "reading": "たとえあめでも、しあいはよていどおりおこなわれる"
+              },
+              "back": {
+                "text": "Even if rain, match goes as planned. (たとえ〜でも)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "君がいなければ、このプロジェクトは成功しなかっただろう",
+                "reading": "きみがいなければ、このプロジェクトはせいこうしなかっただろう"
+              },
+              "back": {
+                "text": "Without you, project wouldn't have succeeded. (なければ)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "毎月少ないながらも、貯金を続けている",
+                "reading": "まいつきすくないながらも、ちょきんをつづけている"
+              },
+              "back": {
+                "text": "Though small amount, I continue saving monthly. (ながらも)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "私としては、この提案に賛成だ",
+                "reading": "わたしとしては、このていあんにさんせいだ"
+              },
+              "back": {
+                "text": "As for me, I support this proposal. (としては)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "そんなに急いだところで、今からでは間に合わない",
+                "reading": "そんなにいそいだところで、いまからではまにあわない"
+              },
+              "back": {
+                "text": "Even rushing, you won't make it now. (たところで = even if)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 45
             }
           ]
         }
@@ -411,7 +1456,9 @@
               "body": {
                 "sentence": "インターネットで最新の＿＿＿を調べた。(I looked up the latest ___ on the internet.)",
                 "answer": "情報",
-                "alternatives": ["じょうほう"],
+                "alternatives": [
+                  "じょうほう"
+                ],
                 "explanation": "情報（じょうほう）means 'information'. It's commonly paired with 最新 (latest) in everyday usage."
               }
             }
@@ -442,8 +1489,20 @@
               "sortOrder": 2,
               "title": "Build an Environment Sentence",
               "body": {
-                "words": ["環境", "問題", "について", "考える", "べきだ"],
-                "correct": ["環境", "問題", "について", "考える", "べきだ"],
+                "words": [
+                  "環境",
+                  "問題",
+                  "について",
+                  "考える",
+                  "べきだ"
+                ],
+                "correct": [
+                  "環境",
+                  "問題",
+                  "について",
+                  "考える",
+                  "べきだ"
+                ],
                 "translation": "We should think about environmental issues."
               }
             },
@@ -492,7 +1551,9 @@
               "body": {
                 "sentence": "彼女は明るい＿＿＿で、みんなに好かれている。(She has a bright _____ and is liked by everyone.)",
                 "answer": "性格",
-                "alternatives": ["せいかく"],
+                "alternatives": [
+                  "せいかく"
+                ],
                 "explanation": "性格（せいかく）means personality/character. 明るい性格 = bright/cheerful personality."
               }
             },
@@ -555,8 +1616,20 @@
               "sortOrder": 3,
               "title": "Build an Abstract Concept Sentence",
               "body": {
-                "words": ["事故", "の", "原因", "を", "調べている"],
-                "correct": ["事故", "の", "原因", "を", "調べている"],
+                "words": [
+                  "事故",
+                  "の",
+                  "原因",
+                  "を",
+                  "調べている"
+                ],
+                "correct": [
+                  "事故",
+                  "の",
+                  "原因",
+                  "を",
+                  "調べている"
+                ],
                 "translation": "We are investigating the cause of the accident."
               }
             }
@@ -569,154 +1642,1195 @@
           "description": "25 essential N3-level vocabulary words covering news, environment, feelings, and abstract concepts.",
           "flashcards": [
             {
-              "front": { "text": "ニュース", "reading": "ニュース" },
-              "back": { "text": "news", "example": "毎朝ニュースを見ている。(I watch the news every morning.)", "notes": "Noun (katakana loanword from English)" },
-              "tags": ["media"],
+              "front": {
+                "text": "ニュース",
+                "reading": "ニュース"
+              },
+              "back": {
+                "text": "news",
+                "example": "毎朝ニュースを見ている。(I watch the news every morning.)",
+                "notes": "Noun (katakana loanword from English)"
+              },
+              "tags": [
+                "media"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "新聞", "reading": "しんぶん" },
-              "back": { "text": "newspaper", "example": "父は毎朝新聞を読む。(My father reads the newspaper every morning.)", "notes": "Noun" },
-              "tags": ["media"],
+              "front": {
+                "text": "新聞",
+                "reading": "しんぶん"
+              },
+              "back": {
+                "text": "newspaper",
+                "example": "父は毎朝新聞を読む。(My father reads the newspaper every morning.)",
+                "notes": "Noun"
+              },
+              "tags": [
+                "media"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "放送", "reading": "ほうそう" },
-              "back": { "text": "broadcast", "example": "その番組は生放送だった。(That program was a live broadcast.)", "notes": "Noun / する-verb. 生放送 = live broadcast" },
-              "tags": ["media"],
+              "front": {
+                "text": "放送",
+                "reading": "ほうそう"
+              },
+              "back": {
+                "text": "broadcast",
+                "example": "その番組は生放送だった。(That program was a live broadcast.)",
+                "notes": "Noun / する-verb. 生放送 = live broadcast"
+              },
+              "tags": [
+                "media"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "記事", "reading": "きじ" },
-              "back": { "text": "article (newspaper/magazine)", "example": "この記事は面白い。(This article is interesting.)", "notes": "Noun" },
-              "tags": ["media"],
+              "front": {
+                "text": "記事",
+                "reading": "きじ"
+              },
+              "back": {
+                "text": "article (newspaper/magazine)",
+                "example": "この記事は面白い。(This article is interesting.)",
+                "notes": "Noun"
+              },
+              "tags": [
+                "media"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "報道", "reading": "ほうどう" },
-              "back": { "text": "news report; reporting", "example": "テレビで事故の報道を見た。(I saw a news report about the accident on TV.)", "notes": "Noun / する-verb. More formal than ニュース." },
-              "tags": ["media"],
+              "front": {
+                "text": "報道",
+                "reading": "ほうどう"
+              },
+              "back": {
+                "text": "news report; reporting",
+                "example": "テレビで事故の報道を見た。(I saw a news report about the accident on TV.)",
+                "notes": "Noun / する-verb. More formal than ニュース."
+              },
+              "tags": [
+                "media"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "番組", "reading": "ばんぐみ" },
-              "back": { "text": "TV/radio program", "example": "好きな番組は何ですか。(What's your favorite program?)", "notes": "Noun" },
-              "tags": ["media"],
+              "front": {
+                "text": "番組",
+                "reading": "ばんぐみ"
+              },
+              "back": {
+                "text": "TV/radio program",
+                "example": "好きな番組は何ですか。(What's your favorite program?)",
+                "notes": "Noun"
+              },
+              "tags": [
+                "media"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "情報", "reading": "じょうほう" },
-              "back": { "text": "information", "example": "正確な情報が必要だ。(Accurate information is needed.)", "notes": "Noun. 個人情報 = personal information" },
-              "tags": ["media"],
+              "front": {
+                "text": "情報",
+                "reading": "じょうほう"
+              },
+              "back": {
+                "text": "information",
+                "example": "正確な情報が必要だ。(Accurate information is needed.)",
+                "notes": "Noun. 個人情報 = personal information"
+              },
+              "tags": [
+                "media"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "自然", "reading": "しぜん" },
-              "back": { "text": "nature; natural", "example": "この町は自然が豊かだ。(This town is rich in nature.)", "notes": "Noun / な-adjective. 自然な = natural (adj)" },
-              "tags": ["environment"],
+              "front": {
+                "text": "自然",
+                "reading": "しぜん"
+              },
+              "back": {
+                "text": "nature; natural",
+                "example": "この町は自然が豊かだ。(This town is rich in nature.)",
+                "notes": "Noun / な-adjective. 自然な = natural (adj)"
+              },
+              "tags": [
+                "environment"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "環境", "reading": "かんきょう" },
-              "back": { "text": "environment", "example": "環境を守ることが大切だ。(It's important to protect the environment.)", "notes": "Noun. 環境問題 = environmental issue" },
-              "tags": ["environment"],
+              "front": {
+                "text": "環境",
+                "reading": "かんきょう"
+              },
+              "back": {
+                "text": "environment",
+                "example": "環境を守ることが大切だ。(It's important to protect the environment.)",
+                "notes": "Noun. 環境問題 = environmental issue"
+              },
+              "tags": [
+                "environment"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "影響", "reading": "えいきょう" },
-              "back": { "text": "influence; effect", "example": "睡眠不足は健康に影響を与える。(Lack of sleep has an effect on health.)", "notes": "Noun / する-verb. 影響を与える = to affect; 影響を受ける = to be affected" },
-              "tags": ["environment"],
+              "front": {
+                "text": "影響",
+                "reading": "えいきょう"
+              },
+              "back": {
+                "text": "influence; effect",
+                "example": "睡眠不足は健康に影響を与える。(Lack of sleep has an effect on health.)",
+                "notes": "Noun / する-verb. 影響を与える = to affect; 影響を受ける = to be affected"
+              },
+              "tags": [
+                "environment"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "温暖化", "reading": "おんだんか" },
-              "back": { "text": "global warming", "example": "地球温暖化が心配されている。(Global warming is a concern.)", "notes": "Noun. 温暖 = warm + 化 = -ification" },
-              "tags": ["environment"],
+              "front": {
+                "text": "温暖化",
+                "reading": "おんだんか"
+              },
+              "back": {
+                "text": "global warming",
+                "example": "地球温暖化が心配されている。(Global warming is a concern.)",
+                "notes": "Noun. 温暖 = warm + 化 = -ification"
+              },
+              "tags": [
+                "environment"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "汚染", "reading": "おせん" },
-              "back": { "text": "pollution; contamination", "example": "大気汚染が深刻だ。(Air pollution is serious.)", "notes": "Noun / する-verb. 大気汚染 = air pollution; 水質汚染 = water pollution" },
-              "tags": ["environment"],
+              "front": {
+                "text": "汚染",
+                "reading": "おせん"
+              },
+              "back": {
+                "text": "pollution; contamination",
+                "example": "大気汚染が深刻だ。(Air pollution is serious.)",
+                "notes": "Noun / する-verb. 大気汚染 = air pollution; 水質汚染 = water pollution"
+              },
+              "tags": [
+                "environment"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "資源", "reading": "しげん" },
-              "back": { "text": "resources", "example": "資源を大切に使おう。(Let's use resources carefully.)", "notes": "Noun. 天然資源 = natural resources" },
-              "tags": ["environment"],
+              "front": {
+                "text": "資源",
+                "reading": "しげん"
+              },
+              "back": {
+                "text": "resources",
+                "example": "資源を大切に使おう。(Let's use resources carefully.)",
+                "notes": "Noun. 天然資源 = natural resources"
+              },
+              "tags": [
+                "environment"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "気持ち", "reading": "きもち" },
-              "back": { "text": "feeling; mood", "example": "あなたの気持ちはわかります。(I understand your feelings.)", "notes": "Noun. 気持ちがいい = feels good; 気持ちが悪い = feels bad/unpleasant" },
-              "tags": ["feelings"],
+              "front": {
+                "text": "気持ち",
+                "reading": "きもち"
+              },
+              "back": {
+                "text": "feeling; mood",
+                "example": "あなたの気持ちはわかります。(I understand your feelings.)",
+                "notes": "Noun. 気持ちがいい = feels good; 気持ちが悪い = feels bad/unpleasant"
+              },
+              "tags": [
+                "feelings"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "性格", "reading": "せいかく" },
-              "back": { "text": "personality; character", "example": "彼はやさしい性格だ。(He has a gentle personality.)", "notes": "Noun" },
-              "tags": ["feelings"],
+              "front": {
+                "text": "性格",
+                "reading": "せいかく"
+              },
+              "back": {
+                "text": "personality; character",
+                "example": "彼はやさしい性格だ。(He has a gentle personality.)",
+                "notes": "Noun"
+              },
+              "tags": [
+                "feelings"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "心配", "reading": "しんぱい" },
-              "back": { "text": "worry; concern", "example": "心配しないでください。(Please don't worry.)", "notes": "Noun / する-verb / な-adjective. 心配をかける = to cause worry" },
-              "tags": ["feelings"],
+              "front": {
+                "text": "心配",
+                "reading": "しんぱい"
+              },
+              "back": {
+                "text": "worry; concern",
+                "example": "心配しないでください。(Please don't worry.)",
+                "notes": "Noun / する-verb / な-adjective. 心配をかける = to cause worry"
+              },
+              "tags": [
+                "feelings"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "安心", "reading": "あんしん" },
-              "back": { "text": "relief; peace of mind", "example": "無事と聞いて安心した。(I was relieved to hear (you're) safe.)", "notes": "Noun / する-verb. Opposite of 心配." },
-              "tags": ["feelings"],
+              "front": {
+                "text": "安心",
+                "reading": "あんしん"
+              },
+              "back": {
+                "text": "relief; peace of mind",
+                "example": "無事と聞いて安心した。(I was relieved to hear (you're) safe.)",
+                "notes": "Noun / する-verb. Opposite of 心配."
+              },
+              "tags": [
+                "feelings"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "感動", "reading": "かんどう" },
-              "back": { "text": "being deeply moved/impressed", "example": "映画に感動して泣いた。(I was moved by the movie and cried.)", "notes": "Noun / する-verb. 感動的な = moving, touching" },
-              "tags": ["feelings"],
+              "front": {
+                "text": "感動",
+                "reading": "かんどう"
+              },
+              "back": {
+                "text": "being deeply moved/impressed",
+                "example": "映画に感動して泣いた。(I was moved by the movie and cried.)",
+                "notes": "Noun / する-verb. 感動的な = moving, touching"
+              },
+              "tags": [
+                "feelings"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "我慢", "reading": "がまん" },
-              "back": { "text": "patience; endurance; to endure", "example": "痛いけど我慢した。(It hurt but I endured it.)", "notes": "Noun / する-verb. 我慢できない = I can't stand it" },
-              "tags": ["feelings"],
+              "front": {
+                "text": "我慢",
+                "reading": "がまん"
+              },
+              "back": {
+                "text": "patience; endurance; to endure",
+                "example": "痛いけど我慢した。(It hurt but I endured it.)",
+                "notes": "Noun / する-verb. 我慢できない = I can't stand it"
+              },
+              "tags": [
+                "feelings"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "機会", "reading": "きかい" },
-              "back": { "text": "opportunity; chance", "example": "機会があれば、ぜひ参加したい。(If there's an opportunity, I'd definitely like to participate.)", "notes": "Noun. More formal than チャンス." },
-              "tags": ["abstract"],
+              "front": {
+                "text": "機会",
+                "reading": "きかい"
+              },
+              "back": {
+                "text": "opportunity; chance",
+                "example": "機会があれば、ぜひ参加したい。(If there's an opportunity, I'd definitely like to participate.)",
+                "notes": "Noun. More formal than チャンス."
+              },
+              "tags": [
+                "abstract"
+              ],
               "sortOrder": 20
             },
             {
-              "front": { "text": "目的", "reading": "もくてき" },
-              "back": { "text": "purpose; objective", "example": "旅行の目的は何ですか。(What is the purpose of the trip?)", "notes": "Noun. 目的地 = destination" },
-              "tags": ["abstract"],
+              "front": {
+                "text": "目的",
+                "reading": "もくてき"
+              },
+              "back": {
+                "text": "purpose; objective",
+                "example": "旅行の目的は何ですか。(What is the purpose of the trip?)",
+                "notes": "Noun. 目的地 = destination"
+              },
+              "tags": [
+                "abstract"
+              ],
               "sortOrder": 21
             },
             {
-              "front": { "text": "経験", "reading": "けいけん" },
-              "back": { "text": "experience", "example": "いい経験になった。(It was a good experience.)", "notes": "Noun / する-verb. 経験者 = experienced person" },
-              "tags": ["abstract"],
+              "front": {
+                "text": "経験",
+                "reading": "けいけん"
+              },
+              "back": {
+                "text": "experience",
+                "example": "いい経験になった。(It was a good experience.)",
+                "notes": "Noun / する-verb. 経験者 = experienced person"
+              },
+              "tags": [
+                "abstract"
+              ],
               "sortOrder": 22
             },
             {
-              "front": { "text": "結果", "reading": "けっか" },
-              "back": { "text": "result; outcome", "example": "試験の結果を待っている。(I'm waiting for the exam results.)", "notes": "Noun. その結果 = as a result" },
-              "tags": ["abstract"],
+              "front": {
+                "text": "結果",
+                "reading": "けっか"
+              },
+              "back": {
+                "text": "result; outcome",
+                "example": "試験の結果を待っている。(I'm waiting for the exam results.)",
+                "notes": "Noun. その結果 = as a result"
+              },
+              "tags": [
+                "abstract"
+              ],
               "sortOrder": 23
             },
             {
-              "front": { "text": "原因", "reading": "げんいん" },
-              "back": { "text": "cause; reason", "example": "事故の原因はまだわからない。(The cause of the accident is still unknown.)", "notes": "Noun. Often paired with 結果: 原因と結果" },
-              "tags": ["abstract"],
+              "front": {
+                "text": "原因",
+                "reading": "げんいん"
+              },
+              "back": {
+                "text": "cause; reason",
+                "example": "事故の原因はまだわからない。(The cause of the accident is still unknown.)",
+                "notes": "Noun. Often paired with 結果: 原因と結果"
+              },
+              "tags": [
+                "abstract"
+              ],
               "sortOrder": 24
             },
             {
-              "front": { "text": "関係", "reading": "かんけい" },
-              "back": { "text": "relationship; connection", "example": "二人の関係はとてもいい。(Their relationship is very good.)", "notes": "Noun / する-verb. 関係がある = to be related; 関係ない = unrelated" },
-              "tags": ["abstract"],
+              "front": {
+                "text": "関係",
+                "reading": "かんけい"
+              },
+              "back": {
+                "text": "relationship; connection",
+                "example": "二人の関係はとてもいい。(Their relationship is very good.)",
+                "notes": "Noun / する-verb. 関係がある = to be related; 関係ない = unrelated"
+              },
+              "tags": [
+                "abstract"
+              ],
               "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "N3 Vocabulary Expansion",
+          "description": "45 advanced N3 words: society, economy, arts, philosophy, and abstract concepts.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "傾向",
+                "reading": "けいこう"
+              },
+              "back": {
+                "text": "Tendency; trend",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "現状",
+                "reading": "げんじょう"
+              },
+              "back": {
+                "text": "Current state; present situation",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "状態",
+                "reading": "じょうたい"
+              },
+              "back": {
+                "text": "State; condition",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "水準",
+                "reading": "すいじゅん"
+              },
+              "back": {
+                "text": "Standard; level",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "平均",
+                "reading": "へいきん"
+              },
+              "back": {
+                "text": "Average; mean",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "増加",
+                "reading": "ぞうか"
+              },
+              "back": {
+                "text": "Increase; growth",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "減少",
+                "reading": "げんしょう"
+              },
+              "back": {
+                "text": "Decrease; decline",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "差別",
+                "reading": "さべつ"
+              },
+              "back": {
+                "text": "Discrimination; distinction",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "景気",
+                "reading": "けいき"
+              },
+              "back": {
+                "text": "Economic conditions; business climate",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "資金",
+                "reading": "しきん"
+              },
+              "back": {
+                "text": "Capital; funds",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "税金",
+                "reading": "ぜいきん"
+              },
+              "back": {
+                "text": "Tax",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "消費",
+                "reading": "しょうひ"
+              },
+              "back": {
+                "text": "Consumption; spending",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "物価",
+                "reading": "ぶっか"
+              },
+              "back": {
+                "text": "Prices; cost of goods",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "収入",
+                "reading": "しゅうにゅう"
+              },
+              "back": {
+                "text": "Income; earnings",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "費用",
+                "reading": "ひよう"
+              },
+              "back": {
+                "text": "Expense; cost",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "事件",
+                "reading": "じけん"
+              },
+              "back": {
+                "text": "Incident; case",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "事故",
+                "reading": "じこ"
+              },
+              "back": {
+                "text": "Accident; disaster",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "犯罪",
+                "reading": "はんざい"
+              },
+              "back": {
+                "text": "Crime; criminal activity",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "被害",
+                "reading": "ひがい"
+              },
+              "back": {
+                "text": "Damage; harm; victim",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "証拠",
+                "reading": "しょうこ"
+              },
+              "back": {
+                "text": "Evidence; proof",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "裁判",
+                "reading": "さいばん"
+              },
+              "back": {
+                "text": "Judicial trial; court",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "法律",
+                "reading": "ほうりつ"
+              },
+              "back": {
+                "text": "Law; legislation",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "制度",
+                "reading": "せいど"
+              },
+              "back": {
+                "text": "System; institution",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "政策",
+                "reading": "せいさく"
+              },
+              "back": {
+                "text": "Policy; political measure",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "改革",
+                "reading": "かいかく"
+              },
+              "back": {
+                "text": "Reform; improvement",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "対策",
+                "reading": "たいさく"
+              },
+              "back": {
+                "text": "Countermeasure; policy response",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "国会",
+                "reading": "こっかい"
+              },
+              "back": {
+                "text": "National Diet (parliament)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "選挙",
+                "reading": "せんきょ"
+              },
+              "back": {
+                "text": "Election",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "投票",
+                "reading": "とうひょう"
+              },
+              "back": {
+                "text": "Voting; casting a ballot",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "哲学",
+                "reading": "てつがく"
+              },
+              "back": {
+                "text": "Philosophy",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "倫理",
+                "reading": "りんり"
+              },
+              "back": {
+                "text": "Ethics; moral principles",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "価値観",
+                "reading": "かちかん"
+              },
+              "back": {
+                "text": "Values; sense of values",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "概念",
+                "reading": "がいねん"
+              },
+              "back": {
+                "text": "Concept; notion",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "定義",
+                "reading": "ていぎ"
+              },
+              "back": {
+                "text": "Definition",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "分析",
+                "reading": "ぶんせき"
+              },
+              "back": {
+                "text": "Analysis; analytical study",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "文学",
+                "reading": "ぶんがく"
+              },
+              "back": {
+                "text": "Literature",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "芸術",
+                "reading": "げいじゅつ"
+              },
+              "back": {
+                "text": "Art; fine arts",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "演奏",
+                "reading": "えんそう"
+              },
+              "back": {
+                "text": "Musical performance",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "作品",
+                "reading": "さくひん"
+              },
+              "back": {
+                "text": "Work (of art); piece; product",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "表現",
+                "reading": "ひょうげん"
+              },
+              "back": {
+                "text": "Expression; representation",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "創造",
+                "reading": "そうぞう"
+              },
+              "back": {
+                "text": "Creation; creativity",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "青年",
+                "reading": "せいねん"
+              },
+              "back": {
+                "text": "Youth; young person",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "中年",
+                "reading": "ちゅうねん"
+              },
+              "back": {
+                "text": "Middle-aged person",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "高齢",
+                "reading": "こうれい"
+              },
+              "back": {
+                "text": "Old age; elderly",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "世代",
+                "reading": "せだい"
+              },
+              "back": {
+                "text": "Generation",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "vocabulary",
+                "society",
+                "abstract"
+              ],
+              "sortOrder": 45
             }
           ]
         }
@@ -771,7 +2885,9 @@
               "body": {
                 "sentence": "すみません、写真を撮って＿＿＿＿＿＿。(Excuse me, could you take a photo?)",
                 "answer": "いただけませんか",
-                "alternatives": ["くださいませんか"],
+                "alternatives": [
+                  "くださいませんか"
+                ],
                 "explanation": "Both いただけませんか and くださいませんか are polite request forms. いただけませんか is slightly more polite as it uses the humble verb いただく."
               }
             }
@@ -888,124 +3004,1050 @@
           "description": "20 key sentence patterns for formal requests, expressing uncertainty, and connecting ideas at the N3 level.",
           "flashcards": [
             {
-              "front": { "text": "～いただけませんか", "reading": "～いただけませんか" },
-              "back": { "text": "Could you please ~? (very polite request)", "example": "ちょっと教えていただけませんか。(Could you please teach me a bit?)", "notes": "Humble いただく + potential + negative question. Very polite." },
-              "tags": ["request", "polite"],
+              "front": {
+                "text": "～いただけませんか",
+                "reading": "～いただけませんか"
+              },
+              "back": {
+                "text": "Could you please ~? (very polite request)",
+                "example": "ちょっと教えていただけませんか。(Could you please teach me a bit?)",
+                "notes": "Humble いただく + potential + negative question. Very polite."
+              },
+              "tags": [
+                "request",
+                "polite"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "～くださいませんか", "reading": "～くださいませんか" },
-              "back": { "text": "Would you please ~? (polite request)", "example": "もう少し待ってくださいませんか。(Would you please wait a little longer?)", "notes": "More polite than ～てください. Negative question softens the request." },
-              "tags": ["request", "polite"],
+              "front": {
+                "text": "～くださいませんか",
+                "reading": "～くださいませんか"
+              },
+              "back": {
+                "text": "Would you please ~? (polite request)",
+                "example": "もう少し待ってくださいませんか。(Would you please wait a little longer?)",
+                "notes": "More polite than ～てください. Negative question softens the request."
+              },
+              "tags": [
+                "request",
+                "polite"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "お願いします", "reading": "おねがいします" },
-              "back": { "text": "Please. / I request. (versatile polite expression)", "example": "お会計をお願いします。(The check, please.)", "notes": "Can follow nouns directly. Universal polite request form." },
-              "tags": ["request", "polite"],
+              "front": {
+                "text": "お願いします",
+                "reading": "おねがいします"
+              },
+              "back": {
+                "text": "Please. / I request. (versatile polite expression)",
+                "example": "お会計をお願いします。(The check, please.)",
+                "notes": "Can follow nouns directly. Universal polite request form."
+              },
+              "tags": [
+                "request",
+                "polite"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "～ていただきたいのですが", "reading": "～ていただきたいのですが" },
-              "back": { "text": "I would like you to ~ (indirect, very polite)", "example": "確認していただきたいのですが。(I'd like you to check this, if you could...)", "notes": "The trailing のですが makes it very soft and indirect." },
-              "tags": ["request", "polite"],
+              "front": {
+                "text": "～ていただきたいのですが",
+                "reading": "～ていただきたいのですが"
+              },
+              "back": {
+                "text": "I would like you to ~ (indirect, very polite)",
+                "example": "確認していただきたいのですが。(I'd like you to check this, if you could...)",
+                "notes": "The trailing のですが makes it very soft and indirect."
+              },
+              "tags": [
+                "request",
+                "polite"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "～らしい", "reading": "～らしい" },
-              "back": { "text": "Apparently ~; I heard that ~ (hearsay)", "example": "明日は雨が降るらしい。(Apparently it will rain tomorrow.)", "notes": "Based on secondhand information. Plain form + らしい (no だ for nouns)." },
-              "tags": ["uncertainty", "hearsay"],
+              "front": {
+                "text": "～らしい",
+                "reading": "～らしい"
+              },
+              "back": {
+                "text": "Apparently ~; I heard that ~ (hearsay)",
+                "example": "明日は雨が降るらしい。(Apparently it will rain tomorrow.)",
+                "notes": "Based on secondhand information. Plain form + らしい (no だ for nouns)."
+              },
+              "tags": [
+                "uncertainty",
+                "hearsay"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "～ようだ", "reading": "～ようだ" },
-              "back": { "text": "It appears that ~; it seems ~ (based on observation)", "example": "道が濡れているようだ。(The road appears to be wet.)", "notes": "More formal than みたいだ. Based on speaker's own observation." },
-              "tags": ["uncertainty", "observation"],
+              "front": {
+                "text": "～ようだ",
+                "reading": "～ようだ"
+              },
+              "back": {
+                "text": "It appears that ~; it seems ~ (based on observation)",
+                "example": "道が濡れているようだ。(The road appears to be wet.)",
+                "notes": "More formal than みたいだ. Based on speaker's own observation."
+              },
+              "tags": [
+                "uncertainty",
+                "observation"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "～みたいだ", "reading": "～みたいだ" },
-              "back": { "text": "It seems like ~ (casual, same as ようだ)", "example": "彼は忙しいみたいだ。(He seems busy.)", "notes": "Casual version of ようだ. Follows plain form / nouns directly." },
-              "tags": ["uncertainty", "casual"],
+              "front": {
+                "text": "～みたいだ",
+                "reading": "～みたいだ"
+              },
+              "back": {
+                "text": "It seems like ~ (casual, same as ようだ)",
+                "example": "彼は忙しいみたいだ。(He seems busy.)",
+                "notes": "Casual version of ようだ. Follows plain form / nouns directly."
+              },
+              "tags": [
+                "uncertainty",
+                "casual"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "～っぽい", "reading": "～っぽい" },
-              "back": { "text": "-ish; -like; tends to be ~ (casual suffix)", "example": "最近忘れっぽくなった。(I've become forgetful lately.)", "notes": "Conjugates like い-adjective. 子供っぽい = childish; 怒りっぽい = quick to anger." },
-              "tags": ["uncertainty", "tendency"],
+              "front": {
+                "text": "～っぽい",
+                "reading": "～っぽい"
+              },
+              "back": {
+                "text": "-ish; -like; tends to be ~ (casual suffix)",
+                "example": "最近忘れっぽくなった。(I've become forgetful lately.)",
+                "notes": "Conjugates like い-adjective. 子供っぽい = childish; 怒りっぽい = quick to anger."
+              },
+              "tags": [
+                "uncertainty",
+                "tendency"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "しかし", "reading": "しかし" },
-              "back": { "text": "However; but (formal conjunction)", "example": "努力した。しかし、合格できなかった。(I worked hard. However, I couldn't pass.)", "notes": "Written/formal. Use でも in casual speech." },
-              "tags": ["conjunction", "contrast"],
+              "front": {
+                "text": "しかし",
+                "reading": "しかし"
+              },
+              "back": {
+                "text": "However; but (formal conjunction)",
+                "example": "努力した。しかし、合格できなかった。(I worked hard. However, I couldn't pass.)",
+                "notes": "Written/formal. Use でも in casual speech."
+              },
+              "tags": [
+                "conjunction",
+                "contrast"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "ところが", "reading": "ところが" },
-              "back": { "text": "However; and yet (unexpected result)", "example": "晴れると思った。ところが、大雨になった。(I thought it would be sunny. And yet, it poured.)", "notes": "Emphasizes that the result was contrary to expectation." },
-              "tags": ["conjunction", "contrast"],
+              "front": {
+                "text": "ところが",
+                "reading": "ところが"
+              },
+              "back": {
+                "text": "However; and yet (unexpected result)",
+                "example": "晴れると思った。ところが、大雨になった。(I thought it would be sunny. And yet, it poured.)",
+                "notes": "Emphasizes that the result was contrary to expectation."
+              },
+              "tags": [
+                "conjunction",
+                "contrast"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "それで", "reading": "それで" },
-              "back": { "text": "So; therefore; and then", "example": "電車が止まった。それで、タクシーに乗った。(The train stopped. So I took a taxi.)", "notes": "Connects cause to result. Neutral register." },
-              "tags": ["conjunction", "cause-result"],
+              "front": {
+                "text": "それで",
+                "reading": "それで"
+              },
+              "back": {
+                "text": "So; therefore; and then",
+                "example": "電車が止まった。それで、タクシーに乗った。(The train stopped. So I took a taxi.)",
+                "notes": "Connects cause to result. Neutral register."
+              },
+              "tags": [
+                "conjunction",
+                "cause-result"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "そのため", "reading": "そのため" },
-              "back": { "text": "For that reason; therefore (formal)", "example": "人口が増えている。そのため、住宅が不足している。(The population is growing. For that reason, there's a housing shortage.)", "notes": "More formal than それで. Common in essays and reports." },
-              "tags": ["conjunction", "cause-result"],
+              "front": {
+                "text": "そのため",
+                "reading": "そのため"
+              },
+              "back": {
+                "text": "For that reason; therefore (formal)",
+                "example": "人口が増えている。そのため、住宅が不足している。(The population is growing. For that reason, there's a housing shortage.)",
+                "notes": "More formal than それで. Common in essays and reports."
+              },
+              "tags": [
+                "conjunction",
+                "cause-result"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "つまり", "reading": "つまり" },
-              "back": { "text": "In other words; that is to say", "example": "彼は私の母の兄だ。つまり、おじだ。(He's my mother's older brother. In other words, my uncle.)", "notes": "Used to rephrase or summarize what was just said." },
-              "tags": ["conjunction", "rephrasing"],
+              "front": {
+                "text": "つまり",
+                "reading": "つまり"
+              },
+              "back": {
+                "text": "In other words; that is to say",
+                "example": "彼は私の母の兄だ。つまり、おじだ。(He's my mother's older brother. In other words, my uncle.)",
+                "notes": "Used to rephrase or summarize what was just said."
+              },
+              "tags": [
+                "conjunction",
+                "rephrasing"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "しかも", "reading": "しかも" },
-              "back": { "text": "Moreover; what's more", "example": "この店は安い。しかも、おいしい。(This shop is cheap. What's more, it's delicious.)", "notes": "Adds surprising or noteworthy additional information." },
-              "tags": ["conjunction", "addition"],
+              "front": {
+                "text": "しかも",
+                "reading": "しかも"
+              },
+              "back": {
+                "text": "Moreover; what's more",
+                "example": "この店は安い。しかも、おいしい。(This shop is cheap. What's more, it's delicious.)",
+                "notes": "Adds surprising or noteworthy additional information."
+              },
+              "tags": [
+                "conjunction",
+                "addition"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "ついでに", "reading": "ついでに" },
-              "back": { "text": "While (you're) at it; incidentally; on the way", "example": "銀行に行くついでに、薬局にも寄った。(While going to the bank, I also stopped by the pharmacy.)", "notes": "Doing something extra along the way or while doing something else." },
-              "tags": ["conjunction", "addition"],
+              "front": {
+                "text": "ついでに",
+                "reading": "ついでに"
+              },
+              "back": {
+                "text": "While (you're) at it; incidentally; on the way",
+                "example": "銀行に行くついでに、薬局にも寄った。(While going to the bank, I also stopped by the pharmacy.)",
+                "notes": "Doing something extra along the way or while doing something else."
+              },
+              "tags": [
+                "conjunction",
+                "addition"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "～かもしれない", "reading": "～かもしれない" },
-              "back": { "text": "Might ~; maybe ~ (possibility)", "example": "明日は雪が降るかもしれない。(It might snow tomorrow.)", "notes": "Plain form + かもしれない. Casual: かも." },
-              "tags": ["uncertainty", "possibility"],
+              "front": {
+                "text": "～かもしれない",
+                "reading": "～かもしれない"
+              },
+              "back": {
+                "text": "Might ~; maybe ~ (possibility)",
+                "example": "明日は雪が降るかもしれない。(It might snow tomorrow.)",
+                "notes": "Plain form + かもしれない. Casual: かも."
+              },
+              "tags": [
+                "uncertainty",
+                "possibility"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "～にちがいない", "reading": "～にちがいない" },
-              "back": { "text": "Must be ~; no doubt ~ (strong certainty)", "example": "彼は知っているに違いない。(He must know.)", "notes": "Plain form + にちがいない. Strong conviction, like 'must be'." },
-              "tags": ["uncertainty", "certainty"],
+              "front": {
+                "text": "～にちがいない",
+                "reading": "～にちがいない"
+              },
+              "back": {
+                "text": "Must be ~; no doubt ~ (strong certainty)",
+                "example": "彼は知っているに違いない。(He must know.)",
+                "notes": "Plain form + にちがいない. Strong conviction, like 'must be'."
+              },
+              "tags": [
+                "uncertainty",
+                "certainty"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "したがって", "reading": "したがって" },
-              "back": { "text": "Therefore; consequently (very formal)", "example": "予算が不足している。したがって、計画を変更する必要がある。(The budget is insufficient. Therefore, we need to change the plan.)", "notes": "Very formal. Used in academic writing and official documents." },
-              "tags": ["conjunction", "cause-result"],
+              "front": {
+                "text": "したがって",
+                "reading": "したがって"
+              },
+              "back": {
+                "text": "Therefore; consequently (very formal)",
+                "example": "予算が不足している。したがって、計画を変更する必要がある。(The budget is insufficient. Therefore, we need to change the plan.)",
+                "notes": "Very formal. Used in academic writing and official documents."
+              },
+              "tags": [
+                "conjunction",
+                "cause-result"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "一方（で）", "reading": "いっぽう（で）" },
-              "back": { "text": "On the other hand; while; meanwhile", "example": "都市は便利だ。一方、自然が少ない。(Cities are convenient. On the other hand, there's little nature.)", "notes": "Used to present a contrasting viewpoint or simultaneous situation." },
-              "tags": ["conjunction", "contrast"],
+              "front": {
+                "text": "一方（で）",
+                "reading": "いっぽう（で）"
+              },
+              "back": {
+                "text": "On the other hand; while; meanwhile",
+                "example": "都市は便利だ。一方、自然が少ない。(Cities are convenient. On the other hand, there's little nature.)",
+                "notes": "Used to present a contrasting viewpoint or simultaneous situation."
+              },
+              "tags": [
+                "conjunction",
+                "contrast"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "その上", "reading": "そのうえ" },
-              "back": { "text": "Furthermore; on top of that", "example": "彼は頭がいい。その上、スポーツも得意だ。(He's smart. On top of that, he's good at sports.)", "notes": "Similar to しかも but slightly more formal." },
-              "tags": ["conjunction", "addition"],
+              "front": {
+                "text": "その上",
+                "reading": "そのうえ"
+              },
+              "back": {
+                "text": "Furthermore; on top of that",
+                "example": "彼は頭がいい。その上、スポーツも得意だ。(He's smart. On top of that, he's good at sports.)",
+                "notes": "Similar to しかも but slightly more formal."
+              },
+              "tags": [
+                "conjunction",
+                "addition"
+              ],
               "sortOrder": 20
+            }
+          ]
+        },
+        {
+          "title": "N3 Business & Discussion Phrases",
+          "description": "40 formal business and discussion phrases for professional Japanese communication.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "恐れ入りますが、少々お時間をいただけないでしょうか",
+                "reading": "おそれいりますが、しょうしょうおじかんをいただけないでしょうか"
+              },
+              "back": {
+                "text": "I'm terribly sorry, but could I have a moment? (very formal)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "ご多忙のところ、大変申し訳ございません",
+                "reading": "ごたぼうのところ、たいへんもうしわけございません"
+              },
+              "back": {
+                "text": "I apologize for bothering you when busy. (formal)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "こちらの不手際でご迷惑をおかけし、申し訳ございません",
+                "reading": "こちらのふてぎわでごめいわくをおかけし、もうしわけございません"
+              },
+              "back": {
+                "text": "I sincerely apologize for trouble from our mistake.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "先日ご依頼いただいた件につきまして、ご報告申し上げます",
+                "reading": "せんじつごいらいいただいたけんにつきまして、ごほうほうもうしあげます"
+              },
+              "back": {
+                "text": "Reporting back on matter you requested. (formal business)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "勝手ながら、来週の会議は延期させていただきたく存じます",
+                "reading": "かってながら、らいしゅうのかいぎはえんきさせていただきたくぞんじます"
+              },
+              "back": {
+                "text": "Presumptuously, I'd like to postpone next week's meeting.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "さっそく確認の上、折り返しご連絡差し上げます",
+                "reading": "さっそくかくにんのうえ、おりかえしごれんらくさしあげます"
+              },
+              "back": {
+                "text": "I will check immediately and get back to you.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "ご指摘いただきありがとうございます。改善いたします",
+                "reading": "ごしてきいただきありがとうございます。かいぜんいたします"
+              },
+              "back": {
+                "text": "Thank you for pointing that out. I'll improve it.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "お手数をおかけしますが、再度ご確認いただけますか",
+                "reading": "おてすうをおかけしますが、さいどごかくにんいただけますか"
+              },
+              "back": {
+                "text": "Sorry to trouble you, but could you check again?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "あいにくではございますが、今回は見送らせていただきます",
+                "reading": "あいにくではございますが、こんかいはみおくらせていただきます"
+              },
+              "back": {
+                "text": "Unfortunately, we will pass on this occasion.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "本件、改めてご相談させていただければと存じます",
+                "reading": "ほんけん、あらためてごそうだんさせていただければとぞんじます"
+              },
+              "back": {
+                "text": "I would like to discuss this matter with you again.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "一概にそうとは言い切れない面もあります",
+                "reading": "いちがいにそうとはいいきれないめんもあります"
+              },
+              "back": {
+                "text": "Can't necessarily say that across the board.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "おっしゃることはわかりますが、私どもとしては",
+                "reading": "おっしゃることはわかりますが、わたくしどもとしては"
+              },
+              "back": {
+                "text": "I understand what you're saying, but we...",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "確かにごもっともですが、別の角度から見ると",
+                "reading": "たしかにごもっともですが、べつのかくどからみると"
+              },
+              "back": {
+                "text": "That's valid, but from another angle...",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "とりあえず現状をご報告いたします",
+                "reading": "とりあえずげんじょうをごほうこくいたします"
+              },
+              "back": {
+                "text": "For now, let me report current situation.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "その点については、現在検討中でございます",
+                "reading": "そのてんについては、げんざいけんとうちゅうでございます"
+              },
+              "back": {
+                "text": "That point is under consideration.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "ここまで順調に進んできたが、問題が発生した",
+                "reading": "ここまでじゅんちょうにすすんできたが、もんだいがはっせいした"
+              },
+              "back": {
+                "text": "Things went smoothly, but problem has arisen.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "もしかすると、彼の言うことも一理あるかも",
+                "reading": "もしかすると、かれのいうこともいちりあるかも"
+              },
+              "back": {
+                "text": "Perhaps there's truth in what he says.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "そうは言っても、準備不足は否めない",
+                "reading": "そうはいっても、じゅんびぶそくはいなめない"
+              },
+              "back": {
+                "text": "That said, preparation lack is undeniable.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "私個人としては賛成ですが、全員の合意が必要です",
+                "reading": "わたくしこじんとしてはさんせいですが、ぜんいんのごういがひつようです"
+              },
+              "back": {
+                "text": "Personally in favor, but need unanimous agreement.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "この件は部長の了解を得なければなりません",
+                "reading": "このけんはぶちょうのりょうかいをえなければなりません"
+              },
+              "back": {
+                "text": "Must get dept head's approval on this.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "できるだけ早急に対策を講じる必要がある",
+                "reading": "できるだけそうきゅうにたいさくをこうじるひつようがある"
+              },
+              "back": {
+                "text": "Need to take measures as quickly as possible.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "今のところ、特に問題は報告されていません",
+                "reading": "いまのところ、とくにもんだいはほうこくされていません"
+              },
+              "back": {
+                "text": "No particular problems reported so far.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "想定外の事態ですが、慌てずに対応しましょう",
+                "reading": "そうていがいのじたいですが、あわてずにたいおうしましょう"
+              },
+              "back": {
+                "text": "Unexpected situation, but let's respond calmly.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "このまま放置すると、取り返しのつかないことに",
+                "reading": "このままほうちすると、とりかえしのつかないことに"
+              },
+              "back": {
+                "text": "Leaving this as is could be irreversible.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "せっかくの機会ですので、参加させてください",
+                "reading": "せっかくのきかいですので、さんかさせてください"
+              },
+              "back": {
+                "text": "Since it's a rare opportunity, let me join.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "ご期待に沿えるよう、全力を尽くす所存です",
+                "reading": "ごきたいにそえるよう、ぜんりょくをつくすしょぞんです"
+              },
+              "back": {
+                "text": "Will do my utmost to meet expectations.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "将来のことを考えると、今のうちに準備すべきだ",
+                "reading": "しょうらいのことをかんがえると、いまのうちにじゅんびすべきだ"
+              },
+              "back": {
+                "text": "Thinking of future, should prepare now.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "チーム一丸となって、成功させましょう",
+                "reading": "チームいちがんとなって、せいこうさせましょう"
+              },
+              "back": {
+                "text": "Let's all unite and succeed.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "個人的な意見を言わせていただければ、賛成しかねます",
+                "reading": "こじんてきないけんをいわせていただければ、さんせいしかねます"
+              },
+              "back": {
+                "text": "Personal opinion: I find it difficult to agree.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "問題の本質を見極めることが先決だと思います",
+                "reading": "もんだいのほんしつをみきわめることがせんけつだとおもいます"
+              },
+              "back": {
+                "text": "Identifying problem essence is first priority.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "私にできることがあれば、何でもおっしゃってください",
+                "reading": "わたしにできることがあれば、なんでもおっしゃってください"
+              },
+              "back": {
+                "text": "If there's anything I can do, please ask.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "時間はかかりましたが、納得のいく結果が出せた",
+                "reading": "じかんはかかりましたが、なっとくのいくけっかがだせた"
+              },
+              "back": {
+                "text": "Took time but achieved satisfactory result.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "この分野では、彼の右に出る者はいない",
+                "reading": "このぶんやでは、かれのみぎにでるものはいない"
+              },
+              "back": {
+                "text": "In this field, no one surpasses him.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "今日の会議で方向性が決まったわけではない",
+                "reading": "きょうのかいぎでほうこうせいがきまったわけではない"
+              },
+              "back": {
+                "text": "Direction wasn't decided in today's meeting.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "要するに、コミュニケーション不足が根本原因だ",
+                "reading": "ようするに、コミュニケーションぶそくがこんぽんげんいんだ"
+              },
+              "back": {
+                "text": "In short, communication lack is root cause.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "念には念を入れて、最終確認を行います",
+                "reading": "ねんにはねんをいれて、さいしゅうかくにんをおこないます"
+              },
+              "back": {
+                "text": "Extra careful, doing final check.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "結果がどうであれ、この経験は必ず役に立つ",
+                "reading": "けっかがどうであれ、このけいけんはかならずやくにたつ"
+              },
+              "back": {
+                "text": "Whatever result, this experience will be useful.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "お役に立てず申し訳ありません",
+                "reading": "おやくにたてずもうしわけありません"
+              },
+              "back": {
+                "text": "Sorry I couldn't be of help.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "率直に申し上げて、現状では難しいかと",
+                "reading": "そっちょくにもうしあげて、げんじょうではむずかしいかと"
+              },
+              "back": {
+                "text": "Frankly, difficult with current setup.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "微力ながら、何かお手伝いできればと思います",
+                "reading": "びりょくながら、なにかおてつだいできればとおもいます"
+              },
+              "back": {
+                "text": "Though my ability is limited, hope I can help.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N3",
+                "key-sentences",
+                "business",
+                "formal"
+              ],
+              "sortOrder": 40
             }
           ]
         }

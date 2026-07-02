@@ -34,7 +34,12 @@
               "title": "Choose the Correct Particle",
               "body": {
                 "question": "わたし ＿ がくせい です。 (I am a student.)",
-                "options": ["を", "は", "が", "に"],
+                "options": [
+                  "を",
+                  "は",
+                  "が",
+                  "に"
+                ],
                 "correct": 1,
                 "explanation": "は (wa) is the topic marker. It marks わたし (I) as the topic of the sentence: 'As for me, (I) am a student.'"
               }
@@ -44,8 +49,18 @@
               "sortOrder": 3,
               "title": "Build the Sentence",
               "body": {
-                "words": ["です", "は", "せんせい", "たなかさん"],
-                "correct": ["たなかさん", "は", "せんせい", "です"],
+                "words": [
+                  "です",
+                  "は",
+                  "せんせい",
+                  "たなかさん"
+                ],
+                "correct": [
+                  "たなかさん",
+                  "は",
+                  "せんせい",
+                  "です"
+                ],
                 "translation": "Tanaka-san is a teacher."
               }
             }
@@ -77,7 +92,12 @@
               "title": "いる or ある?",
               "body": {
                 "question": "へやに ねこ が ＿。 (There is a cat in the room.)",
-                "options": ["あります", "います", "です", "します"],
+                "options": [
+                  "あります",
+                  "います",
+                  "です",
+                  "します"
+                ],
                 "correct": 1,
                 "explanation": "います (imasu) is used for living things. Since a cat (ねこ) is a living creature, we use います."
               }
@@ -120,8 +140,18 @@
               "sortOrder": 2,
               "title": "Build the Sentence",
               "body": {
-                "words": ["のみます", "を", "コーヒー", "わたしは"],
-                "correct": ["わたしは", "コーヒー", "を", "のみます"],
+                "words": [
+                  "のみます",
+                  "を",
+                  "コーヒー",
+                  "わたしは"
+                ],
+                "correct": [
+                  "わたしは",
+                  "コーヒー",
+                  "を",
+                  "のみます"
+                ],
                 "translation": "I drink coffee."
               }
             },
@@ -164,7 +194,12 @@
               "title": "Past Negative",
               "body": {
                 "question": "きのう テレビを ＿。 (I did not watch TV yesterday.)",
-                "options": ["みます", "みません", "みました", "みませんでした"],
+                "options": [
+                  "みます",
+                  "みません",
+                  "みました",
+                  "みませんでした"
+                ],
                 "correct": 3,
                 "explanation": "みませんでした is the past negative form of みます. きのう (yesterday) tells us it is past tense, and the English indicates it is negative."
               }
@@ -175,7 +210,12 @@
               "title": "Let's Do It",
               "body": {
                 "question": "いっしょに ひるごはんを ＿。 (Let's eat lunch together.)",
-                "options": ["たべます", "たべません", "たべました", "たべましょう"],
+                "options": [
+                  "たべます",
+                  "たべません",
+                  "たべました",
+                  "たべましょう"
+                ],
                 "correct": 3,
                 "explanation": "たべましょう is the volitional form ('let's eat'). Change ます to ましょう to suggest doing something together."
               }
@@ -189,154 +229,1175 @@
           "description": "25 fundamental grammar points every N5 learner must know, covering particles, verb forms, and basic sentence patterns.",
           "flashcards": [
             {
-              "front": { "text": "は", "reading": "わ" },
-              "back": { "text": "Topic marker particle", "example": "わたしは がくせいです。(I am a student.)", "notes": "Written は but pronounced 'wa' as a particle." },
-              "tags": ["particle", "N5"],
+              "front": {
+                "text": "は",
+                "reading": "わ"
+              },
+              "back": {
+                "text": "Topic marker particle",
+                "example": "わたしは がくせいです。(I am a student.)",
+                "notes": "Written は but pronounced 'wa' as a particle."
+              },
+              "tags": [
+                "particle",
+                "N5"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "が", "reading": "が" },
-              "back": { "text": "Subject marker particle", "example": "ねこが います。(There is a cat.)", "notes": "Marks the grammatical subject; used with existence verbs and adjectives like すき." },
-              "tags": ["particle", "N5"],
+              "front": {
+                "text": "が",
+                "reading": "が"
+              },
+              "back": {
+                "text": "Subject marker particle",
+                "example": "ねこが います。(There is a cat.)",
+                "notes": "Marks the grammatical subject; used with existence verbs and adjectives like すき."
+              },
+              "tags": [
+                "particle",
+                "N5"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "を", "reading": "お" },
-              "back": { "text": "Direct object marker particle", "example": "みずを のみます。(I drink water.)", "notes": "Written を but pronounced 'o'. Marks what receives the verb's action." },
-              "tags": ["particle", "N5"],
+              "front": {
+                "text": "を",
+                "reading": "お"
+              },
+              "back": {
+                "text": "Direct object marker particle",
+                "example": "みずを のみます。(I drink water.)",
+                "notes": "Written を but pronounced 'o'. Marks what receives the verb's action."
+              },
+              "tags": [
+                "particle",
+                "N5"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "に", "reading": "に" },
-              "back": { "text": "Target / time / location particle", "example": "がっこうに いきます。(I go to school.)", "notes": "Indicates direction, specific time, or location of existence." },
-              "tags": ["particle", "N5"],
+              "front": {
+                "text": "に",
+                "reading": "に"
+              },
+              "back": {
+                "text": "Target / time / location particle",
+                "example": "がっこうに いきます。(I go to school.)",
+                "notes": "Indicates direction, specific time, or location of existence."
+              },
+              "tags": [
+                "particle",
+                "N5"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "で", "reading": "で" },
-              "back": { "text": "Location of action / means particle", "example": "としょかんで べんきょうします。(I study at the library.)", "notes": "Marks where an action takes place or the means/tool used." },
-              "tags": ["particle", "N5"],
+              "front": {
+                "text": "で",
+                "reading": "で"
+              },
+              "back": {
+                "text": "Location of action / means particle",
+                "example": "としょかんで べんきょうします。(I study at the library.)",
+                "notes": "Marks where an action takes place or the means/tool used."
+              },
+              "tags": [
+                "particle",
+                "N5"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "へ", "reading": "え" },
-              "back": { "text": "Direction particle", "example": "にほんへ いきます。(I go to Japan.)", "notes": "Written へ but pronounced 'e'. Indicates direction of movement, interchangeable with に for destinations." },
-              "tags": ["particle", "N5"],
+              "front": {
+                "text": "へ",
+                "reading": "え"
+              },
+              "back": {
+                "text": "Direction particle",
+                "example": "にほんへ いきます。(I go to Japan.)",
+                "notes": "Written へ but pronounced 'e'. Indicates direction of movement, interchangeable with に for destinations."
+              },
+              "tags": [
+                "particle",
+                "N5"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "と", "reading": "と" },
-              "back": { "text": "'And' (nouns) / 'with' particle", "example": "ともだちと いきます。(I go with a friend.)", "notes": "Connects nouns exhaustively ('A and B') or marks a companion." },
-              "tags": ["particle", "N5"],
+              "front": {
+                "text": "と",
+                "reading": "と"
+              },
+              "back": {
+                "text": "'And' (nouns) / 'with' particle",
+                "example": "ともだちと いきます。(I go with a friend.)",
+                "notes": "Connects nouns exhaustively ('A and B') or marks a companion."
+              },
+              "tags": [
+                "particle",
+                "N5"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "も", "reading": "も" },
-              "back": { "text": "'Also / too' particle", "example": "わたしも がくせいです。(I am also a student.)", "notes": "Replaces は, が, or を to mean 'also'." },
-              "tags": ["particle", "N5"],
+              "front": {
+                "text": "も",
+                "reading": "も"
+              },
+              "back": {
+                "text": "'Also / too' particle",
+                "example": "わたしも がくせいです。(I am also a student.)",
+                "notes": "Replaces は, が, or を to mean 'also'."
+              },
+              "tags": [
+                "particle",
+                "N5"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "か", "reading": "か" },
-              "back": { "text": "Question particle", "example": "これは なんですか。(What is this?)", "notes": "Added to the end of a sentence to form a question. Replaces the period." },
-              "tags": ["particle", "N5"],
+              "front": {
+                "text": "か",
+                "reading": "か"
+              },
+              "back": {
+                "text": "Question particle",
+                "example": "これは なんですか。(What is this?)",
+                "notes": "Added to the end of a sentence to form a question. Replaces the period."
+              },
+              "tags": [
+                "particle",
+                "N5"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "の", "reading": "の" },
-              "back": { "text": "Possessive / modifier particle", "example": "わたしの ほん。(My book.)", "notes": "Connects two nouns: the first modifies the second." },
-              "tags": ["particle", "N5"],
+              "front": {
+                "text": "の",
+                "reading": "の"
+              },
+              "back": {
+                "text": "Possessive / modifier particle",
+                "example": "わたしの ほん。(My book.)",
+                "notes": "Connects two nouns: the first modifies the second."
+              },
+              "tags": [
+                "particle",
+                "N5"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "〜です", "reading": "です" },
-              "back": { "text": "Polite copula ('is / am / are')", "example": "がくせいです。(I am a student.)", "notes": "Makes a statement polite. Negative: じゃないです / ではありません." },
-              "tags": ["copula", "N5"],
+              "front": {
+                "text": "〜です",
+                "reading": "です"
+              },
+              "back": {
+                "text": "Polite copula ('is / am / are')",
+                "example": "がくせいです。(I am a student.)",
+                "notes": "Makes a statement polite. Negative: じゃないです / ではありません."
+              },
+              "tags": [
+                "copula",
+                "N5"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "〜ます", "reading": "ます" },
-              "back": { "text": "Polite verb ending (present/future)", "example": "たべます。(I eat. / I will eat.)", "notes": "Negative: ません. Past: ました. Past negative: ませんでした." },
-              "tags": ["verb-form", "N5"],
+              "front": {
+                "text": "〜ます",
+                "reading": "ます"
+              },
+              "back": {
+                "text": "Polite verb ending (present/future)",
+                "example": "たべます。(I eat. / I will eat.)",
+                "notes": "Negative: ません. Past: ました. Past negative: ませんでした."
+              },
+              "tags": [
+                "verb-form",
+                "N5"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "〜ません", "reading": "ません" },
-              "back": { "text": "Polite negative verb ending", "example": "のみません。(I don't drink.)", "notes": "Present negative of ます-form verbs." },
-              "tags": ["verb-form", "N5"],
+              "front": {
+                "text": "〜ません",
+                "reading": "ません"
+              },
+              "back": {
+                "text": "Polite negative verb ending",
+                "example": "のみません。(I don't drink.)",
+                "notes": "Present negative of ます-form verbs."
+              },
+              "tags": [
+                "verb-form",
+                "N5"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "〜ました", "reading": "ました" },
-              "back": { "text": "Polite past verb ending", "example": "いきました。(I went.)", "notes": "Past affirmative of ます-form verbs." },
-              "tags": ["verb-form", "N5"],
+              "front": {
+                "text": "〜ました",
+                "reading": "ました"
+              },
+              "back": {
+                "text": "Polite past verb ending",
+                "example": "いきました。(I went.)",
+                "notes": "Past affirmative of ます-form verbs."
+              },
+              "tags": [
+                "verb-form",
+                "N5"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "〜ましょう", "reading": "ましょう" },
-              "back": { "text": "'Let's ~' (volitional)", "example": "たべましょう。(Let's eat.)", "notes": "Used to suggest doing something together." },
-              "tags": ["verb-form", "N5"],
+              "front": {
+                "text": "〜ましょう",
+                "reading": "ましょう"
+              },
+              "back": {
+                "text": "'Let's ~' (volitional)",
+                "example": "たべましょう。(Let's eat.)",
+                "notes": "Used to suggest doing something together."
+              },
+              "tags": [
+                "verb-form",
+                "N5"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "〜たい", "reading": "たい" },
-              "back": { "text": "'Want to ~'", "example": "すしを たべたいです。(I want to eat sushi.)", "notes": "Attach to the ます-stem. Conjugates like an い-adjective." },
-              "tags": ["verb-form", "N5"],
+              "front": {
+                "text": "〜たい",
+                "reading": "たい"
+              },
+              "back": {
+                "text": "'Want to ~'",
+                "example": "すしを たべたいです。(I want to eat sushi.)",
+                "notes": "Attach to the ます-stem. Conjugates like an い-adjective."
+              },
+              "tags": [
+                "verb-form",
+                "N5"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "〜ている", "reading": "ている" },
-              "back": { "text": "Progressive / state ('is ~ing')", "example": "ほんを よんでいます。(I am reading a book.)", "notes": "Polite form: ています. Shows ongoing action or resulting state." },
-              "tags": ["verb-form", "N5"],
+              "front": {
+                "text": "〜ている",
+                "reading": "ている"
+              },
+              "back": {
+                "text": "Progressive / state ('is ~ing')",
+                "example": "ほんを よんでいます。(I am reading a book.)",
+                "notes": "Polite form: ています. Shows ongoing action or resulting state."
+              },
+              "tags": [
+                "verb-form",
+                "N5"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "〜てください", "reading": "てください" },
-              "back": { "text": "'Please do ~'", "example": "みてください。(Please look.)", "notes": "て-form + ください. Polite request." },
-              "tags": ["request", "N5"],
+              "front": {
+                "text": "〜てください",
+                "reading": "てください"
+              },
+              "back": {
+                "text": "'Please do ~'",
+                "example": "みてください。(Please look.)",
+                "notes": "て-form + ください. Polite request."
+              },
+              "tags": [
+                "request",
+                "N5"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "〜ないでください", "reading": "ないでください" },
-              "back": { "text": "'Please don't ~'", "example": "たばこを すわないでください。(Please don't smoke.)", "notes": "ない-form + でください. Polite negative request." },
-              "tags": ["request", "N5"],
+              "front": {
+                "text": "〜ないでください",
+                "reading": "ないでください"
+              },
+              "back": {
+                "text": "'Please don't ~'",
+                "example": "たばこを すわないでください。(Please don't smoke.)",
+                "notes": "ない-form + でください. Polite negative request."
+              },
+              "tags": [
+                "request",
+                "N5"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "〜てもいいです", "reading": "てもいいです" },
-              "back": { "text": "'May I ~ / It's okay to ~'", "example": "ここに すわってもいいですか。(May I sit here?)", "notes": "て-form + もいいです. Asks or grants permission." },
-              "tags": ["permission", "N5"],
+              "front": {
+                "text": "〜てもいいです",
+                "reading": "てもいいです"
+              },
+              "back": {
+                "text": "'May I ~ / It's okay to ~'",
+                "example": "ここに すわってもいいですか。(May I sit here?)",
+                "notes": "て-form + もいいです. Asks or grants permission."
+              },
+              "tags": [
+                "permission",
+                "N5"
+              ],
               "sortOrder": 20
             },
             {
-              "front": { "text": "〜てはいけません", "reading": "てはいけません" },
-              "back": { "text": "'Must not ~ / Not allowed to ~'", "example": "ここで たべてはいけません。(You must not eat here.)", "notes": "て-form + はいけません. States a prohibition." },
-              "tags": ["prohibition", "N5"],
+              "front": {
+                "text": "〜てはいけません",
+                "reading": "てはいけません"
+              },
+              "back": {
+                "text": "'Must not ~ / Not allowed to ~'",
+                "example": "ここで たべてはいけません。(You must not eat here.)",
+                "notes": "て-form + はいけません. States a prohibition."
+              },
+              "tags": [
+                "prohibition",
+                "N5"
+              ],
               "sortOrder": 21
             },
             {
-              "front": { "text": "AはBより〜", "reading": "より" },
-              "back": { "text": "Comparison: 'A is more ~ than B'", "example": "にほんは フランスより ちいさいです。(Japan is smaller than France.)", "notes": "より marks the thing being compared against." },
-              "tags": ["comparison", "N5"],
+              "front": {
+                "text": "AはBより〜",
+                "reading": "より"
+              },
+              "back": {
+                "text": "Comparison: 'A is more ~ than B'",
+                "example": "にほんは フランスより ちいさいです。(Japan is smaller than France.)",
+                "notes": "より marks the thing being compared against."
+              },
+              "tags": [
+                "comparison",
+                "N5"
+              ],
               "sortOrder": 22
             },
             {
-              "front": { "text": "〜から / 〜まで", "reading": "から / まで" },
-              "back": { "text": "'From ~ / Until ~'", "example": "くじから ごじまで はたらきます。(I work from 9 to 5.)", "notes": "Can indicate time or place. Often used together." },
-              "tags": ["time", "N5"],
+              "front": {
+                "text": "〜から / 〜まで",
+                "reading": "から / まで"
+              },
+              "back": {
+                "text": "'From ~ / Until ~'",
+                "example": "くじから ごじまで はたらきます。(I work from 9 to 5.)",
+                "notes": "Can indicate time or place. Often used together."
+              },
+              "tags": [
+                "time",
+                "N5"
+              ],
               "sortOrder": 23
             },
             {
-              "front": { "text": "〜がすきです", "reading": "がすきです" },
-              "back": { "text": "'Like ~'", "example": "おんがくが すきです。(I like music.)", "notes": "The object of liking takes が, not を. Negative: すきじゃないです." },
-              "tags": ["adjective", "N5"],
+              "front": {
+                "text": "〜がすきです",
+                "reading": "がすきです"
+              },
+              "back": {
+                "text": "'Like ~'",
+                "example": "おんがくが すきです。(I like music.)",
+                "notes": "The object of liking takes が, not を. Negative: すきじゃないです."
+              },
+              "tags": [
+                "adjective",
+                "N5"
+              ],
               "sortOrder": 24
             },
             {
-              "front": { "text": "〜がほしいです", "reading": "がほしいです" },
-              "back": { "text": "'Want ~ (noun)'", "example": "あたらしい くるまが ほしいです。(I want a new car.)", "notes": "Used for wanting things (nouns). For wanting to do actions, use 〜たい." },
-              "tags": ["desire", "N5"],
+              "front": {
+                "text": "〜がほしいです",
+                "reading": "がほしいです"
+              },
+              "back": {
+                "text": "'Want ~ (noun)'",
+                "example": "あたらしい くるまが ほしいです。(I want a new car.)",
+                "notes": "Used for wanting things (nouns). For wanting to do actions, use 〜たい."
+              },
+              "tags": [
+                "desire",
+                "N5"
+              ],
               "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "N5 Grammar in Context",
+          "description": "45 example sentences demonstrating key N5 grammar patterns with furigana readings.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "わたしの本です",
+                "reading": "わたしのほんです"
+              },
+              "back": {
+                "text": "It is my book. (の possessive)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "あの人はだれですか",
+                "reading": "あのひとはだれですか"
+              },
+              "back": {
+                "text": "Who is that person? (だれ = who)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "ここで食べてもいいですか",
+                "reading": "ここでたべてもいいですか"
+              },
+              "back": {
+                "text": "May I eat here? (てもいい = permission)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "たばこをすわないでください",
+                "reading": "たばこをすわないでください"
+              },
+              "back": {
+                "text": "Please don't smoke. (ないでください)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "テレビを見ています",
+                "reading": "テレビをみています"
+              },
+              "back": {
+                "text": "I am watching TV. (ている progressive)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "あたらしい車がほしいです",
+                "reading": "あたらしいくるまがほしいです"
+              },
+              "back": {
+                "text": "I want a new car. (がほしい = desire for objects)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "日本はちいさいです",
+                "reading": "にほんはちいさいです"
+              },
+              "back": {
+                "text": "Japan is small. (い-adjective predicate)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "ねこがいます",
+                "reading": "ねこがいます"
+              },
+              "back": {
+                "text": "There is a cat. (が + います for living things)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "えんぴつをください",
+                "reading": "えんぴつをください"
+              },
+              "back": {
+                "text": "A pencil, please. (をください)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "毎日日本語を勉強します",
+                "reading": "まいにちにほんごをべんきょうします"
+              },
+              "back": {
+                "text": "I study Japanese every day. (ます form)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "ここに先生がいますか",
+                "reading": "ここにせんせいがいますか"
+              },
+              "back": {
+                "text": "Is there a teacher here? (か question + います)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "これはいくらですか",
+                "reading": "これはいくらですか"
+              },
+              "back": {
+                "text": "How much is this? (いくら)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "どこへ行きますか",
+                "reading": "どこへいきますか"
+              },
+              "back": {
+                "text": "Where are you going? (へ = direction)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "何時ですか",
+                "reading": "なんじですか"
+              },
+              "back": {
+                "text": "What time is it? (何時 = nanji)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "学校は駅のそばです",
+                "reading": "がっこうはえきのそばです"
+              },
+              "back": {
+                "text": "The school is near the station. (そば = near)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "これはやまださんのです",
+                "reading": "これはやまださんのです"
+              },
+              "back": {
+                "text": "This is Yamada's. (の possessive)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "あのビルは高いです",
+                "reading": "あのビルはたかいです"
+              },
+              "back": {
+                "text": "That building is tall. (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "あれは何ですか",
+                "reading": "あれはなんですか"
+              },
+              "back": {
+                "text": "What is that over there? (あれ)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "何が食べたいですか",
+                "reading": "なにがたべたいですか"
+              },
+              "back": {
+                "text": "What do you want to eat? (が + たい form)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "このパンはおいしいです",
+                "reading": "このパンはおいしいです"
+              },
+              "back": {
+                "text": "This bread is delicious. (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "ここに名前を書いてください",
+                "reading": "ここになまえをかいてください"
+              },
+              "back": {
+                "text": "Please write your name here. (てください)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "彼は日本人です",
+                "reading": "かれはにほんじんです"
+              },
+              "back": {
+                "text": "He is Japanese. (noun + です)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "この通りをまっすぐです",
+                "reading": "このとおりをまっすぐです"
+              },
+              "back": {
+                "text": "Go straight along this street. (まっすぐ)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "犬は好きですか",
+                "reading": "いぬはすきですか"
+              },
+              "back": {
+                "text": "Do you like dogs? (すき = like)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "新しいかぎです",
+                "reading": "あたらしいかぎです"
+              },
+              "back": {
+                "text": "It is a new key. (な-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "部屋にはテーブルがあります",
+                "reading": "へやにはテーブルがあります"
+              },
+              "back": {
+                "text": "There is a table in the room. (があります)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "朝ごはんを食べましたか",
+                "reading": "あさごはんをたべましたか"
+              },
+              "back": {
+                "text": "Did you eat breakfast? (ました = past)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "いっしょに行きましょう",
+                "reading": "いっしょにいきましょう"
+              },
+              "back": {
+                "text": "Let's go together. (ましょう)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "ここから学校まで10分です",
+                "reading": "ここからがっこうまでじゅっぷんです"
+              },
+              "back": {
+                "text": "10 min from here to school. (から〜まで)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "友達と話します",
+                "reading": "ともだちとはなします"
+              },
+              "back": {
+                "text": "I talk with a friend. (と = with)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "コンビニで買い物をします",
+                "reading": "コンビニでかいものをします"
+              },
+              "back": {
+                "text": "I shop at the convenience store. (で)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "駅から家までバスです",
+                "reading": "えきからいえまでバスです"
+              },
+              "back": {
+                "text": "From station to home by bus. (で = means)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "自転車で行きます",
+                "reading": "じてんしゃでいきます"
+              },
+              "back": {
+                "text": "I go by bicycle. (で = means)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "昨日は家にいました",
+                "reading": "きのうはいえにいました"
+              },
+              "back": {
+                "text": "I was at home yesterday. (にいました)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "昨日勉強しませんでした",
+                "reading": "きのうべんきょうしませんでした"
+              },
+              "back": {
+                "text": "I didn't study yesterday. (ませんでした)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "砂糖をください",
+                "reading": "さとうをください"
+              },
+              "back": {
+                "text": "Some sugar, please. (をください)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "お茶をのみませんか",
+                "reading": "おちゃをのみませんか"
+              },
+              "back": {
+                "text": "Won't you have some tea? (ませんか)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "映画はどうでしたか",
+                "reading": "えいがはどうでしたか"
+              },
+              "back": {
+                "text": "How was the movie? (どうでしたか)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "まだ使いません",
+                "reading": "まだつかいません"
+              },
+              "back": {
+                "text": "I haven't used it yet. (まだ + negative)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "日本の料理が大好きです",
+                "reading": "にほんのりょうりがだいすきです"
+              },
+              "back": {
+                "text": "I love Japanese food. (大好き)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "音楽を聞くのが好きです",
+                "reading": "おんがくをきくのがすきです"
+              },
+              "back": {
+                "text": "I like listening to music. (のが好き)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "ここにすわってもいいですか",
+                "reading": "ここにすわってもいいですか"
+              },
+              "back": {
+                "text": "May I sit here? (てもいいですか)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "このいすはすごく古いです",
+                "reading": "このいすはすごくふるいです"
+              },
+              "back": {
+                "text": "This chair is very old. (すごく + い-adj)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "次は何をするつもりですか",
+                "reading": "つぎはなにをするつもりですか"
+              },
+              "back": {
+                "text": "What do you plan to do next? (つもり)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "全部でさんぜんえんです",
+                "reading": "ぜんぶでさんぜんえんです"
+              },
+              "back": {
+                "text": "That's 3,000 yen in total. (全部で)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "grammar",
+                "sentence-pattern"
+              ],
+              "sortOrder": 45
             }
           ]
         }
@@ -374,7 +1435,12 @@
               "title": "What Does なまえ Mean?",
               "body": {
                 "question": "What does なまえ (名前) mean?",
-                "options": ["country", "age", "name", "job"],
+                "options": [
+                  "country",
+                  "age",
+                  "name",
+                  "job"
+                ],
                 "correct": 2,
                 "explanation": "なまえ (名前) means 'name'. わたしの なまえ = my name."
               }
@@ -386,7 +1452,9 @@
               "body": {
                 "sentence": "わたしの ___ は たなかです。",
                 "answer": "なまえ",
-                "alternatives": ["名前"],
+                "alternatives": [
+                  "名前"
+                ],
                 "explanation": "なまえ (名前) means 'name'. わたしの なまえは たなかです = My name is Tanaka."
               }
             }
@@ -418,7 +1486,12 @@
               "title": "Whose Mother?",
               "body": {
                 "question": "When talking about your own mother to someone else, which word should you use?",
-                "options": ["おかあさん", "はは", "ママ", "おばあさん"],
+                "options": [
+                  "おかあさん",
+                  "はは",
+                  "ママ",
+                  "おばあさん"
+                ],
                 "correct": 1,
                 "explanation": "はは (haha) is the humble form used when referring to your own mother in conversation with others. おかあさん is for someone else's mother or when addressing your own mother directly."
               }
@@ -428,8 +1501,18 @@
               "sortOrder": 3,
               "title": "Build the Sentence",
               "body": {
-                "words": ["います", "が", "さんにん", "きょうだい"],
-                "correct": ["きょうだい", "が", "さんにん", "います"],
+                "words": [
+                  "います",
+                  "が",
+                  "さんにん",
+                  "きょうだい"
+                ],
+                "correct": [
+                  "きょうだい",
+                  "が",
+                  "さんにん",
+                  "います"
+                ],
                 "translation": "I have three siblings."
               }
             }
@@ -461,7 +1544,12 @@
               "title": "What's on the Menu?",
               "body": {
                 "question": "Which word means 'vegetables'?",
-                "options": ["くだもの", "さかな", "にく", "やさい"],
+                "options": [
+                  "くだもの",
+                  "さかな",
+                  "にく",
+                  "やさい"
+                ],
                 "correct": 3,
                 "explanation": "やさい (野菜) means 'vegetables'. くだもの = fruit, さかな = fish, にく = meat."
               }
@@ -473,7 +1561,11 @@
               "body": {
                 "sentence": "まいあさ ___ を のみます。",
                 "answer": "みず",
-                "alternatives": ["おちゃ", "コーヒー", "水"],
+                "alternatives": [
+                  "おちゃ",
+                  "コーヒー",
+                  "水"
+                ],
                 "explanation": "Many answers are possible. みず (水) means 'water'. まいあさ みずを のみます = I drink water every morning."
               }
             }
@@ -505,7 +1597,12 @@
               "title": "Identify the Object",
               "body": {
                 "question": "とけい (時計) means:",
-                "options": ["telephone", "umbrella", "clock / watch", "key"],
+                "options": [
+                  "telephone",
+                  "umbrella",
+                  "clock / watch",
+                  "key"
+                ],
                 "correct": 2,
                 "explanation": "とけい (時計) means 'clock' or 'watch'. でんわ = telephone, かさ = umbrella, かぎ = key."
               }
@@ -515,8 +1612,22 @@
               "sortOrder": 3,
               "title": "Build the Sentence",
               "body": {
-                "words": ["です", "は", "の", "わたし", "これ", "かばん"],
-                "correct": ["これ", "は", "わたし", "の", "かばん", "です"],
+                "words": [
+                  "です",
+                  "は",
+                  "の",
+                  "わたし",
+                  "これ",
+                  "かばん"
+                ],
+                "correct": [
+                  "これ",
+                  "は",
+                  "わたし",
+                  "の",
+                  "かばん",
+                  "です"
+                ],
                 "translation": "This is my bag."
               }
             }
@@ -529,154 +1640,1351 @@
           "description": "25 essential N5 vocabulary words covering self-introduction, family, food, and daily objects.",
           "flashcards": [
             {
-              "front": { "text": "わたし", "reading": "わたし" },
-              "back": { "text": "I, me", "example": "わたしは がくせいです。", "notes": "pronoun — gender-neutral" },
-              "tags": ["pronoun", "self-introduction"],
+              "front": {
+                "text": "わたし",
+                "reading": "わたし"
+              },
+              "back": {
+                "text": "I, me",
+                "example": "わたしは がくせいです。",
+                "notes": "pronoun — gender-neutral"
+              },
+              "tags": [
+                "pronoun",
+                "self-introduction"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "名前", "reading": "なまえ" },
-              "back": { "text": "name", "example": "おなまえは なんですか。(What is your name?)", "notes": "noun — お prefix for politeness" },
-              "tags": ["noun", "self-introduction"],
+              "front": {
+                "text": "名前",
+                "reading": "なまえ"
+              },
+              "back": {
+                "text": "name",
+                "example": "おなまえは なんですか。(What is your name?)",
+                "notes": "noun — お prefix for politeness"
+              },
+              "tags": [
+                "noun",
+                "self-introduction"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "国", "reading": "くに" },
-              "back": { "text": "country", "example": "くには どちらですか。(What country are you from?)", "notes": "noun" },
-              "tags": ["noun", "self-introduction"],
+              "front": {
+                "text": "国",
+                "reading": "くに"
+              },
+              "back": {
+                "text": "country",
+                "example": "くには どちらですか。(What country are you from?)",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "self-introduction"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "年齢", "reading": "ねんれい" },
-              "back": { "text": "age", "example": "ねんれいは いくつですか。(How old are you?)", "notes": "noun — formal; casual: なんさい" },
-              "tags": ["noun", "self-introduction"],
+              "front": {
+                "text": "年齢",
+                "reading": "ねんれい"
+              },
+              "back": {
+                "text": "age",
+                "example": "ねんれいは いくつですか。(How old are you?)",
+                "notes": "noun — formal; casual: なんさい"
+              },
+              "tags": [
+                "noun",
+                "self-introduction"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "仕事", "reading": "しごと" },
-              "back": { "text": "job, work", "example": "しごとは なんですか。(What is your job?)", "notes": "noun" },
-              "tags": ["noun", "self-introduction"],
+              "front": {
+                "text": "仕事",
+                "reading": "しごと"
+              },
+              "back": {
+                "text": "job, work",
+                "example": "しごとは なんですか。(What is your job?)",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "self-introduction"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "お母さん", "reading": "おかあさん" },
-              "back": { "text": "mother (someone else's / address)", "example": "おかあさんは おげんきですか。", "notes": "noun — use はは for your own mother when speaking to others" },
-              "tags": ["noun", "family"],
+              "front": {
+                "text": "お母さん",
+                "reading": "おかあさん"
+              },
+              "back": {
+                "text": "mother (someone else's / address)",
+                "example": "おかあさんは おげんきですか。",
+                "notes": "noun — use はは for your own mother when speaking to others"
+              },
+              "tags": [
+                "noun",
+                "family"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "お父さん", "reading": "おとうさん" },
-              "back": { "text": "father (someone else's / address)", "example": "おとうさんは なにを していますか。", "notes": "noun — use ちち for your own father when speaking to others" },
-              "tags": ["noun", "family"],
+              "front": {
+                "text": "お父さん",
+                "reading": "おとうさん"
+              },
+              "back": {
+                "text": "father (someone else's / address)",
+                "example": "おとうさんは なにを していますか。",
+                "notes": "noun — use ちち for your own father when speaking to others"
+              },
+              "tags": [
+                "noun",
+                "family"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "兄弟", "reading": "きょうだい" },
-              "back": { "text": "siblings", "example": "きょうだいは いますか。(Do you have siblings?)", "notes": "noun" },
-              "tags": ["noun", "family"],
+              "front": {
+                "text": "兄弟",
+                "reading": "きょうだい"
+              },
+              "back": {
+                "text": "siblings",
+                "example": "きょうだいは いますか。(Do you have siblings?)",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "family"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "姉", "reading": "あね" },
-              "back": { "text": "older sister (own)", "example": "あねは とうきょうに すんでいます。", "notes": "noun — humble form; honorific: おねえさん" },
-              "tags": ["noun", "family"],
+              "front": {
+                "text": "姉",
+                "reading": "あね"
+              },
+              "back": {
+                "text": "older sister (own)",
+                "example": "あねは とうきょうに すんでいます。",
+                "notes": "noun — humble form; honorific: おねえさん"
+              },
+              "tags": [
+                "noun",
+                "family"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "弟", "reading": "おとうと" },
-              "back": { "text": "younger brother (own)", "example": "おとうとは こうこうせいです。", "notes": "noun — add さん for someone else's younger brother" },
-              "tags": ["noun", "family"],
+              "front": {
+                "text": "弟",
+                "reading": "おとうと"
+              },
+              "back": {
+                "text": "younger brother (own)",
+                "example": "おとうとは こうこうせいです。",
+                "notes": "noun — add さん for someone else's younger brother"
+              },
+              "tags": [
+                "noun",
+                "family"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "御飯", "reading": "ごはん" },
-              "back": { "text": "rice / meal", "example": "ごはんを たべましょう。(Let's eat.)", "notes": "noun — means cooked rice or a meal in general" },
-              "tags": ["noun", "food"],
+              "front": {
+                "text": "御飯",
+                "reading": "ごはん"
+              },
+              "back": {
+                "text": "rice / meal",
+                "example": "ごはんを たべましょう。(Let's eat.)",
+                "notes": "noun — means cooked rice or a meal in general"
+              },
+              "tags": [
+                "noun",
+                "food"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "水", "reading": "みず" },
-              "back": { "text": "water", "example": "みずを ください。(Water, please.)", "notes": "noun — おみず with polite お prefix" },
-              "tags": ["noun", "food"],
+              "front": {
+                "text": "水",
+                "reading": "みず"
+              },
+              "back": {
+                "text": "water",
+                "example": "みずを ください。(Water, please.)",
+                "notes": "noun — おみず with polite お prefix"
+              },
+              "tags": [
+                "noun",
+                "food"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "肉", "reading": "にく" },
-              "back": { "text": "meat", "example": "にくを やきます。(I grill meat.)", "notes": "noun" },
-              "tags": ["noun", "food"],
+              "front": {
+                "text": "肉",
+                "reading": "にく"
+              },
+              "back": {
+                "text": "meat",
+                "example": "にくを やきます。(I grill meat.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "food"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "野菜", "reading": "やさい" },
-              "back": { "text": "vegetables", "example": "やさいを たくさん たべます。(I eat a lot of vegetables.)", "notes": "noun" },
-              "tags": ["noun", "food"],
+              "front": {
+                "text": "野菜",
+                "reading": "やさい"
+              },
+              "back": {
+                "text": "vegetables",
+                "example": "やさいを たくさん たべます。(I eat a lot of vegetables.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "food"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "魚", "reading": "さかな" },
-              "back": { "text": "fish", "example": "にほんじんは さかなを よく たべます。", "notes": "noun" },
-              "tags": ["noun", "food"],
+              "front": {
+                "text": "魚",
+                "reading": "さかな"
+              },
+              "back": {
+                "text": "fish",
+                "example": "にほんじんは さかなを よく たべます。",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "food"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "お茶", "reading": "おちゃ" },
-              "back": { "text": "tea", "example": "おちゃを のみませんか。(Won't you have tea?)", "notes": "noun — usually refers to green tea" },
-              "tags": ["noun", "food"],
+              "front": {
+                "text": "お茶",
+                "reading": "おちゃ"
+              },
+              "back": {
+                "text": "tea",
+                "example": "おちゃを のみませんか。(Won't you have tea?)",
+                "notes": "noun — usually refers to green tea"
+              },
+              "tags": [
+                "noun",
+                "food"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "卵", "reading": "たまご" },
-              "back": { "text": "egg", "example": "あさごはんに たまごを たべます。", "notes": "noun" },
-              "tags": ["noun", "food"],
+              "front": {
+                "text": "卵",
+                "reading": "たまご"
+              },
+              "back": {
+                "text": "egg",
+                "example": "あさごはんに たまごを たべます。",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "food"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "果物", "reading": "くだもの" },
-              "back": { "text": "fruit", "example": "くだものが すきです。(I like fruit.)", "notes": "noun" },
-              "tags": ["noun", "food"],
+              "front": {
+                "text": "果物",
+                "reading": "くだもの"
+              },
+              "back": {
+                "text": "fruit",
+                "example": "くだものが すきです。(I like fruit.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "food"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "本", "reading": "ほん" },
-              "back": { "text": "book", "example": "ほんを よみます。(I read a book.)", "notes": "noun — also a counter for cylindrical objects" },
-              "tags": ["noun", "objects"],
+              "front": {
+                "text": "本",
+                "reading": "ほん"
+              },
+              "back": {
+                "text": "book",
+                "example": "ほんを よみます。(I read a book.)",
+                "notes": "noun — also a counter for cylindrical objects"
+              },
+              "tags": [
+                "noun",
+                "objects"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "鞄", "reading": "かばん" },
-              "back": { "text": "bag", "example": "かばんの なかに なにが ありますか。", "notes": "noun — usually written in kana" },
-              "tags": ["noun", "objects"],
+              "front": {
+                "text": "鞄",
+                "reading": "かばん"
+              },
+              "back": {
+                "text": "bag",
+                "example": "かばんの なかに なにが ありますか。",
+                "notes": "noun — usually written in kana"
+              },
+              "tags": [
+                "noun",
+                "objects"
+              ],
               "sortOrder": 20
             },
             {
-              "front": { "text": "電話", "reading": "でんわ" },
-              "back": { "text": "telephone", "example": "でんわばんごうを おしえてください。", "notes": "noun — でんわを かけます = make a phone call" },
-              "tags": ["noun", "objects"],
+              "front": {
+                "text": "電話",
+                "reading": "でんわ"
+              },
+              "back": {
+                "text": "telephone",
+                "example": "でんわばんごうを おしえてください。",
+                "notes": "noun — でんわを かけます = make a phone call"
+              },
+              "tags": [
+                "noun",
+                "objects"
+              ],
               "sortOrder": 21
             },
             {
-              "front": { "text": "時計", "reading": "とけい" },
-              "back": { "text": "clock, watch", "example": "あの とけいは たかいです。(That watch is expensive.)", "notes": "noun" },
-              "tags": ["noun", "objects"],
+              "front": {
+                "text": "時計",
+                "reading": "とけい"
+              },
+              "back": {
+                "text": "clock, watch",
+                "example": "あの とけいは たかいです。(That watch is expensive.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "objects"
+              ],
               "sortOrder": 22
             },
             {
-              "front": { "text": "傘", "reading": "かさ" },
-              "back": { "text": "umbrella", "example": "かさを もっていきます。(I'll take an umbrella.)", "notes": "noun" },
-              "tags": ["noun", "objects"],
+              "front": {
+                "text": "傘",
+                "reading": "かさ"
+              },
+              "back": {
+                "text": "umbrella",
+                "example": "かさを もっていきます。(I'll take an umbrella.)",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "objects"
+              ],
               "sortOrder": 23
             },
             {
-              "front": { "text": "鍵", "reading": "かぎ" },
-              "back": { "text": "key", "example": "かぎを わすれました。(I forgot the key.)", "notes": "noun — usually written in kana" },
-              "tags": ["noun", "objects"],
+              "front": {
+                "text": "鍵",
+                "reading": "かぎ"
+              },
+              "back": {
+                "text": "key",
+                "example": "かぎを わすれました。(I forgot the key.)",
+                "notes": "noun — usually written in kana"
+              },
+              "tags": [
+                "noun",
+                "objects"
+              ],
               "sortOrder": 24
             },
             {
-              "front": { "text": "財布", "reading": "さいふ" },
-              "back": { "text": "wallet", "example": "さいふは どこですか。(Where is the wallet?)", "notes": "noun" },
-              "tags": ["noun", "objects"],
+              "front": {
+                "text": "財布",
+                "reading": "さいふ"
+              },
+              "back": {
+                "text": "wallet",
+                "example": "さいふは どこですか。(Where is the wallet?)",
+                "notes": "noun"
+              },
+              "tags": [
+                "noun",
+                "objects"
+              ],
               "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "N5 Vocabulary Expansion",
+          "description": "45 additional N5 words across animals, nature, time, positions, and adjectives.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "いぬ",
+                "reading": "いぬ"
+              },
+              "back": {
+                "text": "Dog",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "ねこ",
+                "reading": "ねこ"
+              },
+              "back": {
+                "text": "Cat",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "とり",
+                "reading": "とり"
+              },
+              "back": {
+                "text": "Bird",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "さかな",
+                "reading": "さかな"
+              },
+              "back": {
+                "text": "Fish",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "花",
+                "reading": "はな"
+              },
+              "back": {
+                "text": "Flower",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "木",
+                "reading": "き"
+              },
+              "back": {
+                "text": "Tree",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "山",
+                "reading": "やま"
+              },
+              "back": {
+                "text": "Mountain",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "川",
+                "reading": "かわ"
+              },
+              "back": {
+                "text": "River",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "空",
+                "reading": "そら"
+              },
+              "back": {
+                "text": "Sky",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "雨",
+                "reading": "あめ"
+              },
+              "back": {
+                "text": "Rain",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "風",
+                "reading": "かぜ"
+              },
+              "back": {
+                "text": "Wind",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "雪",
+                "reading": "ゆき"
+              },
+              "back": {
+                "text": "Snow",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "朝",
+                "reading": "あさ"
+              },
+              "back": {
+                "text": "Morning",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "昼",
+                "reading": "ひる"
+              },
+              "back": {
+                "text": "Noon/daytime",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "夜",
+                "reading": "よる"
+              },
+              "back": {
+                "text": "Night",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "今日",
+                "reading": "きょう"
+              },
+              "back": {
+                "text": "Today",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "明日",
+                "reading": "あした"
+              },
+              "back": {
+                "text": "Tomorrow",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "昨日",
+                "reading": "きのう"
+              },
+              "back": {
+                "text": "Yesterday",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "今",
+                "reading": "いま"
+              },
+              "back": {
+                "text": "Now",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "前",
+                "reading": "まえ"
+              },
+              "back": {
+                "text": "Front/before",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "後ろ",
+                "reading": "うしろ"
+              },
+              "back": {
+                "text": "Behind",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "上",
+                "reading": "うえ"
+              },
+              "back": {
+                "text": "Above/on",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "下",
+                "reading": "した"
+              },
+              "back": {
+                "text": "Below/under",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "中",
+                "reading": "なか"
+              },
+              "back": {
+                "text": "Inside/middle",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "外",
+                "reading": "そと"
+              },
+              "back": {
+                "text": "Outside",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "右",
+                "reading": "みぎ"
+              },
+              "back": {
+                "text": "Right",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "左",
+                "reading": "ひだり"
+              },
+              "back": {
+                "text": "Left",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "多い",
+                "reading": "おおい"
+              },
+              "back": {
+                "text": "Many (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "少ない",
+                "reading": "すくない"
+              },
+              "back": {
+                "text": "Few (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "大きい",
+                "reading": "おおきい"
+              },
+              "back": {
+                "text": "Big (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "小さい",
+                "reading": "ちいさい"
+              },
+              "back": {
+                "text": "Small (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "長い",
+                "reading": "ながい"
+              },
+              "back": {
+                "text": "Long (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "短い",
+                "reading": "みじかい"
+              },
+              "back": {
+                "text": "Short (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "新しい",
+                "reading": "あたらしい"
+              },
+              "back": {
+                "text": "New (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "古い",
+                "reading": "ふるい"
+              },
+              "back": {
+                "text": "Old (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "高い",
+                "reading": "たかい"
+              },
+              "back": {
+                "text": "Expensive/tall (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "安い",
+                "reading": "やすい"
+              },
+              "back": {
+                "text": "Cheap (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "近い",
+                "reading": "ちかい"
+              },
+              "back": {
+                "text": "Near (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "遠い",
+                "reading": "とおい"
+              },
+              "back": {
+                "text": "Far (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "早い",
+                "reading": "はやい"
+              },
+              "back": {
+                "text": "Early/fast (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "遅い",
+                "reading": "おそい"
+              },
+              "back": {
+                "text": "Late/slow (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "広い",
+                "reading": "ひろい"
+              },
+              "back": {
+                "text": "Wide/spacious (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "狭い",
+                "reading": "せまい"
+              },
+              "back": {
+                "text": "Narrow (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "強い",
+                "reading": "つよい"
+              },
+              "back": {
+                "text": "Strong (い-adjective)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {},
+              "back": {
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "vocabulary",
+                "animals",
+                "nature",
+                "time",
+                "position",
+                "adjective"
+              ],
+              "sortOrder": 45
             }
           ]
         }
@@ -714,7 +3022,12 @@
               "title": "Right Greeting, Right Time",
               "body": {
                 "question": "It's 8:00 AM and you meet your teacher. What do you say?",
-                "options": ["こんにちは", "こんばんは", "おはようございます", "さようなら"],
+                "options": [
+                  "こんにちは",
+                  "こんばんは",
+                  "おはようございます",
+                  "さようなら"
+                ],
                 "correct": 2,
                 "explanation": "おはようございます is the polite morning greeting. Use it with teachers, colleagues, and people you are not close to."
               }
@@ -757,8 +3070,20 @@
               "sortOrder": 2,
               "title": "Ask the Price",
               "body": {
-                "words": ["いくら", "は", "です", "これ", "か"],
-                "correct": ["これ", "は", "いくら", "です", "か"],
+                "words": [
+                  "いくら",
+                  "は",
+                  "です",
+                  "これ",
+                  "か"
+                ],
+                "correct": [
+                  "これ",
+                  "は",
+                  "いくら",
+                  "です",
+                  "か"
+                ],
                 "translation": "How much is this?"
               }
             },
@@ -768,7 +3093,12 @@
               "title": "Pointing Words",
               "body": {
                 "question": "You want to point at something far away from both you and the listener. Which word do you use?",
-                "options": ["これ", "それ", "あれ", "どれ"],
+                "options": [
+                  "これ",
+                  "それ",
+                  "あれ",
+                  "どれ"
+                ],
                 "correct": 2,
                 "explanation": "あれ (are) refers to something far from both the speaker and the listener. これ = near speaker, それ = near listener, どれ = which one."
               }
@@ -812,7 +3142,12 @@
               "title": "Which Question Word?",
               "body": {
                 "question": "You want to ask 'Who is that person?' — あのひとは ＿ ですか。 Which word fills the blank?",
-                "options": ["なに", "どこ", "いつ", "だれ"],
+                "options": [
+                  "なに",
+                  "どこ",
+                  "いつ",
+                  "だれ"
+                ],
                 "correct": 3,
                 "explanation": "だれ (dare) means 'who'. あのひとは だれですか = Who is that person?"
               }
@@ -826,124 +3161,1002 @@
           "description": "20 essential everyday expressions for greetings, shopping, and asking questions.",
           "flashcards": [
             {
-              "front": { "text": "おはようございます", "reading": "おはようございます" },
-              "back": { "text": "Good morning (polite)", "example": "Meeting a colleague in the morning", "notes": "Casual form: おはよう" },
-              "tags": ["greeting", "polite"],
+              "front": {
+                "text": "おはようございます",
+                "reading": "おはようございます"
+              },
+              "back": {
+                "text": "Good morning (polite)",
+                "example": "Meeting a colleague in the morning",
+                "notes": "Casual form: おはよう"
+              },
+              "tags": [
+                "greeting",
+                "polite"
+              ],
               "sortOrder": 1
             },
             {
-              "front": { "text": "こんにちは", "reading": "こんにちは" },
-              "back": { "text": "Good afternoon / Hello", "example": "General daytime greeting", "notes": "Spelled with は (wa particle), not わ" },
-              "tags": ["greeting"],
+              "front": {
+                "text": "こんにちは",
+                "reading": "こんにちは"
+              },
+              "back": {
+                "text": "Good afternoon / Hello",
+                "example": "General daytime greeting",
+                "notes": "Spelled with は (wa particle), not わ"
+              },
+              "tags": [
+                "greeting"
+              ],
               "sortOrder": 2
             },
             {
-              "front": { "text": "こんばんは", "reading": "こんばんは" },
-              "back": { "text": "Good evening", "example": "Greeting someone in the evening", "notes": "Spelled with は (wa particle), not わ" },
-              "tags": ["greeting"],
+              "front": {
+                "text": "こんばんは",
+                "reading": "こんばんは"
+              },
+              "back": {
+                "text": "Good evening",
+                "example": "Greeting someone in the evening",
+                "notes": "Spelled with は (wa particle), not わ"
+              },
+              "tags": [
+                "greeting"
+              ],
               "sortOrder": 3
             },
             {
-              "front": { "text": "さようなら", "reading": "さようなら" },
-              "back": { "text": "Goodbye", "example": "Leaving school or a formal setting", "notes": "Somewhat formal; casual: じゃあね, またね" },
-              "tags": ["greeting", "parting"],
+              "front": {
+                "text": "さようなら",
+                "reading": "さようなら"
+              },
+              "back": {
+                "text": "Goodbye",
+                "example": "Leaving school or a formal setting",
+                "notes": "Somewhat formal; casual: じゃあね, またね"
+              },
+              "tags": [
+                "greeting",
+                "parting"
+              ],
               "sortOrder": 4
             },
             {
-              "front": { "text": "おやすみなさい", "reading": "おやすみなさい" },
-              "back": { "text": "Good night (polite)", "example": "Saying good night before bed", "notes": "Casual: おやすみ" },
-              "tags": ["greeting", "polite"],
+              "front": {
+                "text": "おやすみなさい",
+                "reading": "おやすみなさい"
+              },
+              "back": {
+                "text": "Good night (polite)",
+                "example": "Saying good night before bed",
+                "notes": "Casual: おやすみ"
+              },
+              "tags": [
+                "greeting",
+                "polite"
+              ],
               "sortOrder": 5
             },
             {
-              "front": { "text": "ありがとうございます", "reading": "ありがとうございます" },
-              "back": { "text": "Thank you (polite)", "example": "Thanking a shop clerk or teacher", "notes": "Casual: ありがとう" },
-              "tags": ["gratitude", "polite"],
+              "front": {
+                "text": "ありがとうございます",
+                "reading": "ありがとうございます"
+              },
+              "back": {
+                "text": "Thank you (polite)",
+                "example": "Thanking a shop clerk or teacher",
+                "notes": "Casual: ありがとう"
+              },
+              "tags": [
+                "gratitude",
+                "polite"
+              ],
               "sortOrder": 6
             },
             {
-              "front": { "text": "すみません", "reading": "すみません" },
-              "back": { "text": "Excuse me / I'm sorry", "example": "すみません、えきは どこですか。(Excuse me, where is the station?)", "notes": "Used to get attention AND for light apologies" },
-              "tags": ["apology", "attention"],
+              "front": {
+                "text": "すみません",
+                "reading": "すみません"
+              },
+              "back": {
+                "text": "Excuse me / I'm sorry",
+                "example": "すみません、えきは どこですか。(Excuse me, where is the station?)",
+                "notes": "Used to get attention AND for light apologies"
+              },
+              "tags": [
+                "apology",
+                "attention"
+              ],
               "sortOrder": 7
             },
             {
-              "front": { "text": "おねがいします", "reading": "おねがいします" },
-              "back": { "text": "Please (when requesting)", "example": "コーヒーを おねがいします。(Coffee, please.)", "notes": "More polite than ください in some contexts" },
-              "tags": ["request", "polite"],
+              "front": {
+                "text": "おねがいします",
+                "reading": "おねがいします"
+              },
+              "back": {
+                "text": "Please (when requesting)",
+                "example": "コーヒーを おねがいします。(Coffee, please.)",
+                "notes": "More polite than ください in some contexts"
+              },
+              "tags": [
+                "request",
+                "polite"
+              ],
               "sortOrder": 8
             },
             {
-              "front": { "text": "はじめまして", "reading": "はじめまして" },
-              "back": { "text": "Nice to meet you (first meeting)", "example": "はじめまして。たなかです。(Nice to meet you. I'm Tanaka.)", "notes": "Used only at the FIRST meeting" },
-              "tags": ["greeting", "introduction"],
+              "front": {
+                "text": "はじめまして",
+                "reading": "はじめまして"
+              },
+              "back": {
+                "text": "Nice to meet you (first meeting)",
+                "example": "はじめまして。たなかです。(Nice to meet you. I'm Tanaka.)",
+                "notes": "Used only at the FIRST meeting"
+              },
+              "tags": [
+                "greeting",
+                "introduction"
+              ],
               "sortOrder": 9
             },
             {
-              "front": { "text": "どうぞ よろしく おねがいします", "reading": "どうぞ よろしく おねがいします" },
-              "back": { "text": "Pleased to meet you / Please treat me well", "example": "End of a self-introduction", "notes": "No direct English equivalent; a standard closing for introductions" },
-              "tags": ["greeting", "introduction"],
+              "front": {
+                "text": "どうぞ よろしく おねがいします",
+                "reading": "どうぞ よろしく おねがいします"
+              },
+              "back": {
+                "text": "Pleased to meet you / Please treat me well",
+                "example": "End of a self-introduction",
+                "notes": "No direct English equivalent; a standard closing for introductions"
+              },
+              "tags": [
+                "greeting",
+                "introduction"
+              ],
               "sortOrder": 10
             },
             {
-              "front": { "text": "いくらですか", "reading": "いくらですか" },
-              "back": { "text": "How much is it?", "example": "これは いくらですか。(How much is this?)", "notes": "Essential shopping phrase" },
-              "tags": ["shopping", "question"],
+              "front": {
+                "text": "いくらですか",
+                "reading": "いくらですか"
+              },
+              "back": {
+                "text": "How much is it?",
+                "example": "これは いくらですか。(How much is this?)",
+                "notes": "Essential shopping phrase"
+              },
+              "tags": [
+                "shopping",
+                "question"
+              ],
               "sortOrder": 11
             },
             {
-              "front": { "text": "〜を ください", "reading": "をください" },
-              "back": { "text": "~ please / I'll have ~", "example": "これを ください。(This one, please.)", "notes": "Used for ordering, buying, or requesting something" },
-              "tags": ["shopping", "request"],
+              "front": {
+                "text": "〜を ください",
+                "reading": "をください"
+              },
+              "back": {
+                "text": "~ please / I'll have ~",
+                "example": "これを ください。(This one, please.)",
+                "notes": "Used for ordering, buying, or requesting something"
+              },
+              "tags": [
+                "shopping",
+                "request"
+              ],
               "sortOrder": 12
             },
             {
-              "front": { "text": "これ / それ / あれ", "reading": "これ / それ / あれ" },
-              "back": { "text": "this / that (near you) / that (over there)", "example": "これは なんですか。(What is this?)", "notes": "こ = near speaker, そ = near listener, あ = far from both" },
-              "tags": ["demonstrative", "pronoun"],
+              "front": {
+                "text": "これ / それ / あれ",
+                "reading": "これ / それ / あれ"
+              },
+              "back": {
+                "text": "this / that (near you) / that (over there)",
+                "example": "これは なんですか。(What is this?)",
+                "notes": "こ = near speaker, そ = near listener, あ = far from both"
+              },
+              "tags": [
+                "demonstrative",
+                "pronoun"
+              ],
               "sortOrder": 13
             },
             {
-              "front": { "text": "なんですか", "reading": "なんですか" },
-              "back": { "text": "What is it?", "example": "これは なんですか。(What is this?)", "notes": "なに → なん before です" },
-              "tags": ["question"],
+              "front": {
+                "text": "なんですか",
+                "reading": "なんですか"
+              },
+              "back": {
+                "text": "What is it?",
+                "example": "これは なんですか。(What is this?)",
+                "notes": "なに → なん before です"
+              },
+              "tags": [
+                "question"
+              ],
               "sortOrder": 14
             },
             {
-              "front": { "text": "だれですか", "reading": "だれですか" },
-              "back": { "text": "Who is it?", "example": "あのひとは だれですか。(Who is that person?)", "notes": "More polite: どなたですか" },
-              "tags": ["question"],
+              "front": {
+                "text": "だれですか",
+                "reading": "だれですか"
+              },
+              "back": {
+                "text": "Who is it?",
+                "example": "あのひとは だれですか。(Who is that person?)",
+                "notes": "More polite: どなたですか"
+              },
+              "tags": [
+                "question"
+              ],
               "sortOrder": 15
             },
             {
-              "front": { "text": "どこですか", "reading": "どこですか" },
-              "back": { "text": "Where is it?", "example": "トイレは どこですか。(Where is the restroom?)", "notes": "One of the most useful travel phrases" },
-              "tags": ["question"],
+              "front": {
+                "text": "どこですか",
+                "reading": "どこですか"
+              },
+              "back": {
+                "text": "Where is it?",
+                "example": "トイレは どこですか。(Where is the restroom?)",
+                "notes": "One of the most useful travel phrases"
+              },
+              "tags": [
+                "question"
+              ],
               "sortOrder": 16
             },
             {
-              "front": { "text": "いつですか", "reading": "いつですか" },
-              "back": { "text": "When is it?", "example": "しけんは いつですか。(When is the exam?)", "notes": "いつ does not need a particle" },
-              "tags": ["question"],
+              "front": {
+                "text": "いつですか",
+                "reading": "いつですか"
+              },
+              "back": {
+                "text": "When is it?",
+                "example": "しけんは いつですか。(When is the exam?)",
+                "notes": "いつ does not need a particle"
+              },
+              "tags": [
+                "question"
+              ],
               "sortOrder": 17
             },
             {
-              "front": { "text": "わかりました", "reading": "わかりました" },
-              "back": { "text": "I understood / Got it", "example": "はい、わかりました。(Yes, I understand.)", "notes": "Past form used to confirm understanding. Negative: わかりません (I don't understand)" },
-              "tags": ["response"],
+              "front": {
+                "text": "わかりました",
+                "reading": "わかりました"
+              },
+              "back": {
+                "text": "I understood / Got it",
+                "example": "はい、わかりました。(Yes, I understand.)",
+                "notes": "Past form used to confirm understanding. Negative: わかりません (I don't understand)"
+              },
+              "tags": [
+                "response"
+              ],
               "sortOrder": 18
             },
             {
-              "front": { "text": "もういちど おねがいします", "reading": "もういちど おねがいします" },
-              "back": { "text": "One more time, please", "example": "Asking someone to repeat what they said", "notes": "Very useful for language learners" },
-              "tags": ["request", "classroom"],
+              "front": {
+                "text": "もういちど おねがいします",
+                "reading": "もういちど おねがいします"
+              },
+              "back": {
+                "text": "One more time, please",
+                "example": "Asking someone to repeat what they said",
+                "notes": "Very useful for language learners"
+              },
+              "tags": [
+                "request",
+                "classroom"
+              ],
               "sortOrder": 19
             },
             {
-              "front": { "text": "だいじょうぶです", "reading": "だいじょうぶです" },
-              "back": { "text": "It's okay / I'm fine / No thank you", "example": "レシートは? — だいじょうぶです。(Receipt? — No, thank you.)", "notes": "Context-dependent: can mean 'I'm fine', 'it's okay', or politely decline" },
-              "tags": ["response"],
+              "front": {
+                "text": "だいじょうぶです",
+                "reading": "だいじょうぶです"
+              },
+              "back": {
+                "text": "It's okay / I'm fine / No thank you",
+                "example": "レシートは? — だいじょうぶです。(Receipt? — No, thank you.)",
+                "notes": "Context-dependent: can mean 'I'm fine', 'it's okay', or politely decline"
+              },
+              "tags": [
+                "response"
+              ],
               "sortOrder": 20
+            }
+          ]
+        },
+        {
+          "title": "N5 Conversation Starters",
+          "description": "40 essential everyday phrases for greetings, expressions, and basic conversation.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "おなまえは？",
+                "reading": "おなまえは？"
+              },
+              "back": {
+                "text": "What's your name? (casual)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "おげんきですか",
+                "reading": "おげんきですか"
+              },
+              "back": {
+                "text": "How are you? (polite)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "おやすみなさい",
+                "reading": "おやすみなさい"
+              },
+              "back": {
+                "text": "Good night (polite)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "いただきます",
+                "reading": "いただきます"
+              },
+              "back": {
+                "text": "Said before eating (I humbly receive)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "ごちそうさまでした",
+                "reading": "ごちそうさまでした"
+              },
+              "back": {
+                "text": "Said after eating (Thank you for the meal)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "おじゃまします",
+                "reading": "おじゃまします"
+              },
+              "back": {
+                "text": "Said when entering someone's home",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "おつかれさまです",
+                "reading": "おつかれさまです"
+              },
+              "back": {
+                "text": "Thank you for your hard work",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "行ってきます",
+                "reading": "いってきます"
+              },
+              "back": {
+                "text": "Said when leaving home (I'm going and coming back)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "行ってらっしゃい",
+                "reading": "いってらっしゃい"
+              },
+              "back": {
+                "text": "Response to 行ってきます (Go and come back)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "ただいま",
+                "reading": "ただいま"
+              },
+              "back": {
+                "text": "I'm home!",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "おかえりなさい",
+                "reading": "おかえりなさい"
+              },
+              "back": {
+                "text": "Welcome home!",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "かしこまりました",
+                "reading": "かしこまりました"
+              },
+              "back": {
+                "text": "Understood; certainly (polite staff phrase)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "よろしくおねがいします",
+                "reading": "よろしくおねがいします"
+              },
+              "back": {
+                "text": "Please treat me well (multipurpose polite)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "もしもし",
+                "reading": "もしもし"
+              },
+              "back": {
+                "text": "Hello? (on the phone)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "おだいじに",
+                "reading": "おだいじに"
+              },
+              "back": {
+                "text": "Take care (said to ill person)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "すごいですね",
+                "reading": "すごいですね"
+              },
+              "back": {
+                "text": "That's amazing!",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "おめでとうございます",
+                "reading": "おめでとうございます"
+              },
+              "back": {
+                "text": "Congratulations!",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "ざんねんです",
+                "reading": "ざんねんです"
+              },
+              "back": {
+                "text": "That's too bad.",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "たのしみです",
+                "reading": "たのしみです"
+              },
+              "back": {
+                "text": "I'm looking forward to it",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "気をつけて",
+                "reading": "きをつけて"
+              },
+              "back": {
+                "text": "Take care; be careful",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "おそくなってすみません",
+                "reading": "おそくなってすみません"
+              },
+              "back": {
+                "text": "Sorry I'm late",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "ちょっとまってください",
+                "reading": "ちょっとまってください"
+              },
+              "back": {
+                "text": "Please wait a moment",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "もうすこしゆっくり話してください",
+                "reading": "もうすこしゆっくりはなしてください"
+              },
+              "back": {
+                "text": "Please speak a little more slowly",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "ここにすわってもいいですか",
+                "reading": "ここにすわってもいいですか"
+              },
+              "back": {
+                "text": "May I sit here?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "なんじからですか",
+                "reading": "なんじからですか"
+              },
+              "back": {
+                "text": "From what time does it start?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "いってみたいです",
+                "reading": "いってみたいです"
+              },
+              "back": {
+                "text": "I want to go (try going)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "たぶんそうです",
+                "reading": "たぶんそうです"
+              },
+              "back": {
+                "text": "Probably so",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "ちょっとちがいます",
+                "reading": "ちょっとちがいます"
+              },
+              "back": {
+                "text": "It's a little different",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "だいじょうぶですよ",
+                "reading": "だいじょうぶですよ"
+              },
+              "back": {
+                "text": "It's okay / don't worry",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "ありえない",
+                "reading": "ありえない"
+              },
+              "back": {
+                "text": "Impossible; no way",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "もちろんです",
+                "reading": "もちろんです"
+              },
+              "back": {
+                "text": "Of course",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "たしかに",
+                "reading": "たしかに"
+              },
+              "back": {
+                "text": "Certainly; indeed",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "それはいいですね",
+                "reading": "それはいいですね"
+              },
+              "back": {
+                "text": "That sounds nice!",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "こまっています",
+                "reading": "こまっています"
+              },
+              "back": {
+                "text": "I'm in trouble",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "てつだってくれませんか",
+                "reading": "てつだってくれませんか"
+              },
+              "back": {
+                "text": "Could you help me?",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "しんぱいしないで",
+                "reading": "しんぱいしないで"
+              },
+              "back": {
+                "text": "Don't worry",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "たのしかったです",
+                "reading": "たのしかったです"
+              },
+              "back": {
+                "text": "It was fun!",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "またあいましょう",
+                "reading": "またあいましょう"
+              },
+              "back": {
+                "text": "Let's meet again",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "えんりょしないで",
+                "reading": "えんりょしないで"
+              },
+              "back": {
+                "text": "Don't hold back / feel free",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "かんぱい！",
+                "reading": "かんぱい！"
+              },
+              "back": {
+                "text": "Cheers!",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "N5",
+                "key-sentences",
+                "conversation"
+              ],
+              "sortOrder": 40
             }
           ]
         }

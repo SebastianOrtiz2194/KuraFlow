@@ -1,0 +1,4185 @@
+{
+  "languageCode": "en",
+  "levelCode": "C1",
+  "modules": [
+    {
+      "type": "GRAMMAR",
+      "title": "Advanced Structures for Precision",
+      "description": "Master inversion, cleft sentences, the subjunctive mood, participle clauses, and advanced conditional patterns — the grammar of academic papers, formal proposals, and sophisticated technical writing.",
+      "sortOrder": 1,
+      "lessons": [
+        {
+          "title": "Inversion & Cleft Structures",
+          "sortOrder": 1,
+          "estimatedMinutes": 15,
+          "xpReward": 30,
+          "description": "Learn negative inversion and cleft sentences to create emphasis, formality, and rhetorical impact.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Negative Inversion and Cleft Sentences",
+              "body": {
+                "html": "<h4>Negative Inversion</h4>\n<p>When negative/restrictive adverbials start a sentence, subject and auxiliary invert:</p>\n<ul><li>Not only + aux + subj + verb: <b>Not only does</b> caching reduce latency, <b>but it also</b> cuts costs.</li>\n<li>Never before + aux + subj: <b>Never before had</b> the system handled such traffic.</li>\n<li>Seldom/Rarely + aux + subj: <b>Seldom do</b> we encounter this bug.</li>\n<li>No sooner + had + subj + pp + than: <b>No sooner had</b> we deployed <b>than</b> alerts fired.</li>\n<li>Hardly/Scarcely + had + subj + pp + when: <b>Hardly had</b> the pod started <b>when</b> it crashed.</li>\n<li>Under no circumstances + aux + subj: <b>Under no circumstances should</b> you hardcode credentials.</li>\n<li>Only after/Only when + clause, aux + subj: <b>Only after</b> profiling <b>did we</b> find the bottleneck.</li></ul>\n<h4>Cleft Sentences</h4>\n<p><b>It-cleft:</b> It + be + [emphasis] + that/who clause</p>\n<ul><li>Normal: The caching layer caused the improvement.</li>\n<li>Emphatic: <b>It was the caching layer that</b> caused the improvement.</li></ul>\n<p><b>Wh-cleft (pseudo-cleft):</b> What + clause + be + [emphasis]</p>\n<ul><li>Normal: We need better observability.</li>\n<li>Emphatic: <b>What we need is</b> better observability.</li></ul>",
+                "tips": [
+                  "Inversion after negative adverbials is FORMAL. Sign of sophisticated writing.",
+                  "With 'Not only...but also', inversion in FIRST clause only.",
+                  "Wh-clefts (What...is...) are powerful for topic sentences."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Negative Inversion",
+              "body": {
+                "question": "Complete: Not only ___ the system handle 10x traffic, but it also reduced latency.",
+                "options": [
+                  "it did",
+                  "did it",
+                  "it does",
+                  "does it"
+                ],
+                "correct": 1,
+                "explanation": "With 'Not only', auxiliary comes before subject: 'did it handle'."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Wh-cleft",
+              "body": {
+                "words": [
+                  "What",
+                  "we",
+                  "need",
+                  "is",
+                  "a",
+                  "comprehensive",
+                  "strategy"
+                ],
+                "correct": [
+                  "What",
+                  "we",
+                  "need",
+                  "is",
+                  "a",
+                  "comprehensive",
+                  "strategy"
+                ],
+                "translation": "What we need is a comprehensive strategy."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Subjunctive & Unreal Past",
+          "sortOrder": 2,
+          "estimatedMinutes": 15,
+          "xpReward": 30,
+          "description": "Use formal subjunctive in that-clauses and unreal past for hypothetical meaning.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Subjunctive Mood in Formal English",
+              "body": {
+                "html": "<h4>Mandative Subjunctive</h4>\n<p>After verbs/adjectives of demand, the verb stays in BASE FORM:</p>\n<ul><li>The architect <b>insisted that the system be</b> horizontally scalable. (not 'is')</li>\n<li>It is <b>critical that every service expose</b> health endpoints.</li>\n<li>We <b>recommend that the deployment be</b> done via blue-green strategy.</li></ul>\n<p>Verbs: advise, ask, command, demand, insist, propose, recommend, require, suggest, urge</p>\n<p>Adjectives: advisable, critical, crucial, essential, imperative, important, necessary, vital</p>\n\n<h4>Formulaic Subjunctive</h4>\n<ul><li><b>Come what may,</b> the deployment must proceed.</li>\n<li><b>Be that as it may,</b> we need a decision.</li>\n<li><b>Suffice it to say,</b> the migration was non-trivial.</li></ul>\n\n<h4>Unreal Past</h4>\n<ul><li><b>It's (high) time</b> + past: It's high time we <b>migrated</b> off the monolith.</li>\n<li><b>Would rather</b> + past: I'd rather you <b>reviewed</b> the PR before merging.</li>\n<li><b>As if/though</b> + past: She talks about K8s as if she <b>invented</b> it.</li></ul>",
+                "tips": [
+                  "Mandative subjunctive: more common in AmE. BrE often uses 'should': 'recommend that he should deploy'.",
+                  "'It's time' + past = overdue action. Neutral: 'It's time to go'. Urgent: 'It's time we went'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Mandative Subjunctive",
+              "body": {
+                "question": "The security audit demands that every microservice ___ mutual TLS.",
+                "options": [
+                  "uses",
+                  "use",
+                  "used",
+                  "is using"
+                ],
+                "correct": 1,
+                "explanation": "After 'demand that', subjunctive requires BASE FORM: 'use', not 'uses'."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Unreal Past",
+              "body": {
+                "sentence": "It's high time we ___ (migrate) from Java 8 to Java 21.",
+                "answer": "migrated",
+                "alternatives": [],
+                "explanation": "'It's (high) time' triggers unreal past: past form with present/future meaning."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Participle Clauses",
+          "sortOrder": 3,
+          "estimatedMinutes": 15,
+          "xpReward": 30,
+          "description": "Replace full relative and adverbial clauses with participle clauses for concision and sophistication.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Reducing Clauses with Participles",
+              "body": {
+                "html": "<h4>Present Participle (-ing)</h4>\n<p>Replace active relative clauses or express simultaneous actions:</p>\n<ul><li>The service <b>handling</b> auth runs on port 8080. (= that handles)</li>\n<li><b>Noticing</b> the latency spike, we rolled back. (= Because we noticed)</li></ul>\n<h4>Past Participle (-ed/3rd form)</h4>\n<p>Replace passive relative clauses:</p>\n<ul><li>Data <b>stored</b> in Redis has sub-ms access. (= that is stored)</li>\n<li><b>Written in Rust</b>, the service handles 100k rps. (= which is written)</li></ul>\n<h4>Perfect Participle (having + pp)</h4>\n<p>Emphasize one action completed before another:</p>\n<ul><li><b>Having completed</b> the migration, we decommissioned old servers.</li>\n<li><b>Having reviewed</b> the architecture, the board approved the budget.</li></ul>\n<h4>Key Rule</h4>\n<p>The implied subject MUST match the main clause subject. WRONG: <b>Walking through the code,</b> the bug was obvious. (bugs don't walk!)</p>",
+                "tips": [
+                  "Dangling participles are a common C1 error — always check the implied subject.",
+                  "Perfect participles ('having done') are more formal than simple participles.",
+                  "Every 'which is' and 'that was' is an opportunity for participle reduction."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Dangling Participle",
+              "body": {
+                "question": "Which contains a dangling participle?",
+                "options": [
+                  "Checking the logs, I found the error.",
+                  "Deployed correctly, the feature works.",
+                  "Having completed the review, the PR was merged.",
+                  "Data stored in S3 is encrypted."
+                ],
+                "correct": 2,
+                "explanation": "'Having completed the review' has no clear subject — the PR cannot complete a review."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Reduce the Clause",
+              "body": {
+                "sentence": "The API, which is built on gRPC, handles internal comms. → The API, ___ on gRPC, handles internal comms.",
+                "answer": "built",
+                "alternatives": [],
+                "explanation": "Passive relative 'which is built' → past participle 'built'."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Advanced Conditional Patterns",
+          "sortOrder": 4,
+          "estimatedMinutes": 15,
+          "xpReward": 30,
+          "description": "Master formal alternatives to 'if': inversion conditionals, 'but for', and sophisticated hypothetical structures.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Beyond 'If': Sophisticated Conditionals",
+              "body": {
+                "html": "<h4>Inversion Conditionals (Highly Formal)</h4>\n<p>Drop 'if', invert subject and auxiliary:</p>\n<ul><li><b>Should</b> you need assistance, contact SRE. (= If you should need)</li>\n<li><b>Were</b> the system to fail, circuit breakers activate. (= If the system were to fail)</li>\n<li><b>Had</b> we known, we would have patched. (= If we had known)</li></ul>\n\n<h4>'But for' (Concise & Elegant)</h4>\n<p>But for = without / if it were not for:</p>\n<ul><li><b>But for</b> the caching layer, the DB would have been overwhelmed.</li></ul>\n\n<h4>Other Sophisticated Forms</h4>\n<ul><li><b>On condition that</b> — formal requirement: Access <b>on condition that</b> data is not shared.</li>\n<li><b>In the event that</b> — contingency: <b>In the event that</b> the primary fails...</li>\n<li><b>Assuming (that)</b> — premise: <b>Assuming</b> the model trains successfully...</li>\n<li><b>Given (that)</b> — known fact: <b>Given that</b> we run at 80% capacity...</li></ul>\n\n<h4>'Will' in If-clause = Willingness (NOT Future)</h4>\n<ul><li>If the service <b>will not</b> start, check env vars. (= refuses to start)</li></ul>",
+                "tips": [
+                  "Inversion conditionals (Should/Were/Had) are extremely formal — papers and proposals only.",
+                  "'But for' replaces 10 words with 2: elegant and concise.",
+                  "'Given that' is the workhorse of technical writing."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Inversion Conditional",
+              "body": {
+                "question": "Rewrite without 'if': 'If the system should fail, the backup will activate.' → ___.",
+                "options": [
+                  "Should fail the system",
+                  "Should the system fail",
+                  "The system should fail",
+                  "Fail the system should"
+                ],
+                "correct": 1,
+                "explanation": "Drop 'if', invert subject and 'should': 'Should the system fail'. Highly formal."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "But For",
+              "body": {
+                "sentence": "___ ___ the load balancer, the traffic spike would have crashed every instance.",
+                "answer": "But for",
+                "alternatives": [],
+                "explanation": "'But for' = 'without' or 'if it were not for'. Concise, elegant conditional."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "C1 Advanced Grammar",
+          "description": "25 advanced grammar points: inversion, subjunctive, participle clauses, and sophisticated conditionals.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "negative inversion",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "When neg/restrictive adverbial starts sentence, subject and auxiliary invert.",
+                "example": "Not only does caching reduce latency, but it also cuts costs.",
+                "notes": "Formal. Triggers: not only, never, rarely, seldom, hardly, under no circumstances, not until."
+              },
+              "tags": [
+                "grammar",
+                "inversion",
+                "C1"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "not only ... but also (inversion)",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Not only + aux + subj + verb, but + subj + also + verb.",
+                "example": "Not only did we fix the bug, but we also improved tests.",
+                "notes": "Inversion in FIRST clause only. Second clause: normal order."
+              },
+              "tags": [
+                "grammar",
+                "inversion",
+                "C1"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "no sooner ... than",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "No sooner + had + subj + pp + than + clause. Two events almost simultaneous.",
+                "example": "No sooner had we deployed than errors spiked.",
+                "notes": "Very formal. Emphasizes immediate sequence."
+              },
+              "tags": [
+                "grammar",
+                "inversion",
+                "C1"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "under no circumstances",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Strong prohibition with inversion. Under no circumstances + aux + subj + verb.",
+                "example": "Under no circumstances should secrets be committed.",
+                "notes": "Emphatic. Equivalent to 'never ever' in formal English."
+              },
+              "tags": [
+                "grammar",
+                "inversion",
+                "C1"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "it-cleft sentence",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "It + be + [emphasis] + that/who clause. Highlights one sentence element.",
+                "example": "It was the caching layer that caused the improvement.",
+                "notes": "Emphasizes anything except the verb. Common in formal writing."
+              },
+              "tags": [
+                "grammar",
+                "cleft",
+                "C1"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "wh-cleft (pseudo-cleft)",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "What + clause + be + [emphasis]. Focus at the end.",
+                "example": "What the system needs is more robust error handling.",
+                "notes": "Effective for topic sentences: 'What we found was...'"
+              },
+              "tags": [
+                "grammar",
+                "cleft",
+                "C1"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "mandative subjunctive",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "After demand/recommendation verbs, that-clause verb in BASE FORM.",
+                "example": "The policy requires that data be encrypted at rest.",
+                "notes": "Verbs: insist, demand, recommend, suggest. No -s, no tense change."
+              },
+              "tags": [
+                "grammar",
+                "subjunctive",
+                "C1"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "unreal past",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past tense forms with present/future meaning for unreality or politeness.",
+                "example": "It's time we addressed this tech debt.",
+                "notes": "Triggers: it's time, would rather, as if, suppose. Past form, present meaning."
+              },
+              "tags": [
+                "grammar",
+                "subjunctive",
+                "C1"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "it's (high) time + past",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Implies the action is overdue. Past form with present/future meaning.",
+                "example": "It's high time we adopted a service mesh.",
+                "notes": "'High' adds urgency. The action should have already happened."
+              },
+              "tags": [
+                "grammar",
+                "subjunctive",
+                "C1"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "present participle clause",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "-ing form replacing a relative clause or adverbial clause for concision.",
+                "example": "The service handling auth runs on 8080.",
+                "notes": "Subject must match main clause. Beware of dangling participles."
+              },
+              "tags": [
+                "grammar",
+                "participle",
+                "C1"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "past participle clause",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past participle (-ed/3rd) replacing a passive relative clause.",
+                "example": "Data stored in Redis has sub-ms access.",
+                "notes": "Reduces 'which is/that was' clutter. Very common in technical writing."
+              },
+              "tags": [
+                "grammar",
+                "participle",
+                "C1"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "perfect participle clause",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Having + pp — one action completed before another. Formal.",
+                "example": "Having migrated the DB, we decommissioned the old server.",
+                "notes": "Clearly sequences events. Implied subject must match main clause."
+              },
+              "tags": [
+                "grammar",
+                "participle",
+                "C1"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "dangling participle",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A participle clause whose implied subject doesn't match main clause subject. ERROR.",
+                "example": "WRONG: Deploying to prod, the build failed.",
+                "notes": "Always check: does main clause subject perform the participle action?"
+              },
+              "tags": [
+                "grammar",
+                "participle",
+                "C1"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "inversion conditional",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Drop 'if', invert subject + auxiliary: Should/Were/Had + subj + verb.",
+                "example": "Had we implemented circuit breakers, the cascade would have been contained.",
+                "notes": "Extremely formal. Should (1st), Were (2nd), Had (3rd conditional)."
+              },
+              "tags": [
+                "grammar",
+                "conditionals",
+                "C1"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "but for",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "= Without. Concise formal way to express that something prevented a different outcome.",
+                "example": "But for the rate limiter, the API would have been overwhelmed.",
+                "notes": "Four words replace fourteen. Elegant and sophisticated."
+              },
+              "tags": [
+                "grammar",
+                "conditionals",
+                "C1"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "in the event that",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Formal alternative to 'if' for contingency planning.",
+                "example": "In the event that the primary DB fails, failover is automatic.",
+                "notes": "Disaster recovery, SLA, and architecture document language."
+              },
+              "tags": [
+                "grammar",
+                "conditionals",
+                "C1"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "on condition that",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "= Only if. Formal way to set a requirement.",
+                "example": "Access granted on condition that data is not shared.",
+                "notes": "Legalistic tone. Contracts and security policies."
+              },
+              "tags": [
+                "grammar",
+                "conditionals",
+                "C1"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "given that",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Introduces a known fact as basis for conclusion.",
+                "example": "Given that we process 50M events/day, Kafka is right.",
+                "notes": "Workhorse of technical writing. 'Given that X, therefore Y'."
+              },
+              "tags": [
+                "grammar",
+                "conditionals",
+                "C1"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "come what may",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Fixed subjunctive: 'whatever happens'.",
+                "example": "Come what may, the deployment must proceed at 2 AM.",
+                "notes": "Formulaic. Old-fashioned but effective for dramatic emphasis."
+              },
+              "tags": [
+                "grammar",
+                "subjunctive",
+                "C1"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "be that as it may",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Fixed subjunctive: 'nevertheless' / 'despite that'.",
+                "example": "The approach has risks. Be that as it may, it's our best option.",
+                "notes": "Concessive. Acknowledges a point while maintaining position."
+              },
+              "tags": [
+                "grammar",
+                "subjunctive",
+                "C1"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "as if / as though + subjunctive",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past/past perfect to describe something that appears true but isn't.",
+                "example": "The system behaves as if it were under load — but traffic is normal.",
+                "notes": "Past for present unreality. Past perfect for past unreality."
+              },
+              "tags": [
+                "grammar",
+                "subjunctive",
+                "C1"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "will in if-clause (willingness)",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "If + will/would = willingness or insistence, NOT future.",
+                "example": "If the service will not start, check environment variables.",
+                "notes": "Means 'refuses to'. Does NOT express future tense."
+              },
+              "tags": [
+                "grammar",
+                "conditionals",
+                "C1"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "only after / only when + inversion",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Inversion in the MAIN clause, not the 'only' clause.",
+                "example": "Only after tracing did we identify the bottleneck.",
+                "notes": "The 'only after' clause keeps normal order. Main clause inverts."
+              },
+              "tags": [
+                "grammar",
+                "inversion",
+                "C1"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "suffice it to say",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Fixed subjunctive: 'it is enough to say that...'.",
+                "example": "Suffice it to say, the migration was far more complex than anticipated.",
+                "notes": "Used to summarize without detail. Elegant glossing-over."
+              },
+              "tags": [
+                "grammar",
+                "subjunctive",
+                "C1"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "would rather + past subjunctive",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Polite preference about someone else's action. Past form, present meaning.",
+                "example": "I'd rather the team waited until tests pass.",
+                "notes": "More polite than 'don't'. Past subjunctive for present/future."
+              },
+              "tags": [
+                "grammar",
+                "subjunctive",
+                "C1"
+              ],
+              "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "C1 Grammar in Context",
+          "description": "45 advanced sentences demonstrating C1 grammar in professional engineering and research contexts.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "Not only does the new architecture reduce latency, but it also improves fault tolerance.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Not only + inversion + but also",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "Never before had the platform experienced traffic of this magnitude.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Never before + inversion (past perfect)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "Seldom do we encounter a race condition this difficult to reproduce.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Seldom + inversion",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "No sooner had we deployed the hotfix than the error rate dropped.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "No sooner had...than",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "Hardly had the pod started up when the health check failed.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Hardly had...when",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "Under no circumstances should production secrets be stored in config files.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Under no circumstances + inversion",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "Only after implementing distributed tracing were we able to pinpoint the issue.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Only after...did we",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "It was the misconfigured load balancer that caused the cascade failure.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "It-cleft: emphasizing cause",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "What the system requires is a comprehensive observability strategy.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Wh-cleft: highlighting need",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "The security policy mandates that every service use mutual TLS.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Mandative subjunctive: mandate that...use",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "It is imperative that the migration be completed with zero downtime.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Subjunctive after adjective: imperative that...be",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "Come what may, the deployment must be rolled back if errors exceed 1%.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Come what may — formulaic",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "Be that as it may, the data clearly shows a memory leak.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Be that as it may — concessive",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "It's high time we replaced the legacy monolith with microservices.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "It's high time + past (overdue)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "I'd rather the team deferred the release until pen tests complete.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Would rather + past subjunctive",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "The platform behaves as if it were under DDoS, but traffic is normal.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "As if + subjunctive (were = unreality)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "Suppose we lost the entire primary region — how quickly could we fail over?",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Suppose + past (hypothetical scenario)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "The service handling payment processing must be PCI-DSS compliant.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Present participle: replacing 'that handles'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "Data encrypted at rest and in transit ensures end-to-end security.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past participle: replacing 'that is encrypted'",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "Having completed the performance audit, we identified three bottlenecks.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Perfect participle: having completed",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "Not having received the acknowledgment, the producer retried the message.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Negative participle: not having received",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "Should the primary database fail, the read replica will be promoted.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Inversion conditional: Should (1st)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "Were we to adopt a service mesh, inter-service communication would be transparent.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Inversion conditional: Were (2nd)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "Had we implemented circuit breakers earlier, the cascade would have been contained.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Inversion conditional: Had (3rd)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "But for the rate-limiting middleware, the API would have been overwhelmed.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "But for = without",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "In the event that both AZs fail, traffic is routed to the DR site.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "In the event that = formal if",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "You may access the sandbox on condition that no production data is used.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "On condition that = only if",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "Given that we handle 50 million events daily, event sourcing is appropriate.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Given that = known fact basis",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "If the service will not respond to health checks, K8s will restart the pod.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Will in if-clause = willingness",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "Suffice it to say, migrating from relational to graph DB was non-trivial.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Suffice it to say — formulaic",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "Not until we correlated logs with metrics did the root cause become clear.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Not until + inversion",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "It was through rigorous chaos engineering that we found the failure mode.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "It-cleft: through emphasis",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "What matters most in a distributed system is how it handles partial failures.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Wh-cleft: what matters most",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "The architecture board insists that every API be versioned from day one.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Insist that + subjunctive",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "It's critical that the data pipeline guarantee exactly-once semantics.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Critical that + subjunctive",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "It feels as if we had never addressed the tech debt — issues keep resurfacing.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "As if + past perfect = past unreality",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "I'd sooner rewrite the module than continue patching this spaghetti code.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Would sooner = would rather",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "Designed with horizontal scalability in mind, the system handles spikes elastically.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past participle: designed with...",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "Built on top of Kafka, the event bus provides durable ordered delivery.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Past participle: built on...",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "Having analyzed the flame graphs, SRE zeroed in on serialization overhead.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Perfect participle: having analyzed",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "Under no circumstances may a developer bypass the code review process.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Under no circumstances + inversion",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "Should you encounter any anomalies, escalate to the on-call engineer immediately.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Should you... = formal request",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "But for the canary deployment catching the regression, we would have shipped a broken release.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "But for = without (past hypothetical)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "Given that the model achieves 99.5% precision, false positives are not a concern.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Given that = premise",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "Not only have we reduced P99 latency by 60%, but we have also halved infrastructure costs.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Not only have we...but we have also",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "grammar",
+                "sentence-pattern",
+                "advanced"
+              ],
+              "sortOrder": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VOCABULARY",
+      "title": "Advanced Technical & Research Lexicon",
+      "description": "Command the vocabulary of AI platform engineering, distributed systems theory, advanced architecture, and research methodology — the language of senior engineers and architects.",
+      "sortOrder": 2,
+      "lessons": [
+        {
+          "title": "AI Platform Engineering",
+          "sortOrder": 1,
+          "estimatedMinutes": 15,
+          "xpReward": 30,
+          "description": "Master MLOps, model serving, inference pipelines, and the AI platform stack.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "The AI Platform Stack",
+              "body": {
+                "html": "<h4>MLOps & Lifecycle</h4>\n<ul><li><b>MLOps</b> — Applying DevOps to ML: CI/CD for models, monitoring, governance. Shipping models, not notebooks.</li>\n<li><b>feature store</b> — Centralized repository for storing, versioning, and serving ML features. Prevents training-serving skew. Feast, Hopsworks.</li>\n<li><b>model registry</b> — Catalog for tracking model versions, metadata, approval, deployment state. MLflow Model Registry.</li>\n<li><b>training pipeline</b> — Automated workflow: data → features → train → evaluate → register.</li></ul>\n<h4>Serving & Inference</h4>\n<ul><li><b>model serving</b> — Making a trained model available for prediction requests in production.</li>\n<li><b>inference pipeline</b> — Preprocess → Model → Postprocess. Often includes feature store lookups.</li>\n<li><b>batch vs. online inference</b> — Batch = process large datasets on schedule. Online = real-time per request.</li>\n<li><b>model warm-up</b> — Priming caches and JIT compilation before serving real traffic.</li></ul>\n<h4>RAG & LLM Infrastructure</h4>\n<ul><li><b>RAG</b> — Retrieval-Augmented Generation: retrieve documents → inject into LLM context → ground responses.</li>\n<li><b>vector database</b> — Optimized for storing and searching embeddings. Pinecone, Weaviate, Milvus, pgvector.</li>\n<li><b>chunking strategy</b> — How documents are split before embedding. Size, overlap, method critically affect RAG quality.</li>\n<li><b>LLM orchestration</b> — Chaining LLM calls with tools and retrieval. LangChain, LlamaIndex, Semantic Kernel.</li>\n<li><b>agentic AI / AI agents</b> — LLM-powered systems that can plan, use tools, and execute multi-step tasks autonomously.</li></ul>",
+                "tips": [
+                  "MLOps isn't 'DevOps for ML' — it adds experiment tracking, data versioning, and model monitoring.",
+                  "Training-serving skew is the hardest problem in ML serving — not latency.",
+                  "RAG quality depends more on retrieval quality than generation quality."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "RAG Architecture",
+              "body": {
+                "question": "In RAG, the retrieval step is responsible for ___.",
+                "options": [
+                  "generating final responses",
+                  "finding relevant documents for grounding",
+                  "fine-tuning the model",
+                  "chunking the prompt into tokens"
+                ],
+                "correct": 1,
+                "explanation": "RAG retrieves relevant documents to ground the LLM's response in real data."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Feature Store",
+              "body": {
+                "sentence": "A ___ ___ serves ML features consistently across training and inference.",
+                "answer": "feature store",
+                "alternatives": [
+                  "Feature Store"
+                ],
+                "explanation": "Centralized repository preventing training-serving skew."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Distributed Systems & Infrastructure",
+          "sortOrder": 2,
+          "estimatedMinutes": 15,
+          "xpReward": 30,
+          "description": "Vocabulary for distributed consensus, replication, partitioning, and large-scale system design.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Distributed Systems Theory",
+              "body": {
+                "html": "<h4>Consensus & Coordination</h4>\n<ul><li><b>consensus algorithm</b> — Protocol for getting multiple nodes to agree on a single value. Paxos, Raft, Zab.</li>\n<li><b>leader election</b> — Designating one node as coordinator. Crucial for distributed databases and stream processing.</li>\n<li><b>quorum</b> — The minimum number of nodes that must agree for an operation to succeed. Majority = (N/2)+1.</li>\n<li><b>two-phase commit (2PC)</b> — Protocol ensuring all nodes commit or all abort. Coordinator + participants.</li></ul>\n<h4>Replication & Partitioning</h4>\n<ul><li><b>replication</b> — Copying data across nodes for fault tolerance. Leader-follower, multi-leader, leaderless.</li>\n<li><b>partitioning / sharding</b> — Splitting data across nodes. Key-range, hash-based, directory-based.</li>\n<li><b>CAP theorem</b> — At most two of: Consistency, Availability, Partition tolerance. During a partition, choose C or A.</li>\n<li><b>PACELC</b> — Extension of CAP: if Partition, trade Availability vs Consistency; Else, trade Latency vs Consistency.</li></ul>\n<h4>Event-Driven Architectures</h4>\n<ul><li><b>event sourcing</b> — Storing state changes as a sequence of events rather than current state. Rebuild state by replaying events.</li>\n<li><b>CQRS</b> — Command Query Responsibility Segregation. Separate read and write models.</li>\n<li><b>eventual consistency</b> — Data will converge over time; trades immediate accuracy for availability.</li>\n<li><b>idempotency</b> — Retrying an operation produces the same result. Critical for at-least-once delivery.</li>\n<li><b>backpressure</b> — Mechanism to prevent a fast producer from overwhelming a slow consumer. Reactive streams.</li></ul>",
+                "tips": [
+                  "In practice, most systems choose AP (availability + partition tolerance) with eventual consistency.",
+                  "Event sourcing is powerful but complex: you need snapshotting and schema evolution.",
+                  "Idempotency keys are the simplest way to handle duplicate requests in distributed systems."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "CAP Theorem",
+              "body": {
+                "question": "During a network partition, a system can be either ___ or ___.",
+                "options": [
+                  "Consistent or Available",
+                  "Consistent or Partition-tolerant",
+                  "Available or Durable",
+                  "Fast or Correct"
+                ],
+                "correct": 0,
+                "explanation": "CAP theorem: during Partition, you choose between Consistency and Availability."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Event Sourcing",
+              "body": {
+                "sentence": "___ ___ stores state changes as an immutable sequence of events rather than current state.",
+                "answer": "Event sourcing",
+                "alternatives": [
+                  "Event Sourcing"
+                ],
+                "explanation": "Event sourcing allows rebuilding state by replaying events. Used with CQRS."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Advanced Software Architecture",
+          "sortOrder": 3,
+          "estimatedMinutes": 15,
+          "xpReward": 30,
+          "description": "Vocabulary for architectural patterns, design decisions, and platform engineering at scale.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Architectural Patterns & Platform Engineering",
+              "body": {
+                "html": "<h4>Architectural Styles</h4>\n<ul><li><b>hexagonal architecture (ports & adapters)</b> — Business logic at center, surrounded by ports (interfaces) and adapters (implementations). Isolates domain from infrastructure.</li>\n<li><b>DDD (Domain-Driven Design)</b> — Aligning software design with business domain. Bounded contexts, aggregates, ubiquitous language.</li>\n<li><b>service mesh</b> — Infrastructure layer handling service-to-service communication. Istio, Linkerd. Sidecar proxy per pod.</li>\n<li><b>API gateway pattern</b> — Single entry point for all clients. Auth, rate limiting, routing, protocol translation.</li>\n<li><b>Backend for Frontend (BFF)</b> — Separate API gateways tailored to each client (mobile, web, third-party).</li></ul>\n<h4>Resilience & Scaling</h4>\n<ul><li><b>circuit breaker</b> — Fail fast pattern. After N failures, stop calling a failing service. Prevents cascading failures.</li>\n<li><b>bulkhead</b> — Isolating resources so one failure doesn't sink the whole ship. Thread pool per downstream service.</li>\n<li><b>throttling / rate limiting</b> — Controlling the rate of requests. Token bucket, sliding window, leaky bucket.</li>\n<li><b>auto-scaling</b> — HPA (horizontal pod autoscaling) based on CPU/memory/custom metrics.</li></ul>\n<h4>Observability & Reliability</h4>\n<ul><li><b>SLO / SLI / SLA</b> — Service Level Objective (target), Indicator (measurement), Agreement (contract with penalty).</li>\n<li><b>error budget</b> — 1 - SLO = allowed unreliability. If you spend it, freeze features until reliability is restored.</li>\n<li><b>chaos engineering</b> — Deliberately injecting failures to test system resilience. Netflix's Chaos Monkey.</li></ul>",
+                "tips": [
+                  "Hexagonal architecture = ports & adapters. The domain doesn't know about HTTP, DB, or Kafka.",
+                  "Circuit breaker states: Closed (normal) → Open (failing fast) → Half-Open (testing recovery).",
+                  "SLOs drive your error budget. No error budget = no new features. This is the core of SRE."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Circuit Breaker",
+              "body": {
+                "question": "A circuit breaker in the OPEN state means ___.",
+                "options": [
+                  "All requests go through normally",
+                  "Requests fail immediately without calling the downstream",
+                  "Only a test request passes to check health",
+                  "Requests are queued for later"
+                ],
+                "correct": 1,
+                "explanation": "In OPEN state, the circuit breaker fails fast without calling the failing service, preventing cascading failures."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Hexagonal Architecture",
+              "body": {
+                "sentence": "___ architecture isolates business logic from infrastructure using ports and adapters.",
+                "answer": "Hexagonal",
+                "alternatives": [
+                  "hexagonal",
+                  "ports and adapters"
+                ],
+                "explanation": "Also called ports & adapters. The domain is at the center — decoupled from HTTP, databases, and message brokers."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Research, Metrics & Innovation",
+          "sortOrder": 4,
+          "estimatedMinutes": 15,
+          "xpReward": 30,
+          "description": "Vocabulary for experiment design, evaluation methodology, statistical rigor, and research communication.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Research Methodology & Metrics",
+              "body": {
+                "html": "<h4>Experiment Design</h4>\n<ul><li><b>A/B testing</b> — Randomized experiment comparing two variants. Requires statistical significance to draw conclusions.</li>\n<li><b>control group</b> — The baseline group receiving no treatment. Essential for causal inference.</li>\n<li><b>confounding variable</b> — An unmeasured factor that influences both independent and dependent variables. Threat to validity.</li>\n<li><b>statistical significance</b> — p < 0.05 typically. The probability results are due to chance. NOT the same as practical significance.</li>\n<li><b>effect size</b> — The magnitude of the difference. A tiny effect can be statistically significant with a huge sample.</li></ul>\n<h4>Evaluation & Metrics</h4>\n<ul><li><b>ROC curve</b> — Receiver Operating Characteristic. Plots true positive rate vs false positive rate at various thresholds.</li>\n<li><b>AUC-ROC</b> — Area Under the ROC Curve. 1.0 = perfect, 0.5 = random. Overall classifier quality.</li>\n<li><b>confusion matrix</b> — TP, FP, TN, FN. Foundation for computing precision, recall, F1.</li>\n<li><b>cross-validation</b> — Splitting data into K folds, training on K-1 and testing on 1, rotating. K-fold CV prevents overfitting to your test split.</li>\n<li><b>ablation study</b> — Removing components one at a time to measure their contribution. 'How much does this layer help?'</li></ul>\n<h4>Innovation & Communication</h4>\n<ul><li><b>reproducibility</b> — Can someone else run your code and get the same results? Docker + seed fixing + documented steps.</li>\n<li><b>peer review</b> — Formal evaluation by domain experts before publication. The gatekeeper of scientific quality.</li>\n<li><b>state of the art (SOTA)</b> — The current best performance on a benchmark. Moving target.</li>\n<li><b>benchmark</b> — Standardized dataset/task for comparing models. GLUE, SuperGLUE, MMLU, HumanEval.</li></ul>",
+                "tips": [
+                  "Statistical significance ≠ practical significance. With enough data, anything is 'significant'.",
+                  "Reproducibility crisis: many ML papers cannot be reproduced. Docker + fixed seeds + public code are the antidote.",
+                  "SOTA chasing is a double-edged sword — benchmarks don't always reflect real-world usefulness."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Statistical Significance",
+              "body": {
+                "question": "p < 0.05 in an A/B test means ___.",
+                "options": [
+                  "The change is definitely better",
+                  "There is a 95% chance the change is an improvement",
+                  "The probability of observing this result by chance is less than 5%",
+                  "The effect size is at least 5%"
+                ],
+                "correct": 2,
+                "explanation": "p < 0.05 means: if there were truly no difference, you'd see this result <5% of the time. It does NOT guarantee practical importance."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Ablation Study",
+              "body": {
+                "sentence": "An ___ ___ removes components one at a time to measure each one's contribution to model performance.",
+                "answer": "ablation study",
+                "alternatives": [
+                  "Ablation Study"
+                ],
+                "explanation": "Ablation studies answer: 'Which part of my system matters most?' Core methodology in ML research."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "C1 Advanced Technical Vocabulary",
+          "description": "25 advanced technical terms covering AI platform engineering, distributed systems, architecture, and research.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "MLOps",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Applying DevOps principles to ML: CI/CD for models, monitoring, governance. Shipping models, not notebooks.",
+                "example": "Our MLOps pipeline auto-retrains models when data drift exceeds threshold.",
+                "notes": "Adds experiment tracking, data versioning, model monitoring to standard DevOps."
+              },
+              "tags": [
+                "vocabulary",
+                "ai-platform",
+                "C1"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "feature store",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Centralized repository for storing, versioning, and serving ML features. Prevents training-serving skew.",
+                "example": "Feast serves features with point-in-time correctness.",
+                "notes": "Key to consistent feature engineering across training and inference."
+              },
+              "tags": [
+                "vocabulary",
+                "ai-platform",
+                "C1"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "model registry",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Centralized catalog for model versions, metadata, approval status, and deployment state.",
+                "example": "MLflow Model Registry tracks which model is in staging vs. production.",
+                "notes": "Model governance: who approved, when, and why."
+              },
+              "tags": [
+                "vocabulary",
+                "ai-platform",
+                "C1"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "RAG (Retrieval-Augmented Generation)",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Pattern: retrieve relevant docs, inject into LLM context, ground responses in real data.",
+                "example": "Our RAG pipeline retrieves from a vector DB of internal docs.",
+                "notes": "Quality depends more on retrieval than generation."
+              },
+              "tags": [
+                "vocabulary",
+                "ai-platform",
+                "C1"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "vector database",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Database optimized for storing and searching vector embeddings via similarity.",
+                "example": "Pinecone stores embeddings for semantic search.",
+                "notes": "Pinecone, Weaviate, Milvus, pgvector. Foundation of RAG."
+              },
+              "tags": [
+                "vocabulary",
+                "ai-platform",
+                "C1"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "agentic AI",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "LLM-powered systems that plan, use tools, and execute multi-step tasks autonomously.",
+                "example": "An AI agent researches a topic, writes code, runs tests, and iterates.",
+                "notes": "Beyond simple Q&A. Agents reason, plan, act, observe, and adapt."
+              },
+              "tags": [
+                "vocabulary",
+                "ai-platform",
+                "C1"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "consensus algorithm",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Protocol for getting multiple nodes to agree on a single value. Paxos, Raft, Zab.",
+                "example": "etcd uses Raft for leader election and distributed consensus.",
+                "notes": "Foundation of distributed databases and coordination services."
+              },
+              "tags": [
+                "vocabulary",
+                "distributed",
+                "C1"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "CAP theorem",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "At most two of: Consistency, Availability, Partition tolerance. During partition, choose C or A.",
+                "example": "Cassandra chooses AP; HBase chooses CP.",
+                "notes": "Fundamental trade-off in distributed system design."
+              },
+              "tags": [
+                "vocabulary",
+                "distributed",
+                "C1"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "event sourcing",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Storing state changes as an immutable event log. Rebuild current state by replaying.",
+                "example": "Kafka stores events; materialized views project current state.",
+                "notes": "Powerful but complex: need snapshots and schema evolution."
+              },
+              "tags": [
+                "vocabulary",
+                "distributed",
+                "C1"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "CQRS",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Command Query Responsibility Segregation. Separate read and write models.",
+                "example": "Commands update the event store; queries read from optimized projections.",
+                "notes": "Natural fit with event sourcing. Different models for different needs."
+              },
+              "tags": [
+                "vocabulary",
+                "distributed",
+                "C1"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "idempotency",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Retrying an operation produces the same result. Critical for at-least-once delivery.",
+                "example": "Payment APIs use idempotency keys to prevent double charges.",
+                "notes": "Idempotency key in header: same key = same result, even on retry."
+              },
+              "tags": [
+                "vocabulary",
+                "distributed",
+                "C1"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "backpressure",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Mechanism preventing a fast producer from overwhelming a slow consumer.",
+                "example": "Reactive Streams implement backpressure in async pipelines.",
+                "notes": "Essential for stable streaming systems under load."
+              },
+              "tags": [
+                "vocabulary",
+                "distributed",
+                "C1"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "hexagonal architecture",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Ports & adapters pattern: domain isolated from infrastructure. Business logic at center.",
+                "example": "The service core has zero imports from Spring or PostgreSQL.",
+                "notes": "Ports = interfaces. Adapters = implementations. Swap DB without touching domain."
+              },
+              "tags": [
+                "vocabulary",
+                "architecture",
+                "C1"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "DDD (Domain-Driven Design)",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Aligning software design with business domain. Bounded contexts, aggregates, ubiquitous language.",
+                "example": "Each bounded context owns its data and communicates via domain events.",
+                "notes": "Eric Evans. Strategic DDD = bounded contexts. Tactical DDD = entities, value objects, aggregates."
+              },
+              "tags": [
+                "vocabulary",
+                "architecture",
+                "C1"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "circuit breaker",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Fail-fast pattern: after N failures, stop calling a failing service. Prevents cascading failures.",
+                "example": "Resilience4j circuit breaker opens after 50% failure rate.",
+                "notes": "States: Closed → Open → Half-Open. Essential for microservice resilience."
+              },
+              "tags": [
+                "vocabulary",
+                "architecture",
+                "C1"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "SLO / SLI / SLA",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Service Level Objective (target), Indicator (measurement), Agreement (contract).",
+                "example": "SLO: 99.9% availability. SLI: measured uptime. SLA: refund if breached.",
+                "notes": "SLOs drive error budgets. Core SRE concept from Google."
+              },
+              "tags": [
+                "vocabulary",
+                "architecture",
+                "C1"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "error budget",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "1 - SLO = allowed unreliability. Spend it → freeze features until reliability recovers.",
+                "example": "Our 0.1% error budget is spent — feature freeze until next quarter.",
+                "notes": "Links reliability to velocity. No budget = no new features."
+              },
+              "tags": [
+                "vocabulary",
+                "architecture",
+                "C1"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "chaos engineering",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Deliberately injecting failures to test system resilience.",
+                "example": "Chaos Monkey terminates random production instances during business hours.",
+                "notes": "Netflix pioneered this. Run during business hours when people can respond."
+              },
+              "tags": [
+                "vocabulary",
+                "architecture",
+                "C1"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "A/B testing",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Randomized experiment comparing two variants. Requires statistical significance.",
+                "example": "We A/B tested the new ranking algorithm on 10% of users.",
+                "notes": "Requires: randomization, control group, large enough sample, statistical test."
+              },
+              "tags": [
+                "vocabulary",
+                "research",
+                "C1"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "statistical significance",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Probability results are due to chance. p < 0.05 is conventional threshold.",
+                "example": "The improvement was statistically significant (p = 0.003).",
+                "notes": "NOT the same as practical significance. Huge samples make tiny effects 'significant'."
+              },
+              "tags": [
+                "vocabulary",
+                "research",
+                "C1"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "ablation study",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Removing components one at a time to measure each one's contribution.",
+                "example": "Ablation showed the attention mechanism contributed 40% of the gain.",
+                "notes": "Answers: 'Which part matters most?' Core methodology in ML papers."
+              },
+              "tags": [
+                "vocabulary",
+                "research",
+                "C1"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "cross-validation",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "K-fold CV: split data into K folds, train on K-1, test on 1, rotating. Prevents overfitting.",
+                "example": "5-fold cross-validation gives more reliable accuracy estimates.",
+                "notes": "More robust than a single train/test split."
+              },
+              "tags": [
+                "vocabulary",
+                "research",
+                "C1"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "reproducibility",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Can someone else run your code and get the same results?",
+                "example": "Docker, fixed seeds, and documented steps ensure reproducibility.",
+                "notes": "Major crisis in ML. Antidote: containers + fixed random seeds + public code + documented steps."
+              },
+              "tags": [
+                "vocabulary",
+                "research",
+                "C1"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "SOTA (state of the art)",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "The current best performance on a benchmark. A moving target.",
+                "example": "Our model achieves SOTA on the MMLU benchmark.",
+                "notes": "Benchmarks: GLUE, SuperGLUE, MMLU, HumanEval. SOTA chasing is controversial."
+              },
+              "tags": [
+                "vocabulary",
+                "research",
+                "C1"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "confusion matrix",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "TP, FP, TN, FN table. Foundation for computing precision, recall, F1, accuracy.",
+                "example": "The confusion matrix shows many false positives — precision is low.",
+                "notes": "Binary: 2x2. Multi-class: NxN. Foundation of all classification metrics."
+              },
+              "tags": [
+                "vocabulary",
+                "research",
+                "C1"
+              ],
+              "sortOrder": 25
+            }
+          ]
+        },
+        {
+          "title": "C1 Technical Vocabulary — In Context",
+          "description": "45 sentences using C1 vocabulary in realistic architecture, infrastructure, and research contexts.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "MLOps automates the entire model lifecycle from training to monitoring.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "MLOps lifecycle automation",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "The feature store ensures features are consistent between training and serving.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "feature store consistency",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "Our model registry tracks which version is deployed to staging vs production.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "model registry tracking",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "RAG grounds the LLM's responses in retrieved documents from our knowledge base.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "RAG grounding pattern",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "Pinecone serves as our vector database for semantic search over embeddings.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "vector database for search",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "Agentic AI systems can plan multi-step tasks and use tools autonomously.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "agentic AI autonomy",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "The Kafka consumer group uses a consensus algorithm for partition assignment.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "consensus in Kafka",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "During a network partition, the CAP theorem forces a choice between C and A.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "CAP theorem trade-off",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "Event sourcing stores every state change as an immutable event in the log.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "event sourcing pattern",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "CQRS separates command writes from query reads for optimized performance.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "CQRS separation",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "The payment gateway uses idempotency keys to prevent duplicate transactions.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "idempotency in payments",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "Reactive Streams implement backpressure to handle bursts without overwhelming consumers.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "backpressure in streams",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "Hexagonal architecture isolates the domain from infrastructure concerns entirely.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "hexagonal architecture isolation",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "Bounded contexts in DDD define clear ownership boundaries between teams.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "DDD bounded contexts",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "The circuit breaker opened after 5 consecutive timeouts from the downstream API.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "circuit breaker opening",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "Our SLO is 99.95% availability, measured monthly across all regions.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "SLO measurement",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "We exhausted our error budget this quarter — implementing a feature freeze.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "error budget exhaustion",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "Chaos engineering exercises revealed a hidden failure mode in our retry logic.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "chaos engineering testing",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "We A/B tested the new recommendation model against the baseline for two weeks.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "A/B testing methodology",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "The improvement was statistically significant with p = 0.001 and large effect size.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "statistical significance",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "Ablation studies demonstrated that the attention layer was the critical component.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "ablation study methodology",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "5-fold cross-validation confirmed the model generalizes well across different splits.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "cross-validation robustness",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "Reproducibility requires Docker, fixed seeds, and documented experimental steps.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "reproducibility requirements",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "Our model achieves state-of-the-art performance on the GLUE benchmark.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "SOTA benchmark performance",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "The confusion matrix revealed high recall but low precision for the minority class.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "confusion matrix analysis",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "Model warm-up prevents latency spikes when a new deployment starts receiving traffic.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "model warm-up",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "Chunking strategy critically affects retrieval quality — overlapping chunks work best.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "chunking strategy for RAG",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "The inference pipeline preprocesses input, runs the model, and postprocesses output.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "inference pipeline flow",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "Batch inference runs overnight; online inference serves predictions in real time.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "batch vs online inference",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "LLM orchestration frameworks chain model calls with tool use and retrieval steps.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "LLM orchestration",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "Raft elects a leader and replicates log entries across follower nodes.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "Raft consensus",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "Quorum writes require acknowledgment from a majority of replicas before confirming.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "quorum writes",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "Two-phase commit ensures all participating databases commit or all abort atomically.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "two-phase commit",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "Eventual consistency means stale reads are possible but data will converge over time.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "eventual consistency",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "The bulkhead pattern isolates thread pools so one service can't starve others.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "bulkhead pattern",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "Sliding window rate limiting allows bursts while enforcing an average rate over time.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "rate limiting",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "The HPA scales pods based on CPU utilization and custom Prometheus metrics.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "HPA autoscaling",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "A service mesh like Istio handles mTLS, routing, and observability transparently.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "service mesh",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "The BFF pattern creates a dedicated API gateway tailored to the mobile client's needs.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "BFF pattern",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "An SLA with 99.99% uptime comes with financial penalties for each minute of downtime.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "SLA penalty",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 40
+            },
+            {
+              "front": {
+                "text": "Confounding variables threaten the validity of our A/B test conclusions.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "confounding variable",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 41
+            },
+            {
+              "front": {
+                "text": "The ROC curve shows the trade-off between true positive and false positive rates.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "ROC curve interpretation",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 42
+            },
+            {
+              "front": {
+                "text": "AUC-ROC of 0.94 indicates excellent classifier discrimination.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "AUC-ROC metric",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 43
+            },
+            {
+              "front": {
+                "text": "Effect size measures the practical magnitude of the improvement, not just its significance.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "effect size",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 44
+            },
+            {
+              "front": {
+                "text": "The benchmark suite includes GLUE, SuperGLUE, MMLU, and HumanEval tasks.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "benchmark suites",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "C1",
+                "vocabulary",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "PHRASAL_VERBS",
+      "title": "Sophisticated Academic & Leadership Phrasal Verbs",
+      "description": "Advanced phrasal verbs for academic writing, nuanced professional communication, and leadership discourse — the vocabulary of technical leads, architects, and researchers.",
+      "sortOrder": 3,
+      "lessons": [
+        {
+          "title": "Sophisticated Academic Expressions",
+          "sortOrder": 1,
+          "estimatedMinutes": 12,
+          "xpReward": 20,
+          "description": "Master phrasal verbs that signal advanced academic and research writing proficiency.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "High-Register Academic Phrasal Verbs",
+              "body": {
+                "html": "<ul><li><b>hinge on</b> — to depend entirely on: The system's reliability <b>hinges on</b> the consistency of the event log.</li>\n<li><b>pertain to</b> — to relate to or be relevant to: The security concerns <b>pertain to</b> the authentication layer.</li>\n<li><b>revolve around</b> — to be centered on: The architecture <b>revolves around</b> event-driven communication.</li>\n<li><b>gravitate toward</b> — to be drawn naturally to: Engineers <b>gravitate toward</b> tools with strong community support.</li>\n<li><b>lend itself to</b> — to be suitable for: The problem <b>lends itself to</b> a graph-based solution.</li>\n<li><b>preclude from</b> — to prevent or make impossible: Tight coupling <b>precludes</b> the team <b>from</b> independent deployment.</li>\n<li><b>amount to</b> — to be equivalent to; to result in: The optimizations <b>amounted to</b> a 40% latency reduction.</li>\n<li><b>attributable to</b> — to be caused by: The improvement is <b>attributable to</b> the new caching strategy.</li></ul>",
+                "tips": [
+                  "'Hinge on' is stronger than 'depend on' — it implies a single critical factor.",
+                  "'Lend itself to' is elegant: 'This architecture lends itself to horizontal scaling.'",
+                  "'Pertain to' is more formal than 'relate to' or 'about'."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Hinge On",
+              "body": {
+                "question": "The success of the migration ___ the accuracy of the data validation script.",
+                "options": [
+                  "pertains to",
+                  "hinges on",
+                  "gravitates toward",
+                  "amounts to"
+                ],
+                "correct": 1,
+                "explanation": "'Hinge on' = depend entirely on. The migration's success depends critically on this one factor."
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 3,
+              "title": "Preclude From",
+              "body": {
+                "sentence": "The monolithic architecture ___ the team ___ deploying services independently.",
+                "answer": "precluded ... from",
+                "alternatives": [
+                  "prevents ... from"
+                ],
+                "explanation": "'Preclude from' = make impossible. Formal synonym for 'prevent'."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Nuanced Professional Communication",
+          "sortOrder": 2,
+          "estimatedMinutes": 12,
+          "xpReward": 20,
+          "description": "Phrasal verbs for handling delicate conversations, giving feedback, and navigating ambiguity with linguistic precision.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Subtle Communication Phrasal Verbs",
+              "body": {
+                "html": "<ul><li><b>allude to</b> — to refer to indirectly: The post-mortem <b>alludes to</b> organizational issues without naming them.</li>\n<li><b>dwell on</b> — to focus excessively on something negative: Let's not <b>dwell on</b> the failed approach — what did we learn?</li>\n<li><b>gloss over</b> — to treat superficially, skipping important details: The proposal <b>glosses over</b> the consistency implications.</li>\n<li><b>read into</b> — to interpret more meaning than intended: I wouldn't <b>read into</b> the slight latency increase — it's within noise.</li>\n<li><b>touch on</b> — to briefly mention: The design doc <b>touches on</b> security but doesn't go deep.</li>\n<li><b>veer away from</b> — to deliberately avoid a topic: The discussion <b>veered away from</b> the budget constraints.</li>\n<li><b>play down</b> — to make something seem less important: The vendor <b>played down</b> the outage's impact.</li>\n<li><b>concede to</b> — to reluctantly agree after resistance: After benchmarks, the team <b>conceded to</b> using Redis for caching.</li></ul>",
+                "tips": [
+                  "'Allude to' is indirect — the listener must infer. 'Refer to' is direct.",
+                  "'Gloss over' = skip important details. A red flag in design reviews.",
+                  "'Read into' = over-interpret. Important for data-driven discussions: stick to facts."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_FILLBLANK",
+              "sortOrder": 2,
+              "title": "Gloss Over",
+              "body": {
+                "sentence": "The architecture document ___ the failure modes, which concerns the SRE team.",
+                "answer": "glosses over",
+                "alternatives": [
+                  "glossed over"
+                ],
+                "explanation": "Gloss over = treat superficially, skipping crucial details. A critical phrase in design reviews."
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 3,
+              "title": "Allude To vs Refer To",
+              "body": {
+                "question": "When someone 'alludes to' an issue, they are ___.",
+                "options": [
+                  "directly naming it",
+                  "referring to it indirectly",
+                  "ignoring it completely",
+                  "solving it permanently"
+                ],
+                "correct": 1,
+                "explanation": "Allude to = refer to indirectly, hint at. More subtle than 'refer to' or 'mention'."
+              }
+            }
+          ]
+        },
+        {
+          "title": "Leadership & Strategy Phrasal Verbs",
+          "sortOrder": 3,
+          "estimatedMinutes": 12,
+          "xpReward": 20,
+          "description": "Phrasal verbs for leading teams, driving strategy, managing change, and communicating decisions.",
+          "content": [
+            {
+              "contentType": "EXPLANATION",
+              "sortOrder": 1,
+              "title": "Strategic Leadership Language",
+              "body": {
+                "html": "<ul><li><b>spearhead</b> — to lead or initiate (a project, initiative): She <b>spearheaded</b> the migration from monolith to microservices.</li>\n<li><b>phase in / phase out</b> — to introduce gradually / to remove gradually: We're <b>phasing out</b> the legacy API over two quarters.</li>\n<li><b>push through</b> — to force something to completion despite opposition: The CTO <b>pushed through</b> the controversial rewrite.</li>\n<li><b>cascade down</b> — to flow from top to bottom in an organization: Technical decisions <b>cascade down</b> from the architecture board.</li>\n<li><b>sign off on</b> — to give final authorization: The VP must <b>sign off on</b> architecture decisions affecting PII.</li>\n<li><b>buy into</b> — to accept and support an idea or strategy: Getting the team to <b>buy into</b> TDD took six months.</li>\n<li><b>weigh in on</b> — to give an opinion in a discussion: The principal engineer <b>weighed in on</b> the database choice.</li>\n<li><b>follow through on</b> — to complete something promised: We need to <b>follow through on</b> the tech debt commitments from last quarter.</li></ul>",
+                "tips": [
+                  "'Spearhead' = lead from the front. Implies active, visible leadership.",
+                  "'Phase in/out' = gradual change. Key for risk management: big bang = risky, phased = safe.",
+                  "'Buy into' = genuine acceptance, not just compliance. Critical for lasting organizational change."
+                ]
+              }
+            },
+            {
+              "contentType": "QUIZ_MCQ",
+              "sortOrder": 2,
+              "title": "Spearhead",
+              "body": {
+                "question": "She ___ the adoption of Kubernetes across all engineering teams.",
+                "options": [
+                  "phased out",
+                  "bought into",
+                  "spearheaded",
+                  "cascaded down"
+                ],
+                "correct": 2,
+                "explanation": "Spearhead = to lead or initiate. She actively led the K8s adoption initiative."
+              }
+            },
+            {
+              "contentType": "QUIZ_REORDER",
+              "sortOrder": 3,
+              "title": "Phase Out",
+              "body": {
+                "words": [
+                  "phasing",
+                  "we",
+                  "out",
+                  "are",
+                  "the",
+                  "legacy",
+                  "SOAP",
+                  "API"
+                ],
+                "correct": [
+                  "we",
+                  "are",
+                  "phasing",
+                  "out",
+                  "the",
+                  "legacy",
+                  "SOAP",
+                  "API"
+                ],
+                "translation": "We are phasing out the legacy SOAP API."
+              }
+            }
+          ]
+        }
+      ],
+      "flashcardDecks": [
+        {
+          "title": "C1 Advanced Phrasal Verbs",
+          "description": "20 sophisticated phrasal verbs for academic writing, nuanced communication, and leadership discourse.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "hinge on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To depend entirely on a single critical factor.",
+                "example": "The deal hinges on regulatory approval.",
+                "notes": "Stronger than 'depend on'. Implies a single decisive factor."
+              },
+              "tags": [
+                "phrasal-verb",
+                "academic",
+                "C1"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "pertain to",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To relate to or be relevant to. Formal.",
+                "example": "These findings pertain to all distributed systems.",
+                "notes": "More formal than 'about' or 'relate to'. Common in research."
+              },
+              "tags": [
+                "phrasal-verb",
+                "academic",
+                "C1"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "revolve around",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To be centered on; to have as the main focus.",
+                "example": "The architecture revolves around event-driven communication.",
+                "notes": "Common in describing system design and central concepts."
+              },
+              "tags": [
+                "phrasal-verb",
+                "academic",
+                "C1"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "gravitate toward",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To be naturally drawn to; to tend to choose.",
+                "example": "Engineers gravitate toward well-documented APIs.",
+                "notes": "Implies natural, organic preference rather than forced choice."
+              },
+              "tags": [
+                "phrasal-verb",
+                "academic",
+                "C1"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "lend itself to",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To be suitable for; to be naturally adapted to.",
+                "example": "The problem lends itself to a graph-based approach.",
+                "notes": "Elegant alternative to 'is suitable for'."
+              },
+              "tags": [
+                "phrasal-verb",
+                "academic",
+                "C1"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "preclude from",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To prevent or make impossible. Formal.",
+                "example": "Tight coupling precludes independent deployment.",
+                "notes": "Stronger than 'prevent'. Implies structural impossibility."
+              },
+              "tags": [
+                "phrasal-verb",
+                "academic",
+                "C1"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "allude to",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To refer to indirectly; to hint at without naming.",
+                "example": "The report alludes to cultural issues without specifics.",
+                "notes": "Subtler than 'refer to'. Listener must infer."
+              },
+              "tags": [
+                "phrasal-verb",
+                "communication",
+                "C1"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "dwell on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To focus excessively on something, usually negative.",
+                "example": "Don't dwell on the failure — focus on the learnings.",
+                "notes": "Often negative. 'Let's not dwell on...' is common in retrospectives."
+              },
+              "tags": [
+                "phrasal-verb",
+                "communication",
+                "C1"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "gloss over",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To treat superficially, skipping important details.",
+                "example": "The proposal glosses over data consistency.",
+                "notes": "Red flag in design reviews. Signals incomplete thinking."
+              },
+              "tags": [
+                "phrasal-verb",
+                "communication",
+                "C1"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "read into",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To interpret more meaning than intended or present.",
+                "example": "Don't read into the latency spike — it's within noise.",
+                "notes": "Over-interpretation. 'I wouldn't read into it' = it's not significant."
+              },
+              "tags": [
+                "phrasal-verb",
+                "communication",
+                "C1"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "touch on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To briefly mention a topic without going deep.",
+                "example": "The doc touches on security but needs more detail.",
+                "notes": "Useful for signaling awareness without full treatment."
+              },
+              "tags": [
+                "phrasal-verb",
+                "communication",
+                "C1"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "veer away from",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To deliberately avoid a topic or direction.",
+                "example": "The discussion veered away from budget constraints.",
+                "notes": "Implies intentional avoidance, often for political reasons."
+              },
+              "tags": [
+                "phrasal-verb",
+                "communication",
+                "C1"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "spearhead",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To lead or initiate a project, initiative, or movement.",
+                "example": "She spearheaded the cloud migration.",
+                "notes": "Active, visible leadership. 'Spearheaded by' is common in CVs and proposals."
+              },
+              "tags": [
+                "phrasal-verb",
+                "leadership",
+                "C1"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "phase in / phase out",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To introduce or remove gradually over time.",
+                "example": "We are phasing out the legacy API over two quarters.",
+                "notes": "Risk management: gradual change beats big bang."
+              },
+              "tags": [
+                "phrasal-verb",
+                "leadership",
+                "C1"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "push through",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To force something to completion despite resistance.",
+                "example": "The CTO pushed through the controversial rewrite.",
+                "notes": "Implies overcoming opposition. Can be positive or negative."
+              },
+              "tags": [
+                "phrasal-verb",
+                "leadership",
+                "C1"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "cascade down",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To flow from top to bottom in an organization.",
+                "example": "Architecture decisions cascade down from the board.",
+                "notes": "Describes how decisions and standards propagate."
+              },
+              "tags": [
+                "phrasal-verb",
+                "leadership",
+                "C1"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "buy into",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To genuinely accept and support an idea or strategy.",
+                "example": "Getting the team to buy into TDD took months.",
+                "notes": "Different from 'comply'. Buy-in = genuine belief and support."
+              },
+              "tags": [
+                "phrasal-verb",
+                "leadership",
+                "C1"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "weigh in on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To give an opinion in a discussion or debate.",
+                "example": "The principal engineer weighed in on the DB choice.",
+                "notes": "Implies authority or expertise. 'Could you weigh in?' is inviting an expert opinion."
+              },
+              "tags": [
+                "phrasal-verb",
+                "leadership",
+                "C1"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "follow through on",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To complete something promised or committed to.",
+                "example": "We must follow through on our tech debt commitments.",
+                "notes": "Key leadership competency. 'Following through' builds trust."
+              },
+              "tags": [
+                "phrasal-verb",
+                "leadership",
+                "C1"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "amount to",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "To be equivalent to; to result in a total of.",
+                "example": "The optimizations amounted to a 40% latency reduction.",
+                "notes": "Formal way to state results or conclusions."
+              },
+              "tags": [
+                "phrasal-verb",
+                "academic",
+                "C1"
+              ],
+              "sortOrder": 20
+            }
+          ]
+        },
+        {
+          "title": "C1 Phrasal Verbs in Action",
+          "description": "40 sentences demonstrating C1 phrasal verbs in professional, academic, and leadership contexts.",
+          "flashcards": [
+            {
+              "front": {
+                "text": "The system's reliability hinges on Kafka's exactly-once semantics.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "hinge on — depend entirely",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 1
+            },
+            {
+              "front": {
+                "text": "The security concerns pertain to the authentication and authorization layer.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "pertain to — relate to (formal)",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 2
+            },
+            {
+              "front": {
+                "text": "The entire architecture revolves around event-driven communication patterns.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "revolve around — be centered on",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 3
+            },
+            {
+              "front": {
+                "text": "Top engineers gravitate toward companies with strong engineering cultures.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "gravitate toward — be naturally drawn",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 4
+            },
+            {
+              "front": {
+                "text": "This problem lends itself to a graph-based solution using Neo4j.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "lend itself to — be suitable for",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 5
+            },
+            {
+              "front": {
+                "text": "Tight coupling between services precludes independent deployment.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "preclude from — make impossible",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 6
+            },
+            {
+              "front": {
+                "text": "The performance gains amount to a 50% reduction in P99 latency.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "amount to — result in",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 7
+            },
+            {
+              "front": {
+                "text": "The improvement is largely attributable to the new caching layer.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "attributable to — caused by",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 8
+            },
+            {
+              "front": {
+                "text": "The post-mortem alludes to organizational issues without naming specific teams.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "allude to — refer indirectly",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 9
+            },
+            {
+              "front": {
+                "text": "Let's not dwell on the failed approach — what did we learn from it?",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "dwell on — focus negatively",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 10
+            },
+            {
+              "front": {
+                "text": "The proposal glosses over the consistency implications of eventual consistency.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "gloss over — treat superficially",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 11
+            },
+            {
+              "front": {
+                "text": "I wouldn't read into that latency spike — it's within normal variance.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "read into — over-interpret",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 12
+            },
+            {
+              "front": {
+                "text": "The design doc touches on security but needs a dedicated threat model.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "touch on — briefly mention",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 13
+            },
+            {
+              "front": {
+                "text": "The discussion veered away from the budget implications of the proposed architecture.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "veer away from — avoid",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 14
+            },
+            {
+              "front": {
+                "text": "The vendor played down the severity of the data breach in their disclosure.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "play down — minimize",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 15
+            },
+            {
+              "front": {
+                "text": "After seeing the benchmarks, the team conceded to using Redis for caching.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "concede to — reluctantly agree",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 16
+            },
+            {
+              "front": {
+                "text": "She spearheaded the migration from a monolithic Rails app to Go microservices.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "spearhead — lead initiative",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 17
+            },
+            {
+              "front": {
+                "text": "We are phasing out the SOAP API over the next three quarters.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "phase out — remove gradually",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 18
+            },
+            {
+              "front": {
+                "text": "We are phasing in gRPC for all new internal service communication.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "phase in — introduce gradually",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 19
+            },
+            {
+              "front": {
+                "text": "The CTO pushed through the adoption of Rust despite initial resistance.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "push through — force to completion",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 20
+            },
+            {
+              "front": {
+                "text": "Architecture decisions cascade down from the technical steering committee.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "cascade down — flow top-down",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 21
+            },
+            {
+              "front": {
+                "text": "The VP of Engineering must sign off on any change affecting PII handling.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "sign off on — authorize",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 22
+            },
+            {
+              "front": {
+                "text": "Getting the entire organization to buy into DevOps took two years.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "buy into — genuinely accept",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 23
+            },
+            {
+              "front": {
+                "text": "The distinguished engineer weighed in on the database selection debate.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "weigh in on — give expert opinion",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 24
+            },
+            {
+              "front": {
+                "text": "We must follow through on our commitment to reduce tech debt by 20%.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "follow through on — complete promise",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 25
+            },
+            {
+              "front": {
+                "text": "The success of the project hinges on cross-team collaboration.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "hinge on in project context",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 26
+            },
+            {
+              "front": {
+                "text": "This regulation pertains to how we handle customer data across regions.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "pertain to in regulation context",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 27
+            },
+            {
+              "front": {
+                "text": "The research revolves around improving transformer efficiency for edge devices.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "revolve around in research",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 28
+            },
+            {
+              "front": {
+                "text": "New graduates often gravitate toward frontend before exploring backend.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "gravitate toward in career context",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 29
+            },
+            {
+              "front": {
+                "text": "The hexagonal architecture lends itself to testing business logic in isolation.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "lend itself to in architecture",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 30
+            },
+            {
+              "front": {
+                "text": "Technical constraints preclude us from using a purely serverless approach.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "preclude in technical constraints",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 31
+            },
+            {
+              "front": {
+                "text": "Don't dwell on the outage — focus on the resilience improvements we're making.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "dwell on in incident review",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 32
+            },
+            {
+              "front": {
+                "text": "The security review glossed over the threat of supply chain attacks.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "gloss over in security review",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 33
+            },
+            {
+              "front": {
+                "text": "I think you're reading into the metrics — the dip is seasonal, not alarming.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "read into in metrics analysis",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 34
+            },
+            {
+              "front": {
+                "text": "Let me touch on three architectural principles before we dive into the design.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "touch on in presentation",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 35
+            },
+            {
+              "front": {
+                "text": "The conversation veered away from the main topic toward team structure issues.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "veer away from in conversation",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 36
+            },
+            {
+              "front": {
+                "text": "She spearheaded the company-wide adoption of inner source practices.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "spearhead inner source",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 37
+            },
+            {
+              "front": {
+                "text": "We plan to phase out the legacy auth system in favor of OAuth 2.1.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "phase out legacy",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 38
+            },
+            {
+              "front": {
+                "text": "Getting leadership to buy into a four-month refactoring sprint was challenging.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "buy into refactoring",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 39
+            },
+            {
+              "front": {
+                "text": "The CISO weighed in on the encryption standards for our new data pipeline.",
+                "pronunciation": ""
+              },
+              "back": {
+                "text": "weigh in on encryption standards",
+                "example": "",
+                "notes": ""
+              },
+              "tags": [
+                "phrasal-verb",
+                "C1",
+                "advanced",
+                "context"
+              ],
+              "sortOrder": 40
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
