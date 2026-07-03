@@ -1,0 +1,178 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: KuraFlow-staging-postgres
+    environment:
+      POSTGRES_USER: KuraFlow
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: KuraFlow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-staging-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U KuraFlow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: KuraFlow-staging-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-staging-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.3
+    container_name: KuraFlow-staging-zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  kafka:
+    image: confluentinc/cp-kafka:7.5.3
+    container_name: KuraFlow-staging-kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    healthcheck:
+      test: ["CMD-SHELL", "kafka-broker-api-versions --bootstrap-server localhost:9092"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+
+  auth-service:
+    build: ./services/auth-service
+    container_name: KuraFlow-staging-auth
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/KuraFlow
+      SPRING_DATASOURCE_USERNAME: KuraFlow
+      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_DATA_REDIS_HOST: redis
+      JWT_SECRET: ${JWT_SECRET}
+
+  user-service:
+    build: ./services/user-service
+    container_name: KuraFlow-staging-user
+    depends_on:
+      postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/KuraFlow
+      SPRING_DATASOURCE_USERNAME: KuraFlow
+      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_KAFKA_CONSUMER_BOOTSTRAP_SERVERS: kafka:29092
+      JWT_SECRET: ${JWT_SECRET}
+      MAIL_PASSWORD: ${MAIL_PASSWORD:-password}
+      VAPID_PUBLIC_KEY: ${VAPID_PUBLIC_KEY:-}
+      VAPID_PRIVATE_KEY: ${VAPID_PRIVATE_KEY:-}
+      VAPID_SUBJECT: ${VAPID_SUBJECT:-mailto:admin@kuraflow.com}
+
+  content-service:
+    build: ./services/content-service
+    container_name: KuraFlow-staging-content
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8083:8083"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/KuraFlow
+      SPRING_DATASOURCE_USERNAME: KuraFlow
+      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_DATA_REDIS_HOST: redis
+
+  progress-service:
+    build: ./services/progress-service
+    container_name: KuraFlow-staging-progress
+    depends_on:
+      postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+    ports:
+      - "8084:8084"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/KuraFlow
+      SPRING_DATASOURCE_USERNAME: KuraFlow
+      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      JWT_SECRET: ${JWT_SECRET}
+
+  gamification-service:
+    build: ./services/gamification-service
+    container_name: KuraFlow-staging-gamification
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+    ports:
+      - "8085:8085"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/KuraFlow
+      SPRING_DATASOURCE_USERNAME: KuraFlow
+      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      APP_USER_SERVICE_BASE_URL: http://user-service:8082
+      JWT_SECRET: ${JWT_SECRET}
+
+  gateway-service:
+    build: ./services/gateway-service
+    container_name: KuraFlow-staging-gateway
+    depends_on:
+      - auth-service
+      - user-service
+      - content-service
+      - progress-service
+      - gamification-service
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: staging
+      SPRING_DATA_REDIS_HOST: redis
+      JWT_SECRET: ${JWT_SECRET}
+
+  frontend:
+    build: ./frontend
+    container_name: KuraFlow-staging-frontend
+    depends_on:
+      - gateway-service
+    ports:
+      - "3000:3000"
+
+volumes:
+  postgres-staging-data:
+  redis-staging-data:
