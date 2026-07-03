@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { Button } from '@/components/ui/Button';
 import { Card, CardContent, CardFooter } from '@/components/ui/Card';
@@ -123,7 +124,7 @@ export default function Home() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="secondary" className="card-action-btn">Start Review 🗂️</Button>
+              <Link href="/flashcards"><Button variant="secondary" className="card-action-btn">Start Review &#x1F5C2;&#xFE0F;</Button></Link>
             </CardFooter>
           </Card>
         </section>
@@ -131,8 +132,8 @@ export default function Home() {
         {/* Continue Learning Section */}
         <section className="continue-section">
           <div className="section-header">
-            <h2 className="section-title">Continue Learning</h2>
-            <Button variant="outline" size="sm">Browse All →</Button>
+              <h2 className="section-title">Continue Learning</h2>
+              <Link href="/lessons"><Button variant="outline" size="sm">Browse All →</Button></Link>
           </div>
           
           <div className="lessons-grid">

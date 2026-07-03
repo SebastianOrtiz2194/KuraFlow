@@ -12,6 +12,7 @@ spring:
     show-sql: true
     properties:
       hibernate:
+        default_schema: user_schema
         format_sql: true
         jdbc:
           time_zone: UTC
@@ -33,6 +34,11 @@ spring:
           starttls:
             enable: false
 
+management:
+  health:
+    mail:
+      enabled: false
+
 server:
   port: 8082
 
@@ -44,7 +50,6 @@ vapid:
   private.key: ${VAPID_PRIVATE_KEY}
   subject: ${VAPID_SUBJECT:mailto:admin@kuraflow.com}
 
-spring:
   kafka:
     consumer:
       bootstrap-servers: localhost:9092
