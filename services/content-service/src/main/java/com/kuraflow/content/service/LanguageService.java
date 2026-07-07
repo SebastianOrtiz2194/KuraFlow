@@ -17,7 +17,6 @@ public class LanguageService {
 
     private final LanguageRepository languageRepository;
 
-    @Cacheable(value = "languages")
     public List<LanguageResponse> getAllLanguages() {
         return languageRepository.findAll().stream()
                 .map(this::mapToResponse)
