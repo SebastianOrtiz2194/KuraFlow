@@ -1,5 +1,6 @@
 package com.kuraflow.content.controller;
 
+import com.kuraflow.content.dto.FlashcardDeckResponse;
 import com.kuraflow.content.dto.FlashcardResponse;
 import com.kuraflow.content.dto.PagedResponse;
 import com.kuraflow.content.service.FlashcardService;
@@ -9,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -41,5 +43,12 @@ public class FlashcardController {
     @Operation(summary = "Get flashcard by ID")
     public ResponseEntity<FlashcardResponse> getFlashcardById(@PathVariable UUID id) {
         return ResponseEntity.ok(flashcardService.getFlashcardById(id));
+    }
+
+    @GetMapping("/decks")
+    @Operation(summary = "Get flashcard decks by module")
+    public ResponseEntity<List<FlashcardDeckResponse>> getDecksByModule(
+            @RequestParam UUID moduleId) {
+        return ResponseEntity.ok(flashcardService.getDecksByModule(moduleId));
     }
 }
