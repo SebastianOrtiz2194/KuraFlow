@@ -1,4 +1,4 @@
-import { LeaderboardResponse, UserProfile, ActivityItem } from './types';
+import { LeaderboardResponse, UserProfile, ActivityItem, FlashcardDeckResponse, FlashcardResponse } from './types';
 
 export interface SaveProgressRequest {
   score: number;
@@ -98,4 +98,74 @@ export async function unfollowUser(targetId: string): Promise<void> {
     }
   });
   if (!response.ok) throw new Error('Failed to unfollow user');
+}
+
+export async function getFlashcardDecks(moduleId: string): Promise<FlashcardDeckResponse[]> {
+  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
+  const response = await fetch(`${contentUrl}/content/flashcards/decks?moduleId=${moduleId}`, {
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
+  if (!response.ok) throw new Error('Failed to fetch flashcard decks');
+  return response.json();
+}
+
+export async function getFlashcards(deckId: string): Promise<FlashcardResponse[]> {
+  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
+  const response = await fetch(`${contentUrl}/content/flashcards?deckId=${deckId}&pageSize=100`, {
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
+  if (!response.ok) throw new Error('Failed to fetch flashcards');
+  const data = await response.json();
+  return data.content || [];
+}
+
+export async function getLanguages(): Promise<import('./types').LanguageResponse[]> {
+  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
+  const response = await fetch(`${contentUrl}/content/languages`, {
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
+  if (!response.ok) throw new Error('Failed to fetch languages');
+  return response.json();
+}
+
+export async function getLevels(languageId: string): Promise<import('./types').LevelResponse[]> {
+  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
+  const response = await fetch(`${contentUrl}/content/levels?languageId=${languageId}`, {
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
+  if (!response.ok) throw new Error('Failed to fetch levels');
+  const data = await response.json();
+  return data.content || [];
+}
+
+export async function getModules(levelId: string): Promise<import('./types').ModuleResponse[]> {
+  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
+  const response = await fetch(`${contentUrl}/content/modules?levelId=${levelId}`, {
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
+  if (!response.ok) throw new Error('Failed to fetch modules');
+  const data = await response.json();
+  return data.content || [];
+}
+
+export async function getLessons(moduleId: string): Promise<import('./types').LessonResponse[]> {
+  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
+  const response = await fetch(`${contentUrl}/content/lessons?moduleId=${moduleId}`, {
+    headers: {
+      ...getAuthHeaders(),
+    }
+  });
+  if (!response.ok) throw new Error('Failed to fetch lessons');
+  const data = await response.json();
+  return data.content || [];
 }

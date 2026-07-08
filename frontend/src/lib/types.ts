@@ -123,6 +123,14 @@ export interface FlashcardResponse {
   tags: string[];
 }
 
+export interface FlashcardDeckResponse {
+  id: string;
+  moduleId: string;
+  title: string;
+  description: string;
+  cardCount: number;
+}
+
 export interface SrsCard {
   id: string;
   userId: string;

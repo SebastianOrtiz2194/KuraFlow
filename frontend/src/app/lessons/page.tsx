@@ -54,12 +54,17 @@ export default function LessonsPage() {
   const [loadingLevels, setLoadingLevels] = useState(false);
   const [loadingModules, setLoadingModules] = useState(false);
   const [loadingLessons, setLoadingLessons] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   // Fetch languages on mount
   useEffect(() => {
     setLoadingLanguages(true);
+    setError(null);
     fetch(`${API_BASE}/content/languages`, { headers: { ...getAuthHeaders() } })
-      .then(r => r.json())
+      .then(r => {
+        if (!r.ok) throw new Error(`Failed to load languages (${r.status})`);
+        return r.json();
+      })
       .then(data => {
         setLanguages(data);
         if (data && data.length > 0) {
@@ -69,7 +74,7 @@ export default function LessonsPage() {
           }
         }
       })
-      .catch(() => {})
+      .catch(err => setError(err.message || 'Failed to load languages'))
       .finally(() => setLoadingLanguages(false));
   }, []);
 
@@ -82,8 +87,12 @@ export default function LessonsPage() {
     setSelectedLevelId(null);
     setModules([]);
     setLessons([]);
+    setError(null);
     fetch(`${API_BASE}/content/levels?languageId=${selectedLang.id}`, { headers: { ...getAuthHeaders() } })
-      .then(r => r.json())
+      .then(r => {
+        if (!r.ok) throw new Error(`Failed to load levels (${r.status})`);
+        return r.json();
+      })
       .then(data => {
         const fetchedLevels = data.content || [];
         setLevels(fetchedLevels);
@@ -91,7 +100,7 @@ export default function LessonsPage() {
           setSelectedLevelId(fetchedLevels[0].id);
         }
       })
-      .catch(() => {})
+      .catch(err => setError(err.message || 'Failed to load levels'))
       .finally(() => setLoadingLevels(false));
   }, [selectedLang?.id]);
 
@@ -102,8 +111,12 @@ export default function LessonsPage() {
     setModules([]);
     setLessons([]);
     setSelectedModuleId(null);
+    setError(null);
     fetch(`${API_BASE}/content/modules?levelId=${selectedLevelId}`, { headers: { ...getAuthHeaders() } })
-      .then(r => r.json())
+      .then(r => {
+        if (!r.ok) throw new Error(`Failed to load modules (${r.status})`);
+        return r.json();
+      })
       .then(data => {
         const fetchedModules = data.content || [];
         setModules(fetchedModules);
@@ -111,7 +124,7 @@ export default function LessonsPage() {
           setSelectedModuleId(fetchedModules[0].id);
         }
       })
-      .catch(() => {})
+      .catch(err => setError(err.message || 'Failed to load modules'))
       .finally(() => setLoadingModules(false));
   }, [selectedLevelId]);
 
@@ -120,10 +133,14 @@ export default function LessonsPage() {
     if (!selectedModuleId) return;
     setLoadingLessons(true);
     setLessons([]);
+    setError(null);
     fetch(`${API_BASE}/content/lessons?moduleId=${selectedModuleId}`, { headers: { ...getAuthHeaders() } })
-      .then(r => r.json())
+      .then(r => {
+        if (!r.ok) throw new Error(`Failed to load lessons (${r.status})`);
+        return r.json();
+      })
       .then(data => setLessons(data.content || []))
-      .catch(() => {})
+      .catch(err => setError(err.message || 'Failed to load lessons'))
       .finally(() => setLoadingLessons(false));
   }, [selectedModuleId]);
 
@@ -134,11 +151,19 @@ export default function LessonsPage() {
   return (
     <MainLayout>
       <div className="lessons-page">
+        {error && (
+          <div className="lessons-error">
+            <p>{error}</p>
+          </div>
+        )}
+
         <header className="lessons-header">
           <h1>Lessons</h1>
           <div className="language-tabs">
             {loadingLanguages ? (
               <p style={{ color: 'var(--text-secondary)' }}>Loading languages...</p>
+            ) : languages.length === 0 ? (
+              <p style={{ color: 'var(--text-secondary)' }}>No languages available. Try logging in.</p>
             ) : (
               languages.map(lang => (
                 <button
