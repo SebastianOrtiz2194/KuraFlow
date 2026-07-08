@@ -63,7 +63,6 @@ public class FlashcardService {
         return mapToResponse(flashcard);
     }
 
-    @Cacheable(value = "flashcard-decks", key = "#moduleId")
     public List<FlashcardDeckResponse> getDecksByModule(UUID moduleId) {
         List<FlashcardDeck> decks = flashcardDeckRepository.findByModuleId(moduleId);
         return decks.stream()
