@@ -55,7 +55,10 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
 
     private boolean isSecured(ServerWebExchange exchange) {
         String path = exchange.getRequest().getURI().getPath();
-        return !path.startsWith("/api/auth/") && !path.contains("/v3/api-docs") && !path.contains("/swagger-ui");
+        return !path.startsWith("/api/auth/")
+                && !path.startsWith("/api/content/")
+                && !path.contains("/v3/api-docs")
+                && !path.contains("/swagger-ui");
     }
 
     private Mono<Void> onError(ServerWebExchange exchange, String err, HttpStatus httpStatus) {
