@@ -1,20 +1,180 @@
 .flashcards-page {
-  max-width: 800px;
-  margin: 0 auto;
+  padding: var(--spacing-6) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
 }
 
 .flashcards-header {
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-2);
 }
 
 .flashcards-header h1 {
-  font-size: 1.75rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .flashcards-header p {
   color: var(--text-secondary);
   margin-top: 0.25rem;
+}
+
+/* ---------- Language Tabs ---------- */
+.language-tabs {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-wrap: wrap;
+}
+
+.lang-tab {
+  padding: var(--spacing-2) var(--spacing-4);
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--muted-foreground);
+}
+
+.lang-tab:hover {
+  background-color: var(--accent);
+  color: var(--foreground);
+}
+
+.lang-tab.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-color: transparent;
+  color: #fff;
+}
+
+/* ---------- Levels ---------- */
+.levels-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.levels-section h2,
+.modules-section h2,
+.flashcards-decks-section h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--spacing-3);
+}
+
+.level-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-4);
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.level-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.level-card.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-color: transparent;
+  color: #fff;
+}
+
+.level-code {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.level-card.active .level-code {
+  color: #fff;
+}
+
+.level-name {
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+  font-weight: 500;
+  margin-top: var(--spacing-1);
+}
+
+.level-card.active .level-name {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ---------- Modules ---------- */
+.modules-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.module-card {
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.module-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.module-card.selected {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.module-type-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: var(--radius-md);
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+  margin-bottom: var(--spacing-2);
+}
+
+.module-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-1);
+}
+
+.module-desc {
+  font-size: 0.825rem;
+  color: var(--muted-foreground);
+  line-height: 1.4;
+}
+
+/* ---------- Decks ---------- */
+.flashcards-decks-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding-top: var(--spacing-4);
 }
 
 .deck-grid {
@@ -33,12 +193,20 @@
   font-size: 0.8rem;
   color: var(--text-secondary);
   margin-bottom: 0.75rem;
+  min-height: 2.25rem;
 }
 
 .deck-card .deck-meta {
   font-size: 0.75rem;
   color: var(--text-secondary);
   margin-bottom: 0.75rem;
+}
+
+/* ---------- Review Session ---------- */
+.review-session {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .review-progress {
@@ -48,6 +216,11 @@
   margin-bottom: 1.5rem;
   font-size: 0.875rem;
   color: var(--text-secondary);
+}
+
+.review-loading {
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
 .review-complete {
@@ -75,4 +248,44 @@
   display: flex;
   justify-content: center;
   gap: 0.75rem;
+}
+
+/* ---------- Skeleton / Loading ---------- */
+.skeleton-item {
+  background: linear-gradient(90deg, var(--border) 25%, var(--card) 50%, var(--border) 75%);
+  background-size: 200% 100%;
+  animation: loadingPulse 1.5s infinite;
+  border-radius: var(--radius-xl);
+}
+
+@keyframes loadingPulse {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeleton-level-card {
+  height: 90px;
+}
+
+.skeleton-module-card {
+  height: 140px;
+}
+
+.skeleton-deck-card {
+  height: 130px;
+}
+
+.loading-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.flashcards-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+  padding: var(--spacing-4);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  font-size: 0.9rem;
 }
