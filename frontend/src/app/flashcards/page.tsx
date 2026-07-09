@@ -30,15 +30,18 @@ export default function FlashcardsPage() {
   const [deckComplete, setDeckComplete] = useState(false);
 
   const [loadingLanguages, setLoadingLanguages] = useState(true);
-  const [loadingLevels, setLoadingLevels] = useState(false);
-  const [loadingModules, setLoadingModules] = useState(false);
-  const [loadingDecks, setLoadingDecks] = useState(false);
+  const [levelsLoadedFor, setLevelsLoadedFor] = useState<string | null>(null);
+  const [modulesLoadedFor, setModulesLoadedFor] = useState<string | null>(null);
+  const [decksLoadedFor, setDecksLoadedFor] = useState<string | null>(null);
   const [loadingFlashcards, setLoadingFlashcards] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  const selectedLang = languages.find(l => l.code === selectedLangCode);
+  const loadingLevels = !!selectedLang && levelsLoadedFor !== selectedLang.id;
+  const loadingModules = !!selectedLevelId && modulesLoadedFor !== selectedLevelId;
+  const loadingDecks = !!selectedModuleId && decksLoadedFor !== selectedModuleId;
+
   useEffect(() => {
-    setLoadingLanguages(true);
-    setError(null);
     getLanguages()
       .then(data => {
         setLanguages(data);
@@ -47,55 +50,68 @@ export default function FlashcardsPage() {
           if (!hasJa) setSelectedLangCode(data[0].code);
         }
       })
-      .catch(err => setError(err.message || 'Failed to load languages'))
+      .catch(() => setError('Failed to load languages'))
       .finally(() => setLoadingLanguages(false));
   }, []);
 
-  const selectedLang = languages.find(l => l.code === selectedLangCode);
-
   useEffect(() => {
-    if (!selectedLang) return;
-    setLoadingLevels(true);
-    setSelectedLevelId(null);
-    setModules([]);
-    setDecks([]);
-    setSelectedDeck(null);
-    setError(null);
-    getLevels(selectedLang.id)
+    const langId = selectedLang?.id;
+    if (!langId) return;
+    let cancelled = false;
+    getLevels(langId)
       .then(data => {
+        if (cancelled) return;
         setLevels(data);
-        if (data.length > 0) setSelectedLevelId(data[0].id);
+        setLevelsLoadedFor(langId);
+        setSelectedLevelId(data.length > 0 ? data[0].id : null);
+        setModules([]);
+        setDecks([]);
+        setSelectedDeck(null);
       })
-      .catch(() => setError('Failed to load levels'))
-      .finally(() => setLoadingLevels(false));
+      .catch(() => {
+        if (cancelled) return;
+        setError('Failed to load levels');
+        setLevelsLoadedFor(langId);
+      });
+    return () => { cancelled = true; };
   }, [selectedLang?.id]);
 
   useEffect(() => {
     if (!selectedLevelId) return;
-    setLoadingModules(true);
-    setModules([]);
-    setDecks([]);
-    setSelectedDeck(null);
-    setError(null);
+    let cancelled = false;
     getModules(selectedLevelId)
       .then(data => {
+        if (cancelled) return;
         setModules(data);
-        if (data.length > 0) setSelectedModuleId(data[0].id);
+        setModulesLoadedFor(selectedLevelId);
+        setSelectedModuleId(data.length > 0 ? data[0].id : null);
+        setDecks([]);
+        setSelectedDeck(null);
       })
-      .catch(() => setError('Failed to load modules'))
-      .finally(() => setLoadingModules(false));
+      .catch(() => {
+        if (cancelled) return;
+        setError('Failed to load modules');
+        setModulesLoadedFor(selectedLevelId);
+      });
+    return () => { cancelled = true; };
   }, [selectedLevelId]);
 
   useEffect(() => {
     if (!selectedModuleId) return;
-    setLoadingDecks(true);
-    setDecks([]);
-    setSelectedDeck(null);
-    setError(null);
+    let cancelled = false;
     getFlashcardDecks(selectedModuleId)
-      .then(data => setDecks(data))
-      .catch(() => setError('Failed to load decks'))
-      .finally(() => setLoadingDecks(false));
+      .then(data => {
+        if (cancelled) return;
+        setDecks(data);
+        setDecksLoadedFor(selectedModuleId);
+        setSelectedDeck(null);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setError('Failed to load decks');
+        setDecksLoadedFor(selectedModuleId);
+      });
+    return () => { cancelled = true; };
   }, [selectedModuleId]);
 
   const selectDeck = (deckId: string) => {
@@ -103,14 +119,13 @@ export default function FlashcardsPage() {
     setCurrentCardIndex(0);
     setDeckComplete(false);
     setLoadingFlashcards(true);
-    setError(null);
     getFlashcards(deckId)
       .then(data => setFlashcards(data))
       .catch(() => setError('Failed to load flashcards'))
       .finally(() => setLoadingFlashcards(false));
   };
 
-  const handleReview = (quality: number) => {
+  const handleReview = () => {
     if (currentCardIndex + 1 < flashcards.length) {
       setCurrentCardIndex(currentCardIndex + 1);
     } else {
@@ -130,7 +145,6 @@ export default function FlashcardsPage() {
   };
 
   const currentCard = flashcards[currentCardIndex];
-
   const showSelectors = !selectedDeck;
 
   return (
@@ -282,7 +296,7 @@ export default function FlashcardsPage() {
           </div>
         )}
 
-        {error && (
+        {error && !loadingLanguages && !loadingLevels && !loadingModules && !loadingDecks && (
           <div className="flashcards-error">
             <p>{error}</p>
           </div>

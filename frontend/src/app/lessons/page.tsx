@@ -49,17 +49,19 @@ export default function LessonsPage() {
   const [modules, setModules] = useState<Module[]>([]);
   const [selectedModuleId, setSelectedModuleId] = useState<string | null>(null);
   const [lessons, setLessons] = useState<Lesson[]>([]);
-  
+
   const [loadingLanguages, setLoadingLanguages] = useState(true);
-  const [loadingLevels, setLoadingLevels] = useState(false);
-  const [loadingModules, setLoadingModules] = useState(false);
-  const [loadingLessons, setLoadingLessons] = useState(false);
+  const [levelsLoadedFor, setLevelsLoadedFor] = useState<string | null>(null);
+  const [modulesLoadedFor, setModulesLoadedFor] = useState<string | null>(null);
+  const [lessonsLoadedFor, setLessonsLoadedFor] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  // Fetch languages on mount
+  const selectedLang = languages.find(l => l.code === selectedLangCode);
+  const loadingLevels = !!selectedLang && levelsLoadedFor !== selectedLang.id;
+  const loadingModules = !!selectedLevelId && modulesLoadedFor !== selectedLevelId;
+  const loadingLessons = !!selectedModuleId && lessonsLoadedFor !== selectedModuleId;
+
   useEffect(() => {
-    setLoadingLanguages(true);
-    setError(null);
     fetch(`${API_BASE}/content/languages`, { headers: { ...getAuthHeaders() } })
       .then(r => {
         if (!r.ok) throw new Error(`Failed to load languages (${r.status})`);
@@ -68,7 +70,7 @@ export default function LessonsPage() {
       .then(data => {
         setLanguages(data);
         if (data && data.length > 0) {
-          const hasJa = data.some((l: any) => l.code === 'ja');
+          const hasJa = data.some((l: Language) => l.code === 'ja');
           if (!hasJa) {
             setSelectedLangCode(data[0].code);
           }
@@ -78,70 +80,76 @@ export default function LessonsPage() {
       .finally(() => setLoadingLanguages(false));
   }, []);
 
-  const selectedLang = languages.find(l => l.code === selectedLangCode);
-
-  // Fetch levels when selected language changes
   useEffect(() => {
-    if (!selectedLang) return;
-    setLoadingLevels(true);
-    setSelectedLevelId(null);
-    setModules([]);
-    setLessons([]);
-    setError(null);
-    fetch(`${API_BASE}/content/levels?languageId=${selectedLang.id}`, { headers: { ...getAuthHeaders() } })
+    const langId = selectedLang?.id;
+    if (!langId) return;
+    let cancelled = false;
+    fetch(`${API_BASE}/content/levels?languageId=${langId}`, { headers: { ...getAuthHeaders() } })
       .then(r => {
         if (!r.ok) throw new Error(`Failed to load levels (${r.status})`);
         return r.json();
       })
       .then(data => {
+        if (cancelled) return;
         const fetchedLevels = data.content || [];
         setLevels(fetchedLevels);
-        if (fetchedLevels.length > 0) {
-          setSelectedLevelId(fetchedLevels[0].id);
-        }
+        setLevelsLoadedFor(langId);
+        setSelectedLevelId(fetchedLevels.length > 0 ? fetchedLevels[0].id : null);
+        setModules([]);
+        setLessons([]);
+        setSelectedModuleId(null);
       })
-      .catch(err => setError(err.message || 'Failed to load levels'))
-      .finally(() => setLoadingLevels(false));
+      .catch(err => {
+        if (cancelled) return;
+        setError(err.message || 'Failed to load levels');
+        setLevelsLoadedFor(langId);
+      });
+    return () => { cancelled = true; };
   }, [selectedLang?.id]);
 
-  // Fetch modules when selected level changes
   useEffect(() => {
     if (!selectedLevelId) return;
-    setLoadingModules(true);
-    setModules([]);
-    setLessons([]);
-    setSelectedModuleId(null);
-    setError(null);
+    let cancelled = false;
     fetch(`${API_BASE}/content/modules?levelId=${selectedLevelId}`, { headers: { ...getAuthHeaders() } })
       .then(r => {
         if (!r.ok) throw new Error(`Failed to load modules (${r.status})`);
         return r.json();
       })
       .then(data => {
+        if (cancelled) return;
         const fetchedModules = data.content || [];
         setModules(fetchedModules);
-        if (fetchedModules.length > 0) {
-          setSelectedModuleId(fetchedModules[0].id);
-        }
+        setModulesLoadedFor(selectedLevelId);
+        setSelectedModuleId(fetchedModules.length > 0 ? fetchedModules[0].id : null);
+        setLessons([]);
       })
-      .catch(err => setError(err.message || 'Failed to load modules'))
-      .finally(() => setLoadingModules(false));
+      .catch(err => {
+        if (cancelled) return;
+        setError(err.message || 'Failed to load modules');
+        setModulesLoadedFor(selectedLevelId);
+      });
+    return () => { cancelled = true; };
   }, [selectedLevelId]);
 
-  // Fetch lessons when selected module changes
   useEffect(() => {
     if (!selectedModuleId) return;
-    setLoadingLessons(true);
-    setLessons([]);
-    setError(null);
+    let cancelled = false;
     fetch(`${API_BASE}/content/lessons?moduleId=${selectedModuleId}`, { headers: { ...getAuthHeaders() } })
       .then(r => {
         if (!r.ok) throw new Error(`Failed to load lessons (${r.status})`);
         return r.json();
       })
-      .then(data => setLessons(data.content || []))
-      .catch(err => setError(err.message || 'Failed to load lessons'))
-      .finally(() => setLoadingLessons(false));
+      .then(data => {
+        if (cancelled) return;
+        setLessons(data.content || []);
+        setLessonsLoadedFor(selectedModuleId);
+      })
+      .catch(err => {
+        if (cancelled) return;
+        setError(err.message || 'Failed to load lessons');
+        setLessonsLoadedFor(selectedModuleId);
+      });
+    return () => { cancelled = true; };
   }, [selectedModuleId]);
 
   const handleModuleClick = (moduleId: string) => {
@@ -151,7 +159,7 @@ export default function LessonsPage() {
   return (
     <MainLayout>
       <div className="lessons-page">
-        {error && (
+        {error && !loadingLanguages && !loadingLevels && !loadingModules && !loadingLessons && (
           <div className="lessons-error">
             <p>{error}</p>
           </div>
@@ -163,7 +171,7 @@ export default function LessonsPage() {
             {loadingLanguages ? (
               <p style={{ color: 'var(--text-secondary)' }}>Loading languages...</p>
             ) : languages.length === 0 ? (
-              <p style={{ color: 'var(--text-secondary)' }}>No languages available. Try logging in.</p>
+              <p style={{ color: 'var(--text-secondary)' }}>No languages available.</p>
             ) : (
               languages.map(lang => (
                 <button
@@ -178,7 +186,6 @@ export default function LessonsPage() {
           </div>
         </header>
 
-        {/* Levels Section */}
         <section className="levels-section">
           <h2>Levels</h2>
           {loadingLevels ? (
@@ -205,7 +212,6 @@ export default function LessonsPage() {
           )}
         </section>
 
-        {/* Modules Section */}
         {(loadingModules || modules.length > 0) && (
           <section className="modules-section">
             <h2>Modules</h2>
@@ -218,8 +224,8 @@ export default function LessonsPage() {
             ) : (
               <div className="modules-grid">
                 {modules.map(mod => (
-                  <Card 
-                    key={mod.id} 
+                  <Card
+                    key={mod.id}
                     className={`module-card ${selectedModuleId === mod.id ? 'selected' : ''}`}
                     onClick={() => handleModuleClick(mod.id)}
                   >
@@ -228,8 +234,8 @@ export default function LessonsPage() {
                       <h3 className="module-title">{mod.title}</h3>
                       <p className="module-desc">{mod.description}</p>
                       <div className="module-footer">
-                        <Button 
-                          variant={selectedModuleId === mod.id ? 'primary' : 'outline'} 
+                        <Button
+                          variant={selectedModuleId === mod.id ? 'primary' : 'outline'}
                           size="sm"
                           onClick={(e) => {
                             e.stopPropagation();
@@ -247,7 +253,6 @@ export default function LessonsPage() {
           </section>
         )}
 
-        {/* Lessons Section */}
         {(loadingLessons || lessons.length > 0) && (
           <section className="lesson-list-section">
             <h2>Lessons</h2>

@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { Button } from '@/components/ui/Button';
 import { getAuthHeaders } from '@/lib/api';
-import { LessonContentResponse } from '@/lib/types';
+import { LessonContentResponse, LessonDetailResponse, ExplanationBody, ExampleBody, MCQBody, FillInTheBlankBody } from '@/lib/types';
 import './lesson.css';
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
@@ -15,7 +15,7 @@ export default function LessonDetailPage() {
   const params = useParams();
   const lessonId = params?.lessonId as string;
 
-  const [lesson, setLesson] = useState<any>(null);
+  const [lesson, setLesson] = useState<LessonDetailResponse | null>(null);
   const [contents, setContents] = useState<LessonContentResponse[]>([]);
   const [currentStep, setCurrentStep] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -72,10 +72,9 @@ export default function LessonDetailPage() {
   const total = contents.length;
 
   const renderContent = (item: LessonContentResponse) => {
-    const body = item.body as any;
-
     switch (item.contentType) {
-      case 'EXPLANATION':
+      case 'EXPLANATION': {
+        const body = item.body as ExplanationBody;
         return (
           <div className="lesson-explanation">
             {item.title && <h3>{item.title}</h3>}
@@ -92,8 +91,10 @@ export default function LessonDetailPage() {
             )}
           </div>
         );
+      }
 
-      case 'EXAMPLE':
+      case 'EXAMPLE': {
+        const body = item.body as ExampleBody;
         return (
           <div className="lesson-example">
             {item.title && <h3>{item.title}</h3>}
@@ -103,36 +104,42 @@ export default function LessonDetailPage() {
             {body.notes && <p className="example-notes">{body.notes}</p>}
           </div>
         );
+      }
 
-      case 'QUIZ_MCQ':
+      case 'QUIZ_MCQ': {
+        const body = item.body as MCQBody;
         return (
           <div className="lesson-quiz">
             {item.title && <h3>{item.title}</h3>}
             <p className="quiz-question">{body.question}</p>
             <div className="quiz-options">
-              {(body.options as string[] || []).map((opt: string, i: number) => (
+              {(body.options || []).map((opt: string, i: number) => (
                 <button key={i} className="quiz-option">{opt}</button>
               ))}
             </div>
             {body.explanation && <p className="quiz-explanation">{body.explanation}</p>}
           </div>
         );
+      }
 
-      case 'QUIZ_REORDER':
+      case 'QUIZ_REORDER': {
+        const body = item.body as { words: string[]; translation: string; correct: string[] };
         return (
           <div className="lesson-quiz">
             {item.title && <h3>{item.title}</h3>}
             <p className="quiz-question">Arrange the words to form a sentence:</p>
             <div className="quiz-options">
-              {(body.words as string[] || []).map((word: string, i: number) => (
+              {(body.words || []).map((word: string, i: number) => (
                 <button key={i} className="quiz-option">{word}</button>
               ))}
             </div>
             {body.translation && <p className="quiz-translation">Translation: {body.translation}</p>}
           </div>
         );
+      }
 
-      case 'QUIZ_FILLBLANK':
+      case 'QUIZ_FILLBLANK': {
+        const body = item.body as FillInTheBlankBody;
         return (
           <div className="lesson-quiz">
             {item.title && <h3>{item.title}</h3>}
@@ -140,6 +147,7 @@ export default function LessonDetailPage() {
             {body.explanation && <p className="quiz-explanation">{body.explanation}</p>}
           </div>
         );
+      }
 
       default:
         return <p>Content type: {item.contentType}</p>;
