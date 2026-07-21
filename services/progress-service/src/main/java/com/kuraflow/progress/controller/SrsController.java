@@ -3,16 +3,18 @@ package com.kuraflow.progress.controller;
 import com.kuraflow.progress.dto.SrsReviewRequest;
 import com.kuraflow.progress.entity.SrsCard;
 import com.kuraflow.progress.service.SrsService;
+import com.kuraflow.shared.security.CustomUserDetails;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/v1/srs")
+@RequestMapping("/api/progress/srs")
 @RequiredArgsConstructor
 public class SrsController {
 
@@ -20,19 +22,19 @@ public class SrsController {
 
     @PostMapping("/cards/{flashcardId}/review")
     public ResponseEntity<SrsCard> reviewCard(
-            @RequestHeader("X-User-Id") UUID userId,
+            @AuthenticationPrincipal CustomUserDetails userDetails,
             @PathVariable UUID flashcardId,
             @Valid @RequestBody SrsReviewRequest request) {
 
-        SrsCard card = srsService.reviewCard(userId, flashcardId, request);
+        SrsCard card = srsService.reviewCard(userDetails.getId(), flashcardId, request);
         return ResponseEntity.ok(card);
     }
 
     @GetMapping("/cards/due")
     public ResponseEntity<List<SrsCard>> getDueCards(
-            @RequestHeader("X-User-Id") UUID userId) {
+            @AuthenticationPrincipal CustomUserDetails userDetails) {
 
-        List<SrsCard> dueCards = srsService.getDueCards(userId);
+        List<SrsCard> dueCards = srsService.getDueCards(userDetails.getId());
         return ResponseEntity.ok(dueCards);
     }
 }
