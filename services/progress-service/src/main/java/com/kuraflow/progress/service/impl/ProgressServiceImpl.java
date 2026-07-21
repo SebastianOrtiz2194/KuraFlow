@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.OffsetDateTime;
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -62,5 +63,11 @@ public class ProgressServiceImpl implements ProgressService {
                         .attempts(0)
                         .xpEarned(0)
                         .build());
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<UserProgress> getUserProgressList(UUID userId) {
+        return userProgressRepository.findByUserId(userId);
     }
 }

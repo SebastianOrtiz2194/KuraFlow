@@ -11,6 +11,7 @@ import {
   getModules,
   getFlashcardDecks,
   getFlashcards,
+  reviewSrsCard,
 } from '@/lib/api';
 import { FlashcardResponse, FlashcardDeckResponse, LanguageResponse, LevelResponse, ModuleResponse } from '@/lib/types';
 import './flashcards.css';
@@ -125,7 +126,14 @@ export default function FlashcardsPage() {
       .finally(() => setLoadingFlashcards(false));
   };
 
-  const handleReview = () => {
+  const handleReview = (quality: number) => {
+    const card = flashcards[currentCardIndex];
+    if (card) {
+      reviewSrsCard(card.id, quality).catch(err => {
+        console.error('Failed to submit review:', err);
+      });
+    }
+
     if (currentCardIndex + 1 < flashcards.length) {
       setCurrentCardIndex(currentCardIndex + 1);
     } else {
