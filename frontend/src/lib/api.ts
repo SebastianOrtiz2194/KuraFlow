@@ -5,7 +5,32 @@ export interface SaveProgressRequest {
   xpEarned: number;
 }
 
-const API_V1_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api/v1';
+export interface UserProgressItem {
+  id: string;
+  userId: string;
+  lessonId: string;
+  status: string;
+  score: number | null;
+  attempts: number;
+  xpEarned: number;
+  startedAt: string | null;
+  completedAt: string | null;
+  lastAccessed: string | null;
+}
+
+export interface SrsDueCard {
+  id: string;
+  userId: string;
+  flashcardId: string;
+  easeFactor: number;
+  intervalDays: number;
+  repetitions: number;
+  nextReview: string;
+  lastReviewed: string | null;
+  status: string;
+}
+
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
 const GAMIFICATION_URL = process.env.NEXT_PUBLIC_GAMIFICATION_URL || 'http://localhost:8080/api/gamification';
 const USERS_URL = process.env.NEXT_PUBLIC_USERS_URL || 'http://localhost:8080/api/users';
 
@@ -23,7 +48,7 @@ export function getAuthHeaders(): Record<string, string> {
 
 export async function saveLessonProgress(lessonId: string, data: SaveProgressRequest): Promise<void> {
   try {
-    const response = await fetch(`${API_V1_URL}/progress/lessons/${lessonId}`, {
+    const response = await fetch(`${API_BASE_URL}/progress/lessons/${lessonId}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -38,6 +63,39 @@ export async function saveLessonProgress(lessonId: string, data: SaveProgressReq
   } catch (error) {
     console.error('Error saving progress:', error);
   }
+}
+
+export async function getUserProgressList(): Promise<UserProgressItem[]> {
+  const response = await fetch(`${API_BASE_URL}/progress`, {
+    headers: {
+      ...getAuthHeaders(),
+    },
+  });
+  if (!response.ok) throw new Error('Failed to fetch user progress');
+  return response.json();
+}
+
+export async function getSrsDueCards(): Promise<SrsDueCard[]> {
+  const response = await fetch(`${API_BASE_URL}/progress/srs/cards/due`, {
+    headers: {
+      ...getAuthHeaders(),
+    },
+  });
+  if (!response.ok) throw new Error('Failed to fetch SRS due cards');
+  return response.json();
+}
+
+export async function reviewSrsCard(flashcardId: string, quality: number): Promise<SrsDueCard> {
+  const response = await fetch(`${API_BASE_URL}/progress/srs/cards/${flashcardId}/review`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      ...getAuthHeaders(),
+    },
+    body: JSON.stringify({ quality }),
+  });
+  if (!response.ok) throw new Error('Failed to review SRS card');
+  return response.json();
 }
 
 export async function getLeaderboard(type: 'weekly' | 'alltime' | 'friends'): Promise<LeaderboardResponse> {
@@ -101,8 +159,7 @@ export async function unfollowUser(targetId: string): Promise<void> {
 }
 
 export async function getFlashcardDecks(moduleId: string): Promise<FlashcardDeckResponse[]> {
-  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
-  const response = await fetch(`${contentUrl}/content/flashcards/decks?moduleId=${moduleId}`, {
+  const response = await fetch(`${API_BASE_URL}/content/flashcards/decks?moduleId=${moduleId}`, {
     headers: {
       ...getAuthHeaders(),
     }
@@ -112,8 +169,7 @@ export async function getFlashcardDecks(moduleId: string): Promise<FlashcardDeck
 }
 
 export async function getFlashcards(deckId: string): Promise<FlashcardResponse[]> {
-  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
-  const response = await fetch(`${contentUrl}/content/flashcards?deckId=${deckId}&pageSize=100`, {
+  const response = await fetch(`${API_BASE_URL}/content/flashcards?deckId=${deckId}&pageSize=100`, {
     headers: {
       ...getAuthHeaders(),
     }
@@ -124,8 +180,7 @@ export async function getFlashcards(deckId: string): Promise<FlashcardResponse[]
 }
 
 export async function getLanguages(): Promise<import('./types').LanguageResponse[]> {
-  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
-  const response = await fetch(`${contentUrl}/content/languages`, {
+  const response = await fetch(`${API_BASE_URL}/content/languages`, {
     headers: {
       ...getAuthHeaders(),
     }
@@ -135,8 +190,7 @@ export async function getLanguages(): Promise<import('./types').LanguageResponse
 }
 
 export async function getLevels(languageId: string): Promise<import('./types').LevelResponse[]> {
-  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
-  const response = await fetch(`${contentUrl}/content/levels?languageId=${languageId}`, {
+  const response = await fetch(`${API_BASE_URL}/content/levels?languageId=${languageId}`, {
     headers: {
       ...getAuthHeaders(),
     }
@@ -147,8 +201,7 @@ export async function getLevels(languageId: string): Promise<import('./types').L
 }
 
 export async function getModules(levelId: string): Promise<import('./types').ModuleResponse[]> {
-  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
-  const response = await fetch(`${contentUrl}/content/modules?levelId=${levelId}`, {
+  const response = await fetch(`${API_BASE_URL}/content/modules?levelId=${levelId}`, {
     headers: {
       ...getAuthHeaders(),
     }
@@ -159,8 +212,7 @@ export async function getModules(levelId: string): Promise<import('./types').Mod
 }
 
 export async function getLessons(moduleId: string): Promise<import('./types').LessonResponse[]> {
-  const contentUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
-  const response = await fetch(`${contentUrl}/content/lessons?moduleId=${moduleId}`, {
+  const response = await fetch(`${API_BASE_URL}/content/lessons?moduleId=${moduleId}`, {
     headers: {
       ...getAuthHeaders(),
     }
