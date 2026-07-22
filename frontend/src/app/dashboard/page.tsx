@@ -75,16 +75,22 @@ export default function Home() {
           // SRS cards not available yet — no problem
         }
 
-        // Fetch content hierarchy: languages → levels → modules → lessons
+        // Fetch content hierarchy based on user's selected learning language preference
         let activeLevel: LevelResponse | null = null;
         let modules: ModuleResponse[] = [];
         let lessons: LessonResponse[] = [];
 
         try {
+          const savedLangPref = typeof window !== 'undefined' ? localStorage.getItem('kuraflow_learning_language') : null;
+          let targetLangCode = 'ja';
+          if (savedLangPref && savedLangPref.toLowerCase().includes('english')) {
+            targetLangCode = 'en';
+          }
+
           const languages = await getLanguages();
-          const jaLang = languages.find(l => l.code === 'ja') || languages[0];
-          if (jaLang) {
-            const levels = await getLevels(jaLang.id);
+          const activeLang = languages.find(l => l.code === targetLangCode) || languages[0];
+          if (activeLang) {
+            const levels = await getLevels(activeLang.id);
             if (levels.length > 0) {
               // Use user's currentLevelId if available, otherwise first level
               if (userInfo?.currentLevelId) {
@@ -95,15 +101,17 @@ export default function Home() {
 
               if (activeLevel) {
                 modules = await getModules(activeLevel.id);
-                // Load lessons from the first module (the active one)
+                // Load lessons across active modules to form learning queue
                 if (modules.length > 0) {
-                  lessons = await getLessons(modules[0].id);
+                  const lessonPromises = modules.slice(0, 3).map(m => getLessons(m.id).catch(() => []));
+                  const loadedArrays = await Promise.all(lessonPromises);
+                  lessons = loadedArrays.flat();
                 }
               }
             }
           }
-        } catch {
-          // Content loading failed — dashboard still shows profile data
+        } catch (err) {
+          console.error('Content loading failed:', err);
         }
 
         setData({
@@ -179,18 +187,30 @@ export default function Home() {
   const totalXp = profile?.totalXp ?? 0;
   const totalLessonsCompleted = profile?.totalLessonsCompleted ?? 0;
 
-  // Calculate daily goal: count today's completed activities
+  // Calculate daily goal dynamically based on user setting in localStorage
+  const configuredGoalStr = typeof window !== 'undefined' ? localStorage.getItem('kuraflow_daily_xp_goal') : null;
+  const dailyXpGoal = configuredGoalStr ? parseInt(configuredGoalStr, 10) : 50;
+
   const todayStr = new Date().toISOString().slice(0, 10);
-  const todayLessons = activities.filter(
-    a => a.type === 'LESSON_COMPLETED' && a.timestamp.slice(0, 10) === todayStr
-  ).length;
-  const dailyGoal = 5;
-  const dailyProgress = Math.min(Math.round((todayLessons / dailyGoal) * 100), 100);
+  const todayActivities = activities.filter(
+    a => a.timestamp && a.timestamp.slice(0, 10) === todayStr
+  );
+  const todayXpEarned = todayActivities.reduce((sum, a) => sum + (a.xpEarned || 0), 0);
+  const todayLessonsCount = todayActivities.filter(a => a.type === 'LESSON_COMPLETED').length;
+
+  const dailyProgress = Math.min(Math.round((todayXpEarned / dailyXpGoal) * 100), 100);
 
   // Get completed lesson IDs for progress tracking
   const completedLessonIds = new Set(
     progressList.filter(p => p.status === 'COMPLETED').map(p => p.lessonId)
   );
+
+  // Sort lessons to show uncompleted lessons first
+  const sortedLessons = [...lessons].sort((a, b) => {
+    const aDone = completedLessonIds.has(a.id) ? 1 : 0;
+    const bDone = completedLessonIds.has(b.id) ? 1 : 0;
+    return aDone - bDone;
+  });
 
   // SRS stats
   const srsDueCount = srsDueCards.length;
@@ -287,11 +307,11 @@ export default function Home() {
               <p className="card-description">
                 {dailyProgress >= 100
                   ? 'You hit your daily target! Great job!'
-                  : `Complete ${dailyGoal - todayLessons} more lesson${dailyGoal - todayLessons !== 1 ? 's' : ''} to hit your daily target.`}
+                  : `Earn ${Math.max(0, dailyXpGoal - todayXpEarned)} more XP today to hit your ${dailyXpGoal} XP target.`}
               </p>
               <div className="progress-section">
                 <div className="progress-meta">
-                  <span>{todayLessons} / {dailyGoal} lessons</span>
+                  <span>{todayXpEarned} / {dailyXpGoal} XP ({todayLessonsCount} lesson{todayLessonsCount !== 1 ? 's' : ''})</span>
                   <span className="progress-percentage">{dailyProgress}%</span>
                 </div>
                 <ProgressBar value={dailyProgress} variant="primary" size="md" />
@@ -312,8 +332,8 @@ export default function Home() {
                   <div className="card-icon-circle card-icon-secondary">🇯🇵</div>
                   <Badge variant="primary">{activeLevel.code}</Badge>
                 </div>
-                <h3 className="card-title">Japanese</h3>
-                <p className="card-description">{activeLevel.name} &middot; JLPT {activeLevel.code}</p>
+                <h3 className="card-title">{activeLevel.name || 'Level Track'}</h3>
+                <p className="card-description">{activeLevel.description || `Level ${activeLevel.code}`}</p>
                 <div className="level-details">
                   <div className="level-modules">
                     {modules.map((mod, i) => (
@@ -373,7 +393,7 @@ export default function Home() {
         </section>
 
         {/* Continue Learning Section */}
-        {lessons.length > 0 && (
+        {sortedLessons.length > 0 && (
           <section className="continue-section">
             <div className="section-header">
               <h2 className="section-title">Continue Learning</h2>
@@ -381,7 +401,7 @@ export default function Home() {
             </div>
 
             <div className="lessons-grid">
-              {lessons.slice(0, 3).map((lesson, i) => {
+              {sortedLessons.slice(0, 3).map((lesson, i) => {
                 const isCompleted = completedLessonIds.has(lesson.id);
                 const progressEntry = progressList.find(p => p.lessonId === lesson.id);
                 const lessonProgress = isCompleted ? 100 : progressEntry ? 50 : 0;
