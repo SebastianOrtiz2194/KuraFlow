@@ -40,6 +40,7 @@
   --surface-hover: #f8fafc;
   --surface-border: var(--border);
   --border-color: var(--border);
+  --card-bg: var(--card);
   --danger-color: var(--accent);
   --bg-color: var(--background);
   --primary-light: #e8f4fd;
@@ -114,6 +115,11 @@
   --surface-secondary: #1e293b;
   --surface-hover: #1e293b;
   --surface-border: #334155;
+  --border-color: #1e293b;
+  --card-bg: #0f172a;
+  --primary-color: var(--primary);
+  --text-primary: var(--foreground);
+  --text-secondary: var(--muted-foreground);
 
   --danger: #f87171;
   --danger-light: rgba(239, 68, 68, 0.15);
