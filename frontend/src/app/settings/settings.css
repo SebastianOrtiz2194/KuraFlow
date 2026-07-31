@@ -110,6 +110,67 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Dark Mode Color Overrides */
+[data-theme='dark'] .setting-item {
+  background: var(--card-bg, #0f172a);
+  border-color: var(--border-color, #1e293b);
+  color: var(--foreground, #f8fafc);
+}
+
+[data-theme='dark'] .setting-item h3 {
+  color: var(--foreground, #f8fafc);
+}
+
+[data-theme='dark'] .setting-item p,
+[data-theme='dark'] .settings-subtitle,
+[data-theme='dark'] .modal-subtitle,
+[data-theme='dark'] .config-desc,
+[data-theme='dark'] .goal-desc {
+  color: var(--muted-foreground, #94a3b8);
+}
+
+[data-theme='dark'] .setting-icon {
+  background: var(--muted, #1e293b);
+  color: var(--foreground, #f8fafc);
+}
+
+[data-theme='dark'] .theme-toggle-group {
+  background: var(--muted, #1e293b);
+}
+
+[data-theme='dark'] .theme-btn {
+  color: var(--muted-foreground, #94a3b8);
+}
+
+[data-theme='dark'] .theme-btn.active {
+  background: var(--primary, #818cf8);
+  color: #0f172a;
+}
+
+[data-theme='dark'] .settings-modal {
+  background: var(--card-bg, #0f172a);
+  border-color: var(--border-color, #1e293b);
+  color: var(--foreground, #f8fafc);
+}
+
+[data-theme='dark'] .settings-modal-header,
+[data-theme='dark'] .settings-modal-footer {
+  border-color: var(--border-color, #1e293b);
+  background: var(--muted, #1e293b);
+}
+
+[data-theme='dark'] .goal-option-card,
+[data-theme='dark'] .lang-option-item {
+  border-color: var(--border-color, #1e293b);
+  color: var(--foreground, #f8fafc);
+}
+
+[data-theme='dark'] .goal-option-card.selected,
+[data-theme='dark'] .lang-option-item.selected {
+  background: rgba(129, 140, 248, 0.15);
+  border-color: var(--primary, #818cf8);
+}
+
 /* Settings Modal */
 .settings-modal-overlay {
   position: fixed;
