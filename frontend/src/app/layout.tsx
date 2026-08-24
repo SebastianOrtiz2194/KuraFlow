@@ -51,6 +51,7 @@ export const viewport: Viewport = {
 };
 
 import { ToastProvider } from "@/components/ui/Toast";
+import { UserProvider } from "@/context/UserContext";
 
 export default function RootLayout({
   children,
@@ -61,7 +62,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${notoSansJP.variable} antialiased`}>
         <ToastProvider>
-          {children}
+          <UserProvider>
+            {children}
+          </UserProvider>
         </ToastProvider>
       </body>
     </html>

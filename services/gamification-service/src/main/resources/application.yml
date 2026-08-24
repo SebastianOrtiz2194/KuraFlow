@@ -4,7 +4,7 @@ spring:
   datasource:
     url: ${DB_URL:jdbc:postgresql://localhost:5432/KuraFlow}
     username: ${DB_USERNAME:KuraFlow}
-    password: ${DB_PASSWORD}
+    password: ${DB_PASSWORD:}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -17,14 +17,14 @@ spring:
     create-schemas: true
 
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
     consumer:
       group-id: gamification-group
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        spring.json.trusted.packages: "com.kuraflow.shared.events"
+        spring.json.trusted.packages: "*"
         spring.json.type.mapping: lessonCompleted:com.kuraflow.shared.events.LessonCompletedEvent,reviewCompleted:com.kuraflow.shared.events.ReviewCompletedEvent
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
@@ -32,8 +32,8 @@ spring:
 
   data:
     redis:
-      host: localhost
-      port: 6379
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
 
 server:
   port: 8085
@@ -44,6 +44,8 @@ app:
     topics:
       lesson-completed: lesson.completed
       review-completed: review.completed
+      streak-updated: streak.updated
+      badge-earned: badge.earned
   leaderboard:
     weekly-key: "leaderboard:weekly"
     alltime-key: "leaderboard:alltime"
@@ -52,4 +54,10 @@ app:
     base-url: "http://localhost:8082"
 
 jwt:
-  secret: ${JWT_SECRET}
+  secret: ${JWT_SECRET:defaultSecretKeyForDevelopmentShouldBe32CharsLong!}
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
