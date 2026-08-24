@@ -6,8 +6,11 @@ import com.kuraflow.gamification.entity.UserStreak;
 import com.kuraflow.gamification.repository.BadgeRepository;
 import com.kuraflow.gamification.repository.UserBadgeRepository;
 import com.kuraflow.gamification.repository.UserStreakRepository;
+import com.kuraflow.shared.event.BadgeEarnedEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,6 +27,10 @@ public class BadgeService {
     private final UserBadgeRepository userBadgeRepository;
     private final UserStreakRepository userStreakRepository;
     private final LeaderboardService leaderboardService;
+    private final KafkaTemplate<String, Object> kafkaTemplate;
+
+    @Value("${app.kafka.topics.badge-earned:badge.earned}")
+    private String badgeEarnedTopic;
 
     @Transactional
     public void evaluateBadges(UUID userId, String eventType, Map<String, Object> eventData) {
@@ -63,11 +70,9 @@ public class BadgeService {
             case "completion":
                 String subtype = (String) criteria.get("subtype");
                 if ("module".equals(subtype)) {
-                    // Placeholder: in a real app, we'd check module completion count
                     return false; 
                 }
                 if ("level".equals(subtype)) {
-                    // Placeholder: in a real app, we'd check level up events
                     return "LEVEL_UP".equals(eventType);
                 }
                 return streak.getTotalLessonsCompleted() >= threshold;
@@ -99,6 +104,21 @@ public class BadgeService {
             leaderboardService.syncTotalXp(userId, streak.getTotalXp());
             
             log.info("Awarded {} bonus XP to user {} for badge {}", badge.getXpReward(), userId, badge.getCode());
+        }
+
+        // Publish badge.earned event to Kafka
+        try {
+            BadgeEarnedEvent event = BadgeEarnedEvent.builder()
+                    .userId(userId)
+                    .badgeCode(badge.getCode())
+                    .badgeName(badge.getName())
+                    .iconUrl(badge.getIconUrl())
+                    .timestamp(System.currentTimeMillis())
+                    .build();
+            kafkaTemplate.send(badgeEarnedTopic, userId.toString(), event);
+            log.info("Published BadgeEarnedEvent for user: {}, badge: {}", userId, badge.getCode());
+        } catch (Exception e) {
+            log.error("Failed to publish BadgeEarnedEvent for user: {}", userId, e);
         }
     }
 }

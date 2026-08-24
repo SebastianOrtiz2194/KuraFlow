@@ -1,6 +1,7 @@
 package com.kuraflow.gamification.consumer;
 
 import com.kuraflow.gamification.service.ActivityHistoryService;
+import com.kuraflow.gamification.service.DailyQuestService;
 import com.kuraflow.gamification.service.StreakService;
 import com.kuraflow.shared.events.LessonCompletedEvent;
 import com.kuraflow.shared.events.ReviewCompletedEvent;
@@ -21,6 +22,7 @@ public class KafkaEventConsumer {
 
     private final StreakService streakService;
     private final ActivityHistoryService activityHistoryService;
+    private final DailyQuestService dailyQuestService;
 
     @RetryableTopic(
             attempts = "4",
@@ -33,11 +35,21 @@ public class KafkaEventConsumer {
         log.info("Received lesson completed event: user={}, lesson={}, score={}", 
                 event.getUserId(), event.getLessonId(), event.getScore());
         
-        // Update XP: Base 10 XP + extra based on score (simplified for now)
         int xpEarned = 10 + (int) (event.getScore() / 10);
         streakService.processActivity(event.getUserId(), event.getTimestamp(), xpEarned, true, event.getScore());
         activityHistoryService.recordActivity(event.getUserId(), "LESSON_COMPLETED",
                 "Completed lesson", xpEarned, event.getTimestamp() != null ? event.getTimestamp() : Instant.now());
+
+        // Update Daily Quests
+        try {
+            dailyQuestService.recordProgress(event.getUserId(), "LESSON_COUNT", 1);
+            dailyQuestService.recordProgress(event.getUserId(), "XP_EARNED", xpEarned);
+            if (event.getScore() >= 100.0) {
+                dailyQuestService.recordProgress(event.getUserId(), "PERFECT_SCORE", 1);
+            }
+        } catch (Exception e) {
+            log.error("Failed to update daily quests for user {}", event.getUserId(), e);
+        }
     }
 
     @RetryableTopic(
@@ -51,10 +63,17 @@ public class KafkaEventConsumer {
         log.info("Received review completed event: user={}, card={}, quality={}", 
                 event.getUserId(), event.getCardId(), event.getQuality());
         
-        // Update XP: 5 XP for a review
         int xpEarned = 5;
         streakService.processActivity(event.getUserId(), event.getTimestamp(), xpEarned, false, 0.0);
         activityHistoryService.recordActivity(event.getUserId(), "REVIEW_COMPLETED",
                 "Completed SRS review", xpEarned, event.getTimestamp() != null ? event.getTimestamp() : Instant.now());
+
+        // Update Daily Quests
+        try {
+            dailyQuestService.recordProgress(event.getUserId(), "REVIEW_COUNT", 1);
+            dailyQuestService.recordProgress(event.getUserId(), "XP_EARNED", xpEarned);
+        } catch (Exception e) {
+            log.error("Failed to update daily quests for user {}", event.getUserId(), e);
+        }
     }
 }

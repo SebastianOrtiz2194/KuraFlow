@@ -2,8 +2,11 @@ package com.kuraflow.gamification.service;
 
 import com.kuraflow.gamification.entity.UserStreak;
 import com.kuraflow.gamification.repository.UserStreakRepository;
+import com.kuraflow.shared.event.StreakUpdatedEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,9 +23,11 @@ public class StreakService {
     private final UserStreakRepository userStreakRepository;
     private final BadgeService badgeService;
     private final LeaderboardService leaderboardService;
-    
-    // In a real app, this would fetch from user-service
-    // For now, we assume UTC
+    private final KafkaTemplate<String, Object> kafkaTemplate;
+
+    @Value("${app.kafka.topics.streak-updated:streak.updated}")
+    private String streakUpdatedTopic;
+
     private ZoneId getUserZoneId(UUID userId) {
         return ZoneId.of("UTC");
     }
@@ -52,43 +57,47 @@ public class StreakService {
 
         ZoneId userZone = getUserZoneId(userId);
         LocalDate activityDate = activityTimestamp.atZone(userZone).toLocalDate();
+        boolean isNewRecord = false;
+        boolean streakChanged = false;
 
         if (streak.getLastActivity() == null) {
             streak.setCurrentStreak(1);
             streak.setLongestStreak(1);
             streak.setLastActivity(activityDate);
+            streakChanged = true;
+            isNewRecord = true;
         } else {
             LocalDate lastActivityDate = streak.getLastActivity();
             
             if (activityDate.isEqual(lastActivityDate)) {
-                // Already active today, do nothing to streak
                 log.debug("User {} already active today", userId);
             } else if (activityDate.isEqual(lastActivityDate.plusDays(1))) {
-                // Active on consecutive day
                 streak.setCurrentStreak(streak.getCurrentStreak() + 1);
+                streakChanged = true;
                 if (streak.getCurrentStreak() > streak.getLongestStreak()) {
                     streak.setLongestStreak(streak.getCurrentStreak());
+                    isNewRecord = true;
                 }
                 streak.setLastActivity(activityDate);
             } else if (activityDate.isAfter(lastActivityDate.plusDays(1))) {
-                // Streak broken, check for freezes
                 long daysMissed = java.time.temporal.ChronoUnit.DAYS.between(lastActivityDate, activityDate) - 1;
                 
                 if (streak.getStreakFreezes() >= daysMissed) {
                     log.info("Streak rescued by {} freezes for user {}", daysMissed, userId);
                     streak.setStreakFreezes((int) (streak.getStreakFreezes() - daysMissed));
                     streak.setCurrentStreak(streak.getCurrentStreak() + 1);
+                    streakChanged = true;
                     if (streak.getCurrentStreak() > streak.getLongestStreak()) {
                         streak.setLongestStreak(streak.getCurrentStreak());
+                        isNewRecord = true;
                     }
                 } else {
                     log.info("Streak reset for user {}", userId);
                     streak.setCurrentStreak(1);
+                    streakChanged = true;
                 }
                 streak.setLastActivity(activityDate);
             } else {
-                // activityDate is before lastActivityDate (e.g. late event)
-                // We ignore it for streak purposes
                 log.debug("Activity date {} is before last activity {}, ignoring for streak", activityDate, lastActivityDate);
             }
         }
@@ -96,6 +105,22 @@ public class StreakService {
         userStreakRepository.save(streak);
         log.info("Updated streak for user {}: current={}, totalXp={}", userId, streak.getCurrentStreak(), streak.getTotalXp());
         
+        // Publish streak.updated event to Kafka
+        if (streakChanged) {
+            try {
+                StreakUpdatedEvent event = StreakUpdatedEvent.builder()
+                        .userId(userId)
+                        .currentStreak(streak.getCurrentStreak())
+                        .isNewRecord(isNewRecord)
+                        .timestamp(System.currentTimeMillis())
+                        .build();
+                kafkaTemplate.send(streakUpdatedTopic, userId.toString(), event);
+                log.info("Published StreakUpdatedEvent for user: {}", userId);
+            } catch (Exception e) {
+                log.error("Failed to publish StreakUpdatedEvent for user: {}", userId, e);
+            }
+        }
+
         // Update leaderboard
         leaderboardService.addXp(userId, xpEarned);
         
@@ -127,7 +152,7 @@ public class StreakService {
     @Transactional
     public void purchaseFreeze(UUID userId) {
         UserStreak streak = getUserStreakEntity(userId);
-        int cost = 100; // Hardcoded cost for now
+        int cost = 100;
         
         if (streak.getTotalXp() < cost) {
             throw new IllegalStateException("Not enough XP to purchase a streak freeze. Need " + cost + " XP.");
@@ -142,13 +167,8 @@ public class StreakService {
     @Transactional
     public void cleanupExpiredStreaks() {
         LocalDate yesterday = LocalDate.now(ZoneId.of("UTC")).minusDays(1);
-        // This is a simplified proactive cleanup. 
-        // Real implementation would handle per-user timezones.
         log.info("Cleaning up streaks that expired before {}", yesterday);
         
-        // Fetch users who haven't been active since before yesterday
-        // For brevity in this sprint, we are using a simple list all and filter.
-        // In production, use a custom repository query.
         userStreakRepository.findAll().stream()
             .filter(s -> s.getLastActivity() != null && s.getLastActivity().isBefore(yesterday))
             .filter(s -> s.getCurrentStreak() > 0)
