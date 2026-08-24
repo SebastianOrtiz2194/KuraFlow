@@ -25,7 +25,7 @@ import java.util.UUID;
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
-    @Value("${jwt.secret}")
+    @Value("${jwt.secret:defaultSecretKeyForDevelopmentShouldBe32CharsLong!}")
     private String secret;
 
     private SecretKey getSigningKey() {
