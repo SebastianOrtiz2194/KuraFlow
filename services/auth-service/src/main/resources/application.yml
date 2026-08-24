@@ -4,7 +4,7 @@ spring:
   datasource:
     url: ${DB_URL:jdbc:postgresql://localhost:5432/KuraFlow}
     username: ${DB_USERNAME:KuraFlow}
-    password: ${DB_PASSWORD}
+    password: ${DB_PASSWORD:}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -21,14 +21,30 @@ spring:
             scope: profile, email
   data:
     redis:
-      host: localhost
-      port: 6379
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
   session:
     store-type: redis
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 server:
   port: 8081
 
 jwt:
-  secret: ${JWT_SECRET}
+  secret: ${JWT_SECRET:defaultSecretKeyForDevelopmentShouldBe32CharsLong!}
   expiration: 3600
+
+app:
+  kafka:
+    topics:
+      user-registered: user.registered
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
