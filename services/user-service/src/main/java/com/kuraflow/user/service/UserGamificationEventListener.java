@@ -3,11 +3,17 @@ package com.kuraflow.user.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.kuraflow.shared.event.BadgeEarnedEvent;
+import com.kuraflow.shared.event.StreakReminderEvent;
 import com.kuraflow.shared.event.StreakUpdatedEvent;
+import com.kuraflow.shared.event.UserRegisteredEvent;
+import com.kuraflow.user.entity.User;
+import com.kuraflow.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
+
+import java.time.OffsetDateTime;
 
 @Component
 @Slf4j
@@ -17,7 +23,30 @@ public class UserGamificationEventListener {
     private final PushNotificationService pushNotificationService;
     private final ObjectMapper objectMapper;
     private final EmailService emailService;
-    private final com.kuraflow.user.repository.UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    @KafkaListener(topics = "user.registered", groupId = "user-service-group")
+    public void handleUserRegistered(UserRegisteredEvent event) {
+        log.info("Received user.registered event for user: {} ({})", event.getUserId(), event.getEmail());
+        try {
+            if (!userRepository.existsById(event.getUserId())) {
+                User user = User.builder()
+                        .id(event.getUserId())
+                        .email(event.getEmail())
+                        .displayName(event.getDisplayName() != null ? event.getDisplayName() : event.getEmail().split("@")[0])
+                        .authProvider(event.getAuthProvider() != null ? event.getAuthProvider() : "local")
+                        .timezone("UTC")
+                        .isPremium(false)
+                        .createdAt(OffsetDateTime.now())
+                        .updatedAt(OffsetDateTime.now())
+                        .build();
+                userRepository.save(user);
+                log.info("Successfully provisioned User entity for user: {}", event.getUserId());
+            }
+        } catch (Exception e) {
+            log.error("Failed to process user.registered event for user: {}", event.getUserId(), e);
+        }
+    }
 
     @KafkaListener(topics = "badge.earned", groupId = "user-service-group")
     public void handleBadgeEarned(BadgeEarnedEvent event) {
@@ -54,8 +83,9 @@ public class UserGamificationEventListener {
             log.error("Failed to process streak.updated event", e);
         }
     }
-    @org.springframework.kafka.annotation.KafkaListener(topics = "streak.reminder", groupId = "user-service-group")
-    public void handleStreakReminder(com.kuraflow.shared.event.StreakReminderEvent event) {
+
+    @KafkaListener(topics = "streak.reminder", groupId = "user-service-group")
+    public void handleStreakReminder(StreakReminderEvent event) {
         log.info("Received streak.reminder event for user: {}", event.getUserId());
         try {
             // Send Web Push Notification
@@ -67,7 +97,7 @@ public class UserGamificationEventListener {
             pushNotificationService.sendNotification(event.getUserId(), payload.toString());
 
             // Send Email
-            com.kuraflow.user.entity.User user = userRepository.findById(event.getUserId()).orElse(null);
+            User user = userRepository.findById(event.getUserId()).orElse(null);
             if (user != null && user.getEmail() != null) {
                 emailService.sendStreakReminderEmail(user.getEmail(), user.getDisplayName(), event.getCurrentStreak());
             }

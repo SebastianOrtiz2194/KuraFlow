@@ -4,7 +4,7 @@ spring:
   datasource:
     url: ${DB_URL:jdbc:postgresql://localhost:5432/KuraFlow}
     username: ${DB_USERNAME:KuraFlow}
-    password: ${DB_PASSWORD}
+    password: ${DB_PASSWORD:}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -23,16 +23,25 @@ spring:
     default-schema: user_schema
     create-schemas: true
   mail:
-    host: localhost
-    port: 1025
-    username: test
-    password: ${MAIL_PASSWORD}
+    host: ${MAIL_HOST:localhost}
+    port: ${MAIL_PORT:1025}
+    username: ${MAIL_USERNAME:test}
+    password: ${MAIL_PASSWORD:}
     properties:
       mail:
         smtp:
           auth: false
           starttls:
             enable: false
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      group-id: user-service-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
 
 management:
   health:
@@ -43,19 +52,15 @@ server:
   port: 8082
 
 jwt:
-  secret: ${JWT_SECRET}
+  secret: ${JWT_SECRET:defaultSecretKeyForDevelopmentShouldBe32CharsLong!}
 
 vapid:
-  public.key: ${VAPID_PUBLIC_KEY}
-  private.key: ${VAPID_PRIVATE_KEY}
+  public.key: ${VAPID_PUBLIC_KEY:BEl62iUYgUivxIkv69yViEuiBIa-Ib9-SkvMeAtA3LFgDzkrxZJjSPOSnfMSCDBMSDh01Cxyz123}
+  private.key: ${VAPID_PRIVATE_KEY:dummy-vapid-private-key-123456789}
   subject: ${VAPID_SUBJECT:mailto:admin@kuraflow.com}
 
-  kafka:
-    consumer:
-      bootstrap-servers: localhost:9092
-      group-id: user-service-group
-      auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      properties:
-        spring.json.trusted.packages: "*"
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html

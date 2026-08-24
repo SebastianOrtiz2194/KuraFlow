@@ -1,6 +1,7 @@
 package com.kuraflow.user.controller;
 
 import com.kuraflow.user.dto.UpdateProfileRequest;
+import com.kuraflow.user.dto.UserBriefResponse;
 import com.kuraflow.user.dto.UserProfileResponse;
 import com.kuraflow.user.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -10,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -19,6 +21,12 @@ import java.util.UUID;
 public class UserController {
 
     private final UserService userService;
+
+    @GetMapping("/search")
+    @Operation(summary = "Search users by display name")
+    public ResponseEntity<List<UserBriefResponse>> searchUsers(@RequestParam String q) {
+        return ResponseEntity.ok(userService.searchUsers(q));
+    }
 
     @GetMapping("/{id}")
     @Operation(summary = "Get user profile by ID")
