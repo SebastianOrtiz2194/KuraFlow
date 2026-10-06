@@ -27,7 +27,8 @@ export default function RegisterPage() {
     setIsLoading(true);
     
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api/v1'}/auth/register`, {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
+      const response = await fetch(`${apiUrl}/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password }),
@@ -35,10 +36,14 @@ export default function RegisterPage() {
 
       if (response.ok) {
         const data = await response.json();
-        if (data.token) {
-          localStorage.setItem('token', data.token);
-          // Set a basic cookie for middleware if needed
-          document.cookie = `accessToken=${data.token}; path=/; max-age=86400`;
+        const token = data.accessToken || data.token;
+        if (token) {
+          localStorage.setItem('token', token);
+          if (data.refreshToken) {
+            localStorage.setItem('refreshToken', data.refreshToken);
+          }
+          // Set a basic cookie for middleware
+          document.cookie = `accessToken=${token}; path=/; max-age=86400; SameSite=Lax`;
           router.push('/dashboard');
         } else {
           setError('Registration successful but no token received');
