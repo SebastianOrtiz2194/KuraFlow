@@ -157,6 +157,43 @@
   color: var(--text-secondary);
 }
 
+.flashcard-audio-wrap {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.kbd-shortcut {
+  background: var(--muted);
+  border: 1px solid var(--border);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--text-primary);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0 0.25rem;
+}
+
+.rate-btn-top {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.rate-kbd {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  background: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0 0.25rem;
+  color: var(--muted-foreground);
+}
+
 @keyframes pulse {
   0% { opacity: 0.5; }
   50% { opacity: 1; }
@@ -167,3 +204,4 @@
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
