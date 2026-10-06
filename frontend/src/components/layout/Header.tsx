@@ -6,6 +6,18 @@ import Link from 'next/link';
 import { useUser } from '@/context/UserContext';
 import { Button } from '@/components/ui/Button';
 import { fetchSearchIndex, searchCatalog, SearchResultItem } from '@/lib/search';
+import {
+  Search,
+  Bell,
+  Flame,
+  Sun,
+  Moon,
+  X,
+  BookOpen,
+  Layers,
+  Sparkles,
+  ArrowRight,
+} from 'lucide-react';
 import './Header.css';
 
 interface NotificationItem {
@@ -118,7 +130,7 @@ export const Header: React.FC = () => {
   // Keyboard shortcut: CMD+K or CTRL+K to focus search
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
         searchInputRef.current?.focus();
         setIsSearchOpen(true);
@@ -183,7 +195,9 @@ export const Header: React.FC = () => {
       {/* Search Input & Dropdown */}
       <div className="header-search-container" ref={searchContainerRef}>
         <div className="header-search">
-          <span className="search-icon">🔍</span>
+          <span className="search-icon">
+            <Search size={16} className="text-muted-foreground" />
+          </span>
           <input
             ref={searchInputRef}
             type="text"
@@ -207,7 +221,7 @@ export const Header: React.FC = () => {
               }}
               aria-label="Clear search"
             >
-              ✕
+              <X size={14} />
             </button>
           )}
         </div>
@@ -227,13 +241,15 @@ export const Header: React.FC = () => {
                 className={`search-filter-pill ${activeFilter === 'lessons' ? 'active' : ''}`}
                 onClick={() => setActiveFilter('lessons')}
               >
-                📚 Lessons
+                <BookOpen size={13} className="inline mr-1" />
+                Lessons
               </button>
               <button
                 className={`search-filter-pill ${activeFilter === 'flashcards' ? 'active' : ''}`}
                 onClick={() => setActiveFilter('flashcards')}
               >
-                🗂️ Flashcards
+                <Layers size={13} className="inline mr-1" />
+                Flashcards
               </button>
             </div>
 
@@ -252,7 +268,9 @@ export const Header: React.FC = () => {
                           router.push(item.href);
                         }}
                       >
-                        <span className="suggestion-icon">{item.type === 'lesson' ? '📚' : '🗂️'}</span>
+                        <span className="suggestion-icon">
+                          {item.type === 'lesson' ? <BookOpen size={14} /> : <Layers size={14} />}
+                        </span>
                         <span className="suggestion-title">{item.title}</span>
                       </div>
                     ))}
@@ -268,7 +286,13 @@ export const Header: React.FC = () => {
                   >
                     <div className="result-icon-col">
                       <span className="result-type-icon">
-                        {item.type === 'lesson' ? '📚' : item.type === 'flashcard' ? '🗂️' : '📘'}
+                        {item.type === 'lesson' ? (
+                          <BookOpen size={16} />
+                        ) : item.type === 'flashcard' ? (
+                          <Layers size={16} />
+                        ) : (
+                          <Sparkles size={16} />
+                        )}
                       </span>
                     </div>
                     <div className="result-info-col">
@@ -280,7 +304,7 @@ export const Header: React.FC = () => {
                       <div className="result-meta">
                         <span className="result-cat">{item.category}</span>
                         {item.meta?.xpReward && (
-                          <span className="result-xp">+{item.meta.xpReward} XP ⭐</span>
+                          <span className="result-xp">+{item.meta.xpReward} XP</span>
                         )}
                       </div>
                     </div>
@@ -288,7 +312,9 @@ export const Header: React.FC = () => {
                 ))
               ) : (
                 <div className="search-empty">
-                  <span className="empty-emoji">🔍</span>
+                  <span className="empty-emoji">
+                    <Search size={28} className="text-muted-foreground opacity-60" />
+                  </span>
                   <p>No results found for &ldquo;<strong>{searchQuery}</strong>&rdquo;</p>
                   <span className="empty-hint">Try searching for keywords like &ldquo;grammar&rdquo;, &ldquo;questions&rdquo;, or &ldquo;vocabulary&rdquo;.</span>
                 </div>
@@ -310,7 +336,9 @@ export const Header: React.FC = () => {
               setIsStreakOpen(false);
             }}
           >
-            <span className="icon">🔔</span>
+            <span className="icon">
+              <Bell size={18} />
+            </span>
             {unreadNotifCount > 0 && <span className="notification-badge" />}
           </button>
 
@@ -337,7 +365,15 @@ export const Header: React.FC = () => {
                     className={`notif-item ${notif.isRead ? 'is-read' : 'is-unread'}`}
                     onClick={() => handleNotificationClick(notif)}
                   >
-                    <span className="notif-icon">{notif.icon}</span>
+                    <span className="notif-icon">
+                      {notif.icon === '🔥' ? (
+                        <Flame size={16} className="text-amber-500 fill-amber-500" />
+                      ) : notif.icon === '🗂️' ? (
+                        <Layers size={16} className="text-indigo-500" />
+                      ) : (
+                        <Sparkles size={16} className="text-emerald-500" />
+                      )}
+                    </span>
                     <div className="notif-content">
                       <div className="notif-item-title-row">
                         <span className="notif-item-title">{notif.title}</span>
@@ -355,7 +391,7 @@ export const Header: React.FC = () => {
                   className="notif-footer-link"
                   onClick={() => setIsNotifOpen(false)}
                 >
-                  View achievements & badges →
+                  View achievements & badges <ArrowRight size={13} className="inline ml-1" />
                 </Link>
               </div>
             </div>
@@ -369,7 +405,9 @@ export const Header: React.FC = () => {
           aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
           title={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
         >
-          <span className="icon">{theme === 'light' ? '🌙' : '☀️'}</span>
+          <span className="icon">
+            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} className="text-amber-400" />}
+          </span>
         </button>
 
         {/* Dynamic Streak Counter & Popover */}
@@ -382,14 +420,18 @@ export const Header: React.FC = () => {
             }}
             aria-label="Streak status"
           >
-            <span className="streak-icon">🔥</span>
+            <span className="streak-icon">
+              <Flame size={16} className="text-amber-500 fill-amber-500" />
+            </span>
             <span className="streak-value">{currentStreak}</span>
           </button>
 
           {isStreakOpen && (
             <div className="streak-dropdown glass-card shadow-lg">
               <div className="streak-dropdown-header">
-                <span className="streak-hero-fire">🔥</span>
+                <span className="streak-hero-fire">
+                  <Flame size={36} className="text-amber-500 fill-amber-500 inline-block" />
+                </span>
                 <h3>{currentStreak} Day Streak</h3>
                 <p className="streak-subtitle">
                   {currentStreak > 0
