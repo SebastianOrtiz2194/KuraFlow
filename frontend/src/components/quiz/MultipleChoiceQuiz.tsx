@@ -22,7 +22,7 @@ export function MultipleChoiceQuiz({ body, onCorrect, onResult }: MultipleChoice
     setTimeout(() => setAnimClass(''), 600);
   }, []);
 
-  const handleSubmit = () => {
+  const handleSubmit = useCallback(() => {
     if (selected === null) return;
     setIsSubmitted(true);
     const correct = selected === body.correctIndex;
@@ -31,7 +31,35 @@ export function MultipleChoiceQuiz({ body, onCorrect, onResult }: MultipleChoice
     if (correct) {
       onCorrect();
     }
-  };
+  }, [selected, body.correctIndex, triggerAnim, onResult, onCorrect]);
+
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement)?.tagName)) return;
+      if (!isSubmitted) {
+        const num = parseInt(e.key, 10);
+        if (!isNaN(num) && num >= 1 && num <= body.options.length) {
+          e.preventDefault();
+          setSelected(num - 1);
+        } else {
+          const charCode = e.key.toUpperCase().charCodeAt(0);
+          if (e.key.length === 1 && charCode >= 65 && charCode < 65 + body.options.length) {
+            e.preventDefault();
+            setSelected(charCode - 65);
+          } else if (e.key === 'Enter' && selected !== null) {
+            e.preventDefault();
+            handleSubmit();
+          }
+        }
+      } else if (e.key === 'Enter' && !isCorrect) {
+        e.preventDefault();
+        setIsSubmitted(false);
+        setSelected(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isSubmitted, selected, body.options.length, isCorrect, handleSubmit]);
 
   return (
     <div className={`quiz-container mcq-quiz ${animClass}`}>
