@@ -96,6 +96,7 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children
       localStorage.removeItem('token');
       localStorage.removeItem('refreshToken');
       localStorage.removeItem('kuraflow_is_pro');
+      document.cookie = 'accessToken=; path=/; max-age=0; SameSite=Lax';
     }
     setUser(null);
     setProfile(null);

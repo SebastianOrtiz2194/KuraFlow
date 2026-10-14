@@ -6,6 +6,7 @@ import { MainLayout } from '@/components/layout/MainLayout';
 import { Card, CardContent } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { getAuthHeaders } from '@/lib/api';
+import { Clock, Zap } from 'lucide-react';
 import './lessons.css';
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
@@ -269,9 +270,13 @@ export default function LessonsPage() {
                     <CardContent>
                       <h3 className="lesson-title">{lesson.title}</h3>
                       <p className="lesson-desc">{lesson.description}</p>
-                      <div className="lesson-meta">
-                        <span>{lesson.estimatedMinutes} min</span>
-                        <span>{lesson.xpReward} XP</span>
+                      <div className="lesson-meta" style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
+                          <Clock size={13} /> {lesson.estimatedMinutes} min
+                        </span>
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
+                          <Zap size={13} className="text-amber-500 fill-amber-500" /> +{lesson.xpReward} XP
+                        </span>
                       </div>
                       <Link href={`/lesson/${lesson.id}`}>
                         <Button variant="outline" size="sm" style={{ width: '100%' }}>

@@ -13,7 +13,6 @@ import {
   ExplanationBody,
   ExampleBody,
   MCQBody,
-  FillInTheBlankBody,
 } from '@/lib/types';
 import './lesson.css';
 

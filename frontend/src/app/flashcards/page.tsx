@@ -5,6 +5,9 @@ import { MainLayout } from '@/components/layout/MainLayout';
 import { Flashcard } from '@/components/srs/Flashcard';
 import { Card, CardContent } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
+import { ProgressBar } from '@/components/ui/ProgressBar';
+import { sounds } from '@/lib/soundEffects';
+import { ArrowLeft, RotateCcw, Sparkles } from 'lucide-react';
 import {
   getLanguages,
   getLevels,
@@ -138,6 +141,7 @@ export default function FlashcardsPage() {
       setCurrentCardIndex(currentCardIndex + 1);
     } else {
       setDeckComplete(true);
+      sounds.playCelebration();
     }
   };
 
@@ -281,24 +285,35 @@ export default function FlashcardsPage() {
         )}
 
         {!loadingFlashcards && selectedDeck && deckComplete && (
-          <div className="review-complete">
-            <div className="complete-icon">🎉</div>
+          <div className="review-complete glass-card shadow-xl">
+            <div className="complete-icon">
+              <Sparkles size={48} className="text-amber-500 fill-amber-400 inline-block" />
+            </div>
             <h2>Deck Complete!</h2>
-            <p>You reviewed {flashcards.length} cards.</p>
+            <p>You reviewed all {flashcards.length} cards in this deck.</p>
             <div className="complete-actions">
-              <Button variant="primary" onClick={handleRestart}>Restart Deck</Button>
-              <Button variant="outline" onClick={handleBack}>Back to Decks</Button>
+              <Button variant="primary" onClick={handleRestart} leftIcon={<RotateCcw size={16} />}>
+                Restart Deck
+              </Button>
+              <Button variant="outline" onClick={handleBack} leftIcon={<ArrowLeft size={16} />}>
+                Back to Decks
+              </Button>
             </div>
           </div>
         )}
 
         {!loadingFlashcards && selectedDeck && !deckComplete && currentCard && (
           <div className="review-session">
-            <div className="review-progress">
-              <span>Card {currentCardIndex + 1} of {flashcards.length}</span>
-              <Button variant="outline" size="sm" onClick={handleBack}>
-                Exit
-              </Button>
+            <div className="review-progress-wrap" style={{ width: '100%', maxWidth: 500, margin: '0 auto 1.5rem auto' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                <span style={{ fontWeight: 600, fontSize: '0.875rem' }}>
+                  Card {currentCardIndex + 1} <span style={{ color: 'var(--muted-foreground)', fontWeight: 400 }}>of {flashcards.length}</span>
+                </span>
+                <Button variant="ghost" size="sm" onClick={handleBack} leftIcon={<ArrowLeft size={14} />}>
+                  Exit
+                </Button>
+              </div>
+              <ProgressBar value={Math.round(((currentCardIndex + 1) / flashcards.length) * 100)} size="sm" />
             </div>
             <Flashcard card={currentCard} onReview={handleReview} />
           </div>

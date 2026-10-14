@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button';
 import { Card, CardContent, CardFooter } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { ProgressBar } from '@/components/ui/ProgressBar';
+import { Flame, Zap, BookOpen } from 'lucide-react';
 import {
   getAuthToken,
   getUserProfile,
@@ -275,17 +276,23 @@ export default function Home() {
           </div>
           <div className="quick-stats">
             <div className="stat-pill">
-              <span className="stat-emoji">🔥</span>
+              <span className="stat-emoji">
+                <Flame size={20} className="text-amber-500 fill-amber-500" />
+              </span>
               <span className="stat-number">{currentStreak}</span>
               <span className="stat-label">Day Streak</span>
             </div>
             <div className="stat-pill">
-              <span className="stat-emoji">⭐</span>
+              <span className="stat-emoji">
+                <Zap size={20} className="text-indigo-500 fill-indigo-400" />
+              </span>
               <span className="stat-number">{totalXp.toLocaleString()}</span>
               <span className="stat-label">Total XP</span>
             </div>
             <div className="stat-pill">
-              <span className="stat-emoji">📖</span>
+              <span className="stat-emoji">
+                <BookOpen size={20} className="text-emerald-500" />
+              </span>
               <span className="stat-number">{totalLessonsCompleted}</span>
               <span className="stat-label">Lessons Done</span>
             </div>

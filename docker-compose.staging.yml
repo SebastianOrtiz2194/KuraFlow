@@ -72,7 +72,7 @@ services:
       SPRING_DATASOURCE_USERNAME: KuraFlow
       SPRING_DATASOURCE_PASSWORD: password
       SPRING_DATA_REDIS_HOST: redis
-      JWT_SECRET: ${JWT_SECRET}
+      JWT_SECRET: ${JWT_SECRET:-defaultSecretKeyForDevelopmentShouldBe32CharsLong!}
 
   user-service:
     build: ./services/user-service
@@ -89,7 +89,7 @@ services:
       SPRING_DATASOURCE_USERNAME: KuraFlow
       SPRING_DATASOURCE_PASSWORD: password
       SPRING_KAFKA_CONSUMER_BOOTSTRAP_SERVERS: kafka:29092
-      JWT_SECRET: ${JWT_SECRET}
+      JWT_SECRET: ${JWT_SECRET:-defaultSecretKeyForDevelopmentShouldBe32CharsLong!}
       MAIL_PASSWORD: ${MAIL_PASSWORD:-password}
       VAPID_PUBLIC_KEY: ${VAPID_PUBLIC_KEY:-}
       VAPID_PRIVATE_KEY: ${VAPID_PRIVATE_KEY:-}
@@ -126,7 +126,7 @@ services:
       SPRING_DATASOURCE_USERNAME: KuraFlow
       SPRING_DATASOURCE_PASSWORD: password
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
-      JWT_SECRET: ${JWT_SECRET}
+      JWT_SECRET: ${JWT_SECRET:-defaultSecretKeyForDevelopmentShouldBe32CharsLong!}
 
   gamification-service:
     build: ./services/gamification-service
@@ -147,7 +147,7 @@ services:
       SPRING_DATA_REDIS_HOST: redis
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
       APP_USER_SERVICE_BASE_URL: http://user-service:8082
-      JWT_SECRET: ${JWT_SECRET}
+      JWT_SECRET: ${JWT_SECRET:-defaultSecretKeyForDevelopmentShouldBe32CharsLong!}
 
   gateway-service:
     build: ./services/gateway-service
@@ -163,7 +163,7 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: staging
       SPRING_DATA_REDIS_HOST: redis
-      JWT_SECRET: ${JWT_SECRET}
+      JWT_SECRET: ${JWT_SECRET:-defaultSecretKeyForDevelopmentShouldBe32CharsLong!}
 
   frontend:
     build: ./frontend
